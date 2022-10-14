@@ -194,7 +194,7 @@ const reviewsReducer = (state = initialState, action) => {
             return newState;
         case ADD_REVIEW_IMG:
             newState = { ...state, user: { ...state.user }, business: { ...state.business } };
-            newState.user[action.payload.reviewId].ReviewImages ? newState.user[action.payload.reviewId].ReviewImages = [ ...state.user[action.payload.reviewId].ReviewImages ] : newState.user[action.payload.reviewId].ReviewImages = []
+            newState.user[action.payload.reviewId].ReviewImages ? newState.user[action.payload.reviewId].ReviewImages = [...state.user[action.payload.reviewId].ReviewImages] : newState.user[action.payload.reviewId].ReviewImages = []
 
             const newReviewImg = { ...action.payload.reviewImgData };
 
@@ -218,7 +218,7 @@ const reviewsReducer = (state = initialState, action) => {
             return newState;
         case REMOVE_REVIEW_IMG:
             newState = { ...state, user: { ...state.user }, business: { ...state.business } };
-            newState.user[action.payload.reviewId].ReviewImages = [ ...state.user[action.payload.reviewId].ReviewImages ]
+            newState.user[action.payload.reviewId].ReviewImages = [...state.user[action.payload.reviewId].ReviewImages]
 
             const userReviewImages = newState.user[action.payload.reviewId].ReviewImages;
             for (let i = 0; i < userReviewImages.length; i++) {
@@ -230,7 +230,7 @@ const reviewsReducer = (state = initialState, action) => {
             // console.log("NEWSTATE AFTER REMOVE_REVIEW_IMG ACTION:", newState);
             return newState;
         case CLEAR_DATA:
-                return initialState;
+            return initialState;
         default:
             return state;
     }
