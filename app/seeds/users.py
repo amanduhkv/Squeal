@@ -9,14 +9,14 @@ def seed_users():
                   hashed_password="password",
                   first_name="David",
                   last_name="Rogers",
-                  profile_pic="https=//emoji.slack-edge.com/T03GU501J/zoomcrashed/b828461faedcbc70.png")
+                  profile_pic="https://emoji.slack-edge.com/T03GU501J/zoomcrashed/b828461faedcbc70.png")
 
     owner2 = User(first_name='Adam',
                   last_name='Selki',
                   email='AdamSelki@user.io',
                   username='adamselki',
                   hashed_password='password',
-                  profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                  profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                   )
                   
     owner3 = User(first_name='Aijia',
@@ -24,7 +24,7 @@ def seed_users():
                   email='AijiaWang@user.io',
                   username='aijiawang',
                   hashed_password='password',
-                  profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                  profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
     owner4 = User(first_name='Alexander',
@@ -32,7 +32,7 @@ def seed_users():
                   email='AlexanderKlivecka@user.io',
                   username='alexanderklivecka',
                   hashed_password='password',
-                  profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                  profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
     owner5 = User(first_name='Andrea',
@@ -40,7 +40,7 @@ def seed_users():
                   email='AndreaWu@user.io',
                   username='andreawu',
                   hashed_password='password',
-                  profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                  profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
     owner6 = User(first_name='Brandon',
@@ -48,7 +48,7 @@ def seed_users():
                   email='BrandonTasaki@user.io',
                   username='brandontasaki',
                   hashed_password='password',
-                  profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                  profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
     owner7 = User(first_name='Christopher',
@@ -56,7 +56,7 @@ def seed_users():
                   email='ChristopherPannella@user.io',
                   username='christopherpannella',
                   hashed_password='password',
-                  profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                  profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
     owner8 = User(first_name='Jacob',
@@ -64,14 +64,14 @@ def seed_users():
                   email='JacobLamar@user.io',
                   username='jacoblamar',
                   hashed_password='password',
-                  profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                  profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                   )
     owner9 = User(first_name='Jae',
                   last_name='Hwang',
                   email='JaeHwang@user.io',
                   username='jaehwang',
                   hashed_password='password',
-                  profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                  profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
     owner10 = User(first_name='Jake',
@@ -79,7 +79,7 @@ def seed_users():
                    email='JakeMatillano@user.io',
                    username='jakematillano',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner11 = User(first_name='James',
@@ -87,7 +87,7 @@ def seed_users():
                    email='JamesLee@user.io',
                    username='jameslee',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner12 = User(first_name='Jason',
@@ -95,7 +95,7 @@ def seed_users():
                    email='JasonKong@user.io',
                    username='jasonkong',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner13 = User(first_name='Jason',
@@ -103,7 +103,7 @@ def seed_users():
                    email='JasonArnold@user.io',
                    username='jasonarnold',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner14 = User(first_name='Jessie',
@@ -111,7 +111,7 @@ def seed_users():
                    email='JessieBaron@user.io',
                    username='jessiebaron',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner15 = User(first_name='Joanna',
@@ -119,7 +119,7 @@ def seed_users():
                    email='JoannaGilbert@user.io',
                    username='joannagilbert',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner16 = User(first_name='John',
@@ -127,7 +127,7 @@ def seed_users():
                    email='JohnCarrera@user.io',
                    username='johncarrera',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner17 = User(first_name='Logan',
@@ -135,7 +135,7 @@ def seed_users():
                    email='LoganSeals@user.io',
                    username='loganseals',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner18 = User(first_name='Keerthana',
@@ -143,7 +143,7 @@ def seed_users():
                    email='KeerthanaYellapragada@user.io',
                    username='keerthanayellapragada',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner19 = User(first_name='Kyle',
@@ -151,7 +151,7 @@ def seed_users():
                    email='KyleKassen@user.io',
                    username='kylekassen',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner20 = User(first_name='Michael',
@@ -159,7 +159,7 @@ def seed_users():
                    email='MichaelJung@user.io',
                    username='michaeljung',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner21 = User(first_name='Na',
@@ -167,7 +167,7 @@ def seed_users():
                    email='NaChen@user.io',
                    username='nachen',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner22 = User(first_name='Samuel',
@@ -175,7 +175,7 @@ def seed_users():
                    email='SamuelSuh@user.io',
                    username='samuelsuh',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner23 = User(first_name='Schaeffer',
@@ -183,7 +183,7 @@ def seed_users():
                    email='SchaefferAhn@user.io',
                    username='schaefferahn',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner24 = User(first_name='Sean',
@@ -191,7 +191,7 @@ def seed_users():
                    email='SeanKennedy@user.io',
                    username='seankennedy',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner25 = User(first_name='Amanda',
@@ -199,7 +199,7 @@ def seed_users():
                    email='AmandaVien@user.io',
                    username='amandavien',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner26 = User(first_name='Yasha',
@@ -207,7 +207,7 @@ def seed_users():
                    email='YashaYang@user.io',
                    username='yashayang',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
     owner27 = User(first_name='Yibo',
@@ -215,7 +215,7 @@ def seed_users():
                    email='YiboGuo@user.io',
                    username='yiboguo',
                    hashed_password='password',
-                   profile_pic="https= // images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1 & ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8 & auto=format & fit=crop & w=1470 & q=80"
+                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
 
