@@ -7,7 +7,7 @@ images_routes = Blueprint("images", __name__)
 
 
 # DELETE A REVIEW IMG
-@images_routes.route("/images/<int:image_id>", methods=['DELETE'])
+@images_routes.route("/<int:image_id>", methods=['DELETE'])
 def delete_review_img(image_id):
     """
     Deletes a review image

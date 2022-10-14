@@ -18,7 +18,7 @@ def user_reviews():
     return dict(_user_reviews)
 
 
-# 2. ADD A REVIEW --- THIS IS IN THE BIZ ROUTE
+# 2. ADD A REVIEW --- THIS IS IN THE BIZ ROUTES
 
 
 # 3. UPDATE A REVIEW
@@ -41,7 +41,6 @@ def update_review(review_id):
     return { "message": "Review couldn't be found", "status_code": 404 }
 
 
-
 # 4. DELETE A REVIEW
 @reviews_routes.route("/<int:review_id>", methods=['DELETE'])
 def delete_review(review_id):
@@ -61,9 +60,8 @@ def delete_review(review_id):
     return { "message": "Review couldn't be found", "status_code": 404 }
 
 
-
 # 5. ADD A REVIEW IMG
-@reviews_routes.route("/images/<int:review_id>", methods=['POST'])
+@reviews_routes.route("/<int:review_id>/images", methods=['POST'])
 def add_review_img(review_id):
     """
     Add an image to a review based on the review's id
@@ -89,21 +87,4 @@ def add_review_img(review_id):
     return { "message": "Review couldn't be found", "status_code": 404 }
 
 
-
-# 6. DELETE A REVIEW IMG
-@reviews_routes.route("/images/<int:image_id>", methods=['DELETE'])
-def delete_review_img(image_id):
-    """
-    Deletes a review image
-    """
-    form = DeleteReviewImgForm()
-    form['csrf_token'].data = request.cookies['csrf_token']
-    if form.validate_on_submit():
-        review_img_to_delete = Image.query.get(image_id)
-        review_img_to_delete.session.delete()
-
-        db.session.commit()
-
-        return { "message": "Successfully delete", "status_code": 200 }
-    # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return { "message": "Review couldn't be found", "status_code": 404 }
+# 6. DELETE A REVIEW IMG --- THIS IS IN THE IMAGES ROUTES
