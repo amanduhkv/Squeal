@@ -1,6 +1,6 @@
 from .db import db
 
-Business_Transaction = db.Table(
+BusinessTransaction = db.Table(
     'business_transactions',
     db.Model.metadata,
     db.Column('business_id', db.Integer, db.ForeignKey(

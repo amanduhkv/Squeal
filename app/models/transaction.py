@@ -1,5 +1,5 @@
 from .db import db
-
+from .business_transaction import BusinessTransaction
 
 class Transaction(db.Model):
     __tablename__ = "transactions"
@@ -9,7 +9,7 @@ class Transaction(db.Model):
 
     b_transactions = db.relationship(
         'Business',
-        secondary='business_transactions',
+        secondary=BusinessTransaction,
         back_populates='business_t'
     )
 
