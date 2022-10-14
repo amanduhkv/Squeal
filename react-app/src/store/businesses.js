@@ -31,7 +31,7 @@ export const createBusiness = (business, previewImage) => async dispatch => {
         body: JSON.stringify(business)
     });
 
-    if(response.ok) {
+    if (response.ok) {
         const newBiz = await response.json();
         const res = await csrfFetch(`/api/business/${newBiz.id}/images`, {
             method: 'POST',
@@ -44,7 +44,7 @@ export const createBusiness = (business, previewImage) => async dispatch => {
             })
         });
 
-        if(res.ok) {
+        if (res.ok) {
             const newImage = await res.json();
 
             dispatch(addBiz(newBiz));
@@ -95,7 +95,7 @@ const load = payload => ({
 export const getAllBiz = () => async dispatch => {
     const response = await fetch('/api/businesses');
 
-    if(response.ok) {
+    if (response.ok) {
         const list = await response.json();
         dispatch(load(list));
     }
@@ -121,9 +121,9 @@ const getOne = payload => ({
 });
 
 export const getOneBiz = id => async dispatch => {
-    const response  = await fetch(`/api/businesses/${id}`);
+    const response = await fetch(`/api/businesses/${id}`);
 
-    if(response.ok) {
+    if (response.ok) {
         const biz = await response.json();
 
         dispatch(getOne(biz));
@@ -150,7 +150,7 @@ export const updateBiz = biz => async dispatch => {
         body: JSON.stringify(biz)
     });
 
-    if(response.ok) {
+    if (response.ok) {
         const updatedBiz = await response.json();
 
         dispatch(update(updatedBiz));
@@ -174,7 +174,7 @@ export const removeBiz = id => async dispatch => {
         method: 'DELETE'
     });
 
-    if(response.ok) {
+    if (response.ok) {
         const cool = await response.json();
 
         dispatch(deleteBiz(id));
@@ -212,7 +212,7 @@ export const clearData = () => ({
 });
 
 
-const initialState = { allBusinesses: {}, singleBusiness: {}};
+const initialState = { allBusinesses: {}, singleBusiness: {} };
 
 
 const businessReducer = (state = initialState, action) => {

@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import squealnLogo from '../../icons/squealnLogo.png';
-import squealnLogowht from '../../icons/squealnLogowht.png';
+import squealnLogo from '../../icons/squeal-in-logo.png';
+import squealnLogowht from '../../icons/squeal-logo-white.png';
 import search from '../../icons/search.svg';
-import userIcon from '../../icons/user.png';
+// import userIcon from '../../icons/user.png';
+import userIcon from '../../icons/user-profile-svgrepo-com.svg'
 import './NavBar.css';
 
-function NavBar(){
+export default function Brandon_NavBar() {
     // const sessionUser = null;
     const url = useLocation();
-    const [ query, setQuery ] = useState('');
-    const [ location, setLocation ] = useState('');
+    const [query, setQuery] = useState('');
+    const [location, setLocation] = useState('');
 
     // let sessionLinks;
 
     // if (sessionUser) {
     //     sessionLinks = (<>
-                <div className='side-by-side-user-buttons'>
-                    
-                </div>
+    <div className='side-by-side-user-buttons'>
+
+    </div>
     //     </>)
     // }
 
@@ -28,7 +29,7 @@ function NavBar(){
                 <div className='logo-left-section'>
                     <NavLink className='logo' exact to="/">
                         <img src={url === '/' ? squealnLogowht : squealnLogo}
-                                            alt='logo' className='squeal-logo'/>
+                            alt='logo' className='squeal-logo' />
                     </NavLink>
                 </div>
                 <div className='search-and-buttons-right-section'>
@@ -67,5 +68,3 @@ function NavBar(){
         </div>
     )
 }
-
-export default NavBar;

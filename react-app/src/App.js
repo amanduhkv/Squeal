@@ -8,44 +8,50 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import UsersList from './components/UsersList';
 import User from './components/User';
 import { authenticate } from './store/session';
+import Brandon_NavBar from './components/Brandon_NavBar';
+import Footer from './components/Footer';
 
 function App() {
-  const [loaded, setLoaded] = useState(false);
-  const dispatch = useDispatch();
+    const [loaded, setLoaded] = useState(false);
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-    (async() => {
-      await dispatch(authenticate());
-      setLoaded(true);
-    })();
-  }, [dispatch]);
+    useEffect(() => {
+        (async () => {
+            await dispatch(authenticate());
+            setLoaded(true);
+        })();
+    }, [dispatch]);
 
-  if (!loaded) {
-    return null;
-  }
+    if (!loaded) {
+        return null;
+    }
 
-  return (
-    <BrowserRouter>
-      <NavBar />
-      <Switch>
-        <Route path='/login' exact={true}>
-          <LoginForm />
-        </Route>
-        <Route path='/sign-up' exact={true}>
-          <SignUpForm />
-        </Route>
-        <ProtectedRoute path='/users' exact={true} >
-          <UsersList/>
-        </ProtectedRoute>
-        <ProtectedRoute path='/users/:userId' exact={true} >
-          <User />
-        </ProtectedRoute>
-        <ProtectedRoute path='/' exact={true} >
-          <h1>My Home Page</h1>
-        </ProtectedRoute>
-      </Switch>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            {/* <NavBar />
+            <Switch>
+                <Route path='/login' exact={true}>
+                    <LoginForm />
+                </Route>
+                <Route path='/sign-up' exact={true}>
+                    <SignUpForm />
+                </Route>
+                <ProtectedRoute path='/users' exact={true} >
+                    <UsersList />
+                </ProtectedRoute>
+                <ProtectedRoute path='/users/:userId' exact={true} >
+                    <User />
+                </ProtectedRoute>
+                <ProtectedRoute path='/' exact={true} >
+                    <h1>My Home Page</h1>
+                </ProtectedRoute>
+            </Switch> */}
+
+            <Brandon_NavBar />
+
+            <Footer />
+        </BrowserRouter>
+    );
 }
 
 export default App;
