@@ -28,12 +28,13 @@ class Business(db.Model):
     business_ty = db.relationship(
         'Type',
         secondary=BusinessType,
-        back_populates='b_types'
+        backref="btypes"
     )
+
     business_t = db.relationship(
         'Transaction',
         secondary=BusinessTransaction,
-        back_populates='b_transactions'
+        backref='btransactions'
     )
 
     def to_dict(self):

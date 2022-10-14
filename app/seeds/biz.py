@@ -11956,7 +11956,8 @@ instances = []
 for type in types:
     instances.append(Type(type=type['title'], alias=type['alias']))
 
-for tran in transaction_types:
+for i in range(0,len(transaction_types)):
+    tran = transaction_types[i] + i
     instances.append(Transaction(transaction=tran))
 
 dup_biz = {8,  10,  12,  17,  25,  32,  36,  37,  44, 45,  59,  65,  69,  88,  94,  96,  97,  98, 100, 104, 109, 113, 116, 117, 124, 129, 132, 141, 156, 157, 162, 164, 166, 167, 169, 173, 174, 186, 200, 203, 222, 228, 232, 236, 237}
