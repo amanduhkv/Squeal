@@ -1,6 +1,6 @@
 FROM python:3.9
 
-ENV REACT_APP_BASE_URL=https://pre-python-starter.herokuapp.com/
+ENV REACT_APP_BASE_URL=https://squeal-yelp.herokuapp.com/
 ENV FLASK_APP=app
 ENV FLASK_ENV=production
 ENV SQLALCHEMY_ECHO=true
