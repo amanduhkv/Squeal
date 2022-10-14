@@ -15,8 +15,8 @@ def get_all_businesses():
         "Businesses": biz
         })
 
-@business_routes.route("/<int:business_id>", methods=['POST'])
-def add_review():
+@business_routes.route("/<int:biz_id>/reviews", methods=['POST'])
+def add_review(biz_id):
     """
     Creates a new review
     """

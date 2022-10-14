@@ -21,26 +21,7 @@ def user_reviews():
 
 
 # # 2. ADD A REVIEW --- THIS NEEDS TO GO IN THE BIZ ROUTE
-# @bp.route("/<int:review_id>", methods=['POST'])
-# def add_review():
-#     """
-#     Creates a new review
-#     """
-#     form = AddReviewForm()
-#     form['csrf_token'].data = request.cookies['csrf_token']
-#     if form.validate_on_submit():
-#         review = Review(
-#             business_id=form.dta['business_id'],
-#             user_id=form.data['user_id'],
-#             review_body=form.data['review_body'],
-#             rating=form.data['rating']
-#         )
-#         db.session.add(review)
-#         db.session.commit()
-#         return review.to_dict()
-#     # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-#     return "Bad data"
-
+# added to biz route
 
 # 3. UPDATE A REVIEW
 @reviews_routes.route("/<int:review_id>", methods=['PUT'])
