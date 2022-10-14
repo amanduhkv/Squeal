@@ -1,5 +1,5 @@
 from random import choice
-from app.models import Business, Business_Transaction, Business_Type, Transaction, Type, Image, Review, User, db
+from app.models import Business, BusinessTransaction, BusinessType, Transaction, Type, Image, Review, User, db
 
 types_alias = [
     'bakeries',         'bubbletea',
@@ -1205,7 +1205,7 @@ bizzies = [
     'address': [ '3626 Sunset Blvd', 'Los Angeles, CA 90026' ],
     'lat': 34.09031981540568,
     'lng': -118.2775804,
-    'price': undefined,
+    'price': '$$',
     'phone': '+13234107304',
     'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/rYqoE4hKPWzxKOJ6wZwxfg/o.jpg',
     'categories': [ 'mediterranean', 'breakfast_brunch', 'cocktailbars' ],
@@ -11961,7 +11961,7 @@ for tran in transaction_types:
 
 dup_biz = {8,  10,  12,  17,  25,  32,  36,  37,  44, 45,  59,  65,  69,  88,  94,  96,  97,  98, 100, 104, 109, 113, 116, 117, 124, 129, 132, 141, 156, 157, 162, 164, 166, 167, 169, 173, 174, 186, 200, 203, 222, 228, 232, 236, 237}
 count = 1
-for i in len(bizzies):
+for i in range(0,len(bizzies)):
     if not i in dup_biz:
         name = bizzies[i]['name']
         city = bizzies[i]['location']['city']
@@ -11988,20 +11988,23 @@ for i in len(bizzies):
                         price_range=price_range, phone_number=phone_number, preview_img=url, start_time=start_time, end_time=end_time))
 
         for cat in bizzies[i]['categories']:
-            instances.append(Business_Type(type_id=types_alias.index(cat['alias'])+1, business_id=business_id))
+          if cat in types_alias:
+            type_id = types_alias.index(cat)+1
+            new_businessType = BusinessType(type_id=type_id, business_id=business_id)
+            instances.append(new_businessType)
 
         for tra in bizzies[i]['transactions']:
-            instances.append(Business_Transaction(transaction_id=transaction_types.index(tra)+1, business_id=business_id))
+            instances.append(BusinessTransaction(transaction_id=transaction_types.index(tra)+1, business_id=business_id))
 
-        for img in biz[i]['photos']:
-            instances.append(Images(business_id=business_id, review_id=None, url=img))
+        for img in bizzies[i]['photos']:
+            instances.append(Image(business_id=business_id, review_id=None, url=img))
         count += 1
 
 
 dup_rev = {9,  11,  13,  18,  26,  33,  37,  38,  45, 46,  60,  66,  70,  89,  95,  97,  98,  99, 101, 105, 110, 114, 117, 118, 125, 130, 133, 142, 157, 158, 163, 165, 167, 168, 170, 174, 175, 187, 201, 204, 223, 229, 233, 237, 238}
 biz_id=1
 users = {1}
-for i in len(reviews):
+for i in range(0,len(reviews)):
     if not reviews[i]['biz_id'] in dup_rev:
         user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
         while user_id in users:
@@ -12012,8 +12015,17 @@ for i in len(reviews):
         biz_id += 1
         users = {1}
 
+#hopefully this doesnt break
+def seed_all_data_sans_users():
+  for instance in instances:
+    db.session.add(instance)
 
-for instance in instances:
-  db.session.add(instance)
+  db.session.commit()
 
-db.session.commit()
+def undo_all_data_sans_users():
+  db.session.execute('TRUNCATE businesses RESTART IDENTITY CASCADE;')
+  db.session.execute('TRUNCATE reviews RESTART IDENTITY CASCADE;')
+  db.session.execute('TRUNCATE types RESTART IDENTITY CASCADE;')
+  db.session.execute('TRUNCATE transactions RESTART IDENTITY CASCADE;')
+  db.session.execute('TRUNCATE images RESTART IDENTITY CASCADE;')
+  db.session.commit()

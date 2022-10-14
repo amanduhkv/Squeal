@@ -1,4 +1,5 @@
 from .db import db
+from .business_type import BusinessType
 
 class Type(db.Model):
     __tablename__ = "types"
@@ -10,7 +11,7 @@ class Type(db.Model):
 
     b_types = db.relationship(
         'Business',
-        secondary='business_types',
+        secondary=BusinessType,
         back_populates='business_ty'
     )
 

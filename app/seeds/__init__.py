@@ -1,6 +1,6 @@
 from flask.cli import AppGroup
 from .users import seed_users, undo_users
-from .businesses import seed_businesses, undo_businesses
+from .biz import seed_all_data_sans_users, undo_all_data_sans_users
 
 # Creates a seed group to hold our commands
 # So we can type `flask seed --help`
@@ -11,7 +11,7 @@ seed_commands = AppGroup('seed')
 @seed_commands.command('all')
 def seed():
     seed_users()
-    seed_businesses()
+    seed_all_data_sans_users()
     # Add other seed functions here
 
 
@@ -19,5 +19,5 @@ def seed():
 @seed_commands.command('undo')
 def undo():
     undo_users()
-    undo_businesses()
+    undo_all_data_sans_users()
     # Add other undo functions here
