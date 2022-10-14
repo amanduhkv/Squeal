@@ -1,5 +1,5 @@
 from flask import Blueprint, redirect
-from ..models import db, User, Business, Review, Review_Image
+from ..models import db, User, Business, Review
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms import add_review_form
 
