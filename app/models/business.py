@@ -14,6 +14,9 @@ class Business(db.Model):
     lat = db.Column(db.Float, nullable=False)
     lng = db.Column(db.Float, nullable=False)
     price_range = db.Column(db.String, nullable=False)
+    start_time = db.Column(db.String, nullable=False)
+    end_time = db.Column(db.String, nullable=False)
+
     phone_number = db.Column(db.String(10))
 
     owner = db.relationship('User', back_populates='business')
@@ -45,5 +48,7 @@ class Business(db.Model):
             "lat": self.lat,
             "lng": self.lng,
             "price_range": self.price_range,
-            "phone_number": self.phone_number
+            "phone_number": self.phone_number,
+            "start_time": self.start_time,
+            "end_time": self.end_time
         }
