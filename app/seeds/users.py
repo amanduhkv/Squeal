@@ -6,7 +6,7 @@ from app.models import db, User
 def seed_users():
     owner1 = User(username="9ziggy9",
                   email="DavidRogers@user.io",
-                  hashed_password="password",
+                  password="password",
                   first_name="David",
                   last_name="Rogers",
                   profile_pic="https://emoji.slack-edge.com/T03GU501J/zoomcrashed/b828461faedcbc70.png")
@@ -15,7 +15,7 @@ def seed_users():
                   last_name='Selki',
                   email='AdamSelki@user.io',
                   username='adamselki',
-                  hashed_password='password',
+                  password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                   )
                   
@@ -23,7 +23,7 @@ def seed_users():
                   last_name='Wang',
                   email='AijiaWang@user.io',
                   username='aijiawang',
-                  hashed_password='password',
+                  password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
@@ -31,7 +31,7 @@ def seed_users():
                   last_name='Klivecka',
                   email='AlexanderKlivecka@user.io',
                   username='alexanderklivecka',
-                  hashed_password='password',
+                  password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
@@ -39,7 +39,7 @@ def seed_users():
                   last_name='Wu',
                   email='AndreaWu@user.io',
                   username='andreawu',
-                  hashed_password='password',
+                  password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
@@ -47,7 +47,7 @@ def seed_users():
                   last_name='Tasaki',
                   email='BrandonTasaki@user.io',
                   username='brandontasaki',
-                  hashed_password='password',
+                  password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
@@ -55,7 +55,7 @@ def seed_users():
                   last_name='Pannella',
                   email='ChristopherPannella@user.io',
                   username='christopherpannella',
-                  hashed_password='password',
+                  password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
@@ -63,14 +63,14 @@ def seed_users():
                   last_name='Lamar',
                   email='JacobLamar@user.io',
                   username='jacoblamar',
-                  hashed_password='password',
+                  password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                   )
     owner9 = User(first_name='Jae',
                   last_name='Hwang',
                   email='JaeHwang@user.io',
                   username='jaehwang',
-                  hashed_password='password',
+                  password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                   )
@@ -78,7 +78,7 @@ def seed_users():
                    last_name='Matillano',
                    email='JakeMatillano@user.io',
                    username='jakematillano',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -86,7 +86,7 @@ def seed_users():
                    last_name='Lee',
                    email='JamesLee@user.io',
                    username='jameslee',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -94,7 +94,7 @@ def seed_users():
                    last_name='Kong',
                    email='JasonKong@user.io',
                    username='jasonkong',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -102,7 +102,7 @@ def seed_users():
                    last_name='Arnold',
                    email='JasonArnold@user.io',
                    username='jasonarnold',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -110,7 +110,7 @@ def seed_users():
                    last_name='Baron',
                    email='JessieBaron@user.io',
                    username='jessiebaron',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -118,7 +118,7 @@ def seed_users():
                    last_name='Gilbert',
                    email='JoannaGilbert@user.io',
                    username='joannagilbert',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -126,7 +126,7 @@ def seed_users():
                    last_name='Carrera',
                    email='JohnCarrera@user.io',
                    username='johncarrera',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -134,7 +134,7 @@ def seed_users():
                    last_name='Seals',
                    email='LoganSeals@user.io',
                    username='loganseals',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -142,7 +142,7 @@ def seed_users():
                    last_name='Yellapragada',
                    email='KeerthanaYellapragada@user.io',
                    username='keerthanayellapragada',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -150,7 +150,7 @@ def seed_users():
                    last_name='Kassen',
                    email='KyleKassen@user.io',
                    username='kylekassen',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -158,7 +158,7 @@ def seed_users():
                    last_name='Jung',
                    email='MichaelJung@user.io',
                    username='michaeljung',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -166,7 +166,7 @@ def seed_users():
                    last_name='Chen',
                    email='NaChen@user.io',
                    username='nachen',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -174,7 +174,7 @@ def seed_users():
                    last_name='Suh',
                    email='SamuelSuh@user.io',
                    username='samuelsuh',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -182,7 +182,7 @@ def seed_users():
                    last_name='Ahn',
                    email='SchaefferAhn@user.io',
                    username='schaefferahn',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -190,7 +190,7 @@ def seed_users():
                    last_name='Kennedy',
                    email='SeanKennedy@user.io',
                    username='seankennedy',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -198,7 +198,7 @@ def seed_users():
                    last_name='Vien',
                    email='AmandaVien@user.io',
                    username='amandavien',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -206,7 +206,7 @@ def seed_users():
                    last_name='Yang',
                    email='YashaYang@user.io',
                    username='yashayang',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
@@ -214,7 +214,7 @@ def seed_users():
                    last_name='Guo',
                    email='YiboGuo@user.io',
                    username='yiboguo',
-                   hashed_password='password',
+                   password='password',
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
