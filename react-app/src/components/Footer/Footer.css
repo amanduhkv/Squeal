@@ -1,0 +1,88 @@
+.footer {
+    background-color: #f7f7f7;
+    padding: 60px 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+#footer-inner-wrapper {
+    padding: 0px 40px;
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+}
+#footer-lists-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#footer-copyright-wrapper {
+    margin: 48px auto 0px auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-column {
+    margin: 0px 16px;
+    width: 262px;
+    /* height: 348px; */
+}
+.footer-column:first-child {
+    margin-left: -16px;
+}
+.footer-column-title-wrapper {
+    margin-bottom: 16px;
+}
+.footer-column-ul {
+    padding: 0px;
+    margin: 0px;
+}
+.footer-column-li {
+    margin-bottom: 8px;
+    list-style: none;
+}
+/* 4th column items intentionally not aligned with other columns (same as yelp) */
+#footer-languages-title-wrapper,
+#footer-countries-title-wrapper {
+    margin-bottom: 10px;
+}
+#footer-countries-title-wrapper {
+    margin-top: 16px;
+}
+.footer-column-title {
+    font-weight: 600;
+}
+.footer-link,
+.footer-dev-name,
+.footer-languages-countries-span {
+    font-weight: 300;
+    font-size: 0.83rem;
+    color: #707070;
+}
+.footer-dev-name {
+    margin-left: -2px;
+}
+#footer-copyright {
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: #707070;
+    margin-left: -16px;
+}
+#squeal-logo-with-text-copyright,
+#squeal-logo-copyright {
+    width: auto;
+    height: 18px;
+    margin-bottom: -3px;
+}
+
+
+.linked-in,
+.github {
+    margin-right: 10px;
+    text-decoration: none;
+}
+.linked-in {
+    color: #0077B5;
+}
+.github {
+    color: #171515;
+}
