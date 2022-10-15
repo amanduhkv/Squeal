@@ -2,6 +2,8 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField
 from wtforms.validators import DataRequired
 
+from flask_login import current_user
+
 
 class AddReviewForm(FlaskForm):
     business_id = IntegerField('Business ID', validators=[DataRequired()])
