@@ -7,10 +7,10 @@ class Transaction(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     transaction = db.Column(db.String(50))
 
-    b_transactions = db.relationship(
+    businesses = db.relationship(
         'Business',
         secondary=BusinessTransaction,
-        back_populates='business_t'
+        back_populates='transactions'
     )
 
 

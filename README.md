@@ -17,7 +17,7 @@
       <a href="#getting-started">Getting Started</a>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#the-team">The Team</a></li>
   </ol>
 </details>
 
@@ -138,7 +138,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 <!-- CONTACT -->
-## Contact
+## The Team
 
 Amanda Vien:
 <br>
