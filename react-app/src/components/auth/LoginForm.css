@@ -1,3 +1,7 @@
+#border-modal {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #demo-button {
   background-color: white;
   border: 1px solid #cfcfcf;
@@ -27,13 +31,19 @@
 #login-button {
   background-color: rgb(212, 40, 40);
   color: white;
-  border: none;
+  border:rgb(212, 40, 40) 1px solid;
   border-radius: 3px;
   width: 100%;
   padding: 10px 13px;
   font-weight: 600;
   font-size: 16px;
-  margin: 12px 0;
+  margin: 12px 0 0 0;
+  transition: background-color 1s ease
+}
+
+#login-button:hover {
+  background-color: rgba(212, 40, 40, 0.7);
+  border:rgb(212, 40, 40) 1px solid;
 }
 
 #login-form {
@@ -65,6 +75,7 @@
   color: rgb(211,35,35);
   font-size: 22px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 #party {
@@ -74,13 +85,24 @@
 }
 
 #signup-redirect {
+  display: flex;
+  text-align: center;
   font-size: 14px;
   font-weight: 500;
+  margin: 0 auto;
 }
 
-#signup-redirect a {
-text-decoration: none;
-color: rgb(0,115,187);
+#signup-redirect .button {
+  color: rgb(0,115,187);
+  cursor: pointer;
+}
+
+#signup-redirect .button:hover {
+  text-decoration: underline;
+}
+
+#signup-redirect .text {
+  margin-right: 3px;
 }
 
 span.or {
@@ -113,7 +135,7 @@ span.or {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: rgb(88, 88, 88);
 }
 
 #terms {

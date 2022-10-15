@@ -43,7 +43,7 @@ const LoginForm = () => {
             </button>
             {showModal && (
                 <Modal id='border-modal' onClose={() => {
-                    console.log('on close')
+                    // console.log('on close')
                     setShowModal(false)
                 }}>
                     <div id="two-cols">
@@ -51,8 +51,8 @@ const LoginForm = () => {
                             <div id="login-text">
                                 <h2 id="login-title">Log in to Squeal</h2>
                                 <h5 id="signup-redirect">
-                                    New to Squeal?
-                                    <NavLink to="/signup"> Sign up</NavLink>
+                                    <>New to Squeal? </>
+                                    <NavLink to="/signup">Sign up</NavLink>
                                 </h5>
                                 <p id="terms">By logging in, you agree to Squeal's Terms of Service and Privacy Policy.</p>
                                 <button id='demo-button'>Continue with DemoUser</button>
@@ -88,6 +88,10 @@ const LoginForm = () => {
                                 </div>
                                 <button id='login-button' type='submit'>Log In</button>
                             </form>
+                            <div id='login-fineprint'>
+                                <p id='fineprint-text'>New to Squeal?</p>
+                                <NavLink id='fineprint-link' to='/login'>Sign up</NavLink>
+                            </div>
                         </div>
                         <div>
                             <img id='party' src={party} alt="login-party" />
