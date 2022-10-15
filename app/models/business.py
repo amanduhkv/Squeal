@@ -25,16 +25,16 @@ class Business(db.Model):
     review = db.relationship('Review', back_populates='business')
     images = db.relationship('Image', back_populates='business')
 
-    business_ty = db.relationship(
+    types = db.relationship(
         'Type',
         secondary=BusinessType,
-        backref="btypes"
+        back_populates="businesses"
     )
 
-    business_t = db.relationship(
+    transactions = db.relationship(
         'Transaction',
         secondary=BusinessTransaction,
-        backref='btransactions'
+        back_populates='businesses'
     )
 
     def to_dict(self):

@@ -9,10 +9,10 @@ class Type(db.Model):
     alias = db.Column(db.String(500))
 
 
-    b_types = db.relationship(
+    businesses = db.relationship(
         'Business',
         secondary=BusinessType,
-        back_populates='business_ty'
+        back_populates='types'
     )
 
 
