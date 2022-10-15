@@ -5,6 +5,7 @@ import squealnLogowht from '../../icons/squealnLogowht.png';
 import search from '../../icons/search.svg';
 import userIcon from '../../icons/githubPurple.png';
 import './NavBar.css';
+import LoginForm from '../auth/LoginForm';
 
 function NavBar(){
     const sessionUser = null;
@@ -25,11 +26,12 @@ function NavBar(){
     else {
         sessionLinks = (<>
             <div className='session-buttons-sbs'>
-                <button className='login-button session-buttons'>
+                {/* <button className='login-button session-buttons'>
                     <span className='session-butt-word login-word'>
                         Log In
                     </span>
-                </button>
+                </button> */}
+                <LoginForm />
                 <button className='signup-button session-buttons'>
                     <span className='session-butt-word signup-word'>
                         Sign Up
