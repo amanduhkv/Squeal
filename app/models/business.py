@@ -1,4 +1,6 @@
 from .db import db
+from .business_type import BusinessType
+from .business_transaction import BusinessTransaction
 
 class Business(db.Model):
     __tablename__ = "businesses"
@@ -16,7 +18,7 @@ class Business(db.Model):
     price_range = db.Column(db.String, nullable=False)
     start_time = db.Column(db.String, nullable=False)
     end_time = db.Column(db.String, nullable=False)
-
+    preview_img = db.Column(db.String)
     phone_number = db.Column(db.String(10))
 
     owner = db.relationship('User', back_populates='business')
@@ -25,13 +27,14 @@ class Business(db.Model):
 
     business_ty = db.relationship(
         'Type',
-        secondary='business_types',
-        back_populates='b_types'
+        secondary=BusinessType,
+        backref="btypes"
     )
+
     business_t = db.relationship(
         'Transaction',
-        secondary='business_transactions',
-        back_populates='b_transactions'
+        secondary=BusinessTransaction,
+        backref='btransactions'
     )
 
     def to_dict(self):

@@ -8,6 +8,7 @@ class Review(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     review_body = db.Column(db.String(5000), nullable=False)
     rating = db.Column(db.Integer, nullable=False)
+    created_at = db.Column(db.String)
 
     user = db.relationship('User', back_populates='review')
     business = db.relationship('Business', back_populates='review')
