@@ -8,6 +8,7 @@ import userIcon from '../../icons/githubPurple.png';
 import './NavBar.css';
 import LoginForm from '../auth/LoginForm';
 import SignUpForm from '../auth/SignUpForm';
+import ProfileButton from '../auth/ProfileButton'
 
 function NavBar(){
     const sessionUser = useSelector(state => state.session.user);
@@ -22,7 +23,7 @@ function NavBar(){
         console.log('hereeee')
         sessionLinks = (<>
             <div className='user-icon-container'>
-                <img className='user-icon' src={userIcon} alt='user' />
+                <ProfileButton />
             </div>
         </>)
     }

@@ -2,6 +2,10 @@ div input:first-child {
   margin-right: 5px;
 }
 
+#email #login-input {
+  margin-top: 6px;
+}
+
 #fineprint-link {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 115, 187);
@@ -20,6 +24,7 @@ div input:first-child {
 
 #first-last-name {
   display: flex;
+  margin-top: 22px;
 }
 
 #login-fineprint {
@@ -31,9 +36,17 @@ div input:first-child {
   justify-content: flex-end;
 }
 
+#password #login-input {
+  margin-top: 9px;
+}
+
 #terms-signup {
   font-size: 11px;
   font-weight: 300;
   text-align: center;
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
+}
+
+#zip #login-input {
+  margin-top: 18px;
 }
