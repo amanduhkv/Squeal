@@ -1,6 +1,22 @@
 from .db import db
-from .business_type import BusinessType
-from .business_transaction import BusinessTransaction
+
+business_types = db.Table(
+    'business_types',
+    db.Model.metadata,
+    db.Column('business_id', db.Integer, db.ForeignKey(
+        'businesses.id'), primary_key=True),
+    db.Column('type_id', db.Integer, db.ForeignKey(
+        'types.id'), primary_key=True)
+)
+
+business_transactions = db.Table(
+    'business_transactions',
+    db.Model.metadata,
+    db.Column('transaction_id', db.Integer, db.ForeignKey(
+        'transactions.id'), primary_key=True),
+    db.Column('business_id', db.Integer, db.ForeignKey(
+        'businesses.id'), primary_key=True),
+)
 
 class Business(db.Model):
     __tablename__ = "businesses"
@@ -27,13 +43,13 @@ class Business(db.Model):
 
     types = db.relationship(
         'Type',
-        secondary=BusinessType,
+        secondary=business_types,
         back_populates="businesses"
     )
 
     transactions = db.relationship(
         'Transaction',
-        secondary=BusinessTransaction,
+        secondary=business_transactions,
         back_populates='businesses'
     )
 
@@ -54,4 +70,45 @@ class Business(db.Model):
             "phone_number": self.phone_number,
             "start_time": self.start_time,
             "end_time": self.end_time
+        }
+
+
+class Transaction(db.Model):
+    __tablename__ = "transactions"
+
+    id = db.Column(db.Integer, primary_key=True)
+    transaction = db.Column(db.String(50))
+
+    businesses = db.relationship(
+        'Business',
+        secondary=business_transactions,
+        back_populates='transactions'
+    )
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "business_id": self.business_id,
+            "transaction": self.transaction,
+        }
+
+
+class Type(db.Model):
+    __tablename__ = "types"
+
+    id = db.Column(db.Integer, primary_key=True)
+    type = db.Column(db.String(500))
+    alias = db.Column(db.String(500))
+
+    businesses = db.relationship(
+        'Business',
+        secondary=business_types,
+        back_populates='types'
+    )
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "type": self.type,
+            "alias": self.alias
         }

@@ -1,5 +1,5 @@
 from random import choice
-from app.models import Business, BusinessTransaction, BusinessType, Transaction, Type, Image, Review, User, db
+from app.models import Business, Transaction, Type, Image, Review, User, db
 
 types_alias = [
     'bakeries',         'bubbletea',
@@ -20,61 +20,41 @@ types_alias = [
 ]
 
 types = [
-    {'alias': 'bakeries', 'title': 'Bakeries'},
-    {'alias': 'bubbletea', 'title': 'Bubble Tea'},
-    {'alias': 'coffee', 'title': 'Coffee & Tea'},
-    {'alias': 'desserts', 'title': 'Desserts'},
-    {'alias': 'donuts', 'title': 'Donuts'},
-    {'alias': 'icecream', 'title': 'Ice Cream & Frozen Yogurt'},
-    {'alias': 'juicebars', 'title': 'Juice Bars & Smoothies'},
-    {'alias': 'bbq', 'title': 'Barbeque'},
-    {'alias': 'breakfast_brunch', 'title': 'Breakfast & Brunch'},
-    {'alias': 'burgers', 'title': 'Burgers'},
-    {'alias': 'cafes', 'title': 'Cafes'},
-    {'alias': 'chicken_wings', 'title': 'Chicken Wings'},
-    {'alias': 'chinese', 'title': 'Chinese'},
-    {'alias': 'gluten_free', 'title': 'Gluten-Free'},
-    {'alias': 'hotdogs', 'title': 'Fast Food'},
-    {'alias': 'indpak', 'title': 'Indian'},
-    {'alias': 'italian', 'title': 'Italian'},
-    {'alias': 'japanese', 'title': 'Japanese'},
-    {'alias': 'korean', 'title': 'Korean'},
-    {'alias': 'mediterranean', 'title': 'Mediterranean'},
-    {'alias': 'mexican', 'title': 'Mexican'},
-    {'alias': 'pizza', 'title': 'Pizza'},
-    {'alias': 'salad', 'title': 'Salad'},
-    {'alias': 'sandwiches', 'title': 'Sandwiches'},
-    {'alias': 'seafood', 'title': 'Seafood'},
-    {'alias': 'steak', 'title': 'Steakhouses'},
-    {'alias': 'sushi', 'title': 'Sushi Bars'},
-    {'alias': 'thai', 'title': 'Thai'},
-    {'alias': 'vegetarian', 'title': 'Vegetarian'},
-    {'alias': 'vietnamese', 'title': 'Vietnamese'},
+    { 'alias': 'bakeries', 'title': 'Bakeries' },
+    { 'alias': 'bubbletea', 'title': 'Bubble Tea' },
+    { 'alias': 'coffee', 'title': 'Coffee & Tea' },
+    { 'alias': 'desserts', 'title': 'Desserts' },
+    { 'alias': 'donuts', 'title': 'Donuts' },
+    { 'alias': 'icecream', 'title': 'Ice Cream & Frozen Yogurt' },
+    { 'alias': 'juicebars', 'title': 'Juice Bars & Smoothies' },
+    { 'alias': 'bbq', 'title': 'Barbeque' },
+    { 'alias': 'breakfast_brunch', 'title': 'Breakfast & Brunch' },
+    { 'alias': 'burgers', 'title': 'Burgers' },
+    { 'alias': 'cafes', 'title': 'Cafes' },
+    { 'alias': 'chicken_wings', 'title': 'Chicken Wings' },
+    { 'alias': 'chinese', 'title': 'Chinese' },
+    { 'alias': 'gluten_free', 'title': 'Gluten-Free' },
+    { 'alias': 'hotdogs', 'title': 'Fast Food' },
+    { 'alias': 'indpak', 'title': 'Indian' },
+    { 'alias': 'italian', 'title': 'Italian' },
+    { 'alias': 'japanese', 'title': 'Japanese' },
+    { 'alias': 'korean', 'title': 'Korean' },
+    { 'alias': 'mediterranean', 'title': 'Mediterranean' },
+    { 'alias': 'mexican', 'title': 'Mexican' },
+    { 'alias': 'pizza', 'title': 'Pizza' },
+    { 'alias': 'salad', 'title': 'Salad' },
+    { 'alias': 'sandwiches', 'title': 'Sandwiches' },
+    { 'alias': 'seafood', 'title': 'Seafood' },
+    { 'alias': 'steak', 'title': 'Steakhouses' },
+    { 'alias': 'sushi', 'title': 'Sushi Bars' },
+    { 'alias': 'thai', 'title': 'Thai' },
+    { 'alias': 'vegetarian', 'title': 'Vegetarian' },
+    { 'alias': 'vietnamese', 'title': 'Vietnamese' },
 ]
 
-# cities = ['Los Angeles', 'San Jose', 'Oakland', 'San Francisco', 'San Diego', 'Austin', 'Dallas', 'Seattle', 'Denver', 'Chicago', 'NYC']
+cities = ['Los Angeles', 'San Jose', 'Oakland', 'San Francisco', 'San Diego', 'Austin', 'Dallas', 'Seattle', 'Denver', 'Chicago', 'NYC']
 
 transaction_types = ['pickup', 'delivery', 'restaurant_reservation']
-
-instances = []
-for type in types:
-    instances.append(Type(type=type['title'], alias=type['alias']))
-
-for tran in transaction_types:
-    instances.append(Transaction(transaction=tran))
-
-
-def seed_all_typestrans_data():
-    for instance in instances:
-        db.session.add(instance)
-    db.session.commit()
-
-
-def undo_all_typestrans_data():
-    db.session.execute('TRUNCATE types RESTART IDENTITY CASCADE;')
-    db.session.execute('TRUNCATE transactions RESTART IDENTITY CASCADE;')
-    db.session.commit()
-
 
 bizzies = [
     {
@@ -11973,6 +11953,14 @@ reviews = [
 
 instances = []
 
+for type in types:
+    instances.append(Type(type=type['title'], alias=type['alias']))
+
+instances.append(Transaction(transaction='delivery'))
+instances.append(Transaction(transaction='pickup'))
+instances.append(Transaction(transaction='restaurant_reservation'))
+
+
 dup_biz = {8,  10,  12,  17,  25,  32,  36,  37,  44, 45,  59,  65,  69,  88,  94,  96,  97,  98, 100, 104, 109, 113,
            116, 117, 124, 129, 132, 141, 156, 157, 162, 164, 166, 167, 169, 173, 174, 186, 200, 203, 222, 228, 232, 236, 237}
 count = 1
@@ -11996,21 +11984,34 @@ for i in range(0, len(bizzies)):
         url = bizzies[i]['url']
         start_time = bizzies[i]['hours']['start']
         end_time = bizzies[i]['hours']['end']
+        transactions = [Transaction(transaction=t) for t in bizzies[i]['transactions']]
+        types = [Type(type=t) for t in bizzies[i]['categories']]
 
-        biz = Business(name=name, owner_id=1, city=city,
-                       state=state, country=country, address=address,
-                       zipcode=zipcode, lat=lat, lng=lng,
-                       price_range=price_range, phone_number=phone_number, preview_img=url, start_time=start_time, end_time=end_time)
-        instances.append(biz)
+        instances.append(Business(name=name,
+                                  owner_id=1,
+                                  city=city,
+                                  state=state,
+                                  country=country,
+                                  address=address,
+                                  zipcode=zipcode,
+                                  lat=lat,
+                                  lng=lng,
+                                  price_range=price_range,
+                                  phone_number=phone_number,
+                                  preview_img=url,
+                                  start_time=start_time,
+                                  end_time=end_time,
+                                  transactions=transactions,
+                                  types=types))
 
-        for cat in bizzies[i]['categories']:
-            if cat in types_alias:
-                newType = Type.query.filter_by(alias=cat).first()
-                biz.btypes.append(newType)
+        # for cat in bizzies[i]['categories']:
+        #   if cat in types_alias:
+        #     type_id = types_alias.index(cat)+1
+        #     new_businessType = BusinessType(type_id=type_id, business_id=business_id)
+        #     instances.append(new_businessType)
 
-        for tra in bizzies[i]['transactions']:
-            trans = Transaction.query.filter_by(transaction=tra).first()
-            biz.btransactions.append(trans)
+        # for tra in bizzies[i]['transactions']:
+        #     instances.append(BusinessTransaction(transaction_id=transaction_types.index(tra)+1, business_id=business_id))
 
         for img in bizzies[i]['photos']:
             instances.append(
@@ -12020,26 +12021,7 @@ for i in range(0, len(bizzies)):
 
 dup_rev = {9,  11,  13,  18,  26,  33,  37,  38,  45, 46,  60,  66,  70,  89,  95,  97,  98,  99, 101, 105, 110, 114,
            117, 118, 125, 130, 133, 142, 157, 158, 163, 165, 167, 168, 170, 174, 175, 187, 201, 204, 223, 229, 233, 237, 238}
-biz_rev = [
-    1,   2,   3,   4,   5,   6,   7,   8,  10,  12,  14,  15,
-    16,  17,  19,  20,  21,  22,  23,  24,  25,  27,  28,  29,
-    30,  31,  32,  34,  35,  36,  39,  40,  41,  42,  43,  44,
-    47,  48,  49,  50,  51,  52,  53,  54,  55,  56,  57,  58,
-    59,  61,  62,  63,  64,  65,  67,  68,  69,  71,  72,  73,
-    74,  75,  76,  77,  78,  79,  80,  81,  82,  83,  84,  85,
-    86,  87,  88,  90,  91,  92,  93,  94,  96, 100, 102, 103,
-    104, 106, 107, 108, 109, 111, 112, 113, 115, 116, 119, 120,
-    121,
-    122, 123, 124, 126, 127, 128, 129, 131, 132, 134, 135,
-    136, 137, 138, 139, 140, 141, 143, 144, 145, 146, 147,
-    148, 149, 150, 151, 152, 153, 154, 155, 156, 159, 160,
-    161, 162, 164, 166, 169, 171, 172, 173, 176, 177, 178,
-    179, 180, 181, 182, 183, 184, 185, 186, 188, 189, 190,
-    191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 202,
-    203, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214,
-    215, 216, 217, 218, 219, 220, 221, 222, 224, 225, 226,
-    227, 228, 230, 231, 232, 234, 235, 236, 239
-]
+biz_id = 1
 users = {1}
 for i in range(0, len(reviews)):
     if not reviews[i]['biz_id'] in dup_rev:
@@ -12049,10 +12031,10 @@ for i in range(0, len(reviews)):
             user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
                              13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
         users.add(user_id)
-        biz_id = biz_rev.index(reviews[i]['biz_id'])+1
         instances.append(Review(business_id=biz_id, user_id=user_id,
                          review_body=reviews[i]['review_body'], rating=reviews[i]['rating'], created_at=reviews[i]['created_at']))
-    if (i+1) % 3 == 0:
+    if not reviews[i]['biz_id'] in dup_rev and (i+1) % 3 == 0:
+        biz_id += 1
         users = {1}
 
 # hopefully this doesnt break
