@@ -291,7 +291,10 @@
     background: linear-gradient(90deg,#0006,#0000001a 55%);
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
+    height: 630px;
+    width: 100%;
+    z-index: -1;
 }
 
 .bg-img {
@@ -301,16 +304,61 @@
     opacity: 1;
     transition: 1s;
     width: 100%;
+    height: 630px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
 }
 
 .img1 {
     z-index: -1;
+    background-image: url("https://i.imgur.com/pQ50uP5.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .img2 {
     z-index: -2;
+    background-image: url("https://i.imgur.com/LLEGfPN.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .img3 {
     z-index: -3;
+    background-image: url("https://i.imgur.com/UOv3X1b.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-questions {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.homepage-buttons {
+    margin-left: 90px;
+}
+
+.homepage-button {
+    padding: 12px 32px;
+    border: none;
+    background-color: rgb(224,7,7);
+    color: white;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.mag-glass {
+    height: 24px;
+}
+
+.homepage-button-span {
+    padding-bottom: 3px;
+    margin-left: 5px;
 }

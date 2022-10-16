@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import search from '../../icons/search.svg';
 
 const HomeBanner = () => {
 
@@ -40,9 +41,39 @@ const HomeBanner = () => {
 
   return (
     <div className='homepage-banner-container'>
-      <img class="bg-img img1" src="https://i.imgur.com/pQ50uP5.jpg" />
-      <img class="bg-img img2" src="https://i.imgur.com/LLEGfPN.jpg" />
-      <img class="bg-img img3" src="https://i.imgur.com/UOv3X1b.jpg" />
+      <div className="bg-img img1">
+        <div className='homepage-buttons'>
+          <h1 className='homepage-questions'>
+            Meet your soy mate
+          </h1>
+          <button className='homepage-button sushi-button'>
+            <img src={search} className='mag-glass' />
+            <span className='homepage-button-span'>Japanese</span>
+          </button>
+        </div>
+      </div>
+      <div className="bg-img img2">
+        <div className='homepage-buttons'>
+          <h1 className='homepage-questions'>
+            Getting jjigae with it
+          </h1>
+          <button className='homepage-button sushi-button'>
+            <img src={search} className='mag-glass' />
+            <span className='homepage-button-span'>Korean</span>
+          </button>
+        </div>
+      </div>
+      <div className="bg-img img3">
+        <div className='homepage-buttons'>
+          <h1 className='homepage-questions'>
+            Un-phở-gettable meals
+          </h1>
+          <button className='homepage-button sushi-button'>
+            <img src={search} className='mag-glass' />
+            <span className='homepage-button-span'>Vietnamese</span>
+          </button>
+        </div>
+      </div>
     </div>
   )
 }
