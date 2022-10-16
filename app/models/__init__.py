@@ -2,8 +2,8 @@ from .db import db
 from .user import User
 from .business import Business
 from .review import Review
-from .type import Type
-from .transaction import Transaction
+from .business import Type
+from .business import Transaction
 from .image import Image
-from .business_type import BusinessType
-from .business_transaction import BusinessTransaction
+# from .business import business_types
+# from .business import business_transactions
