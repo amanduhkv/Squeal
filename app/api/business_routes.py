@@ -16,7 +16,7 @@ def get_all_businesses():
     businesses = Business.query.all()
     biz = [business.to_dict() for business in businesses]
     for b in biz:
-        avg_rating = Review.query(func.avg(Review.rating)).filter_by(business_id=biz_id).first()
+        avg_rating = Review.query(func.avg(Review.rating)).filter_by(business_id=b.id).first()
     b['avg_rating'] = avg_rating
     return jsonify({
         "Businesses": biz
