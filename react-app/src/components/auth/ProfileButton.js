@@ -3,7 +3,11 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import * as sessionActions from '../../store/session';
 import LogoutButton from "./LogoutButton";
-import userIcon from '../../icons/githubPurple.png'
+import userIcon from '../../icons/user-pig.png'
+import aboutPig from '../../icons/about-pig.png'
+import bizPig from '../../icons/biz-pig.png'
+import reviewPig from '../../icons/review-pig.png'
+import './ProfileButton.css'
 
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
@@ -30,15 +34,24 @@ function ProfileButton({ user }) {
 
   return (
     <>
-    <button className='profile-button' onClick={openMenu}>
+    <div className='profile-button' onClick={openMenu}>
       <img className='user-icon' src={userIcon} alt='user' />
-    </button>
+    </div>
       {showMenu && (
         <div className="profile-dropdown">
-          <div>About Me</div>
-          <div>Find Friends</div>
-          <div>Account Settings</div>
-          <div>
+          <div id='dropdown-text'>
+            <img src={aboutPig} width='25px'/>
+            About Me
+          </div>
+          <div id='dropdown-text'>
+            <img src={bizPig} width='30px' />
+            My Businesses
+          </div>
+          <div id='dropdown-text'>
+            <img src={reviewPig} width='30px' />
+            My Reviews
+          </div>
+          <div id='logout'>
             <LogoutButton />
           </div>
         </div>

@@ -8,7 +8,7 @@ const LogoutButton = () => {
         await dispatch(logout());
     };
 
-    return <button onClick={onLogout}>Logout</button>;
+    return <button id='dropdown-text' onClick={onLogout}>Log Out</button>;
 };
 
 export default LogoutButton;

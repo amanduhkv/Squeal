@@ -1,0 +1,28 @@
+
+
+#dropdown-text {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px;
+  color: rgb(45, 46, 47)
+}
+
+#logout {
+  background-color: white;
+}
+
+.profile-button {
+  background-color: red;
+}
+
+.profile-dropdown {
+  position: absolute;
+  background-color: white;
+
+  width: 226px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 65px;
+  border-radius: 3px;
+}
