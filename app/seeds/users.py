@@ -18,7 +18,7 @@ def seed_users():
                   password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                   )
-                  
+
     owner3 = User(first_name='Aijia',
                   last_name='Wang',
                   email='AijiaWang@user.io',
@@ -218,6 +218,14 @@ def seed_users():
                    profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 
                    )
+    owner28 = User(first_name='Kermit',
+                   last_name='Frog',
+                   email='KermitFrog@user.io',
+                   username='kermitfrog',
+                   password='password',
+                   profile_pic="https://images.unsplash.com/photo-1509512693283-8178ed23e04c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2VybWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+
+                   )
 
     db.session.add(owner1)
     db.session.add(owner2)
@@ -246,6 +254,7 @@ def seed_users():
     db.session.add(owner25)
     db.session.add(owner26)
     db.session.add(owner27)
+    db.session.add(owner28)
 
     db.session.commit()
 

@@ -4,6 +4,7 @@
 }
 
 .header-container {
+    position: absolute;
     margin: 0;
     padding: 24px 40px 0px;
     height: 106px;
