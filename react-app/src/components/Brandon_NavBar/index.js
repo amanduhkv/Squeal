@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import squealnLogo from '../../icons/squealnLogo.png';
 import squealnLogowht from '../../icons/squealnLogowht.png';
 import search from '../../icons/search.svg';
@@ -9,7 +10,7 @@ import LoginForm from '../auth/LoginForm';
 import SignUpForm from '../auth/SignUpForm';
 
 function NavBar(){
-    const sessionUser = null;
+    const sessionUser = useSelector(state => state.session.user);
     const url = useLocation().pathname;
     const [ query, setQuery ] = useState('');
     const [ location, setLocation ] = useState('');
@@ -18,6 +19,7 @@ function NavBar(){
     let sessionLinks;
 
     if (sessionUser) {
+        console.log('hereeee')
         sessionLinks = (<>
             <div className='user-icon-container'>
                 <img className='user-icon' src={userIcon} alt='user' />
@@ -73,7 +75,9 @@ function NavBar(){
                                 Write a Review
                             </button>
                         </NavLink>
+                        <div>
                         {sessionLinks}
+                        </div>
                     </div>
                 </div>
             </div>

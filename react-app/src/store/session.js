@@ -30,7 +30,7 @@ export const authenticate = () => async (dispatch) => {
 }
 
 export const login = (email, password) => async (dispatch) => {
-    const response = await fetch('/api/auth/login', {
+    const response = await fetch('/api/auth/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

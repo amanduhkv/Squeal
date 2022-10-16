@@ -55,9 +55,7 @@ const LoginForm = () => {
                                     <NavLink to="/signup">Sign up</NavLink>
                                 </h5>
                                 <p id="terms">By logging in, you agree to Squeal's Terms of Service and Privacy Policy.</p>
-                                <button id='demo-button'>Continue with DemoUser</button>
 
-                                <div id='lines'><span className='or'>OR</span></div>
                             </div>
                             <form id='login-form' onSubmit={onLogin}>
                                 <div>
@@ -65,6 +63,18 @@ const LoginForm = () => {
                                         <div key={ind}>{error}</div>
                                     ))}
                                 </div>
+                                <button
+                                  id='demo-button'
+                                  type='submit'
+                                  onClick={()=> {
+                                    setEmail('KermitFrog@user.io')
+                                    setPassword('password')
+                                  }}
+                                >
+                                    Continue with DemoUser
+                                </button>
+
+                                <div id='lines'><span className='or'>OR</span></div>
                                 <div>
                                     <input
                                         id='login-input'
