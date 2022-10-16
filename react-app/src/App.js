@@ -47,9 +47,12 @@ function App() {
                     <h1>My Home Page</h1>
                 </ProtectedRoute>
             </Switch> */}
-            <HomeBanner />
             <Brandon_NavBar />
-
+            <Switch>
+                <Route path='/' exact={true}>
+                    <HomeBanner />
+                </Route>
+            </Switch>
             <Footer />
         </BrowserRouter>
     );
