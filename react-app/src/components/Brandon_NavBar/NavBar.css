@@ -364,3 +364,54 @@
     padding-bottom: 3px;
     margin-left: 5px;
 }
+
+/********************* BOTTOM DROPDOWNS *********************/
+
+.header-bottom-portion-user {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 82%;
+    height: 58px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.header-bottom-portion-sl {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 86%;
+    height: 58px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.header-bottom-buttons {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: transparent;
+    border: none;
+    padding: 16px 16px 20px 16px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #0000;
+}
+
+.header-bottom-buttons:hover {
+    border-bottom: 4px solid rgb(224,7,7);
+}
+
+.chevron-svg {
+    fill: white;
+    margin-left: 3px;
+}
+
+.buttons-under-search {
+    display: flex;
+}
