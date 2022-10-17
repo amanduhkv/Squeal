@@ -32,7 +32,7 @@
 #logout {
   display: flex;
   border-top: 1px solid #ebebeb;
-  padding: 16px 8px 0 8px;
+  padding: 16px 8px 0 15px;
   margin-top: 16px;
 }
 
