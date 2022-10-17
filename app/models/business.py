@@ -69,7 +69,9 @@ class Business(db.Model):
             "price_range": self.price_range,
             "phone_number": self.phone_number,
             "start_time": self.start_time,
-            "end_time": self.end_time
+            "end_time": self.end_time,
+            # "types": self.types,
+            # "transactions": self.transactions
         }
 
 
@@ -88,7 +90,7 @@ class Transaction(db.Model):
     def to_dict(self):
         return {
             "id": self.id,
-            "business_id": self.business_id,
+            # "business_id": self.business_id,
             "transaction": self.transaction,
         }
 
