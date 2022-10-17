@@ -11,6 +11,7 @@ import { authenticate } from './store/session';
 import Brandon_NavBar from './components/Brandon_NavBar';
 import HomeBanner from './components/Brandon_NavBar/homeBanner';
 import Footer from './components/Footer';
+import CurrentUserBiz from './components/Biz/UserBiz';
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -51,6 +52,9 @@ function App() {
             <Switch>
                 <Route path='/' exact={true}>
                     <HomeBanner />
+                </Route>
+                <Route path='/current'>
+                    <CurrentUserBiz />
                 </Route>
             </Switch>
             <Footer />

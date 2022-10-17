@@ -21,7 +21,7 @@ function NavBar(){
     let sessionLinks;
 
     if (sessionUser) {
-        console.log('hereeee')
+        // console.log('hereeee')
         sessionLinks = (<>
             <div className='user-icon-container'>
                 <ProfileButton />
