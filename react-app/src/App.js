@@ -12,6 +12,7 @@ import Brandon_NavBar from './components/Brandon_NavBar';
 import HomeBanner from './components/Brandon_NavBar/homeBanner';
 import Footer from './components/Footer';
 import CurrentUserBiz from './components/Biz/UserBiz';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -54,13 +55,13 @@ function App() {
                     <HomeBanner />
                 </Route>
                 <Route path='/current'>
-                    <CurrentUserBiz />
+                    <ErrorPage />
                 </Route>
                 <Route path='/biz/current'>
-                    <CurrentUserBiz />
+                    <ErrorPage />
                 </Route>
                 <Route path='/reviews/current'>
-                    <CurrentUserBiz />
+                    <ErrorPage />
                 </Route>
             </Switch>
             <Footer />
