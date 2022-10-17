@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 // import LoginForm from './components/auth/LoginForm';
 // import SignUpForm from './components/auth/SignUpForm';
@@ -18,7 +18,6 @@ import UserPage from './components/User/UserPage';
 function App() {
     const [loaded, setLoaded] = useState(false);
     const dispatch = useDispatch();
-
     useEffect(() => {
         (async () => {
             await dispatch(authenticate());
