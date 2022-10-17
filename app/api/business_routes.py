@@ -8,6 +8,7 @@ from sqlalchemy import func
 
 business_routes = Blueprint('business', __name__)
 
+
 @business_routes.route('/')
 def get_all_businesses():
     """
@@ -16,8 +17,9 @@ def get_all_businesses():
     businesses = Business.query.all()
     biz = [business.to_dict() for business in businesses]
     for b in biz:
-        avg_rating = Review.query(func.avg(Review.rating)).filter_by(business_id=b.id).first()
-    b['avg_rating'] = avg_rating
+        query = db.session.query(func.round(func.avg(Review.rating) * 2)/2).filter_by(business_id=b['id']).first()
+        avg_rating = list(query)[0]
+        b['avg_rating'] = avg_rating
     return jsonify({
         "Businesses": biz
         })
@@ -55,7 +57,7 @@ def get_one_business(biz_id):
     business['avg_rating'] = avg_rating
     business['Business_Images'] = business_images.to_dict()
     business['Owner'] = owner.to_dict()
-
+    
     return jsonify({
         "Businesses": business
     })
