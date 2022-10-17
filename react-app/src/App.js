@@ -54,18 +54,22 @@ function App() {
             <Switch>
                 <Route exact path='/'>
                     <HomeBanner />
+                    <Footer />
                 </Route>
                 <Route path='/current'>
                     <UserPage />
+                    <Footer />
                 </Route>
                 <Route path='/biz/current'>
                     <ErrorPage />
+                    <Footer />
                 </Route>
                 <Route path='/reviews/current'>
                     <ErrorPage />
+                    <Footer />
                 </Route>
             </Switch>
-            <Footer />
+
         </BrowserRouter>
     );
 }
