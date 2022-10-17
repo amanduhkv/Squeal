@@ -1,6 +1,6 @@
 from flask import Blueprint, request
 from flask_login import current_user, login_user, logout_user, login_required
-from ..models import db, Image
+from ..models import db, Image, Review
 from ..forms.delete_review_img_form import DeleteReviewImgForm
 
 images_routes = Blueprint("images", __name__)
@@ -18,14 +18,21 @@ def delete_review_img(image_id):
     if form.validate_on_submit():
         review_img_to_delete = Image.query.get(image_id)
         user = current_user.to_dict()
-        if review_img_to_delete.user_id == user['id']:
-            review_img_to_delete.session.delete()
+
+        # FIND OWNER OF REVIEW IMG:
+        review_id = review_img_to_delete.to_dict()['review_id']
+        review = Review.query.get(review_id)
+        review_owner_id = review.to_dict()['user_id']
+
+
+        if review_owner_id == user['id']:
+            db.session.delete(review_img_to_delete)
 
             db.session.commit()
 
-            return { "message": "Successfully delete", "status_code": 200 }
-        else:
-            return { "message": "Forbidden", "status_code": 403 }
+            return { "message": "Successfully deleted", "status_code": 200 }
 
-    # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return { "message": "Review couldn't be found", "status_code": 404 }
+        else:
+            return { "message": "Forbidden", "status_code": 403 }, 403
+
+    return { "message": "Review couldn't be found", "status_code": 404 }, 404

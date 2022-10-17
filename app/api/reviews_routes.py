@@ -1,4 +1,4 @@
-from flask import Blueprint, redirect, request
+from flask import Blueprint, jsonify, redirect, request
 from ..models import db, User, Business, Review, Image
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.edit_review_form import EditReviewForm
@@ -15,8 +15,11 @@ reviews_routes = Blueprint("reviews", __name__)
 @login_required
 def user_reviews():
     user = current_user.to_dict()
-    _user_reviews = Review.query.filter(Review.user_id == user['id']).all()
-    return dict(_user_reviews)
+    reviews_query = Review.query.filter(Review.user_id == user['id']).all()
+    user_reviews = [review.to_dict() for review in reviews_query]
+    return jsonify({
+        "Reviews": user_reviews
+    })
 
 
 # 2. ADD A REVIEW --- THIS IS IN THE BIZ ROUTES
@@ -34,8 +37,8 @@ def update_review(review_id):
 
     if form.validate_on_submit():
         review_to_update = Review.query.get(review_id)
-
         user = current_user.to_dict()
+
         if review_to_update.user_id == user['id']:
             review_to_update.review_body = form.data['review_body']
             review_to_update.rating = form.data['rating']
@@ -43,11 +46,12 @@ def update_review(review_id):
             db.session.commit()
 
             return review_to_update.to_dict()
+
         else:
-            return { "message": "Forbidden", "status_code": 403 }
+            return { "message": "Forbidden", "status_code": 403 }, 403
 
     # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return { "message": "Review couldn't be found", "status_code": 404 }
+    return { "message": "Review couldn't be found", "status_code": 404 }, 404
 
 
 # 4. DELETE A REVIEW
@@ -62,18 +66,19 @@ def delete_review(review_id):
 
     if form.validate_on_submit():
         review_to_delete = Review.query.get(review_id)
-
         user = current_user.to_dict()
-        if review_to_delete.user_id == user['id']:
-            review_to_delete.session.delete()
+
+        if review_to_delete.to_dict()['user_id'] == user['id']:
+            db.session.delete(review_to_delete)
 
             db.session.commit()
 
-            return { "message": "Successfully delete", "status_code": 200 }
+            return { "message": "Successfully deleted", "status_code": 200 }
+
         else:
-            return { "message": "Forbidden", "status_code": 403 }
-    # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return { "message": "Review couldn't be found", "status_code": 404 }
+            return { "message": "Forbidden", "status_code": 403 }, 403
+
+    return { "message": "Review couldn't be found", "status_code": 404 }, 404
 
 
 # 5. ADD A REVIEW IMG
@@ -86,12 +91,12 @@ def add_review_img(review_id):
     form = AddReviewImgForm()
     form['csrf_token'].data = request.cookies['csrf_token']
     if form.validate_on_submit():
-
         review = Review.query.get(review_id)
-
         user = current_user.to_dict()
-        if review.user_id == user['id']:
-            biz_id = review['business_id']
+
+
+        if review.to_dict()['user_id'] == user['id']:
+            biz_id = review.to_dict()['business_id']
 
             review_img = Image(
                 review_id = review_id,
@@ -102,12 +107,12 @@ def add_review_img(review_id):
             db.session.add(review_img)
             db.session.commit()
 
-            return review_img.to_dict
-        else:
-            return { "message": "Forbidden", "status_code": 403 }
+            return review_img.to_dict()
 
-    # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return { "message": "Review couldn't be found", "status_code": 404 }
+        else:
+            return { "message": "Forbidden", "status_code": 403 }, 403
+
+    return { "message": "Review couldn't be found", "status_code": 404 }, 404
 
 
 # 6. DELETE A REVIEW IMG --- THIS IS IN THE IMAGES ROUTES
