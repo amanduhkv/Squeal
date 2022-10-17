@@ -1,14 +1,8 @@
-"""Create all tables
+"""migrate all data
 
-<<<<<<<< HEAD:migrations/versions/20221016_213656_all_data.py
-Revision ID: 1a64edf507f7
+Revision ID: 74be1017882a
 Revises: 
-Create Date: 2022-10-16 21:36:56.498327
-========
-Revision ID: b1a0fd0a9c7b
-Revises: 
-Create Date: 2022-10-17 11:39:40.062799
->>>>>>>> main:migrations/versions/20221017_113940_create_all_tables.py
+Create Date: 2022-10-17 14:09:14.625474
 
 """
 from alembic import op
@@ -16,11 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-<<<<<<<< HEAD:migrations/versions/20221016_213656_all_data.py
-revision = '1a64edf507f7'
-========
-revision = 'b1a0fd0a9c7b'
->>>>>>>> main:migrations/versions/20221017_113940_create_all_tables.py
+revision = '74be1017882a'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -47,6 +37,7 @@ def upgrade():
     sa.Column('first_name', sa.String(length=100), nullable=False),
     sa.Column('last_name', sa.String(length=100), nullable=False),
     sa.Column('profile_pic', sa.String(length=100), nullable=True),
+    sa.Column('zipcode', sa.String(length=100), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('email'),
     sa.UniqueConstraint('username')

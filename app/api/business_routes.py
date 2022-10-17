@@ -1,11 +1,12 @@
-from flask import Blueprint, jsonify, session, request,render_template
+from flask import Blueprint, jsonify, session, request, render_template
 from app.models import Business, Review, Image, User, Type, Transaction, db
 from app.forms import LoginForm
 from app.forms import SignUpForm
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.add_review_form import AddReviewForm
 from ..forms.add_business_form import AddBusinessForm
-from ..forms.add_business_img_form import AddBizImgForm
+# from ..forms.add_business_img_form import AddBizImgForm
+from ..forms.edit_business_form import EditBusinessForm
 from sqlalchemy import func
 
 business_routes = Blueprint('business', __name__)
@@ -39,7 +40,6 @@ def get_all_businesses():
     })
 
 
-
 # LOAD ALL BIZ REVIEWS
 @business_routes.route("/<int:biz_id>/reviews")
 def biz_reviews(biz_id):
@@ -60,9 +60,10 @@ def biz_reviews(biz_id):
 
     for biz_review in biz_reviews:
         biz_review['Business'] = curr_biz.to_dict()
-        biz_review['Review_Images'] = Image.query.filter(biz_review['id'] == Image.review_id).all()
+        biz_review['Review_Images'] = Image.query.filter(
+            biz_review['id'] == Image.review_id).all()
 
-    return jsonify({ "Reviews": biz_reviews })
+    return jsonify({"Reviews": biz_reviews})
 
 
 # ADD A REVIEW
@@ -138,11 +139,11 @@ def get_current_user_business():
     if len(all_businesses) > 0:
         for business in all_businesses:
             query = db.session.query(func.round(
-            func.avg(Review.rating) * 2)/2).filter_by(business_id=business['id']).first()
+                func.avg(Review.rating) * 2)/2).filter_by(business_id=business['id']).first()
             avg_rating = list(query)[0]
             business_images = Image.query.filter_by(business_id=business['id'])
             images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
-                  for img in business_images]
+                      for img in business_images]
 
             business['avg_rating'] = avg_rating
             business['Business_Images'] = images
@@ -224,10 +225,10 @@ def add_new_business():
 
     if form.validate_on_submit():
         # print(">>>>>>>>>>>> IVE BEEN VALIDATED")
-        
+
         type_list = []
         for alias in form.data['types']:
-            filtered = [i for i in all_types_list if i['alias']==alias][0]
+            filtered = [i for i in all_types_list if i['alias'] == alias][0]
             ty = (Type(type=filtered['title'], alias=alias))
             type_list.append(ty)
 
@@ -259,31 +260,73 @@ def add_new_business():
         db.session.add(business)
         db.session.commit()
         return business.to_dict()
-        
+
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 
 @business_routes.route("/<int:biz_id>/", methods=['PUT'])
 @login_required
-def edit_business_img(biz_id):
+def edit_business(biz_id):
     """
-    Edits a business
+    Edits an existing business
     """
     user = current_user.to_dict()
     user_id = user['id']
-    
-    business = Business.query.get(biz_id).to_dict()
-    
-    if not business:
+
+    form = EditBusinessForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    business_to_update = Business.query.get(biz_id)
+
+    print(">>>>>>>>>>>> BUSINESS TO UPDATE", business_to_update)
+    print(">>>>>>>>>>>> BUSINESS TO UPDATE TODICT", business_to_update.to_dict())
+
+    if not business_to_update:
         return jsonify({
             "message": "Business couldn't be found",
             "status_code": 404
         })
 
-    if user_id == delete_img_biz['owner_id']:
-        print(">>>>>>>>>>>> IVE BEEN VALIDATED")
-        db.session.delete(delete_image)
-        db.session.commit()
-        return { "message": "Successfully deleted", "status_code": 200 }
-    else: 
-        return { "message": "Forbidden", "status_code": 403 }, 403
+    if user_id != business_to_update.to_dict()['owner_id']:
+        return {"message": "Forbidden", "status_code": 403}, 403
+    if user_id == business_to_update.to_dict()['owner_id']:
+        if form.validate_on_submit():
+            print(">>>>>>>>>>>> IVE BEEN VALIDATED")
+            type_list = []
+            for alias in form.data['types']:
+                filtered = [
+                    i for i in all_types_list if i['alias'] == alias][0]
+                ty = (Type(type=filtered['title'], alias=alias))
+                type_list.append(ty)
+
+            transaction_list = []
+            for transaction in form.data['transactions']:
+                tr = (Transaction(transaction=transaction))
+                transaction_list.append(tr)
+
+            business_to_update.owner_id = user_id
+            business_to_update.name = form.data['name']
+            business_to_update.city = form.data['city']
+            business_to_update.state = form.data['state']
+            business_to_update.country = form.data['country']
+            business_to_update.address = form.data['address']
+            business_to_update.zipcode = form.data['zipcode']
+            business_to_update.price_range = form.data['price_range']
+            business_to_update.start_time = form.data['start_time']
+            business_to_update.end_time = form.data['end_time']
+            business_to_update.preview_img = form.data['preview_img']
+            business_to_update.phone_number = form.data['phone_number']
+            business_to_update.types = type_list
+            business_to_update.transactions = transaction_list
+            business_to_update.lat = '33.0'
+            business_to_update.lng = '64.0'
+            # ^placeholders
+
+            db.session.commit()
+
+            return business_to_update.to_dict()
+        else:
+            return {'errors': validation_errors_to_error_messages(form.errors)}, 400
+
+    else:
+        return {"message": "Forbidden", "status_code": 403}, 403
