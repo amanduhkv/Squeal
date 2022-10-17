@@ -1,13 +1,15 @@
 .gradient {
     background: linear-gradient(180deg,#000000b3,#0000004d 72.92%,#0000);
     width: 100%;
+    top: 0;
+    z-index: 10;
 }
 
 .header-container {
     position: absolute;
     margin: 0;
     padding: 24px 40px 0px;
-    height: 106px;
+    height: 130px;
     vertical-align: baseline;
 }
 
@@ -16,6 +18,7 @@
     top: 0;
     left: 0;
     right: 0;
+    border-bottom: solid 1px #ebebeb;
 }
 
 /******************** HEADER TOP PORTION ********************/
@@ -408,11 +411,96 @@
     border-bottom: 4px solid rgb(224,7,7);
 }
 
+.popular-button-blk,
+.dessert-button-blk,
+.ff-button-blk {
+    color: black;
+}
+
 .chevron-svg {
     fill: white;
     margin-left: 3px;
 }
 
+.chevron-svg-blk {
+    fill: black;
+    margin-left: 3px;
+}
+
 .buttons-under-search {
     display: flex;
+}
+
+.tooltip-under-search {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    display: grid;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: white;
+    opacity: 0;
+    filter: drop-shadow(0 4px 0.75rem rgb(164, 164, 164));
+    /* transition: opacity .4s; */
+}
+
+.tooltip-ff {
+    grid-template-columns: 1fr 2fr;
+    width: 320px;
+}
+
+.tooltip-under-search:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    z-index: 25;
+}
+
+.tooltip-under-search:hover .header-bottom-buttons {
+    border-bottom: 4px solid rgb(224,7,7);
+}
+
+.tooltip-icons {
+    height: 30px;
+    margin-right: 8px;
+}
+
+.dropdown-display-text {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dropdown-display-text:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.top-dropdown {
+    margin-top: 15px;
+}
+
+.bottom-dropdown {
+    margin-bottom: 15px;
+}
+
+.left-ffdropdown {
+    width: 135px;
+    margin-left: 10px;
+}
+
+.right-ffdropdown {
+    width: 155px;
+    margin-right: 10px;
 }

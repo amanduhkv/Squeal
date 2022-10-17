@@ -6,7 +6,7 @@ Revises:
 Create Date: 2022-10-16 21:36:56.498327
 ========
 Revision ID: b1a0fd0a9c7b
-Revises:
+Revises: 
 Create Date: 2022-10-17 11:39:40.062799
 >>>>>>>> main:migrations/versions/20221017_113940_create_all_tables.py
 

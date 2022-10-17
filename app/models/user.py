@@ -12,7 +12,9 @@ class User(db.Model, UserMixin):
     hashed_password = db.Column(db.String(225), nullable=False)
     first_name = db.Column(db.String(100), nullable=False)
     last_name = db.Column(db.String(100), nullable=False)
-    profile_pic = db.Column(db.String(100))
+    profile_pic = db.Column(db.String(100)),
+    zipcode = db.Column(db.String(100))
+
 
     business = db.relationship('Business', back_populates='owner')
     review = db.relationship('Review', back_populates='user')
@@ -35,5 +37,6 @@ class User(db.Model, UserMixin):
             'email': self.email,
             'first_name': self.first_name,
             'last_name': self.last_name,
-            'profile_pic': self.profile_pic,
+            'zipcode': self.zipcode,
+            'profile_pic': self.profile_pic
         }

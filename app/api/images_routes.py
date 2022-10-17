@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request
 from flask_login import current_user, login_user, logout_user, login_required
-from ..models import db, Image, Review
+from ..models import db, Image, Review, Business
 from ..forms.delete_review_img_form import DeleteReviewImgForm
 
 images_routes = Blueprint("images", __name__)
@@ -43,3 +43,29 @@ def delete_review_img(image_id):
             return { "message": "Forbidden", "status_code": 403 }, 403
 
     return { "message": "Review couldn't be found", "status_code": 404 }, 404
+
+
+@images_routes.route("/<int:img_id>/", methods=['DELETE'])
+@login_required
+def add_business_img(img_id):
+    """
+    DELETES a business image
+    """
+    user = current_user.to_dict()
+    user_id = user['id']
+    
+    delete_img = Image.query.get(img_id)
+    delete_img_biz = Business.query.get(delete_img.to_dict()['business_id']).to_dict()
+    
+    if not delete_img:
+        return jsonify({
+            "message": "Busines Image couldn't be found",
+            "status_code": 404
+        })
+
+    if user_id == delete_img_biz['owner_id']:
+        db.session.delete(delete_img)
+        db.session.commit()
+        return { "message": "Successfully deleted", "status_code": 200 }
+    else: 
+        return { "message": "Forbidden", "status_code": 403 }, 403
