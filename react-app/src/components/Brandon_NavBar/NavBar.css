@@ -1,6 +1,8 @@
 .gradient {
     background: linear-gradient(180deg,#000000b3,#0000004d 72.92%,#0000);
     width: 100%;
+    top: 0;
+    z-index: 10;
 }
 
 .header-container {
