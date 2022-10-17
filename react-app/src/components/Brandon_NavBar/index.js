@@ -10,6 +10,29 @@ import LoginForm from '../auth/LoginForm';
 import SignUpForm from '../auth/SignUpForm';
 import ProfileButton from '../auth/ProfileButton'
 import chevron from '../../icons/chevron.svg';
+import fastfood from '../../icons/fast-food.svg';
+import pizza from '../../icons/pizza.svg';
+import sandwich from '../../icons/sandwich.svg';
+import takeout from '../../icons/takeout.svg';
+import delivery from '../../icons/delivery.svg';
+import burger from '../../icons/burger.svg';
+import chicken from '../../icons/chicken.svg';
+import donut from '../../icons/donut.svg';
+import dessert from '../../icons/bakery.svg';
+import icecream from '../../icons/ice-cream.svg';
+import smoothie from '../../icons/juicebar.svg';
+import boba from '../../icons/bubble-tea.svg';
+import coffee from '../../icons/coffee.svg';
+import cafe from '../../icons/cafe.svg';
+import bbq from '../../icons/bbq.svg';
+import bakery from '../../icons/bake.svg';
+import japanese from '../../icons/japanese.svg';
+import chinese from '../../icons/chinese.svg';
+import korean from '../../icons/korean.svg';
+import viet from '../../icons/viet.svg';
+import med from '../../icons/med.svg';
+import taco from '../../icons/taco.svg';
+import italian from '../../icons/italian.svg';
 
 function NavBar(){
     const sessionUser = useSelector(state => state.session.user);
@@ -86,15 +109,99 @@ function NavBar(){
             <div className={sessionUser ? 'header-bottom-portion-user' : 'header-bottom-portion-sl'}>
                 <div className='empty-below-icon' />
                 <div className='buttons-under-search'>
-                    <button className='header-bottom-buttons fast-food-button'>
-                        Quick Meals <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
-                    </button>
-                    <button className='header-bottom-buttons dessert-button'>
-                        Dessert <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
-                    </button>
-                    <button className='header-bottom-buttons coffee-tea-button'>
-                        Coffee & Tea <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
-                    </button>
+                    <div className='tooltip-under-search'>
+                        <button className='header-bottom-buttons fast-food-button'>
+                            Quick Meals <svg width="24" height="24" className="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                        </button>
+                        <div className='tooltiptext tooltip-ff'>
+                            <button className='dropdown-display-text top-dropdown left-ffdropdown'>
+                                <img className='tooltip-icons' src={fastfood} alt='icon' />Fast Food
+                            </button>
+                            <button className='dropdown-display-text top-dropdown right-ffdropdown'>
+                                <img className='tooltip-icons' src={pizza} alt='icon' />Pizza
+                            </button>
+                            <button className='dropdown-display-text left-ffdropdown'>
+                                <img className='tooltip-icons' src={delivery} alt='icon' />Delivery
+                            </button>
+                            <button className='dropdown-display-text right-ffdropdown'>
+                                <img className='tooltip-icons' src={burger} alt='icon' />Burgers
+                            </button>
+                            <button className='dropdown-display-text left-ffdropdown'>
+                                <img className='tooltip-icons' src={sandwich} alt='icon' />Sandwiches
+                            </button>
+                            <button className='dropdown-display-text right-ffdropdown'>
+                                <img className='tooltip-icons' src={chicken} alt='icon' />Chicken Wings
+                            </button>
+                            <button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
+                                <img className='tooltip-icons' src={takeout} alt='icon' />Takeout
+                            </button>
+                            <button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
+                                <img className='tooltip-icons' src={donut} alt='icon' />Donuts
+                            </button>
+                        </div>
+                    </div>
+                    <div className='tooltip-under-search'>
+                        <button className='header-bottom-buttons dessert-button'>
+                            Dessert <svg width="24" height="24" className="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                        </button>
+                        <div className='tooltiptext tooltip-ff'>
+                            <button className='dropdown-display-text top-dropdown left-ffdropdown'>
+                                <img className='tooltip-icons' src={bakery} alt='icon' />Bakeries
+                            </button>
+                            <button className='dropdown-display-text top-dropdown right-ffdropdown'>
+                                <img className='tooltip-icons' src={boba} alt='icon' />Bubble Tea
+                            </button>
+                            <button className='dropdown-display-text left-ffdropdown'>
+                                <img className='tooltip-icons' src={dessert} alt='icon' />Desserts
+                            </button>
+                            <button className='dropdown-display-text right-ffdropdown'>
+                                <img className='tooltip-icons' src={coffee} alt='icon' />Coffee & Tea
+                            </button>
+                            <button className='dropdown-display-text left-ffdropdown'>
+                                <img className='tooltip-icons' src={icecream} alt='icon' />Ice Cream
+                            </button>
+                            <button className='dropdown-display-text right-ffdropdown'>
+                                <img className='tooltip-icons' src={donut} alt='icon' />Donuts
+                            </button>
+                            <button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
+                                <img className='tooltip-icons' src={smoothie} alt='icon' />Smoothies
+                            </button>
+                            <button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
+                                <img className='tooltip-icons' src={cafe} alt='icon' />Cafes
+                            </button>
+                        </div>
+                    </div>
+                    <div className='tooltip-under-search'>
+                        <button className='header-bottom-buttons coffee-tea-button'>
+                            Popular <svg width="24" height="24" className="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                        </button>
+                        <div className='tooltiptext tooltip-ff'>
+                            <button className='dropdown-display-text top-dropdown left-ffdropdown'>
+                                <img className='tooltip-icons' src={bbq} alt='icon' />Barbeque
+                            </button>
+                            <button className='dropdown-display-text top-dropdown right-ffdropdown'>
+                                <img className='tooltip-icons' src={korean} alt='icon' />Korean
+                            </button>
+                            <button className='dropdown-display-text left-ffdropdown'>
+                                <img className='tooltip-icons' src={chinese} alt='icon' />Chinese
+                            </button>
+                            <button className='dropdown-display-text right-ffdropdown'>
+                                <img className='tooltip-icons' src={taco} alt='icon' />Mexican
+                            </button>
+                            <button className='dropdown-display-text left-ffdropdown'>
+                                <img className='tooltip-icons' src={italian} alt='icon' />Italian
+                            </button>
+                            <button className='dropdown-display-text right-ffdropdown'>
+                                <img className='tooltip-icons' src={viet} alt='icon' />Vietnamese
+                            </button>
+                            <button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
+                                <img className='tooltip-icons' src={japanese} alt='icon' />Japanese
+                            </button>
+                            <button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
+                                <img className='tooltip-icons' src={med} alt='icon' />Mediterranean
+                            </button>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -103,3 +210,5 @@ function NavBar(){
 }
 
 export default NavBar;
+
+// <div className="tooltip"><img className="organizer-icon tooltip" src={userorganizer} alt='user' /><span className="tooltiptext tooltip-top">You are the{'\n'}organizer</span></div> : <span />
