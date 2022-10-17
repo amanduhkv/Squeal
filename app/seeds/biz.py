@@ -22,9 +22,15 @@ types_alias = [
 types = [
     { 'alias': 'bakeries', 'title': 'Bakeries' },
     { 'alias': 'bubbletea', 'title': 'Bubble Tea' },
+    { 'alias': 'cocktailbars', 'title': 'Cocktails' },
+    { 'alias': 'bars', 'title': 'Bars' },
+    { 'alias': 'brazilian', 'title': 'Brazilian' },
     { 'alias': 'coffee', 'title': 'Coffee & Tea' },
+    { 'alias': 'chickenshop', 'title': 'Chicken Shop' },
     { 'alias': 'desserts', 'title': 'Desserts' },
     { 'alias': 'donuts', 'title': 'Donuts' },
+    { 'alias': 'dimsum', 'title': 'Dim Sum' },
+    { 'alias': 'ethiopian', 'title': 'Ethiopian' },
     { 'alias': 'icecream', 'title': 'Ice Cream & Frozen Yogurt' },
     { 'alias': 'juicebars', 'title': 'Juice Bars & Smoothies' },
     { 'alias': 'bbq', 'title': 'Barbeque' },
@@ -34,22 +40,38 @@ types = [
     { 'alias': 'chicken_wings', 'title': 'Chicken Wings' },
     { 'alias': 'chinese', 'title': 'Chinese' },
     { 'alias': 'gluten_free', 'title': 'Gluten-Free' },
+    { 'alias': 'german', 'title': 'German' },
+    { 'alias': 'gastropubs', 'title': 'Gastropubs' },
+    { 'alias': 'french', 'title': 'French' },
     { 'alias': 'hotdogs', 'title': 'Fast Food' },
     { 'alias': 'indpak', 'title': 'Indian' },
+    { 'alias': 'latin', 'title': 'Latin' },
     { 'alias': 'italian', 'title': 'Italian' },
     { 'alias': 'japanese', 'title': 'Japanese' },
     { 'alias': 'korean', 'title': 'Korean' },
+    { 'alias': 'newamerican', 'title': 'American (New)' },
     { 'alias': 'mediterranean', 'title': 'Mediterranean' },
     { 'alias': 'mexican', 'title': 'Mexican' },
     { 'alias': 'pizza', 'title': 'Pizza' },
+    { 'alias': 'ramen', 'title': 'Ramen' },
+    { 'alias': 'noodles', 'title': 'Noodles' },
+    { 'alias': 'raw_food', 'title': 'Raw Food' },
     { 'alias': 'salad', 'title': 'Salad' },
     { 'alias': 'sandwiches', 'title': 'Sandwiches' },
+    { 'alias': 'soulfood', 'title': 'Soul Food' },
+    { 'alias': 'soup', 'title': 'Soup' },
     { 'alias': 'seafood', 'title': 'Seafood' },
     { 'alias': 'steak', 'title': 'Steakhouses' },
     { 'alias': 'sushi', 'title': 'Sushi Bars' },
+    { 'alias': 'tacos', 'title': 'Tacos' },
+    { 'alias': 'tradamerican', 'title': 'American (Traditional)' },
+    { 'alias': 'taiwanese', 'title': 'Taiwanese' },
     { 'alias': 'thai', 'title': 'Thai' },
+    { 'alias': 'tapasmallplates', 'title': 'Tapas/Small Plates' },
     { 'alias': 'vegetarian', 'title': 'Vegetarian' },
+    { 'alias': 'vegan', 'title': 'Vegan' },
     { 'alias': 'vietnamese', 'title': 'Vietnamese' },
+    {'alias': 'waffles', 'title': 'Waffles' },
 ]
 
 cities = ['Los Angeles', 'San Jose', 'Oakland', 'San Francisco', 'San Diego', 'Austin', 'Dallas', 'Seattle', 'Denver', 'Chicago', 'NYC']
@@ -889,7 +911,11 @@ bizzies = [
         'price': '$',
         'phone': '+12139735095',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/_nXRruiD7InYJMWFBlx09A/o.jpg',
+<<<<<<< HEAD
+        'categories': ['salad', 'hotdogs'],
+=======
         'categories': ['salad', 'hotdogs', 'wraps'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/_nXRruiD7InYJMWFBlx09A/o.jpg',
@@ -947,7 +973,11 @@ bizzies = [
         'price': '$$',
         'phone': '+13239129230',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/W6wouvpHpHpZR6Ma87Oycg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['indpak'],
+=======
         'categories': ['indpak', 'halal', 'buffets'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/W6wouvpHpHpZR6Ma87Oycg/o.jpg',
@@ -1266,7 +1296,11 @@ bizzies = [
         'price': '$$',
         'phone': '+12137481773',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/_XRM04RXlzNcj25F5bvpNQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['mexican', 'seafood'],
+=======
         'categories': ['mexican', 'peruvian', 'seafood'],
+>>>>>>> main
         'transactions': ['delivery', 'pickup'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/_XRM04RXlzNcj25F5bvpNQ/o.jpg',
@@ -1411,7 +1445,11 @@ bizzies = [
         'price': '$$',
         'phone': '+12134838050',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/ToD4kygUCYvdcR0GmiAgJQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['sandwiches'],
+=======
         'categories': ['delis', 'sandwiches'],
+>>>>>>> main
         'transactions': ['delivery', 'pickup'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/ToD4kygUCYvdcR0GmiAgJQ/o.jpg',
@@ -1531,7 +1569,11 @@ bizzies = [
         'price': '$$',
         'phone': '+13239346838',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/GWm8ksNnbrK2XmzxNaEdqQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['steak', 'seafood'],
+=======
         'categories': ['argentine', 'steak', 'seafood'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/GWm8ksNnbrK2XmzxNaEdqQ/o.jpg',
@@ -1560,7 +1602,11 @@ bizzies = [
         'price': '$$$',
         'phone': '+13236550891',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/zfDw1OksJEHY-Zi18RYKAg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['steak'],
+=======
         'categories': ['argentine', 'steak'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/zfDw1OksJEHY-Zi18RYKAg/o.jpg',
@@ -1734,7 +1780,11 @@ bizzies = [
         'price': '$$',
         'phone': '+13238255381',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/ht1YCHqrpeQ_DxV5hX_KaQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['breakfast_brunch', 'vegetarian'],
+=======
         'categories': ['breakfast_brunch', 'vegetarian', 'beer_and_wine'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/ht1YCHqrpeQ_DxV5hX_KaQ/o.jpg',
@@ -1850,7 +1900,11 @@ bizzies = [
         'price': '$',
         'phone': '+14082583529',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/QDjFZWIqoF16igCnvUPwdw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['bakeries', 'donuts'],
+=======
         'categories': ['bakeries', 'donuts', 'cupcakes'],
+>>>>>>> main
         'transactions': [],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/QDjFZWIqoF16igCnvUPwdw/o.jpg',
@@ -1908,7 +1962,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082759999',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['bubbletea', 'coffee'],
+=======
         'categories': ['bubbletea', 'gelato', 'coffee'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg',
@@ -1966,7 +2024,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082759999',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['bubbletea', 'coffee'],
+=======
         'categories': ['bubbletea', 'gelato', 'coffee'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg',
@@ -2024,7 +2086,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082684555',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/Juxg8u7rF2tbbJMT_WyLag/o.jpg',
+<<<<<<< HEAD
+        'categories': ['bakeries', 'desserts'],
+=======
         'categories': ['bakeries', 'desserts', 'cupcakes'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/Juxg8u7rF2tbbJMT_WyLag/o.jpg',
@@ -2082,7 +2148,11 @@ bizzies = [
         'price': '$',
         'phone': '+14082583529',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/QDjFZWIqoF16igCnvUPwdw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['bakeries', 'donuts'],
+=======
         'categories': ['bakeries', 'donuts', 'cupcakes'],
+>>>>>>> main
         'transactions': [],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/QDjFZWIqoF16igCnvUPwdw/o.jpg',
@@ -2169,7 +2239,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14086068664',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/5dLilrC0Iu9eo3hOuHN7Zw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['donuts', 'juicebars'],
+=======
         'categories': ['donuts', 'gelato', 'juicebars'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/5dLilrC0Iu9eo3hOuHN7Zw/o.jpg',
@@ -2227,7 +2301,11 @@ bizzies = [
         'price': '$$',
         'phone': '+16692343095',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/n2flHH6CC6OVTNULFDLLDQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['korean', 'bbq'],
+=======
         'categories': ['korean', 'hotpot', 'bbq'],
+>>>>>>> main
         'transactions': ['pickup'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/n2flHH6CC6OVTNULFDLLDQ/o.jpg',
@@ -2486,7 +2564,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14086496741',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/eXg0Lo6O-3co2BERIPBJlw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['seafood', 'chicken_wings'],
+=======
         'categories': ['cajun', 'seafood', 'chicken_wings'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/eXg0Lo6O-3co2BERIPBJlw/o.jpg',
@@ -2515,7 +2597,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082932268',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/j9-Bgo70cTxAZ5lQ2JLO2w/o.jpg',
+<<<<<<< HEAD
+        'categories': ['chinese', 'thai'],
+=======
         'categories': ['burmese', 'chinese', 'thai'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/j9-Bgo70cTxAZ5lQ2JLO2w/o.jpg',
@@ -2660,7 +2746,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082947886',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/9oY9kB9GMCsd7dGWB_ttfg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['hotdogs'],
+=======
         'categories': ['mideastern', 'falafel', 'hotdogs'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/9oY9kB9GMCsd7dGWB_ttfg/o.jpg',
@@ -2689,7 +2779,11 @@ bizzies = [
         'price': '$$',
         'phone': '+16692427956',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/oFTEmX487cZkynG796Skdg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['indpak'],
+=======
         'categories': ['indpak', 'halal'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/oFTEmX487cZkynG796Skdg/o.jpg',
@@ -2747,7 +2841,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082515647',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/oufwnq30P5CeVYoLhoKbew/o.jpg',
+<<<<<<< HEAD
+        'categories': ['italian'],
+=======
         'categories': ['delis', 'italian', 'beerbar'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/oufwnq30P5CeVYoLhoKbew/o.jpg',
@@ -2863,7 +2961,11 @@ bizzies = [
         'price': '$$',
         'phone': '+16692343095',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/n2flHH6CC6OVTNULFDLLDQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['korean',  'bbq'],
+=======
         'categories': ['korean', 'hotpot', 'bbq'],
+>>>>>>> main
         'transactions': ['pickup'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/n2flHH6CC6OVTNULFDLLDQ/o.jpg',
@@ -2919,7 +3021,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082947886',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/9oY9kB9GMCsd7dGWB_ttfg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['hotdogs'],
+=======
         'categories': ['mideastern', 'falafel', 'hotdogs'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/9oY9kB9GMCsd7dGWB_ttfg/o.jpg',
@@ -2948,7 +3054,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082891452',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/oz6rQqG6fZc9wi5gsddzOA/o.jpg',
+<<<<<<< HEAD
+        'categories': ['mediterranean'],
+=======
         'categories': ['greek', 'mediterranean'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/oz6rQqG6fZc9wi5gsddzOA/o.jpg',
@@ -3151,7 +3261,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14082989370',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/VYiF73PQgmiDGnY1smmxZw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['sandwiches'],
+=======
         'categories': ['sandwiches', 'delis'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/VYiF73PQgmiDGnY1smmxZw/o.jpg',
@@ -3209,7 +3323,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14085326147',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/pLF4cC32yHOTNxsEfl4BAw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['seafood'],
+=======
         'categories': ['cajun', 'seafood'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/pLF4cC32yHOTNxsEfl4BAw/o.jpg',
@@ -3238,7 +3356,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14086496741',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/eXg0Lo6O-3co2BERIPBJlw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['seafood', 'chicken_wings'],
+=======
         'categories': ['cajun', 'seafood', 'chicken_wings'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/eXg0Lo6O-3co2BERIPBJlw/o.jpg',
@@ -3789,7 +3911,11 @@ bizzies = [
         'price': '$',
         'phone': '+15108398748',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/rek6OIt6Jbt1hIrKnQliFw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['donuts', 'vietnamese'],
+=======
         'categories': ['donuts', 'gelato', 'vietnamese'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/rek6OIt6Jbt1hIrKnQliFw/o.jpg',
@@ -3876,7 +4002,11 @@ bizzies = [
         'price': '$',
         'phone': '+15104791672',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/eHI6taQ1ALYgOjh4vEf6Ng/o.jpg',
+<<<<<<< HEAD
+        'categories': ['icecream', 'desserts'],
+=======
         'categories': ['icecream', 'desserts', 'shavedice'],
+>>>>>>> main
         'transactions': ['delivery', 'pickup'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/eHI6taQ1ALYgOjh4vEf6Ng/o.jpg',
@@ -3992,7 +4122,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15104447658',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/krIokJ-WUcFXSER1QBgXIw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['korean', 'bbq'],
+=======
         'categories': ['korean', 'bbq', 'hotpot'],
+>>>>>>> main
         'transactions': ['pickup', 'restaurant_reservation', 'delivery'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/krIokJ-WUcFXSER1QBgXIw/o.jpg',
@@ -4137,7 +4271,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15108911830',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/I6nxC_Q99RT565ihkGFRFg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['cafes', 'breakfast_brunch'],
+=======
         'categories': ['bike_repair_maintenance', 'cafes', 'breakfast_brunch'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/I6nxC_Q99RT565ihkGFRFg/o.jpg',
@@ -4427,7 +4565,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15102388883',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/0B9tjZ8TLEctNPoLr2CA-g/o.jpg',
+<<<<<<< HEAD
+        'categories': ['indpak'],
+=======
         'categories': ['pakistani', 'indpak', 'halal'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/0B9tjZ8TLEctNPoLr2CA-g/o.jpg',
@@ -4456,7 +4598,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15102509696',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/pN7g4cBXXiMktbNbBv1w2Q/o.jpg',
+<<<<<<< HEAD
+        'categories': ['indpak'],
+=======
         'categories': ['indpak', 'himalayan'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/pN7g4cBXXiMktbNbBv1w2Q/o.jpg',
@@ -4514,7 +4660,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15107887890',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/VMTMYgW0Kqc7okc9HPz6ZQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['italian', 'cocktailbars'],
+=======
         'categories': ['italian', 'cocktailbars', 'wine_bars'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/VMTMYgW0Kqc7okc9HPz6ZQ/o.jpg',
@@ -4630,7 +4780,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15104447658',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/krIokJ-WUcFXSER1QBgXIw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['korean', 'bbq'],
+=======
         'categories': ['korean', 'bbq', 'hotpot'],
+>>>>>>> main
         'transactions': ['restaurant_reservation', 'pickup', 'delivery'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/krIokJ-WUcFXSER1QBgXIw/o.jpg',
@@ -4659,7 +4813,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15105971303',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/zZs-nmJXFfIm2CRJFrpFiw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['mediterranean'],
+=======
         'categories': ['mediterranean', 'lebanese'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/zZs-nmJXFfIm2CRJFrpFiw/o.jpg',
@@ -4688,7 +4846,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15102510329',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/VlJ0xziaXK_vu67ryJ4OAA/o.jpg',
+<<<<<<< HEAD
+        'categories': ['bars', 'mediterranean'],
+=======
         'categories': ['bars', 'mediterranean', 'spanish'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/VlJ0xziaXK_vu67ryJ4OAA/o.jpg',
@@ -4717,7 +4879,11 @@ bizzies = [
         'price': '$',
         'phone': '+15105351206',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/bLvn1UlTwMg1sfl3C1b_HA/o.jpg',
+<<<<<<< HEAD
+        'categories': ['tacos'],
+=======
         'categories': ['foodtrucks', 'tacos'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/bLvn1UlTwMg1sfl3C1b_HA/o.jpg',
@@ -4804,7 +4970,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15106556385',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/Wb0SdHS4sW6w_FJyPk5dTg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['pizza'],
+=======
         'categories': ['pizza', 'comfortfood'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media3.fl.yelpcdn.com/bphoto/Wb0SdHS4sW6w_FJyPk5dTg/o.jpg',
@@ -4862,7 +5032,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15108390000',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/5KDrb-5QZ_dqfcXoZCVwLg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['salad'],
+=======
         'categories': ['asianfusion', 'salad'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/5KDrb-5QZ_dqfcXoZCVwLg/o.jpg',
@@ -5007,7 +5181,11 @@ bizzies = [
         'price': '$$$',
         'phone': '+14158854605',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/HLrjaMoAgYSac0vx71YpCA/o.jpg',
+<<<<<<< HEAD
+        'categories': ['tradamerican', 'steak'],
+=======
         'categories': ['tradamerican', 'steak', 'wine_bars'],
+>>>>>>> main
         'transactions': [],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/HLrjaMoAgYSac0vx71YpCA/o.jpg',
@@ -5152,7 +5330,11 @@ bizzies = [
         'price': '$$',
         'phone': '+15102388819',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/sAclWPVcRqkoQTXUlnjZXw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['thai'],
+=======
         'categories': ['thai', 'laotian'],
+>>>>>>> main
         'transactions': ['delivery', 'pickup'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/sAclWPVcRqkoQTXUlnjZXw/o.jpg',
@@ -5297,7 +5479,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14154401700',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/bSlfEG1tlBtL6_n2_gIxjg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['bakeries'],
+=======
         'categories': ['bakeries', 'cakeshop', 'macarons'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/bSlfEG1tlBtL6_n2_gIxjg/o.jpg',
@@ -5355,7 +5541,11 @@ bizzies = [
         'price': '$',
         'phone': '+14153468383',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/qnsiyxylkTv5_Dcp_bi6Xg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['icecream', 'bubbletea'],
+=======
         'categories': ['icecream', 'creperies', 'bubbletea'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/qnsiyxylkTv5_Dcp_bi6Xg/o.jpg',
@@ -5413,7 +5603,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14157963633',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/gyIGiApFYGt_paOKgfbhxQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['desserts', 'coffee'],
+=======
         'categories': ['desserts', 'coffee', 'shavedice'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/gyIGiApFYGt_paOKgfbhxQ/o.jpg',
@@ -5442,7 +5636,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14156645574',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/iQLrkk1vA1k1wfWXgk2xWQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['coffee'],
+=======
         'categories': ['coffee', 'beer_and_wine', 'gourmet'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/iQLrkk1vA1k1wfWXgk2xWQ/o.jpg',
@@ -5616,7 +5814,11 @@ bizzies = [
         'price': '$',
         'phone': '+14156482300',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/f4lzrsfJLSd4CW1-LWmO2w/o.jpg',
+<<<<<<< HEAD
+        'categories': ['icecream'],
+=======
         'categories': ['icecream', 'customcakes'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/f4lzrsfJLSd4CW1-LWmO2w/o.jpg',
@@ -5674,7 +5876,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14159631713',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/tCfiqhwdx7x7LYQIUQky0A/o.jpg',
+<<<<<<< HEAD
+        'categories': ['tradamerican', 'bbq'],
+=======
         'categories': ['divebars', 'tradamerican', 'bbq'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/tCfiqhwdx7x7LYQIUQky0A/o.jpg',
@@ -5732,7 +5938,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14153458100',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/VJ865E7ULQWSNjKhNG57VQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['breakfast_brunch'],
+=======
         'categories': ['breakfast_brunch', 'southern', 'cajun'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/VJ865E7ULQWSNjKhNG57VQ/o.jpg',
@@ -5790,7 +6000,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14156559542',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/gccHe5ofFMpNyh8vmS0VSw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['french', 'burgers'],
+=======
         'categories': ['french', 'burgers', 'creperies'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/gccHe5ofFMpNyh8vmS0VSw/o.jpg',
@@ -5819,7 +6033,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14156813061',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['juicebars'],
+=======
         'categories': ['gelato', 'acaibowls', 'juicebars'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
@@ -5848,7 +6066,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14155432355',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/G05B7mvYPHBpGu1wP1NK_Q/o.jpg',
+<<<<<<< HEAD
+        'categories': ['cafes', 'tradamerican'],
+=======
         'categories': ['asianfusion', 'cafes', 'tradamerican'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/G05B7mvYPHBpGu1wP1NK_Q/o.jpg',
@@ -5993,7 +6215,11 @@ bizzies = [
         'price': '$',
         'phone': '+14153972688',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/H-6n1U4Z6f5MmT9rQPdOaA/o.jpg',
+<<<<<<< HEAD
+        'categories': ['bakeries', 'dimsum'],
+=======
         'categories': ['bakeries', 'dimsum', 'cantonese'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/H-6n1U4Z6f5MmT9rQPdOaA/o.jpg',
@@ -6056,7 +6282,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14156735637',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/Ltb4mT3eSOvKwKQ9Cc4vVw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['vietnamese', 'hotdogs'],
+=======
         'categories': ['vietnamese', 'kebab', 'hotdogs'],
+>>>>>>> main
         'transactions': ['delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/Ltb4mT3eSOvKwKQ9Cc4vVw/o.jpg',
@@ -6143,7 +6373,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14153481234',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/_nJ2VTeTZe5-gePr8PXTxg/o.jpg',
+<<<<<<< HEAD
+        'categories': ['indpak'],
+=======
         'categories': ['indpak', 'fooddeliveryservices', 'catering'],
+>>>>>>> main
         'transactions': ['restaurant_reservation', 'pickup', 'delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/_nJ2VTeTZe5-gePr8PXTxg/o.jpg',
@@ -6172,7 +6406,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14156472222',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/phc7I0SsJJFr1clrlh6Bhw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['indpak'],
+=======
         'categories': ['himalayan', 'indpak', 'catering'],
+>>>>>>> main
         'transactions': ['restaurant_reservation', 'pickup', 'delivery'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/phc7I0SsJJFr1clrlh6Bhw/o.jpg',
@@ -6288,7 +6526,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14156785767',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/-1BWnyjrsDmTmXH_3wZl_w/o.jpg',
+<<<<<<< HEAD
+        'categories': ['sushi', 'vegan'],
+=======
         'categories': ['sushi', 'vegan', 'izakaya'],
+>>>>>>> main
         'transactions': ['restaurant_reservation'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/-1BWnyjrsDmTmXH_3wZl_w/o.jpg',
@@ -6404,7 +6646,11 @@ bizzies = [
         'price': '$$$',
         'phone': '+14159810983',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/FTQfPJubJEtYeyHqwAsVKw/o.jpg',
+<<<<<<< HEAD
+        'categories': ['mediterranean'],
+=======
         'categories': ['greek', 'mediterranean'],
+>>>>>>> main
         'transactions': ['pickup', 'delivery'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/FTQfPJubJEtYeyHqwAsVKw/o.jpg',
@@ -6607,7 +6853,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14156386361',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/RJMZfygsa2NiYFM2wPzT-w/o.jpg',
+<<<<<<< HEAD
+        'categories': ['sandwiches'],
+=======
         'categories': ['sandwiches', 'delis', 'beer_and_wine'],
+>>>>>>> main
         'transactions': ['delivery', 'pickup'],
         'photos': [
             'https://s3-media1.fl.yelpcdn.com/bphoto/RJMZfygsa2NiYFM2wPzT-w/o.jpg',
@@ -6665,7 +6915,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14159692010',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/by8Hh63BLPv_HUqRUdsp_w/o.jpg',
+<<<<<<< HEAD
+        'categories': ['seafood', 'cocktailbars'],
+=======
         'categories': ['seafood', 'wine_bars', 'cocktailbars'],
+>>>>>>> main
         'transactions': ['restaurant_reservation'],
         'photos': [
             'https://s3-media2.fl.yelpcdn.com/bphoto/by8Hh63BLPv_HUqRUdsp_w/o.jpg',
@@ -6694,7 +6948,11 @@ bizzies = [
         'price': '$$$',
         'phone': '+14158854605',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/HLrjaMoAgYSac0vx71YpCA/o.jpg',
+<<<<<<< HEAD
+        'categories': ['tradamerican', 'steak'],
+=======
         'categories': ['tradamerican', 'steak', 'wine_bars'],
+>>>>>>> main
         'transactions': [],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/HLrjaMoAgYSac0vx71YpCA/o.jpg',
@@ -6752,7 +7010,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14153917117',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/Kozd3NJMSaT6S3J2kYAc1g/o.jpg',
+<<<<<<< HEAD
+        'categories': ['seafood', 'raw_food'],
+=======
         'categories': ['seafood', 'seafoodmarkets', 'raw_food'],
+>>>>>>> main
         'transactions': ['pickup'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/Kozd3NJMSaT6S3J2kYAc1g/o.jpg',
@@ -6810,7 +7072,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14156785767',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/-1BWnyjrsDmTmXH_3wZl_w/o.jpg',
+<<<<<<< HEAD
+        'categories': ['sushi', 'vegan' ],
+=======
         'categories': ['sushi', 'vegan', 'izakaya'],
+>>>>>>> main
         'transactions': ['restaurant_reservation'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/-1BWnyjrsDmTmXH_3wZl_w/o.jpg',
@@ -6897,7 +7163,11 @@ bizzies = [
         'price': '$$',
         'phone': '+14158142920',
         'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/kUlEaPpv0JGlHG_nrPr7wQ/o.jpg',
+<<<<<<< HEAD
+        'categories': ['thai'],
+=======
         'categories': ['thai', 'comfortfood'],
+>>>>>>> main
         'transactions': ['pickup', 'restaurant_reservation', 'delivery'],
         'photos': [
             'https://s3-media4.fl.yelpcdn.com/bphoto/kUlEaPpv0JGlHG_nrPr7wQ/o.jpg',
@@ -11953,13 +12223,33 @@ reviews = [
 
 instances = []
 
-for type in types:
-    instances.append(Type(type=type['title'], alias=type['alias']))
+type_dict = {}
 
+for type in types:
+    ty = (Type(type=type['title'], alias=type['alias']))
+    instances.append(ty)
+    type_dict[type['alias']] = ty
+
+<<<<<<< HEAD
+delivery = Transaction(transaction='delivery')
+pickup = Transaction(transaction='pickup')
+restaurant_reservation = Transaction(transaction='restaurant_reservation')
+
+instances.append(delivery)
+instances.append(pickup)
+instances.append(restaurant_reservation)
+
+transaction_dict = {
+  'delivery': delivery,
+  'pickup': pickup,
+  'restaurant_reservation': restaurant_reservation
+}
+=======
 instances.append(Transaction(transaction='delivery'))
 instances.append(Transaction(transaction='pickup'))
 instances.append(Transaction(transaction='restaurant_reservation'))
 
+>>>>>>> main
 
 dup_biz = {8,  10,  12,  17,  25,  32,  36,  37,  44, 45,  59,  65,  69,  88,  94,  96,  97,  98, 100, 104, 109, 113,
            116, 117, 124, 129, 132, 141, 156, 157, 162, 164, 166, 167, 169, 173, 174, 186, 200, 203, 222, 228, 232, 236, 237}
@@ -11984,8 +12274,13 @@ for i in range(0, len(bizzies)):
         url = bizzies[i]['url']
         start_time = bizzies[i]['hours']['start']
         end_time = bizzies[i]['hours']['end']
+<<<<<<< HEAD
+        transactions = [transaction_dict[t] for t in bizzies[i]['transactions']]
+        types = [type_dict[t] for t in bizzies[i]['categories']]
+=======
         transactions = [Transaction(transaction=t) for t in bizzies[i]['transactions']]
         types = [Type(type=t) for t in bizzies[i]['categories']]
+>>>>>>> main
 
         instances.append(Business(name=name,
                                   owner_id=1,
