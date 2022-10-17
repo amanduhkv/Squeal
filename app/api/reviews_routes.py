@@ -17,9 +17,14 @@ def user_reviews():
     user = current_user.to_dict()
     reviews_query = Review.query.filter(Review.user_id == user['id']).all()
     user_reviews = [review.to_dict() for review in reviews_query]
-    return jsonify({
-        "Reviews": user_reviews
-    })
+
+    for user_review in user_reviews:
+        review_biz = Business.query.filter(user_review['business_id'] == Business.id).first()
+        print("REVIEW", user_review)
+        user_review['Business'] = review_biz.to_dict()
+        user_review['Review_Images'] = Image.query.filter(user_review['id'] == Image.review_id).all()
+
+    return jsonify({ "Reviews": user_reviews })
 
 
 # 2. ADD A REVIEW --- THIS IS IN THE BIZ ROUTES
