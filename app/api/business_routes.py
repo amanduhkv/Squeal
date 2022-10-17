@@ -334,3 +334,105 @@ def edit_business(biz_id):
 
     else:
         return {"message": "Forbidden", "status_code": 403}, 403
+
+# DELETE BIZ
+@business_routes.route("/<int:biz_id>/", methods=['DELETE'])
+@login_required
+def delete_biz(biz_id):
+    """
+    Deletes a business
+    """
+    form = DeleteBusinessForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    biz_to_delete = Business.query.get(biz_id)
+    if not biz_to_delete:
+        return jsonify({
+            "message": "Business couldn't be found",
+            "status_code": 404
+        }), 404
+
+    if form.validate_on_submit():
+        user = current_user.to_dict()
+
+        if biz_to_delete.to_dict()['owner_id'] == user['id']:
+            db.session.delete(biz_to_delete)
+
+            db.session.commit()
+
+            return { "message": "Successfully deleted", "status_code": 200 }
+
+        else:
+            return { "message": "Forbidden", "status_code": 403 }, 403
+
+
+
+
+# -------------------- REVIEWS STUFF -------------------- #
+
+# LOAD ALL BIZ REVIEWS BY BIZ ID
+@business_routes.route("/<int:biz_id>/reviews")
+def biz_reviews(biz_id):
+    """
+    Gets all business reviews
+    """
+
+    biz = Business.query.get(biz_id)
+    if not biz:
+        return jsonify({
+            "message": "Business couldn't be found",
+            "status_code": 404
+        }), 404
+
+    reviews_query = Review.query.filter(Business.id == biz_id).all()
+    biz_reviews = [biz.to_dict() for biz in reviews_query]
+    curr_biz = Business.query.filter(Business.id == biz_id).first()
+
+    for biz_review in biz_reviews:
+        biz_review['Business'] = curr_biz.to_dict()
+        biz_review['Review_Images'] = Image.query.filter(biz_review['id'] == Image.review_id).all()
+
+    return jsonify({ "Reviews": biz_reviews })
+
+
+# ADD A REVIEW
+@business_routes.route("/<int:biz_id>/reviews", methods=['POST'])
+@login_required
+def add_review(biz_id):
+    """
+    Creates a new review
+    """
+    form = AddReviewForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    biz = Business.query.get(biz_id)
+    if not biz:
+        return jsonify({
+            "message": "Business couldn't be found",
+            "status_code": 404
+        }), 404
+
+    user = current_user.to_dict()
+
+    reviews_query = Review.query.filter(Business.id == biz_id).all()
+    biz_reviews = [biz.to_dict() for biz in reviews_query]
+    for biz_review in biz_reviews:
+        if biz_review['user_id'] == user['id']:
+            return jsonify({
+                "message": "User already has a review for this business",
+                "status_code": 403
+        }), 403
+
+    if form.validate_on_submit():
+
+        review = Review(
+            business_id=biz_id,
+            user_id=user['id'],
+            review_body=form.data['review_body'],
+            rating=form.data['rating']
+        )
+        db.session.add(review)
+        db.session.commit()
+        return review.to_dict()
+
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 400
