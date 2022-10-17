@@ -63,6 +63,7 @@ const SignUpForm = () => {
 
     return (
         <>
+    {/* -----------------------------LOG IN MODAL----------------------------- */}
             <button className='login-button session-buttons' onClick={() => { setShowLogModal(true) }}>
                 <span className='session-butt-word login-word'>
                     Log In
@@ -87,9 +88,7 @@ const SignUpForm = () => {
                                 </div>
                                 </h5>
                                 <p id="terms">By logging in, you agree to Squeal's Terms of Service and Privacy Policy.</p>
-                                <button id='demo-button'>Continue with DemoUser</button>
 
-                                <div id='lines'><span className='or'>OR</span></div>
                             </div>
                             <form id='login-form' onSubmit={onLogin}>
                                 <div>
@@ -97,6 +96,18 @@ const SignUpForm = () => {
                                         <div key={ind}>{error}</div>
                                     ))}
                                 </div>
+                                <button
+                                    id='demo-button'
+                                    type='submit'
+                                    onClick={() => {
+                                        setEmail('KermitFrog@user.io')
+                                        setPassword('password')
+                                    }}
+                                >
+                                    Continue with DemoUser
+                                </button>
+
+                                <div id='lines'><span className='or'>OR</span></div>
                                 <div>
                                     <input
                                         id='login-input'
@@ -136,7 +147,7 @@ const SignUpForm = () => {
                     </div>
                 </Modal>
             )}
-
+    {/* -----------------------------SIGN UP MODAL----------------------------- */}
             <button className='signup-button session-buttons' onClick={() => { setShowSignModal(true) }}>
                 <span className='session-butt-word signup-word'>
                     Sign Up
@@ -154,10 +165,24 @@ const SignUpForm = () => {
                                     Connect with great local businesses
                                 </h5>
                                 <p id="terms">By continuing, you agree to Squeal's Terms of Service and acknowledge Squeal's Privacy Policy.</p>
-                                <button id='demo-button'>Continue with DemoUser</button>
+                            </div>
+                            <form onSubmit={onLogin}>
+                                <button
+                                    id='demo-button'
+                                    type='submit'
+                                    onClick={() => {
+                                        setFirstname('Kermit')
+                                        setLastname('Frog')
+                                        setEmail('KermitFrog@user.io')
+                                        setPassword('password')
+                                        setZipCode('91521')
+                                    }}
+                                >
+                                    Continue with DemoUser
+                                </button>
                                 <p id='terms-signup'>Don't worry, we never post without your permission.</p>
                                 <div id='lines'><span className='or'>OR</span></div>
-                            </div>
+                            </form>
                             <form onSubmit={onSignUp}>
                                 <div>
                                     {errors.map((error, ind) => (
@@ -182,7 +207,7 @@ const SignUpForm = () => {
                                         value={last_name}
                                     ></input>
                                 </div>
-                                <div>
+                                <div id='email'>
                                     <input
                                         id='login-input'
                                         type='text'
@@ -192,7 +217,7 @@ const SignUpForm = () => {
                                         value={email}
                                     ></input>
                                 </div>
-                                <div>
+                                <div id='password'>
                                     <input
                                         id='login-input'
                                         type='password'
@@ -202,7 +227,7 @@ const SignUpForm = () => {
                                         value={password}
                                     ></input>
                                 </div>
-                                <div>
+                                <div id='zip'>
                                     <input
                                         id='login-input'
                                         type='text'
