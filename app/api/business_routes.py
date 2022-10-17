@@ -49,14 +49,18 @@ def get_one_business(biz_id):
     """
     Gets one business' details
     """
-    business = Business.query.get(biz_id)
-    avg_rating = Review.query(func.avg(Review.rating)).filter_by(business_id=biz_id).first()
-    business_images = Image.query.filter_by(business_id=biz_id).first()
-    owner = User.query.filter_by(owner_id=business['owner']).first()
+    business = Business.query.get(biz_id).to_dict()
+    query = db.session.query(func.round(
+        func.avg(Review.rating) * 2)/2).filter_by(business_id=biz_id).first()
+    avg_rating = list(query)[0]
+    business_images = Image.query.filter_by(business_id=biz_id)
+    images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
+              for img in business_images]
+    owner = User.query.filter_by(id=business['owner_id']).first().to_dict()
 
     business['avg_rating'] = avg_rating
-    business['Business_Images'] = business_images.to_dict()
-    business['Owner'] = owner.to_dict()
+    business['Business_Images'] = images
+    business['Owner'] = owner
     
     return jsonify({
         "Businesses": business
