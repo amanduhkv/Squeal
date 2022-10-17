@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from 'react-redux';
-import { useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import * as sessionActions from '../../store/session';
 import LogoutButton from "./LogoutButton";
 import userIcon from '../../icons/user-pig.png'
@@ -13,7 +13,7 @@ function ProfileButton({ user }) {
   const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
   const history = useHistory();
-
+  // console.log(user)
   const openMenu = () => {
     if (showMenu) return;
     setShowMenu(true);
@@ -36,20 +36,27 @@ function ProfileButton({ user }) {
     <>
     <div className='profile-button' onClick={openMenu}>
       <img className='user-icon' src={userIcon} alt='user' />
+      {/* <div id='hover-dropdown-name'>{user}</div> */}
     </div>
       {showMenu && (
         <div className="profile-dropdown">
-          <div id='dropdown-text'>
-            <img src={aboutPig} id='about' width='30px'/>
-            About Me
+          <div >
+            <NavLink id='dropdown-text' to='/current'>
+              <img src={aboutPig} id='about' width='30px'/>
+              About Me
+            </NavLink>
           </div>
-          <div id='dropdown-text-b'>
-            <img src={bizPig} alt='pig' width='35px' />
-            My Businesses
+          <div>
+            <NavLink id='dropdown-text-b' to='/biz/current'>
+              <img src={bizPig} alt='pig' width='35px' />
+              My Businesses
+            </NavLink>
           </div>
-          <div id='dropdown-text-b'>
-            <img src={reviewPig} alt='pig' width='35px' />
-            My Reviews
+          <div>
+            <NavLink id='dropdown-text-b' to='/reviews/current'>
+              <img src={reviewPig} alt='pig' width='35px' />
+              My Reviews
+            </NavLink>
           </div>
 
           <div id='logout'>
