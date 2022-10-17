@@ -52,7 +52,7 @@ function App() {
             </Switch> */}
             <Brandon_NavBar />
             <Switch>
-                <Route path='/' exact={true}>
+                <Route exact path='/'>
                     <HomeBanner />
                 </Route>
                 <Route path='/current'>
