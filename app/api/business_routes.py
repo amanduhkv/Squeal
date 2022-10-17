@@ -1,7 +1,6 @@
 from flask import Blueprint, jsonify, session, request
 from app.models import Business, Review, Image, User, db
-from app.forms import LoginForm
-from app.forms import SignUpForm
+from app.forms.delete_biz_form import DeleteBusinessForm
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.add_review_form import AddReviewForm
 from sqlalchemy import func
@@ -20,6 +19,7 @@ def validation_errors_to_error_messages(validation_errors):
     return errorMessages
 
 
+# LOAD ALL BIZ
 @business_routes.route('/')
 def get_all_businesses():
     """
@@ -36,7 +36,60 @@ def get_all_businesses():
         })
 
 
-# LOAD ALL BIZ REVIEWS
+# LOAD SINGLE BIZ
+@business_routes.route("/<int:biz_id>/")
+def get_one_business(biz_id):
+    """
+    Gets one business' details
+    """
+    business = Business.query.get(biz_id)
+    avg_rating = Review.query(func.avg(Review.rating)).filter_by(business_id=biz_id).first()
+    business_images = Image.query.filter_by(business_id=biz_id).first()
+    owner = User.query.filter_by(owner_id=business['owner']).first()
+
+    business['avg_rating'] = avg_rating
+    business['Business_Images'] = business_images.to_dict()
+    business['Owner'] = owner.to_dict()
+
+    return jsonify({
+        "Businesses": business
+    })
+
+
+# DELETE BIZ
+@business_routes.route("/<int:biz_id>/", methods=['DELETE'])
+@login_required
+def delete_biz(biz_id):
+    """
+    Deletes a business
+    """
+    form = DeleteBusinessForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    biz_to_delete = Business.query.get(biz_id)
+    if not biz_to_delete:
+        return jsonify({
+            "message": "Business couldn't be found",
+            "status_code": 404
+        }), 404
+
+    if form.validate_on_submit():
+        user = current_user.to_dict()
+
+        if biz_to_delete.to_dict()['owner_id'] == user['id']:
+            db.session.delete(biz_to_delete)
+
+            db.session.commit()
+
+            return { "message": "Successfully deleted", "status_code": 200 }
+
+        else:
+            return { "message": "Forbidden", "status_code": 403 }, 403
+
+
+# -------------------- REVIEWS STUFF -------------------- #
+
+# LOAD ALL BIZ REVIEWS BY BIZ ID
 @business_routes.route("/<int:biz_id>/reviews")
 def biz_reviews(biz_id):
     """
@@ -102,22 +155,3 @@ def add_review(biz_id):
         return review.to_dict()
 
     return {'errors': validation_errors_to_error_messages(form.errors)}, 400
-
-
-@business_routes.route("/<int:biz_id>/")
-def get_one_business(biz_id):
-    """
-    Gets one business' details
-    """
-    business = Business.query.get(biz_id)
-    avg_rating = Review.query(func.avg(Review.rating)).filter_by(business_id=biz_id).first()
-    business_images = Image.query.filter_by(business_id=biz_id).first()
-    owner = User.query.filter_by(owner_id=business['owner']).first()
-
-    business['avg_rating'] = avg_rating
-    business['Business_Images'] = business_images.to_dict()
-    business['Owner'] = owner.to_dict()
-
-    return jsonify({
-        "Businesses": business
-    })
