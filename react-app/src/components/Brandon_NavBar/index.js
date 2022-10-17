@@ -86,9 +86,14 @@ function NavBar(){
             <div className={sessionUser ? 'header-bottom-portion-user' : 'header-bottom-portion-sl'}>
                 <div className='empty-below-icon' />
                 <div className='buttons-under-search'>
-                    <button className='header-bottom-buttons fast-food-button'>
-                        Quick Meals <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
-                    </button>
+                    <div className='tooltip-under-search'>
+                        <button className='header-bottom-buttons fast-food-button'>
+                            Quick Meals <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                        </button>
+                        <div className='tooltiptext tooltip-bottom'>
+                            
+                        </div>
+                    </div>
                     <button className='header-bottom-buttons dessert-button'>
                         Dessert <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                     </button>
@@ -103,3 +108,5 @@ function NavBar(){
 }
 
 export default NavBar;
+
+// <div className="tooltip"><img className="organizer-icon tooltip" src={userorganizer} alt='user' /><span className="tooltiptext tooltip-top">You are the{'\n'}organizer</span></div> : <span />

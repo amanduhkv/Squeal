@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useLocation } from 'react-router-dom';
 import search from '../../icons/search.svg';
 
 const HomeBanner = () => {
+  const location = useLocation();
 
   // ******************** Background Image Logic *******************************
   function bgShift_1() {
@@ -36,7 +38,7 @@ const HomeBanner = () => {
         cb();
     }, time);
   }
-  bgShift_1();
+  if (location.url === '/') bgShift_1();
   // ***************************************************************************
 
   return (
