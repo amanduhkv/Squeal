@@ -9,6 +9,7 @@ import './NavBar.css';
 import LoginForm from '../auth/LoginForm';
 import SignUpForm from '../auth/SignUpForm';
 import ProfileButton from '../auth/ProfileButton'
+import chevron from '../../icons/chevron.svg';
 
 function NavBar(){
     const sessionUser = useSelector(state => state.session.user);
@@ -82,8 +83,20 @@ function NavBar(){
                     </div>
                 </div>
             </div>
-            <div className='header-bottom-portion'>
+            <div className={sessionUser ? 'header-bottom-portion-user' : 'header-bottom-portion-sl'}>
+                <div className='empty-below-icon' />
+                <div className='buttons-under-search'>
+                    <button className='header-bottom-buttons fast-food-button'>
+                        Quick Meals <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                    </button>
+                    <button className='header-bottom-buttons dessert-button'>
+                        Dessert <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                    </button>
+                    <button className='header-bottom-buttons coffee-tea-button'>
+                        Coffee & Tea <svg width="24" height="24" class="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                    </button>
 
+                </div>
             </div>
         </div>
     )
