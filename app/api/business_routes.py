@@ -260,33 +260,30 @@ def add_new_business():
         db.session.commit()
         return business.to_dict()
         
-    # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return "Bad Data"
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 
-@business_routes.route("/<int:biz_id>/", methods=['POST'])
+@business_routes.route("/<int:biz_id>/", methods=['PUT'])
 @login_required
-def add_business_img(biz_id):
+def edit_business_img(biz_id):
     """
-    Creates a new business image
+    Edits a business
     """
     user = current_user.to_dict()
     user_id = user['id']
-    form = AddBizImgForm()
-    form['csrf_token'].data = request.cookies['csrf_token']
+    
+    business = Business.query.get(biz_id).to_dict()
+    
+    if not business:
+        return jsonify({
+            "message": "Business couldn't be found",
+            "status_code": 404
+        })
 
-    if form.validate_on_submit():
+    if user_id == delete_img_biz['owner_id']:
         print(">>>>>>>>>>>> IVE BEEN VALIDATED")
-
-        image = Image(
-            business_id = biz_id,
-            review_id = None,
-            url = form.data['url']
-        )
-        print(">>>>>>>> IMAGE", image.to_dict())
-        db.session.add(image)
+        db.session.delete(delete_image)
         db.session.commit()
-        return image.to_dict()
-
-    # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return "Bad Data"
+        return { "message": "Successfully deleted", "status_code": 200 }
+    else: 
+        return { "message": "Forbidden", "status_code": 403 }, 403
