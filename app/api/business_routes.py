@@ -4,10 +4,13 @@ from app.forms import LoginForm
 from app.forms import SignUpForm
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.add_review_form import AddReviewForm
+from ..forms.add_business_form import AddBusinessForm
 from sqlalchemy import func
 
 business_routes = Blueprint('business', __name__)
 
+user = current_user.to_dict()
+user_id = user['id']
 
 @business_routes.route('/')
 def get_all_businesses():
@@ -47,7 +50,7 @@ def add_review(biz_id):
     return "Bad data"
 
 
-@business_routes.route("/<int:biz_id>/")
+@business_routes.route("/<int:biz_id>")
 def get_one_business(biz_id):
     """
     Gets one business' details
@@ -70,14 +73,11 @@ def get_one_business(biz_id):
     })
 
 
-@business_routes.route("/current/")
+@business_routes.route("/current")
 def get_current_user_business():
     """
     Gets current user's business' details
     """
-    user = current_user.to_dict()
-    user_id = user['id']
-    # print("CURRENT USER", user['id'])
     businesses = Business.query.filter_by(owner_id=user_id)
     all_businesses = [b.to_dict() for b in businesses]
     print("ALL BUSINESSES", all_businesses)
@@ -99,3 +99,22 @@ def get_current_user_business():
             "Businesses": current_businesses
         })
     return 'Current user does not have any listed businesses'
+
+@business_routes.route("/biz", methods=['POST'])
+def add_new_business():
+    """
+    Creates a new business
+    """
+    form = AddBusinessForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+    if form.validate_on_submit():
+        business = Business(
+            owner_id=user_id,
+            review_body=form.data['review_body'],
+            rating=form.data['rating']
+        )
+        db.session.add(business)
+        db.session.commit()
+        return business.to_dict()
+    # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+    return "Bad data"
