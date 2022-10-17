@@ -94,7 +94,6 @@ def add_review_img(review_id):
         review = Review.query.get(review_id)
         user = current_user.to_dict()
 
-
         if review.to_dict()['user_id'] == user['id']:
             biz_id = review.to_dict()['business_id']
 

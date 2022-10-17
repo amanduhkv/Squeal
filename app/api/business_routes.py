@@ -24,7 +24,27 @@ def get_all_businesses():
         "Businesses": biz
         })
 
+
+# LOAD ALL BIZ REVIEWS
+@business_routes.route("/<int:biz_id>/reviews")
+def biz_reviews(biz_id):
+    """
+    Gets all business reviews
+    """
+    reviews_query = Review.query.filter(Business.id == biz_id).all()
+    biz_reviews = [biz.to_dict() for biz in reviews_query]
+    curr_biz = Business.query.filter(Business.id == biz_id).first()
+
+    for biz_review in biz_reviews:
+        biz_review['Business'] = curr_biz.to_dict()
+        biz_review['Review_Images'] = Image.query.filter(biz_review['id'] == Image.review_id).all()
+
+    return jsonify({ "Reviews": biz_reviews })
+
+
+# ADD A REVIEW
 @business_routes.route("/<int:biz_id>/reviews", methods=['POST'])
+@login_required
 def add_review(biz_id):
     """
     Creates a new review
@@ -32,17 +52,20 @@ def add_review(biz_id):
     form = AddReviewForm()
     form['csrf_token'].data = request.cookies['csrf_token']
     if form.validate_on_submit():
+        user = current_user.to_dict()
+
         review = Review(
             business_id=biz_id,
-            user_id=current_user[id],
+            user_id=user['id'],
             review_body=form.data['review_body'],
             rating=form.data['rating']
         )
         db.session.add(review)
         db.session.commit()
         return review.to_dict()
-    # return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return "Bad data"
+
+    return { "message": "ERROR! OH NO :(", "status_code": 404 }, 404
+
 
 @business_routes.route("/<int:biz_id>/")
 def get_one_business(biz_id):
@@ -57,7 +80,7 @@ def get_one_business(biz_id):
     business['avg_rating'] = avg_rating
     business['Business_Images'] = business_images.to_dict()
     business['Owner'] = owner.to_dict()
-    
+
     return jsonify({
         "Businesses": business
     })
