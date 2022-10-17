@@ -13,7 +13,7 @@ function ProfileButton({ user }) {
   const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
   const history = useHistory();
-  // console.log(user)
+  console.log('this is the user',user)
   const openMenu = () => {
     if (showMenu) return;
     setShowMenu(true);
@@ -34,7 +34,7 @@ function ProfileButton({ user }) {
 
   return (
     <>
-    <div className='profile-button' onClick={openMenu}>
+    <div className='profile-button tooltip-profile' onClick={openMenu}>
       <img className='user-icon' src={userIcon} alt='user' />
       {/* <div id='hover-dropdown-name'>{user}</div> */}
     </div>

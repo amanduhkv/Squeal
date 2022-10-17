@@ -39,7 +39,7 @@ function NavBar(){
     const url = useLocation().pathname;
     const [ query, setQuery ] = useState('');
     const [ location, setLocation ] = useState('');
-    console.log('this is the url',url);
+    // console.log('this is the url',url);
 // /*
     let sessionLinks;
 
@@ -110,8 +110,8 @@ function NavBar(){
                 <div className='empty-below-icon' />
                 <div className='buttons-under-search'>
                     <div className='tooltip-under-search'>
-                        <button className='header-bottom-buttons fast-food-button'>
-                            Quick Meals <svg width="24" height="24" className="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                        <button className={url === '/' ? 'header-bottom-buttons fast-food-button' : 'header-bottom-buttons ff-button-blk'}>
+                            Quick Meals <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                         </button>
                         <div className='tooltiptext tooltip-ff'>
                             <button className='dropdown-display-text top-dropdown left-ffdropdown'>
@@ -141,8 +141,8 @@ function NavBar(){
                         </div>
                     </div>
                     <div className='tooltip-under-search'>
-                        <button className='header-bottom-buttons dessert-button'>
-                            Dessert <svg width="24" height="24" className="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                        <button className={url === '/' ? 'header-bottom-buttons dessert-button' : 'header-bottom-buttons dessert-button-blk'}>
+                            Dessert <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                         </button>
                         <div className='tooltiptext tooltip-ff'>
                             <button className='dropdown-display-text top-dropdown left-ffdropdown'>
@@ -172,8 +172,8 @@ function NavBar(){
                         </div>
                     </div>
                     <div className='tooltip-under-search'>
-                        <button className='header-bottom-buttons coffee-tea-button'>
-                            Popular <svg width="24" height="24" className="chevron-svg"><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
+                        <button className={url === '/' ? 'header-bottom-buttons coffee-tea-button' : 'header-bottom-buttons popular-button-blk'}>
+                            Popular <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                         </button>
                         <div className='tooltiptext tooltip-ff'>
                             <button className='dropdown-display-text top-dropdown left-ffdropdown'>
