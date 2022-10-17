@@ -1,4 +1,4 @@
-from flask import Blueprint, request
+from flask import Blueprint, jsonify, request
 from flask_login import current_user, login_user, logout_user, login_required
 from ..models import db, Image, Review
 from ..forms.delete_review_img_form import DeleteReviewImgForm
@@ -15,8 +15,15 @@ def delete_review_img(image_id):
     """
     form = DeleteReviewImgForm()
     form['csrf_token'].data = request.cookies['csrf_token']
+
+    review_img_to_delete = Image.query.get(image_id)
+    if not review_img_to_delete:
+        return jsonify({
+            "message": "Review couldn't be found",
+            "status_code": 404
+        }), 404
+
     if form.validate_on_submit():
-        review_img_to_delete = Image.query.get(image_id)
         user = current_user.to_dict()
 
         # FIND OWNER OF REVIEW IMG:
