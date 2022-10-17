@@ -9,15 +9,19 @@
 
 #left-col {
   flex: 1;
+  margin-top: 25px;
 }
 
 #mid-col {
   flex: 2;
+  margin-top: 25px;
+  padding-top: 30px;
 }
 
 #right-col {
   flex: 1;
-
+  margin-top: 25px;
+  padding-top: 30px;
 }
 
 #top-rc {
@@ -55,11 +59,10 @@
 .user-prof {
   display: flex;
   justify-content: center;
-
+  margin: 130px auto 0 auto;
   /* grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
   "left mid right"; */
 
   width: 950px;
-  margin-top: 140px;
 }

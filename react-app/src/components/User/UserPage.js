@@ -19,35 +19,11 @@ const UserPage = () => {
             <h1>(First) (LastIn.)</h1>
             <h2>From (City, State)</h2>
             <div>
-              #
+              {/* <img src={} alt='cam-ora' */}
               Review
             </div>
           </div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
-          <div>words</div>
+
         </div>
         <div id='right-col'>
           <div id='top-rc'>
