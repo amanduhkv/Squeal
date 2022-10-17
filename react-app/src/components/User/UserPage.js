@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import pigOutline from '../../icons/pig-outline.png'
 import cam from '../../icons/user-page-icons/cam.png';
 import upProf from '../../icons/user-page-icons/prof-up.png'
@@ -17,18 +19,18 @@ const UserPage = () => {
           </button>
           <h3 id='bar-name'>Name's Profile</h3>
           <div className='side-bar'>
-            <div id='bar-row'>
+            <NavLink to='/current' id='bar-row'>
               <img id='bar-img' src={pig} alt='pig' width='25px' />
               <div id='bar-txt'>Profile Overview</div>
-            </div>
-            <div id='bar-row'>
+            </NavLink>
+            <NavLink to='/current' id='bar-row'>
               <img id='bar-img' src={starGrey} alt='star-grey' width='25px' />
               <div id='bar-txt'>Reviews</div>
-            </div>
-            <div id='bar-row'>
+            </NavLink>
+            <NavLink to='/current' id='bar-row'>
               <img id='bar-img' src={savedBiz} alt='star-grey' width='25px' />
               <div id='bar-txt'>Saved Businesses</div>
-            </div>
+            </NavLink>
           </div>
         </div>
         <div id='mid-col'>
