@@ -18,7 +18,7 @@ def seed_users():
                   password='password',
                   profile_pic="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                   )
-                  
+
     owner3 = User(first_name='Aijia',
                   last_name='Wang',
                   email='AijiaWang@user.io',

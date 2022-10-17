@@ -4,9 +4,14 @@ from app.forms import LoginForm
 from app.forms import SignUpForm
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.add_review_form import AddReviewForm
-from sqlalchemy import func
+from sqlalchemy import func, inspect
 
 business_routes = Blueprint('business', __name__)
+
+
+def object_as_dict(obj):
+    return {c.key: getattr(obj, c.key)
+            for c in inspect(obj).mapper.column_attrs}
 
 @business_routes.route('/')
 def get_all_businesses():
@@ -16,8 +21,9 @@ def get_all_businesses():
     businesses = Business.query.all()
     biz = [business.to_dict() for business in businesses]
     for b in biz:
-        avg_rating = Review.query(func.avg(Review.rating)).filter_by(business_id=biz_id).first()
-    b['avg_rating'] = avg_rating
+        query = db.session.query(func.round(func.avg(Review.rating) * 2)/2).filter_by(business_id=b['id']).first()
+        avg_rating = list(query)[0]
+        b['avg_rating'] = avg_rating
     return jsonify({
         "Businesses": biz
         })

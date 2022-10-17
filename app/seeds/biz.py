@@ -11982,8 +11982,6 @@ for type in types:
     instances.append(ty)
     type_dict[type['alias']] = ty
 
-print(type_dict)
-
 delivery = Transaction(transaction='delivery')
 pickup = Transaction(transaction='pickup')
 restaurant_reservation = Transaction(transaction='restaurant_reservation')
