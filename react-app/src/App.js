@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 // import CurrentUserBiz from './components/Biz/UserBiz';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import UserPage from './components/User/UserPage';
+import HomePage from './components/HomePage';
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -53,6 +54,7 @@ function App() {
             <Switch>
                 <Route exact path='/'>
                     <HomeBanner />
+                    <HomePage />
                     <Footer />
                 </Route>
                 <Route path='/current'>
