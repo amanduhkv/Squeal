@@ -4,6 +4,7 @@ import search from '../../icons/search.svg';
 
 const HomeBanner = () => {
   const location = useLocation();
+  console.log(location)
 
   // ******************** Background Image Logic *******************************
   function bgShift_1() {
@@ -38,7 +39,7 @@ const HomeBanner = () => {
         cb();
     }, time);
   }
-  if (location.url === '/') bgShift_1();
+  if (location.pathname === '/') bgShift_1();
   // ***************************************************************************
 
   return (
