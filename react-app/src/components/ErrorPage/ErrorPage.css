@@ -1,0 +1,26 @@
+#apologies {
+  color: #A9826E;
+  margin: 0;
+  font-weight: 400;
+}
+
+#cooking {
+  color: rgb(211,35,35);
+  margin: 0;
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 8vw;
+  overflow: auto;
+}
+
+#error-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
