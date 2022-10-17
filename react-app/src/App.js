@@ -56,6 +56,12 @@ function App() {
                 <Route path='/current'>
                     <CurrentUserBiz />
                 </Route>
+                <Route path='/biz/current'>
+                    <CurrentUserBiz />
+                </Route>
+                <Route path='/reviews/current'>
+                    <CurrentUserBiz />
+                </Route>
             </Switch>
             <Footer />
         </BrowserRouter>
