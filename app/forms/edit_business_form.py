@@ -75,7 +75,7 @@ TRANSACTIONS = [('delivery', 'Delivery'), ('pickup', 'Pick Up'),
                 ('restaurant_reservation', 'Reservations')]
 
 
-class AddBusinessForm(FlaskForm):
+class EditBusinessForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
     city = StringField('City', validators=[DataRequired()])
     state = StringField('State', validators=[DataRequired()])
