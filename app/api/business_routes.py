@@ -29,12 +29,21 @@ def get_all_businesses():
     Gets all business
     """
     businesses = Business.query.all()
-    biz = [business.to_dict() for business in businesses]
+    biz = [[business.to_dict(), business] for business in businesses]
     for b in biz:
+        print(">>>>>> B", b)
         query = db.session.query(func.round(
-            func.avg(Review.rating) * 2)/2).filter_by(business_id=b['id']).first()
+            func.avg(Review.rating) * 2)/2).filter_by(business_id=b[0]['id']).first()
         avg_rating = list(query)[0]
-        b['avg_rating'] = avg_rating
+        b[0]['avg_rating'] = avg_rating
+        types_list = [type.to_dict() for type in b[1].types]
+        transactions_list = [transaction.to_dict()
+                         for transaction in b[1].transactions]
+
+        b[0]['types'] = types_list
+        b[0]['transactions'] = transactions_list
+        
+    biz = [business[0] for business in biz]
     return jsonify({
         "Businesses": biz
     })
@@ -46,7 +55,13 @@ def get_one_business(biz_id):
     """
     Gets one business' details
     """
-    business = Business.query.get(biz_id).to_dict()
+    biz = Business.query.get(biz_id)
+    if not biz:
+        return jsonify(
+            {"message": "Business couldn't be found.",
+            "status_code": 404}), 404
+
+    business = biz.to_dict()
     query = db.session.query(func.round(
         func.avg(Review.rating) * 2)/2).filter_by(business_id=biz_id).first()
     avg_rating = list(query)[0]
@@ -54,14 +69,16 @@ def get_one_business(biz_id):
     images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
               for img in business_images]
     owner = User.query.filter_by(id=business['owner_id']).first().to_dict()
+    types_list = [type.to_dict() for type in biz.types]
+    transactions_list = [transaction.to_dict() for transaction in biz.transactions]
 
+    business['types'] = types_list
+    business['transactions'] = transactions_list
     business['avg_rating'] = avg_rating
     business['Business_Images'] = images
     business['Owner'] = owner
 
-    return jsonify({
-        "Businesses": business
-    })
+    return business
 
 
 # LOAD CURRENT USER'S BIZ
