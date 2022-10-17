@@ -4,14 +4,10 @@ from app.forms import LoginForm
 from app.forms import SignUpForm
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.add_review_form import AddReviewForm
-from sqlalchemy import func, inspect
+from sqlalchemy import func
 
 business_routes = Blueprint('business', __name__)
 
-
-def object_as_dict(obj):
-    return {c.key: getattr(obj, c.key)
-            for c in inspect(obj).mapper.column_attrs}
 
 @business_routes.route('/')
 def get_all_businesses():

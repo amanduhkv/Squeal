@@ -1,0 +1,152 @@
+#border-modal {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#demo-button {
+  background-color: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+
+  width: 100%;
+  padding: 10px 13px;
+  margin: 12px 0;
+
+  color: rgb(102, 102, 102);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#left-side {
+  max-width: 325px;
+  margin-right: 8%;
+}
+
+#lines {
+  width: 100%;
+  text-align: center;
+  line-height: 0.1em;
+  margin: 10px 20px;
+}
+
+#login-button {
+  background-color: rgb(212, 40, 40);
+  color: white;
+  border:rgb(212, 40, 40) 1px solid;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px 13px;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 12px 0 0 0;
+  transition: background-color 1s ease
+}
+
+#login-button:hover {
+  background-color: rgba(212, 40, 40, 0.7);
+  border:rgb(212, 40, 40) 1px solid;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#login-input {
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 100%;
+  font-family: "Open Sans";
+  margin-top: 12px;
+}
+
+#login-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-width: 230px;
+  margin-right: 20px;
+}
+
+#login-title {
+  color: rgb(211,35,35);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#party {
+  width: 100%;
+  min-width: 325px;
+  max-width: 382px;
+}
+
+#signup-redirect {
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+#signup-redirect .button {
+  color: rgb(0,115,187);
+  cursor: pointer;
+}
+
+#signup-redirect .button:hover {
+  text-decoration: underline;
+}
+
+#signup-redirect .text {
+  margin-right: 3px;
+}
+
+span.or {
+  margin: 5px;
+  color:rgb(102, 102, 102);
+}
+
+span.or:before,
+span.or:after {
+  background-color: #ccc;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+span.or:before {
+  right: 1em;
+  margin-left: 12px;
+}
+
+span.or:after {
+  left: 1em;
+  margin-right: 12px;
+}
+
+span.or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(88, 88, 88);
+}
+
+#terms {
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#two-cols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

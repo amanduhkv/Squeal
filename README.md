@@ -1,87 +1,186 @@
-# Flask React Project
+# Squeal
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#project-wiki">Project Wiki</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#sample-features">Sample Features</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#the-team">The Team</a></li>
+  </ol>
+</details>
 
-This is the starter for the Flask React project.
+<!-- ABOUT THE PROJECT -->
+## About The Project
+![squeal-logo]
 
-## Getting started
-1. Clone this repository (only this branch)
+[squeal-logo]: ./assets/squeal-in-logo.png
 
-   ```bash
-   git clone https://github.com/appacademy-starters/python-project-starter.git
-   ```
+[Squeal](https://squeal-yelp.herokuapp.com/) is a web application inspired by Yelp.
 
-2. Install dependencies
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-      ```bash
-      pipenv install -r requirements.txt
-      ```
-
-3. Create a **.env** file based on the example with proper settings for your
-   development environment
-4. Make sure the SQLite3 database connection URL is in the **.env** file
-
-5. Get into your pipenv, migrate your database, seed your database, and run your Flask app
-
-   ```bash
-   pipenv shell
-   ```
-
-   ```bash
-   flask db upgrade
-   ```
-
-   ```bash
-   flask seed all
-   ```
-
-   ```bash
-   flask run
-   ```
-
-6. To run the React App in development, checkout the [README](./react-app/README.md) inside the `react-app` directory.
+### Project Wiki
+* [Backend API Documentation](https://github.com/amanduhkv/Squeal/wiki/Backend-API-Documentation)
+* [Database Schema](https://github.com/amanduhkv/Squeal/wiki/Database-Schema)
+* [Features List](https://github.com/amanduhkv/Squeal/wiki/Features-List)
+* [Redux State Shape](https://github.com/amanduhkv/Squeal/wiki/Redux-Store-Shape)
+* [Frontend Routes](https://github.com/amanduhkv/Squeal/wiki/User-facing-(Frontend)-Routes)
+* [User Stories](https://github.com/amanduhkv/Squeal/wiki/User-Stories)
 
 
+### Built With
+#### Frameworks, Platforms, & Libraries:
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+
+#### Database:
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+
+#### Database:
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SAMPLE FEATURES -->
+## Sample Features
+
+🚧🚧 This section is still under construction. 🚧🚧
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+1. Clone the repo:
+
+    SSH version:
+    ```sh
+    git clone git@github.com:amanduhkv/Squeal.git
+    ```
+    or
+
+    HTTPS version:
+    ```sh
+    git clone https://github.com/amanduhkv/Squeal.git
+    ```
+
+2. Install packages
+    ```sh
+    pipenv install
+    cd react-app
+    npm install
+    ```
+3. Migrate and seed the files.
+    ```sh
+    flask run db init
+    flask run migrate
+    flask seed all
+    ```
+4. Run the server and start the react app
+    ```sh
+    pipenv run flask run
+    cd react-app
+    npm start
+    ```
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] Businesses
+    - [ ] Create a business
+    - [ ] Load all businesses
+    - [ ] Load a business by detail
+    - [ ] See list of current user's businesses
+    - [ ] Update a current user's business
+    - [ ] Delete a current user's business
+- [ ] Search / Filter
+    - [ ] Create a search filter
+    - [ ] See the result of a search filter
+    - [ ] Update a search filter
+    - [ ] Remove a search filter
+- [ ] Reviews
+    - [ ] Create a review
+    - [ ] Load all user's reviews
+    - [ ] Load all of a business's reviews
+    - [ ] Update a current user's review
+    - [ ] Delete a current user's review
+- [ ] Images
+    - [ ] Create a business image
+    - [ ] Create a review image
+    - [ ] Delete a business image
+    - [ ] Delete a review image
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTACT -->
+## The Team
+
+Amanda Vien:
+<br>
+[![linked in][linkedin-icon]][linkedin-url-amanda]
+[![linked in][github-icon]][github-url-amanda]
 <br>
 
-## Deploy to Heroku
-This repo comes configured with Github Actions. When you push to your main branch, Github will automatically pull your code, package and push it to Heroku, and then release the new image and run db migrations. 
+Brandon Tasaki:
+<br>
+[![linked in][linkedin-icon]][linkedin-url-brandon]
+[![linked in][github-icon]][github-url-brandon]
+<br>
 
-1. Write your Dockerfile. In order for the Github action to work effectively, it must have a configured Dockerfile. Follow the comments found in this [Dockerfile](./Dockerfile) to write your own!
+Jae Hwang:
+<br>
+[![linked in][linkedin-icon]][linkedin-url-jae]
+[![linked in][github-icon]][github-url-jae]
+<br>
 
-2. Create a new project on Heroku.
-
-3. Under Resources click "Find more add-ons" and add the add on called "Heroku Postgres".
-
-4. Configure production environment variables. In your Heroku app settings -> config variables you should have two environment variables set:
-
-   |    Key          |    Value    |
-   | -------------   | ----------- |
-   | `DATABASE_URL`  | Autogenerated when adding postgres to Heroku app |
-   | `SECRET_KEY`    | Random string full of entropy |
-
-5. Generate a Heroku OAuth token for your Github Action. To do so, log in to Heroku via your command line with `heroku login`. Once you are logged in, run `heroku authorizations:create`. Copy the GUID value for the Token key.
-
-6. In your Github Actions Secrets you should have two environment variables set. You can set these variables via your Github repository settings -> secrets -> actions. Click "New respository secret" to create
-each of the following variables:
-
-   |    Key            |    Value    |
-   | -------------     | ----------- |
-   | `HEROKU_API_KEY`  | Heroku Oauth Token (from step 6)|
-   | `HEROKU_APP_NAME` | Heroku app name    |
-
-7. Push to your `main` branch! This will trigger the Github Action to build your Docker image and deploy your application to the Heroku container registry. Please note that the Github Action will automatically upgrade your production database with `flask db upgrade`. However, it will *not* automatically seed your database. You must manually seed your production database if/when you so choose (see step 8).
-
-8. *Attention!* Please run this command *only if you wish to seed your production database*: `heroku run -a HEROKU_APP_NAME flask seed all`
-
-## Helpful commands
-|    Command            |    Purpose    |
-| -------------         | ------------- |
-| `pipenv shell`        | Open your terminal in the virtual environment and be able to run flask commands without a prefix |
-| `pipenv run`          | Run a command from the context of the virtual environment without actually entering into it. You can use this as a prefix for flask commands  |
-| `flask db upgrade`    | Check in with the database and run any needed migrations  |
-| `flask db downgrade`  | Check in with the database and revert any needed migrations  |
-| `flask seed all`      | Just a helpful syntax to run queries against the db to seed data. See the **app/seeds** folder for reference and more details |
-| `heroku login -i`      | Authenticate your heroku-cli using the command line. Drop the -i to authenticate via the browser |
-| `heroku authorizations:create` | Once authenticated, use this to generate an Oauth token |
-| `heroku run -a <app name>` | Run a command from within the deployed container on Heroku |
+Michael Jung:
+<br>
+[![linked in][linkedin-icon]][linkedin-url-michael]
+[![linked in][github-icon]][github-url-michael]
+<br>
 
 
+Project Link: [https://github.com/amanduhkv/Squeal](https://github.com/amanduhkv/Squeal)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-icon]: https://skillicons.dev/icons?i=linkedin
+[github-icon]: https://skillicons.dev/icons?i=github
+[linkedin-url-amanda]: https://www.linkedin.com/in/amandakvien/
+[linkedin-url-brandon]: https://www.linkedin.com/in/brandon-tasaki/
+[linkedin-url-jae]: https://www.linkedin.com/in/jae-hwang-71654490/
+[linkedin-url-michael]: https://linkedin.com/in/michael-h-jung/
+[github-url-amanda]: https://github.com/amanduhkv
+[github-url-brandon]: https://github.com/MacFlyOSX
+[github-url-jae]: https://github.com/jaeyoungh1
+[github-url-michael]: https://github.com/michaelhjung
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
