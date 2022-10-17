@@ -1,19 +1,48 @@
+#about {
+  margin-left: 2px;
+  margin-right: 4px;
+}
 
+#dropdown-hr {
+  opacity: 0.3;
+}
 
-#dropdown-text {
+#dropdown-text,
+#dropdown-text-b,
+#logout-button {
   font-family: 'Open Sans';
   font-size: 14px;
   font-weight: 600;
-  margin: 10px;
-  color: rgb(45, 46, 47)
+
+  color: rgb(45, 46, 47);
+
+  display: flex;
+  align-items: center;
+  padding: 8px;
 }
 
+/* #dropdown-text {
+  padding: 5px;
+}
+
+#dropdown-text-b {
+  margin-left: 5px;
+} */
+
 #logout {
+  display: flex;
+  border-top: 1px solid #ebebeb;
+  padding: 16px 8px 0 8px;
+  margin-top: 16px;
+}
+
+#logout-button {
   background-color: white;
+  border: none;
 }
 
 .profile-button {
-  background-color: red;
+  margin-right: 12px;
 }
 
 .profile-dropdown {
@@ -25,4 +54,5 @@
   z-index: 1;
   top: 65px;
   border-radius: 3px;
+  padding: 16px;
 }

@@ -40,18 +40,20 @@ function ProfileButton({ user }) {
       {showMenu && (
         <div className="profile-dropdown">
           <div id='dropdown-text'>
-            <img src={aboutPig} width='25px'/>
+            <img src={aboutPig} id='about' width='30px'/>
             About Me
           </div>
-          <div id='dropdown-text'>
-            <img src={bizPig} width='30px' />
+          <div id='dropdown-text-b'>
+            <img src={bizPig} alt='pig' width='35px' />
             My Businesses
           </div>
-          <div id='dropdown-text'>
-            <img src={reviewPig} width='30px' />
+          <div id='dropdown-text-b'>
+            <img src={reviewPig} alt='pig' width='35px' />
             My Reviews
           </div>
+
           <div id='logout'>
+            <img src='https://www.svgrepo.com/show/115080/logout.svg' alt='exit' width='20px' />
             <LogoutButton />
           </div>
         </div>
