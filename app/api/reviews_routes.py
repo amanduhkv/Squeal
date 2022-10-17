@@ -20,7 +20,6 @@ def validation_errors_to_error_messages(validation_errors):
     return errorMessages
 
 
-# TODO:
 # 1. LOAD ALL USER REVIEWS
 @reviews_routes.route("/current")
 @login_required
@@ -107,7 +106,6 @@ def delete_review(review_id):
     # return { "message": "Review couldn't be found", "status_code": 404 }, 404
 
 
-# TODO: ADD ERROR VALIDATION FOR MAX # IMGS FOR THIS REVIEW WAS REACHED
 # 5. ADD A REVIEW IMG
 @reviews_routes.route("/<int:review_id>/images", methods=['POST'])
 @login_required

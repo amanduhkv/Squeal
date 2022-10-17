@@ -1,7 +1,6 @@
-from flask import Blueprint, jsonify, session, request, render_template
+from flask import Blueprint, jsonify, session, request
 from app.models import Business, Review, Image, User, Type, Transaction, db
-from app.forms import LoginForm
-from app.forms import SignUpForm
+from app.forms.delete_biz_form import DeleteBusinessForm
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.add_review_form import AddReviewForm
 from ..forms.add_business_form import AddBusinessForm
@@ -23,6 +22,7 @@ def validation_errors_to_error_messages(validation_errors):
     return errorMessages
 
 
+# LOAD ALL BIZ
 @business_routes.route('/')
 def get_all_businesses():
     """
@@ -100,6 +100,7 @@ def add_review(biz_id):
     return {'errors': validation_errors_to_error_messages(form.errors)}, 400
 
 
+# LOAD SINGLE BIZ
 @business_routes.route("/<int:biz_id>/")
 def get_one_business(biz_id):
     """
@@ -123,6 +124,7 @@ def get_one_business(biz_id):
     })
 
 
+# LOAD CURRENT USER'S BIZ
 @business_routes.route("/current/")
 @login_required
 def get_current_user_business():
@@ -212,6 +214,7 @@ all_types_list = [
 all_transactions_list = ['pickup', 'delivery', 'restaurant_reservation']
 
 
+# CREATE A BIZ
 @business_routes.route("/", methods=['POST'])
 @login_required
 def add_new_business():
@@ -264,6 +267,7 @@ def add_new_business():
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 
+# UPDATE A BIZ
 @business_routes.route("/<int:biz_id>/", methods=['PUT'])
 @login_required
 def edit_business(biz_id):
