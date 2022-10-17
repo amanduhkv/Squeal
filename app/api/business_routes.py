@@ -62,7 +62,6 @@ def biz_reviews(biz_id):
 
 
 # ADD A REVIEW
-# TODO: ADD ERROR VALIDATION FOR USER ALREADY HAS A REVIEW FOR THIS BIZ
 @business_routes.route("/<int:biz_id>/reviews", methods=['POST'])
 @login_required
 def add_review(biz_id):
@@ -79,8 +78,18 @@ def add_review(biz_id):
             "status_code": 404
         }), 404
 
+    user = current_user.to_dict()
+
+    reviews_query = Review.query.filter(Business.id == biz_id).all()
+    biz_reviews = [biz.to_dict() for biz in reviews_query]
+    for biz_review in biz_reviews:
+        if biz_review['user_id'] == user['id']:
+            return jsonify({
+                "message": "User already has a review for this business",
+                "status_code": 403
+        }), 403
+
     if form.validate_on_submit():
-        user = current_user.to_dict()
 
         review = Review(
             business_id=biz_id,
