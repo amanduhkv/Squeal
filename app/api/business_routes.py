@@ -385,14 +385,16 @@ def biz_reviews(biz_id):
             "status_code": 404
         }), 404
 
-    reviews_query = Review.query.filter(Business.id == biz_id).all()
+    reviews_query = Review.query.filter_by(business_id=biz_id)
+    print(">>>> REVIEWS_QUERY", reviews_query)
     biz_reviews = [biz.to_dict() for biz in reviews_query]
-    curr_biz = Business.query.filter(Business.id == biz_id).first()
+    # curr_biz = Business.query.filter(Business.id == biz_id).first()
 
     for biz_review in biz_reviews:
-        biz_review['Business'] = curr_biz.to_dict()
-        biz_review['Review_Images'] = Image.query.filter(
-            biz_review['id'] == Image.review_id).all()
+        user_info = User.query.filter_by(id=biz_review['user_id']).first()
+        biz_review['User'] = user_info.to_dict()
+        biz_review['Review_Images'] = [url.to_dict() for url in Image.query.filter(
+            biz_review['id'] == Image.review_id).all()]
 
     return jsonify({"Reviews": biz_reviews})
 
@@ -416,7 +418,7 @@ def add_review(biz_id):
 
     user = current_user.to_dict()
 
-    reviews_query = Review.query.filter(Business.id == biz_id).all()
+    reviews_query = Review.query.filter_by(business_id=biz_id)
     biz_reviews = [biz.to_dict() for biz in reviews_query]
     for biz_review in biz_reviews:
         if biz_review['user_id'] == user['id']:

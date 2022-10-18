@@ -22,4 +22,5 @@ class Review(db.Model):
             # ^double check if this is correct
             "review_body": self.review_body,
             "rating": self.rating,
+            "created_at": self.created_at
         }
