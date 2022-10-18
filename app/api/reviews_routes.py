@@ -30,9 +30,8 @@ def user_reviews():
 
     for user_review in user_reviews:
         review_biz = Business.query.filter(user_review['business_id'] == Business.id).first()
-        print("REVIEW", user_review)
         user_review['Business'] = review_biz.to_dict()
-        user_review['Review_Images'] = Image.query.filter(user_review['id'] == Image.review_id).all()
+        user_review['Review_Images'] = [img.to_dict() for img in Image.query.filter(user_review['id'] == Image.review_id).all()]
 
     return jsonify({ "Reviews": user_reviews })
 
@@ -56,6 +55,22 @@ def update_review(review_id):
             "message": "Review couldn't be found",
             "status_code": 404
         }), 404
+
+
+    # Body validation error handlers:
+    login_val_error = {
+        "message": "Validation error",
+        "status_code": 400,
+        "errors": {}
+    }
+
+    if not form.data['review_body']:
+        login_val_error["errors"]["review_body"] = "Review text is required"
+    if form.data['rating'] < 1 or form.data['rating'] > 5:
+        login_val_error["errors"]["rating"] = "Rating must be an integer from 1 to 5"
+    if len(login_val_error["errors"]) > 0:
+        return jsonify(login_val_error), 400
+
 
     if form.validate_on_submit():
         user = current_user.to_dict()
@@ -123,6 +138,18 @@ def add_review_img(review_id):
             "status_code": 404
         }), 404
 
+    # Body validation error handlers:
+    login_val_error = {
+        "message": "Validation error",
+        "status_code": 400,
+        "errors": {}
+    }
+
+    if not form.data['url']:
+        login_val_error["errors"]["url"] = "Image url is required"
+    if len(login_val_error["errors"]) > 0:
+        return jsonify(login_val_error), 400
+
     if form.validate_on_submit():
         user = current_user.to_dict()
 
@@ -143,7 +170,7 @@ def add_review_img(review_id):
         else:
             return { "message": "Forbidden", "status_code": 403 }, 403
 
-    # return { "message": "Review couldn't be found", "status_code": 404 }, 404
+    return { "message": "Review couldn't be found", "status_code": 404 }, 404
 
 
 # 6. DELETE A REVIEW IMG --- THIS IS IN THE IMAGES ROUTES
