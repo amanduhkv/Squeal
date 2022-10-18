@@ -24,3 +24,83 @@ button,
 NavLink {
     cursor: pointer;
 }
+
+
+/************ REVIEW RATING LOGIC **************/
+
+.rating {
+    fill: url(#rating-gradient-0);
+}
+
+.rating-05 .stars-0h,
+.rating-10 .stars-1f,
+.rating-15 .stars-1f,
+.rating-15 .stars-1h {
+    fill: url(#rating-gradient-1);
+}
+
+.rating-20 .stars-1f,
+.rating-20 .stars-2f,
+.rating-25 .stars-1f,
+.rating-25 .stars-2f,
+.rating-25 .stars-2h {
+    fill: url(#rating-gradient-2);
+}
+
+.rating-30 .stars-1f,
+.rating-30 .stars-2f,
+.rating-30 .stars-3f,
+.rating-35 .stars-1f,
+.rating-35 .stars-2f,
+.rating-35 .stars-3f,
+.rating-35 .stars-3h {
+    fill: url(#rating-gradient-3);
+}
+
+.rating-40 .stars-1f,
+.rating-40 .stars-2f,
+.rating-40 .stars-3f,
+.rating-40 .stars-4f,
+.rating-45 .stars-1f,
+.rating-45 .stars-2f,
+.rating-45 .stars-3f,
+.rating-45 .stars-4f,
+.rating-45 .stars-4h {
+    fill: url(#rating-gradient-4);
+}
+
+.rating-50 .stars-1f,
+.rating-50 .stars-2f,
+.rating-50 .stars-3f,
+.rating-50 .stars-4f,
+.rating-50 .stars-5f {
+    fill: url(#rating-gradient-5);
+}
+
+.rating-10 .stars-0h,
+.rating-15 .stars-0h,
+.rating-20 .stars-0h,
+.rating-20 .stars-1h,
+.rating-25 .stars-0h,
+.rating-25 .stars-1h,
+.rating-30 .stars-0h,
+.rating-30 .stars-1h,
+.rating-30 .stars-2h,
+.rating-35 .stars-0h,
+.rating-35 .stars-1h,
+.rating-35 .stars-2h,
+.rating-40 .stars-0h,
+.rating-40 .stars-1h,
+.rating-40 .stars-2h,
+.rating-40 .stars-3h,
+.rating-45 .stars-0h,
+.rating-45 .stars-1h,
+.rating-45 .stars-2h,
+.rating-45 .stars-3h,
+.rating-50 .stars-0h,
+.rating-50 .stars-1h,
+.rating-50 .stars-2h,
+.rating-50 .stars-3h,
+.rating-50 .stars-4h {
+    display: none;
+}
