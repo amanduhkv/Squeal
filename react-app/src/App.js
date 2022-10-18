@@ -60,11 +60,11 @@ function App() {
                     <Footer />
                 </Route>
                 <Route path='/biz/current'>
-                    <ErrorPage />
+                    <UserPage />
                     <Footer />
                 </Route>
                 <Route path='/reviews/current'>
-                    <ErrorPage />
+                    <UserPage />
                     <Footer />
                 </Route>
             </Switch>
