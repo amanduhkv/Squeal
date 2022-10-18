@@ -2,9 +2,17 @@ import React from 'react';
 import './HomePage.css';
 import userpig from '../../icons/user-pig.png';
 import reviewScore from '../../icons/ratescore.svg';
+import chinese from '../../icons/category-tiles/chi.svg';
+import indian from '../../icons/category-tiles/india.svg';
+import italian from '../../icons/category-tiles/ital.svg';
+import japanese from '../../icons/category-tiles/ja.svg';
+import korean from '../../icons/category-tiles/kor.svg';
+import mexican from '../../icons/category-tiles/mex.svg';
+import thai from '../../icons/category-tiles/thai.svg';
+import vietnamese from '../../icons/category-tiles/vietn.svg';
 
 const HomePage = () => {
-    const rate = 4;
+    const rate = 4.6;
 
   return (
     <div className='homepage-container'>
@@ -397,6 +405,96 @@ const HomePage = () => {
             <h2 className='category-type-title'>
                 Categories
             </h2>
+            <div className='categories-container'>
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={chinese} alt='chinese' />
+                            <p className='category-title'>
+                                Chinese
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={indian} alt='chinese' />
+                            <p className='category-title'>
+                                Indian
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={italian} alt='chinese' />
+                            <p className='category-title'>
+                                Italian
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={japanese} alt='chinese' />
+                            <p className='category-title'>
+                                Japanese
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div className='categories-container'>
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={korean} alt='chinese' />
+                            <p className='category-title'>
+                                Korean
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={mexican} alt='chinese' />
+                            <p className='category-title'>
+                                Mexican
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={thai} alt='chinese' />
+                            <p className='category-title'>
+                                Thai
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={vietnamese} alt='chinese' />
+                            <p className='category-title'>
+                                Vietnamese
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
   )
