@@ -101,7 +101,7 @@ const SignUpForm = () => {
                                     id='demo-button'
                                     type='submit'
                                     onClick={() => {
-                                        setEmail('KermitFrog@user.io')
+                                        setEmail('kermitfrog@user.io')
                                         setPassword('password')
                                     }}
                                 >
@@ -174,7 +174,7 @@ const SignUpForm = () => {
                                     onClick={() => {
                                         setFirstname('Kermit')
                                         setLastname('Frog')
-                                        setEmail('KermitFrog@user.io')
+                                        setEmail('kermitfrog@user.io')
                                         setPassword('password')
                                         setZipCode('91521')
                                     }}

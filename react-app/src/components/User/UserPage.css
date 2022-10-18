@@ -1,6 +1,6 @@
-* {
+/* * {
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-}
+} */
 
 #bar-img {
   margin-right: 10px;
@@ -89,7 +89,7 @@
   color:rgb(211, 35, 35);
   font-size: 21px;
   padding-bottom: 10px;
-  
+
   border-bottom: 1px solid rgb(235, 235, 235);
 }
 
