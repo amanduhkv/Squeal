@@ -16,6 +16,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import UserPage from './components/User/UserPage';
 import HomePage from './components/HomePage';
 import Biz from './components/Biz';
+import BusinessDetails from './components/BusinessDetails/BusinessDetails';
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -78,8 +79,11 @@ function App() {
                     )}
                     <Footer />
                 </Route>
-                <Route path='/biz'>
+                <Route exact path='/biz'>
                     <Biz />
+                </Route>
+                <Route path='/biz/:bizId'>
+                    <BusinessDetails />
                 </Route>
                 <Route path='/reviews/current'>
                     {user && (
