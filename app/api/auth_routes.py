@@ -80,6 +80,24 @@ def sign_up():
     """
     form = SignUpForm()
     form['csrf_token'].data = request.cookies['csrf_token']
+
+    # Body validation error handlers:
+    login_val_error = {
+        "message": "Validation error",
+        "status_code": 400,
+        "errors": {}
+    }
+    if "@" not in form.data['email'] or "." not in form.data['email']:
+        login_val_error["errors"]["email"] = "Invalid email"
+
+    if not form.data['first_name']:
+        login_val_error["errors"]["first_name"] = "First name is required"
+    if not form.data['last_name']:
+        login_val_error["errors"]["last_name"] = "Last name is required"
+    if len(login_val_error["errors"]) > 0:
+        return jsonify(login_val_error), 400
+
+
     if form.validate_on_submit():
         user = User(
             first_name=form.data['first_name'].title(),
