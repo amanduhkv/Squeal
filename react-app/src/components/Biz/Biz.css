@@ -1,0 +1,19 @@
+.biz-box {
+  display: flex;
+  /* flex-direction: column; */
+
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+
+  width: 888px;
+  border-bottom: #ebebeb 1px solid;
+  padding: 24px;
+}
+
+.biz-box:hover {
+  box-shadow: 0 0 5px 3px rgb(245, 245, 245);
+  border-radius: 3px;
+}
+
+#biz-rev-info {
+  display: flex;
+}
