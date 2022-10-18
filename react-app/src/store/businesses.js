@@ -19,11 +19,11 @@ const CLEAR_DATA = '/Businesses/CLEAR_DATA';
 
 const addBiz = (business) => ({
     type: ADD,
-    business
+    payload: business
 });
 
-export const createBusiness = (business, previewImage) => async dispatch => {
-    const response = await csrfFetch('/api/business', {
+export const createBusiness = (business) => async dispatch => {
+    const response = await csrfFetch('/api/biz', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -33,23 +33,24 @@ export const createBusiness = (business, previewImage) => async dispatch => {
 
     if (response.ok) {
         const newBiz = await response.json();
-        const res = await csrfFetch(`/api/business/${newBiz.id}/images`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                url: previewImage,
-                preview: true
-            })
-        });
+        console.log("ANY RESPONSE AFTER CREATE BIZ THUNK ACTION:", newBiz);
+        // const res = await csrfFetch(`/api/business/${newBiz.id}/images`, {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify({
+        //         url: previewImage,
+        //         preview: true
+        //     })
+        // });
 
-        if (res.ok) {
-            const newImage = await res.json();
+        // if (res.ok) {
+            // const newImage = await res.json();
 
             dispatch(addBiz(newBiz));
             return newBiz;
-        }
+        // }
     }
 };
 
@@ -59,15 +60,15 @@ const addImg = (business, img) => ({
     img
 });
 
-export const addBizImg = image => async dispatch => {
-    const { businessId } = image;
-    const responseGetBiz = await fetch(`/api/businesses/${businessId}`);
+export const addBizImg = (bizId, image) => async dispatch => {
+    // const { businessId } = image;
+    const responseGetBiz = await fetch(`/api/biz/${bizId}`);
     let Business;
 
     if (responseGetBiz.ok) {
         Business = await responseGetBiz.json();
 
-        const responseAddImg = await csrfFetch(`/api/businesses/${businessId}/images`, {
+        const responseAddImg = await csrfFetch(`/api/biz/${bizId}/images`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(image)
@@ -238,12 +239,12 @@ const businessReducer = (state = initialState, action) => {
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
             const newBusiness = { ...action.payload };
             newState.allBusinesses[action.payload.id] = newBusiness;
-            // console.log("NEWSTATE AFTER ADD_Business ACTION:", newState);
+            console.log("NEWSTATE AFTER CREATE BIZ ACTION:", newState);
             return newState;
         case ADD_IMG:
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
             newState.singleBusiness = action.business;
-            newState.singleBusiness.businessImages.push(action.img);
+            newState.singleBusiness.Business_Images.push(action.img);
             // console.log("NEWSTATE AFTER ADD_Business ACTION:", newState);
             return newState;
         case UPDATE:
@@ -260,7 +261,7 @@ const businessReducer = (state = initialState, action) => {
             return newState;
         case REMOVE_IMG:
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
-            delete newState.singleBusiness.businessImages.find(img => img.id === action.imageId);
+            delete newState.singleBusiness.Business_Images.find(img => img.id === action.imageId);
             newState = { ...newState };
             // console.log("NEWSTATE AFTER REMOVE_Business ACTION:", newState);
             return newState;
