@@ -1,0 +1,28 @@
+.homepage-container {
+    margin-top: 683px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recent-activity-title {
+    font-size: 28px;
+}
+
+.recent-activity-container {
+    border-bottom: solid 1px #ebebeb;
+    padding: 56px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-type-container {
+    padding: 48px 0;
+}
+
+.category-type-title {
+    font-size: 28px;
+}

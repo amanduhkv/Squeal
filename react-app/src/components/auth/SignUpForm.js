@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { Redirect, NavLink } from 'react-router-dom';
+import { Redirect, NavLink, useLocation } from 'react-router-dom';
 import { signUp, login } from '../../store/session';
 import { Modal } from '../../context/Modal';
 import party from '../../icons/login.png';
 import './SignUpForm.css';
 
 const SignUpForm = () => {
+    const url = useLocation().pathname;
     const [errors, setErrors] = useState([]);
     const [first_name, setFirstname] = useState('');
     const [last_name, setLastname] = useState('');
@@ -64,8 +65,8 @@ const SignUpForm = () => {
     return (
         <>
     {/* -----------------------------LOG IN MODAL----------------------------- */}
-            <button className='login-button session-buttons' onClick={() => { setShowLogModal(true) }}>
-                <span className='session-butt-word login-word'>
+            <button className={url === '/' ? 'login-button session-buttons' : 'login-button-blk session-buttons'} onClick={() => { setShowLogModal(true) }}>
+                <span className={url === '/' ? 'session-butt-word login-word' : 'session-butt-word login-word-blk'}>
                     Log In
                 </span>
             </button>

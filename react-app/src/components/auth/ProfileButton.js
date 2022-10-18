@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useHistory } from "react-router-dom";
 import * as sessionActions from '../../store/session';
 import LogoutButton from "./LogoutButton";
@@ -9,11 +9,12 @@ import bizPig from '../../icons/biz-pig.png'
 import reviewPig from '../../icons/review-pig.png'
 import './ProfileButton.css'
 
-function ProfileButton({ user }) {
+function ProfileButton() {
   const dispatch = useDispatch();
+  const user = useSelector(state => state.session.user)
   const [showMenu, setShowMenu] = useState(false);
   const history = useHistory();
-  // console.log(user)
+  console.log('this is the user',user)
   const openMenu = () => {
     if (showMenu) return;
     setShowMenu(true);
@@ -34,9 +35,12 @@ function ProfileButton({ user }) {
 
   return (
     <>
-    <div className='profile-button' onClick={openMenu}>
+    <div className='profile-button tooltip-profile' onClick={openMenu}>
       <img className='user-icon' src={userIcon} alt='user' />
       {/* <div id='hover-dropdown-name'>{user}</div> */}
+      <div className="tooltiptext-below-user">
+        {user.first_name} {user.last_name[0]}.
+      </div>
     </div>
       {showMenu && (
         <div className="profile-dropdown">
