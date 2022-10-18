@@ -117,6 +117,7 @@ def add_review_img(review_id):
     form['csrf_token'].data = request.cookies['csrf_token']
 
     review = Review.query.get(review_id)
+    print(">>>>>REVIEW", review)
     if not review:
         return jsonify({
             "message": "Review couldn't be found",
@@ -143,7 +144,7 @@ def add_review_img(review_id):
         else:
             return { "message": "Forbidden", "status_code": 403 }, 403
 
-    # return { "message": "Review couldn't be found", "status_code": 404 }, 404
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 400
 
 
 # 6. DELETE A REVIEW IMG --- THIS IS IN THE IMAGES ROUTES
