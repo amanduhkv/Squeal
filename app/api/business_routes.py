@@ -8,7 +8,7 @@ from ..forms.add_business_img_form import AddBizImgForm
 from ..forms.edit_business_form import EditBusinessForm
 from sqlalchemy import func
 
-business_routes = Blueprint('business', __name__)
+business_routes = Blueprint('biz', __name__)
 
 
 def validation_errors_to_error_messages(validation_errors):

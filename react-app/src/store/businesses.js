@@ -93,10 +93,11 @@ const load = payload => ({
 });
 
 export const getAllBiz = () => async dispatch => {
-    const response = await fetch('/api/businesses');
-
+    const response = await fetch('/api/biz');
+    console.log("hitting res", response)
     if (response.ok) {
         const list = await response.json();
+        console.log("hitting list", list)
         dispatch(load(list));
     }
 };
@@ -105,7 +106,7 @@ export const getAllBiz = () => async dispatch => {
 // Get user's businesses
 
 export const getUsersBiz = () => async dispatch => {
-    const response = await fetch(`/api/businesses/current`);
+    const response = await fetch(`/api/biz/current`);
 
     if (response.ok) {
         const list = await response.json();
@@ -121,7 +122,7 @@ const getOne = payload => ({
 });
 
 export const getOneBiz = id => async dispatch => {
-    const response = await fetch(`/api/businesses/${id}`);
+    const response = await fetch(`/api/biz/${id}`);
 
     if (response.ok) {
         const biz = await response.json();
@@ -142,7 +143,7 @@ const update = payload => ({
 });
 
 export const updateBiz = biz => async dispatch => {
-    const response = await csrfFetch(`/api/businesses/${biz.id}`, {
+    const response = await csrfFetch(`/api/biz/${biz.id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -170,7 +171,7 @@ const deleteBiz = bizId => ({
 });
 
 export const removeBiz = id => async dispatch => {
-    const response = await csrfFetch(`/api/businesses/${id}`, {
+    const response = await csrfFetch(`/api/biz/${id}`, {
         method: 'DELETE'
     });
 
@@ -192,7 +193,7 @@ const removeImg = imageId => ({
 });
 
 export const deleteImg = imageId => async dispatch => {
-    const response = await csrfFetch(`/api/Business-images/${imageId}`, {
+    const response = await csrfFetch(`/api/biz-images/${imageId}`, {
         method: 'DELETE'
     });
 
@@ -222,7 +223,7 @@ const businessReducer = (state = initialState, action) => {
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
             // console.log("LOAD_ALL ACTION.PAYLOAD IS:", action.payload);
             const newAllBusinesses = {};
-            action.payload.forEach(business => newAllBusinesses[business.id] = business);
+            action.payload.Businesses.forEach(business => newAllBusinesses[business.id] = business);
             newState.allBusinesses = newAllBusinesses;
             // console.log("NEWSTATE AFTER LOAD_ALL ACTION:", newState);
             return newState;

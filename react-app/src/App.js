@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import UserPage from './components/User/UserPage';
 import HomePage from './components/HomePage';
+import Biz from './components/Biz';
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -76,6 +77,9 @@ function App() {
                         <ErrorPage />
                     )}
                     <Footer />
+                </Route>
+                <Route path='/biz'>
+                    <Biz />
                 </Route>
                 <Route path='/reviews/current'>
                     {user && (

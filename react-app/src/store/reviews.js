@@ -1,14 +1,14 @@
 import { csrfFetch } from './csrf';
 
 /* ----------------------------- ACTION TYPES: ----------------------------- */
-const LOAD_USER_REVIEWS = '/REVIEWS/LOAD_USER_REVIEWS';
-const LOAD_BUSINESS_REVIEWS = '/REVIEWS/LOAD_BUSINESS_REVIEWS';
-const ADD_REVIEW = '/REVIEWS/ADD_REVIEW';
-const ADD_REVIEW_IMG = '/REVIEWS/ADD_REVIEW_IMG';
-const EDIT_REVIEW = '/REVIEWS/EDIT_REVIEW';
-const REMOVE_REVIEW = '/REVIEWS/REMOVE_REVIEW';
-const REMOVE_REVIEW_IMG = '/REVIEWS/REMOVE_REVIEW_IMG';
-const CLEAR_DATA = '/businesses/CLEAR_DATA';
+const LOAD_USER_REVIEWS = '/reviews/LOAD_USER_REVIEWS';
+const LOAD_BUSINESS_REVIEWS = '/reviews/LOAD_BUSINESS_REVIEWS';
+const ADD_REVIEW = '/reviews/ADD_REVIEW';
+const ADD_REVIEW_IMG = '/reviews/ADD_REVIEW_IMG';
+const EDIT_REVIEW = '/reviews/EDIT_REVIEW';
+const REMOVE_REVIEW = '/reviews/REMOVE_REVIEW';
+const REMOVE_REVIEW_IMG = '/reviews/REMOVE_REVIEW_IMG';
+const CLEAR_DATA = '/reviews/CLEAR_DATA';
 
 
 /* ---------------------------- ACTION CREATORS: ---------------------------- */
@@ -136,7 +136,7 @@ export const updateReview = (reviewId, reviewData, userData, businessData) => as
 }
 
 export const deleteReview = (reviewId) => async dispatch => {
-    const response = await csrfFetch(`/api/ReviewS/${reviewId}`, {
+    const response = await csrfFetch(`/api/reviews/${reviewId}`, {
         method: 'DELETE'
     });
 

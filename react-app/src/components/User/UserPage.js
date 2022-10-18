@@ -13,6 +13,9 @@ import './UserPage.css';
 const UserPage = () => {
   const url = useLocation().pathname;
   const user = useSelector(state => state.session.user);
+  // const biz = useSelector(state => state.businesses.allBusinesses);
+
+  // console.log('BIZ: ', biz)
 
   let lastName = user.last_name.split('')
   let lastInitial = lastName[0];
@@ -23,7 +26,7 @@ const UserPage = () => {
       <div className='user-prof'>
         <div id='left-col'>
           <button id='user-img'>
-            <img id='pig-outline' src={user.profile_pic ? user.profile_pic : pigOutline} alt='pig-outline' width='100%' height='100%' />
+            <img id='pig-outline' src={user.profile_pic ? user.profile_pic : pigOutline} alt='pig-outline' width='100%' height='100%' objectFit= 'cover' />
           </button>
           <h3 id='bar-name'>{user.first_name}'s Profile</h3>
           <div className='side-bar'>
@@ -40,7 +43,7 @@ const UserPage = () => {
             {/* -----------------------BIZ--------------------- */}
             <NavLink to='/biz/current' id='bar-row'>
               <img id='bar-img' src={savedBiz} alt='star-grey' width='25px' />
-              <div id='bar-txt'>Saved Businesses</div>
+              <div id='bar-txt'>My Businesses</div>
             </NavLink>
           </div>
         </div>
@@ -64,11 +67,18 @@ const UserPage = () => {
           {url === '/current' && (
           <div>
             <h2 id='mid-title-over'>Recent Activity</h2>
+            <div>You haven't had any recent activity yet.</div>
+            {/* <div>
+              <button to='/current' id='recent-act-user-container'>
+                <img id='recent-act-user-pic' src={user.profile_pic ? user.profile_pic : pigOutline} />
+              </button>
+            </div> */}
           </div>
           )}
           {url === '/reviews/current' && (
           <div>
             <h2 id='mid-title'>Reviews</h2>
+            <div>You haven't made any reviews yet.</div>
           </div>
           )}
         </div>
@@ -90,7 +100,7 @@ const UserPage = () => {
             <div id='bot-rc-1'>
               <img src={savedBiz} alt='save' width='16px' height='16px' />
               <p id='bot-rc-txt'>
-                Saved Businesses (#)
+                My Businesses (#)
               </p>
             </div>
             <h5 id='bot-rc-title'>Location</h5>
