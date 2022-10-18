@@ -4,7 +4,7 @@ from app.forms.delete_biz_form import DeleteBusinessForm
 from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.add_review_form import AddReviewForm
 from ..forms.add_business_form import AddBusinessForm
-# from ..forms.add_business_img_form import AddBizImgForm
+from ..forms.add_business_img_form import AddBizImgForm
 from ..forms.edit_business_form import EditBusinessForm
 from sqlalchemy import func
 
@@ -216,10 +216,17 @@ def add_new_business():
             lng='64.0',
             # ^placeholders
         )
-        # print(">>>>>>>> BUSINESS",business.to_dict())
         db.session.add(business)
         db.session.commit()
-        return business.to_dict()
+
+        types_list = [type.to_dict() for type in business.types]
+        transactions_list = [transaction.to_dict() for transaction in business.transactions]
+
+        biz = business.to_dict()
+        biz['types'] = types_list
+        biz['transactions'] = transactions_list
+
+        return biz
 
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
@@ -239,9 +246,6 @@ def edit_business(biz_id):
 
     business_to_update = Business.query.get(biz_id)
 
-    print(">>>>>>>>>>>> BUSINESS TO UPDATE", business_to_update)
-    print(">>>>>>>>>>>> BUSINESS TO UPDATE TODICT", business_to_update.to_dict())
-
     if not business_to_update:
         return jsonify({
             "message": "Business couldn't be found",
@@ -252,7 +256,6 @@ def edit_business(biz_id):
         return {"message": "Forbidden", "status_code": 403}, 403
     if user_id == business_to_update.to_dict()['owner_id']:
         if form.validate_on_submit():
-            print(">>>>>>>>>>>> IVE BEEN VALIDATED")
             type_list = []
             for alias in form.data['types']:
                 filtered = [
@@ -285,7 +288,14 @@ def edit_business(biz_id):
 
             db.session.commit()
 
-            return business_to_update.to_dict()
+            types_list = [type.to_dict() for type in business_to_update.types]
+            transactions_list = [transaction.to_dict() for transaction in business_to_update.transactions]
+
+            biz = business_to_update.to_dict()
+            biz['types'] = types_list
+            biz['transactions'] = transactions_list
+
+            return biz
         else:
             return {'errors': validation_errors_to_error_messages(form.errors)}, 400
 
@@ -293,8 +303,6 @@ def edit_business(biz_id):
         return {"message": "Forbidden", "status_code": 403}, 403
 
 # DELETE BIZ
-
-
 @business_routes.route("/<int:biz_id>/", methods=['DELETE'])
 @login_required
 def delete_biz(biz_id):
@@ -323,6 +331,42 @@ def delete_biz(biz_id):
 
         else:
             return {"message": "Forbidden", "status_code": 403}, 403
+
+# ADD A BUSINESS IMG 
+@business_routes.route("/<int:biz_id>/images", methods=['POST'])
+@login_required
+def add_biz_img(biz_id):
+    """
+    Add an image to a biz based on the biz's id
+    """
+    form = AddBizImgForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    biz = Business.query.get(biz_id)
+    if not biz:
+        return jsonify({
+            "message": "Business couldn't be found",
+            "status_code": 404
+        }), 404
+
+    if form.validate_on_submit():
+        user = current_user.to_dict()
+
+        if biz.to_dict()['owner_id'] == user['id']:
+
+            biz_img = Image(
+                business_id = biz_id,
+                url = form.data['url'],
+                review_id = None
+            )
+
+            db.session.add(biz_img)
+            db.session.commit()
+
+            return biz_img.to_dict()
+
+        else:
+            return { "message": "Forbidden", "status_code": 403 }, 403
 
 
 # -------------------- REVIEWS STUFF -------------------- #
