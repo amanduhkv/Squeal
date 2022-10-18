@@ -12,14 +12,16 @@ export default function CreateBizForm() {
     const [address, setAddress] = useState("");
     const [city, setCity] = useState("");
     const [state, setState] = useState("");
-    const [country, setCountry] = useState("United States");
     const [zipcode, setZipcode] = useState("");
     const [lat, setLat] = useState("");
     const [lng, setLng] = useState("");
-    const [priceRange, setPriceRange] = useState("$");
+    const [country, setCountry] = useState("United States");
     const [phone, setPhone] = useState("");
     const [startTime, setStartTime] = useState("0600");
     const [endTime, setEndTime] = useState("2130");
+    const [priceRange, setPriceRange] = useState("$");
+    const [types, setTypes] = useState([]);
+    const [transactions, setTransactions] = useState([]);
 
     const [bizImgUrl, setBizImgUrl] = useState("");
 
@@ -28,6 +30,8 @@ export default function CreateBizForm() {
     // FOR SELECT OPTIONS:
     const PRICE_RANGES = ["$", "$$", "$$$", "$$$$"];
     const BIZ_HOURS = [ ["0000", "12:00am"], ["0030", "12:30am"], ["0100", "1:00am"], ["0130", "1:30am"], ["0200", "2:00am"], ["0230", "2:30am"], ["0300", "3:00am"], ["0330", "3:30am"], ["0400", "4:00am"], ["0430", "4:30am"], ["0500", "5:00am"], ["0530", "5:30am"], ["0600", "6:00am"], ["0630", "6:30am"], ["0700", "7:00am"], ["0730", "7:30am"], ["0800", "8:00am"], ["0830", "8:30am"], ["0900", "9:00am"], ["0930", "9:30am"], ["1000", "10:00am"], ["1030", "10:30am"], ["1100", "11:00am"], ["1130", "11:30am"], ["1200", "12:00pm"], ["1230", "12:30pm"], ["1300", "1:00pm"], ["1330", "1:30pm"], ["1400", "2:00pm"], ["1430", "2:30pm"], ["1500", "3:00pm"], ["1530", "3:30pm"], ["1600", "4:00pm"], ["1630", "4:30pm"], ["1700", "5:00pm"], ["1730", "5:30pm"], ["1800", "6:00pm"], ["1830", "6:30pm"], ["1900", "7:00pm"], ["1930", "7:30pm"], ["2000", "8:00pm"], ["2030", "8:30pm"], ["2100", "9:00pm"], ["2130", "9:30pm"], ["2200", "10:00pm"], ["2230", "10:30pm"], ["2300", "11:00pm"], ["2330", "11:30pm"] ];
+    const TYPES = [ { 'alias': 'bakeries', 'title': 'Bakeries' }, { 'alias': 'bubbletea', 'title': 'Bubble Tea' }, { 'alias': 'cocktailbars', 'title': 'Cocktails' }, { 'alias': 'bars', 'title': 'Bars' }, { 'alias': 'brazilian', 'title': 'Brazilian' }, { 'alias': 'coffee', 'title': 'Coffee & Tea' }, { 'alias': 'chickenshop', 'title': 'Chicken Shop' }, { 'alias': 'desserts', 'title': 'Desserts' }, { 'alias': 'donuts', 'title': 'Donuts' }, { 'alias': 'dimsum', 'title': 'Dim Sum' }, { 'alias': 'ethiopian', 'title': 'Ethiopian' }, { 'alias': 'icecream', 'title': 'Ice Cream & Froyo' }, { 'alias': 'juicebars', 'title': 'Juice Bars & Smoothies' }, { 'alias': 'bbq', 'title': 'Barbeque' }, { 'alias': 'breakfast_brunch', 'title': 'Breakfast & Brunch' }, { 'alias': 'burgers', 'title': 'Burgers' }, { 'alias': 'cafes', 'title': 'Cafes' }, { 'alias': 'chicken_wings', 'title': 'Chicken Wings' }, { 'alias': 'chinese', 'title': 'Chinese' }, { 'alias': 'gluten_free', 'title': 'Gluten-Free' }, { 'alias': 'german', 'title': 'German' }, { 'alias': 'gastropubs', 'title': 'Gastropubs' }, { 'alias': 'french', 'title': 'French' }, { 'alias': 'hotdogs', 'title': 'Fast Food' }, { 'alias': 'indpak', 'title': 'Indian' }, { 'alias': 'latin', 'title': 'Latin' }, { 'alias': 'italian', 'title': 'Italian' }, { 'alias': 'japanese', 'title': 'Japanese' }, { 'alias': 'korean', 'title': 'Korean' }, { 'alias': 'newamerican', 'title': 'American (New)' }, { 'alias': 'mediterranean', 'title': 'Mediterranean' }, { 'alias': 'mexican', 'title': 'Mexican' }, { 'alias': 'pizza', 'title': 'Pizza' }, { 'alias': 'ramen', 'title': 'Ramen' }, { 'alias': 'noodles', 'title': 'Noodles' }, { 'alias': 'raw_food', 'title': 'Raw Food' }, { 'alias': 'salad', 'title': 'Salad' }, { 'alias': 'sandwiches', 'title': 'Sandwiches' }, { 'alias': 'soulfood', 'title': 'Soul Food' }, { 'alias': 'soup', 'title': 'Soup' }, { 'alias': 'seafood', 'title': 'Seafood' }, { 'alias': 'steak', 'title': 'Steakhouses' }, { 'alias': 'sushi', 'title': 'Sushi Bars' }, { 'alias': 'tacos', 'title': 'Tacos' }, { 'alias': 'tradamerican', 'title': 'American (Traditional)' }, { 'alias': 'taiwanese', 'title': 'Taiwanese' }, { 'alias': 'thai', 'title': 'Thai' }, { 'alias': 'tapasmallplates', 'title': 'Tapas/Small Plates' }, { 'alias': 'vegetarian', 'title': 'Vegetarian' }, { 'alias': 'vegan', 'title': 'Vegan' }, { 'alias': 'vietnamese', 'title': 'Vietnamese' }, {'alias': 'waffles', 'title': 'Waffles' } ]
+    const TRANSACTIONS = [['pickup', 'Pickup'], ['delivery', 'Deliver'], ['restaurant_reservation', 'Restaurant Reservation']]
 
     if (!sessionUser) {
         alert("Please log in or create an account to create a business.");
@@ -59,14 +63,16 @@ export default function CreateBizForm() {
             address,
             city,
             state,
-            country,
+            zipcode,
             lat: +lat,
             lng: +lng,
-            price_range: priceRange,
+            country,
             phone_number: phone,
             start_time: startTime,
             end_time: endTime,
-            zipcode
+            price_range: priceRange,
+            transactions,
+            types
         }
 
         try {
@@ -79,8 +85,9 @@ export default function CreateBizForm() {
                         if (createdImg) setValidationErrors([]);
                     }
                     catch (res) {
-                        const data = await res.json();
-                        if (data && data.errors) return setValidationErrors(data.errors);
+                        console.log("==>ANY ERRORS FROM CREATE BIZ IMG:", res)
+                        // const data = await res.json();
+                        // if (data && data.errors) return setValidationErrors(data.errors);
                     }
                 }
 
@@ -90,15 +97,15 @@ export default function CreateBizForm() {
         }
 
         catch (res) {
-            const data = await res.json();
             console.log("==>ANY ERRORS FROM CREATE BIZ:", res)
-            if (data && data.errors) return setValidationErrors(data.errors);
+            // const data = await res.json();
+            // if (data && data.errors) return setValidationErrors(data.errors);
         }
     };
 
     return (
         <div className='form form--create-biz'>
-            <h1>Hello! Let's fill out your business details</h1>
+            <h1 className='header header--create-biz'>Hello! Let's fill out your business details</h1>
 
             <form onSubmit={handleSubmit} className="form" id="form--create-spot">
                 {validationErrors.length > 0 && (
@@ -239,7 +246,7 @@ export default function CreateBizForm() {
                             <label className='label--create-biz' for="form-field--end-time">Business End Time:</label>
                             <select
                                 value={endTime}
-                                onChange={e => setStartTime(e.target.value)}
+                                onChange={e => setEndTime(e.target.value)}
                                 required
                                 className='form-field'
                                 id='form-field--end-time'
@@ -265,6 +272,70 @@ export default function CreateBizForm() {
                                 <option value={p}>{p}</option>
                             ))}
                         </select>
+                    </div>
+
+                    {/* ----- TYPES & TRANSACTIONS SECTION ----- */}
+                    <div className='container container--form-fields--section container--form-fields--types-transactions-section'>
+
+                        <div className='container container--form-fields--types-transactions-section--transactions'>
+                            <label className='label--create-biz label--create-biz-transactions' for="form-field--transactions">Transactions:</label>
+                            <div className='container container--form-fields--transactions-checkboxes-section'>
+                                {TRANSACTIONS.map(transaction => (
+                                    <div id='single-transaction'>
+                                        <input
+                                        type="checkbox"
+                                        className='form-field--checkbox'
+                                        id='form-field--transactions'
+                                        onChange={
+                                            (e) => {
+                                                const transactionsList = transactions;
+                                                transactionsList.push(e.target.value)
+                                                setTransactions(transactionsList);
+                                            }
+                                        }
+                                        value={transaction[0]}
+                                        name={transaction[0]}
+                                        />
+                                        <label
+                                        for={transaction[0]}
+                                        className='label--create-biz-transaction'
+                                        >
+                                            {transaction[1]}
+                                        </label>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className='container container--form-fields--types-transactions-section--types'>
+                            <label className='label--create-biz label--create-biz-types' for="form-field--transactions">Types:</label>
+                            <div className='container container--form-fields--types-checkboxes-section'>
+                            {TYPES.map(type => (
+                                <div id='single-type'>
+                                    <input
+                                        type="checkbox"
+                                        className='form-field--checkbox'
+                                        id='form-field--types'
+                                        onChange={
+                                            (e) => {
+                                                const typesList = types;
+                                                typesList.push(e.target.value)
+                                                setTypes(typesList);
+                                            }
+                                        }
+                                        value={type.alias}
+                                        name={type.alias}
+                                        />
+                                    <label
+                                        for={type.alias}
+                                        className='label--create-biz-type'
+                                        >
+                                        {type.title}
+                                    </label>
+                                </div>
+                            ))}
+                            </div>
+                        </div>
                     </div>
 
                     {/* ----- BIZ IMG SECTION ----- */}

@@ -7,6 +7,18 @@
     position: static;
 }
 
+.form--create-biz input:focus {
+    outline: 2px solid rgb(9, 127, 131);
+}
+#form-field--transactions:focus,
+#form-field--types:focus {
+    outline: none;
+}
+
+.header--create-biz {
+    margin: 20px 0px 0px;
+}
+
 .container--form-fields {
     width: 600px;
 }
@@ -22,6 +34,12 @@
     width: 100%;
 }
 
+#form-field--transactions,
+#form-field--types {
+    width: 20px;
+    height: 20px;
+}
+
 #create-biz-submit-button {
     padding: 15px;
     width: 100%;
@@ -33,6 +51,10 @@
 }
 #create-biz-submit-button:hover {
     background-color: #F40D15;
+}
+
+.label--create-biz {
+    font-weight: 600;
 }
 
 /* DEFAULT SETTINGS IS MARGIN-RIGHT 5px */
@@ -79,6 +101,48 @@ div input:first-child {
 .container--form-fields--hours-section--start {
     margin-right: 20px;
 }
+
+/* TYPES & TRANSACTIONS CONTAINER THAT INCLUDES LABEL: */
+.container--form-fields--types-transactions-section--transactions,
+.container--form-fields--types-transactions-section--types {
+    margin-top: 16px;
+}
+
+/* TRANSACTIONS CHECKBOXES ONLY */
+.container--form-fields--transactions-checkboxes-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* TYPES CHECKBOXES ONLY */
+.container--form-fields--types-checkboxes-section {
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+#single-transaction {
+    display: flex;
+    align-items: center;
+}
+
+#single-type {
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+#form-field--types {
+    align-self: flex-start;
+}
+
+#form-field--transactions,
+#form-field--types {
+    margin-right: 5px;
+}
+
 
 /* IMG SECTION*/
 .container--form-fields--img-section {
