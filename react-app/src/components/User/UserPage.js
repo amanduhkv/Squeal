@@ -23,7 +23,7 @@ const UserPage = () => {
       <div className='user-prof'>
         <div id='left-col'>
           <button id='user-img'>
-            <img id='pig-outline' src={pigOutline} alt='pig-outline' width='130px' />
+            <img id='pig-outline' src={user.profile_pic ? user.profile_pic : pigOutline} alt='pig-outline' width='100%' height='100%' />
           </button>
           <h3 id='bar-name'>{user.first_name}'s Profile</h3>
           <div className='side-bar'>
