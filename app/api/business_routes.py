@@ -15,10 +15,10 @@ def validation_errors_to_error_messages(validation_errors):
     """
     Simple function that turns the WTForms validation errors into a simple list
     """
-    errorMessages = []
+    errorMessages = {}
     for field in validation_errors:
         for error in validation_errors[field]:
-            errorMessages.append(f'{field} : {error}')
+            errorMessages[field] = error
     return errorMessages
 
 
@@ -50,7 +50,7 @@ def get_all_businesses():
 
 
 # LOAD SINGLE BIZ
-@business_routes.route("/<int:biz_id>/")
+@business_routes.route("/<int:biz_id>")
 def get_one_business(biz_id):
     """
     Gets one business' details
@@ -82,7 +82,7 @@ def get_one_business(biz_id):
 
 
 # LOAD CURRENT USER'S BIZ
-@business_routes.route("/current/")
+@business_routes.route("/current")
 @login_required
 def get_current_user_business():
     """
@@ -172,7 +172,7 @@ all_transactions_list = ['pickup', 'delivery', 'restaurant_reservation']
 
 
 # CREATE A BIZ
-@business_routes.route("/", methods=['POST'])
+@business_routes.route("", methods=['POST'])
 @login_required
 def add_new_business():
     """
@@ -183,9 +183,47 @@ def add_new_business():
     form = AddBusinessForm()
     form['csrf_token'].data = request.cookies['csrf_token']
 
-    if form.validate_on_submit():
-        # print(">>>>>>>>>>>> IVE BEEN VALIDATED")
 
+    # Body validation error handlers:
+    login_val_error = {
+        "message": "Validation error",
+        "status_code": 400,
+        "errors": {}
+    }
+
+    if not form.data['name']:
+        login_val_error["errors"]["name"] = "Name of business is is required."
+    if not form.data['address']:
+        login_val_error["errors"]["address"] = "Address is required."
+    if not form.data['city']:
+        login_val_error["errors"]["city"] = "City is required."
+    if not form.data['state']:
+        login_val_error["errors"]["state"] = "State is required."
+    if not form.data['country']:
+        login_val_error["errors"]["country"] = "Country is required."
+    if not form.data['zipcode']:
+        login_val_error["errors"]["zipcode"] = "Zip code is required."
+    if form.data['lat'] != 0 and not form.data['lat']:
+        login_val_error["errors"]["lat"] = "Latitude is required."
+    if form.data['lng'] and not form.data['lng']:
+        login_val_error["errors"]["lng"] = "Longitude is required."
+    if form.data['lat'] < -90 or form.data['lat'] > 90 :
+        login_val_error["errors"]["lat"] = "Latitude must be between -90 and 90."
+    if form.data['lng'] < -180 or form.data['lng'] > 180 :
+        login_val_error["errors"]["lng"] = "Longitude must be between -180 and 180."
+    if not form.data['price_range']:
+        login_val_error["errors"]["price_range"] = "Price range is required."
+    if not form.data['phone_number']:
+        login_val_error["errors"]["phone_number"] = "Business phone number is required."
+    if not form.data['start_time']:
+        login_val_error["errors"]["start_time"] = "Business start time is required."
+    if not form.data['end_time']:
+        login_val_error["errors"]["end_time"] = "Business end time is required."
+    if len(login_val_error["errors"]) > 0:
+        return jsonify(login_val_error), 400
+
+
+    if form.validate_on_submit():
         type_list = []
         for alias in form.data['types']:
             filtered = [i for i in all_types_list if i['alias'] == alias][0]
@@ -232,7 +270,7 @@ def add_new_business():
 
 
 # UPDATE A BIZ
-@business_routes.route("/<int:biz_id>/", methods=['PUT'])
+@business_routes.route("/<int:biz_id>", methods=['PUT'])
 @login_required
 def edit_business(biz_id):
     """
@@ -244,13 +282,53 @@ def edit_business(biz_id):
     form = EditBusinessForm()
     form['csrf_token'].data = request.cookies['csrf_token']
 
-    business_to_update = Business.query.get(biz_id)
 
+    business_to_update = Business.query.get(biz_id)
     if not business_to_update:
         return jsonify({
             "message": "Business couldn't be found",
             "status_code": 404
         })
+
+
+    # Body validation error handlers:
+    login_val_error = {
+        "message": "Validation error",
+        "status_code": 400,
+        "errors": {}
+    }
+
+    if not form.data['name']:
+        login_val_error["errors"]["name"] = "Name of business is is required."
+    if not form.data['address']:
+        login_val_error["errors"]["address"] = "Address is required."
+    if not form.data['city']:
+        login_val_error["errors"]["city"] = "City is required."
+    if not form.data['state']:
+        login_val_error["errors"]["state"] = "State is required."
+    if not form.data['country']:
+        login_val_error["errors"]["country"] = "Country is required."
+    if not form.data['zipcode']:
+        login_val_error["errors"]["zipcode"] = "Zip code is required."
+    if form.data['lat'] != 0 and not form.data['lat']:
+        login_val_error["errors"]["lat"] = "Latitude is required."
+    if form.data['lng'] and not form.data['lng']:
+        login_val_error["errors"]["lng"] = "Longitude is required."
+    if form.data['lat'] < -90 or form.data['lat'] > 90 :
+        login_val_error["errors"]["lat"] = "Latitude must be between -90 and 90."
+    if form.data['lng'] < -180 or form.data['lng'] > 180 :
+        login_val_error["errors"]["lng"] = "Longitude must be between -180 and 180."
+    if not form.data['price_range']:
+        login_val_error["errors"]["price_range"] = "Price range is required."
+    if not form.data['phone_number']:
+        login_val_error["errors"]["phone_number"] = "Business phone number is required."
+    if not form.data['start_time']:
+        login_val_error["errors"]["start_time"] = "Business start time is required."
+    if not form.data['end_time']:
+        login_val_error["errors"]["end_time"] = "Business end time is required."
+    if len(login_val_error["errors"]) > 0:
+        return jsonify(login_val_error), 400
+
 
     if user_id != business_to_update.to_dict()['owner_id']:
         return {"message": "Forbidden", "status_code": 403}, 403
@@ -303,7 +381,7 @@ def edit_business(biz_id):
         return {"message": "Forbidden", "status_code": 403}, 403
 
 # DELETE BIZ
-@business_routes.route("/<int:biz_id>/", methods=['DELETE'])
+@business_routes.route("/<int:biz_id>", methods=['DELETE'])
 @login_required
 def delete_biz(biz_id):
     """
@@ -385,14 +463,16 @@ def biz_reviews(biz_id):
             "status_code": 404
         }), 404
 
-    reviews_query = Review.query.filter(Business.id == biz_id).all()
+    reviews_query = Review.query.filter_by(business_id=biz_id)
+    print(">>>> REVIEWS_QUERY", reviews_query)
     biz_reviews = [biz.to_dict() for biz in reviews_query]
-    curr_biz = Business.query.filter(Business.id == biz_id).first()
+    # curr_biz = Business.query.filter(Business.id == biz_id).first()
 
     for biz_review in biz_reviews:
-        biz_review['Business'] = curr_biz.to_dict()
-        biz_review['Review_Images'] = Image.query.filter(
-            biz_review['id'] == Image.review_id).all()
+        user_info = User.query.filter_by(id=biz_review['user_id']).first()
+        biz_review['User'] = user_info.to_dict()
+        biz_review['Review_Images'] = [url.to_dict() for url in Image.query.filter(
+            biz_review['id'] == Image.review_id).all()]
 
     return jsonify({"Reviews": biz_reviews})
 
@@ -414,9 +494,10 @@ def add_review(biz_id):
             "status_code": 404
         }), 404
 
+
     user = current_user.to_dict()
 
-    reviews_query = Review.query.filter(Business.id == biz_id).all()
+    reviews_query = Review.query.filter_by(business_id=biz_id)
     biz_reviews = [biz.to_dict() for biz in reviews_query]
     for biz_review in biz_reviews:
         if biz_review['user_id'] == user['id']:
@@ -424,6 +505,22 @@ def add_review(biz_id):
                 "message": "User already has a review for this business",
                 "status_code": 403
             }), 403
+
+
+    # Body validation error handlers:
+    login_val_error = {
+        "message": "Validation error",
+        "status_code": 400,
+        "errors": {}
+    }
+
+    if not form.data['review_body']:
+        login_val_error["errors"]["review_body"] = "Review text is required"
+    if form.data['rating'] < 1 or form.data['rating'] > 5:
+        login_val_error["errors"]["rating"] = "Rating must be an integer from 1 to 5"
+    if len(login_val_error["errors"]) > 0:
+        return jsonify(login_val_error), 400
+
 
     if form.validate_on_submit():
 

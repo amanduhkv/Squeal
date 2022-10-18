@@ -12,10 +12,12 @@ def validation_errors_to_error_messages(validation_errors):
     """
     Simple function that turns the WTForms validation errors into a simple list
     """
-    errorMessages = []
+    errorMessages = {}
     for field in validation_errors:
         for error in validation_errors[field]:
-            errorMessages.append(f'{field} : {error}')
+            if field == "email" or field == "password":
+                field = "message"
+            errorMessages[field] = error
     return errorMessages
 
 
@@ -38,6 +40,22 @@ def login():
     # Get the csrf_token from the request cookie and put it into the
     # form manually to validate_on_submit can be used
     form['csrf_token'].data = request.cookies['csrf_token']
+
+
+    # Body validation error handlers:
+    login_val_error = {
+        "message": "Validation error",
+        "status_code": 400,
+        "errors": {}
+    }
+    if not form.data['email']:
+        login_val_error["errors"]["credential"] = "Email is required"
+    if not form.data['password']:
+        login_val_error["errors"]["password"] = "Password is required"
+    if len(login_val_error["errors"]) > 0:
+        return jsonify(login_val_error), 400
+
+
     if form.validate_on_submit():
         # Add the user to the session, we are logged in!
         user = User.query.filter(or_(User.email == form.data['email'], User.username == form.data['email'])).first()
@@ -62,6 +80,24 @@ def sign_up():
     """
     form = SignUpForm()
     form['csrf_token'].data = request.cookies['csrf_token']
+
+    # Body validation error handlers:
+    login_val_error = {
+        "message": "Validation error",
+        "status_code": 400,
+        "errors": {}
+    }
+    if "@" not in form.data['email'] or "." not in form.data['email']:
+        login_val_error["errors"]["email"] = "Invalid email"
+
+    if not form.data['first_name']:
+        login_val_error["errors"]["first_name"] = "First name is required"
+    if not form.data['last_name']:
+        login_val_error["errors"]["last_name"] = "Last name is required"
+    if len(login_val_error["errors"]) > 0:
+        return jsonify(login_val_error), 400
+
+
     if form.validate_on_submit():
         user = User(
             first_name=form.data['first_name'].title(),
