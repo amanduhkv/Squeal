@@ -57,7 +57,7 @@ const UserPage = () => {
           <br></br>
           <br></br>
           <div>
-            Page Contents
+            <h2 id='mid-title'>Recent Activity</h2>
           </div>
 
         </div>
@@ -72,12 +72,6 @@ const UserPage = () => {
               Update Your Profile
             </h5>
           </div>
-          {/* <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br> */}
           {url === '/current' && (
           <div id='bot-rc'>
             <div id='title-bot'>About First Last.</div>

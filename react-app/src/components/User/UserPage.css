@@ -82,7 +82,14 @@
 #mid-col {
   flex: 2;
   margin-top: 25px;
-  padding-top: 30px;
+  padding: 30px 15px 15px 0;
+}
+
+#mid-title {
+  color:rgb(211, 35, 35);
+  font-size: 21px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(235, 235, 235);
 }
 
 #right-col {
