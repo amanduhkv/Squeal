@@ -31,17 +31,31 @@ def get_all_businesses():
     businesses = Business.query.all()
     biz = [[business.to_dict(), business] for business in businesses]
     for b in biz:
-        print(">>>>>> B", b)
         query = db.session.query(func.round(
             func.avg(Review.rating) * 2)/2).filter_by(business_id=b[0]['id']).first()
         avg_rating = list(query)[0]
         b[0]['avg_rating'] = avg_rating
+        
+        imgs = Image.query.filter_by(business_id=b[0]['id'])
+        reviews = Review.query.filter_by(business_id=b[0]['id'])
+
+        imgs_lst = []
+        if imgs:
+            imgs_lst = [img.to_dict() for img in imgs]
+        reviews_lst = []
+        if reviews:
+            reviews_lst = [review.to_dict() for review in reviews]
         types_list = [type.to_dict() for type in b[1].types]
         transactions_list = [transaction.to_dict()
                          for transaction in b[1].transactions]
 
         b[0]['types'] = types_list
         b[0]['transactions'] = transactions_list
+        b[0]['Business_Images'] = imgs_lst
+        b[0]['Review'] = {
+            'review_length': len(reviews_lst),
+            'preview_review': reviews_lst[0]['review_body']
+        }
 
     biz = [business[0] for business in biz]
     return jsonify({

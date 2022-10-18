@@ -199,12 +199,24 @@ const BusinessDetails = () => {
                     </div>
                     <div className='single-business-see-more-photos'>
                         {/* <div> */}
-                            See {numImages} photos
+                        See {numImages} photos
                         {/* </div> */}
                     </div>
                 </div>
                 {imageHeader}
                 <div className='bottom-gradient'>
+                </div>
+            </div>
+
+            <div className='single-business-review-details-body'>
+                <div className='single-business-reviews'>
+
+                </div>
+                <div className='single-business-details'>
+                    <div>
+                        
+
+                    </div>
                 </div>
             </div>
 
