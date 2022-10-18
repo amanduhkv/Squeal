@@ -246,13 +246,22 @@
     /* margin-top: 1px; */
     letter-spacing: -0.2px;
     padding: 0;
-    color: white;
     text-align: center;
     font-stretch: 100%;
 }
 
+.signup-word {
+    color: white;
+}
+
 .login-word {
     width: 48px;
+    color: white;
+}
+
+.login-word-blk {
+    width: 48px;
+    color: black;
 }
 
 .session-buttons {
@@ -272,7 +281,17 @@
     transition: 0.8s ease background-color;
 }
 
+.login-button-blk {
+    border: 1px solid rgba(200,201,202,1);
+    /* width: 78px; */
+    background-color: transparent;
+    transition: 0.8s ease background-color;
+}
+
 .login-button:hover {
+    background-color: rgba(255, 255,255, 0.2);
+}
+.login-button-blk:hover {
     background-color: rgba(255, 255,255, 0.2);
 }
 
