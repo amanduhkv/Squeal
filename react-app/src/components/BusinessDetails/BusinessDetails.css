@@ -1,0 +1,102 @@
+.bottom-gradient {
+    background: linear-gradient(0deg, #000000ec, #0000004d 42.92%, #0000);
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    height: 426px;
+}
+
+.single-business-images {
+    display: flex;
+    max-height: 426px;
+    min-height: 426px;
+    overflow: hidden;
+    position: absolute;
+    top: 130px;
+}
+
+.single-business-one-image {
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
+
+/* .single-business-image-header {
+
+} */
+
+.single-business-header-info {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-weight: 500;
+    color: white;
+    margin: auto;
+    z-index: 3;
+    padding: 40px 64px;
+    max-width: 1272px;
+    min-width: 1144px;
+}
+
+.single-business-details {
+    position: relative;
+    z-index: 2;
+    flex: 1 auto;
+}
+
+.single-business-name {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.single-business-reviews-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.single-business-reviewsnumber {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-bottom: 5px;
+}
+
+.single-business-claimedtypes {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+}
+.single-business-claimedtypes > span {
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.single-business-open-closed {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.3px;
+}
+.Open {
+    color: #00C588;
+    font-family: 'Poppin',
+}
+.Closed {
+    color: #FF8B89;
+}
+
+.single-business-see-more-photos {
+    border: 1px solid rgba(200, 201, 202, 1);
+    height: 48px;
+    padding: 12px 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
