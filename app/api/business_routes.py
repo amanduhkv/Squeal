@@ -217,9 +217,9 @@ def add_new_business():
         login_val_error["errors"]["country"] = "Country is required."
     if not form.data['zipcode']:
         login_val_error["errors"]["zipcode"] = "Zip code is required."
-    if form.data['lat'] != 0 and not form.data['lat']:
+    if form.data['lat'] != 0 and len(form.data['lat']) == 0:
         login_val_error["errors"]["lat"] = "Latitude is required."
-    if form.data['lng'] and not form.data['lng']:
+    if form.data['lng'] != 0 and len(form.data['lng']) == 0:
         login_val_error["errors"]["lng"] = "Longitude is required."
     if form.data['lat'] < -90 or form.data['lat'] > 90 :
         login_val_error["errors"]["lat"] = "Latitude must be between -90 and 90."
