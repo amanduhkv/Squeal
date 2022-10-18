@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 // import LoginForm from './components/auth/LoginForm';
 // import SignUpForm from './components/auth/SignUpForm';
 // import NavBar from './components/NavBar';
@@ -19,6 +19,8 @@ import HomePage from './components/HomePage';
 function App() {
     const [loaded, setLoaded] = useState(false);
     const dispatch = useDispatch();
+    const user = useSelector(state => state.session.user);
+
     useEffect(() => {
         (async () => {
             await dispatch(authenticate());
@@ -58,15 +60,30 @@ function App() {
                     <Footer />
                 </Route>
                 <Route path='/current'>
-                    <UserPage />
+                    {user && (
+                        <UserPage />
+                    )}
+                    {!user && (
+                        <ErrorPage />
+                    )}
                     <Footer />
                 </Route>
                 <Route path='/biz/current'>
-                    <UserPage />
+                    {user && (
+                        <UserPage />
+                    )}
+                    {!user && (
+                        <ErrorPage />
+                    )}
                     <Footer />
                 </Route>
                 <Route path='/reviews/current'>
-                    <UserPage />
+                    {user && (
+                        <UserPage />
+                    )}
+                    {!user && (
+                        <ErrorPage />
+                    )}
                     <Footer />
                 </Route>
             </Switch>
