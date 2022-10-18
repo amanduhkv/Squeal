@@ -31,17 +31,31 @@ def get_all_businesses():
     businesses = Business.query.all()
     biz = [[business.to_dict(), business] for business in businesses]
     for b in biz:
-        print(">>>>>> B", b)
         query = db.session.query(func.round(
             func.avg(Review.rating) * 2)/2).filter_by(business_id=b[0]['id']).first()
         avg_rating = list(query)[0]
         b[0]['avg_rating'] = avg_rating
+        
+        imgs = Image.query.filter_by(business_id=b[0]['id'])
+        reviews = Review.query.filter_by(business_id=b[0]['id'])
+
+        imgs_lst = []
+        if imgs:
+            imgs_lst = [img.to_dict() for img in imgs]
+        reviews_lst = []
+        if reviews:
+            reviews_lst = [review.to_dict() for review in reviews]
         types_list = [type.to_dict() for type in b[1].types]
         transactions_list = [transaction.to_dict()
                          for transaction in b[1].transactions]
 
         b[0]['types'] = types_list
         b[0]['transactions'] = transactions_list
+        b[0]['Business_Images'] = imgs_lst
+        b[0]['Review'] = {
+            'review_length': len(reviews_lst),
+            'preview_review': reviews_lst[0]['review_body']
+        }
 
     biz = [business[0] for business in biz]
     return jsonify({
@@ -203,9 +217,9 @@ def add_new_business():
         login_val_error["errors"]["country"] = "Country is required."
     if not form.data['zipcode']:
         login_val_error["errors"]["zipcode"] = "Zip code is required."
-    if form.data['lat'] != 0 and not form.data['lat']:
+    if form.data['lat'] != 0 and len(str(form.data['lat'])) == 0:
         login_val_error["errors"]["lat"] = "Latitude is required."
-    if form.data['lng'] and not form.data['lng']:
+    if form.data['lng'] != 0 and len(str(form.data['lng'])) == 0:
         login_val_error["errors"]["lng"] = "Longitude is required."
     if form.data['lat'] < -90 or form.data['lat'] > 90 :
         login_val_error["errors"]["lat"] = "Latitude must be between -90 and 90."
@@ -221,7 +235,6 @@ def add_new_business():
         login_val_error["errors"]["end_time"] = "Business end time is required."
     if len(login_val_error["errors"]) > 0:
         return jsonify(login_val_error), 400
-
 
     if form.validate_on_submit():
         type_list = []
@@ -248,11 +261,10 @@ def add_new_business():
             end_time=form.data['end_time'],
             preview_img=form.data['preview_img'],
             phone_number=form.data['phone_number'],
+            lat=form.data['lat'],
+            lng=form.data['lng'],
             types=type_list,
-            transactions=transaction_list,
-            lat='33.0',
-            lng='64.0',
-            # ^placeholders
+            transactions=transaction_list
         )
         db.session.add(business)
         db.session.commit()
@@ -358,11 +370,10 @@ def edit_business(biz_id):
             business_to_update.end_time = form.data['end_time']
             business_to_update.preview_img = form.data['preview_img']
             business_to_update.phone_number = form.data['phone_number']
+            business_to_update.lat = form.data['lat']
+            business_to_update.lng = form.data['lng']
             business_to_update.types = type_list
             business_to_update.transactions = transaction_list
-            business_to_update.lat = '33.0'
-            business_to_update.lng = '64.0'
-            # ^placeholders
 
             db.session.commit()
 
