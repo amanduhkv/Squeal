@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import pigOutline from '../../icons/pig-outline.png'
 import cam from '../../icons/user-page-icons/cam.png';
@@ -11,6 +12,10 @@ import './UserPage.css';
 
 const UserPage = () => {
   const url = useLocation().pathname;
+  const user = useSelector(state => state.session.user);
+
+  let lastName = user.last_name.split('')
+  let lastInitial = lastName[0];
 
   return (
     <>
@@ -20,7 +25,7 @@ const UserPage = () => {
           <button id='user-img'>
             <img id='pig-outline' src={pigOutline} alt='pig-outline' width='130px' />
           </button>
-          <h3 id='bar-name'>Name's Profile</h3>
+          <h3 id='bar-name'>{user.first_name}'s Profile</h3>
           <div className='side-bar'>
             {/* -----------------------OVERVIEW--------------------- */}
             <NavLink to='/current' id='bar-row'>
@@ -41,7 +46,7 @@ const UserPage = () => {
         </div>
         <div id='mid-col'>
           <div className='user-info'>
-            <h1 id='user-name'>First Last.</h1>
+            <h1 id='user-name'>{user.first_name} {lastInitial}.</h1>
             <p id='user-loc'>From City, State</p>
             <div className='user-icons'>
               <div id='user-rev'>
@@ -56,10 +61,16 @@ const UserPage = () => {
           </div>
           <br></br>
           <br></br>
+          {url === '/current' && (
           <div>
-            <h2 id='mid-title'>Recent Activity</h2>
+            <h2 id='mid-title-over'>Recent Activity</h2>
           </div>
-
+          )}
+          {url === '/reviews/current' && (
+          <div>
+            <h2 id='mid-title'>Reviews</h2>
+          </div>
+          )}
         </div>
         <div id='right-col'>
           <div id='top-rc'>
@@ -74,7 +85,7 @@ const UserPage = () => {
           </div>
           {url === '/current' && (
           <div id='bot-rc'>
-            <div id='title-bot'>About First Last.</div>
+            <div id='title-bot'>About {user.first_name} {lastInitial}.</div>
             <h5 id='bot-rc-title'>Stats</h5>
             <div id='bot-rc-1'>
               <img src={savedBiz} alt='save' width='16px' height='16px' />

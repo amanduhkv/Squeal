@@ -89,6 +89,14 @@
   color:rgb(211, 35, 35);
   font-size: 21px;
   padding-bottom: 10px;
+  
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+#mid-title-over {
+  color:rgb(211, 35, 35);
+  font-size: 21px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgb(235, 235, 235);
 }
 
