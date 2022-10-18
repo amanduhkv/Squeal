@@ -8,7 +8,7 @@ from ..forms.add_business_img_form import AddBizImgForm
 from ..forms.edit_business_form import EditBusinessForm
 from sqlalchemy import func
 
-business_routes = Blueprint('business', __name__)
+business_routes = Blueprint('biz', __name__)
 
 
 def validation_errors_to_error_messages(validation_errors):
@@ -42,7 +42,7 @@ def get_all_businesses():
 
         b[0]['types'] = types_list
         b[0]['transactions'] = transactions_list
-        
+
     biz = [business[0] for business in biz]
     return jsonify({
         "Businesses": biz
@@ -332,7 +332,7 @@ def delete_biz(biz_id):
         else:
             return {"message": "Forbidden", "status_code": 403}, 403
 
-# ADD A BUSINESS IMG 
+# ADD A BUSINESS IMG
 @business_routes.route("/<int:biz_id>/images", methods=['POST'])
 @login_required
 def add_biz_img(biz_id):
