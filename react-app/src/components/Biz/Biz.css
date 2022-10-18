@@ -14,6 +14,114 @@
   border-radius: 3px;
 }
 
+#biz-closed {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #D32323;
+}
+
+#biz-hours {
+  margin: 0 0 8px 0;
+}
+
+#biz-open {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #00806B;
+}
+
+#biz-price {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(110, 112, 114);
+
+}
+
+#biz-rev {
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px 0;
+}
+
+#biz-rev img {
+  padding-top: 2px;
+}
+
 #biz-rev-info {
   display: flex;
+  align-items: center;
+}
+
+#biz-rev-p {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(110, 112, 114);
+
+  margin-left: 5px;
+}
+
+#biz-text-rev {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(110, 112, 114);
+
+  padding-bottom: 5px;
+}
+
+#biz-title {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(45, 46, 47);
+  margin-left: 24px;
+}
+
+#biz-title-1 {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(45, 46, 47);
+}
+
+#biz-title-1:hover {
+  text-decoration: underline;
+}
+
+#biz-type-butts {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #6E7072;
+
+  background-color: rgb(240, 240, 240);
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  height: 20px;
+}
+
+#biz-type-loc {
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px 0;
+}
+
+#rev-rating {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(45, 46, 47);
+  margin: 0 5px;
+  padding-bottom: 5px;
+}
+
+#tra-text {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(45, 46, 47);
+
+  vertical-align: middle;
 }

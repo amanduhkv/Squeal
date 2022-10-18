@@ -94,10 +94,10 @@ const load = payload => ({
 
 export const getAllBiz = () => async dispatch => {
     const response = await fetch('/api/biz');
-    console.log("hitting res", response)
+    // console.log("hitting res", response)
     if (response.ok) {
         const list = await response.json();
-        console.log("hitting list", list)
+        // console.log("hitting list", list)
         dispatch(load(list));
     }
 };
