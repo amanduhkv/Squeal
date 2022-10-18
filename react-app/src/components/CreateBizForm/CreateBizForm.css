@@ -1,0 +1,107 @@
+.form--create-biz {
+    margin: 150px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+.container--form-fields {
+    width: 600px;
+}
+
+.container--form-fields--section {
+    margin: 16px 0px;
+}
+
+.form-field {
+    border: 1.3px solid #CCC;
+    border-radius: 4px;
+    padding: 15px;
+    width: 100%;
+}
+
+#create-biz-submit-button {
+    padding: 15px;
+    width: 100%;
+    background-color: #E00707;
+    color: #FFF;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1.3px solid #CCC;
+}
+#create-biz-submit-button:hover {
+    background-color: #F40D15;
+}
+
+/* DEFAULT SETTINGS IS MARGIN-RIGHT 5px */
+div input:first-child {
+    margin-right: 0px;
+}
+
+/* SECTIONS THAT HAVE MULTIPLE FIELDS: */
+.container--form-fields--address-info-section--city-state-zip,
+.container--form-fields--address-info-section--country-lat-lng,
+.container--form-fields--hours-section {
+    display: flex;
+}
+
+.container--form-fields--hours-section {
+    justify-content: space-between;
+}
+
+/* ADDRESS SECTION */
+.container--form-fields--address-info-section--city-state-zip,
+.container--form-fields--address-info-section--country-lat-lng {
+    margin-top: 8px;
+}
+
+#form-field--state,
+#form-field--zipcode,
+#form-field--lat,
+#form-field--lng {
+    width: 50%;
+}
+
+#form-field--city,
+#form-field--state,
+#form-field--lat,
+#form-field--lng {
+    margin-right: 8px;
+}
+
+/* HOURS SECTION */
+.container--form-fields--hours-section--start,
+.container--form-fields--hours-section--end {
+    width: 50%;
+}
+.container--form-fields--hours-section--start {
+    margin-right: 20px;
+}
+
+/* IMG SECTION*/
+.container--form-fields--img-section {
+    width: 100%;
+}
+
+.img--create-biz-url-preview {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    margin: 10px auto 0px auto;
+    display: block;
+}
+
+
+/* ERROR LIST */
+.list--errors {
+    margin: 0px;
+}
+
+.li--error {
+    list-style: none;
+    color: #E00707;
+    font-weight: 500;
+}
