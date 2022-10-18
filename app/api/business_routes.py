@@ -15,10 +15,10 @@ def validation_errors_to_error_messages(validation_errors):
     """
     Simple function that turns the WTForms validation errors into a simple list
     """
-    errorMessages = []
+    errorMessages = {}
     for field in validation_errors:
         for error in validation_errors[field]:
-            errorMessages.append(f'{field} : {error}')
+            errorMessages[field] = error
     return errorMessages
 
 
@@ -42,7 +42,7 @@ def get_all_businesses():
 
         b[0]['types'] = types_list
         b[0]['transactions'] = transactions_list
-        
+
     biz = [business[0] for business in biz]
     return jsonify({
         "Businesses": biz
@@ -332,7 +332,7 @@ def delete_biz(biz_id):
         else:
             return {"message": "Forbidden", "status_code": 403}, 403
 
-# ADD A BUSINESS IMG 
+# ADD A BUSINESS IMG
 @business_routes.route("/<int:biz_id>/images", methods=['POST'])
 @login_required
 def add_biz_img(biz_id):
