@@ -212,7 +212,7 @@ export default function Biz() {
                                     (<div id='biz-hours'>
                                         <span id='biz-closed'>Closed</span>
                                         <span id='biz-hours-1'>
-                                            until {time_conversion(biz.start_time)} {Number(biz.start_time) >= 1200 ? 'PM' : 'AM'} tomorrow
+                                            until {time_conversion(biz.start_time)} {Number(biz.start_time) >= 1200 ? 'PM' : 'AM'}
                                         </span>
                                     </div>)
                                 }
