@@ -100,7 +100,6 @@ function App() {
                     <BusinessDetails />
                 </Route>
 
-
                 <Route exact path='/biz'>
                     <Biz />
                 </Route>
@@ -114,6 +113,10 @@ function App() {
                     )}
                     <Footer />
                 </Route>
+
+                {/* <Route path='/newreview/biz/:bizId'>
+                    <ReviewForm />
+                </Route> */}
             </Switch>
 
         </BrowserRouter>
