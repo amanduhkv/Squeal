@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './HomePage.css';
-import { getAllBiz } from '../../store/businesses';
+import { getAllReviews } from '../../store/reviews';
 import userpig from '../../icons/user-pig.png';
 import reviewScore from '../../icons/ratescore.svg';
 import chinese from '../../icons/category-tiles/chi.svg';
@@ -16,13 +16,14 @@ import vietnamese from '../../icons/category-tiles/vietn.svg';
 const HomePage = () => {
   const rate = 4.6;
   const dispatch = useDispatch();
-  const biz = useSelector(state => state.businesses.allBusinesses);
-  const bizzies = Object.values(biz).slice(-9);
-  console.log(bizzies);
+  const rev = useSelector(state => state.reviews.all);
+  console.log(rev);
+  const reviews = Object.values(rev).slice(-9);
+  console.log('these are the sliced reviews',reviews);
 
 
   useEffect(() => {
-      dispatch(getAllBiz())
+      dispatch(getAllReviews())
   }, [dispatch])
 
   return (
