@@ -79,6 +79,7 @@
     margin: 16px -24px;
     object-fit: cover;
     max-width: 358px;
+    margin-bottom: 10px;
 }
 
 .review-biz-name-link {
@@ -102,6 +103,7 @@
 
 .review-card-stars {
     margin: 8px 0;
+    height: 20px;
 }
 
 .middle-star,
