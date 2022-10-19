@@ -171,6 +171,15 @@
     width: 80%;
     margin: auto;
 }
+#single-biz-stars {
+    margin-bottom: 30px;
+}
+
+.single-business-reviewButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 .single-business-review-bar-button {
     background-color: rgba(224, 7, 7, 1);
@@ -180,7 +189,7 @@
     align-items: center;
     gap: 8px;
     color: white;
-    width: auto;
+    width: fit-content;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;

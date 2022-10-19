@@ -1,6 +1,4 @@
 import React from 'react'
-import StaticGoogleMap from 'react-static-google-map'
-import LocationPin from './locationPin'
 
 const Map = ({ location, zoomLevel }) => {
     return (
