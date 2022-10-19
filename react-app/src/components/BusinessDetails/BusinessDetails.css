@@ -107,13 +107,15 @@
     position: relative;
     top: 580px;
     display: grid;
-    width: 90%;
+    width: 80%;
+    min-width: 1224px;
     margin: auto;
+    gap: 60px;
     grid-template-columns: 2fr 1fr;
     /* position: sticky; */
 }
 
-.single-business-reviews {
+.single-business-reviews-button {
     width: 100%;
 }
 
@@ -121,6 +123,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: fit-content;
     border: 1px solid #ebebeb;
     border-radius: 4px;
 }
@@ -137,6 +140,7 @@
 }
 .single-business-review-bar-button {
     background-color: rgba(224,7,7,1);
+    /* background-color: #dfa7a6; */
     height: 40px;
     display: flex;
     align-items: center;
@@ -147,4 +151,41 @@
     border: none;
     border-radius: 4px;
     font-size: 16px;
+}
+
+.single-business-location-hours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+
+.single-business-title {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px 0px;
+}
+.single-business-location-details > p {
+    font-weight: 600;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+.single-business-location-details {
+    margin-top: 20px;
+}
+.single-business-hours {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(45,46,47,1);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: start;
+    padding: 3px 0px;
+}
+.single-business-hours > span > span {
+    margin-left: 16px;
+}
+.single-business-hours-wrapper {
+    margin-top: 10px;
 }
