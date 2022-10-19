@@ -20,6 +20,8 @@ import BusinessDetails from './components/BusinessDetails/BusinessDetails';
 import CreateBizForm from './components/CreateBizForm';
 import UpdateBizForm from './components/UpdateBizForm';
 import CreateBizImgForm from './components/CreateBizImgForm';
+import CreateReviewImgForm from './components/CreateReviewImgForm';
+
 
 
 function App() {
@@ -117,6 +119,10 @@ function App() {
                 {/* <Route path='/newreview/biz/:bizId'>
                     <ReviewForm />
                 </Route> */}
+
+                <Route exact path='/review/:reviewId/images/new'>
+                    <CreateReviewImgForm />
+                </Route>
             </Switch>
 
         </BrowserRouter>
