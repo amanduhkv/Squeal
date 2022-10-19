@@ -13,6 +13,14 @@
     vertical-align: baseline;
 }
 
+.header-container-sm {
+    position: absolute;
+    margin: 0;
+    padding: 24px 40px 0px;
+    height: 95px;
+    vertical-align: baseline;
+}
+
 .header-container-fixed {
     position: fixed;
     top: 0;
@@ -207,6 +215,13 @@
     width: 366px;
     display: flex;
     align-items: center;
+}
+
+.buttons-form-stuff {
+    height: 48px;
+    width: 366px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .buttons-sl-stuff {
