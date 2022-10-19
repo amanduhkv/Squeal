@@ -9,6 +9,7 @@ import starGrey from '../../icons/user-page-icons/star-grey.png';
 import starOran from '../../icons/user-page-icons/star-oran.png';
 import savedBiz from '../../icons/user-page-icons/save.png';
 import './UserPage.css';
+import UserReviews from './UserReviews';
 
 const UserPage = () => {
   const url = useLocation().pathname;
@@ -76,10 +77,7 @@ const UserPage = () => {
           </div>
           )}
           {url === '/reviews/current' && (
-          <div>
-            <h2 id='mid-title'>Reviews</h2>
-            <div>You haven't made any reviews yet.</div>
-          </div>
+            <UserReviews user={user} />
           )}
         </div>
         <div id='right-col'>
