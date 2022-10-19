@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from 'react-redux';
-import { NavLink, useHistory } from "react-router-dom";
-import * as sessionActions from '../../store/session';
+import { useSelector } from 'react-redux';
+import { NavLink } from "react-router-dom";
+
 import LogoutButton from "./LogoutButton";
 import userIcon from '../../icons/user-pig.png'
 import aboutPig from '../../icons/about-pig.png'
@@ -10,11 +10,9 @@ import reviewPig from '../../icons/review-pig.png'
 import './ProfileButton.css'
 
 function ProfileButton() {
-  const dispatch = useDispatch();
   const user = useSelector(state => state.session.user)
   const [showMenu, setShowMenu] = useState(false);
-  const history = useHistory();
-  console.log('this is the user',user)
+  // console.log('this is the user',user)
   const openMenu = () => {
     if (showMenu) return;
     setShowMenu(true);
@@ -46,7 +44,7 @@ function ProfileButton() {
         <div className="profile-dropdown">
           <div >
             <NavLink id='dropdown-text' to='/current'>
-              <img src={aboutPig} id='about' width='30px'/>
+              <img src={aboutPig} alt='about-pig' id='about' width='30px'/>
               About Me
             </NavLink>
           </div>

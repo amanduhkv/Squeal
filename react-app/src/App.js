@@ -103,6 +103,7 @@ function App() {
 
                 <Route exact path='/biz'>
                     <Biz />
+                    <Footer />
                 </Route>
 
                 <Route exact path='/reviews/current'>
