@@ -47,6 +47,8 @@ def user_reviews():
     for user_review in user_reviews:
         review_biz = Business.query.filter(user_review['business_id'] == Business.id).first()
         user_review['Business'] = review_biz.to_dict() if review_biz else None
+        img = Image.query.filter(Image.business_id == user_review['business_id']).first()
+        user_review['Business']['PreviewImage'] = img.to_dict() if img else None
         user_review['Review_Images'] = [img.to_dict() for img in Image.query.filter(user_review['id'] == Image.review_id).all()]
 
     return jsonify({ "Reviews": user_reviews })

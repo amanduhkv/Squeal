@@ -29,13 +29,13 @@
     object-fit: cover;
 }
 
-#modal {
+/* #modal {
     z-index: 99
 }
 
 #photo-modal {
     background-color: pink;
-}
+} */
 
 
 .single-business-header-info {
@@ -323,7 +323,7 @@
     margin-top: 40px;
 }
 
-.single-business-modal-title {
+/* .single-business-modal-title {
     font-weight: 700;
     font-size: 28px;
     color: rgba(45, 46, 47, 1);
@@ -341,4 +341,4 @@
 }
 .photo-modal-close:hover {
     cursor: pointer;
-}
+} */

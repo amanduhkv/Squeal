@@ -5,6 +5,7 @@ import { signUp, login } from '../../store/session';
 import { Modal } from '../../context/Modal';
 import party from '../../icons/login.png';
 import './SignUpForm.css';
+import './LoginForm.css';
 
 const SignUpForm = () => {
     const url = useLocation().pathname;

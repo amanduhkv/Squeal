@@ -258,7 +258,7 @@ const BusinessDetails = () => {
 
     return (
             <div className='single-business-details-container'>
-                {showPhotoModal && (
+                {/* {showPhotoModal && (
                     <>
                         <Modal id='photo-modal' onClose={() => {
                             setShowPhotoModal(false)
@@ -287,7 +287,7 @@ const BusinessDetails = () => {
                             </div>
                         </Modal>
                     </>
-                )}
+                )} */}
                 <div>
                     <div className='single-business-images'>
                         <div className='single-business-header-info'>
