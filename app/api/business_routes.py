@@ -35,7 +35,7 @@ def get_all_businesses():
             func.avg(Review.rating) * 2)/2).filter_by(business_id=b[0]['id']).first()
         avg_rating = list(query)[0]
         b[0]['avg_rating'] = avg_rating
-        
+
         imgs = Image.query.filter_by(business_id=b[0]['id'])
         reviews = Review.query.filter_by(business_id=b[0]['id'])
 
