@@ -343,7 +343,18 @@ export default function UpdateBizForm() {
                                         onChange={
                                             (e) => {
                                                 const transactionsList = transactions;
-                                                transactionsList.push(e.target.value)
+                                                if (e.target.checked) {
+                                                    // console.log("ADDING TO TRANSACTIONS LIST!");
+                                                    transactionsList.push(e.target.value);
+                                                    // console.log("TRANSACTIONS IS NOW:", transactionsList);
+                                                }
+                                                else {
+                                                    // console.log("REMOVING FROM TRANSACTIONS LIST");
+                                                    const i = transactionsList.indexOf(e.target.value);
+                                                    transactionsList.splice(i, 1);
+                                                    // console.log("TRANSACTIONS IS NOW:", transactionsList);
+                                                }
+
                                                 setTransactions(transactionsList);
                                             }
                                         }
@@ -374,7 +385,18 @@ export default function UpdateBizForm() {
                                         onChange={
                                             (e) => {
                                                 const typesList = types;
-                                                typesList.push(e.target.value)
+                                                if (e.target.checked) {
+                                                    // console.log("ADDING TO TYPES LIST!");
+                                                    typesList.push(e.target.value);
+                                                    // console.log("TYPESLIST IS NOW:", typesList);
+                                                }
+                                                else {
+                                                    // console.log("REMOVING FROM TYPES LIST");
+                                                    const i = typesList.indexOf(e.target.value);
+                                                    typesList.splice(i, 1);
+                                                    // console.log("TYPESLIST IS NOW:", typesList);
+                                                }
+
                                                 setTypes(typesList);
                                             }
                                         }
