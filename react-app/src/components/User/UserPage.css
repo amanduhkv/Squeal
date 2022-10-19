@@ -21,6 +21,7 @@
   align-items: center;
   padding: 10px;
   width: 215px;
+  border-left: 3px solid transparent;
 
   border-bottom: 1px solid rgb(225, 225, 225);
 }

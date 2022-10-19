@@ -80,7 +80,7 @@ export const getUserReviews = () => async dispatch => {
 }
 
 export const getBusinessReviews = (businessId) => async dispatch => {
-    const response = await csrfFetch(`/api/biz/${businessId}/reviews`);
+    const response = await fetch(`/api/biz/${businessId}/reviews`);
 
     if (response.ok) {
         const businessReviews = await response.json();
