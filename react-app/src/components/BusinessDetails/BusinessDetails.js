@@ -48,7 +48,6 @@ const BusinessDetails = () => {
         if (reviewUsers.includes(currUserId)) {
             let currUserReview = Object.values(bizReviews).filter(obj => obj.user_id === currUserId)[0]
             currUserReviewId = currUserReview.id
-            console.log(currUserReview)
         }
     }
     if (bizImages) {
@@ -61,7 +60,6 @@ const BusinessDetails = () => {
             allReviewImages = reviews.flat()
         }
     }
-    // console.log(bizReviews, currUserId, currUserReviewId)
 
     useEffect(() => {
         dispatch(getOneBiz(bizId))
@@ -144,7 +142,7 @@ const BusinessDetails = () => {
                                 {obj.User.first_name} {obj.User.last_name.slice(0, 1)}.
                             </div>
                             <div className='single-business-june-cohort'>
-                                Squealing since June 2022
+                                Verified Squealer
                             </div>
                         </div>
                     </div>
@@ -256,7 +254,6 @@ const BusinessDetails = () => {
                         </div>
                     </div>
                     <div className='single-business-review-body'>
-                        {console.log(obj.Review_Images)}
                         {obj.Review_Images && obj.Review_Images.length > 0 && (
                             <div>{obj.Review_Images.length} photos</div>
                         )}
