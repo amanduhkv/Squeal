@@ -46,7 +46,9 @@ const BusinessDetails = () => {
         numReviews = (Object.values(bizReviews).length)
         reviewUsers = Object.values(bizReviews).map(obj=>obj.User.id)
         if (reviewUsers.includes(currUserId)) {
-            currUserReviewId = Object.values(bizReviews).filter(obj => obj.user_id === currUserId).id
+            let currUserReview = Object.values(bizReviews).filter(obj => obj.user_id === currUserId)[0]
+            currUserReviewId = currUserReview.id
+            console.log(currUserReview)
         }
     }
     if (bizImages) {
@@ -122,6 +124,7 @@ const BusinessDetails = () => {
         address: biz.address + ', ' + biz.city + ', ' + biz.state,
         lat: biz.lat,
         lng: biz.lng
+
     }
 
     let singleReview
@@ -253,11 +256,12 @@ const BusinessDetails = () => {
                         </div>
                     </div>
                     <div className='single-business-review-body'>
-                        {obj.Review_Images.length > 0 && (
+                        {console.log(obj.Review_Images)}
+                        {obj.Review_Images && obj.Review_Images.length > 0 && (
                             <div>{obj.Review_Images.length} photos</div>
                         )}
                         {obj.review_body}
-                        {obj.Review_Images.length > 0 && obj.Review_Images.map(obj => {
+                        {obj.Review_Images && obj.Review_Images.map(obj => {
                             return (
                                 <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} /></div>
                             )
