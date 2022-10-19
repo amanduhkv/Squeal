@@ -1,9 +1,18 @@
 import React from 'react';
 import './HomePage.css';
 import userpig from '../../icons/user-pig.png';
+import reviewScore from '../../icons/ratescore.svg';
+import chinese from '../../icons/category-tiles/chi.svg';
+import indian from '../../icons/category-tiles/india.svg';
+import italian from '../../icons/category-tiles/ital.svg';
+import japanese from '../../icons/category-tiles/ja.svg';
+import korean from '../../icons/category-tiles/kor.svg';
+import mexican from '../../icons/category-tiles/mex.svg';
+import thai from '../../icons/category-tiles/thai.svg';
+import vietnamese from '../../icons/category-tiles/vietn.svg';
 
 const HomePage = () => {
-    const rate = 4;
+    const rate = 4.6;
 
   return (
     <div className='homepage-container'>
@@ -38,7 +47,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : rate >= 2.3 ? 'rgba(255, 173, 72, 1)' : rate >= 1.8 ? 'rgba(255, 173, 72, 1)' : rate >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(255, 204, 75, 1)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -58,7 +67,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : rate >= 2.3 ? 'rgba(255, 173, 72, 1)' : rate >= 1.8 ? 'rgba(255, 173, 72, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -78,7 +87,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -98,7 +107,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -118,7 +127,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -164,7 +173,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : rate >= 2.3 ? 'rgba(255, 173, 72, 1)' : rate >= 1.8 ? 'rgba(255, 173, 72, 1)' : rate >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(255, 204, 75, 1)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -184,7 +193,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : rate >= 2.3 ? 'rgba(255, 173, 72, 1)' : rate >= 1.8 ? 'rgba(255, 173, 72, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -204,7 +213,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -224,7 +233,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -244,7 +253,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -290,7 +299,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : rate >= 2.3 ? 'rgba(255, 173, 72, 1)' : rate >= 1.8 ? 'rgba(255, 173, 72, 1)' : rate >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(255, 204, 75, 1)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -310,7 +319,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : rate >= 2.3 ? 'rgba(255, 173, 72, 1)' : rate >= 1.8 ? 'rgba(255, 173, 72, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -330,7 +339,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : rate >= 3.3 ? 'rgba(255, 135, 66, 1)' : rate >= 2.8 ? 'rgba(255, 135, 66, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -350,7 +359,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : rate >= 4.3 ? 'rgba(255, 100, 61, 1)' : rate >= 3.8 ? 'rgba(255, 100, 61, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -370,7 +379,7 @@ const HomePage = () => {
                             <path fill={rate >= 4.8 ? "rgba(251,67,60,1)" : 'rgba(187, 186, 192, 0.5)'}
                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                             </path>
-                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
+                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -396,9 +405,99 @@ const HomePage = () => {
             <h2 className='category-type-title'>
                 Categories
             </h2>
+            <div className='categories-container'>
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={chinese} alt='chinese' />
+                            <p className='category-title'>
+                                Chinese
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={indian} alt='chinese' />
+                            <p className='category-title'>
+                                Indian
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={italian} alt='chinese' />
+                            <p className='category-title'>
+                                Italian
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={japanese} alt='chinese' />
+                            <p className='category-title'>
+                                Japanese
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div className='categories-container'>
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={korean} alt='chinese' />
+                            <p className='category-title'>
+                                Korean
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={mexican} alt='chinese' />
+                            <p className='category-title'>
+                                Mexican
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={thai} alt='chinese' />
+                            <p className='category-title'>
+                                Thai
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span className='categories-gap' />
+                <div className='categories-outer-container'>
+                    <a className='category-link' href=''>
+                        <div className='category-tile chinese-tile'>
+                            <img className='category-icon' src={vietnamese} alt='chinese' />
+                            <p className='category-title'>
+                                Vietnamese
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
   )
 }
 
-export default HomePage
+export default HomePage;
