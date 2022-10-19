@@ -424,9 +424,9 @@ const BusinessDetails = () => {
                     <div className='single-business-review-details-body'>
                         <div className='single-business-reviews-button'>
                             <div className='single-business-review-bar'>
-                                <NavLink to='/'><button className='single-business-review-bar-button'>
+                            <NavLink style={{ textDecoration: 'none' }} to={`/newreview/biz/${biz.id}`}><div className='single-business-review-bar-button'>
                                     <img width='24' height='24' src={star} /> Write a review
-                                </button>
+                                </div>
                             </NavLink>
                             </div>
                             <div className='single-business-title'>Location & Hours</div>
