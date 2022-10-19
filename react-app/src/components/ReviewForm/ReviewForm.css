@@ -46,7 +46,7 @@
 }
 
 .sidebar-inner-container {
-    height: 60%;
+    height: 100%;
     overflow-y: scroll;
     position: relative;
     overflow-x: hidden;
@@ -150,6 +150,10 @@
 
 .one {
     fill: rgba(255, 204, 75, 1);
+}
+
+#grey {
+    fill: rgba(187, 186, 192, 0.5);
 }
 
 #five {
