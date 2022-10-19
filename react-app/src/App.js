@@ -87,7 +87,7 @@ function App() {
 
                 <Route path='/biz/:bizId'>
                     <BusinessDetails />
-
+                </Route>
                 <Route path='/businesses/new'>
                     <CreateBizForm />
 

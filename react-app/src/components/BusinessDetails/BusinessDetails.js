@@ -5,6 +5,9 @@ import { useParams } from 'react-router-dom'
 import { getOneBiz } from '../../store/businesses'
 import { getBusinessReviews } from '../../store/reviews'
 import check from '../../icons/claimed-check.svg';
+import map from '../../icons/map.svg'
+import phone from '../../icons/phone.svg'
+import star from '../../icons/write-review-star.svg'
 
 import './BusinessDetails.css'
 
@@ -59,7 +62,7 @@ const BusinessDetails = () => {
         let res
         if (str) {
             str = str[0] === '0' ? str.slice(1) : str
-            res = str < 1200 ? str.slice(0, -2) + ":" + str.slice(-2) + "AM" : str.slice(0, -2) - 12 + ":" + str.slice(-2) + "PM"
+            res = str < 1200 ? str.slice(0, -2) + ":" + str.slice(-2) + " AM" : str.slice(0, -2) - 12 + ":" + str.slice(-2) + " PM"
         }
         return res
     }
@@ -68,6 +71,14 @@ const BusinessDetails = () => {
         let currentTime = new Date().getHours()
         if (open && close) {
             res = currentTime < convertTime(open) || currentTime > convertTime(close) ? "Closed" : "Open"
+        }
+        return res
+    }
+    function phoneNumber(str) {
+        let res
+        if (str) {
+            str = str.slice(2)
+            res = "(" + str.slice(0, 3) + ") " + str.slice(3, 6) + '-' + str.slice(6)
         }
         return res
     }
@@ -210,13 +221,31 @@ const BusinessDetails = () => {
 
             <div className='single-business-review-details-body'>
                 <div className='single-business-reviews'>
+                    <div className='single-business-review-bar'>
+                        <button className='single-business-review-bar-button'>
+                            <img width='24' height='24' src={star} /> Write a review
+                        </button>
+                    </div>
+                    <span className='single-business-box-divider'></span>
+                    <div className='single-business-location-hours'>
+                    </div>
+
 
                 </div>
-                <div className='single-business-details'>
-                    <div>
-                        
-
-                    </div>
+                <div className='single-business-contact-details'>
+                    {biz.phone_number && (
+                        <div className='single-business-contact'>
+                            <div>{phoneNumber(biz.phone_number)}</div>
+                            <img width='24' height='24' src={phone} />
+                        </div>
+                    )}
+                    <span className='single-business-box-divider'></span>
+                    {biz.address && (
+                        <div className='single-business-contact'>
+                            <div>{biz.address} {biz.city}, {biz.state} </div>
+                            <img width='24' height='24' img src={map} />
+                        </div>
+                    )}
                 </div>
             </div>
 
