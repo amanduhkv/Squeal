@@ -1,0 +1,81 @@
+.form--add-biz-img {
+    margin: 150px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+.form--add-biz-img input:focus {
+    outline: 2px solid rgb(9, 127, 131);
+}
+
+
+.header--add-biz-img {
+    margin: 20px 0px 0px;
+}
+
+.container--form-fields {
+    width: 600px;
+}
+
+.container--form-fields--section {
+    margin: 16px 0px;
+}
+
+.form-field {
+    border: 1.3px solid #CCC;
+    border-radius: 4px;
+    padding: 15px;
+    width: 100%;
+}
+
+#add-biz-img-submit-button {
+    padding: 15px;
+    width: 100%;
+    background-color: #E00707;
+    color: #FFF;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1.3px solid #CCC;
+}
+#add-biz-img-submit-button:hover {
+    background-color: #F40D15;
+}
+
+.label--add-biz-img {
+    font-weight: 600;
+}
+
+/* DEFAULT SETTINGS IS MARGIN-RIGHT 5px */
+div input:first-child {
+    margin-right: 0px;
+}
+
+
+/* IMG SECTION*/
+.container--form-fields--img-section {
+    width: 100%;
+}
+
+.img--add-biz-img-url-preview {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    margin: 10px auto 0px auto;
+    display: block;
+}
+
+
+/* ERROR LIST */
+.list--errors {
+    margin: 0px;
+}
+
+.li--error {
+    list-style: none;
+    color: #E00707;
+    font-weight: 500;
+}

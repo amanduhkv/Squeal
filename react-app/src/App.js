@@ -19,6 +19,7 @@ import Biz from './components/Biz';
 import BusinessDetails from './components/BusinessDetails/BusinessDetails';
 import CreateBizForm from './components/CreateBizForm';
 import UpdateBizForm from './components/UpdateBizForm';
+import CreateBizImgForm from './components/CreateBizImgForm';
 
 
 function App() {
@@ -85,6 +86,10 @@ function App() {
 
                 <Route exact path='/biz/new'>
                     <CreateBizForm />
+                </Route>
+
+                <Route exact path='/biz/:bizId/images/new'>
+                    <CreateBizImgForm />
                 </Route>
 
                 <Route exact path='/biz/:bizId/update'>
