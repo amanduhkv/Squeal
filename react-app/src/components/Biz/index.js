@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { getAllBiz } from '../../store/businesses';
+import ReactPaginate from 'react-paginate';
 
 import x from '../../icons/all-biz-page/x.svg';
 import check from '../../icons/all-biz-page/check.svg';
@@ -12,6 +13,17 @@ export default function Biz() {
     const biz = useSelector(state => state.businesses.allBusinesses);
     const bizArr = Object.values(biz);
     const dispatch = useDispatch();
+    const [pageNum, setPageNum] = useState(0);
+
+    const bizPerPage = 10;
+    const visitedPages = pageNum * bizPerPage;
+    const pageCount = Math.ceil(bizArr.length / bizPerPage);
+    const pageChange = ({ selected }) => {
+        setPageNum(selected);
+    }
+
+    const bizzies = bizArr.slice(visitedPages, visitedPages + bizPerPage)
+    // console.log('this the bizzies', bizzies)
 
     let current_time;
     const settingTime = () => {
@@ -43,7 +55,7 @@ export default function Biz() {
         <main className="main">
             <h1 className="allbiz-title">Best Food Near Me in City, State</h1>
             <ol>
-                {bizArr.map(biz => (
+                {bizzies.map(biz => (
                     <div className="biz-box">
                         <div className="biz-img-box" >
                             <img id='biz-img' src={biz.Business_Images[0].url} />
@@ -201,21 +213,21 @@ export default function Biz() {
                                 </div>
                             </div>
                             <div id='biz-tras'>
-                                    <span id='tra-text'>
-                                        <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
-                                            ele.transaction === 'pickup'
-                                        ).length ? check : x} /> Pickup
-                                    </span>
-                                    <span id='tra-text'>
-                                        <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
-                                            ele.transaction === 'delivery'
-                                        ).length ? check : x} /> Delivery
-                                    </span>
-                                    <span id='tra-text'>
-                                        <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
-                                            ele.transaction === 'restaurant_reservation'
-                                        ).length ? check : x} /> Reservations
-                                    </span>
+                                <span id='tra-text'>
+                                    <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                        ele.transaction === 'pickup'
+                                    ).length ? check : x} /> Pickup
+                                </span>
+                                <span id='tra-text'>
+                                    <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                        ele.transaction === 'delivery'
+                                    ).length ? check : x} /> Delivery
+                                </span>
+                                <span id='tra-text'>
+                                    <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                        ele.transaction === 'restaurant_reservation'
+                                    ).length ? check : x} /> Reservations
+                                </span>
 
                             </div>
                         </div>
@@ -223,6 +235,22 @@ export default function Biz() {
                     </div>
                 ))}
             </ol>
+            <div>
+                <ReactPaginate
+                    // breakLabel='...'
+                    previousLabel="<"
+                    nextLabel='>'
+                    pageRangeDisplayed='5'
+                    pageCount={pageCount}
+                    onPageChange={pageChange}
+                    containerClassName='pagination-container'
+                    activeClassName="pagination-active"
+                    pageClassName="pag-num"
+                    pageLinkClassName='pag-txt'
+                    disabledLinkClassName='pag-hide'
+                />
+                {/* <span>1 of {pageCount}</span> */}
+            </div>
         </main>
     )
 }

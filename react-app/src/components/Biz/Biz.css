@@ -1,7 +1,7 @@
-.main {
+/* .main {
   top: 155px;
   position: absolute;
-}
+} */
 
 .allbiz-title {
   font-size: 24px;
@@ -196,4 +196,32 @@
 
 #tra-text img {
   margin-right: 4px;
+}
+
+
+
+
+/* ***********************PAGINATION*********************** */
+.pagination-container {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid #ebebeb;
+  max-width: 730px;
+  margin-left: 40px;
+}
+
+
+/* FOR THE PREV AND NEXT BUTTON STYLE */
+/* .pag-hide {
+  display: none;
+} */
+
+.pag-num {
+  font-size: 16px;
+  padding: 0 6px 16px 6px;
+}
+
+.pag-txt {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  color: #6e7072;
 }
