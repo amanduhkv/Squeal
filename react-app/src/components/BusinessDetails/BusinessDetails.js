@@ -30,9 +30,9 @@ const BusinessDetails = () => {
     console.log(">>>>>> BIZ IMAGES", bizImages)
     console.log(">>>>>> REVIEWS", numReviews)
 
-    useEffect(async () => {
-        await dispatch(getOneBiz(bizId))
-        await dispatch(getBusinessReviews(bizId))
+    useEffect(() => {
+        dispatch(getOneBiz(bizId))
+        dispatch(getBusinessReviews(bizId))
         if (bizReviews) {
             setNumReviews(Object.values(bizReviews).length)
         }
