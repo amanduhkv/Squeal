@@ -10,9 +10,6 @@ export default function CreateReviewImgForm() {
     const { reviewId } = useParams();
     const sessionUser = useSelector(state => state.session.user);
     const userReviews = useSelector(state => state.reviews.user);
-    let review;
-    console.log("USER REVIEWS:", userReviews)
-    // if (userReviews) review = userReviews
 
     const [reviewImgUrl, setreviewImgUrl] = useState("");
 
@@ -40,10 +37,11 @@ export default function CreateReviewImgForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // HANDLING FOR USERS WHO HARDCODE ADD review IMG PAGE:
-        if (sessionUser && review) {
-            if ((sessionUser.id !== review.owner_id)) {
-                alert("Only the review owner can update his or her review.");
+        // ERROR HANDLING FOR REVIEW IS NOT OWNED BY USER:
+        if (userReviews) {
+            const userReviewIdsList = Object.keys(userReviews);
+            if (!userReviewIdsList.includes(reviewId)) {
+                alert("Only the review owner can add images to his or her review.");
                 history.push("/");
                 return;
             }
