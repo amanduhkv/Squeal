@@ -19,6 +19,7 @@
     padding: 24px 40px 0px;
     height: 95px;
     vertical-align: baseline;
+    background-color: white;
 }
 
 .header-container-fixed {
@@ -27,6 +28,7 @@
     left: 0;
     right: 0;
     border-bottom: solid 1px #ebebeb;
+    z-index: 5;
 }
 
 /******************** HEADER TOP PORTION ********************/

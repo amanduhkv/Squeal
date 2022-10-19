@@ -20,6 +20,11 @@ body {
     margin: 0;
 }
 
+textarea {
+    resize: none;
+    border-radius: 4px;
+}
+
 button,
 NavLink {
     cursor: pointer;
