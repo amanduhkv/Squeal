@@ -25,6 +25,17 @@ export default function Biz() {
     }
     current_time = settingTime()
 
+    const time_conversion = (time) => {
+        if(Number(time) > 1200) {
+            time = time - 1200
+        }
+        let nums = time.toString().split('')
+
+        if(nums.length === 3) return nums[0] + ':' + nums[1] + nums[2]
+        if(nums.length === 4) return nums[0] + nums[1] + ':' + nums[2] + nums[3]
+    }
+
+
     useEffect(() => {
         dispatch(getAllBiz())
     }, [dispatch])
@@ -38,8 +49,8 @@ export default function Biz() {
             <ol>
                 {bizArr.map(biz => (
                     <div className="biz-box">
-                        <div className="img-box">
-
+                        <div className="biz-img-box" >
+                            <img id='biz-img' src={biz.Business_Images[0].url} />
                         </div>
                         <div className="biz-info-box">
                             <li id='biz-title'>
@@ -156,7 +167,7 @@ export default function Biz() {
                                     {biz.avg_rating}
                                 </div>
                                 <div id='biz-text-rev'>
-                                    (# reviews)
+                                    ({biz.Review.review_length} reviews)
                                 </div>
                             </div>
                             <div id='biz-type-loc'>
@@ -171,15 +182,26 @@ export default function Biz() {
                                     {biz.price_range} • {biz.city}
                                 </div>
                             </div>
-                            <div id='biz-hours'>
+                            <div>
                                 {current_time > biz.start_time && current_time < biz.end_time ?
-                                    (<div id='biz-open'>Open</div>) : (<div id='biz-closed'>Closed</div>)
+                                    (<div id='biz-hours'>
+                                        <span id='biz-open'>Open</span>
+                                        <span id='biz-hours-1'>
+                                            until {time_conversion(biz.end_time)} {Number(biz.end_time) >= 1200 ? 'PM' : 'AM'}
+                                        </span>
+                                    </div>) :
+                                    (<div id='biz-hours'>
+                                        <span id='biz-closed'>Closed</span>
+                                        <span id='biz-hours-1'>
+                                        until {time_conversion(biz.start_time)} {Number(biz.start_time) >= 1200 ? 'PM' : 'AM'}
+                                        </span>
+                                    </div>)
                                 }
                             </div>
                             <div id='biz-rev'>
                                 <img src={txtbub} alt='txtbubble' width='16px' height='14px' />
                                 <div id='biz-rev-p'>
-                                    "Review Text goes here"
+                                    "{biz.Review.preview_review}"
                                 </div>
                             </div>
                             <div id='biz-tras'>
