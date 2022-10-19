@@ -99,6 +99,30 @@ export default function UpdateBizForm() {
         }
     }, [biz]);
 
+    // GO IN AND MAKE ALL CHECKS BASED ON ORIGINAL BIZ DATA
+    useEffect(() => {
+        const allTransactionChecks = document.querySelectorAll('#form-field--transactions');
+        transactions.forEach(transaction => {
+            allTransactionChecks.forEach(transactionCheck => {
+                // console.log("==> TRANSACTION CHECKBOX VALUE?", transactionCheck.value)
+                // console.log("==> IS THE TRANSACTION CHECKBOX CHECKED?", transactionCheck.checked)
+                if (transactionCheck.value === transaction) transactionCheck.checked = true;
+            })
+        });
+        // console.log("allTransactionChecks", allTransactionChecks)
+
+
+        const allTypeChecks = document.querySelectorAll('#form-field--types');
+        types.forEach(type => {
+            allTypeChecks.forEach(typeCheck => {
+                // console.log("==> TYPE CHECKBOX VALUE?", typeCheck.value)
+                // console.log("==> IS THE TYPE CHECKBOX CHECKED?", typeCheck.checked)
+                if (typeCheck.value === type) typeCheck.checked = true;
+            })
+        });
+        // console.log("allTypeChecks", allTypeChecks)
+    }, [biz, transactions, types]);
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -360,7 +384,7 @@ export default function UpdateBizForm() {
                                         }
                                         value={transaction[0]}
                                         name={transaction[0]}
-                                        checked={transactions.includes(transaction[0])}
+                                        // checked={transactions.includes(transaction[0])}
                                     />
                                     <label
                                         for={transaction[0]}
@@ -402,7 +426,6 @@ export default function UpdateBizForm() {
                                         }
                                         value={type.alias}
                                         name={type.alias}
-                                        checked={types.includes(type.alias)}
                                         // checked={types.includes(type.alias)}
                                         />
                                     <label
