@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+	<title>location-svgrepo-com-svg</title>
+	<defs>
+		<image  width="16" height="19" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAATAQMAAACjqR+MAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA4AcH3aBqCwAAAAJ0Uk5TAP9bkSK1AAAAM0lEQVR4nGPg/8Ag/4PB/g9D/T+G//9B6F89wx97EAIyICJAKaACoDKgYvYHDMwHGBgbAAAZGTAgsvIfAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Layer" href="#img1" x="4" y="3"/>
+</svg>
