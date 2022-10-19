@@ -90,7 +90,7 @@ function NavBar(){
                     </div>
                     {sessionUser ? <span className='header-gap-search-buttons' /> : null}
                     <div className={sessionUser ? 'buttons-user-stuff' : 'buttons-sl-stuff'}>
-                        <NavLink to='/businesses/new' className={sessionUser ? 'navbar-button-left' : 'navbar-button-left-sl'}>
+                        <NavLink to='/biz/new' className={sessionUser ? 'navbar-button-left' : 'navbar-button-left-sl'}>
                             <button className={url === '/' ? 'top-button-wht header-right-button' : 'top-button-blk header-right-button'}>
                                 List a Business
                             </button>

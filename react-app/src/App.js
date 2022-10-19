@@ -63,7 +63,7 @@ function App() {
                     <HomePage />
                     <Footer />
                 </Route>
-                <Route path='/current'>
+                <Route exact path='/current'>
                     {user && (
                         <UserPage />
                     )}
@@ -72,7 +72,7 @@ function App() {
                     )}
                     <Footer />
                 </Route>
-                <Route path='/biz/current'>
+                <Route exact path='/biz/current'>
                     {user && (
                         <UserPage />
                     )}
@@ -81,18 +81,24 @@ function App() {
                     )}
                     <Footer />
                 </Route>
+
+                <Route exact path='/biz/new'>
+                    <CreateBizForm />
+                </Route>
+
+                <Route exact path='/biz/:bizId'>
+                    <BusinessDetails />
+                </Route>
+
+                {/* <Route exact path='/biz/:bizId/update'>
+                    <UpdateBizForm />
+                </Route> */}
+
                 <Route exact path='/biz'>
                     <Biz />
                 </Route>
 
-                <Route path='/biz/:bizId'>
-                    <BusinessDetails />
-                </Route>
-                <Route path='/businesses/new'>
-                    <CreateBizForm />
-
-                </Route>
-                <Route path='/reviews/current'>
+                <Route exact path='/reviews/current'>
                     {user && (
                         <UserPage />
                     )}
