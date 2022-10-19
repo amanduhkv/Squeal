@@ -18,6 +18,8 @@ import HomePage from './components/HomePage';
 import Biz from './components/Biz';
 import BusinessDetails from './components/BusinessDetails/BusinessDetails';
 import CreateBizForm from './components/CreateBizForm';
+import UpdateBizForm from './components/UpdateBizForm';
+import CreateBizImgForm from './components/CreateBizImgForm';
 
 
 function App() {
@@ -86,13 +88,18 @@ function App() {
                     <CreateBizForm />
                 </Route>
 
+                <Route exact path='/biz/:bizId/images/new'>
+                    <CreateBizImgForm />
+                </Route>
+
+                <Route exact path='/biz/:bizId/update'>
+                    <UpdateBizForm />
+                </Route>
+
                 <Route exact path='/biz/:bizId'>
                     <BusinessDetails />
                 </Route>
 
-                {/* <Route exact path='/biz/:bizId/update'>
-                    <UpdateBizForm />
-                </Route> */}
 
                 <Route exact path='/biz'>
                     <Biz />

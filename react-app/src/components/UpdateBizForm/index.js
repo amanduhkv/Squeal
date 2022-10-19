@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import * as bizActions from "../../store/businesses";
-import './CreateBizForm.css'
+import './UpdateBizForm.css'
 
-export default function CreateBizForm() {
+export default function UpdateBizForm() {
     const dispatch = useDispatch();
     const history = useHistory();
+    const { bizId } = useParams();
     const sessionUser = useSelector(state => state.session.user);
+    const biz = useSelector(state => state.businesses.singleBusiness);
+
     const [name, setName] = useState("");
     const [address, setAddress] = useState("");
     const [city, setCity] = useState("");
@@ -34,9 +37,16 @@ export default function CreateBizForm() {
     const TRANSACTIONS = [['pickup', 'Pickup'], ['delivery', 'Deliver'], ['restaurant_reservation', 'Restaurant Reservation']]
 
     if (!sessionUser) {
-        alert("Please log in or create an account to create a business.");
+        alert("Please log in to update your business.");
         history.push("/");
     }
+
+    // LOAD BIZ BY PARAMETER BIZ ID
+    useEffect(() => {
+        dispatch(bizActions.getOneBiz(bizId));
+
+        return () => dispatch(bizActions.clearData());
+    }, [dispatch, bizId]);
 
     // TODO: ADD MORE VALIDATION ERROR HANDLING
     useEffect(() => {
@@ -55,8 +65,52 @@ export default function CreateBizForm() {
         setValidationErrors(errors);
     }, [lat, lng]);
 
+    // LOAD ORIGINAL BIZ DATA
+    useEffect(() => {
+        if (biz) {
+            setName(biz.name);
+            setAddress(biz.address);
+            setCity(biz.city);
+            setState(biz.state);
+            setZipcode(biz.country);
+            setLat(biz.lat);
+            setLng(biz.lng);
+            setCountry(biz.country);
+            setPhone(biz.phone_number);
+            setStartTime(biz.start_time);
+            setEndTime(biz.end_time);
+            setPriceRange(biz.price_range);
+
+            const origBizTransactions = []
+            if (biz.transactions && biz.transactions.length > 0) {
+                biz.transactions.forEach(transaction => {
+                    origBizTransactions.push(transaction.transaction);
+                });
+            }
+            setTransactions(origBizTransactions);
+
+            const origBizTypes = []
+            if (biz.types && biz.types.length > 0) {
+                biz.types.forEach(type => {
+                    origBizTypes.push(type.alias);
+                });
+            }
+            setTypes(origBizTypes);
+        }
+    }, [biz]);
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        // HANDLING FOR USERS WHO HARDCODE UPDATE BIZ PAGE:
+        if (sessionUser && biz) {
+            if ((sessionUser.id !== biz.owner_id)) {
+                alert("Only the business owner can update his or her business.");
+                history.push("/");
+                return;
+            }
+        }
 
         const newBiz = {
             name,
@@ -75,41 +129,39 @@ export default function CreateBizForm() {
             types
         }
 
-        console.log("NEW BIZ AFTER SUBMIT:", newBiz);
-
         try {
-            const createdBiz = await dispatch(bizActions.createBusiness(newBiz));
-            if (createdBiz) {
+            const updatedBiz = await dispatch(bizActions.updateBiz(biz.id, newBiz));
+            if (updatedBiz) {
                 if (bizImgUrl.length) {
                     const newImg = { url: bizImgUrl }
                     try {
-                        const createdImg = await dispatch(bizActions.addBizImg(createdBiz.id, newImg));
+                        const createdImg = await dispatch(bizActions.addBizImg(updatedBiz.id, newImg));
                         if (createdImg) setValidationErrors([]);
                     }
                     catch (res) {
-                        console.log("==>ANY ERRORS FROM CREATE BIZ IMG:", res)
-                        // const data = await res.json();
+                        console.log("==>ANY ERRORS FROM ADD ANOTHER BIZ IMG:", res);
+                        const data = await res.json().then(() => console.log("==>JSONIFIED ERRORS", data));
                         // if (data && data.errors) return setValidationErrors(data.errors);
                     }
                 }
 
                 setValidationErrors([]);
-                history.replace(`/biz/${createdBiz.id}`);
+                history.replace(`/biz/${updatedBiz.id}`);
             }
         }
 
         catch (res) {
-            console.log("==>ANY ERRORS FROM CREATE BIZ:", res)
+            console.log("==>ANY ERRORS FROM UPDATE BIZ:", res)
             // const data = await res.json();
             // if (data && data.errors) return setValidationErrors(data.errors);
         }
     };
 
     return (
-        <div className='form form--create-biz'>
-            <h1 className='header header--create-biz'>Hello! Let's fill out your business details</h1>
+        <div className='form form--update-biz'>
+            <h1 className='header header--update-biz'>Hello! Let's update your business details</h1>
 
-            <form onSubmit={handleSubmit} className="form" id="form--create-biz">
+            <form onSubmit={handleSubmit} className="form" id="form--update-biz">
                 {validationErrors.length > 0 && (
                     <ul className="list list--errors">
                         {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
@@ -120,7 +172,7 @@ export default function CreateBizForm() {
 
                     {/* ----- NAME SECTION ----- */}
                     <div className='container container--form-fields--section container--form-fields--name-section'>
-                        <label className='label--create-biz' htmlFor="form-field--name">Business Name:</label>
+                        <label className='label--update-biz' for="form-field--name">Business Name:</label>
                         <input
                             type="text"
                             value={name}
@@ -134,7 +186,7 @@ export default function CreateBizForm() {
 
                     {/* ----- ADDRESS SECTION ----- */}
                     <div className='container container--form-fields--section container--form-fields--address-info-section'>
-                        <label className='label--create-biz' htmlFor="form-field--address">Business Address:</label>
+                        <label className='label--update-biz' for="form-field--address">Business Address:</label>
                         <div className='container container--form-fields--address-info-section--address'>
                             <input
                                 type="text"
@@ -214,7 +266,7 @@ export default function CreateBizForm() {
 
                     {/* ----- NAME SECTION ----- */}
                     <div className='container container--form-fields--section container--form-fields--phone-section'>
-                        <label className='label--create-biz' htmlFor="form-field--phone">Phone Number:</label>
+                        <label className='label--update-biz' for="form-field--phone">Phone Number:</label>
                         <input
                             type="tel"
                             value={phone}
@@ -230,22 +282,22 @@ export default function CreateBizForm() {
                     {/* ----- HOURS SECTION ----- */}
                     <div className='container container--form-fields--section container--form-fields--hours-section'>
                         <div className='container container--form-fields--hours-section--start'>
-                            <label className='label--create-biz' htmlFor="form-field--start-time">Business Start Time:</label>
+                            <label className='label--update-biz' for="form-field--start-time">Business Start Time:</label>
                             <select
                                 value={startTime}
                                 onChange={e => setStartTime(e.target.value)}
                                 required
                                 className='form-field'
                                 id='form-field--start-time'
-                                >
-                                {BIZ_HOURS.map(hour => (
-                                    <option value={hour[0]} key={hour}>{hour[1]}</option>
-                                ))}
+                            >
+                            {BIZ_HOURS.map(hour => (
+                                <option value={hour[0]}>{hour[1]}</option>
+                            ))}
                             </select>
                         </div>
 
                         <div className='container container--form-fields--hours-section--end'>
-                            <label className='label--create-biz' htmlFor="form-field--end-time">Business End Time:</label>
+                            <label className='label--update-biz' for="form-field--end-time">Business End Time:</label>
                             <select
                                 value={endTime}
                                 onChange={e => setEndTime(e.target.value)}
@@ -253,16 +305,16 @@ export default function CreateBizForm() {
                                 className='form-field'
                                 id='form-field--end-time'
                             >
-                                {BIZ_HOURS.map(hour => (
-                                    <option value={hour[0]} key={hour}>{hour[1]}</option>
-                                ))}
+                            {BIZ_HOURS.map(hour => (
+                                <option value={hour[0]}>{hour[1]}</option>
+                            ))}
                             </select>
                         </div>
                     </div>
 
                     {/* ----- PRICE RANGE SECTION ----- */}
                     <div className='container container--form-fields--section container--form-fields--price-range-section'>
-                        <label className='label--create-biz' htmlFor="form-field--price-range">Price Range:</label>
+                        <label className='label--update-biz' for="form-field--price-range">Price Range:</label>
                         <select
                             value={priceRange}
                             onChange={e => setPriceRange(e.target.value)}
@@ -270,9 +322,9 @@ export default function CreateBizForm() {
                             className='form-field'
                             id='form-field--price-range'
                         >
-                            {PRICE_RANGES.map(p => (
-                                <option value={p} key={p}>{p}</option>
-                            ))}
+                        {PRICE_RANGES.map(p => (
+                            <option value={p}>{p}</option>
+                        ))}
                         </select>
                     </div>
 
@@ -280,51 +332,52 @@ export default function CreateBizForm() {
                     <div className='container container--form-fields--section container--form-fields--types-transactions-section'>
 
                         <div className='container container--form-fields--types-transactions-section--transactions'>
-                            <label className='label--create-biz label--create-biz-transactions' htmlFor="form-field--transactions">Transactions:</label>
+                            <label className='label--update-biz label--update-biz-transactions' for="form-field--transactions">Transactions:</label>
                             <div className='container container--form-fields--transactions-checkboxes-section'>
-                                {TRANSACTIONS.map(transaction => (
-                                    <div id='single-transaction' key={transaction[0]}>
-                                        <input
-                                            type="checkbox"
-                                            className='form-field--checkbox'
-                                            id='form-field--transactions'
-                                            onChange={
-                                                (e) => {
-                                                    const transactionsList = transactions;
-                                                    if (e.target.checked) {
-                                                        // console.log("ADDING TO TRANSACTIONS LIST!");
-                                                        transactionsList.push(e.target.value);
-                                                        // console.log("TRANSACTIONS IS NOW:", transactionsList);
-                                                    }
-                                                    else {
-                                                        // console.log("REMOVING FROM TRANSACTIONS LIST");
-                                                        const i = transactionsList.indexOf(e.target.value);
-                                                        transactionsList.splice(i, 1);
-                                                        // console.log("TRANSACTIONS IS NOW:", transactionsList);
-                                                    }
-
-                                                    setTransactions(transactionsList);
+                            {TRANSACTIONS.map(transaction => (
+                                <div id='single-transaction'>
+                                    <input
+                                        type="checkbox"
+                                        className='form-field--checkbox'
+                                        id='form-field--transactions'
+                                        onChange={
+                                            (e) => {
+                                                const transactionsList = transactions;
+                                                if (e.target.checked) {
+                                                    // console.log("ADDING TO TRANSACTIONS LIST!");
+                                                    transactionsList.push(e.target.value);
+                                                    // console.log("TRANSACTIONS IS NOW:", transactionsList);
                                                 }
+                                                else {
+                                                    // console.log("REMOVING FROM TRANSACTIONS LIST");
+                                                    const i = transactionsList.indexOf(e.target.value);
+                                                    transactionsList.splice(i, 1);
+                                                    // console.log("TRANSACTIONS IS NOW:", transactionsList);
+                                                }
+
+                                                setTransactions(transactionsList);
                                             }
-                                            value={transaction[0]}
-                                            name={transaction[0]}
-                                        />
-                                        <label
-                                            htmlFor={transaction[0]}
-                                            className='label--create-biz-transaction'
-                                        >
-                                            {transaction[1]}
-                                        </label>
-                                    </div>
-                                ))}
+                                        }
+                                        value={transaction[0]}
+                                        name={transaction[0]}
+                                        checked={transactions.includes(transaction[0])}
+                                    />
+                                    <label
+                                        for={transaction[0]}
+                                        className='label--update-biz-transaction'
+                                    >
+                                        {transaction[1]}
+                                    </label>
+                                </div>
+                            ))}
                             </div>
                         </div>
 
                         <div className='container container--form-fields--types-transactions-section--types'>
-                            <label className='label--create-biz label--create-biz-types' htmlFor="form-field--transactions">Types:</label>
+                            <label className='label--update-biz label--update-biz-types' for="form-field--transactions">Types:</label>
                             <div className='container container--form-fields--types-checkboxes-section'>
                             {TYPES.map(type => (
-                                <div id='single-type' key={type.alias}>
+                                <div id='single-type'>
                                     <input
                                         type="checkbox"
                                         className='form-field--checkbox'
@@ -349,10 +402,12 @@ export default function CreateBizForm() {
                                         }
                                         value={type.alias}
                                         name={type.alias}
+                                        checked={types.includes(type.alias)}
+                                        // checked={types.includes(type.alias)}
                                         />
                                     <label
-                                        htmlFor={type.alias}
-                                        className='label--create-biz-type'
+                                        for={type.alias}
+                                        className='label--update-biz-type'
                                     >
                                         {type.title}
                                     </label>
@@ -364,17 +419,16 @@ export default function CreateBizForm() {
 
                     {/* ----- BIZ IMG SECTION ----- */}
                     <div className='container container--form-fields--section container--form-fields--img-section'>
-                        <label className='label--create-biz' htmlFor="form-field--img">Business Preview Image:</label>
+                        <label className='label--update-biz' for="form-field--img">Add Another Business Image:</label>
                         <input
                             type="text"
                             value={bizImgUrl}
                             onChange={(e) => setBizImgUrl(e.target.value)}
-                            required
                             placeholder='Business Image url'
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--create-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
+                        {bizImgUrl && <img className='img img--update-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
                     </div>
                 </div>
 
@@ -382,7 +436,7 @@ export default function CreateBizForm() {
                     type="submit"
                     disabled={validationErrors.length}
                     className='button button--submit'
-                    id='create-biz-submit-button'
+                    id='update-biz-submit-button'
                 >
                     Submit
                 </button>
