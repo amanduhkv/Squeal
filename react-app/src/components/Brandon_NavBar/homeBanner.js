@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react'
+// import { useLocation } from 'react-router-dom';
 import search from '../../icons/search.svg';
 
 const HomeBanner = () => {
@@ -67,7 +67,7 @@ const HomeBanner = () => {
             Meet your soy mate
           </h1>
           <button className='homepage-button sushi-button'>
-            <img src={search} className='mag-glass' />
+            <img src={search} alt='search' className='mag-glass' />
             <span className='homepage-button-span'>Japanese</span>
           </button>
         </div>
@@ -78,7 +78,7 @@ const HomeBanner = () => {
             Getting jjigae with it
           </h1>
           <button className='homepage-button sushi-button'>
-            <img src={search} className='mag-glass' />
+            <img src={search} alt='search' className='mag-glass' />
             <span className='homepage-button-span'>Korean</span>
           </button>
         </div>
@@ -89,7 +89,7 @@ const HomeBanner = () => {
             Un-phở-gettable meals
           </h1>
           <button className='homepage-button sushi-button'>
-            <img src={search} className='mag-glass' />
+            <img src={search} alt='search' className='mag-glass' />
             <span className='homepage-button-span'>Vietnamese</span>
           </button>
         </div>

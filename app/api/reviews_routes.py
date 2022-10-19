@@ -28,6 +28,10 @@ def all_reviews():
     for rev in all_revs:
         review_biz = Business.query.filter(Business.id == rev['business_id']).first()
         rev['Business'] = review_biz.to_dict() if review_biz else None
+        user_info = User.query.filter_by(id=rev['user_id']).first()
+        rev['User'] = user_info.to_dict()
+        img = Image.query.filter(Image.business_id == rev['business_id']).first()
+        rev['Image'] = img.to_dict() if img else None
 
     return jsonify({ 'Reviews': all_revs })
 
