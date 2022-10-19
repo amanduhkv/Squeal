@@ -272,3 +272,18 @@
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   color: #6e7072;
 }
+
+
+/* ***********************TABLE*********************** */
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-child(n + 10) {
+  display: none;
+}
+
+.search-biz {
+  text-decoration: none;
+  color:rgb(45, 46, 47);
+}
