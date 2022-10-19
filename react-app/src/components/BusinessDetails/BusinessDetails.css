@@ -81,13 +81,15 @@
 .single-business-open-closed {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 0.3px;
+    padding-top: 10px;
 }
 .Open {
     color: #00C588;
-    font-family: 'Poppin',
+    padding-right: 6px;
 }
 .Closed {
     color: #FF8B89;
+    padding-right: 6px;
 }
 
 .single-business-see-more-photos {
@@ -99,4 +101,91 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+}
+
+.single-business-review-details-body {
+    position: relative;
+    top: 580px;
+    display: grid;
+    width: 80%;
+    min-width: 1224px;
+    margin: auto;
+    gap: 60px;
+    grid-template-columns: 2fr 1fr;
+    /* position: sticky; */
+}
+
+.single-business-reviews-button {
+    width: 100%;
+}
+
+.single-business-contact-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+}
+.single-business-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.single-business-box-divider {
+    height: 1px;
+    background-color: #ebebeb;
+    width: 80%;
+    margin: auto;
+}
+.single-business-review-bar-button {
+    background-color: rgba(224,7,7,1);
+    /* background-color: #dfa7a6; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    width: auto;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.single-business-location-hours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+
+.single-business-title {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px 0px;
+}
+.single-business-location-details > p {
+    font-weight: 600;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+.single-business-location-details {
+    margin-top: 20px;
+}
+.single-business-hours {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(45,46,47,1);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: start;
+    padding: 3px 0px;
+}
+.single-business-hours > span > span {
+    margin-left: 16px;
+}
+.single-business-hours-wrapper {
+    margin-top: 10px;
 }
