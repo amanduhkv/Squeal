@@ -54,14 +54,25 @@ export default function Biz() {
     return (
         <main className="main">
             <h1 className="allbiz-title">Best Food Near Me in City, State</h1>
+            <div className="types-buttons">
+                <button id='type-butt'>
+                    Price
+                    <svg width='12' height='12'><path d="M 8 10.25 a 0.746 0.746 0 0 1 -0.525 -0.215 l -3.055 -3 a 0.75 0.75 0 0 1 1.05 -1.07 L 8 8.449 l 2.53 -2.484 a 0.75 0.75 0 0 1 1.05 1.07 l -3.055 3 A 0.746 0.746 0 0 1 8 10.25 Z"></path></svg>
+                </button>
+                <button id='type-butt'>Open Now</button>
+                <button id='type-butt'>Offers Delivery</button>
+                <button id='type-butt'>Offers Takeout</button>
+                <button id='type-butt'>Reservations</button>
+                <button id='type-butt'>Breakfast & Brunch</button>
+            </div>
             <ol>
                 {bizzies.map(biz => (
                     <div className="biz-box">
                         <div className="biz-img-box" >
-                            <img id='biz-img' src={biz.Business_Images[0].url} />
+                            <img id='biz-img' src={biz.Business_Images[0].url} alt='biz-img' />
                         </div>
                         <div className="biz-info-box">
-                            <li id='biz-title'>
+                            <li key={biz.id} className="biz-title">
                                 <NavLink id='biz-title-1' to={`/biz/${biz.id}`}>
                                     {biz.name}
                                 </NavLink>
@@ -77,7 +88,7 @@ export default function Biz() {
                                             <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(255, 204, 75, 1)'}
                                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                             </path>
-                                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
+                                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
                                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -97,7 +108,7 @@ export default function Biz() {
                                             <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                             </path>
-                                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
+                                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
                                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -117,7 +128,7 @@ export default function Biz() {
                                             <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                             </path>
-                                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
+                                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
                                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -137,7 +148,7 @@ export default function Biz() {
                                             <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                             </path>
-                                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
+                                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
                                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -157,7 +168,7 @@ export default function Biz() {
                                             <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : 'rgba(187, 186, 192, 0.5)'}
                                                 d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                             </path>
-                                            <path fill="white" fill-rule="evenodd" clip-rule="evenodd"
+                                            <path fill="white" fillRule="evenodd" clipRule="evenodd"
                                                 d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593
                                 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824
                                 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779
@@ -181,7 +192,7 @@ export default function Biz() {
                             <div id='biz-type-loc'>
                                 <div>
                                     {Object.values(biz.types).map(type => (
-                                        <button id='biz-type-butts'>
+                                        <button className='biz-type-butts'>
                                             {type.type}
                                         </button>
                                     ))}
@@ -214,17 +225,17 @@ export default function Biz() {
                             </div>
                             <div id='biz-tras'>
                                 <span id='tra-text'>
-                                    <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                    <img alt='tra-img' width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
                                         ele.transaction === 'pickup'
                                     ).length ? check : x} /> Pickup
                                 </span>
                                 <span id='tra-text'>
-                                    <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                    <img alt='tra-img' width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
                                         ele.transaction === 'delivery'
                                     ).length ? check : x} /> Delivery
                                 </span>
                                 <span id='tra-text'>
-                                    <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                    <img alt='tra-img' width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
                                         ele.transaction === 'restaurant_reservation'
                                     ).length ? check : x} /> Reservations
                                 </span>

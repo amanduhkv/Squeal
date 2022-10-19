@@ -127,7 +127,7 @@
   padding-bottom: 5px;
 }
 
-#biz-title {
+.biz-title {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -151,7 +151,7 @@
   align-items: center;
 }
 
-#biz-type-butts {
+.biz-type-butts {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -197,7 +197,32 @@
   margin-right: 4px;
 }
 
+.types-buttons {
+  margin-left: 64px;
+}
 
+#type-butt {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(45, 46, 47);
+
+  background-color: white;
+  border:rgb(204, 204, 204) 1px solid;
+  border-radius: 16px;
+  margin-right: 8px;
+  padding: 6px 12px;
+}
+
+#type-butt:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+#type-butt:focus {
+  border-color: rgb(2, 122, 151);
+  color:rgb(2, 122, 151);
+  background-color: rgb(231, 242, 243);
+}
 
 
 /* ***********************PAGINATION*********************** */
