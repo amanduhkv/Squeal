@@ -1,4 +1,4 @@
-.form--create-biz {
+.form--update-biz {
     margin: 150px 0px;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     position: static;
 }
 
-.form--create-biz input:focus {
+.form--update-biz input:focus {
     outline: 2px solid rgb(9, 127, 131);
 }
 #form-field--transactions:focus,
@@ -15,7 +15,7 @@
     outline: none;
 }
 
-.header--create-biz {
+.header--update-biz {
     margin: 20px 0px 0px;
 }
 
@@ -40,7 +40,7 @@
     height: 20px;
 }
 
-#create-biz-submit-button {
+#update-biz-submit-button {
     padding: 15px;
     width: 100%;
     background-color: #E00707;
@@ -49,11 +49,11 @@
     border-radius: 4px;
     border: 1.3px solid #CCC;
 }
-#create-biz-submit-button:hover {
+#update-biz-submit-button:hover {
     background-color: #F40D15;
 }
 
-.label--create-biz {
+.label--update-biz {
     font-weight: 600;
 }
 
@@ -149,7 +149,7 @@ div input:first-child {
     width: 100%;
 }
 
-.img--create-biz-url-preview {
+.img--update-biz-url-preview {
     object-fit: cover;
     width: 200px;
     height: 200px;

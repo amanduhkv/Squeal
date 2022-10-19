@@ -13,12 +13,23 @@
     vertical-align: baseline;
 }
 
+.header-container-sm {
+    position: absolute;
+    margin: 0;
+    padding: 24px 40px 0px;
+    height: 95px;
+    vertical-align: baseline;
+    background-color: white;
+}
+
 .header-container-fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     border-bottom: solid 1px #ebebeb;
+    z-index: 5;
+    background-color: white;
 }
 
 /******************** HEADER TOP PORTION ********************/
@@ -207,6 +218,13 @@
     width: 366px;
     display: flex;
     align-items: center;
+}
+
+.buttons-form-stuff {
+    height: 48px;
+    width: 366px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .buttons-sl-stuff {

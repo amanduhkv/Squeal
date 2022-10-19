@@ -95,10 +95,10 @@ const load = payload => ({
 
 export const getAllBiz = () => async dispatch => {
     const response = await fetch('/api/biz');
-    console.log("hitting res", response)
+    // console.log("hitting res", response)
     if (response.ok) {
         const list = await response.json();
-        console.log("hitting list", list)
+        // console.log("hitting list", list)
         dispatch(load(list));
     }
 };
@@ -143,13 +143,13 @@ const update = payload => ({
     payload
 });
 
-export const updateBiz = biz => async dispatch => {
-    const response = await csrfFetch(`/api/biz/${biz.id}`, {
+export const updateBiz = (bizId, updatedBiz) => async dispatch => {
+    const response = await csrfFetch(`/api/biz/${bizId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(biz)
+        body: JSON.stringify(updatedBiz)
     });
 
     if (response.ok) {
