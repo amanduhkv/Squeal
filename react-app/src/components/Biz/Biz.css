@@ -201,7 +201,8 @@
   margin-left: 64px;
 }
 
-#type-butt {
+#type-butt,
+#type-butt-price {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -214,14 +215,36 @@
   padding: 6px 12px;
 }
 
-#type-butt:hover {
+#type-butt:hover,
+#type-butt-price:hover {
   background-color: rgb(225, 225, 225);
 }
 
-#type-butt:focus {
-  border-color: rgb(2, 122, 151);
+#type-butt-act {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  border:rgb(2, 122, 151) 1px solid;
+  border-radius: 16px;
+  margin-right: 8px;
+  padding: 6px 12px;
+
   color:rgb(2, 122, 151);
   background-color: rgb(231, 242, 243);
+}
+
+#type-butt-price-act {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(45, 46, 47);
+
+  background-color: rgb(225, 225, 225);
+  border:rgb(204, 204, 204) 1px solid;
+  border-radius: 16px;
+  margin-right: 8px;
+  padding: 6px 12px;
 }
 
 
