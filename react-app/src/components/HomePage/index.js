@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import './HomePage.css';
+import { getAllBiz } from '../../store/businesses';
 import userpig from '../../icons/user-pig.png';
 import reviewScore from '../../icons/ratescore.svg';
 import chinese from '../../icons/category-tiles/chi.svg';
@@ -12,7 +14,16 @@ import thai from '../../icons/category-tiles/thai.svg';
 import vietnamese from '../../icons/category-tiles/vietn.svg';
 
 const HomePage = () => {
-    const rate = 4.6;
+  const rate = 4.6;
+  const dispatch = useDispatch();
+  const biz = useSelector(state => state.businesses.allBusinesses);
+  const bizzies = Object.values(biz).slice(-9);
+  console.log(bizzies);
+
+
+  useEffect(() => {
+      dispatch(getAllBiz())
+  }, [dispatch])
 
   return (
     <div className='homepage-container'>
