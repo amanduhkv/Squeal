@@ -1,3 +1,9 @@
+.single-business-details-container {
+    position: relative;
+    margin-bottom: 400px;
+}
+
+
 .bottom-gradient {
     background: linear-gradient(0deg, #000000ec, #0000004d 42.92%, #0000);
     width: 100%;
@@ -103,6 +109,10 @@
 .Closedclosed-red {
     color: rgba(224, 7, 7, 1);
 }
+.Openclosed-red {
+    color: #00C588;
+    padding-right: 6px;
+}
 
 .single-business-see-more-photos {
     border: 1px solid rgba(200, 201, 202, 1);
@@ -129,6 +139,9 @@
 
 .single-business-reviews-button {
     width: 100%;
+}
+.single-business-see-more-photos:hover {
+    cursor: pointer;
 }
 
 .single-business-contact-details {
@@ -325,4 +338,7 @@
 .photo-modal-close {
     display: flex;
     justify-content:end;
+}
+.photo-modal-close:hover {
+    cursor: pointer;
 }
