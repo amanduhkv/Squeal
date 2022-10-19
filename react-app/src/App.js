@@ -20,6 +20,8 @@ import BusinessDetails from './components/BusinessDetails/BusinessDetails';
 import CreateBizForm from './components/CreateBizForm';
 import UpdateBizForm from './components/UpdateBizForm';
 import CreateBizImgForm from './components/CreateBizImgForm';
+import CreateReviewImgForm from './components/CreateReviewImgForm';
+
 
 
 function App() {
@@ -100,9 +102,9 @@ function App() {
                     <BusinessDetails />
                 </Route>
 
-
                 <Route exact path='/biz'>
                     <Biz />
+                    <Footer />
                 </Route>
 
                 <Route exact path='/reviews/current'>
@@ -113,6 +115,14 @@ function App() {
                         <ErrorPage />
                     )}
                     <Footer />
+                </Route>
+
+                {/* <Route path='/newreview/biz/:bizId'>
+                    <ReviewForm />
+                </Route> */}
+
+                <Route exact path='/review/:reviewId/images/new'>
+                    <CreateReviewImgForm />
                 </Route>
             </Switch>
 

@@ -1,3 +1,14 @@
+.main {
+  margin-top: 155px;
+}
+
+.allbiz-title {
+  font-size: 24px;
+  color: rgb(45, 46, 47);
+
+  margin-left: 64px;
+}
+
 .biz-box {
   display: flex;
 
@@ -116,7 +127,7 @@
   padding-bottom: 5px;
 }
 
-#biz-title {
+.biz-title {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -135,7 +146,12 @@
   text-decoration: underline;
 }
 
-#biz-type-butts {
+#biz-tras {
+  display: flex;
+  align-items: center;
+}
+
+.biz-type-butts {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -171,5 +187,65 @@
   font-weight: 600;
   color: rgb(45, 46, 47);
 
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+#tra-text img {
+  margin-right: 4px;
+}
+
+.types-buttons {
+  margin-left: 64px;
+}
+
+#type-butt {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(45, 46, 47);
+
+  background-color: white;
+  border:rgb(204, 204, 204) 1px solid;
+  border-radius: 16px;
+  margin-right: 8px;
+  padding: 6px 12px;
+}
+
+#type-butt:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+#type-butt:focus {
+  border-color: rgb(2, 122, 151);
+  color:rgb(2, 122, 151);
+  background-color: rgb(231, 242, 243);
+}
+
+
+/* ***********************PAGINATION*********************** */
+.pagination-container {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid #ebebeb;
+  max-width: 730px;
+  margin-left: 40px;
+}
+
+
+/* FOR THE PREV AND NEXT BUTTON STYLE */
+/* .pag-hide {
+  display: none;
+} */
+
+.pag-num {
+  font-size: 16px;
+  padding: 0 6px 16px 6px;
+}
+
+.pag-txt {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  color: #6e7072;
 }

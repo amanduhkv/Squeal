@@ -19,6 +19,18 @@ def validation_errors_to_error_messages(validation_errors):
             errorMessages[field] = error
     return errorMessages
 
+# 0. LOAD ALL REVIEWS
+@reviews_routes.route('/')
+def all_reviews():
+    reviews_query = Review.query.all()
+    all_revs = [review.to_dict() for review in reviews_query]
+
+    for rev in all_revs:
+        review_biz = Business.query.filter(Business.id == rev['business_id']).first()
+        rev['Business'] = review_biz.to_dict() if review_biz else None
+
+    return jsonify({ 'Reviews': all_revs })
+
 
 # 1. LOAD ALL USER REVIEWS
 @reviews_routes.route("/current")
@@ -30,7 +42,7 @@ def user_reviews():
 
     for user_review in user_reviews:
         review_biz = Business.query.filter(user_review['business_id'] == Business.id).first()
-        user_review['Business'] = review_biz.to_dict()
+        user_review['Business'] = review_biz.to_dict() if review_biz else None
         user_review['Review_Images'] = [img.to_dict() for img in Image.query.filter(user_review['id'] == Image.review_id).all()]
 
     return jsonify({ "Reviews": user_reviews })

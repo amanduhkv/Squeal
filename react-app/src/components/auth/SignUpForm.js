@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { Redirect, NavLink, useLocation } from 'react-router-dom';
+import { Redirect, useLocation } from 'react-router-dom';
 import { signUp, login } from '../../store/session';
 import { Modal } from '../../context/Modal';
 import party from '../../icons/login.png';
