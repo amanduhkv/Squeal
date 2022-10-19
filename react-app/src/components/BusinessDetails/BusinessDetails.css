@@ -130,7 +130,7 @@
     top: 580px;
     display: grid;
     width: 80%;
-    min-width: 1224px;
+    min-width: 1124px;
     margin: auto;
     gap: 60px;
     grid-template-columns: 2fr 1fr;
