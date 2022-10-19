@@ -15,10 +15,8 @@ const Map = ({ location }) => {
 
     return (
         <div>
-{/* process.env.API_KEY  */}
-            {/* <StaticGoogleMap size="315x250" apiKey={process.env.API_KEY} > */}
             <StaticGoogleMap size="350x215" className="img-fluid" apiKey={process.env.REACT_APP_API_KEY}>
-                <Marker location="6.4488387,3.5496361" color="red"/>
+                <Marker location={locationStr} color="red"/>
             </StaticGoogleMap>
         </div>
 
