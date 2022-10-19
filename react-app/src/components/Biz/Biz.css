@@ -1,3 +1,15 @@
+.main {
+  top: 155px;
+  position: absolute;
+}
+
+.allbiz-title {
+  font-size: 24px;
+  color: rgb(45, 46, 47);
+
+  margin-left: 64px;
+}
+
 .biz-box {
   display: flex;
 
@@ -135,6 +147,11 @@
   text-decoration: underline;
 }
 
+#biz-tras {
+  display: flex;
+  align-items: center;
+}
+
 #biz-type-butts {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 12px;
@@ -171,5 +188,12 @@
   font-weight: 600;
   color: rgb(45, 46, 47);
 
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+#tra-text img {
+  margin-right: 4px;
 }

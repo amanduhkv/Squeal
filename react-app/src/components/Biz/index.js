@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { getAllBiz } from '../../store/businesses';
@@ -7,7 +7,6 @@ import x from '../../icons/all-biz-page/x.svg';
 import check from '../../icons/all-biz-page/check.svg';
 import txtbub from '../../icons/all-biz-page/text-bubble.svg';
 import './Biz.css';
-import { getBusinessReviews } from "../../store/reviews";
 
 export default function Biz() {
     const biz = useSelector(state => state.businesses.allBusinesses);
@@ -26,13 +25,13 @@ export default function Biz() {
     current_time = settingTime()
 
     const time_conversion = (time) => {
-        if(Number(time) > 1200) {
+        if (Number(time) > 1200) {
             time = time - 1200
         }
         let nums = time.toString().split('')
 
-        if(nums.length === 3) return nums[0] + ':' + nums[1] + nums[2]
-        if(nums.length === 4) return nums[0] + nums[1] + ':' + nums[2] + nums[3]
+        if (nums.length === 3) return nums[0] + ':' + nums[1] + nums[2]
+        if (nums.length === 4) return nums[0] + nums[1] + ':' + nums[2] + nums[3]
     }
 
 
@@ -41,11 +40,8 @@ export default function Biz() {
     }, [dispatch])
 
     return (
-        <main>
-            <br></br>
-            <br></br>
-            <br></br>
-            <h1>Best Type Near Me in City, State</h1>
+        <main className="main">
+            <h1 className="allbiz-title">Best Food Near Me in City, State</h1>
             <ol>
                 {bizArr.map(biz => (
                     <div className="biz-box">
@@ -193,7 +189,7 @@ export default function Biz() {
                                     (<div id='biz-hours'>
                                         <span id='biz-closed'>Closed</span>
                                         <span id='biz-hours-1'>
-                                        until {time_conversion(biz.start_time)} {Number(biz.start_time) >= 1200 ? 'PM' : 'AM'}
+                                            until {time_conversion(biz.start_time)} {Number(biz.start_time) >= 1200 ? 'PM' : 'AM'} tomorrow
                                         </span>
                                     </div>)
                                 }
@@ -205,14 +201,22 @@ export default function Biz() {
                                 </div>
                             </div>
                             <div id='biz-tras'>
-                                <div>
-                                    {Object.values(biz.transactions).map(tra => (
-                                        <span id='tra-text'>
-                                            <img src={check} alt='checkmark' width='16px' height='10px' />
-                                            {tra.transaction}
-                                        </span>
-                                    ))}
-                                </div>
+                                    <span id='tra-text'>
+                                        <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                            ele.transaction === 'pickup'
+                                        ).length ? check : x} /> Pickup
+                                    </span>
+                                    <span id='tra-text'>
+                                        <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                            ele.transaction === 'delivery'
+                                        ).length ? check : x} /> Delivery
+                                    </span>
+                                    <span id='tra-text'>
+                                        <img width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
+                                            ele.transaction === 'restaurant_reservation'
+                                        ).length ? check : x} /> Reservations
+                                    </span>
+
                             </div>
                         </div>
 
