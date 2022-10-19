@@ -72,7 +72,7 @@ export default function UpdateBizForm() {
             setAddress(biz.address);
             setCity(biz.city);
             setState(biz.state);
-            setZipcode(biz.country);
+            setZipcode(biz.zipcode);
             setLat(biz.lat);
             setLng(biz.lng);
             setCountry(biz.country);
