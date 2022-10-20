@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 // import { useLocation } from 'react-router-dom';
 import search from '../../icons/search.svg';
+import './NavBar.css';
 
 const HomeBanner = () => {
+  const [ isLoaded, setIsLoaded ] = useState(false);
 
   // ******************** Background Image Logic *******************************
   useEffect(() => {
@@ -10,6 +12,7 @@ const HomeBanner = () => {
     let timeout2;
     let timeout3;
     let timeout4;
+
     function bgShift_1() {
       timeout1 = setTimeout(() => {
         if (document.querySelector(".img1")) {
@@ -49,6 +52,7 @@ const HomeBanner = () => {
       }, time);
     }
     bgShift_1();
+    setIsLoaded(true);
     return () => {
       clearTimeout(timeout1);
       clearTimeout(timeout2);
@@ -58,7 +62,11 @@ const HomeBanner = () => {
   }, [])
 
   // ***************************************************************************
-
+  if (!isLoaded) return (
+    <div className='loading-container'>
+      <img className='squeal-loading' src='https://i.imgur.com/NoEXVTv.gif' alt='loading' />
+    </div>
+  );
   return (
     <div className='homepage-banner-container'>
       <div className="bg-img img1">
@@ -66,10 +74,11 @@ const HomeBanner = () => {
           <h1 className='homepage-questions'>
             Meet your soy mate
           </h1>
+          <a className='homeBanner-link' href='/biz?type=japanese'>
           <button className='homepage-button sushi-button'>
             <img src={search} alt='search' className='mag-glass' />
             <span className='homepage-button-span'>Japanese</span>
-          </button>
+          </button></a>
         </div>
       </div>
       <div className="bg-img img2">
@@ -77,10 +86,11 @@ const HomeBanner = () => {
           <h1 className='homepage-questions'>
             Getting jjigae with it
           </h1>
+          <a className='homeBanner-link' href='/biz?type=korean'>
           <button className='homepage-button sushi-button'>
             <img src={search} alt='search' className='mag-glass' />
             <span className='homepage-button-span'>Korean</span>
-          </button>
+          </button></a>
         </div>
       </div>
       <div className="bg-img img3">
@@ -88,10 +98,11 @@ const HomeBanner = () => {
           <h1 className='homepage-questions'>
             Un-phở-gettable meals
           </h1>
+          <a className='homeBanner-link' href='/biz?type=vietnamese'>
           <button className='homepage-button sushi-button'>
             <img src={search} alt='search' className='mag-glass' />
             <span className='homepage-button-span'>Vietnamese</span>
-          </button>
+          </button></a>
         </div>
       </div>
     </div>
