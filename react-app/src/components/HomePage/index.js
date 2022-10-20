@@ -16,7 +16,7 @@ const HomePage = () => {
   const dispatch = useDispatch();
   const rev = useSelector(state => state.reviews.all);
   const revSlice = rev ? Object.values(rev)?.slice(-27) : null;
-  console.log('these are the sliced reviews',revSlice);
+//   console.log('these are the sliced reviews',revSlice);
 
   useEffect(() => {
       dispatch(getAllReviews())

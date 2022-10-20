@@ -102,6 +102,12 @@
     margin-top: 50px;
 }
 
+.write-review-inner {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .editreview-container {
     margin: 0 0;
     display: flex;
@@ -232,4 +238,73 @@
 .new-review-submit:hover {
     background-color: rgb(255, 17, 17);
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.writeareview-container {
+    margin-top: 145px;
+}
+
+.review-biz-search-section {
+    display: grid;
+    grid-template-columns: 1fr 56px;
+    align-items: center;
+    box-shadow: 0 2px 18px #00000026;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.review-anything-text {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin-bottom: 25px;
+}
+
+.find-a-biz-rev {
+    margin: 0;
+}
+
+.review-biz-search {
+    margin-right: 40px;
+}
+
+.review-biz-list-container {
+    margin-left: 40px;
+}
+
+.review-biz-list {
+    list-style: none;
+    padding: 0 40px;
+    line-height: 25px;
+}
+
+.review-biz-card {
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    height: 400px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 470px;
+}
+
+.review-biz-list-item {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+
+.review-biz-list-item:hover {
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+.review-biz-list-a {
+    color: black;
+}
+
+.review-biz-list-a:hover {
+    text-decoration: none;
 }

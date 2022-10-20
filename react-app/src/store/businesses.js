@@ -32,26 +32,13 @@ export const createBusiness = (business) => async dispatch => {
         body: JSON.stringify(business)
     });
 
+    // console.log("RESPONSE AFTER CREATE BIZ THUNK", response)
+
     if (response.ok) {
-        const newBiz = await response.json();
-        console.log("ANY RESPONSE AFTER CREATE BIZ THUNK ACTION:", newBiz);
-        // const res = await csrfFetch(`/api/business/${newBiz.id}/images`, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify({
-        //         url: previewImage,
-        //         preview: true
-        //     })
-        // });
+        const newBiz = await response.json()
 
-        // if (res.ok) {
-            // const newImage = await res.json();
-
-            dispatch(addBiz(newBiz));
-            return newBiz;
-        // }
+        await dispatch(addBiz(newBiz));
+        return newBiz;
     }
 };
 
@@ -255,7 +242,7 @@ const businessReducer = (state = initialState, action) => {
         case ADD:
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
             const newBusiness = { ...action.payload };
-            newState.allBusinesses[action.payload.id] = newBusiness;
+            newState.singleBusiness[action.payload.id] = newBusiness;
             // console.log("NEWSTATE AFTER CREATE BIZ ACTION:", newState);
             return newState;
         case ADD_IMG:

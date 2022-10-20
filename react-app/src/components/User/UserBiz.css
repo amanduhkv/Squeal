@@ -18,6 +18,7 @@
 .user-biz-prev-img {
     width: 60px;
     height: 60px;
+    object-fit: cover;
     border-radius: 4px;
     margin: 0px 12px 0px 0px;
 }
@@ -34,8 +35,8 @@
 .user-biz-price-range,
 .user-biz-address,
 .user-biz-city-state-zip {
-    font-size: 0.8rem;
-    font-weight: 300;
+    font-size: 0.7rem;
+    font-weight: 400;
 }
 
 .user-biz-city,
@@ -117,6 +118,7 @@
 .user-biz-img {
     width: 100px;
     height: 100px;
+    object-fit: cover;
     border-radius: 4px;
 }
 

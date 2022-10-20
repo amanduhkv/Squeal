@@ -12,8 +12,6 @@ const SingleMap = ({ location }) => {
     
     let locationStr = `${location.lat}, ${location.lng}`
     
-    console.log('ENV', process.env.REACT_APP_API_KEY)
-
     return (
         <div>
             <StaticGoogleMap size="350x215" className="img-fluid" apiKey="AIzaSyCLdszu6GiovZNBOUIM4WxYqcVB9EP9Zxo">
