@@ -40,11 +40,11 @@ function NavBar(){
     const [ query, setQuery ] = useState('');
     const [ location, setLocation ] = useState('');
     const [ loc, setLoc ] = useState('');
-    console.log('this is the ref',ref);
+    // console.log('this is the ref',ref);
 // /*
     let sessionLinks;
-    console.log(width);
-    console.log('this is the location',location);
+    // console.log(width);
+    // console.log('this is the location',location);
 
     useLayoutEffect(() => {
         if (ref.current) {
@@ -58,7 +58,7 @@ function NavBar(){
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(query);
+        // console.log(query);
         history.push(`/biz?type=${query}`)
     }
 

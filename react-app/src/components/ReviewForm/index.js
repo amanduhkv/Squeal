@@ -30,10 +30,9 @@ const ReviewForm = () => {
     const { bizId } = useParams();
     const biz = useSelector(state => state.businesses.singleBusiness);
     const user = useSelector(state => state.session.user);
+
     const revs = useSelector(state => state.reviews.business);
     const reviews = Object.values(revs);
-
-    console.log(biz);
 
     useEffect(() => {
         dispatch(getOneBiz(bizId));
