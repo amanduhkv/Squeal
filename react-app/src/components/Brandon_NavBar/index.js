@@ -36,14 +36,13 @@ function NavBar(){
     const [ width, setWidth ] = useState(0);
     const sessionUser = useSelector(state => state.session.user);
     const url = useLocation().pathname;
-    const [ tempLoc, setTempLoc ] = useState('')
     // const loc = useLocation();
     // console.log(loc)
     const [ query, setQuery ] = useState('');
     const [ location, setLocation ] = useState('');
     // console.log('this is the url',url);
-    console.log('this is the ref',ref)
-    const locArr = ['los angeles, ca', 'oakland, ca', 'san francisco, ca', 'san jose, ca'];
+    console.log('this is the ref',ref);
+    const locArr = ['Los Angeles, CA', 'Oakland, CA', 'San Francisco, CA', 'San Jose, CA'];
 // /*
     let sessionLinks;
     console.log(width);
@@ -57,9 +56,33 @@ function NavBar(){
         window.addEventListener('resize', updateWidth);
     }, [])
 
-    const changeLoc = (loc) => {
-        setLocation(loc);
-    }
+    useEffect(() => {
+        function changeLocLA() {
+            console.log('this is the location before change', location);
+            setLocation('Los Angeles, CA');
+            console.log('this is the location after change', location);
+        }
+        function changeLocOAK() {
+            setLocation('Oakland, CA');
+        }
+        function changeLocSF() {
+            setLocation('San Francisco, CA');
+        }
+        function changeLocSJ() {
+            setLocation('San Jose, CA');
+        }
+
+        const la = document.getElementById('LA');
+        la.addEventListener('click', changeLocLA);
+        const oak = document.getElementById('OAK');
+        oak.addEventListener('click', changeLocOAK);
+        const sf = document.getElementById('SF');
+        sf.addEventListener('click', changeLocSF);
+        const sj = document.getElementById('SJ');
+        sj.addEventListener('click', changeLocSJ);
+
+        console.log(location);
+    }, [location]);
 
     // useEffect(() => {
     //     let cur = document.getElementById('letstrythis');
@@ -104,20 +127,29 @@ function NavBar(){
                             <label ref={ref} className='search-input-label search-input-label-right'>
                                 <input className='search-location-input search-input'
                                     placeholder='Los Angeles, CA'
-                                    type='text' value={location}
-                                    onChange={() => location}
+                                    value={location}
+                                    // onChange={() => location}
+                                    readOnly
                                     />
+                                {/* <div className='search-location-input search-input'>{location}</div> */}
+                                {/* <select className='search-location-input search-input' value={location}
+                                        onChange={(e) => setLocation(e.target)}>
+                                    <option value='Los Angeles, CA'>Los Angeles, CA</option>
+                                    <option value='Oakland, CA'>Oakland, CA</option>
+                                    <option value='San Francisco, CA'>San Francisco, CA</option>
+                                    <option value='San Jose, CA'>San Jose, CA</option>
+                                </select> */}
                                 <div className='tooltip-location' style={{width: `${width}px`}}>
-                                    <button className='dropdown-location' onClick={() => changeLoc('Los Angeles, CA')}>
+                                    <button id='LA' className='dropdown-location'>
                                         Los Angeles, CA
                                     </button>
-                                    <button className='dropdown-location' onClick={() => changeLoc('Oakland, CA')}>
+                                    <button id='OAK' className='dropdown-location'>
                                         Oakland, CA
                                     </button>
-                                    <button className='dropdown-location' onClick={() => changeLoc('San Francisco, CA')}>
+                                    <button id='SF' className='dropdown-location'>
                                         San Francisco, CA
                                     </button>
-                                    <button className='dropdown-location' onClick={() => changeLoc('San Jose, CA')}>
+                                    <button id='SJ' className='dropdown-location'>
                                         San Jose, CA
                                     </button>
                                 </div>

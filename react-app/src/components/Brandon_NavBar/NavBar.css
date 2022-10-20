@@ -519,6 +519,19 @@
     /* transition: opacity .4s; */
 }
 
+/* .search-location-input {
+    position: relative;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+} */
+
+/* .search-location-input select {
+    display: none;
+} */
+
+/* .select-selected {
+    background-color: white;
+} */
+
 .search-location-input:focus + .tooltip-location {
     visibility: visible;
     opacity: 1;
@@ -580,3 +593,59 @@
     width: 155px;
     margin-right: 10px;
 }
+
+
+.container {
+    width: 500px;
+    padding: 15px;
+    margin: 50px auto;
+  }
+
+  #select-op-btn {
+    border: 1px solid #F2F2F2;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    background-image: url('https://i.imgur.com/K5gtkay.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .select_box {
+    box-sizing: border-box;
+    margin: 30px 0;
+  }
+
+  ul#options {
+    list-style-type: none;
+    font-size: 0px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+  }
+
+  ul#options li label {
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+  }
+
+  ul#options li:hover {
+    background: #F2F2F2;
+  }
+
+  .js-drop {
+    display: none;
+  }
+
+  .js-option {
+    display: inline-block;
+  }
+
+  .default{
+    color:#AAA;
+  }
+
+  .space{
+    padding:15px 0;
+  }
