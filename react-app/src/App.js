@@ -22,6 +22,7 @@ import UpdateBizForm from './components/UpdateBizForm';
 import CreateBizImgForm from './components/CreateBizImgForm';
 import ReviewForm from './components/ReviewForm';
 import CreateReviewImgForm from './components/CreateReviewImgForm';
+import Search from './components/Biz/search';
 
 
 function App() {
@@ -104,7 +105,7 @@ function App() {
                 </Route>
 
                 <Route exact path='/biz'>
-                    <Biz />
+                    <Search />
                     <Footer />
                 </Route>
 
