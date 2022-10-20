@@ -6,43 +6,43 @@ from ..forms.delete_review_img_form import DeleteReviewImgForm
 images_routes = Blueprint("images", __name__)
 
 
-# # DELETE A REVIEW IMG
-# @images_routes.route("/<int:image_id>", methods=['DELETE'])
-# @login_required
-# def delete_review_img(image_id):
-#     """
-#     Deletes a review image
-#     """
-#     form = DeleteReviewImgForm()
-#     form['csrf_token'].data = request.cookies['csrf_token']
+# DELETE A REVIEW IMG
+@images_routes.route("/<int:image_id>", methods=['DELETE'])
+@login_required
+def delete_review_img(image_id):
+    """
+    Deletes a review image
+    """
+    form = DeleteReviewImgForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
 
-#     review_img_to_delete = Image.query.get(image_id)
-#     if not review_img_to_delete:
-#         return jsonify({
-#             "message": "Review couldn't be found",
-#             "status_code": 404
-#         }), 404
+    review_img_to_delete = Image.query.get(image_id)
+    if not review_img_to_delete:
+        return jsonify({
+            "message": "Review couldn't be found",
+            "status_code": 404
+        }), 404
 
-#     if form.validate_on_submit():
-#         user = current_user.to_dict()
+    if form.validate_on_submit():
+        user = current_user.to_dict()
 
-#         # FIND OWNER OF REVIEW IMG:
-#         review_id = review_img_to_delete.to_dict()['review_id']
-#         review = Review.query.get(review_id)
-#         review_owner_id = review.to_dict()['user_id']
+        # FIND OWNER OF REVIEW IMG:
+        review_id = review_img_to_delete.to_dict()['review_id']
+        review = Review.query.get(review_id)
+        review_owner_id = review.to_dict()['user_id']
 
 
-#         if review_owner_id == user['id']:
-#             db.session.delete(review_img_to_delete)
+        if review_owner_id == user['id']:
+            db.session.delete(review_img_to_delete)
 
-#             db.session.commit()
+            db.session.commit()
 
-#             return { "message": "Successfully deleted", "status_code": 200 }
+            return { "message": "Successfully deleted", "status_code": 200 }
 
-#         else:
-#             return { "message": "Forbidden", "status_code": 403 }, 403
+        else:
+            return { "message": "Forbidden", "status_code": 403 }, 403
 
-#     return { "message": "Review couldn't be found", "status_code": 404 }, 404
+    return { "message": "Review couldn't be found", "status_code": 404 }, 404
 
 
 @images_routes.route("/<int:img_id>", methods=['DELETE'])
@@ -53,7 +53,7 @@ def delete_business_img(img_id):
     """
     user = current_user.to_dict()
     user_id = user['id']
-    
+
     delete_img = Image.query.get(img_id)
     if not delete_img:
         return jsonify({
@@ -62,10 +62,10 @@ def delete_business_img(img_id):
         })
 
     delete_img_biz = Business.query.get(delete_img.to_dict()['business_id']).to_dict()
-    
+
     if user_id == delete_img_biz['owner_id']:
         db.session.delete(delete_img)
         db.session.commit()
         return { "message": "Successfully deleted", "status_code": 200 }
-    else: 
+    else:
         return { "message": "Forbidden", "status_code": 403 }, 403

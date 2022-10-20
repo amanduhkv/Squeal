@@ -4,12 +4,9 @@ import { useSelector } from 'react-redux';
 import squealnLogo from '../../icons/squealnLogo.png';
 import squealnLogowht from '../../icons/squealnLogowht.png';
 import search from '../../icons/search.svg';
-import userIcon from '../../icons/githubPurple.png';
 import './NavBar.css';
-import LoginForm from '../auth/LoginForm';
 import SignUpForm from '../auth/SignUpForm';
 import ProfileButton from '../auth/ProfileButton'
-import chevron from '../../icons/chevron.svg';
 import fastfood from '../../icons/fast-food.svg';
 import pizza from '../../icons/pizza.svg';
 import sandwich from '../../icons/sandwich.svg';

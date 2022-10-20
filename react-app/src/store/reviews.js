@@ -1,6 +1,7 @@
 import { csrfFetch } from './csrf';
 
 /* ----------------------------- ACTION TYPES: ----------------------------- */
+const LOAD_ALL_REVIEWS = '/reviews/LOAD_ALL_REVIEWS';
 const LOAD_USER_REVIEWS = '/reviews/LOAD_USER_REVIEWS';
 const LOAD_BUSINESS_REVIEWS = '/reviews/LOAD_BUSINESS_REVIEWS';
 const ADD_REVIEW = '/reviews/ADD_REVIEW';
@@ -12,6 +13,11 @@ const CLEAR_DATA = '/reviews/CLEAR_DATA';
 
 
 /* ---------------------------- ACTION CREATORS: ---------------------------- */
+const loadAllReviews = (reviews) => ({
+    type: LOAD_ALL_REVIEWS,
+    payload: reviews
+});
+
 const loadUserReviews = (reviews) => ({
     type: LOAD_USER_REVIEWS,
     payload: reviews
@@ -46,7 +52,7 @@ const editReview = (reviewData, userData, businessData) => ({
         userData,
         businessData
     }
-})
+});
 
 const removeReview = (reviewId) => ({
     type: REMOVE_REVIEW,
@@ -76,6 +82,17 @@ export const getUserReviews = () => async dispatch => {
         // console.log("JSONIFIED Reviews DATA AFTER THUNK:", userReviews);
         dispatch(loadUserReviews(userReviews));
         return userReviews;
+    }
+}
+
+export const getAllReviews = () => async dispatch => {
+    const response = await csrfFetch(`/api/reviews`);
+
+    if (response.ok) {
+        const allReviews = await response.json();
+        // console.log("JSONIFIED AllReviews DATA AFTER THUNK:", allReviews);
+        dispatch(loadAllReviews(allReviews));
+        return allReviews;
     }
 }
 
@@ -136,20 +153,21 @@ export const updateReview = (reviewId, reviewData, userData, businessData) => as
 }
 
 export const deleteReview = (reviewId) => async dispatch => {
-    const response = await csrfFetch(`/api/reviews/${reviewId}`, {
+    console.log("HITTING DELETE THUNK");
+    const response = await fetch(`/api/reviews/${reviewId}`, {
         method: 'DELETE'
     });
 
     if (response.ok) {
         const successMessage = await response.json();
-        // console.log("THIS IS THUNK SUCCESS MSG:", successMessage, ReviewId);
+        // console.log("THIS IS THUNK SUCCESS MSG:", successMessage, reviewId);
         dispatch(removeReview(reviewId));
         return successMessage;
     }
 }
 
 export const deleteReviewImg = (reviewId, reviewImgId) => async dispatch => {
-    const response = await csrfFetch(`/api/review-images/${reviewImgId}`, {
+    const response = await fetch(`/api/images/${reviewImgId}`, {
         method: 'DELETE'
     });
 
@@ -163,11 +181,17 @@ export const deleteReviewImg = (reviewId, reviewImgId) => async dispatch => {
 
 
 /* ---------------------------- REVIEWS REDUCER: ---------------------------- */
-const initialState = { user: null, business: null };
+const initialState = { all: null, user: null, business: null };
 
 const reviewsReducer = (state = initialState, action) => {
     let newState;
     switch (action.type) {
+        case LOAD_ALL_REVIEWS:
+            newState = {...state, all: { ...state.all } };
+            const allReviews = {};
+            action.payload.Reviews.forEach(review => allReviews[review.id] = review);
+            newState.all = allReviews;
+            return newState;
         case LOAD_USER_REVIEWS:
             newState = { ...state, user: { ...state.user } };
             // console.log("LOAD_USER_REVIEWS ACTION.PAYLOAD IS:", action.payload);
@@ -218,9 +242,9 @@ const reviewsReducer = (state = initialState, action) => {
             return newState;
         case REMOVE_REVIEW_IMG:
             newState = { ...state, user: { ...state.user }, business: { ...state.business } };
-            newState.user[action.payload.reviewId].ReviewImages = [...state.user[action.payload.reviewId].ReviewImages]
+            // newState.user[action.payload.reviewId].ReviewImages = [...state.user[action.payload.reviewId].ReviewImages]
 
-            const userReviewImages = newState.user[action.payload.reviewId].ReviewImages;
+            const userReviewImages = newState.user[action.payload.reviewId].Review_Images;
             for (let i = 0; i < userReviewImages.length; i++) {
                 const img = userReviewImages[i];
                 if (img.id === action.payload.reviewImgId) userReviewImages.splice(i, 1);

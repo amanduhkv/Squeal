@@ -11,7 +11,7 @@
 .recent-activity-title {
     font-size: 28px;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 16px;
 }
 
 .recent-activity-container {
@@ -21,13 +21,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1144px;
 }
 
 .recent-cards-container {
-    display: flex;
-    justify-content: space-between;
-    flex: 1 1 1;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .review-card {
@@ -36,7 +35,7 @@
     padding: 16px 24px;
     margin: 0 16px;
     max-width: 360px;
-    flex-basis: 33.3333%;
+    margin-top: 32px;
 }
 
 .review-usericon {
@@ -69,21 +68,42 @@
 }
 
 .review-biz-pic {
-    background: center url('https://s3-media0.fl.yelpcdn.com/bphoto/NPT_irkrn5ZNerx8T6Kj2w/o.jpg');
-    /* background-size: contain no-repeat; */
     height: 93px;
+    width: 100%;
     margin: 16px -24px;
 }
 
-.review-biz-name {
+.review-image-prev {
+    height: 93px;
+    width: 122%;
+    margin: 16px -24px;
+    object-fit: cover;
+    max-width: 358px;
+    margin-bottom: 10px;
+}
+
+.review-biz-name-link {
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: rgba(2,122,151,1);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.review-biz-name-link:hover {
+    text-decoration: none;
+}
+
+.review-card-continue-link:hover {
+    text-decoration: none;
 }
 
 .review-card-stars {
     margin: 8px 0;
+    height: 20px;
 }
 
 .middle-star,
@@ -106,7 +126,7 @@
     overflow: hidden;
 }
 
-.review-card-continue {
+.review-card-continue-link {
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 600;
     color: rgba(2,122,151,1);
