@@ -78,7 +78,7 @@ def get_one_business(biz_id):
     business = biz.to_dict()
     query = db.session.query(func.round(
         func.avg(Review.rating) * 2)/2).filter_by(business_id=biz_id).first()
-    avg_rating = list(query)[0]
+    avg_rating = float(list(query)[0])
     business_images = Image.query.filter_by(business_id=biz_id)
     images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
               for img in business_images]
