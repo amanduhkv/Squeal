@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import squealnLogo from '../../icons/squealnLogo.png';
 import squealnLogowht from '../../icons/squealnLogowht.png';
@@ -32,6 +32,7 @@ import taco from '../../icons/taco.svg';
 import italian from '../../icons/italian.svg';
 
 function NavBar(){
+    const history = useHistory();
     const ref = useRef(null);
     const [ width, setWidth ] = useState(0);
     const sessionUser = useSelector(state => state.session.user);
@@ -57,7 +58,13 @@ function NavBar(){
             window.addEventListener('resize', updateWidth);
 
         }
-    }, [])
+    }, []);
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        console.log(query);
+        history.push(`/biz?type=${query}`)
+    }
 
     useEffect(() => {
         function changeLocLA() {
@@ -120,7 +127,7 @@ function NavBar(){
                 </div>
                 <div className={sessionUser ? 'search-and-buttons-right-section-user' : 'search-and-buttons-right-section-sl'}>
                     {url.includes('new') || url.includes('update') ? <div></div> : <div className='nav-search-section'>
-                        <form className='search-query-section' action='/search'>
+                        <form className='search-query-section' onSubmit={onSubmit}>
                             <label className='search-input-label search-input-label-left'>
                                 <input className='search-query-input search-input'
                                     placeholder="tacos, cheap dinner, Max's"
