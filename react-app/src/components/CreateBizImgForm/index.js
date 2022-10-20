@@ -70,9 +70,9 @@ export default function CreateBizImgForm() {
                     </ul>
                 )}
 
-                <div className='container container--form-fields'>
+                <div className='container--form-fields'>
                     {/* ----- BIZ IMG SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--img-section'>
+                    <div className='container--form-fields--section container--form-fields--img-section'>
                         <label className='label--add-biz-img' htmlFor="form-field--img">Business Preview Image:</label>
                         <input
                             type="text"

@@ -71,9 +71,9 @@ export default function CreateReviewImgForm() {
                     </ul>
                 )}
 
-                <div className='container container--form-fields'>
+                <div className='container--form-fields'>
                     {/* ----- review IMG SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--img-section'>
+                    <div className='container--form-fields--section container--form-fields--img-section'>
                         <label className='label--add-review-img' htmlFor="form-field--img">Review Preview Image:</label>
                         <input
                             type="text"
