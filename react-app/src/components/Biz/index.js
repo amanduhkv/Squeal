@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { getAllBiz } from '../../store/businesses';
 import ReactPaginate from 'react-paginate';
 import FuzzySearch from 'fuzzy-search';
@@ -29,15 +29,20 @@ export default function Biz() {
     const [activeRes, setActiveRes] = useState(false);
 
     const [query, setQuery] = useState('');
-
+    const searchStuff = useLocation().search;
+    console.log('this is searchStuff', searchStuff);
+    let cat;
 
 
 
 
     /* ------------SEARCH FXNS/LOGIC------------ */
-    const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.type', 'name'])
-
-    const res = searchFunc.search(query)
+    const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name'])
+    if (searchStuff) {
+        cat = searchStuff.split('?type=').join('');
+        console.log('heres my cat',cat)
+    }
+    const res = searchFunc.search(cat ?? query)
     console.log('using search', res)
 
     const handleSubmit = (e) => {

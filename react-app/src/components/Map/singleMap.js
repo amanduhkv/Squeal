@@ -34,4 +34,4 @@ export default SingleMap
 //             lng={location.lng}
 //         />
 //             </StaticGoogleMap> 
-//         </div>
+//         </div>change

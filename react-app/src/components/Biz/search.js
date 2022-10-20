@@ -13,8 +13,8 @@ import './Biz.css';
 export default function Search({ data, page }) {
   const [pageNum, setPageNum] = useState(0);
   const [query, setQuery] = useState('');
-
-  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.type', 'name']);
+  console.log('this is the data', data)
+  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.alias', 'name']);
 
   const res = searchFunc.search(query);
 
@@ -244,8 +244,8 @@ export default function Search({ data, page }) {
       <div>
         <ReactPaginate
           // breakLabel='...'
-          previousLabel="<"
-          nextLabel='>'
+          previousLabel={bizzies?.length ? "<" : 'Loading...'}
+          nextLabel={bizzies?.length ? '>' : ''}
           pageRangeDisplayed='5'
           pageCount={pageCount}
           onPageChange={pageChange}
