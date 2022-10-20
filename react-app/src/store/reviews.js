@@ -159,7 +159,7 @@ export const deleteReview = (reviewId) => async dispatch => {
 
     if (response.ok) {
         const successMessage = await response.json();
-        // console.log("THIS IS THUNK SUCCESS MSG:", successMessage, ReviewId);
+        console.log("THIS IS THUNK SUCCESS MSG:", successMessage, reviewId);
         dispatch(removeReview(reviewId));
         return successMessage;
     }

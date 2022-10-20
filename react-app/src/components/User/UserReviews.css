@@ -1,0 +1,102 @@
+/* ENTIRE REVIEW CARD */
+.single-user-review-card {
+    border-bottom: 1px solid #DDD;
+    padding: 18px 0px 17px 0px;
+}
+
+.single-user-review-card:first-child {
+    padding-top: 0px;
+}
+
+
+/* BIZ INFO SECTION */
+.user-review-biz-info {
+    display: flex;
+}
+
+.user-review-biz-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    margin: 0px 12px 0px 0px;
+}
+
+.user-review-biz-link {
+    color: #0073bb;
+}
+
+.user-review-biz-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.user-review-biz-price-range,
+.user-review-biz-address,
+.user-review-biz-city-state-zip {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.user-review-biz-city,
+.user-review-biz-state {
+    margin-right: 4px;
+}
+
+
+/* REVIEW INFO SECTION - RATING / DATE */
+.user-review-rating-date {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.user-review-rating {
+    margin-right: 6px;
+}
+
+.user-review-created-at {
+    transform: translateY(-2px);
+}
+
+
+/* REVIEW INFO SECTION - REVIEW BODY */
+.user-review-created-at,
+.user-review-review-body {
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.user-review-review-body {
+    margin-bottom: 40px;
+}
+
+
+/* EDIT & DELETE ICONS */
+.user-review-edit-delete-icons {
+    display: flex;
+    justify-content: flex-end;
+    /* opacity: 0.8; */
+
+}
+
+.user-review-edit-button,
+.user-review-delete-button {
+    border: 1.4px solid #DDD;
+    border-radius: 4px;
+    padding: 5px 5px 0px 5px;
+    opacity: 0.8;
+    background-color: #FCFCFC;
+}
+
+.user-review-edit-button {
+    margin-right: 7px;
+}
+
+.user-review-edit-button:hover,
+.user-review-delete-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #DDD;
+    opacity: 1;
+    background-color: #F1F1F1;
+    /* background-color: linear-gradient(180deg, #707070, #FFF 50%); */
+}
