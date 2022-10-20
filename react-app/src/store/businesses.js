@@ -100,7 +100,7 @@ export const search = payload => ({
 });
 
 export const getAllBiz = () => async dispatch => {
-    const response = await csrfFetch('/api/biz');
+    const response = await csrfFetch('/api/biz');gi
     // console.log("hitting res", response)
     if (response.ok) {
         const list = await response.json();
