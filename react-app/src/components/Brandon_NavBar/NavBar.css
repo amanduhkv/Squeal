@@ -120,6 +120,12 @@
     justify-content: center;
     height: 48px;
     width: 56px;
+    transition: 0.8s ease background-color;
+}
+
+.search-button:hover {
+    background-color: rgb(255, 17, 17);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
 }
 
 .search-input-label {
@@ -417,6 +423,12 @@
     display: flex;
     align-items: center;
     border-radius: 4px;
+    transition: 0.8s ease background-color;
+}
+
+.homepage-button:hover {
+    background-color: rgb(255, 17, 17);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
 }
 
 .mag-glass {

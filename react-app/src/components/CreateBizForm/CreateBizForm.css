@@ -49,9 +49,11 @@
     font-weight: 500;
     border-radius: 4px;
     border: 1.3px solid #CCC;
+    transition: 0.8s ease background-color;
 }
 #create-biz-submit-button:hover {
-    background-color: #F40D15;
+    background-color: rgb(255, 17, 17);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
 }
 
 .label--create-biz {
