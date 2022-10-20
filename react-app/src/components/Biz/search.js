@@ -28,6 +28,9 @@ export default function Search({ data }) {
 
   const [pageNum, setPageNum] = useState(0);
   const [query, setQuery] = useState('');
+  const searchStuff = useLocation().search;
+    console.log('this is searchStuff', searchStuff);
+    let cat;
 
   // console.log('this is the data', data)
 
@@ -57,9 +60,14 @@ export default function Search({ data }) {
   /* ------------SEARCH FXNS/LOGIC------------ */
   const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name']);
 
-  const res = searchFunc.search(query)
-  console.log('using search', res)
+  // const res = searchFunc.search(query)
+  if (searchStuff) {
+    cat = searchStuff.split('?type=').join('');
+    console.log('heres my cat',cat)
+  }
 
+  const res = searchFunc.search(cat ?? query)
+  console.log('using search', res)
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(search(res))

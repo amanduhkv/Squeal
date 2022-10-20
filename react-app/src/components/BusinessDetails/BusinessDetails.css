@@ -51,7 +51,7 @@
     margin: auto;
     z-index: 1;
     padding: 40px 64px;
-    max-width: 1272px;
+    max-width: 1772px;
     min-width: 1144px;
 }
 
@@ -129,12 +129,13 @@
     position: relative;
     top: 580px;
     display: grid;
-    width: 80%;
+    width: 90%;
     min-width: 1124px;
+    max-width: 1672px;
     margin: auto;
     gap: 60px;
     grid-template-columns: 2fr 1fr;
-    /* position: sticky; */
+    margin: auto;
 }
 
 .single-business-reviews-button {
