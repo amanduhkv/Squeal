@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import squealnLogo from '../../icons/squealnLogo.png';
@@ -32,13 +32,39 @@ import taco from '../../icons/taco.svg';
 import italian from '../../icons/italian.svg';
 
 function NavBar(){
+    const ref = useRef(null);
+    const [ width, setWidth ] = useState(0);
     const sessionUser = useSelector(state => state.session.user);
     const url = useLocation().pathname;
+    const [ tempLoc, setTempLoc ] = useState('')
+    // const loc = useLocation();
+    // console.log(loc)
     const [ query, setQuery ] = useState('');
     const [ location, setLocation ] = useState('');
     // console.log('this is the url',url);
+    console.log('this is the ref',ref)
+    const locArr = ['los angeles, ca', 'oakland, ca', 'san francisco, ca', 'san jose, ca'];
 // /*
     let sessionLinks;
+    console.log(width);
+    console.log('this is the location',location);
+
+    useLayoutEffect(() => {
+        const updateWidth = () => {
+            setWidth(ref.current.offsetWidth);
+        }
+        updateWidth();
+        window.addEventListener('resize', updateWidth);
+    }, [])
+
+    const changeLoc = (loc) => {
+        setLocation(loc);
+    }
+
+    // useEffect(() => {
+    //     let cur = document.getElementById('letstrythis');
+    //     console.log(cur.style.getPropertyValue('width'));
+    // }, [])
 
     if (sessionUser) {
         // console.log('hereeee')
@@ -75,10 +101,26 @@ function NavBar(){
                                     type='text' value={query} onChange={(e) => setQuery(e.target.value)} />
                             </label>
                             <span className='inbetween-inputs' />
-                            <label className='search-input-label search-input-label-right'>
+                            <label ref={ref} className='search-input-label search-input-label-right'>
                                 <input className='search-location-input search-input'
                                     placeholder='Los Angeles, CA'
-                                    type='text' value={location} onChange={(e) => setLocation(e.target.value)} />
+                                    type='text' value={location}
+                                    onChange={() => location}
+                                    />
+                                <div className='tooltip-location' style={{width: `${width}px`}}>
+                                    <button className='dropdown-location' onClick={() => changeLoc('Los Angeles, CA')}>
+                                        Los Angeles, CA
+                                    </button>
+                                    <button className='dropdown-location' onClick={() => changeLoc('Oakland, CA')}>
+                                        Oakland, CA
+                                    </button>
+                                    <button className='dropdown-location' onClick={() => changeLoc('San Francisco, CA')}>
+                                        San Francisco, CA
+                                    </button>
+                                    <button className='dropdown-location' onClick={() => changeLoc('San Jose, CA')}>
+                                        San Jose, CA
+                                    </button>
+                                </div>
                             </label>
                             <button type='submit' className='search-button'>
                                 <img src={search} alt='icon' className='search-icon' />
