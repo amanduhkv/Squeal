@@ -10,15 +10,16 @@ import txtbub from '../../icons/all-biz-page/text-bubble.svg';
 
 import './Biz.css';
 
-export default function Search({ data }) {
+export default function Search({ data, page }) {
   const [pageNum, setPageNum] = useState(0);
-
   const [query, setQuery] = useState('');
 
-  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.type', 'name'])
+  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.type', 'name']);
 
-  const res = searchFunc.search(query)
+  const res = searchFunc.search(query);
 
+
+  /* -------------TIME FXNS/LOGIC------------- */
   let current_time;
   const settingTime = () => {
     const today = new Date();
@@ -40,6 +41,8 @@ export default function Search({ data }) {
     if (nums.length === 4) return nums[0] + nums[1] + ':' + nums[2] + nums[3]
   }
 
+
+  /* ----------PAGINATION FXNS/LOGIC---------- */
   const bizPerPage = 10;
   const visitedPages = pageNum * bizPerPage;
   const pageCount = Math.ceil(res.length / bizPerPage);
@@ -48,10 +51,9 @@ export default function Search({ data }) {
     setPageNum(selected);
   }
 
-
   const bizzies = res.slice(visitedPages, visitedPages + bizPerPage)
 
-  
+
   return (
     <div>
       <ol start={(10*pageNum) + 1}>

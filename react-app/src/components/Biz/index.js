@@ -21,7 +21,6 @@ export default function Biz() {
 
     const dispatch = useDispatch();
 
-    const [pageNum, setPageNum] = useState(0);
 
     const [activePrice, setActivePrice] = useState(false);
     const [activeOpen, setActiveOpen] = useState(false);
@@ -30,9 +29,9 @@ export default function Biz() {
     const [activeRes, setActiveRes] = useState(false);
 
     const [query, setQuery] = useState('');
-    const [showBizTypes, setShowBizTypes] = useState([]);
 
-    // console.log('types to the front', types)
+
+
 
 
     /* ------------SEARCH FXNS/LOGIC------------ */
@@ -47,43 +46,7 @@ export default function Biz() {
         clearData()
         // console.log('SUCCESS')
     }
-
-
-
-    /* ----------PAGINATION FXNS/LOGIC---------- */
-    const bizPerPage = 10;
-    const visitedPages = pageNum * bizPerPage;
-    const pageCount = Math.ceil(res.length / bizPerPage);
-    const pageChange = ({ selected }) => {
-        setPageNum(selected);
-    }
-
-    const bizzies = res.slice(visitedPages, visitedPages + bizPerPage)
-    // console.log('this the bizzies', bizzies)
-
-
-    /* -------------TIME FXNS/LOGIC------------- */
-    let current_time;
-    const settingTime = () => {
-        const today = new Date();
-        let hours = today.getHours().toString()
-        let mins = today.getMinutes().toString()
-        if (hours.length === 1) hours = "0" + hours;
-        if (mins.length === 1) mins = "0" + mins;
-        return hours + mins
-    }
-    current_time = settingTime()
-
-    const time_conversion = (time) => {
-        if (Number(time) > 1200) {
-            time = time - 1200
-        }
-        let nums = time.toString().split('')
-
-        if (nums.length === 3) return nums[0] + ':' + nums[1] + nums[2]
-        if (nums.length === 4) return nums[0] + nums[1] + ':' + nums[2] + nums[3]
-    }
-
+    // console.log('This the query', query)
 
     /* ------------TOGGLE FXNS/LOGIC------------ */
     const toggleIdPrice = () => {
@@ -91,7 +54,6 @@ export default function Biz() {
     }
     const toggleIdOpen = () => {
         setActiveOpen(!activeOpen);
-        setQuery(query ? 'open' : '')
     }
     const toggleIdDel = () => {
         setActiveDel(!activeDel);
@@ -139,6 +101,7 @@ export default function Biz() {
                     type='submit'
                     onClick={() => {
                         toggleIdOpen()
+                        setQuery('open')
                     }
                     }
                 >
@@ -180,29 +143,8 @@ export default function Biz() {
                 >
                     Reservations
                 </button>
-                {/* <button
-                    id={active ? 'type-butt-act-4' : 'type-butt'}
-                    onClick={toggleId}
-                >
-                    Breakfast & Brunch
-                </button> */}
             </div>
-            <Search data={res}/>
-            {/* <div>
-                <ReactPaginate
-                    // breakLabel='...'
-                    previousLabel="<"
-                    nextLabel='>'
-                    pageRangeDisplayed='5'
-                    pageCount={pageCount}
-                    onPageChange={pageChange}
-                    containerClassName='pagination-container'
-                    activeClassName="pagination-active"
-                    pageClassName="pag-num"
-                    pageLinkClassName='pag-txt'
-                    disabledLinkClassName='pag-hide'
-                />
-            </div> */}
+            <Search data={res} />
         </main>
     )
 }

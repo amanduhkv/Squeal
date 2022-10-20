@@ -164,6 +164,10 @@
   height: 20px;
 }
 
+.biz-type-butts:hover {
+  background-color: rgb(240, 240, 240);
+}
+
 #biz-type-loc {
   display: flex;
   align-items: center;
