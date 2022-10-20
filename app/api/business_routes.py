@@ -33,8 +33,12 @@ def get_all_businesses():
     for b in biz:
         query = db.session.query(func.round(
             func.avg(Review.rating) * 2)/2).filter_by(business_id=b[0]['id']).first()
-        avg_rating = float(list(query)[0])
-        b[0]['avg_rating'] = avg_rating
+        avg_rating = 0
+        if list(query)[0]:
+            avg_rating = float(list(query)[0])
+            b[0]['avg_rating'] = avg_rating
+        else:
+            b[0]['avg_rating'] = 0
 
         imgs = Image.query.filter_by(business_id=b[0]['id'])
         reviews = Review.query.filter_by(business_id=b[0]['id'])
@@ -78,9 +82,12 @@ def get_one_business(biz_id):
     business = biz.to_dict()
     query = db.session.query(func.round(
         func.avg(Review.rating) * 2)/2).filter_by(business_id=biz_id).first()
-    print(type(list(query)[0]))
-    avg_rating = float(list(query)[0])
-    print(type(avg_rating))
+    avg_rating = 0
+    if list(query)[0]:
+        avg_rating = float(list(query)[0])
+        business['avg_rating'] = avg_rating
+    else:
+        business['avg_rating'] = 0
     business_images = Image.query.filter_by(business_id=biz_id)
     images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
               for img in business_images]
@@ -190,7 +197,7 @@ all_transactions_list = ['pickup', 'delivery', 'restaurant_reservation']
 
 
 # CREATE A BIZ
-@business_routes.route("", methods=['POST'])
+@business_routes.route("/", methods=['POST'])
 @login_required
 def add_new_business():
     """
@@ -221,9 +228,9 @@ def add_new_business():
         login_val_error["errors"]["country"] = "Country is required."
     if not form.data['zipcode']:
         login_val_error["errors"]["zipcode"] = "Zip code is required."
-    if form.data['lat'] != 0 and len(str(form.data['lat'])) == 0:
+    if len(str(form.data['lat'])) == 0:
         login_val_error["errors"]["lat"] = "Latitude is required."
-    if form.data['lng'] != 0 and len(str(form.data['lng'])) == 0:
+    if len(str(form.data['lng'])) == 0:
         login_val_error["errors"]["lng"] = "Longitude is required."
     if form.data['lat'] < -90 or form.data['lat'] > 90 :
         login_val_error["errors"]["lat"] = "Latitude must be between -90 and 90."

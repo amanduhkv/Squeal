@@ -79,6 +79,9 @@ export default function CreateBizForm() {
 
         try {
             const createdBiz = await dispatch(bizActions.createBusiness(newBiz));
+
+            console.log("CREATED BIZ", createdBiz)
+
             if (createdBiz) {
                 if (bizImgUrl.length) {
                     const newImg = { url: bizImgUrl }
