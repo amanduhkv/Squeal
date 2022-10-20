@@ -166,7 +166,7 @@ const HomePage = () => {
             </h2>
             <div className='categories-container'>
                 <div className='categories-outer-container'>
-                    <a className='category-link' href=''>
+                    <a className='category-link' href='/biz?type=chinese'>
                         <div className='category-tile chinese-tile'>
                             <img className='category-icon' src={chinese} alt='chinese' />
                             <p className='category-title'>
@@ -177,7 +177,7 @@ const HomePage = () => {
                 </div>
                 <span className='categories-gap' />
                 <div className='categories-outer-container'>
-                    <a className='category-link' href=''>
+                    <a className='category-link' href='/biz?type=indpak'>
                         <div className='category-tile chinese-tile'>
                             <img className='category-icon' src={indian} alt='chinese' />
                             <p className='category-title'>
@@ -188,7 +188,7 @@ const HomePage = () => {
                 </div>
                 <span className='categories-gap' />
                 <div className='categories-outer-container'>
-                    <a className='category-link' href=''>
+                    <a className='category-link' href='/biz?type=italian'>
                         <div className='category-tile chinese-tile'>
                             <img className='category-icon' src={italian} alt='chinese' />
                             <p className='category-title'>
@@ -199,7 +199,7 @@ const HomePage = () => {
                 </div>
                 <span className='categories-gap' />
                 <div className='categories-outer-container'>
-                    <a className='category-link' href=''>
+                    <a className='category-link' href='/biz?type=japanese'>
                         <div className='category-tile chinese-tile'>
                             <img className='category-icon' src={japanese} alt='chinese' />
                             <p className='category-title'>
@@ -211,7 +211,7 @@ const HomePage = () => {
                 </div>
                 <div className='categories-container'>
                 <div className='categories-outer-container'>
-                    <a className='category-link' href=''>
+                    <a className='category-link' href='/biz?type=korean'>
                         <div className='category-tile chinese-tile'>
                             <img className='category-icon' src={korean} alt='chinese' />
                             <p className='category-title'>
@@ -222,7 +222,7 @@ const HomePage = () => {
                 </div>
                 <span className='categories-gap' />
                 <div className='categories-outer-container'>
-                    <a className='category-link' href=''>
+                    <a className='category-link' href='/biz?type=mexican'>
                         <div className='category-tile chinese-tile'>
                             <img className='category-icon' src={mexican} alt='chinese' />
                             <p className='category-title'>
@@ -233,7 +233,7 @@ const HomePage = () => {
                 </div>
                 <span className='categories-gap' />
                 <div className='categories-outer-container'>
-                    <a className='category-link' href=''>
+                    <a className='category-link' href='/biz?type=thai'>
                         <div className='category-tile chinese-tile'>
                             <img className='category-icon' src={thai} alt='chinese' />
                             <p className='category-title'>
@@ -244,7 +244,7 @@ const HomePage = () => {
                 </div>
                 <span className='categories-gap' />
                 <div className='categories-outer-container'>
-                    <a className='category-link' href=''>
+                    <a className='category-link' href='/biz?type=vietnamese'>
                         <div className='category-tile chinese-tile'>
                             <img className='category-icon' src={vietnamese} alt='chinese' />
                             <p className='category-title'>

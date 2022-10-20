@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import squealnLogo from '../../icons/squealnLogo.png';
 import squealnLogowht from '../../icons/squealnLogowht.png';
@@ -32,6 +32,7 @@ import taco from '../../icons/taco.svg';
 import italian from '../../icons/italian.svg';
 
 function NavBar(){
+    const history = useHistory();
     const ref = useRef(null);
     const [ width, setWidth ] = useState(0);
     const sessionUser = useSelector(state => state.session.user);
@@ -49,14 +50,21 @@ function NavBar(){
     console.log('this is the location',location);
 
     useLayoutEffect(() => {
-        const updateWidth = () => {
-            if (ref?.current) {
+        if (ref.current) {
+            const updateWidth = () => {
                 setWidth(ref.current.offsetWidth);
             }
+            updateWidth();
+            window.addEventListener('resize', updateWidth);
+
         }
-        updateWidth();
-        window.addEventListener('resize', updateWidth);
-    }, [])
+    }, []);
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        console.log(query);
+        history.push(`/biz?type=${query}`)
+    }
 
     useEffect(() => {
         function changeLocLA() {
@@ -75,13 +83,13 @@ function NavBar(){
         }
 
         const la = document.getElementById('LA');
-        la.addEventListener('click', changeLocLA);
+        la?.addEventListener('click', changeLocLA);
         const oak = document.getElementById('OAK');
-        oak.addEventListener('click', changeLocOAK);
+        oak?.addEventListener('click', changeLocOAK);
         const sf = document.getElementById('SF');
-        sf.addEventListener('click', changeLocSF);
+        sf?.addEventListener('click', changeLocSF);
         const sj = document.getElementById('SJ');
-        sj.addEventListener('click', changeLocSJ);
+        sj?.addEventListener('click', changeLocSJ);
 
         console.log(location);
     }, [location]);
@@ -119,7 +127,7 @@ function NavBar(){
                 </div>
                 <div className={sessionUser ? 'search-and-buttons-right-section-user' : 'search-and-buttons-right-section-sl'}>
                     {url.includes('new') || url.includes('update') ? <div></div> : <div className='nav-search-section'>
-                        <form className='search-query-section' action='/search'>
+                        <form className='search-query-section' onSubmit={onSubmit}>
                             <label className='search-input-label search-input-label-left'>
                                 <input className='search-query-input search-input'
                                     placeholder="tacos, cheap dinner, Max's"
@@ -188,30 +196,30 @@ function NavBar(){
                             Quick Meals <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                         </button>
                         <div className='tooltiptext tooltip-ff'>
-                            <button className='dropdown-display-text top-dropdown left-ffdropdown'>
+                        <a className='category-link' href='/biz?type=hotdogs'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
                                 <img className='tooltip-icons' src={fastfood} alt='icon' />Fast Food
-                            </button>
-                            <button className='dropdown-display-text top-dropdown right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=pizza'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
                                 <img className='tooltip-icons' src={pizza} alt='icon' />Pizza
-                            </button>
-                            <button className='dropdown-display-text left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=delivery'><button className='dropdown-display-text left-ffdropdown'>
                                 <img className='tooltip-icons' src={delivery} alt='icon' />Delivery
-                            </button>
-                            <button className='dropdown-display-text right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=burgers'><button className='dropdown-display-text right-ffdropdown'>
                                 <img className='tooltip-icons' src={burger} alt='icon' />Burgers
-                            </button>
-                            <button className='dropdown-display-text left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=sandwiches'><button className='dropdown-display-text left-ffdropdown'>
                                 <img className='tooltip-icons' src={sandwich} alt='icon' />Sandwiches
-                            </button>
-                            <button className='dropdown-display-text right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=chicken_wings'><button className='dropdown-display-text right-ffdropdown'>
                                 <img className='tooltip-icons' src={chicken} alt='icon' />Chicken Wings
-                            </button>
-                            <button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=pickup'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
                                 <img className='tooltip-icons' src={takeout} alt='icon' />Takeout
-                            </button>
-                            <button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=donuts'><button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
                                 <img className='tooltip-icons' src={donut} alt='icon' />Donuts
-                            </button>
+                            </button></a>
                         </div>
                     </div>
                     <div className='tooltip-under-search'>
@@ -219,30 +227,30 @@ function NavBar(){
                             Dessert <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                         </button>
                         <div className='tooltiptext tooltip-ff'>
-                            <button className='dropdown-display-text top-dropdown left-ffdropdown'>
+                        <a className='category-link' href='/biz?type=bakeries'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
                                 <img className='tooltip-icons' src={bakery} alt='icon' />Bakeries
-                            </button>
-                            <button className='dropdown-display-text top-dropdown right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=bubbletea'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
                                 <img className='tooltip-icons' src={boba} alt='icon' />Bubble Tea
-                            </button>
-                            <button className='dropdown-display-text left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=desserts'><button className='dropdown-display-text left-ffdropdown'>
                                 <img className='tooltip-icons' src={dessert} alt='icon' />Desserts
-                            </button>
-                            <button className='dropdown-display-text right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=coffee'><button className='dropdown-display-text right-ffdropdown'>
                                 <img className='tooltip-icons' src={coffee} alt='icon' />Coffee & Tea
-                            </button>
-                            <button className='dropdown-display-text left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=icecream'><button className='dropdown-display-text left-ffdropdown'>
                                 <img className='tooltip-icons' src={icecream} alt='icon' />Ice Cream
-                            </button>
-                            <button className='dropdown-display-text right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=donuts'><button className='dropdown-display-text right-ffdropdown'>
                                 <img className='tooltip-icons' src={donut} alt='icon' />Donuts
-                            </button>
-                            <button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=juicebars'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
                                 <img className='tooltip-icons' src={smoothie} alt='icon' />Smoothies
-                            </button>
-                            <button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=cafes'><button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
                                 <img className='tooltip-icons' src={cafe} alt='icon' />Cafes
-                            </button>
+                            </button></a>
                         </div>
                     </div>
                     <div className='tooltip-under-search'>
@@ -250,30 +258,30 @@ function NavBar(){
                             Popular <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                         </button>
                         <div className='tooltiptext tooltip-ff'>
-                            <button className='dropdown-display-text top-dropdown left-ffdropdown'>
+                        <a className='category-link' href='/biz?type=bbq'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
                                 <img className='tooltip-icons' src={bbq} alt='icon' />Barbeque
-                            </button>
-                            <button className='dropdown-display-text top-dropdown right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=korean'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
                                 <img className='tooltip-icons' src={korean} alt='icon' />Korean
-                            </button>
-                            <button className='dropdown-display-text left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=chinese'><button className='dropdown-display-text left-ffdropdown'>
                                 <img className='tooltip-icons' src={chinese} alt='icon' />Chinese
-                            </button>
-                            <button className='dropdown-display-text right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=mexican'><button className='dropdown-display-text right-ffdropdown'>
                                 <img className='tooltip-icons' src={taco} alt='icon' />Mexican
-                            </button>
-                            <button className='dropdown-display-text left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=italian'><button className='dropdown-display-text left-ffdropdown'>
                                 <img className='tooltip-icons' src={italian} alt='icon' />Italian
-                            </button>
-                            <button className='dropdown-display-text right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=vietnamese'><button className='dropdown-display-text right-ffdropdown'>
                                 <img className='tooltip-icons' src={viet} alt='icon' />Vietnamese
-                            </button>
-                            <button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=japanese'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
                                 <img className='tooltip-icons' src={japanese} alt='icon' />Japanese
-                            </button>
-                            <button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
+                            </button></a>
+                            <a className='category-link' href='/biz?type=mediterranean'><button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
                                 <img className='tooltip-icons' src={med} alt='icon' />Mediterranean
-                            </button>
+                            </button></a>
                         </div>
                     </div>
 

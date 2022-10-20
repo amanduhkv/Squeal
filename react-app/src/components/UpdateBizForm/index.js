@@ -153,8 +153,11 @@ export default function UpdateBizForm() {
             types
         }
 
+        console.log("UPDATED BIZ BEFORE DISPATCH", newBiz)
+
         try {
             const updatedBiz = await dispatch(bizActions.updateBiz(biz.id, newBiz));
+            console.log("UPDATED BIZ AFTER DISPATCH", updatedBiz)
             if (updatedBiz) {
                 if (bizImgUrl.length) {
                     const newImg = { url: bizImgUrl }
@@ -192,10 +195,10 @@ export default function UpdateBizForm() {
                     </ul>
                 )}
 
-                <div className='container container--form-fields'>
+                <div className='container--form-fields'>
 
                     {/* ----- NAME SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--name-section'>
+                    <div className='container--form-fields--section container--form-fields--name-section'>
                         <label className='label--update-biz' for="form-field--name">Business Name:</label>
                         <input
                             type="text"
@@ -209,9 +212,9 @@ export default function UpdateBizForm() {
                     </div>
 
                     {/* ----- ADDRESS SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--address-info-section'>
+                    <div className='container--form-fields--section container--form-fields--address-info-section'>
                         <label className='label--update-biz' for="form-field--address">Business Address:</label>
-                        <div className='container container--form-fields--address-info-section--address'>
+                        <div className='container--form-fields--address-info-section--address'>
                             <input
                                 type="text"
                                 value={address}
@@ -223,7 +226,7 @@ export default function UpdateBizForm() {
                             />
                         </div>
 
-                        <div className='container container--form-fields--address-info-section--city-state-zip'>
+                        <div className='container--form-fields--address-info-section--city-state-zip'>
                             <input
                                 type="text"
                                 value={city}
@@ -255,7 +258,7 @@ export default function UpdateBizForm() {
                             />
                         </div>
 
-                        <div className='container container--form-fields--address-info-section--country-lat-lng'>
+                        <div className='container--form-fields--address-info-section--country-lat-lng'>
                             <input
                                 type="text"
                                 value={lat}
@@ -289,7 +292,7 @@ export default function UpdateBizForm() {
                     </div>
 
                     {/* ----- NAME SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--phone-section'>
+                    <div className='container--form-fields--section container--form-fields--phone-section'>
                         <label className='label--update-biz' for="form-field--phone">Phone Number:</label>
                         <input
                             type="tel"
@@ -304,8 +307,8 @@ export default function UpdateBizForm() {
 
 
                     {/* ----- HOURS SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--hours-section'>
-                        <div className='container container--form-fields--hours-section--start'>
+                    <div className='container--form-fields--section container--form-fields--hours-section'>
+                        <div className='container--form-fields--hours-section--start'>
                             <label className='label--update-biz' for="form-field--start-time">Business Start Time:</label>
                             <select
                                 value={startTime}
@@ -320,7 +323,7 @@ export default function UpdateBizForm() {
                             </select>
                         </div>
 
-                        <div className='container container--form-fields--hours-section--end'>
+                        <div className='container--form-fields--hours-section--end'>
                             <label className='label--update-biz' for="form-field--end-time">Business End Time:</label>
                             <select
                                 value={endTime}
@@ -337,7 +340,7 @@ export default function UpdateBizForm() {
                     </div>
 
                     {/* ----- PRICE RANGE SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--price-range-section'>
+                    <div className='container--form-fields--section container--form-fields--price-range-section'>
                         <label className='label--update-biz' for="form-field--price-range">Price Range:</label>
                         <select
                             value={priceRange}
@@ -353,11 +356,11 @@ export default function UpdateBizForm() {
                     </div>
 
                     {/* ----- TYPES & TRANSACTIONS SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--types-transactions-section'>
+                    <div className='container--form-fields--section container--form-fields--types-transactions-section'>
 
-                        <div className='container container--form-fields--types-transactions-section--transactions'>
+                        <div className='container--form-fields--types-transactions-section--transactions'>
                             <label className='label--update-biz label--update-biz-transactions' for="form-field--transactions">Transactions:</label>
-                            <div className='container container--form-fields--transactions-checkboxes-section'>
+                            <div className='container--form-fields--transactions-checkboxes-section'>
                             {TRANSACTIONS.map(transaction => (
                                 <div id='single-transaction'>
                                     <input
@@ -397,9 +400,9 @@ export default function UpdateBizForm() {
                             </div>
                         </div>
 
-                        <div className='container container--form-fields--types-transactions-section--types'>
+                        <div className='container--form-fields--types-transactions-section--types'>
                             <label className='label--update-biz label--update-biz-types' for="form-field--transactions">Types:</label>
-                            <div className='container container--form-fields--types-checkboxes-section'>
+                            <div className='container--form-fields--types-checkboxes-section'>
                             {TYPES.map(type => (
                                 <div id='single-type'>
                                     <input
@@ -441,7 +444,7 @@ export default function UpdateBizForm() {
                     </div>
 
                     {/* ----- BIZ IMG SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--img-section'>
+                    <div className='container--form-fields--section container--form-fields--img-section'>
                         <label className='label--update-biz' for="form-field--img">Add Another Business Image:</label>
                         <input
                             type="text"

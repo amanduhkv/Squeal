@@ -10,7 +10,8 @@ const EditReview = () => {
     const dispatch = useDispatch();
     const { bizId, reviewId } = useParams();
     const reviews = useSelector(state => state.reviews.user);
-    const review = reviews[reviewId];
+    let review;
+    if (reviews) review = reviews[reviewId];
     const biz = useSelector(state => state.businesses.singleBusiness);
     const user = useSelector(state => state.session.user);
     const [ hover1, isHover1 ] = useHover();
@@ -18,15 +19,15 @@ const EditReview = () => {
     const [ hover3, isHover3 ] = useHover();
     const [ hover4, isHover4 ] = useHover();
     const [ hover5, isHover5 ] = useHover();
-    const [ revRate, setRevRate ] = useState(review.rating ?? 0);
-    const [ revBody, setRevBody ] = useState(review.review_body ?? '');
+    const [ revRate, setRevRate ] = useState(review?.rating ?? 0);
+    const [ revBody, setRevBody ] = useState(review?.review_body ?? '');
 
     useEffect(() => {
         dispatch(getOneBiz(bizId));
         dispatch(getUserReviews(reviewId));
     }, [dispatch, bizId, reviewId]);
 
-    if (!user || !review) {
+    if (!user) {
         history.push(`/biz/${bizId}`);
     }
 
