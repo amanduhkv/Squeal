@@ -14,7 +14,7 @@ const SingleMap = ({ location }) => {
 
     return (
         <div>
-            <StaticGoogleMap size="350x215" className="img-fluid" apiKey="AIzaSyCLdszu6GiovZNBOUIM4WxYqcVB9EP9Zxo">
+            <StaticGoogleMap size="350x215" className="img-fluid" apiKey={process.env.REACT_APP_API_KEY}>
                 <Marker location={locationStr} color="red"/>
             </StaticGoogleMap>
         </div>
@@ -34,4 +34,4 @@ export default SingleMap
 //             lng={location.lng}
 //         />
 //             </StaticGoogleMap> 
-//         </div>
+//         </div>change
