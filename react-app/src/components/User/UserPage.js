@@ -161,10 +161,10 @@ const UserPage = () => {
                                     My Businesses ({userBizzes && Object.keys(userBizzes).length})
                                 </p>
                             </div>
-                            <h5 id='bot-rc-title'>Location</h5>
+                            {/* <h5 id='bot-rc-title'>Location</h5> */}
                             <div id='bot-rc-1'>
                             </div>
-                            <h5 id='bot-rc-title'>Squealing Since</h5>
+                            <h5 id='bot-rc-title'>Squealing Since 2022</h5>
                             <div id='bot-rc-1'>
                             </div>
                         </div>
