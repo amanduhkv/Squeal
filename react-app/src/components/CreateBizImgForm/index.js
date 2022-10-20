@@ -50,7 +50,7 @@ export default function CreateBizImgForm() {
         try {
             const createdImg = await dispatch(bizActions.addBizImg(bizId, newImg));
             if (createdImg) setValidationErrors([]);
-            history.push(`/biz/${bizId}`);
+            history.push(`/biz/current`);
         }
         catch (res) {
             console.log("==>ANY ERRORS FROM CREATE BIZ IMG:", res)
