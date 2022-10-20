@@ -5,6 +5,11 @@
     z-index: 10;
 }
 
+.dropdown-location:hover {
+    visibility: visible;
+}
+
+
 .header-container {
     position: absolute;
     margin: 0;
@@ -491,6 +496,7 @@
 }
 
 .tooltiptext {
+    /* display: none; */
     visibility: hidden;
     position: absolute;
     display: grid;
@@ -544,6 +550,7 @@
 }
 
 .tooltip-under-search:hover .tooltiptext {
+    /* display: grid; */
     visibility: visible;
     opacity: 1;
     z-index: 25;
