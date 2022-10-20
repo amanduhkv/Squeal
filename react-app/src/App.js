@@ -99,6 +99,10 @@ function App() {
                     <UpdateBizForm />
                 </Route>
 
+                <Route exact path='/biz/:bizId/review/:reviewId'>
+                    <EditReview />
+                </Route>
+
                 <Route exact path='/biz/:bizId'>
                     <BusinessDetails />
                     <Footer />
@@ -119,15 +123,12 @@ function App() {
                     <Footer />
                 </Route>
 
-                <Route path='/newreview/biz/:bizId'>
-                    <ReviewForm />
-                </Route>
-                <Route path='/biz/:bizId/review/:reviewId'>
-                    <EditReview />
-                </Route>
-
                 <Route exact path='/review/:reviewId/images/new'>
                     <CreateReviewImgForm />
+                </Route>
+
+                <Route exact path='/newreview/biz/:bizId'>
+                    <ReviewForm />
                 </Route>
             </Switch>
 

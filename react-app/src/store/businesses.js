@@ -150,7 +150,7 @@ const update = payload => ({
 });
 
 export const updateBiz = (bizId, updatedBiz) => async dispatch => {
-    const response = await fetch(`/api/biz/${bizId}`, {
+    const response = await csrfFetch(`/api/biz/${bizId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'

@@ -82,8 +82,8 @@ class EditBusinessForm(FlaskForm):
     country = StringField('Country', validators=[DataRequired()])
     address = StringField('Address', validators=[DataRequired()])
     zipcode = StringField('Zipcode', validators=[DataRequired()])
-    lat = StringField('Name', validators=[DataRequired()])
-    lng = StringField('Name', validators=[DataRequired()])
+    lat = StringField('Name')
+    lng = StringField('Name')
     price_range = SelectField('Price Range', validators=[
                               DataRequired()], choices=PRICES)
     start_time = StringField('Start Time', validators=[DataRequired()])
