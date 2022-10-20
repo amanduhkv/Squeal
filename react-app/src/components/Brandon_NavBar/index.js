@@ -37,13 +37,10 @@ function NavBar(){
     const [ width, setWidth ] = useState(0);
     const sessionUser = useSelector(state => state.session.user);
     const url = useLocation().pathname;
-    // const loc = useLocation();
-    // console.log(loc)
     const [ query, setQuery ] = useState('');
     const [ location, setLocation ] = useState('');
-    // console.log('this is the url',url);
+    const [ loc, setLoc ] = useState('');
     console.log('this is the ref',ref);
-    const locArr = ['Los Angeles, CA', 'Oakland, CA', 'San Francisco, CA', 'San Jose, CA'];
 // /*
     let sessionLinks;
     console.log(width);
@@ -56,7 +53,6 @@ function NavBar(){
             }
             updateWidth();
             window.addEventListener('resize', updateWidth);
-
         }
     }, []);
 
@@ -66,38 +62,22 @@ function NavBar(){
         history.push(`/biz?type=${query}`)
     }
 
-    useEffect(() => {
-        function changeLocLA() {
-            console.log('this is the location before change', location);
-            setLocation('Los Angeles, CA');
-            console.log('this is the location after change', location);
-        }
-        function changeLocOAK() {
-            setLocation('Oakland, CA');
-        }
-        function changeLocSF() {
-            setLocation('San Francisco, CA');
-        }
-        function changeLocSJ() {
-            setLocation('San Jose, CA');
-        }
-
-        const la = document.getElementById('LA');
-        la?.addEventListener('click', changeLocLA);
-        const oak = document.getElementById('OAK');
-        oak?.addEventListener('click', changeLocOAK);
-        const sf = document.getElementById('SF');
-        sf?.addEventListener('click', changeLocSF);
-        const sj = document.getElementById('SJ');
-        sj?.addEventListener('click', changeLocSJ);
-
-        console.log(location);
-    }, [location]);
-
-    // useEffect(() => {
-    //     let cur = document.getElementById('letstrythis');
-    //     console.log(cur.style.getPropertyValue('width'));
-    // }, [])
+    function changeLocLA() {
+        setLocation('Los Angeles, CA');
+        setLoc('la');
+    }
+    function changeLocOAK() {
+        setLocation('Oakland, CA');
+        setLoc('oak');
+    }
+    function changeLocSF() {
+        setLocation('San Francisco, CA');
+        setLoc('sf');
+    }
+    function changeLocSJ() {
+        setLocation('San Jose, CA');
+        setLoc('sj');
+    }
 
     if (sessionUser) {
         // console.log('hereeee')
@@ -136,30 +116,29 @@ function NavBar(){
                             <span className='inbetween-inputs' />
                             <label ref={ref} className='search-input-label search-input-label-right'>
                                 <input className='search-location-input search-input'
-                                    placeholder='Los Angeles, CA'
+                                    // placeholder='Los Angeles, CA'
                                     value={location}
-                                    // onChange={() => location}
                                     readOnly
                                     />
-                                {/* <div className='search-location-input search-input'>{location}</div> */}
-                                {/* <select className='search-location-input search-input' value={location}
-                                        onChange={(e) => setLocation(e.target)}>
-                                    <option value='Los Angeles, CA'>Los Angeles, CA</option>
-                                    <option value='Oakland, CA'>Oakland, CA</option>
-                                    <option value='San Francisco, CA'>San Francisco, CA</option>
-                                    <option value='San Jose, CA'>San Jose, CA</option>
-                                </select> */}
                                 <div className='tooltip-location' style={{width: `${width}px`}}>
-                                    <button id='LA' className='dropdown-location'>
+                                    <button id='LA' className='dropdown-location' onClick={(e) => {
+                                        e.preventDefault();
+                                        changeLocLA()}}>
                                         Los Angeles, CA
                                     </button>
-                                    <button id='OAK' className='dropdown-location'>
+                                    <button id='OAK' className='dropdown-location' onClick={(e) => {
+                                        e.preventDefault();
+                                        changeLocOAK()}}>
                                         Oakland, CA
                                     </button>
-                                    <button id='SF' className='dropdown-location'>
+                                    <button id='SF' className='dropdown-location' onClick={(e) => {
+                                        e.preventDefault();
+                                        changeLocSF()}}>
                                         San Francisco, CA
                                     </button>
-                                    <button id='SJ' className='dropdown-location'>
+                                    <button id='SJ' className='dropdown-location' onClick={(e) => {
+                                        e.preventDefault();
+                                        changeLocSJ()}}>
                                         San Jose, CA
                                     </button>
                                 </div>
@@ -222,7 +201,7 @@ function NavBar(){
                             </button></a>
                         </div>
                     </div>
-                    <div className='tooltip-under-search'>
+                    <div className='tooltip-under-search dessert-under'>
                         <button className={url === '/' ? 'header-bottom-buttons dessert-button' : 'header-bottom-buttons dessert-button-blk'}>
                             Dessert <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                         </button>
