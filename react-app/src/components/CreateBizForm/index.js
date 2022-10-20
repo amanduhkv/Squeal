@@ -116,10 +116,10 @@ export default function CreateBizForm() {
                     </ul>
                 )}
 
-                <div className='container container--form-fields'>
+                <div className='container--form-fields'>
 
                     {/* ----- NAME SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--name-section'>
+                    <div className='container--form-fields--section container--form-fields--name-section'>
                         <label className='label--create-biz' htmlFor="form-field--name">Business Name:</label>
                         <input
                             type="text"
@@ -133,9 +133,9 @@ export default function CreateBizForm() {
                     </div>
 
                     {/* ----- ADDRESS SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--address-info-section'>
+                    <div className='container--form-fields--section container--form-fields--address-info-section'>
                         <label className='label--create-biz' htmlFor="form-field--address">Business Address:</label>
-                        <div className='container container--form-fields--address-info-section--address'>
+                        <div className='container--form-fields--address-info-section--address'>
                             <input
                                 type="text"
                                 value={address}
@@ -147,7 +147,7 @@ export default function CreateBizForm() {
                             />
                         </div>
 
-                        <div className='container container--form-fields--address-info-section--city-state-zip'>
+                        <div className='container--form-fields--address-info-section--city-state-zip'>
                             <input
                                 type="text"
                                 value={city}
@@ -179,7 +179,7 @@ export default function CreateBizForm() {
                             />
                         </div>
 
-                        <div className='container container--form-fields--address-info-section--country-lat-lng'>
+                        <div className='container--form-fields--address-info-section--country-lat-lng'>
                             <input
                                 type="text"
                                 value={lat}
@@ -228,8 +228,8 @@ export default function CreateBizForm() {
 
 
                     {/* ----- HOURS SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--hours-section'>
-                        <div className='container container--form-fields--hours-section--start'>
+                    <div className='container--form-fields--section container--form-fields--hours-section'>
+                        <div className='container--form-fields--hours-section--start'>
                             <label className='label--create-biz' htmlFor="form-field--start-time">Business Start Time:</label>
                             <select
                                 value={startTime}
@@ -244,7 +244,7 @@ export default function CreateBizForm() {
                             </select>
                         </div>
 
-                        <div className='container container--form-fields--hours-section--end'>
+                        <div className='container--form-fields--hours-section--end'>
                             <label className='label--create-biz' htmlFor="form-field--end-time">Business End Time:</label>
                             <select
                                 value={endTime}
@@ -261,7 +261,7 @@ export default function CreateBizForm() {
                     </div>
 
                     {/* ----- PRICE RANGE SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--price-range-section'>
+                    <div className='container--form-fields--section container--form-fields--price-range-section'>
                         <label className='label--create-biz' htmlFor="form-field--price-range">Price Range:</label>
                         <select
                             value={priceRange}
@@ -277,11 +277,11 @@ export default function CreateBizForm() {
                     </div>
 
                     {/* ----- TYPES & TRANSACTIONS SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--types-transactions-section'>
+                    <div className='container--form-fields--section container--form-fields--types-transactions-section'>
 
-                        <div className='container container--form-fields--types-transactions-section--transactions'>
+                        <div className='container--form-fields--types-transactions-section--transactions'>
                             <label className='label--create-biz label--create-biz-transactions' htmlFor="form-field--transactions">Transactions:</label>
-                            <div className='container container--form-fields--transactions-checkboxes-section'>
+                            <div className='container--form-fields--transactions-checkboxes-section'>
                                 {TRANSACTIONS.map(transaction => (
                                     <div id='single-transaction' key={transaction[0]}>
                                         <input
@@ -320,9 +320,9 @@ export default function CreateBizForm() {
                             </div>
                         </div>
 
-                        <div className='container container--form-fields--types-transactions-section--types'>
+                        <div className='container--form-fields--types-transactions-section--types'>
                             <label className='label--create-biz label--create-biz-types' htmlFor="form-field--transactions">Types:</label>
-                            <div className='container container--form-fields--types-checkboxes-section'>
+                            <div className='container--form-fields--types-checkboxes-section'>
                             {TYPES.map(type => (
                                 <div id='single-type' key={type.alias}>
                                     <input
@@ -363,7 +363,7 @@ export default function CreateBizForm() {
                     </div>
 
                     {/* ----- BIZ IMG SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--img-section'>
+                    <div className='container--form-fields--section container--form-fields--img-section'>
                         <label className='label--create-biz' htmlFor="form-field--img">Business Preview Image:</label>
                         <input
                             type="text"

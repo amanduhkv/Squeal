@@ -49,11 +49,13 @@ function NavBar(){
     console.log('this is the location',location);
 
     useLayoutEffect(() => {
-        const updateWidth = () => {
-            setWidth(ref.current.offsetWidth);
+        if (ref.current) {
+            const updateWidth = () => {
+                setWidth(ref.current.offsetWidth);
+            }
+            updateWidth();
+            window.addEventListener('resize', updateWidth);
         }
-        updateWidth();
-        window.addEventListener('resize', updateWidth);
     }, [])
 
     useEffect(() => {
@@ -73,13 +75,13 @@ function NavBar(){
         }
 
         const la = document.getElementById('LA');
-        la.addEventListener('click', changeLocLA);
+        la?.addEventListener('click', changeLocLA);
         const oak = document.getElementById('OAK');
-        oak.addEventListener('click', changeLocOAK);
+        oak?.addEventListener('click', changeLocOAK);
         const sf = document.getElementById('SF');
-        sf.addEventListener('click', changeLocSF);
+        sf?.addEventListener('click', changeLocSF);
         const sj = document.getElementById('SJ');
-        sj.addEventListener('click', changeLocSJ);
+        sj?.addEventListener('click', changeLocSJ);
 
         console.log(location);
     }, [location]);

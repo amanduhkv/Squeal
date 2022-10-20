@@ -201,7 +201,7 @@ export default function UserReviews({ user, userReviews }) {
                             <NavLink className="user-review-add-img-button" to={`/review/${review.id}/images/new`}>
                                 <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" />
                             </NavLink>
-                            <NavLink className="user-review-edit-button" to={`/review/${review.id}/update`}>
+                            <NavLink className="user-review-edit-button" exact to={`/biz/${review.business_id}/review/${review.id}`}>
                                 <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" />
                             </NavLink>
                             <div className="user-review-delete-button" onClick={() => deleteReviewHandler(review.id)}>
