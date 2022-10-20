@@ -119,9 +119,11 @@ def get_current_user_business():
             business_images = Image.query.filter_by(business_id=business['id'])
             images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
                       for img in business_images]
+            biz_rev_count = len(Review.query.filter(Review.business_id == business['id']).all())
 
             business['avg_rating'] = avg_rating
             business['Business_Images'] = images
+            business['Review_Count'] = biz_rev_count
             current_businesses.append(business)
 
         return jsonify({
@@ -458,6 +460,35 @@ def add_biz_img(biz_id):
 
         else:
             return { "message": "Forbidden", "status_code": 403 }, 403
+
+
+# DELETE A BIZ IMG
+@business_routes.route("/images/<int:img_id>", methods=['DELETE'])
+@login_required
+def delete_business_img(img_id):
+    """
+    DELETES a business image
+    """
+    user = current_user.to_dict()
+    user_id = user['id']
+
+    biz_img_to_delete = Image.query.get(img_id)
+    if not biz_img_to_delete:
+        return jsonify({
+            "message": "Image couldn't be found",
+            "status_code": 404
+        })
+
+    # biz_of_img = Business.query.get(biz_img_to_delete.to_dict()['business_id']).to_dict()
+    biz_img_biz_id = biz_img_to_delete.to_dict()['business_id']
+    biz_of_img = Business.query.get(biz_img_biz_id).to_dict()
+
+    if user_id == biz_of_img['owner_id']:
+        db.session.delete(biz_img_to_delete)
+        db.session.commit()
+        return { "message": "Successfully deleted", "status_code": 200 }
+    else:
+        return { "message": "Forbidden", "status_code": 403 }, 403
 
 
 # -------------------- REVIEWS STUFF -------------------- #
