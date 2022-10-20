@@ -32,7 +32,7 @@ export const createBusiness = (business) => async dispatch => {
         body: JSON.stringify(business)
     });
 
-    console.log("RESPONSE AFTER CREATE BIZ THUNK", response)
+    // console.log("RESPONSE AFTER CREATE BIZ THUNK", response)
 
     if (response.ok) {
         const newBiz = await response.json()
@@ -243,7 +243,7 @@ const businessReducer = (state = initialState, action) => {
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
             const newBusiness = { ...action.payload };
             newState.singleBusiness[action.payload.id] = newBusiness;
-            console.log("NEWSTATE AFTER CREATE BIZ ACTION:", newState);
+            // console.log("NEWSTATE AFTER CREATE BIZ ACTION:", newState);
             return newState;
         case ADD_IMG:
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
