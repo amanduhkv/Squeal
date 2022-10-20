@@ -11,7 +11,7 @@ class Review(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     review_body = db.Column(db.String(5000), nullable=False)
     rating = db.Column(db.Integer, nullable=False)
-    created_at = db.Column(db.String, default=datetime.now)
+    created_at = db.Column(db.String(225), default=datetime.now)
     updated_at = db.Column(
         db.String, default=datetime.now, onupdate=datetime.now)
     # updated_at = db.Column(db.DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
