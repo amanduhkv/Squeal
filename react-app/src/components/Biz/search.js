@@ -18,6 +18,11 @@ export default function Search({ data }) {
 
   const dispatch = useDispatch();
 
+  const url = useLocation().pathname;
+  console.log('URL', url)
+  const spliturl = url.split('=')
+  const queryFromURL = spliturl[1];
+  console.log('this is the url query param', queryFromURL)
 
   const [activePrice, setActivePrice] = useState(false);
   const [activeOpen, setActiveOpen] = useState(false);
@@ -55,7 +60,7 @@ export default function Search({ data }) {
 
 
   /* ------------SEARCH FXNS/LOGIC------------ */
-  const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name']);
+  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.alias', 'name']);
 
   const res = searchFunc.search(query)
   console.log('using search', res)
@@ -108,6 +113,7 @@ export default function Search({ data }) {
   }
   const toggleIdRes = () => {
     setActiveRes(!activeRes);
+    setQuery('restaurant_reservation')
   }
 
 
@@ -183,45 +189,51 @@ export default function Search({ data }) {
           >
             Open Now
           </button>
-          <button
-            id={activeDel ? 'type-butt-act' : 'type-butt'}
-            value={query}
-            type='submit'
-            onClick={() => {
-              toggleIdDel()
-              setQuery('delivery')
-              setPageNum(0);
-            }
-            }
-          >
-            Offers Delivery
-          </button>
-          <button
-            id={activeTakeout ? 'type-butt-act' : 'type-butt'}
-            value={query}
-            type='submit'
-            onClick={() => {
-              toggleIdTakeout()
-              setQuery('pickup')
-              setPageNum(0);
-            }
-            }
-          >
-            Offers Takeout
-          </button>
-          <button
-            id={activeRes ? 'type-butt-act' : 'type-butt'}
-            value={query}
-            type='submit'
-            onClick={() => {
-              toggleIdRes()
-              setQuery('restaurant_reservation')
-              setPageNum(0);
-            }
-            }
-          >
-            Reservations
-          </button>
+          <a href='/biz?type=delivery'>
+            <button
+              id={activeDel ? 'type-butt-act' : 'type-butt'}
+              value={query}
+              type='submit'
+              onClick={() => {
+                toggleIdDel()
+                setQuery('delivery')
+                setPageNum(0);
+              }
+              }
+            >
+              Offers Delivery
+            </button>
+          </a>
+          <a href='/biz?type=pickup'>
+            <button
+              id={activeTakeout ? 'type-butt-act' : 'type-butt'}
+              value={query}
+              type='submit'
+              onClick={() => {
+                toggleIdTakeout()
+                setQuery('pickup')
+                setPageNum(0);
+              }
+              }
+            >
+              Offers Takeout
+            </button>
+          </a>
+          <a href='/biz?type=restaurant_reservation'>
+            <button
+              id={activeRes ? 'type-butt-act' : 'type-butt'}
+              value={query}
+              type='submit'
+              onClick={() => {
+                toggleIdRes()
+
+                setPageNum(0);
+              }
+              }
+            >
+              Reservations
+            </button>
+          </a>
         </div>
         {bizzies.map(biz => (
           <div>
