@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import './UserReviews.css'
+import picture from '../../icons/user-page-icons/picture.svg';
 import pencil from '../../icons/user-page-icons/pencil.svg';
 import trash from '../../icons/user-page-icons/trash.svg';
 import * as reviewActions from "../../store/reviews";
@@ -22,6 +23,7 @@ export default function UserReviews({ user, userReviews }) {
 
     const deleteReviewHandler = (reviewId) => {
         try {
+            console.log("REVIEW ID IS:", reviewId)
             dispatch(reviewActions.deleteReview(reviewId));
         }
 
@@ -175,11 +177,14 @@ export default function UserReviews({ user, userReviews }) {
 
 
                         <div className="user-review-edit-delete-icons">
+                            <NavLink className="user-review-add-rev-img-button" to={`/review/${review.id}/images/new`}>
+                                <img className="user-review-svg" src={picture} width='16px' />
+                            </NavLink>
                             <NavLink className="user-review-edit-button" to={`/review/${review.id}/update`}>
-                                <img className="user-review-edit-delete-svg" src={pencil} width='16px' />
+                                <img className="user-review-svg" src={pencil} width='16px' />
                             </NavLink>
                             <div className="user-review-delete-button" onClick={() => deleteReviewHandler(review.id)}>
-                                <img className="user-review-edit-delete-svg" src={trash} width='16px' />
+                                <img className="user-review-svg" src={trash} width='16px' />
                             </div>
                         </div>
                     </div>

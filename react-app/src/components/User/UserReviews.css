@@ -79,6 +79,7 @@
 
 }
 
+.user-review-add-rev-img-button,
 .user-review-edit-button,
 .user-review-delete-button {
     border: 1.4px solid #DDD;
@@ -88,10 +89,12 @@
     background-color: #FCFCFC;
 }
 
+.user-review-add-rev-img-button,
 .user-review-edit-button {
     margin-right: 7px;
 }
 
+.user-review-add-rev-img-button:hover,
 .user-review-edit-button:hover,
 .user-review-delete-button:hover {
     cursor: pointer;

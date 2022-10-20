@@ -7,8 +7,9 @@
     position: static;
 }
 
+.form--update-biz select:focus,
 .form--update-biz input:focus {
-    outline: 2px solid rgb(9, 127, 131);
+    outline: 2px solid rgb(6, 117, 143);
 }
 #form-field--transactions:focus,
 #form-field--types:focus {

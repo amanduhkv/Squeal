@@ -8,9 +8,8 @@
 }
 
 .form--add-biz-img input:focus {
-    outline: 2px solid rgb(9, 127, 131);
+    outline: 2px solid rgb(6, 117, 143);
 }
-
 
 .header--add-biz-img {
     margin: 20px 0px 0px;
