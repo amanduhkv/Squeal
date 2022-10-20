@@ -55,7 +55,7 @@ export default function Search({ data }) {
 
 
   /* ------------SEARCH FXNS/LOGIC------------ */
-  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.alias', 'name']);
+  const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name']);
 
   const res = searchFunc.search(query)
   console.log('using search', res)
@@ -420,6 +420,8 @@ export default function Search({ data }) {
           // breakLabel='...'
           previousLabel={bizzies?.length ? "<" : 'Loading...'}
           nextLabel={bizzies?.length ? '>' : ''}
+          // previousLabel={'<'}
+          // nextLabel={'>'}
           pageRangeDisplayed='5'
           pageCount={pageCount}
           onPageChange={pageChange}
