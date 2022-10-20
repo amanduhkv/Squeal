@@ -55,7 +55,7 @@ const BusinessDetails = () => {
     }
     if (bizReviews) {
         let reviewsArr = Object.values(bizReviews).map(obj => obj.Review_Images)
-        if (reviewsArr) {
+        if (reviewsArr.length) {
             if (reviewsArr[0].length > 0) {
                 let reviews = reviewsArr.filter(obj => obj.url)
                 allReviewImages = reviews.flat()
