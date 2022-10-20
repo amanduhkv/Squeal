@@ -30,7 +30,7 @@ export default function Biz() {
 
     const [query, setQuery] = useState('');
     const searchStuff = useLocation().search;
-    console.log('this is searchStuff', searchStuff);
+    // console.log('this is searchStuff', searchStuff);
     let cat;
 
 
@@ -40,10 +40,10 @@ export default function Biz() {
     const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name'])
     if (searchStuff) {
         cat = searchStuff.split('?type=').join('');
-        console.log('heres my cat',cat)
+        // console.log('heres my cat',cat)
     }
     const res = searchFunc.search(cat ?? query)
-    console.log('using search', res)
+    // console.log('using search', res)
 
     const handleSubmit = (e) => {
         e.preventDefault();
