@@ -14,7 +14,7 @@ import x from '../../icons/x.svg'
 import map from '../../icons/map.svg'
 import phone from '../../icons/phone.svg'
 import star from '../../icons/write-review-star.svg'
-import Map from '../Map/map'
+import SingleMap from '../Map/singleMap'
 
 import './BusinessDetails.css'
 
@@ -456,7 +456,7 @@ const BusinessDetails = () => {
                         <div className='single-business-location-hours'>
                             <div>
                                 <div className='map'>
-                                    <Map location={location} zoomLevel={16} />
+                                    <SingleMap location={location} />
                                 </div>
                                 <div className='single-business-location-details'>
                                     <p>

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { getAllBiz } from '../../store/businesses';
 import ReactPaginate from 'react-paginate';
+import MultipleMap from "../Map/multipleMap";
 
 import x from '../../icons/all-biz-page/x.svg';
 import check from '../../icons/all-biz-page/check.svg';
@@ -46,6 +47,18 @@ export default function Biz() {
         if (nums.length === 4) return nums[0] + nums[1] + ':' + nums[2] + nums[3]
     }
 
+    let locations = []
+    if (biz) {
+        let bizArr
+        if (pageNum === 0) bizArr = Object.values(biz).slice(0,10)
+        bizArr.map(b => {
+            let locationObj = {}
+            locationObj['lat'] = b.lat
+            locationObj['lng'] = b.lng
+            locations.push(locationObj)
+        })
+    }
+
 
     useEffect(() => {
         dispatch(getAllBiz())
@@ -64,6 +77,9 @@ export default function Biz() {
                 <button id='type-butt'>Offers Takeout</button>
                 <button id='type-butt'>Reservations</button>
                 <button id='type-butt'>Breakfast & Brunch</button>
+            </div>
+            <div>
+                <MultipleMap locations={locations} />
             </div>
             <ol>
                 {bizzies.map(biz => (
