@@ -4,6 +4,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 from ..forms.edit_review_form import EditReviewForm
 from ..forms.delete_review_form import DeleteReviewForm
 from ..forms.add_review_img_form import AddReviewImgForm
+from ..forms.delete_review_img_form import DeleteReviewImgForm
 
 
 reviews_routes = Blueprint("reviews", __name__)
@@ -192,4 +193,40 @@ def add_review_img(review_id):
     return {'errors': validation_errors_to_error_messages(form.errors)}, 400
 
 
-# 6. DELETE A REVIEW IMG --- THIS IS IN THE IMAGES ROUTES
+# 6. DELETE A REVIEW IMG
+@reviews_routes.route("/images/<int:image_id>", methods=['DELETE'])
+@login_required
+def delete_review_img(image_id):
+    """
+    Deletes a review image
+    """
+    form = DeleteReviewImgForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    review_img_to_delete = Image.query.get(image_id)
+    if not review_img_to_delete:
+        return jsonify({
+            "message": "Review couldn't be found",
+            "status_code": 404
+        }), 404
+
+    if form.validate_on_submit():
+        user = current_user.to_dict()
+
+        # FIND OWNER OF REVIEW IMG:
+        review_id = review_img_to_delete.to_dict()['review_id']
+        review = Review.query.get(review_id)
+        review_owner_id = review.to_dict()['user_id']
+
+
+        if review_owner_id == user['id']:
+            db.session.delete(review_img_to_delete)
+
+            db.session.commit()
+
+            return { "message": "Successfully deleted", "status_code": 200 }
+
+        else:
+            return { "message": "Forbidden", "status_code": 403 }, 403
+
+    return { "message": "Review couldn't be found", "status_code": 404 }, 404

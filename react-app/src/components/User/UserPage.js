@@ -12,6 +12,7 @@ import savedBiz from '../../icons/user-page-icons/save.png';
 
 import './UserPage.css';
 import UserReviews from './UserReviews';
+import UserBiz from "./UserBiz";
 import * as reviewActions from "../../store/reviews";
 import * as bizActions from "../../store/businesses";
 
@@ -134,6 +135,9 @@ const UserPage = () => {
                     )}
                     {url === '/reviews/current' && (
                         <UserReviews user={user} userReviews={userReviews} />
+                    )}
+                    {url === '/biz/current' && (
+                        <UserBiz user={user} userBizzes={userBizzes} />
                     )}
                 </div>
                 <div id='right-col'>
