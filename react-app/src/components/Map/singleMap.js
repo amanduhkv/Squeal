@@ -11,6 +11,8 @@ const env = require('dotenv')
 const SingleMap = ({ location }) => {
     
     let locationStr = `${location.lat}, ${location.lng}`
+    
+    console.log('ENV', process.env.REACT_APP_API_KEY)
 
     return (
         <div>
