@@ -20,4 +20,3 @@ sudo -u postgres psql -c "CREATE DATABASE python_project WITH OWNER vscode"
 # auto configure flask app to connect to internal postgres.  this will need to
 # be updated to connect to your sqlite3 database file instead of postgres
 ENV DATABASE_URL=postgresql://vscode:password@localhost/python_project
-ENV REACT_APP_API_KEY=AIzaSyCLdszu6GiovZNBOUIM4WxYqcVB9EP9Zxo
