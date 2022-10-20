@@ -24,7 +24,7 @@ const addBiz = (business) => ({
 });
 
 export const createBusiness = (business) => async dispatch => {
-    const response = await csrfFetch('/api/biz', {
+    const response = await csrfFetch('/api/biz/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
