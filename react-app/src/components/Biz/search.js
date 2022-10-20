@@ -18,12 +18,6 @@ export default function Search({ data }) {
 
   const dispatch = useDispatch();
 
-  const url = useLocation().pathname;
-  console.log('URL', url)
-  const spliturl = url.split('=')
-  const queryFromURL = spliturl[1];
-  console.log('this is the url query param', queryFromURL)
-
   const [activePrice, setActivePrice] = useState(false);
   const [activeOpen, setActiveOpen] = useState(false);
   const [activeDel, setActiveDel] = useState(false);
