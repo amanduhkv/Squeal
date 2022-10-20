@@ -28,6 +28,7 @@ const EditReview = () => {
     }, [dispatch, bizId, reviewId]);
 
     if (!user) {
+        alert("Please log in or create an account to edit a review.");
         history.push(`/biz/${bizId}`);
     }
 
@@ -47,7 +48,7 @@ const EditReview = () => {
     }
 
   return (
-    <div className='reviewform-page-container'>
+    <div className='editreview-page-container'>
         <div className='editreview-container'>
           <div className='new-review-inner'>
             <h1 className='new-review-title'>{biz.name}</h1>

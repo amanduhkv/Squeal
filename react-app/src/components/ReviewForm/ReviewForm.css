@@ -2,6 +2,10 @@
     margin-top: 95px;
 }
 
+.editreview-page-container {
+    margin-top: 145px;
+}
+
 .review-sidebar {
     border-left: 1px solid #ebebeb;
     height: 1000px;
@@ -116,7 +120,7 @@
 
 .new-review-inner {
     width: 625px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .new-review-title {

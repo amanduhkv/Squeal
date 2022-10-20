@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import FuzzySearch from 'fuzzy-search';
+import { useHistory } from 'react-router-dom';
 import { getAllBiz } from '../../store/businesses';
 import './ReviewForm.css';
 import searchicon from '../../icons/search.svg';
 
 const WriteAReview = () => {
+    const history = useHistory();
     const dispatch = useDispatch();
     const biz = useSelector(state => state.businesses.allBusinesses);
     const bizArr = Object.values(biz);
@@ -14,6 +16,7 @@ const WriteAReview = () => {
     useEffect(() => {
         dispatch(getAllBiz())
       }, [dispatch])
+
 
     const search = new FuzzySearch(bizArr, ['name']);
 
