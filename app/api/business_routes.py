@@ -33,7 +33,7 @@ def get_all_businesses():
     for b in biz:
         query = db.session.query(func.round(
             func.avg(Review.rating) * 2)/2).filter_by(business_id=b[0]['id']).first()
-        avg_rating = list(query)[0]
+        avg_rating = float(list(query)[0])
         b[0]['avg_rating'] = avg_rating
 
         imgs = Image.query.filter_by(business_id=b[0]['id'])
