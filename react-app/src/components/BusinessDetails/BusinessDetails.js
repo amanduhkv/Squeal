@@ -432,7 +432,7 @@ const BusinessDetails = () => {
                             </div>
                         </div>
                         <div className='single-business-see-more-photos' onClick={() => setShowPhotoModal(true)}>
-                            See {numImages} photos
+                            See {numImages + allReviewImages.length} photos
                         </div>
                     </div>
                     {imageHeader}
