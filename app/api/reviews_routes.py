@@ -43,6 +43,13 @@ def user_reviews():
     user = current_user.to_dict()
     reviews_query = Review.query.filter(Review.user_id == user['id']).all()
     user_reviews = [review.to_dict() for review in reviews_query]
+    users_businesses = [b.to_dict() for b in Business.query.filter_by(owner_id=user['id'])]
+    num_biz_img = 0
+    num_review_img = 0
+    if len(users_businesses) > 0:
+        for business in users_businesses:
+            business_images = [img.to_dict() for img in Image.query.filter_by(business_id=business['id'])]
+            num_biz_img += len(business_images)
 
     for user_review in user_reviews:
         review_biz = Business.query.filter(user_review['business_id'] == Business.id).first()
@@ -50,6 +57,10 @@ def user_reviews():
         img = Image.query.filter(Image.business_id == user_review['business_id']).first()
         user_review['Business']['PreviewImage'] = img.to_dict() if img else None
         user_review['Review_Images'] = [img.to_dict() for img in Image.query.filter(user_review['id'] == Image.review_id).all()]
+        
+        num_review_img += len([img.to_dict() for img in Image.query.filter(user_review['id'] == Image.review_id).all()])
+
+    user_reviews.append({'Num Images': num_biz_img + num_review_img})
 
     return jsonify({ "Reviews": user_reviews })
 

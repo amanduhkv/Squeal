@@ -1,6 +1,6 @@
 .single-business-details-container {
     position: relative;
-    margin-bottom: 400px;
+    margin-bottom: 700px;
 }
 
 
@@ -29,13 +29,13 @@
     object-fit: cover;
 }
 
-/* #modal {
+#modal {
     z-index: 99
 }
 
 #photo-modal {
     background-color: pink;
-} */
+}
 
 
 .single-business-header-info {
@@ -130,7 +130,7 @@
     top: 580px;
     display: grid;
     width: 80%;
-    min-width: 1224px;
+    min-width: 1124px;
     margin: auto;
     gap: 60px;
     grid-template-columns: 2fr 1fr;
@@ -142,6 +142,10 @@
 }
 .single-business-see-more-photos:hover {
     cursor: pointer;
+    background-color:rgba(254, 254, 254, 0.402);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
 }
 
 .single-business-contact-details {
@@ -167,6 +171,15 @@
     width: 80%;
     margin: auto;
 }
+#single-biz-stars {
+    margin-bottom: 30px;
+}
+
+.single-business-reviewButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 .single-business-review-bar-button {
     background-color: rgba(224, 7, 7, 1);
@@ -176,11 +189,17 @@
     align-items: center;
     gap: 8px;
     color: white;
-    width: auto;
+    width: fit-content;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
     font-size: 16px;
+}
+.single-business-review-bar-button:hover {
+background-color:rgb(255, 47, 47);
+transition-property: background-color;
+transition-duration: 0.5s;
+transition-timing-function: ease-in;
 }
 
 .single-business-location-hours {
@@ -323,7 +342,7 @@
     margin-top: 40px;
 }
 
-/* .single-business-modal-title {
+.single-business-modal-title {
     font-weight: 700;
     font-size: 28px;
     color: rgba(45, 46, 47, 1);
@@ -341,4 +360,4 @@
 }
 .photo-modal-close:hover {
     cursor: pointer;
-} */
+}

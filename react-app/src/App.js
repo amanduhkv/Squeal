@@ -100,6 +100,7 @@ function App() {
 
                 <Route exact path='/biz/:bizId'>
                     <BusinessDetails />
+                    <Footer />
                 </Route>
 
                 <Route exact path='/biz'>
