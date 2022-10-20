@@ -31,6 +31,10 @@ export default function Search({ data }) {
 
   // console.log('this is the data', data)
 
+  const openMenu = () => {
+    if (showMenu) return;
+    setShowMenu(true);
+  };
 
   useEffect(() => {
     if (!showMenu) return;
