@@ -173,6 +173,16 @@ export default function UserReviews({ user, userReviews }) {
                                 <div className="user-review-created-at">{formatDate(review.created_at)}</div>
                             </div>
                             <p className="user-review-review-body">{review.review_body}</p>
+
+
+                            <div className="user-review-imgs">
+                                {review.Review_Images.length > 0 && review.Review_Images.map(img => (
+                                    <>
+                                    {console.log("IMG", img)}
+                                    <img className="user-review-img" key={img.id} src={img.url} />
+                                    </>
+                                ))}
+                            </div>
                         </div>
 
 

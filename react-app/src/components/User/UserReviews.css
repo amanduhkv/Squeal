@@ -60,14 +60,14 @@
 
 
 /* REVIEW INFO SECTION - REVIEW BODY */
+.user-review-review-info {
+    margin-bottom: 40px;
+}
+
 .user-review-created-at,
 .user-review-review-body {
     font-size: 0.85rem;
     font-weight: 300;
-}
-
-.user-review-review-body {
-    margin-bottom: 40px;
 }
 
 
@@ -102,4 +102,24 @@
     opacity: 1;
     background-color: #F1F1F1;
     /* background-color: linear-gradient(180deg, #707070, #FFF 50%); */
+}
+
+
+/* USER REVIEW IMAGES SECTION */
+.user-review-imgs {
+    width: 100%;
+    max-height: 100px;
+    overflow: auto;
+}
+
+.user-review-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+.user-review-img:last-child {
+    margin-right: 0px;
 }
