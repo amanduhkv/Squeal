@@ -28,8 +28,9 @@ export default function Search({ data }) {
 
   const [pageNum, setPageNum] = useState(0);
   const [query, setQuery] = useState('');
-  console.log('this is the data', data)
-  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.alias', 'name']);
+
+  // console.log('this is the data', data)
+
 
   useEffect(() => {
     if (!showMenu) return;
@@ -50,7 +51,7 @@ export default function Search({ data }) {
 
 
   /* ------------SEARCH FXNS/LOGIC------------ */
-  const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.type', 'name'])
+  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.alias', 'name']);
 
   const res = searchFunc.search(query)
   console.log('using search', res)
