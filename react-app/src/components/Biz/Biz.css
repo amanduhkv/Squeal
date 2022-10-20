@@ -253,7 +253,9 @@
   display: flex;
   list-style: none;
   border-bottom: 1px solid #ebebeb;
-  max-width: 730px;
+  width: 50vw;
+  max-width: 888px;
+  min-width: 728px;
   margin-left: 40px;
 }
 
@@ -286,4 +288,10 @@ tr:nth-child(n + 10) {
 .search-biz {
   /* text-decoration: none; */
   color:rgb(45, 46, 47);
+}
+
+
+
+#search-form {
+  display: none;
 }

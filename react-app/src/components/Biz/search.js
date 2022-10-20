@@ -1,12 +1,23 @@
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import ReactPaginate from 'react-paginate';
+import FuzzySearch from 'fuzzy-search';
 
 import x from '../../icons/all-biz-page/x.svg';
 import check from '../../icons/all-biz-page/check.svg';
 import txtbub from '../../icons/all-biz-page/text-bubble.svg';
 
-
+import './Biz.css';
 
 export default function Search({ data }) {
+  const [pageNum, setPageNum] = useState(0);
+
+  const [query, setQuery] = useState('');
+
+  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.type', 'name'])
+
+  const res = searchFunc.search(query)
 
   let current_time;
   const settingTime = () => {
@@ -29,24 +40,36 @@ export default function Search({ data }) {
     if (nums.length === 4) return nums[0] + nums[1] + ':' + nums[2] + nums[3]
   }
 
+  const bizPerPage = 10;
+  const visitedPages = pageNum * bizPerPage;
+  const pageCount = Math.ceil(res.length / bizPerPage);
+
+  const pageChange = ({ selected }) => {
+    setPageNum(selected);
+  }
+
+
+  const bizzies = res.slice(visitedPages, visitedPages + bizPerPage)
+
+  
   return (
-    <table>
-      <tbody>
-        {data.map(biz => (
-          <tr>
-            <NavLink className='search-biz' to={`/biz/${biz.id}`}>
+    <div>
+      <ol start={(10*pageNum) + 1}>
+        {bizzies.map(biz => (
+          <div>
+            {/* <NavLink className='search-biz' to={`/biz/${biz.id}`}>
               {biz.name}
-            </NavLink>
+            </NavLink> */}
             <div className="biz-box">
               <div className="biz-img-box" >
                 <img id='biz-img' src={biz.Business_Images[0].url} alt='biz-img' />
               </div>
               <div className="biz-info-box">
-                <div key={biz.id} className="biz-title">
+                <li key={biz.id} className="biz-title">
                   <NavLink id='biz-title-1' to={`/biz/${biz.id}`}>
                     {biz.name}
                   </NavLink>
-                </div>
+                </li>
                 <div id='biz-rev-info'>
                   <div id='rev-stars'>
                     <div className='review-card-stars'>
@@ -213,10 +236,25 @@ export default function Search({ data }) {
                 </div>
               </div>
             </div>
-          </tr>
+          </div>
         ))}
-      </tbody>
+      </ol>
+      <div>
+        <ReactPaginate
+          // breakLabel='...'
+          previousLabel="<"
+          nextLabel='>'
+          pageRangeDisplayed='5'
+          pageCount={pageCount}
+          onPageChange={pageChange}
+          containerClassName='pagination-container'
+          activeClassName="pagination-active"
+          pageClassName="pag-num"
+          pageLinkClassName='pag-txt'
+          disabledLinkClassName='pag-hide'
+        />
+      </div>
 
-    </table>
+    </div>
   )
 }
