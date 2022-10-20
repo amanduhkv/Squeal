@@ -11,6 +11,9 @@
     width: 100%;
     max-width: 1224px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #footer-lists-wrapper {
@@ -33,6 +36,9 @@
 
 .footer-column:first-child {
     margin-left: -16px;
+}
+.footer-column:last-child {
+    width: fit-content;
 }
 
 .footer-column-title-wrapper {
