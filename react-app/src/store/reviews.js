@@ -160,14 +160,14 @@ export const deleteReview = (reviewId) => async dispatch => {
 
     if (response.ok) {
         const successMessage = await response.json();
-        console.log("THIS IS THUNK SUCCESS MSG:", successMessage, reviewId);
+        // console.log("THIS IS THUNK SUCCESS MSG:", successMessage, reviewId);
         dispatch(removeReview(reviewId));
         return successMessage;
     }
 }
 
 export const deleteReviewImg = (reviewId, reviewImgId) => async dispatch => {
-    const response = await csrfFetch(`/api/review-images/${reviewImgId}`, {
+    const response = await fetch(`/api/images/${reviewImgId}`, {
         method: 'DELETE'
     });
 
@@ -242,9 +242,9 @@ const reviewsReducer = (state = initialState, action) => {
             return newState;
         case REMOVE_REVIEW_IMG:
             newState = { ...state, user: { ...state.user }, business: { ...state.business } };
-            newState.user[action.payload.reviewId].ReviewImages = [...state.user[action.payload.reviewId].ReviewImages]
+            // newState.user[action.payload.reviewId].ReviewImages = [...state.user[action.payload.reviewId].ReviewImages]
 
-            const userReviewImages = newState.user[action.payload.reviewId].ReviewImages;
+            const userReviewImages = newState.user[action.payload.reviewId].Review_Images;
             for (let i = 0; i < userReviewImages.length; i++) {
                 const img = userReviewImages[i];
                 if (img.id === action.payload.reviewImgId) userReviewImages.splice(i, 1);

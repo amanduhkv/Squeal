@@ -2,6 +2,7 @@
 .single-user-review-card {
     border-bottom: 1px solid #DDD;
     padding: 18px 0px 17px 0px;
+    max-width: 525px;
 }
 
 .single-user-review-card:first-child {
@@ -108,18 +109,39 @@
 /* USER REVIEW IMAGES SECTION */
 .user-review-imgs {
     width: 100%;
-    max-height: 100px;
+    max-height: 120px;
     overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-review-img-container {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 4px;
 }
 
 .user-review-img {
     width: 100px;
     height: 100px;
     border-radius: 4px;
-    margin-right: 10px;
-    margin-bottom: 4px;
 }
 
 .user-review-img:last-child {
     margin-right: 0px;
+}
+
+.user-review-svg-x {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.user-review-svg-x:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.user-review-img-container:hover {
+    opacity: 0.6;
 }

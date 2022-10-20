@@ -4,6 +4,7 @@ import './UserReviews.css'
 import picture from '../../icons/user-page-icons/picture.svg';
 import pencil from '../../icons/user-page-icons/pencil.svg';
 import trash from '../../icons/user-page-icons/trash.svg';
+import x from '../../icons/x.svg';
 import * as reviewActions from "../../store/reviews";
 
 
@@ -23,8 +24,18 @@ export default function UserReviews({ user, userReviews }) {
 
     const deleteReviewHandler = (reviewId) => {
         try {
-            console.log("REVIEW ID IS:", reviewId)
             dispatch(reviewActions.deleteReview(reviewId));
+        }
+
+        catch (res) {
+            const data = res.json();
+            if (data) console.log(data);
+        }
+    }
+
+    const deleteImgHandler = (reviewId, reviewImgId) => {
+        try {
+            dispatch(reviewActions.deleteReviewImg(reviewId, reviewImgId));
         }
 
         catch (res) {
@@ -177,10 +188,10 @@ export default function UserReviews({ user, userReviews }) {
 
                             <div className="user-review-imgs">
                                 {review.Review_Images.length > 0 && review.Review_Images.map(img => (
-                                    <>
-                                    {console.log("IMG", img)}
-                                    <img className="user-review-img" key={img.id} src={img.url} />
-                                    </>
+                                    <div className="user-review-img-container" onClick={() => deleteImgHandler(review.id, img.id)}>
+                                        <img className="user-review-svg-x" src={x} width='100px' />
+                                        <img className="user-review-img" key={img.id} src={img.url} />
+                                    </div>
                                 ))}
                             </div>
                         </div>
