@@ -51,7 +51,7 @@ export default function CreateReviewImgForm() {
         try {
             const createdImg = await dispatch(reviewActions.createReviewImg(reviewId, newImg));
             if (createdImg) setValidationErrors([]);
-            history.push(`/review/${reviewId}`);
+            history.push(`/reviews/current`);
         }
         catch (res) {
             console.log("==>ANY ERRORS FROM CREATE REVIEW IMG:", res)

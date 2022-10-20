@@ -7,12 +7,16 @@ import {
 } from 'react-static-google-map';
 
 // let locations = []
-// biz.map(biz => {
-//     let locationObj = {}
-//     locationObj['lat'] = biz.lat
-//     locationObj['lng'] = biz.lng
-//     locations.push(locationObj)
-// })
+// if (biz) {
+//     let bizArr
+//     if (pageNum === 0) bizArr = Object.values(biz).slice(0, 10)
+//     bizArr.map(b => {
+//         let locationObj = {}
+//         locationObj['lat'] = b.lat
+//         locationObj['lng'] = b.lng
+//         locations.push(locationObj)
+//     })
+// }
 
 const env = require('dotenv')
 
@@ -37,5 +41,4 @@ const MultipleMap = ({ locations }) => {
 
     )
 }
-
 export default MultipleMap

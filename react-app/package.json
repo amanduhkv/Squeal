@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "dotenv": "^16.0.3",
     "es-abstract": "^1.20.4",
+    "fuzzy-search": "^3.2.1",
     "google-map-react": "^2.2.0",
     "http-proxy-middleware": "^1.0.5",
     "js-cookie": "^3.0.1",

@@ -101,6 +101,12 @@
     justify-content: center;
 }
 
+.editreview--container {
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+}
+
 .new-review-inner {
     width: 625px;
 }
