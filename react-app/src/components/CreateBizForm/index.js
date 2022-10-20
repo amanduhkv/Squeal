@@ -213,7 +213,7 @@ export default function CreateBizForm() {
                     </div>
 
                     {/* ----- NAME SECTION ----- */}
-                    <div className='container container--form-fields--section container--form-fields--phone-section'>
+                    <div className='container--form-fields--section container--form-fields--phone-section'>
                         <label className='label--create-biz' htmlFor="form-field--phone">Phone Number:</label>
                         <input
                             type="tel"
