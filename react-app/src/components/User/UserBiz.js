@@ -1,30 +1,20 @@
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import './UserReviews.css'
+import './UserBiz.css'
 import picture from '../../icons/user-page-icons/picture.svg';
 import pencil from '../../icons/user-page-icons/pencil.svg';
 import trash from '../../icons/user-page-icons/trash.svg';
 import x from '../../icons/x.svg';
-import * as reviewActions from "../../store/reviews";
+import * as bizActions from "../../store/businesses";
 
 
 
-export default function UserReviews({ user, userReviews }) {
+export default function UserBiz({ user, userBizzes }) {
     const dispatch = useDispatch();
 
-
-    const formatDate = (date) => {
-        date = new Date(date)
-
-        const mm = date.getMonth() + 1;
-        const dd = date.getDate();
-        const yyyy = date.getFullYear();
-        return `${mm}/${dd}/${yyyy}`;
-    }
-
-    const deleteReviewHandler = (reviewId) => {
+    const deleteBizHandler = (bizId) => {
         try {
-            dispatch(reviewActions.deleteReview(reviewId));
+            dispatch(bizActions.removeBiz(bizId));
         }
 
         catch (res) {
@@ -33,9 +23,9 @@ export default function UserReviews({ user, userReviews }) {
         }
     }
 
-    const deleteImgHandler = (reviewId, reviewImgId) => {
+    const deleteImgHandler = (bizId, imgId) => {
         try {
-            dispatch(reviewActions.deleteReviewImg(reviewId, reviewImgId));
+            dispatch(bizActions.deleteImg(bizId, imgId));
         }
 
         catch (res) {
@@ -45,47 +35,47 @@ export default function UserReviews({ user, userReviews }) {
     }
 
 
-    if (!userReviews || !Object.values(userReviews).length) {
+    if (!userBizzes || !Object.values(userBizzes).length) {
         return (
             <div>
-                <h2 id='mid-title'>Reviews</h2>
-                <div>You haven't made any reviews yet.</div>
+                <h2 id='mid-title'>Businesses</h2>
+                <div>You haven't listed any businesses yet.</div>
             </div>
         )
     }
 
     else return (
         <div>
-            <h2 id='mid-title'>Reviews</h2>
+            <h2 id='mid-title'>Businesses</h2>
             <div className="all-user-reviews">
-                {userReviews && Object.values(userReviews).map(review => (
-                    <div className="single-user-review-card" key={review.id}>
-                        <div className="user-review-biz-info">
-                            <NavLink exact to={`/biz/${review.Business.id}`}>
-                                <img className="user-review-biz-img" src={review.Business.PreviewImage.url} alt={review.Business.name} />
+                {userBizzes && Object.values(userBizzes).map(biz => (
+                    <div className="single-user-biz-card" key={biz.id}>
+                        <div className="user-biz-info">
+                            <NavLink exact to={`/biz/${biz.id}`}>
+                                <img className="user-biz-prev-img" src={biz.Business_Images[0].url} alt={biz.name} />
                             </NavLink>
-                            <div className="user-review-biz-text">
-                                <NavLink className="user-review-biz-link" exact to={`/biz/${review.Business.id}`}>
-                                    <div className="user-review-biz-name">{review.Business.name}</div>
+                            <div className="user-biz-text">
+                                <NavLink className="user-biz-link" exact to={`/biz/${biz.id}`}>
+                                    <div className="user-biz-name">{biz.name}</div>
                                 </NavLink>
-                                <div className="user-review-biz-price-range">{review.Business.price_range}</div>
-                                <div className="user-review-biz-address">{review.Business.address}</div>
-                                <div className="user-review-biz-city-state-zip">
-                                    <span className="user-review-biz-city">{review.Business.city},</span>
-                                    <span className="user-review-biz-state">{review.Business.state}</span>
-                                    <span className="user-review-biz-zip">{review.Business.zipcode}</span>
+                                <div className="user-biz-price-range">{biz.price_range}</div>
+                                <div className="user-biz-address">{biz.address}</div>
+                                <div className="user-biz-city-state-zip">
+                                    <span className="user-biz-city">{biz.city},</span>
+                                    <span className="user-biz-state">{biz.state}</span>
+                                    <span className="user-biz-zip">{biz.zipcode}</span>
                                 </div>
                             </div>
                         </div>
-                        <div className="user-review-review-info">
-                            <div className="user-review-rating-date">
-                                <div className="user-review-rating">
+                        <div className="user-biz-rating-imgs">
+                            <div className="user-biz-rating-rev-count">
+                                <div className="user-biz-rating">
                                     {/* FIRST STAR */}
                                     <svg className='first-star' width="20" height="20" viewBox="0 0 20 20">
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : review.rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : review.rating >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(255, 204, 75, 1)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(255, 204, 75, 1)'}
                                             d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z">
                                         </path>
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : review.rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : review.rating >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(255, 204, 75, 1)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(255, 204, 75, 1)'}
                                             d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                         </path>
                                         <path fill="white" fillRule="evenodd" clipRule="evenodd"
@@ -102,10 +92,10 @@ export default function UserReviews({ user, userReviews }) {
                                     </svg>
                                     {/* SECOND STAR */}
                                     <svg className='middle-star' width="20" height="20" viewBox="0 0 20 20">
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : review.rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : review.rating >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(187, 186, 192, 0.5)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.3 ? 'rgba(255, 204, 75, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                             d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z">
                                         </path>
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : review.rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : 'rgba(187, 186, 192, 0.5)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : biz.avg_rating >= 1.8 ? 'rgba(255, 173, 72, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                             d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                         </path>
                                         <path fill="white" fillRule="evenodd" clipRule="evenodd"
@@ -122,10 +112,10 @@ export default function UserReviews({ user, userReviews }) {
                                     </svg>
                                     {/* THIRD STAR */}
                                     <svg className='middle-star' width="20" height="20" viewBox="0 0 20 20">
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : 'rgba(187, 186, 192, 0.5)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.3 ? 'rgba(255, 173, 72, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                             d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z">
                                         </path>
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : review.rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : 'rgba(187, 186, 192, 0.5)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : biz.avg_rating >= 2.8 ? 'rgba(255, 135, 66, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                             d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                         </path>
                                         <path fill="white" fillRule="evenodd" clipRule="evenodd"
@@ -142,10 +132,10 @@ export default function UserReviews({ user, userReviews }) {
                                     </svg>
                                     {/* FOURTH STAR */}
                                     <svg className='middle-star' width="20" height="20" viewBox="0 0 20 20">
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : 'rgba(187, 186, 192, 0.5)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.3 ? 'rgba(255, 135, 66, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                             d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z">
                                         </path>
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : review.rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : 'rgba(187, 186, 192, 0.5)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : biz.avg_rating >= 3.8 ? 'rgba(255, 100, 61, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                             d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                         </path>
                                         <path fill="white" fillRule="evenodd" clipRule="evenodd"
@@ -162,10 +152,10 @@ export default function UserReviews({ user, userReviews }) {
                                     </svg>
                                     {/* FIFTH STAR */}
                                     <svg className='last-star' width="20" height="20" viewBox="0 0 20 20">
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : review.rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : 'rgba(187, 186, 192, 0.5)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : biz.avg_rating >= 4.3 ? 'rgba(255, 100, 61, 1)' : 'rgba(187, 186, 192, 0.5)'}
                                             d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z">
                                         </path>
-                                        <path fill={review.rating >= 4.8 ? "rgba(251,67,60,1)" : 'rgba(187, 186, 192, 0.5)'}
+                                        <path fill={biz.avg_rating >= 4.8 ? "rgba(251,67,60,1)" : 'rgba(187, 186, 192, 0.5)'}
                                             d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z">
                                         </path>
                                         <path fill="white" fillRule="evenodd" clipRule="evenodd"
@@ -181,31 +171,30 @@ export default function UserReviews({ user, userReviews }) {
                                         </path>
                                     </svg>
                                 </div>
-                                <div className="user-review-created-at">{formatDate(review.created_at)}</div>
+                                <div className="user-biz-review-count">({biz.Review_Count})</div>
                             </div>
-                            <p className="user-review-review-body">{review.review_body}</p>
 
 
-                            <div className="user-review-imgs">
-                                {review.Review_Images.length > 0 && review.Review_Images.map(img => (
-                                    <div className="user-review-img-container" onClick={() => deleteImgHandler(review.id, img.id)}>
-                                        <img className="user-review-svg-x" src={x} width='100px' alt="x_svg" />
-                                        <img className="user-review-img" key={img.id} src={img.url} alt={img.url} />
+                            <div className="user-biz-imgs">
+                                {biz.Business_Images.length > 0 && biz.Business_Images.map(img => (
+                                    <div className="user-biz-img-container" key={img.id} onClick={() => deleteImgHandler(biz.id, img.id)}>
+                                        <img className="user-biz-svg-x" src={x} width='100px' alt="x_svg" />
+                                        <img className="user-biz-img" key={img.id} src={img.url} alt={img.url} />
                                     </div>
                                 ))}
                             </div>
                         </div>
 
 
-                        <div className="user-review-edit-delete-icons">
-                            <NavLink className="user-review-add-img-button" to={`/review/${review.id}/images/new`}>
-                                <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" />
+                        <div className="user-biz-edit-delete-icons">
+                            <NavLink className="user-biz-add-img-button" to={`/biz/${biz.id}/images/new`}>
+                                <img className="user-biz-svg" src={picture} width='16px' alt="pic_svg" />
                             </NavLink>
-                            <NavLink className="user-review-edit-button" exact to={`/biz/${review.business_id}/review/${review.id}`}>
-                                <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" />
+                            <NavLink className="user-biz-edit-button" to={`/biz/${biz.id}/update`}>
+                                <img className="user-biz-svg" src={pencil} width='16px' alt="pencil_svg" />
                             </NavLink>
-                            <div className="user-review-delete-button" onClick={() => deleteReviewHandler(review.id)}>
-                                <img className="user-review-svg" src={trash} width='16px' alt="trash_svg" />
+                            <div className="user-biz-delete-button" onClick={() => deleteBizHandler(biz.id)}>
+                                <img className="user-biz-svg" src={trash} width='16px' alt="trash_svg" />
                             </div>
                         </div>
                     </div>

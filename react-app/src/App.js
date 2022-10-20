@@ -23,6 +23,7 @@ import CreateBizImgForm from './components/CreateBizImgForm';
 import ReviewForm from './components/ReviewForm';
 import CreateReviewImgForm from './components/CreateReviewImgForm';
 import Search from './components/Biz/search';
+import EditReview from './components/ReviewForm/EditReview'
 
 
 function App() {
@@ -99,6 +100,10 @@ function App() {
                     <UpdateBizForm />
                 </Route>
 
+                <Route exact path='/biz/:bizId/review/:reviewId'>
+                    <EditReview />
+                </Route>
+
                 <Route exact path='/biz/:bizId'>
                     <BusinessDetails />
                     <Footer />
@@ -119,12 +124,12 @@ function App() {
                     <Footer />
                 </Route>
 
-                <Route path='/newreview/biz/:bizId'>
-                    <ReviewForm />
-                </Route>
-
                 <Route exact path='/review/:reviewId/images/new'>
                     <CreateReviewImgForm />
+                </Route>
+
+                <Route exact path='/newreview/biz/:bizId'>
+                    <ReviewForm />
                 </Route>
             </Switch>
 

@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 import {
@@ -9,9 +8,11 @@ import {
 
 const env = require('dotenv')
 
-const Map = ({ location }) => {
+const SingleMap = ({ location }) => {
     
     let locationStr = `${location.lat}, ${location.lng}`
+    
+    console.log('ENV', process.env.REACT_APP_API_KEY)
 
     return (
         <div>
@@ -23,7 +24,7 @@ const Map = ({ location }) => {
     )
 }
 
-export default Map
+export default SingleMap
 // <div className="google-map" style={{ height: '200px', width: '350px' }}>
 //      <StaticGoogleMap
 //         bootstrapURLKeys={{ key: 'AIzaSyDlKXZDRxr61aYIh4DphKb3a6m9Si4ryt4' }}
@@ -35,4 +36,4 @@ export default Map
 //             lng={location.lng}
 //         />
 //             </StaticGoogleMap> 
-//         </div>
+//         </div>change

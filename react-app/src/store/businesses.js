@@ -117,7 +117,7 @@ export const getUsersBiz = () => async dispatch => {
 
     if (response.ok) {
         const list = await response.json();
-        dispatch(load(list.Businesses));
+        dispatch(load(list));
     }
 };
 
@@ -178,7 +178,7 @@ const deleteBiz = bizId => ({
 });
 
 export const removeBiz = id => async dispatch => {
-    const response = await csrfFetch(`/api/biz/${id}`, {
+    const response = await fetch(`/api/biz/${id}`, {
         method: 'DELETE'
     });
 
@@ -194,20 +194,23 @@ export const removeBiz = id => async dispatch => {
 
 // Delete a business' image
 
-const removeImg = imageId => ({
+const removeImg = (bizId, imageId) => ({
     type: REMOVE_IMG,
-    imageId
+    payload: {
+        bizId,
+        imageId
+    }
 });
 
-export const deleteImg = imageId => async dispatch => {
-    const response = await csrfFetch(`/api/biz-images/${imageId}`, {
+export const deleteImg = (bizId, imageId) => async dispatch => {
+    const response = await fetch(`/api/biz/images/${imageId}`, {
         method: 'DELETE'
     });
 
     if (response.ok) {
         const success = await response.json();
-        // console.log("THIS IS THUNK SUCCESS MSG:", successMessage, imageId);
-        dispatch(removeImg(imageId));
+        // console.log("THIS IS THUNK SUCCESS MSG:", success, imageId);
+        dispatch(removeImg(bizId, imageId));
         return success;
     }
 };
@@ -253,7 +256,7 @@ const businessReducer = (state = initialState, action) => {
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
             const newBusiness = { ...action.payload };
             newState.allBusinesses[action.payload.id] = newBusiness;
-            console.log("NEWSTATE AFTER CREATE BIZ ACTION:", newState);
+            // console.log("NEWSTATE AFTER CREATE BIZ ACTION:", newState);
             return newState;
         case ADD_IMG:
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
@@ -275,7 +278,15 @@ const businessReducer = (state = initialState, action) => {
             return newState;
         case REMOVE_IMG:
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
-            delete newState.singleBusiness.Business_Images.find(img => img.id === action.imageId);
+
+            const userBizImages = newState.allBusinesses[action.payload.bizId].Business_Images;
+            for (let i = 0; i < userBizImages.length; i++) {
+                const img = userBizImages[i];
+                if (img.id === action.payload.imageId) userBizImages.splice(i, 1);
+            }
+
+
+            // delete newState.allBusinesses.Business_Images.find(img => img.id === action.imageId);
             newState = { ...newState };
             // console.log("NEWSTATE AFTER REMOVE_Business ACTION:", newState);
             return newState;

@@ -33,7 +33,7 @@ def get_all_businesses():
     for b in biz:
         query = db.session.query(func.round(
             func.avg(Review.rating) * 2)/2).filter_by(business_id=b[0]['id']).first()
-        avg_rating = list(query)[0]
+        avg_rating = float(list(query)[0])
         b[0]['avg_rating'] = avg_rating
 
         imgs = Image.query.filter_by(business_id=b[0]['id'])
@@ -78,7 +78,9 @@ def get_one_business(biz_id):
     business = biz.to_dict()
     query = db.session.query(func.round(
         func.avg(Review.rating) * 2)/2).filter_by(business_id=biz_id).first()
-    avg_rating = list(query)[0]
+    print(type(list(query)[0]))
+    avg_rating = float(list(query)[0])
+    print(type(avg_rating))
     business_images = Image.query.filter_by(business_id=biz_id)
     images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
               for img in business_images]
@@ -117,9 +119,11 @@ def get_current_user_business():
             business_images = Image.query.filter_by(business_id=business['id'])
             images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
                       for img in business_images]
+            biz_rev_count = len(Review.query.filter(Review.business_id == business['id']).all())
 
             business['avg_rating'] = avg_rating
             business['Business_Images'] = images
+            business['Review_Count'] = biz_rev_count
             current_businesses.append(business)
 
         return jsonify({
@@ -322,9 +326,9 @@ def edit_business(biz_id):
         login_val_error["errors"]["country"] = "Country is required."
     if not form.data['zipcode']:
         login_val_error["errors"]["zipcode"] = "Zip code is required."
-    if form.data['lat'] != 0 and not form.data['lat']:
+    if len(str(form.data['lat'])) == 0:
         login_val_error["errors"]["lat"] = "Latitude is required."
-    if form.data['lng'] and not form.data['lng']:
+    if len(str(form.data['lng'])) == 0:
         login_val_error["errors"]["lng"] = "Longitude is required."
     if form.data['lat'] < -90 or form.data['lat'] > 90 :
         login_val_error["errors"]["lat"] = "Latitude must be between -90 and 90."
@@ -456,6 +460,35 @@ def add_biz_img(biz_id):
 
         else:
             return { "message": "Forbidden", "status_code": 403 }, 403
+
+
+# DELETE A BIZ IMG
+@business_routes.route("/images/<int:img_id>", methods=['DELETE'])
+@login_required
+def delete_business_img(img_id):
+    """
+    DELETES a business image
+    """
+    user = current_user.to_dict()
+    user_id = user['id']
+
+    biz_img_to_delete = Image.query.get(img_id)
+    if not biz_img_to_delete:
+        return jsonify({
+            "message": "Image couldn't be found",
+            "status_code": 404
+        })
+
+    # biz_of_img = Business.query.get(biz_img_to_delete.to_dict()['business_id']).to_dict()
+    biz_img_biz_id = biz_img_to_delete.to_dict()['business_id']
+    biz_of_img = Business.query.get(biz_img_biz_id).to_dict()
+
+    if user_id == biz_of_img['owner_id']:
+        db.session.delete(biz_img_to_delete)
+        db.session.commit()
+        return { "message": "Successfully deleted", "status_code": 200 }
+    else:
+        return { "message": "Forbidden", "status_code": 403 }, 403
 
 
 # -------------------- REVIEWS STUFF -------------------- #

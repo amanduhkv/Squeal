@@ -24,17 +24,12 @@ export default function Search({ data }) {
   const [activeDel, setActiveDel] = useState(false);
   const [activeTakeout, setActiveTakeout] = useState(false);
   const [activeRes, setActiveRes] = useState(false);
-
+  const [showMenu, setShowMenu] = useState(false);
 
   const [pageNum, setPageNum] = useState(0);
   const [query, setQuery] = useState('');
-
-  const [showMenu, setShowMenu] = useState(false);
-
-  const openMenu = () => {
-    if (showMenu) return;
-    setShowMenu(true);
-  };
+  console.log('this is the data', data)
+  const searchFunc = new FuzzySearch(data, ['transactions.transaction', 'types.alias', 'name']);
 
   useEffect(() => {
     if (!showMenu) return;
@@ -418,8 +413,8 @@ export default function Search({ data }) {
       <div>
         <ReactPaginate
           // breakLabel='...'
-          previousLabel="<"
-          nextLabel='>'
+          previousLabel={bizzies?.length ? "<" : 'Loading...'}
+          nextLabel={bizzies?.length ? '>' : ''}
           pageRangeDisplayed='5'
           pageCount={pageCount}
           onPageChange={pageChange}

@@ -1,8 +1,8 @@
 """Create all tables
 
-Revision ID: 07cdf8a1c02e
+Revision ID: 8d8da3b07f7c
 Revises: 
-Create Date: 2022-10-19 19:58:02.774489
+Create Date: 2022-10-20 10:06:25.268971
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '07cdf8a1c02e'
+revision = '8d8da3b07f7c'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -36,7 +36,7 @@ def upgrade():
     sa.Column('hashed_password', sa.String(length=225), nullable=False),
     sa.Column('first_name', sa.String(length=100), nullable=False),
     sa.Column('last_name', sa.String(length=100), nullable=False),
-    sa.Column('profile_pic', sa.String(length=100), nullable=True),
+    sa.Column('profile_pic', sa.String(length=225), nullable=True),
     sa.Column('zipcode', sa.String(length=100), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('email'),
@@ -46,9 +46,9 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(length=225), nullable=False),
     sa.Column('owner_id', sa.Integer(), nullable=True),
-    sa.Column('city', sa.String(length=50), nullable=False),
-    sa.Column('state', sa.String(length=50), nullable=False),
-    sa.Column('country', sa.String(length=50), nullable=False),
+    sa.Column('city', sa.String(length=100), nullable=False),
+    sa.Column('state', sa.String(length=100), nullable=False),
+    sa.Column('country', sa.String(length=100), nullable=False),
     sa.Column('address', sa.String(length=100), nullable=False),
     sa.Column('zipcode', sa.String(length=10), nullable=False),
     sa.Column('lat', sa.Float(), nullable=False),
@@ -57,7 +57,7 @@ def upgrade():
     sa.Column('start_time', sa.String(), nullable=False),
     sa.Column('end_time', sa.String(), nullable=False),
     sa.Column('preview_img', sa.String(), nullable=True),
-    sa.Column('phone_number', sa.String(length=10), nullable=True),
+    sa.Column('phone_number', sa.String(length=25), nullable=True),
     sa.ForeignKeyConstraint(['owner_id'], ['users.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
@@ -81,7 +81,7 @@ def upgrade():
     sa.Column('user_id', sa.Integer(), nullable=True),
     sa.Column('review_body', sa.String(length=5000), nullable=False),
     sa.Column('rating', sa.Integer(), nullable=False),
-    sa.Column('created_at', sa.String(), nullable=True),
+    sa.Column('created_at', sa.String(length=225), nullable=True),
     sa.Column('updated_at', sa.String(), nullable=True),
     sa.ForeignKeyConstraint(['business_id'], ['businesses.id'], ),
     sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),

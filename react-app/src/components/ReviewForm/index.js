@@ -16,14 +16,6 @@ const ReviewForm = () => {
     const [ hover3, isHover3 ] = useHover();
     const [ hover4, isHover4 ] = useHover();
     const [ hover5, isHover5 ] = useHover();
-    // const [errors, setErrors] = useState([]);
-    // const [first_name, setFirstname] = useState('');
-    // const [last_name, setLastname] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('');
-    // const [zipcode, setZipCode] = useState('');
-    // const [showLogModal, setShowLogModal] = useState(false);
-    // const [showSignModal, setShowSignModal] = useState(false);
     const rate = 4.5;
     const rate2 = 5;
     const rate3 = 5;
@@ -33,22 +25,20 @@ const ReviewForm = () => {
     const [ read1, setRead1 ] = useState(false);
     const [ read2, setRead2 ] = useState(false);
     const [ read3, setRead3 ] = useState(false);
-    // const [validationErrors, setValidationErrors] = useState([]);
     const dispatch = useDispatch();
     const { bizId } = useParams();
-    // console.log('this is the bizId', bizId);
     const biz = useSelector(state => state.businesses.singleBusiness);
     const user = useSelector(state => state.session.user);
-    // const biz = businesses[bizId];
     console.log(biz);
 
     useEffect(() => {
         dispatch(getOneBiz(bizId));
     }, [dispatch, bizId]);
 
-    // if (!user) {
-    //     setShowLogModal(true);
-    // }
+    if (!user) {
+        alert("Please log in or create an account to write a review.");
+        history.replace(`/biz/${bizId}`);
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -65,227 +55,8 @@ const ReviewForm = () => {
         }
     }
 
-    // const onSignUp = async (e) => {
-    //     e.preventDefault();
-    //     if (password) {
-    //         const data = await dispatch(signUp(first_name, last_name, email, password, zipcode));
-    //         if (data) {
-    //             setErrors(data)
-    //         }
-    //     }
-    // };
-
-    // const onLogin = async (e) => {
-    //     e.preventDefault();
-    //     const data = await dispatch(login(email, password));
-    //     if (data) {
-    //         setErrors(data);
-    //     }
-    // };
-
-
-    // const updateFirstname = (e) => {
-    //     setFirstname(e.target.value);
-    // };
-
-    // const updateLastname = (e) => {
-    //     setLastname(e.target.value);
-    // };
-
-    // const updateEmail = (e) => {
-    //     setEmail(e.target.value);
-    // };
-
-    // const updatePassword = (e) => {
-    //     setPassword(e.target.value);
-    // };
-
-    // const updateZipCode = (e) => {
-    //     setZipCode(e.target.value);
-    // };
 
   return (
-    // <>
-    //         {showLogModal && (
-    //             <Modal id='border-modal' onClose={() => {
-    //                 // console.log('on close')
-    //                 setShowLogModal(false)
-    //             }}>
-    //                 <div id="two-cols">
-    //                     <div id='left-side'>
-    //                         <div id="login-text">
-    //                             <h2 id="login-title">Log in to Squeal</h2>
-    //                             <h5 id="signup-redirect">
-    //                                 <div className='text'>New to Squeal? </div>
-    //                                 <div className='button' onClick={() => {
-    //                                 setShowSignModal(true)
-    //                                 setShowLogModal(false)
-    //                             }}>
-    //                                 Sign up
-    //                             </div>
-    //                             </h5>
-    //                             <p id="terms">By logging in, you agree to Squeal's Terms of Service and Privacy Policy.</p>
-
-    //                         </div>
-    //                         <form id='login-form' onSubmit={onLogin}>
-    //                             <div>
-    //                                 {errors.map((error, ind) => (
-    //                                     <div key={ind}>{error}</div>
-    //                                 ))}
-    //                             </div>
-    //                             <button
-    //                                 id='demo-button'
-    //                                 type='submit'
-    //                                 onClick={() => {
-    //                                     setEmail('kermitfrog@user.io')
-    //                                     setPassword('password')
-    //                                 }}
-    //                             >
-    //                                 Continue with DemoUser
-    //                             </button>
-
-    //                             <div id='lines'><span className='or'>OR</span></div>
-    //                             <div>
-    //                                 <input
-    //                                     id='login-input'
-
-    //                                     name='email'
-    //                                     type='text'
-    //                                     placeholder='Email'
-    //                                     value={email}
-    //                                     onChange={updateEmail}
-    //                                 />
-    //                             </div>
-    //                             <div>
-    //                                 <input
-    //                                     id='login-input'
-    //                                     name='password'
-    //                                     type='password'
-    //                                     placeholder='Password'
-    //                                     value={password}
-    //                                     onChange={updatePassword}
-    //                                 />
-    //                             </div>
-    //                             <button id='login-button' type='submit'>Log In</button>
-    //                         </form>
-    //                         <div id='login-fineprint'>
-    //                             <p id='fineprint-text'>New to Squeal?</p>
-    //                             <div id='fineprint-link' onClick={() => {
-    //                                 setShowSignModal(true)
-    //                                 setShowLogModal(false)
-    //                             }}>
-    //                                 Sign up
-    //                             </div>
-    //                         </div>
-    //                     </div>
-    //                     <div>
-    //                         <img id='party' src={party} alt="login-party" />
-    //                     </div>
-    //                 </div>
-    //             </Modal>
-
-    //         )}
-    //         {showSignModal && (
-    //             <Modal id='border-modal' onClose={() => {
-    //                 setShowSignModal(false)
-    //             }}>
-    //                 <div id="two-cols">
-    //                     <div id='left-side'>
-    //                         <div id="login-text">
-    //                             <h2 id="login-title">Sign Up for Squeal</h2>
-    //                             <h5 id="signup-redirect">
-    //                                 Connect with great local businesses
-    //                             </h5>
-    //                             <p id="terms">By continuing, you agree to Squeal's Terms of Service and acknowledge Squeal's Privacy Policy.</p>
-    //                         </div>
-    //                         <form onSubmit={onLogin}>
-    //                             <button
-    //                                 id='demo-button'
-    //                                 type='submit'
-    //                                 onClick={() => {
-    //                                     setFirstname('Kermit')
-    //                                     setLastname('Frog')
-    //                                     setEmail('kermitfrog@user.io')
-    //                                     setPassword('password')
-    //                                     setZipCode('91521')
-    //                                 }}
-    //                             >
-    //                                 Continue with DemoUser
-    //                             </button>
-    //                             <p id='terms-signup'>Don't worry, we never post without your permission.</p>
-    //                             <div id='lines'><span className='or'>OR</span></div>
-    //                         </form>
-    //                         <form onSubmit={onSignUp}>
-    //                             <div>
-    //                                 {errors.map((error, ind) => (
-    //                                     <div key={ind}>{error}</div>
-    //                                 ))}
-    //                             </div>
-    //                             <div id='first-last-name'>
-    //                                 <input
-    //                                     id='login-input'
-    //                                     type='text'
-    //                                     name='firstname'
-    //                                     placeholder='First Name'
-    //                                     onChange={updateFirstname}
-    //                                     value={first_name}
-    //                                 ></input>
-    //                                 <input
-    //                                     id='login-input'
-    //                                     type='text'
-    //                                     name='lastname'
-    //                                     placeholder='Last Name'
-    //                                     onChange={updateLastname}
-    //                                     value={last_name}
-    //                                 ></input>
-    //                             </div>
-    //                             <div id='email'>
-    //                                 <input
-    //                                     id='login-input'
-    //                                     type='text'
-    //                                     name='email'
-    //                                     placeholder='Email'
-    //                                     onChange={updateEmail}
-    //                                     value={email}
-    //                                 ></input>
-    //                             </div>
-    //                             <div id='password'>
-    //                                 <input
-    //                                     id='login-input'
-    //                                     type='password'
-    //                                     name='password'
-    //                                     placeholder='Password'
-    //                                     onChange={updatePassword}
-    //                                     value={password}
-    //                                 ></input>
-    //                             </div>
-    //                             <div id='zip'>
-    //                                 <input
-    //                                     id='login-input'
-    //                                     type='text'
-    //                                     name='zipcode'
-    //                                     placeholder='ZIP Code'
-    //                                     onChange={updateZipCode}
-    //                                     value={zipcode}
-    //                                     required={true}
-    //                                 ></input>
-    //                             </div>
-    //                             <button id='login-button' type='submit'>Sign Up</button>
-    //                         </form>
-    //                         <div id='login-fineprint'>
-    //                             <p id='fineprint-text'>Already on Squeal?</p>
-    //                             <div id='fineprint-link' onClick={() => {
-    //                                 setShowSignModal(false)
-    //                                 setShowLogModal(true)
-    //                             }}>Log in</div>
-    //                         </div>
-    //                     </div>
-    //                     <div>
-    //                         <img id='party' src={party} alt="login-party" />
-    //                     </div>
-    //                 </div>
-    //             </Modal>
-    //         )}
     <div className='reviewform-page-container'>
         <div className='review-sidebar' style={showSidebar ? { transform: 'translateX(-100%)' } : {}}>
             <button className='sidebar-arrow' onClick={() => setShowSidebar(!showSidebar)}>

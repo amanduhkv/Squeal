@@ -167,7 +167,7 @@ export const deleteReview = (reviewId) => async dispatch => {
 }
 
 export const deleteReviewImg = (reviewId, reviewImgId) => async dispatch => {
-    const response = await fetch(`/api/images/${reviewImgId}`, {
+    const response = await fetch(`/api/reviews/images/${reviewImgId}`, {
         method: 'DELETE'
     });
 
