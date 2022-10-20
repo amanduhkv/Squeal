@@ -3,6 +3,7 @@ import { csrfFetch } from './csrf';
 /* ----------------------------- ACTION TYPES: ----------------------------- */
 
 const LOAD = 'businesses/LOAD';
+const SEARCH = 'businesses/SEARCH';
 const ADD = 'businesses/ADD';
 const DELETE = 'businesses/DELETE';
 const GET_ONE = 'businesses/GET_ONE';
@@ -90,6 +91,11 @@ export const addBizImg = (bizId, image) => async dispatch => {
 
 const load = payload => ({
     type: LOAD,
+    payload
+});
+
+export const search = payload => ({
+    type: SEARCH,
     payload
 });
 
@@ -226,6 +232,14 @@ const businessReducer = (state = initialState, action) => {
             const newAllBusinesses = {};
             action.payload.Businesses.forEach(business => newAllBusinesses[business.id] = business);
             newState.allBusinesses = newAllBusinesses;
+            // console.log("NEWSTATE AFTER LOAD_ALL ACTION:", newState);
+            return newState;
+        case SEARCH:
+            newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
+            // console.log("LOAD_ALL ACTION.PAYLOAD IS:", action.payload);
+            const newSearchBusinesses = {};
+            action.payload.forEach(business => newSearchBusinesses[business.id] = business);
+            newState.allBusinesses = newSearchBusinesses;
             // console.log("NEWSTATE AFTER LOAD_ALL ACTION:", newState);
             return newState;
         case GET_ONE:

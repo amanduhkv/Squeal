@@ -284,6 +284,6 @@ tr:nth-child(n + 10) {
 }
 
 .search-biz {
-  text-decoration: none;
+  /* text-decoration: none; */
   color:rgb(45, 46, 47);
 }
