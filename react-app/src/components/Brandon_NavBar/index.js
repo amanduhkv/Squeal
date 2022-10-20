@@ -50,7 +50,9 @@ function NavBar(){
 
     useLayoutEffect(() => {
         const updateWidth = () => {
-            setWidth(ref.current.offsetWidth);
+            if (ref?.current) {
+                setWidth(ref.current.offsetWidth);
+            }
         }
         updateWidth();
         window.addEventListener('resize', updateWidth);
