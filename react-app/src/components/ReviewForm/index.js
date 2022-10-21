@@ -1,10 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import './ReviewForm.css';
-import {useParams, Redirect, useHistory} from 'react-router-dom';
+import {useParams, useHistory} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-// import { signUp, login } from '../../store/session';
-// import { Modal } from '../../context/Modal';
-// import party from '../../icons/login.png';
 import { getOneBiz } from '../../store/businesses';
 import userpig from '../../icons/user-pig.png';
 import { createReview } from '../../store/reviews';
@@ -29,19 +26,27 @@ const ReviewForm = () => {
     const { bizId } = useParams();
     const biz = useSelector(state => state.businesses.singleBusiness);
     const user = useSelector(state => state.session.user);
-    // console.log(biz);
+
+    const revs = useSelector(state => state.reviews.business);
+    let reviews;
+    if (revs) reviews = Object.values(revs);
 
     useEffect(() => {
         dispatch(getOneBiz(bizId));
     }, [dispatch, bizId]);
 
-    if (!user) {
-        alert("Please log in or create an account to write a review.");
-        history.replace(`/biz/${bizId}`);
-    }
-
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (!user) {
+            alert("Please log in or create an account to write a review.");
+            return;
+        }
+
+        if (reviews?.filter(rev => rev.user_id === user.id).length) {
+            alert("You have already submitted a review for this restaurant.");
+            history.replace(`/biz/${bizId}`);
+        }
 
         const newReview = {
             rating: revRate,

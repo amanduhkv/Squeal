@@ -28,7 +28,12 @@ def get_all_businesses():
     """
     Gets all business
     """
-    businesses = Business.query.all()
+    location = request.args.get('location')
+    businesses = None
+    if (location):
+        businesses = Business.query.filter(Business.city == location).all()
+    else:
+        businesses = Business.query.all()
     biz = [[business.to_dict(), business] for business in businesses]
     for b in biz:
         query = db.session.query(func.round(

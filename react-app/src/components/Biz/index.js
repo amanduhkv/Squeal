@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { getAllBiz } from '../../store/businesses';
-import ReactPaginate from 'react-paginate';
 import FuzzySearch from 'fuzzy-search';
 import { search, clearData } from "../../store/businesses";
-
-import x from '../../icons/all-biz-page/x.svg';
-import check from '../../icons/all-biz-page/check.svg';
-import txtbub from '../../icons/all-biz-page/text-bubble.svg';
 import './Biz.css';
-
-import { types, types_alias } from '../../assets/types';
 import Search from "./search";
-import { BizToFront } from "../../assets/bizNames";
+
+// ---------- UNSURE IF BELOW STILL NEED: ---------- //
+// import ReactPaginate from 'react-paginate';
+// import x from '../../icons/all-biz-page/x.svg';
+// import check from '../../icons/all-biz-page/check.svg';
+// import txtbub from '../../icons/all-biz-page/text-bubble.svg';
+// import { types, types_alias } from '../../assets/types';
+// import { BizToFront } from "../../assets/bizNames";
 
 export default function Biz() {
     const biz = useSelector(state => state.businesses.allBusinesses);
@@ -30,9 +30,7 @@ export default function Biz() {
 
     const [query, setQuery] = useState('');
     const searchStuff = useLocation().search;
-    // console.log('this is searchStuff', searchStuff);
     let cat;
-
 
 
 
@@ -40,18 +38,14 @@ export default function Biz() {
     const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name'])
     if (searchStuff) {
         cat = searchStuff.split('?type=').join('');
-        // console.log('heres my cat',cat)
     }
     const res = searchFunc.search(cat ?? query)
-    // console.log('using search', res)
 
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(search(res))
         clearData()
-        // console.log('SUCCESS')
     }
-    // console.log('This the query', query)
 
     /* ------------TOGGLE FXNS/LOGIC------------ */
     const toggleIdPrice = () => {

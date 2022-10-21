@@ -1,21 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-// import LoginForm from './components/auth/LoginForm';
-// import SignUpForm from './components/auth/SignUpForm';
-// import NavBar from './components/NavBar';
-// import ProtectedRoute from './components/auth/ProtectedRoute';
-// import UsersList from './components/UsersList';
-// import User from './components/User';
 import { authenticate } from './store/session';
-import Brandon_NavBar from './components/Brandon_NavBar';
-import HomeBanner from './components/Brandon_NavBar/homeBanner';
+import Navbar from './components/Navbar';
+import HomeBanner from './components/Navbar/homeBanner';
 import Footer from './components/Footer';
-// import CurrentUserBiz from './components/Biz/UserBiz';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import UserPage from './components/User/UserPage';
 import HomePage from './components/HomePage';
-import Biz from './components/Biz';
 import BusinessDetails from './components/BusinessDetails/BusinessDetails';
 import CreateBizForm from './components/CreateBizForm';
 import UpdateBizForm from './components/UpdateBizForm';
@@ -45,25 +37,8 @@ function App() {
 
     return (
         <BrowserRouter>
-            {/* <NavBar />
-            <Switch>
-                <Route path='/login' exact={true}>
-                    <LoginForm />
-                </Route>
-                <Route path='/sign-up' exact={true}>
-                    <SignUpForm />
-                </Route>
-                <ProtectedRoute path='/users' exact={true} >
-                    <UsersList />
-                </ProtectedRoute>
-                <ProtectedRoute path='/users/:userId' exact={true} >
-                    <User />
-                </ProtectedRoute>
-                <ProtectedRoute path='/' exact={true} >
-                    <h1>My Home Page</h1>
-                </ProtectedRoute>
-            </Switch> */}
-            <Brandon_NavBar />
+            <Navbar />
+
             <Switch>
                 <Route exact path='/'>
                     <HomeBanner />

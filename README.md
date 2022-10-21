@@ -93,13 +93,15 @@ To get a local copy up and running follow these simple example steps.
     cd react-app
     npm install
     ```
-3. Migrate and seed the files.
+3. Create a .env file and set the environment variables for SECRET_KEY and DATABASE_URL to your choosing.
+
+4. Migrate and seed the files.
     ```sh
     flask run db init
     flask run migrate
     flask seed all
     ```
-4. Run the server and start the react app
+5. Run the server and start the react app
     ```sh
     pipenv run flask run
     cd react-app
@@ -109,29 +111,29 @@ To get a local copy up and running follow these simple example steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Businesses
-    - [ ] Create a business
-    - [ ] Load all businesses
-    - [ ] Load a business by detail
-    - [ ] See list of current user's businesses
-    - [ ] Update a current user's business
-    - [ ] Delete a current user's business
-- [ ] Search / Filter
-    - [ ] Create a search filter
-    - [ ] See the result of a search filter
-    - [ ] Update a search filter
-    - [ ] Remove a search filter
-- [ ] Reviews
-    - [ ] Create a review
-    - [ ] Load all user's reviews
-    - [ ] Load all of a business's reviews
-    - [ ] Update a current user's review
-    - [ ] Delete a current user's review
-- [ ] Images
-    - [ ] Create a business image
-    - [ ] Create a review image
-    - [ ] Delete a business image
-    - [ ] Delete a review image
+- [x] Businesses
+    - [x] Create a business
+    - [x] Load all businesses
+    - [x] Load a business by detail
+    - [x] See list of current user's businesses
+    - [x] Update a current user's business
+    - [x] Delete a current user's business
+- [x] Search / Filter
+    - [x] Create a search filter
+    - [x] See the result of a search filter
+    - [x] Update a search filter
+    - [x] Remove a search filter
+- [x] Reviews
+    - [x] Create a review
+    - [x] Load all user's reviews
+    - [x] Load all of a business's reviews
+    - [x] Update a current user's review
+    - [x] Delete a current user's review
+- [x] Images
+    - [x] Create a business image
+    - [x] Create a review image
+    - [x] Delete a business image
+    - [x] Delete a review image
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
