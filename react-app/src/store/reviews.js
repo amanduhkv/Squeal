@@ -116,7 +116,7 @@ export const createReview = (businessId, reviewData, userData, businessData) => 
 
     if (response.ok) {
         const newReview = await response.json();
-        // console.log("JSONIFIED NEW-SPOT DATA AFTER THUNK:", newReview);
+        // console.log("JSONIFIED NEW-BUSINESS DATA AFTER THUNK:", newReview);
         dispatch(addReview(newReview, userData, businessData));
         return newReview;
     }
@@ -209,7 +209,7 @@ const reviewsReducer = (state = initialState, action) => {
             return newState;
         case ADD_REVIEW:
             newState = { ...state, user: { ...state.user }, business: { ...state.business } };
-            const newUserReview = { ...action.payload.reviewData, User: { ...action.payload.userData }, Spot: { ...action.payload.businessData } };
+            const newUserReview = { ...action.payload.reviewData, User: { ...action.payload.userData }, Business: { ...action.payload.businessData } };
             const newBusinessReview = { ...action.payload.reviewData, User: { ...action.payload.userData } };
             newState.user[action.payload.reviewData.id] = newUserReview;
             newState.business[action.payload.reviewData.id] = newBusinessReview;
@@ -226,7 +226,7 @@ const reviewsReducer = (state = initialState, action) => {
             return newState;
         case EDIT_REVIEW:
             newState = { ...state, user: { ...state.user }, business: { ...state.business } };
-            const updatedUserReview = { ...action.payload.reviewData, User: { ...action.payload.userData }, Spot: { ...action.payload.businessData } };
+            const updatedUserReview = { ...action.payload.reviewData, User: { ...action.payload.userData }, Business: { ...action.payload.businessData } };
             const updatedBusinessReview = { ...action.payload.reviewData, User: { ...action.payload.userData } };
             newState.user[action.payload.reviewData.id] = updatedUserReview;
             newState.business[action.payload.reviewData.id] = updatedBusinessReview;

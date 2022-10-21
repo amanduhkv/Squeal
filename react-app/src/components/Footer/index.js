@@ -1,11 +1,14 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import './Footer.css'
 import logoWithText from '../../icons/squeal-in-logo.png'
 import logo from '../../icons/squeal-logo-v2.png'
 
 export default function Footer() {
+    const url = useLocation().pathname
+
+
     return (
-        <footer id='footer-outer-wrapper' className='footer'>
+        <footer id='footer-outer-wrapper' className={url.includes("current") ? 'footer-margin' : 'footer'}>
             <div id='footer-inner-wrapper'>
                 <div id='footer-lists-wrapper'>
                     <div id='footer-column-about' className='footer-column'>

@@ -57,7 +57,7 @@ def get_all_businesses():
         types_list = [type.to_dict() for type in b[1].types]
         transactions_list = [transaction.to_dict()
                          for transaction in b[1].transactions]
-        
+
         preview_review = ''
         if len(reviews_lst) > 1:
             preview_review = reviews_lst[0]['review_body']
@@ -111,6 +111,8 @@ def get_one_business(biz_id):
     business['Business_Images'] = images
     business['Owner'] = owner
 
+    
+
     return business
 
 
@@ -132,7 +134,14 @@ def get_current_user_business():
         for business in all_businesses:
             query = db.session.query(func.round(
                 func.avg(Review.rating) * 2)/2).filter_by(business_id=business['id']).first()
-            avg_rating = list(query)[0]
+
+            avg_rating = 0
+            if list(query)[0]:
+                avg_rating = float(list(query)[0])
+                business['avg_rating'] = avg_rating
+            else:
+                business['avg_rating'] = 0
+
             business_images = Image.query.filter_by(business_id=business['id'])
             images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
                       for img in business_images]
