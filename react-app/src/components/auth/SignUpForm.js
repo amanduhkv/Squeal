@@ -10,6 +10,7 @@ import './LoginForm.css';
 const SignUpForm = () => {
     const url = useLocation().pathname;
     const [errors, setErrors] = useState([]);
+    const [username, setUsername] = useState('');
     const [first_name, setFirstname] = useState('');
     const [last_name, setLastname] = useState('');
     const [email, setEmail] = useState('');
@@ -24,7 +25,8 @@ const SignUpForm = () => {
     const onSignUp = async (e) => {
         e.preventDefault();
         if (password) {
-            const data = await dispatch(signUp(first_name, last_name, email, password, zipcode));
+            setHasSubmit(true);
+            const data = await dispatch(signUp(username, first_name, last_name, email, password, zipcode));
             if (data) {
                 setErrors(data)
             }
@@ -220,6 +222,15 @@ const SignUpForm = () => {
                                     ></input>
                                 </div>
                                 <div id='email'>
+                                    <input
+                                        id='login-input'
+                                        type='text'
+                                        name='username'
+                                        placeholder='Username'
+                                        onChange={e => setUsername(e.target.value)}
+                                        value={username}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                    ></input>
                                     <input
                                         id='login-input'
                                         type='text'
