@@ -21,5 +21,3 @@ def check_rating(form, field):
 class EditReviewForm(FlaskForm):
     review_body = StringField('Review Body', validators=[check_review])
     rating = IntegerField('Rating', validators=[DataRequired(), check_rating])
-    # # submit button not necessary
-    # submit = SubmitField('Submit')
