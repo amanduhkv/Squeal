@@ -12000,7 +12000,7 @@ dup_biz = {8,  10,  12,  17,  25,  32,  36,  37,  44, 45,  59,  65,  69,  88,  9
            116, 117, 124, 129, 132, 141, 156, 157, 162, 164, 166, 167, 169, 173, 174, 186, 200, 203, 204, 222, 228, 232, 236, 237}
 dup_rev = {9,  11,  13,  18,  26,  33,  37,  38,  45, 46,  60,  66,  70,  89,  95,  97,  98,  99, 101, 105, 110, 114,
            117, 118, 125, 130, 133, 142, 157, 158, 163, 165, 167, 168, 170, 174, 175, 187, 201, 204, 223, 229, 233, 237, 238}
-count = 1
+# count = 1
 for i in range(0, len(bizzies)):
     if not i in dup_biz:
         name = bizzies[i]['name']
@@ -12017,7 +12017,7 @@ for i in range(0, len(bizzies)):
         lng = bizzies[i]['lng']
         price_range = bizzies[i]['price']
         phone_number = bizzies[i]['phone']
-        business_id = count
+        # business_id = count
         url = bizzies[i]['url']
         start_time = bizzies[i]['hours']['start']
         end_time = bizzies[i]['hours']['end']
@@ -12054,27 +12054,27 @@ for i in range(0, len(bizzies)):
         for img in bizzies[i]['photos']:
             instances.append(
                 Image(business_id=business_id, review_id=None, url=img))
-        count += 1
+        # count += 1
 
 
-# biz_id = 1
-# biz_count = 1
-# users = {1}
-# for i in range(0, len(reviews)):
-#     if not biz_count in dup_rev:
-#         user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
-#                          13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
-#         while user_id in users:
-#             user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
-#                              13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
-#         users.add(user_id)
-#         instances.append(Review(business_id=biz_id, user_id=user_id,
-#                          review_body=reviews[i]['review_body'], rating=reviews[i]['rating'], created_at=reviews[i]['created_at']))
-#     if (i+1) % 3 == 0:
-#         biz_count += 1
-#         users = {1}
-#     if not biz_count in dup_rev and (i+1) % 3 == 0 and biz_id + 1 != 195:
-#         biz_id += 1
+biz_id = 1
+biz_count = 1
+users = {1}
+for i in range(0, len(reviews)):
+    if not biz_count in dup_rev:
+        user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
+                         13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
+        while user_id in users:
+            user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
+                             13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
+        users.add(user_id)
+        instances.append(Review(business_id=biz_id, user_id=user_id,
+                         review_body=reviews[i]['review_body'], rating=reviews[i]['rating'], created_at=reviews[i]['created_at']))
+    if (i+1) % 3 == 0:
+        biz_count += 1
+        users = {1}
+    if not biz_count in dup_rev and (i+1) % 3 == 0 and biz_id + 1 != 195:
+        biz_id += 1
 
 # hopefully this doesnt break
 
