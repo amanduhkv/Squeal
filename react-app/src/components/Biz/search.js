@@ -34,7 +34,7 @@ export default function Search({ data }) {
   const [pageNum, setPageNum] = useState(0);
   const [query, setQuery] = useState('');
   const searchStuff = useLocation().search;
-  console.log('BIZARR', bizArr)
+
   // console.log('this is searchStuff', searchStuff);
   let cat;
   let location;
@@ -75,7 +75,7 @@ export default function Search({ data }) {
 
 
   /* ------------SEARCH FXNS/LOGIC------------ */
-  const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name', 'Review.preview_review']);
+  const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name']);
 
   // const res = searchFunc.search(query)
 
@@ -192,12 +192,15 @@ export default function Search({ data }) {
 
 
 
-  let title;
-  if (query) title = query[0].toUpperCase() + query.substring(1)
-  // console.log('CURRENT TITLE: ', title)
-  if (title === 'Restaurant_reservation') title = 'Reservations'
-  else title = title
 
+  // else setTitle('Food');
+  // console.log('QUERY', cat)
+  // console.log('CAT', cat)
+  // if (title === 'restaurant_reservation') setTitle('Reservations');
+  // console.log('CURRENT TITLE: ', title);
+  let title;
+  if (cat) title = cat[0].toUpperCase() + cat.substring(1);
+  if (cat === 'restaurant_reservation') title = "Reservations"
 
 
 
@@ -224,7 +227,7 @@ export default function Search({ data }) {
         <button type='submit'>Submit</button>
       </form>
 
-      <h1 className="allbiz-title">Best {query ? title : "Food"} Near Me</h1>
+      <h1 className="allbiz-title">Best {title ?? 'Food'} Near Me</h1>
 
       <ol id='biz-list' start={(10 * pageNum) + 1}>
         <div className="types-buttons">
@@ -317,7 +320,7 @@ export default function Search({ data }) {
               Open Now
             </button>
           </NavLink> */}
-          <NavLink to='/biz?type=delivery'>
+          <NavLink to={!activeDel ? '/biz?type=delivery' : '/biz'}>
             <button
               id={activeDel ? 'type-butt-act' : 'type-butt'}
               value={query}
@@ -330,7 +333,7 @@ export default function Search({ data }) {
                   if (activeTakeout) setActiveTakeout(false);
                   if (activeRes) setActiveRes(false);
                 }
-                setQuery('delivery')
+                setQuery(query)
                 setPageNum(0);
               }
               }
@@ -338,7 +341,7 @@ export default function Search({ data }) {
               Offers Delivery
             </button>
           </NavLink>
-          <NavLink to='/biz?type=pickup'>
+          <NavLink to={!activeTakeout ? '/biz?type=pickup' : '/biz'}>
             <button
               id={activeTakeout ? 'type-butt-act' : 'type-butt'}
               value={query}
@@ -351,7 +354,7 @@ export default function Search({ data }) {
                   if (activeDel) setActiveDel(false);
                   if (activeRes) setActiveRes(false);
                 }
-                setQuery('pickup')
+                setQuery(query)
                 setPageNum(0);
               }
               }
@@ -359,7 +362,7 @@ export default function Search({ data }) {
               Offers Takeout
             </button>
           </NavLink>
-          <NavLink to='/biz?type=restaurant_reservation'>
+          <NavLink to={!activeRes ? '/biz?type=restaurant_reservation' : '/biz'}>
             <button
               id={activeRes ? 'type-butt-act' : 'type-butt'}
               value={query}
@@ -372,7 +375,7 @@ export default function Search({ data }) {
                   if (activeDel) setActiveDel(false);
                   if (activeTakeout) setActiveTakeout(false);
                 }
-                setQuery('restaurant_reservation')
+                setQuery(query)
                 setPageNum(0);
               }
               }
