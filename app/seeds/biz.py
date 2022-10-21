@@ -12017,14 +12017,14 @@ for i in range(0, len(bizzies)):
         lng = bizzies[i]['lng']
         price_range = bizzies[i]['price']
         phone_number = bizzies[i]['phone']
-        # business_id = count
+        business_id = count
         url = bizzies[i]['url']
         start_time = bizzies[i]['hours']['start']
         end_time = bizzies[i]['hours']['end']
         transactions = [transaction_dict[t] for t in bizzies[i]['transactions']]
         types = [type_dict[t] for t in bizzies[i]['categories']]
 
-        instances.append(Business(id=business_id,
+        instances.append(Business(
                                   name=name,
                                   owner_id=1,
                                   city=city,
@@ -12054,7 +12054,7 @@ for i in range(0, len(bizzies)):
         for img in bizzies[i]['photos']:
             instances.append(
                 Image(business_id=business_id, review_id=None, url=img))
-        # count += 1
+        count += 1
 
 
 biz_id = 1
