@@ -132,7 +132,14 @@ def get_current_user_business():
         for business in all_businesses:
             query = db.session.query(func.round(
                 func.avg(Review.rating) * 2)/2).filter_by(business_id=business['id']).first()
-            avg_rating = list(query)[0]
+
+            avg_rating = 0
+            if list(query)[0]:
+                avg_rating = float(list(query)[0])
+                business['avg_rating'] = avg_rating
+            else:
+                business['avg_rating'] = 0
+
             business_images = Image.query.filter_by(business_id=business['id'])
             images = [{"id": img.to_dict()['id'], "url": img.to_dict()['url'], "review_id": img.to_dict()['review_id']}
                       for img in business_images]
