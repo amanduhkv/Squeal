@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { getAllBiz } from '../../store/businesses';
+import { getAllBiz, clearData } from '../../store/businesses';
 import FuzzySearch from 'fuzzy-search';
 import { search, clearData } from "../../store/businesses";
 import './Biz.css';
@@ -68,6 +68,8 @@ export default function Biz() {
     /* -------USE EFFECT:get all bizzies------- */
     useEffect(() => {
         dispatch(getAllBiz())
+
+        return () => dispatch(clearData())
     }, [dispatch])
 
 

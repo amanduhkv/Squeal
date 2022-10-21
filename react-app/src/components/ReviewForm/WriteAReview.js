@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import FuzzySearch from 'fuzzy-search';
-import { getAllBiz } from '../../store/businesses';
+import { getAllBiz, clearData } from '../../store/businesses';
 import './ReviewForm.css';
 import searchicon from '../../icons/search.svg';
 
@@ -12,7 +12,9 @@ const WriteAReview = () => {
     const [bizName, setBizName] = useState('');
 
     useEffect(() => {
-        dispatch(getAllBiz())
+        dispatch(getAllBiz());
+
+        return () => dispatch(clearData());
     }, [dispatch])
 
 

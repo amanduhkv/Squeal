@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './HomePage.css';
-import { getAllReviews } from '../../store/reviews';
+import { getAllReviews, clearData } from '../../store/reviews';
 import userpig from '../../icons/user-pig.png';
 import chinese from '../../icons/category-tiles/chi.svg';
 import indian from '../../icons/category-tiles/india.svg';
@@ -18,7 +18,9 @@ const HomePage = () => {
     const revSlice = rev ? Object.values(rev)?.slice(-27) : null;
 
     useEffect(() => {
-        dispatch(getAllReviews())
+        dispatch(getAllReviews());
+
+        return () => dispatch(clearData());
     }, [dispatch])
 
 

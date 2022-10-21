@@ -3,8 +3,10 @@ import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { getOneBiz } from '../../store/businesses'
-import { getBusinessReviews } from '../../store/reviews'
+import * as bizActions from '../../store/businesses'
+// import { getOneBiz } from '../../store/businesses'
+import * as reviewActions from '../../store/reviews'
+// import { getBusinessReviews } from '../../store/reviews'
 import { Modal } from '../../context/Modal';
 import * as reviewActions from "../../store/reviews";
 
@@ -67,8 +69,13 @@ const BusinessDetails = () => {
     }
 
     useEffect(() => {
-        dispatch(getOneBiz(bizId))
-        dispatch(getBusinessReviews(bizId))
+        dispatch(bizActions.getOneBiz(bizId));
+        dispatch(reviewActions.getBusinessReviews(bizId));
+
+        return () => {
+            dispatch(bizActions.clearData());
+            dispatch(reviewActions.clearData());
+        }
     }, [dispatch, bizId])
 
     const rate = biz.avg_rating
