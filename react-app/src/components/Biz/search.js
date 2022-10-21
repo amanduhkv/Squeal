@@ -192,7 +192,7 @@ export default function Search({ data }) {
 
   let title;
   if(query) title = query[0].toUpperCase() + query.substring(1)
-  console.log('CURRENT TITLE: ', title)
+  // console.log('CURRENT TITLE: ', title)
   if (title === 'Restaurant_reservation') title = 'Reservations'
   else title = title
 
