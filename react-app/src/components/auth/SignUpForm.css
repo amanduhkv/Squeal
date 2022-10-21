@@ -36,6 +36,14 @@ div input:first-child {
   justify-content: flex-end;
 }
 
+#modal-errors {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+  background-color: rgb(252,214,211);
+  border-radius: 3px;
+  padding: 8px;
+}
+
 #password #login-input {
   margin-top: 9px;
 }

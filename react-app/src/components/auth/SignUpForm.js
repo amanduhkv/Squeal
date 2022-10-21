@@ -28,7 +28,8 @@ const SignUpForm = () => {
             setHasSubmit(true);
             const data = await dispatch(signUp(username, first_name, last_name, email, password, zipcode));
             if (data) {
-                setErrors(data)
+                console.log('SIGNUP ERRORS', data)
+                setErrors()
             }
         }
     };
@@ -38,7 +39,8 @@ const SignUpForm = () => {
         setHasSubmit(true);
         const data = await dispatch(login(email, password));
         if (data) {
-            setErrors(data);
+            console.log('LOGIN ERRORS', data)
+            setErrors(['The email address or password you entered is incorrect.']);
         }
     };
 
@@ -97,13 +99,6 @@ const SignUpForm = () => {
 
                             </div>
                             <form id='login-form' onSubmit={onLogin}>
-                            {hasSubmit && errors.length > 0 && (
-                                    <div>
-                                        {errors.map((error, ind) => (
-                                            <div key={ind}>{error}</div>
-                                        ))}
-                                    </div>
-                                )}
                                 <button
                                     id='demo-button'
                                     type='submit'
@@ -116,6 +111,14 @@ const SignUpForm = () => {
                                 </button>
 
                                 <div id='lines'><span className='or'>OR</span></div>
+
+                                {hasSubmit && errors.length > 0 && (
+                                    <div id='modal-errors-box'>
+                                        {errors.map((error, ind) => (
+                                            <div id='modal-errors' key={ind}>{error}</div>
+                                        ))}
+                                    </div>
+                                )}
                                 <div>
                                     <input
                                         id='login-input'
