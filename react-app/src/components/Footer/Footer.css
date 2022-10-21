@@ -37,6 +37,7 @@
 .footer-column:first-child {
     margin-left: -16px;
 }
+
 .footer-column:last-child {
     width: fit-content;
 }

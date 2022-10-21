@@ -137,6 +137,7 @@
     opacity: 1;
     cursor: pointer;
 }
+
 .user-biz-img-container:hover {
     opacity: 0.6;
 }

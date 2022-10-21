@@ -29,6 +29,13 @@
     object-fit: cover;
 }
 
+.single-business-images {
+    width: 100%;
+}
+.single-business-one-image-wrapper {
+    width: 100%;
+}
+
 #modal {
     z-index: 99
 }
@@ -109,6 +116,7 @@
 .Closedclosed-red {
     color: rgba(224, 7, 7, 1);
 }
+
 .Openclosed-red {
     color: #00C588;
     padding-right: 6px;
@@ -141,9 +149,10 @@
 .single-business-reviews-button {
     width: 100%;
 }
+
 .single-business-see-more-photos:hover {
     cursor: pointer;
-    background-color:rgba(254, 254, 254, 0.402);
+    background-color: rgba(254, 254, 254, 0.402);
     transition-property: background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
@@ -172,6 +181,7 @@
     width: 80%;
     margin: auto;
 }
+
 #single-biz-stars {
     margin-bottom: 30px;
 }
@@ -196,11 +206,12 @@
     border-radius: 4px;
     font-size: 16px;
 }
+
 .single-business-review-bar-button:hover {
-background-color:rgb(255, 47, 47);
-transition-property: background-color;
-transition-duration: 0.5s;
-transition-timing-function: ease-in;
+    background-color: rgb(255, 47, 47);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
 }
 
 .single-business-location-hours {
@@ -357,8 +368,9 @@ transition-timing-function: ease-in;
 
 .photo-modal-close {
     display: flex;
-    justify-content:end;
+    justify-content: end;
 }
+
 .photo-modal-close:hover {
     cursor: pointer;
 }

@@ -19,8 +19,6 @@ def check_rating(form, field):
 
 
 class AddReviewForm(FlaskForm):
-    # business_id = IntegerField('Business ID', validators=[DataRequired()])
-    # user_id = IntegerField('User ID', validators=[DataRequired()])
     review_body = StringField('Review Body', validators=[check_review])
     rating = IntegerField('Rating', validators=[DataRequired(), check_rating])
     submit = SubmitField('Submit')
