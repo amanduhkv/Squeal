@@ -1,3 +1,7 @@
+// TO FIX: CLOSED/OPEN ON GET ALL BUSINESSES
+// WRITE A REVIEW ROUTE 
+
+
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
@@ -6,7 +10,6 @@ import { useParams } from 'react-router-dom'
 import { getOneBiz } from '../../store/businesses'
 import { getBusinessReviews } from '../../store/reviews'
 import { Modal } from '../../context/Modal';
-import Footer from '../Footer'
 
 // import { getUserReviews } from '../../store/reviews'
 import check from '../../icons/claimed-check.svg';
@@ -23,6 +26,8 @@ const BusinessDetails = () => {
     const { bizId } = useParams()
 
     const [showPhotoModal, setShowPhotoModal] = useState(false);
+    const [showSinglePhoto, setShowSinglePhoto] = useState(false);
+
 
     const biz = useSelector(state => state.businesses.singleBusiness)
     const bizOwner = useSelector(state => state.businesses.singleBusiness.Owner)
@@ -55,7 +60,7 @@ const BusinessDetails = () => {
     }
     if (bizReviews) {
         let reviewsArr = Object.values(bizReviews).map(obj => obj.Review_Images)
-        if (reviewsArr.length) {
+        if (reviewsArr) {
             if (reviewsArr[0].length > 0) {
                 let reviews = reviewsArr.filter(obj => obj.url)
                 allReviewImages = reviews.flat()
@@ -96,8 +101,10 @@ const BusinessDetails = () => {
     function openOrClosed(open, close) {
         let res
         let currentTime = new Date().getHours()
+        let currentMinutes = new Date().getMinutes()
         if (open && close) {
-            res = currentTime < open.slice(0, 2) || currentTime > close.slice(0, 2) ? "Closed" : "Open"
+            console.log(currentTime > close.slice(0, 2), currentTime, close.slice(0,2))
+            res = currentTime < open.slice(0, 2) || (currentTime < 12 && currentTime > close.slice(0, 2)) || (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
         }
         return res
     }
@@ -113,6 +120,7 @@ const BusinessDetails = () => {
     let hours
     if (biz.start_time && biz.end_time) {
         let open = openOrClosed(biz.start_time, biz.end_time)
+        console.log(biz.end_time)
         let today = new Date().getDay()
         hours = days.map(day => {
             return (
@@ -293,10 +301,12 @@ const BusinessDetails = () => {
                         )}
                         <div className='single-business-modal-images'>
 
+                            {/* {showSinglePhoto && } */}
+
 
                             {bizImages.length > 0 && bizImages.map(obj => {
                                 return (
-                                    <img className='single-business-review-image' height='300' width='300' src={obj.url} />
+                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-review-image' height='300' width='300' src={obj.url} />
                                 )
                             }
                             )}
