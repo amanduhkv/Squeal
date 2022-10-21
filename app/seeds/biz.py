@@ -80,7 +80,7 @@ transaction_types = ['pickup', 'delivery', 'restaurant_reservation']
 
 bizzies = [
     {
-        # 'id': 'amNWerp63joyW5M6tVbMcQ',
+        # 'id': 'amNWerp63joyW5M6tVbMcQ'0
         'name': 'SK Donuts & Croissant',
         'location': {
             'address1': '5850 W 3rd St',
@@ -109,7 +109,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0530', 'end': '1900', 'day': 2}
     },
     {
-        # 'id': 'xVSv26KBQexP4M0l63SGlg',
+        # 'id': 'xVSv26KBQexP4M0l63SGlg',1
         'name': 'Alcove Café & Bakery',
         'location': {
             'address1': '1929 Hillhurst Ave',
@@ -138,7 +138,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'kXrHt3XkNd_q5rISuvuvVg',
+        # 'id': 'kXrHt3XkNd_q5rISuvuvVg',2
         'name': 'Berlins',
         'location': {
             'address1': '8474 W 3rd St',
@@ -167,36 +167,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'ohosmz6FXVAeoW5nUkYwng',
-        'name': 'Pine & Crane',
-        'location': {
-            'address1': '1521 Griffith Park Blvd',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90026',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1521 Griffith Park Blvd', 'Los Angeles, CA 90026'],
-        'lat': 34.0905963760163,
-        'lng': -118.277172084005,
-        'price': '$$',
-        'phone': '+13236681128',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/3snVXYvGw054cWzcDBvMmQ/o.jpg',
-        'categories': ['taiwanese', 'chinese', 'bubbletea'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/3snVXYvGw054cWzcDBvMmQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/MxNriDMd8Otkt4zqOmc0jg/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/04xZ0MmSeWQPUHEzUtfBgQ/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 0}
-    },
-    {
-        # 'id': 'bJVTVJYJL8Es0PzhBsHz8g',
+        # 'id': 'bJVTVJYJL8Es0PzhBsHz8g',4
         'name': 'Tea Master Matcha Cafe & Green Tea Shop',
         'location': {
             'address1': '450 E 2nd St',
@@ -225,7 +196,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '1900', 'day': 2}
     },
     {
-        # 'id': 'OSYoTFAfq9_wFyDH_qUsTA',
+        # 'id': 'OSYoTFAfq9_wFyDH_qUsTA',5
         'name': 'The Griddle Cafe',
         'location': {
             'address1': '7916 Sunset Blvd',
@@ -254,7 +225,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1500', 'day': 2}
     },
     {
-        # 'id': 'TkFEKhsCixPWlShULKvMdQ',
+        # 'id': 'TkFEKhsCixPWlShULKvMdQ',6
         'name': 'Bottega Louie',
         'location': {
             'address1': '700 S Grand Ave',
@@ -283,7 +254,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': '0WyRlH-fxOVLh1b3oEBEEQ',
+        # 'id': '0WyRlH-fxOVLh1b3oEBEEQ',7
         'name': 'Urth Caffé- Downtown LA',
         'location': {
             'address1': '451 S Hewitt St',
@@ -312,36 +283,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'amNWerp63joyW5M6tVbMcQ',
-        'name': 'SK Donuts & Croissant',
-        'location': {
-            'address1': '5850 W 3rd St',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90036',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['5850 W 3rd St', 'Los Angeles, CA 90036'],
-        'lat': 34.06895,
-        'lng': -118.34747,
-        'price': '$',
-        'phone': '+13239352409',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/KJMZ0eazBbMFmg9ode6uoA/o.jpg',
-        'categories': ['donuts', 'bakeries', 'vegan'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/KJMZ0eazBbMFmg9ode6uoA/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/gVAKp5bTzSNVcKKW2kw5KA/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/VjIONT6WXkWCNrjbzHOihA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0530', 'end': '1900', 'day': 2}
-    },
-    {
-        # 'id': 'fnieyvmWe2B3bJ19bnxt6g',
+        # 'id': 'fnieyvmWe2B3bJ19bnxt6g',8
         'name': 'Donut Friend',
         'location': {
             'address1': '5107 York Blvd',
@@ -370,36 +312,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'bJVTVJYJL8Es0PzhBsHz8g',
-        'name': 'Tea Master Matcha Cafe & Green Tea Shop',
-        'location': {
-            'address1': '450 E 2nd St',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90012',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['450 E 2nd St', 'Los Angeles, CA 90012'],
-        'lat': 34.0471823589909,
-        'lng': -118.238639755523,
-        'price': '$',
-        'phone': '+12136801006',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/Fua3LsXjQYSdkIXEM9ZYkQ/o.jpg',
-        'categories': ['coffee', 'icecream', 'juicebars'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/Fua3LsXjQYSdkIXEM9ZYkQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/mubnqGPodeWqNeqlUlx7Hw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/FyeX8pklC4nXxGyV6n7cPA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1200', 'end': '1900', 'day': 2}
-    },
-    {
-        # 'id': 'ikF6L0HiC3_AhAiywWzS3g',
+        # 'id': 'ikF6L0HiC3_AhAiywWzS3g',9
         'name': 'Salt & Straw',
         'location': {
             'address1': '240 N Larchmont Blvd',
@@ -428,36 +341,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'bJVTVJYJL8Es0PzhBsHz8g',
-        'name': 'Tea Master Matcha Cafe & Green Tea Shop',
-        'location': {
-            'address1': '450 E 2nd St',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90012',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['450 E 2nd St', 'Los Angeles, CA 90012'],
-        'lat': 34.0471823589909,
-        'lng': -118.238639755523,
-        'price': '$',
-        'phone': '+12136801006',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/Fua3LsXjQYSdkIXEM9ZYkQ/o.jpg',
-        'categories': ['coffee', 'icecream', 'juicebars'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/Fua3LsXjQYSdkIXEM9ZYkQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/mubnqGPodeWqNeqlUlx7Hw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/FyeX8pklC4nXxGyV6n7cPA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1200', 'end': '1900', 'day': 2}
-    },
-    {
-        # 'id': 'CP0ICg1dZqEOt3UtNapjKg',
+        # 'id': 'CP0ICg1dZqEOt3UtNapjKg',10
         'name': 'Au Lac',
         'location': {
             'address1': '710 W 1st St',
@@ -486,36 +370,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '1500', 'day': 1}
     },
     {
-        # 'id': 'JYGPEUZy4k5ObXGIjcD3DA',
-        'name': 'Hae Jang Chon',
-        'location': {
-            'address1': '3821 W 6th St',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90020',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['3821 W 6th St', 'Los Angeles, CA 90020'],
-        'lat': 34.06383295052755,
-        'lng': -118.30612569141431,
-        'price': '$$$',
-        'phone': '+12133898777',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/o.jpg',
-        'categories': ['korean', 'bbq'],
-        'transactions': ['delivery', 'pickup'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/utraQPqRWf9B9j3pp-5YtQ/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/NIOq3JXvAozR56R8CFNVWA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '0000', 'day': 0}
-    },
-    {
-        # 'id': 'qAAoilHU25Qr45FOQlA19g',
+        # 'id': 'qAAoilHU25Qr45FOQlA19g',11
         'name': 'Kang Ho-dong Baekjeong',
         'location': {
             'address1': '3465 W 6th St',
@@ -544,7 +399,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'z0zaCVA-p_5xTsyUZrmR0g',
+        # 'id': 'z0zaCVA-p_5xTsyUZrmR0g',12
         'name': 'Republique',
         'location': {
             'address1': '624 S La Brea Ave',
@@ -573,36 +428,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'TkFEKhsCixPWlShULKvMdQ',
-        'name': 'Bottega Louie',
-        'location': {
-            'address1': '700 S Grand Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90017',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['700 S Grand Ave', 'Los Angeles, CA 90017'],
-        'lat': 34.047056,
-        'lng': -118.256544,
-        'price': '$$',
-        'phone': '+12138021470',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/rAImnKvUNcNY8i6qEDWrZA/o.jpg',
-        'categories': ['italian', 'desserts', 'breakfast_brunch'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/rAImnKvUNcNY8i6qEDWrZA/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/fHHbRyUWjBS2WelSzpqk1A/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/wnawBUv9WbnybmHfnpPexw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0800', 'end': '2300', 'day': 0}
-    },
-    {
-        # 'id': 'sYn3SNQP-j2t2XSwjlCbRg',
+        # 'id': 'sYn3SNQP-j2t2XSwjlCbRg', 13
         'name': "Monty's Good Burger",
         'location': {
             'address1': '516 S Western Ave',
@@ -631,36 +457,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'DJek3FUewBzMc0gS-Gms9w',
-        'name': 'Morrison Atwater Village',
-        'location': {
-            'address1': '3179 Los Feliz Blvd',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90039',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['3179 Los Feliz Blvd', 'Los Angeles, CA 90039'],
-        'lat': 34.12384,
-        'lng': -118.26868,
-        'price': '$$',
-        'phone': '+13236671839',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/rSDJYD7foVFKvk0Dy6SzzQ/o.jpg',
-        'categories': ['gastropubs', 'burgers', 'salad'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/rSDJYD7foVFKvk0Dy6SzzQ/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/8O4EZg0MY12WO388erwViA/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/idYwGqdaJlrEyvLt6T4TNA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
-    },
-    {
-        # 'id': 'h2u-coGd8WWClyU3b7jf8w',
+        # 'id': 'h2u-coGd8WWClyU3b7jf8w',14
         'name': 'Met Her At A Bar',
         'location': {
             'address1': '759 S La Brea Ave',
@@ -689,7 +486,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'bdm3708B0OJW9xDdaKVH_A',
+        # 'id': 'bdm3708B0OJW9xDdaKVH_A',15
         'name': 'Gol Tong Chicken',
         'location': {
             'address1': '361 S Western Ave',
@@ -1008,35 +805,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'TkFEKhsCixPWlShULKvMdQ',
-        'name': 'Bottega Louie',
-        'location': {
-            'address1': '700 S Grand Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90017',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['700 S Grand Ave', 'Los Angeles, CA 90017'],
-        'lat': 34.047056,
-        'lng': -118.256544,
-        'price': '$$',
-        'phone': '+12138021470',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/rAImnKvUNcNY8i6qEDWrZA/o.jpg',
-        'categories': ['italian', 'desserts', 'breakfast_brunch'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/rAImnKvUNcNY8i6qEDWrZA/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/fHHbRyUWjBS2WelSzpqk1A/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/wnawBUv9WbnybmHfnpPexw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0800', 'end': '2300', 'day': 0}
-    },
-    {
         # 'id': 'fEY0zHaDMfIW3-N__joDKQ',
         'name': 'Bestia',
         'location': {
@@ -1151,35 +919,6 @@ bizzies = [
             'https://s3-media1.fl.yelpcdn.com/bphoto/NIOq3JXvAozR56R8CFNVWA/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1100', 'end': '0000', 'day': 0}
-    },
-    {
-        # 'id': 'qAAoilHU25Qr45FOQlA19g',
-        'name': 'Kang Ho-dong Baekjeong',
-        'location': {
-            'address1': '3465 W 6th St',
-            'address2': 'Ste 20',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90020',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['3465 W 6th St', 'Ste 20', 'Los Angeles, CA 90020'],
-        'lat': 34.06375298900917,
-        'lng': -118.29728290552232,
-        'price': '$$$',
-        'phone': '+12133849678',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/0LQSELQTy5LFG3xLUPbRpQ/o.jpg',
-        'categories': ['bbq', 'korean'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/0LQSELQTy5LFG3xLUPbRpQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/3SkgsOxmYClY0--3aZj2Jg/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/7TZlLNAtsR2k1w5a9JMi8Q/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1130', 'end': '0000', 'day': 0}
     },
     {
         # 'id': 'YetYHIRKrZDGHZ50I_RMag',
@@ -1354,35 +1093,6 @@ bizzies = [
             'https://s3-media3.fl.yelpcdn.com/bphoto/ksBVuSWb9Kx-NVAI5rDhcA/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 2}
-    },
-    {
-        # 'id': 'fEY0zHaDMfIW3-N__joDKQ',
-        'name': 'Bestia',
-        'location': {
-            'address1': '2121 E 7th Pl',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90021',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['2121 E 7th Pl', 'Los Angeles, CA 90021'],
-        'lat': 34.03402,
-        'lng': -118.22919,
-        'price': '$$$',
-        'phone': '+12135145724',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/QWniJCG7Jk0GXf9u8lNI4g/o.jpg',
-        'categories': ['italian', 'cocktailbars', 'pizza'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/QWniJCG7Jk0GXf9u8lNI4g/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/OiK29eJfT4PyMjCRYlkU8A/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/HYhd80kUtmc5BS-FeW-ilw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1700', 'end': '2300', 'day': 0}
     },
     {
         # 'id': 'DJek3FUewBzMc0gS-Gms9w',
@@ -1795,35 +1505,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'HvDYCHDpgBy3CmzRD6gcMg',
-        'name': 'Ktown Pho',
-        'location': {
-            'address1': '974 S Western Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Los Angeles',
-            'zip_code': '90006',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['974 S Western Ave', 'Los Angeles, CA 90006'],
-        'lat': 34.0533378,
-        'lng': -118.3089351,
-        'price': '$$',
-        'phone': '+13236434772',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/8Go2QkK399BbLAx6TYUZag/o.jpg',
-        'categories': ['vietnamese', 'soup', 'salad'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/8Go2QkK399BbLAx6TYUZag/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/c4mwzK43M9bN3uvBOfz3VQ/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/qXX6XUybq8ucntWYXhpvzg/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
-    },
-    {
         # 'id': 'baEPmtktizrZDmH4p_OJ4A',
         'name': 'Shuei-Do Manju Shop',
         'location': {
@@ -1969,35 +1650,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0630', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'gQInCoEeqCNiSuomfFPkwA',
-        'name': 'Sweet Gelato Tea Lounge',
-        'location': {
-            'address1': '979 Story Rd',
-            'address2': 'Ste 7084',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95122',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['979 Story Rd', 'Ste 7084', 'San Jose, CA 95122'],
-        'lat': 37.3313361147367,
-        'lng': -121.857381949738,
-        'price': '$$',
-        'phone': '+14082759999',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg',
-        'categories': ['bubbletea', 'coffee'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/Cekx5mRqcW1jK6u2KqMC0w/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/mQhdBQkPdTnOmN2FhfMyVw/o.jpg'
-        ],
-        'hours': {'is_overnight': True, 'start': '1700', 'end': '0100', 'day': 0}
-    },
-    {
         # 'id': 'vgseXwt9c975jus_PBM-zA',
         'name': 'Anton SV Pâtisserie',
         'location': {
@@ -2083,35 +1735,6 @@ bizzies = [
             'https://s3-media4.fl.yelpcdn.com/bphoto/faDpVegSw1nPGuMYbxOFRA/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '0500', 'end': '2200', 'day': 0}
-    },
-    {
-        # 'id': 'lPkQK2N4g658SR_7BBxeaQ',
-        'name': "Peters' Bakery",
-        'location': {
-            'address1': '3108 Alum Rock Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95127',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['3108 Alum Rock Ave', 'San Jose, CA 95127'],
-        'lat': 37.36573,
-        'lng': -121.82734,
-        'price': '$',
-        'phone': '+14082583529',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/QDjFZWIqoF16igCnvUPwdw/o.jpg',
-        'categories': ['bakeries', 'donuts'],
-        'transactions': [],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/QDjFZWIqoF16igCnvUPwdw/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/bt6iSI9vgTZWxIr5w2Gumw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/mAIpm2TK7DsmQs-H6q8iBw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0630', 'end': '1800', 'day': 1}
     },
     {
         # 'id': 'k901qMpKUjNES5mFJOComA',
@@ -2634,35 +2257,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 1}
     },
     {
-        # 'id': 'rSe_sHr66XDGGIzjQO9K3w',
-        'name': 'Sliders Burgers',
-        'location': {
-            'address1': '1645 W San Carlos St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95128',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1645 W San Carlos St', 'San Jose, CA 95128'],
-        'lat': 37.323965,
-        'lng': -121.92096,
-        'price': '$$',
-        'phone': '+14082984340',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/rdlckhxgIMwKhrxna9IwuQ/o.jpg',
-        'categories': ['burgers', 'hotdogs', 'tradamerican'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/rdlckhxgIMwKhrxna9IwuQ/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/ZMMlEEgSYT6j0H7e771W7g/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/7jQxMVh14S-7YN91dUwIng/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 1}
-    },
-    {
         # 'id': 'jw7wkWmTX04fRYLcp9vlPQ',
         'name': "Falafel's Drive-In",
         'location': {
@@ -2808,35 +2402,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1730', 'day': 1}
     },
     {
-        # 'id': 'baEPmtktizrZDmH4p_OJ4A',
-        'name': 'Shuei-Do Manju Shop',
-        'location': {
-            'address1': '217 Jackson St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95112',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['217 Jackson St', 'San Jose, CA 95112'],
-        'lat': 37.34935,
-        'lng': -121.89401,
-        'price': '$',
-        'phone': '+14082944148',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/1uHzL2BYW2AlqfMlrfZmFA/o.jpg',
-        'categories': ['bakeries', 'japanese'],
-        'transactions': [],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/1uHzL2BYW2AlqfMlrfZmFA/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/66Kck-tTOB3QQdZ-7ryyxw/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/9NPUAxsDNe6FooPshx19fg/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1000', 'end': '1600', 'day': 3}
-    },
-    {
         # 'id': 'cCKea_ufuGcxI14fhe84vw',
         'name': 'Cha Cha Sushi',
         'location': {
@@ -2866,91 +2431,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'jfMK6n5Mln7ilco6r2YXoA',
-        'name': 'QPOT',
-        'location': {
-            'address1': '1610 E Capitol Expy',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95121',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1610 E Capitol Expy', 'San Jose, CA 95121'],
-        'lat': 37.305813,
-        'lng': -121.812039,
-        'price': '$$',
-        'phone': '+16692343095',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/n2flHH6CC6OVTNULFDLLDQ/o.jpg',
-        'categories': ['korean',  'bbq'],
-        'transactions': ['pickup'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/n2flHH6CC6OVTNULFDLLDQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/wFRgyzSt0JzQUPgrEhouCw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/MBFIClNpn3vmfp6t-5_LGQ/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
-    },
-    {
-        # 'id': 'TQEfj1-QhyWCJ29u3l9Kjw',
-        'name': 'Gen Korean BBQ House',
-        'location': {
-            'address1': '1628 Hostetter Rd',
-            'address2': 'Ste F',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95131',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1628 Hostetter Rd', 'Ste F', 'San Jose, CA 95131'],
-        'lat': 37.3872324410459,
-        'lng': -121.885422354631,
-        'price': '$$',
-        'phone': '+14084772773',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/-g5mYPUvxsX7hfor95Iq-Q/o.jpg',
-        'categories': ['korean', 'bbq'],
-        'transactions': [],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/-g5mYPUvxsX7hfor95Iq-Q/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1030', 'end': '2300', 'day': 0}
-    },
-    {
-        # 'id': 'jw7wkWmTX04fRYLcp9vlPQ',
-        'name': "Falafel's Drive-In",
-        'location': {
-            'address1': '2301 Stevens Creek Blvd',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95128',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['2301 Stevens Creek Blvd', 'San Jose, CA 95128'],
-        'lat': 37.323719276993586,
-        'lng': -121.93508055499373,
-        'price': '$$',
-        'phone': '+14082947886',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/9oY9kB9GMCsd7dGWB_ttfg/o.jpg',
-        'categories': ['hotdogs'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/9oY9kB9GMCsd7dGWB_ttfg/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/blNelTuTid-WCnQdmpCMzQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/mHmUEG_gdQWBU0I7ymM07A/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1000', 'end': '2000', 'day': 0}
-    },
-    {
         # 'id': 'ZMdteLcR8y2N-oJAd9cmEg',
         'name': "Souvlaki's Greek Skewers",
         'location': {
@@ -2978,35 +2458,6 @@ bizzies = [
             'https://s3-media1.fl.yelpcdn.com/bphoto/VEKytZ3kyGOqx1eTRanN7g/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2030', 'day': 0}
-    },
-    {
-        # 'id': 'rjUOwXNxsg0tstFssAjfsQ',
-        'name': 'LUNA Mexican Kitchen - The Alameda',
-        'location': {
-            'address1': '1495 The Alameda',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95126',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1495 The Alameda', 'San Jose, CA 95126'],
-        'lat': 37.33399,
-        'lng': -121.915279,
-        'price': '$$',
-        'phone': '+14083202654',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/JjzG0auXHdUing7hHn7keQ/o.jpg',
-        'categories': ['mexican', 'breakfast_brunch', 'vegetarian'],
-        'transactions': ['pickup'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/JjzG0auXHdUing7hHn7keQ/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/vs_mNhVvxbuREFkLbH8A2A/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/em0WYcE5FoREmHGMLR1zcw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
         # 'id': 'CWb2lApN-MvcmzdPp_9jpA',
@@ -3094,35 +2545,6 @@ bizzies = [
             'https://s3-media2.fl.yelpcdn.com/bphoto/Ft4nSk8x726ZuJhhA2b2EA/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 1}
-    },
-    {
-        # 'id': 'i50BEr4Pq6-D8tmsegmVyA',
-        'name': 'The Table',
-        'location': {
-            'address1': '1110 Willow St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95125',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1110 Willow St', 'San Jose, CA 95125'],
-        'lat': 37.308203,
-        'lng': -121.901284,
-        'price': '$$',
-        'phone': '+14086387911',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/KMiVsvM886v1DpX7Ic9oxg/o.jpg',
-        'categories': ['newamerican', 'breakfast_brunch', 'salad'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/KMiVsvM886v1DpX7Ic9oxg/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/cmtZvexB_X4zSFsk8XcDSA/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/2X-lw7TSzGrTkCdhxJWTnw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 2}
     },
     {
         # 'id': 'OGwQYjE3ThC_gF92mHO0_g',
@@ -3241,35 +2663,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1500', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'OeePb_OQIgCnt3nO53XEtA',
-        'name': 'Claw Shack',
-        'location': {
-            'address1': '1696 Berryessa Rd',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95133',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1696 Berryessa Rd', 'San Jose, CA 95133'],
-        'lat': 37.3732322,
-        'lng': -121.873416,
-        'price': '$$',
-        'phone': '+14086496741',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/eXg0Lo6O-3co2BERIPBJlw/o.jpg',
-        'categories': ['seafood', 'chicken_wings'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/eXg0Lo6O-3co2BERIPBJlw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/lzOrPJKjYOe50s0syDcCCQ/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/09J7eoBn26L_j-ekWNV72w/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1500', 'end': '2000', 'day': 1}
-    },
-    {
         # 'id': 'QJJd1N0QjQgUtv4hIuhqGg',
         'name': 'Taurinus Brazilian Steakhouse',
         'location': {
@@ -3357,35 +2750,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'cCKea_ufuGcxI14fhe84vw',
-        'name': 'Cha Cha Sushi',
-        'location': {
-            'address1': '547 W Capitol Expy',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95136',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['547 W Capitol Expy', 'San Jose, CA 95136'],
-        'lat': 37.2758545677726,
-        'lng': -121.852952245369,
-        'price': '$$',
-        'phone': '+14082652416',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/532FKhWbs6msCiuDjU3NwA/o.jpg',
-        'categories': ['sushi', 'japanese'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/532FKhWbs6msCiuDjU3NwA/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/UVGds0XA_DTvRRs4F6FGZA/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/Vh2q3mQ-IFmYQ_WYV9H9kQ/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
-    },
-    {
         # 'id': '73WEetznHbLA6sp0k9rzQA',
         'name': 'Thai Elephant Express',
         'location': {
@@ -3442,64 +2806,6 @@ bizzies = [
             'https://s3-media3.fl.yelpcdn.com/bphoto/Llr_BXhr4gGgZDbXsiBUpQ/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
-    },
-    {
-        # 'id': 'srBchC4ngf1sRefmSGseJA',
-        'name': 'Walia Ethiopian Cuisine',
-        'location': {
-            'address1': '2208 Business Cir',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95128',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['2208 Business Cir', 'San Jose, CA 95128'],
-        'lat': 37.322462,
-        'lng': -121.932442,
-        'price': '$$',
-        'phone': '+14086455001',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/ktU3fsSWjKm5vwoKMWR55Q/o.jpg',
-        'categories': ['ethiopian', 'gluten_free', 'vegetarian'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/ktU3fsSWjKm5vwoKMWR55Q/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/ydxNEFl15uMMmy4XdkYOgg/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/VPhnp1-N1IrToUsuka7K-Q/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1130', 'end': '1500', 'day': 2}
-    },
-    {
-        # 'id': 'rjUOwXNxsg0tstFssAjfsQ',
-        'name': 'LUNA Mexican Kitchen - The Alameda',
-        'location': {
-            'address1': '1495 The Alameda',
-            'address2': '',
-            'address3': '',
-            'city': 'San Jose',
-            'zip_code': '95126',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1495 The Alameda', 'San Jose, CA 95126'],
-        'lat': 37.33399,
-        'lng': -121.915279,
-        'price': '$$',
-        'phone': '+14083202654',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/JjzG0auXHdUing7hHn7keQ/o.jpg',
-        'categories': ['mexican', 'breakfast_brunch', 'vegetarian'],
-        'transactions': ['pickup'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/JjzG0auXHdUing7hHn7keQ/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/vs_mNhVvxbuREFkLbH8A2A/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/em0WYcE5FoREmHGMLR1zcw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
         # 'id': '7juJxsuoqYvWa9om6EcxsQ',
@@ -3676,35 +2982,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'Qfc4w5l92Uvq9BsrP15O4A',
-        'name': 'Arizmendi Bakery',
-        'location': {
-            'address1': '3265 Lakeshore Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94610',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Lake Park Ave & Trestle Glen Rd'
-        },
-        'address': ['3265 Lakeshore Ave', 'Oakland, CA 94610'],
-        'lat': 37.8106889,
-        'lng': -122.2448111,
-        'price': '$',
-        'phone': '+15102688849',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/psuH6qtkRl3j3UiJyFnxng/o.jpg',
-        'categories': ['bakeries', 'pizza', 'coffee'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/psuH6qtkRl3j3UiJyFnxng/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/L2-9HTKXhrv1_51QjPLtgQ/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/Xl6ONENmIm-XiHBKyXpYLw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 1}
-    },
-    {
         # 'id': 'CIrXV1DVcW9LmwINg4bH6A',
         'name': 'La Farine',
         'location': {
@@ -3792,64 +3069,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1330', 'day': 0}
     },
     {
-        # 'id': 'WG85lZkUdYRunbz0jV5lZQ',
-        'name': 'Vegan Donut Gelato',
-        'location': {
-            'address1': '411 E 18th St',
-            'address2': 'Ste B',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94606',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '5th Ave & Park Blvd'
-        },
-        'address': ['411 E 18th St', 'Ste B', 'Oakland, CA 94606'],
-        'lat': 37.798872,
-        'lng': -122.250844,
-        'price': '$',
-        'phone': '+15108398748',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/rek6OIt6Jbt1hIrKnQliFw/o.jpg',
-        'categories': ['donuts', 'vietnamese'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/rek6OIt6Jbt1hIrKnQliFw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/BX513ZZhUuQah2UdU4-Iwg/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/5lrfzo1zRHT0CmPbnejZ-Q/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 3}
-    },
-    {
-        # 'id': 'ACQxcER6RDR2NOLVu0DHEg',
-        'name': 'Fentons Creamery',
-        'location': {
-            'address1': '4226 Piedmont Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94611',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Glenwood Ave & Ridgeway Ave'
-        },
-        'address': ['4226 Piedmont Ave', 'Oakland, CA 94611'],
-        'lat': 37.8278770446777,
-        'lng': -122.250015258789,
-        'price': '$$',
-        'phone': '+15106587000',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/Qdj1bqEiVuxnWe-WL9a0FA/o.jpg',
-        'categories': ['icecream', 'tradamerican', 'desserts'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/Qdj1bqEiVuxnWe-WL9a0FA/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/eB7S9ypz-QZoXyUXTQiGpg/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/iJyFgrmVxJm7X2Msl5u0OA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
-    },
-    {
         # 'id': 'hfVYUuJRS7Q4rgNVHCB0Rg',
         'name': 'Colonial Donuts',
         'location': {
@@ -3906,35 +3125,6 @@ bizzies = [
             'https://s3-media2.fl.yelpcdn.com/bphoto/X1T2Lj3y6HN88YolcyO6kA/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2000', 'day': 0}
-    },
-    {
-        # 'id': 'kIM6q7OiC_olzruHoVMMSw',
-        'name': 'Yokee Milk Tea',
-        'location': {
-            'address1': '1728 Franklin St',
-            'address2': 'Ste A',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94612',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '19th St & 17th St'
-        },
-        'address': ['1728 Franklin St', 'Ste A', 'Oakland, CA 94612'],
-        'lat': 37.8063683,
-        'lng': -122.2681935,
-        'price': '$$',
-        'phone': '+15108363288',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/69KpX11ti3F4JpjusqfrEg/o.jpg',
-        'categories': ['bubbletea', 'juicebars'],
-        'transactions': ['delivery', 'pickup'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/69KpX11ti3F4JpjusqfrEg/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/eTwcgnhF9RjeZzsmSPNIZA/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/l32xs6itEhydAmcHHD-FdQ/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '1800', 'day': 0}
     },
     {
         # 'id': 'a9NgquuCzte0YT7M9VpLeA',
@@ -4167,35 +3357,6 @@ bizzies = [
             'https://s3-media4.fl.yelpcdn.com/bphoto/JsNvGguJYOCQxTSzuOlfsA/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 1}
-    },
-    {
-        # 'id': 'a9NgquuCzte0YT7M9VpLeA',
-        'name': 'Modigliani Cafe',
-        'location': {
-            'address1': '3208-3210 Grand Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94610',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['3208-3210 Grand Ave', 'Oakland, CA 94610'],
-        'lat': 37.8115099,
-        'lng': -122.2476793,
-        'price': '$$',
-        'phone': '+15109861599',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/l-eDG9nXbzPdoTyd0bDPhg/o.jpg',
-        'categories': ['juicebars', 'cafes'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/l-eDG9nXbzPdoTyd0bDPhg/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/-xUpcLgdoY8GrUs9X22Siw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/NmLOr6Fhncxa4TfVZ-pNyA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
         # 'id': 'LHd3X9Of8ymOE5X3_fd0eA',
@@ -4604,64 +3765,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 1}
     },
     {
-        # 'id': 'NQVqMCoY-Krhw8DY4UnJKw',
-        'name': 'Ohgane Korean BBQ',
-        'location': {
-            'address1': '3915 Broadway',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94611',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '38th St & 40th St'
-        },
-        'address': ['3915 Broadway', 'Oakland, CA 94611'],
-        'lat': 37.82721,
-        'lng': -122.25735,
-        'price': '$$$',
-        'phone': '+15105948300',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/SThvsH-vqyk76dpyhyEnRA/o.jpg',
-        'categories': ['korean', 'bbq'],
-        'transactions': ['pickup'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/SThvsH-vqyk76dpyhyEnRA/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/GGZZFfKoHPHSlulAKO-FMA/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/sCA6pBGo50Jk5CrbXtLpMA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 0}
-    },
-    {
-        # 'id': '_mFhusiDiacM8w-7Hea5bg',
-        'name': 'Jong Ga House',
-        'location': {
-            'address1': '372 Grand Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94610',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Staten Ave & Ellita Ave'
-        },
-        'address': ['372 Grand Ave', 'Oakland, CA 94610'],
-        'lat': 37.8089712,
-        'lng': -122.2547232,
-        'price': '$$',
-        'phone': '+15104447658',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/krIokJ-WUcFXSER1QBgXIw/o.jpg',
-        'categories': ['korean', 'bbq'],
-        'transactions': ['restaurant_reservation', 'pickup', 'delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/krIokJ-WUcFXSER1QBgXIw/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/wMdbnZungmpqVkSxW05XcQ/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/f96wOkCSpwHviMDT4Jo6dQ/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
-    },
-    {
         # 'id': '53BGTRdv8vnn6lwjMsjDUw',
         'name': "Wally's Cafe",
         'location': {
@@ -4778,35 +3881,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'Qfc4w5l92Uvq9BsrP15O4A',
-        'name': 'Arizmendi Bakery',
-        'location': {
-            'address1': '3265 Lakeshore Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94610',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Lake Park Ave & Trestle Glen Rd'
-        },
-        'address': ['3265 Lakeshore Ave', 'Oakland, CA 94610'],
-        'lat': 37.8106889,
-        'lng': -122.2448111,
-        'price': '$',
-        'phone': '+15102688849',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/psuH6qtkRl3j3UiJyFnxng/o.jpg',
-        'categories': ['bakeries', 'pizza', 'coffee'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/psuH6qtkRl3j3UiJyFnxng/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/L2-9HTKXhrv1_51QjPLtgQ/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/Xl6ONENmIm-XiHBKyXpYLw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 1}
-    },
-    {
         # 'id': 'JsqK99Ka8gIgu1ZtzDupRg',
         'name': "Zachary's Chicago Pizza",
         'location': {
@@ -4834,35 +3908,6 @@ bizzies = [
             'https://s3-media4.fl.yelpcdn.com/bphoto/akTKIsCT0H6rVbCt6PibYA/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
-    },
-    {
-        # 'id': 'nnjQ8m6oTbQbr5_zUhCiDQ',
-        'name': 'Souley Vegan',
-        'location': {
-            'address1': '301 Broadway',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94607',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '3rd St'
-        },
-        'address': ['301 Broadway', 'Oakland, CA 94607'],
-        'lat': 37.79702,
-        'lng': -122.2761,
-        'price': '$$',
-        'phone': '+15109221615',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/qbuzOt1ng6XIqjqk3d8oaA/o.jpg',
-        'categories': ['vegan', 'salad', 'burgers'],
-        'transactions': ['delivery', 'pickup'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/qbuzOt1ng6XIqjqk3d8oaA/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/6r4YTSgHzOsTW0BaDYqw8A/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/Hq68935x6CkQVxS9LzCt7A/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 1}
     },
     {
         # 'id': '6iT-NihtnFnDh8JOYxRvDQ',
@@ -4894,64 +3939,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'UHFjEP5dVn4wqcjt7ByUog',
-        'name': 'Cholita Linda',
-        'location': {
-            'address1': '4923 Telegraph Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94609',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '51st St & 49th St'
-        },
-        'address': ['4923 Telegraph Ave', 'Oakland, CA 94609'],
-        'lat': 37.8364704,
-        'lng': -122.2625152,
-        'price': '$$',
-        'phone': '+15106792423',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/wVh5vn0PoNi8OhfEOjMo2A/o.jpg',
-        'categories': ['latin', 'sandwiches', 'tacos'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/wVh5vn0PoNi8OhfEOjMo2A/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/Hdqxyis9kmVL9CFRloa67g/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/F0FiooJ4uilQMio1nkINXA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
-    },
-    {
-        # 'id': 'PkLfjhJ_XExjwARO1RkQIw',
-        'name': 'Bakesale Betty',
-        'location': {
-            'address1': '5098 Telegraph Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94609',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '51st St & 49th St'
-        },
-        'address': ['5098 Telegraph Ave', 'Oakland, CA 94609'],
-        'lat': 37.837041785668,
-        'lng': -122.26217067875,
-        'price': '$$',
-        'phone': '+15109851213',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/pYQzgOSURwB5SYzgaf-PxQ/o.jpg',
-        'categories': ['bakeries', 'sandwiches', 'tradamerican'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/pYQzgOSURwB5SYzgaf-PxQ/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/QQHIsBY4q9Pw_4ci9XDuMw/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/-fYVXmWzyqULRei59R2yog/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1030', 'end': '1400', 'day': 3}
-    },
-    {
         # 'id': 'PGGtbjr8m4V54tWMgqYxmQ',
         'name': 'Marica',
         'location': {
@@ -4979,35 +3966,6 @@ bizzies = [
             'https://s3-media1.fl.yelpcdn.com/bphoto/DumP47W52KNEshB5Vxj-ew/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2100', 'day': 1}
-    },
-    {
-        # 'id': 'DceTpSF9RJ9PBvfX-_EImQ',
-        'name': 'Shandong Restaurant',
-        'location': {
-            'address1': '328 10th St',
-            'address2': 'Ste 101',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94607',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Webster St & Harrison St'
-        },
-        'address': ['328 10th St', 'Ste 101', 'Oakland, CA 94607'],
-        'lat': 37.800607171031,
-        'lng': -122.26986193448,
-        'price': '$$',
-        'phone': '+15108392299',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/DKHAlj5Mpqs1HjZt36XsDg/o.jpg',
-        'categories': ['chinese', 'seafood', 'noodles'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/DKHAlj5Mpqs1HjZt36XsDg/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/pEesHevaSJ9txbagz5xNRA/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/4UYQChtTCwGfVqXN0bJK6A/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 1}
     },
     {
         # 'id': 'oT08T3Vpn1I7jDmrBBRMTw',
@@ -5095,64 +4053,6 @@ bizzies = [
             'https://s3-media2.fl.yelpcdn.com/bphoto/EME2CoDSTvNc7LO2cQKEGw/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2030', 'day': 0}
-    },
-    {
-        # 'id': 'NqSVQ_DJZpVmCbJHaFcIsQ',
-        'name': 'Geta',
-        'location': {
-            'address1': '165 41st St',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94611',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Piedmont Ave & Howe St'
-        },
-        'address': ['165 41st St', 'Oakland, CA 94611'],
-        'lat': 37.82658,
-        'lng': -122.25293,
-        'price': '$$',
-        'phone': '+15106534643',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/vRR7honMw5Nz5gqnAm6Xgw/o.jpg',
-        'categories': ['japanese', 'sushi'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/vRR7honMw5Nz5gqnAm6Xgw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/cnkEI5NrttJQJA7FMwKLNw/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/cTqCsr75ImEC2IsVm7s5WA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 1}
-    },
-    {
-        # 'id': 'cgImAqtrpVg7hN_6lsFJrQ',
-        'name': 'Farmhouse Kitchen Thai Cuisine',
-        'location': {
-            'address1': '336 Water St',
-            'address2': '',
-            'address3': '',
-            'city': 'Oakland',
-            'zip_code': '94607',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['336 Water St', 'Oakland, CA 94607'],
-        'lat': 37.794215,
-        'lng': -122.275465,
-        'price': '$$$',
-        'phone': '+15104190541',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/htkVpfws9qBrWZgkoLrtEg/o.jpg',
-        'categories': ['thai', 'cocktailbars', 'desserts'],
-        'transactions': ['restaurant_reservation', 'delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/htkVpfws9qBrWZgkoLrtEg/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/mJoSrX6X42mxFsfQxiUv4Q/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/qDC84iAyIplZE2b0w-cy4A/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '1330', 'day': 0}
     },
     {
         # 'id': 'Jlt5w5ItA8ugiXif2VVQ5g',
@@ -5472,35 +4372,6 @@ bizzies = [
             'https://s3-media1.fl.yelpcdn.com/bphoto/mqhdQZJnqoyuICKNYfUspg/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2000', 'day': 0}
-    },
-    {
-        # 'id': 'ri7UUYmx21AgSpRsf4-9QA',
-        'name': 'Tartine Bakery',
-        'location': {
-            'address1': '600 Guerrero St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94110',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '19th St & 18th St'
-        },
-        'address': ['600 Guerrero St', 'San Francisco, CA 94110'],
-        'lat': 37.76131,
-        'lng': -122.42431,
-        'price': '$$',
-        'phone': '+14154872600',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/QRbC0TQ2zxTKXHt5NfpFCw/o.jpg',
-        'categories': ['bakeries', 'cafes', 'desserts'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/QRbC0TQ2zxTKXHt5NfpFCw/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/_poQka9cZ-CzxWR0BNvcVQ/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/4lEDYdjdF0P-beJD8M9sJw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 0}
     },
     {
         # 'id': 'ttarnopezxmp2ROB1N2PaA',
@@ -5880,35 +4751,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'ri7UUYmx21AgSpRsf4-9QA',
-        'name': 'Tartine Bakery',
-        'location': {
-            'address1': '600 Guerrero St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94110',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '19th St & 18th St'
-        },
-        'address': ['600 Guerrero St', 'San Francisco, CA 94110'],
-        'lat': 37.76131,
-        'lng': -122.42431,
-        'price': '$$',
-        'phone': '+14154872600',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/QRbC0TQ2zxTKXHt5NfpFCw/o.jpg',
-        'categories': ['bakeries', 'cafes', 'desserts'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/QRbC0TQ2zxTKXHt5NfpFCw/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/_poQka9cZ-CzxWR0BNvcVQ/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/4lEDYdjdF0P-beJD8M9sJw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 0}
-    },
-    {
         # 'id': 'M0JTO3oyu6gxh1mfFjU-dA',
         'name': 'San Tung',
         'location': {
@@ -5965,35 +4807,6 @@ bizzies = [
             'https://s3-media1.fl.yelpcdn.com/bphoto/ufI5DlPOIjikLEXg8OHGKQ/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1900', 'day': 2}
-    },
-    {
-        # 'id': 'M0JTO3oyu6gxh1mfFjU-dA',
-        'name': 'San Tung',
-        'location': {
-            'address1': '1031 Irving St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94122',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '12th Ave & 11th Ave'
-        },
-        'address': ['1031 Irving St', 'San Francisco, CA 94122'],
-        'lat': 37.76378306790313,
-        'lng': -122.46900735179602,
-        'price': '$$',
-        'phone': '+14152420828',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/rYZbin0NWrbrs0TYzI8rYA/o.jpg',
-        'categories': ['chinese', 'chicken_wings', 'noodles'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/rYZbin0NWrbrs0TYzI8rYA/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/36vpZ6_gwQdrKUT86uNBzw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/GNpK6AivZ8IjlYXztqLWhg/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
         # 'id': '-sg6DqQNGyTMt0MHoY7diQ',
@@ -6117,35 +4930,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': '_RysiB_bqTgCBmG8W96H4A',
-        'name': 'In-N-Out Burger',
-        'location': {
-            'address1': '333 Jefferson',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94133',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Leavenworth St & Jones St'
-        },
-        'address': ['333 Jefferson', 'San Francisco, CA 94133'],
-        'lat': 37.80775,
-        'lng': -122.418554,
-        'price': '$',
-        'phone': '+18007861000',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/9i2lzy5QbmZklr52DH_xOQ/o.jpg',
-        'categories': ['hotdogs', 'burgers'],
-        'transactions': [],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/9i2lzy5QbmZklr52DH_xOQ/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/1V8Kx3Iditik25GdA05n5A/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/GnrOr1mUDgsuR7AJWApz4A/o.jpg'
-        ],
-        'hours': {'is_overnight': True, 'start': '1030', 'end': '0100', 'day': 0}
-    },
-    {
         # 'id': 'gR9DTbKCvezQlqvD7_FzPw',
         'name': 'North India Restaurant',
         'location': {
@@ -6260,35 +5044,6 @@ bizzies = [
             'https://s3-media4.fl.yelpcdn.com/bphoto/u_kkGKarL_H5SX0JB1pQ0w/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
-    },
-    {
-        # 'id': 'HHtpR0RslupSQ99GIIwW5A',
-        'name': 'Marufuku Ramen',
-        'location': {
-            'address1': '1581 Webster St',
-            'address2': 'Ste 235',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94115',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Post St & Geary Blvd'
-        },
-        'address': ['1581 Webster St', 'Ste 235', 'San Francisco, CA 94115'],
-        'lat': 37.78511637816802,
-        'lng': -122.43200834862841,
-        'price': '$$',
-        'phone': '+14158729786',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/ouK2VmW0SrI70jsJpTxJhw/o.jpg',
-        'categories': ['ramen'],
-        'transactions': ['delivery', 'pickup'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/ouK2VmW0SrI70jsJpTxJhw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/uO8R6PJKYUDJn3fMtUp9eQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/mihLVvjk_VzecO5YQq5TUA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
         # 'id': 'CYttYTEiQuhSfo3SEh79fA',
@@ -6523,35 +5278,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'PTFxtXS47ZVRCdZIrEWvGw',
-        'name': 'Golden Boy Pizza',
-        'location': {
-            'address1': '542 Green St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94133',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Jasper Pl & Bannam Pl'
-        },
-        'address': ['542 Green St', 'San Francisco, CA 94133'],
-        'lat': 37.7997956,
-        'lng': -122.4080729,
-        'price': '$',
-        'phone': '+14159829738',
-        'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/SfosPh2iWkVTMC4LLVIL8g/o.jpg',
-        'categories': ['pizza', 'italian'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media1.fl.yelpcdn.com/bphoto/SfosPh2iWkVTMC4LLVIL8g/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/Fu6NkLQGlgmiOOr-vHbNPg/o.jpg',
-            'https://s3-media4.fl.yelpcdn.com/bphoto/IqWF-Qn2EPdwkEDi4Y_lDA/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1130', 'end': '2030', 'day': 0}
-    },
-    {
         # 'id': 'yyi2GpG_p7TX7XAq_eHSZA',
         'name': 'Boudin',
         'location': {
@@ -6697,35 +5423,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'oT08T3Vpn1I7jDmrBBRMTw',
-        'name': 'House of Prime Rib',
-        'location': {
-            'address1': '1906 Van Ness Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94109',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': ''
-        },
-        'address': ['1906 Van Ness Ave', 'San Francisco, CA 94109'],
-        'lat': 37.79338,
-        'lng': -122.4225,
-        'price': '$$$',
-        'phone': '+14158854605',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/HLrjaMoAgYSac0vx71YpCA/o.jpg',
-        'categories': ['tradamerican', 'steak'],
-        'transactions': [],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/HLrjaMoAgYSac0vx71YpCA/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/pBewcPxzGqOQCoqFg7OSiw/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/3S2Kl9ZOS0icGjiwcHRWMw/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1700', 'end': '2200', 'day': 0}
-    },
-    {
         # 'id': 'ciEDsTWhajcdL3KuJqBRlw',
         'name': 'Espetus Churrascaria',
         'location': {
@@ -6813,35 +5510,6 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2300', 'day': 1}
     },
     {
-        # 'id': 'CYttYTEiQuhSfo3SEh79fA',
-        'name': 'Shizen Vegan Sushi Bar & Izakaya',
-        'location': {
-            'address1': '370 14th St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94103',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Julian Ave & Stevenson St'
-        },
-        'address': ['370 14th St', 'San Francisco, CA 94103'],
-        'lat': 37.768326,
-        'lng': -122.421682,
-        'price': '$$',
-        'phone': '+14156785767',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/-1BWnyjrsDmTmXH_3wZl_w/o.jpg',
-        'categories': ['sushi', 'vegan' ],
-        'transactions': ['restaurant_reservation'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/-1BWnyjrsDmTmXH_3wZl_w/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/txvWg3lI3NE_e0_KKVJlGw/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/VecBZXh1-r9XWpJ8oZPVVg/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1700', 'end': '2100', 'day': 0}
-    },
-    {
         # 'id': '0mNzmmh1mrdh5Cpg2QUBiw',
         'name': 'Lapisara Eatery',
         'location': {
@@ -6898,98 +5566,6 @@ bizzies = [
             'https://s3-media3.fl.yelpcdn.com/bphoto/e9FM-U-GHRfJjZM_fBAstg/o.jpg'
         ],
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2030', 'day': 0}
-    },
-    {
-        # 'id': '8kck3-K4zYKTJbJko0JlXQ',
-        'name': 'Farmhouse Kitchen Thai Cuisine',
-        'location': {
-            'address1': '710 Florida St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94110',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': '19th St & 20th St'
-        },
-        'address': ['710 Florida St', 'San Francisco, CA 94110'],
-        'lat': 37.760192883932795,
-        'lng': -122.4114188698492,
-        'price': '$$',
-        'phone': '+14158142920',
-        'url': 'https://s3-media4.fl.yelpcdn.com/bphoto/kUlEaPpv0JGlHG_nrPr7wQ/o.jpg',
-        'categories': ['thai'],
-        'transactions': ['pickup', 'restaurant_reservation', 'delivery'],
-        'photos': [
-            'https://s3-media4.fl.yelpcdn.com/bphoto/kUlEaPpv0JGlHG_nrPr7wQ/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/eojZhnkq34KkoelG1bj1iw/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/ofIPnBHwHF9lvtdHznG40Q/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1100', 'end': '1400', 'day': 0}
-    },
-    {
-        # 'id': 'ssI9ivccrDBT-RH_52fPBQ',
-        'name': 'Greens Restaurant',
-        'location': {
-            'address1': '2 Marina Blvd',
-            'address2': 'Bldg A',
-            'address3': 'Fort Mason',
-            'city': 'San Francisco',
-            'zip_code': '94123',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Beach St & Buchanan St'
-        },
-        'address': [
-            '2 Marina Blvd',
-            'Bldg A',
-            'Fort Mason',
-            'San Francisco, CA 94123'
-        ],
-        'lat': 37.80668033302732,
-        'lng': -122.43210032743212,
-        'price': '$$$',
-        'phone': '+14157716222',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/eKP-qx_qaKXcrsiNNxM6Ng/o.jpg',
-        'categories': ['vegetarian', 'vegan', 'gluten_free'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/eKP-qx_qaKXcrsiNNxM6Ng/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/XGZqfWP-a_SER5qUYaX8rQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/jBju8P2c-G0Fpi3h6hsfYg/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 1}
-    },
-    {
-        # 'id': 'hqQoVK0vadOX7_4gN1sh3g',
-        'name': 'Saigon Sandwich',
-        'location': {
-            'address1': '560 Larkin St',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94102',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Eddy St & Turk St'
-        },
-        'address': ['560 Larkin St', 'San Francisco, CA 94102'],
-        'lat': 37.7831519576568,
-        'lng': -122.417318022037,
-        'price': '$',
-        'phone': '+14154745698',
-        'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/lE_HHijKAKt08JIeRHVh7w/o.jpg',
-        'categories': ['vietnamese', 'sandwiches'],
-        'transactions': ['delivery'],
-        'photos': [
-            'https://s3-media3.fl.yelpcdn.com/bphoto/lE_HHijKAKt08JIeRHVh7w/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/9G1UNYxeLay6qcWF7bc4xQ/o.jpg',
-            'https://s3-media3.fl.yelpcdn.com/bphoto/kcaDQeG2wR2hHSt3AbhWRQ/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '0700', 'end': '1700', 'day': 0}
     },
     {
         # 'id': 'z9CN58fSrA46ggyb6OnCnQ',
