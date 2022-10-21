@@ -36,7 +36,7 @@ export default function Search({ data }) {
 
     // console.log('this is searchStuff', searchStuff);
     let cat;
-
+    let location;
 
   // console.log('this is the data', data)
 
@@ -44,6 +44,7 @@ export default function Search({ data }) {
     if (showMenu) return;
     setShowMenu(true);
   };
+
 
   useEffect(() => {
     if (!showMenu) return;
@@ -58,8 +59,16 @@ export default function Search({ data }) {
   }, [showMenu]);
 
   /* -------USE EFFECT:get all bizzies------- */
+
+  if (searchStuff) {
+    cat = searchStuff.split('?type=').join('').split('&')[0];
+    location = searchStuff.split('&loc=')[1];
+    // console.log('heres my cat',cat)
+  }
+
   useEffect(() => {
-    dispatch(getAllBiz())
+    if (location) dispatch(getAllBiz(location))
+    else dispatch(getAllBiz())
   }, [dispatch])
 
 
@@ -67,13 +76,9 @@ export default function Search({ data }) {
   const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name']);
 
   // const res = searchFunc.search(query)
-  if (searchStuff) {
-    cat = searchStuff.split('?type=').join('');
 
-    // console.log('heres my cat',cat)
-  }
 
-  const res = searchFunc.search(cat ?? query)
+  let res = searchFunc.search(cat ?? query)
 //   console.log('using search', res)
 
   const handleSubmit = (e) => {
