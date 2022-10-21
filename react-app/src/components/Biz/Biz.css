@@ -24,6 +24,8 @@
   /* max-height: 275px; */
   border-bottom: #ebebeb 1px solid;
   padding: 24px;
+  position: relative;
+  z-index: 0;
 }
 
 .biz-box:hover {
@@ -79,6 +81,7 @@
 
 #biz-list {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 #biz-open {
@@ -164,14 +167,17 @@
   background-color: rgb(240, 240, 240);
   border: none;
   border-radius: 4px;
+  padding: 3px;
   margin-right: 8px;
-  height: 20px;
+  height: 18px;
 
   position: relative;
+  z-index: 10;
 }
 
 .biz-type-butts:hover {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(220, 220, 220);
+  text-decoration: none;
 }
 
 #biz-type-loc {
@@ -191,7 +197,7 @@
   display: block;
   background-color: white;
   border: none;
-  width: 144px;
+  width: 160px;
 
   text-align: left;
   align-items: center;
@@ -215,7 +221,7 @@
   position: absolute;
   background-color: white;
   border-radius: 4px;
-  width: 175px;
+  width: 190px;
   margin-top: 3px;
 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -278,7 +284,7 @@
 
   border:rgb(2, 122, 151) 1px solid;
   border-radius: 16px;
-  margin-right: 8px;
+  margin: 4px;
   padding: 6px 12px;
 
   color:rgb(2, 122, 151);
@@ -294,31 +300,52 @@
   background-color: rgb(225, 225, 225);
   border:rgb(204, 204, 204) 1px solid;
   border-radius: 16px;
-  margin-right: 8px;
+  margin: 4px;
   padding: 6px 12px;
 }
 
 
 /* ***********************PAGINATION*********************** */
-.pagination-container {
+.paginate-box {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
   border-bottom: 1px solid #ebebeb;
-  width: 50vw;
-  max-width: 888px;
+  max-width: 800px;
   min-width: 728px;
-  margin-left: 40px;
+  width: 50vw;
+  margin: 0 auto 35px 40px;
+  top: 0;
 }
 
+.pagination-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+#paginate-count {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  color: #6e7072;
+  font-size: 14px;
+}
 
 /* FOR THE PREV AND NEXT BUTTON STYLE */
-/* .pag-hide {
-  display: none;
-} */
+.pag-hide {
+  color: #afaeae;
+}
+
+.pag-hide:hover {
+  text-decoration: none;
+  cursor: default;
+}
 
 .pag-num {
   font-size: 16px;
-  padding: 0 6px 16px 6px;
+  padding: 0 6px;
 }
 
 .pag-txt {

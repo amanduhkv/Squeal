@@ -28,6 +28,7 @@ export default function Search({ data }) {
   const [activeDel, setActiveDel] = useState(false);
   const [activeTakeout, setActiveTakeout] = useState(false);
   const [activeRes, setActiveRes] = useState(false);
+  const [activeAll, setActiveAll] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
   const [pageNum, setPageNum] = useState(0);
@@ -40,11 +41,11 @@ export default function Search({ data }) {
 
   // console.log('this is the data', data)
 
+  /* ----------price dropdown logic---------- */
   const openMenu = () => {
     if (showMenu) return;
     setShowMenu(true);
   };
-
 
   useEffect(() => {
     if (!showMenu) return;
@@ -57,6 +58,7 @@ export default function Search({ data }) {
 
     return () => document.removeEventListener("click", closeMenu);
   }, [showMenu]);
+
 
   /* -------USE EFFECT:get all bizzies------- */
 
@@ -117,10 +119,6 @@ export default function Search({ data }) {
 
   const toggleIdPrice = () => {
     setActivePrice(!activePrice);
-    // setActiveOpen(activeOpen);
-    // setActiveOpen(activeDel);
-    // setActiveOpen(activeTakeout);
-    // setActiveOpen(activeRes);
     openMenu();
   }
   // const toggleIdOpen = () => {
@@ -134,66 +132,61 @@ export default function Search({ data }) {
   // }
   const toggleIdDel = () => {
     setActiveDel(!activeDel);
-    // if(activeDel) {
-    //   if(activePrice) setActivePrice(false);
-    //   if(activeOpen) setActiveOpen(false);
-    //   if(activeTakeout) setActiveTakeout(false);
-    //   if(activeRes) setActiveRes(false);
-    // }
   }
   const toggleIdTakeout = () => {
     setActiveTakeout(!activeTakeout);
-    // if(activeTakeout) {
-    //   if(activePrice) setActivePrice(false);
-    //   if(activeOpen) setActiveOpen(false);
-    //   if(activeDel) setActiveDel(false);
-    //   if(activeRes) setActiveRes(false);
-    // }
   }
   const toggleIdRes = () => {
     setActiveRes(!activeRes);
-    // if(activeRes) {
-    //   if(activePrice) setActivePrice(false);
-    //   if(activeOpen) setActiveOpen(false);
-    //   if(activeDel) setActiveDel(false);
-    //   if(activeTakeout) setActiveTakeout(false);
-    // }
+  }
+  const toggleIdAll = () => {
+    setActiveAll(!activeAll);
   }
 
   useEffect(() => {
-    console.log('hitting useEffect for Del')
+    // console.log('hitting useEffect for Del')
 
      if(activeDel) {
       if(activePrice) setActivePrice(false);
       if(activeOpen) setActiveOpen(false);
       if(activeTakeout) setActiveTakeout(false);
       if(activeRes) setActiveRes(false);
+      if(activeAll) setActiveAll(false);
     }
 
   }, [activeDel]);
   useEffect(() => {
-    console.log('hitting useEffect for Takeout')
+    // console.log('hitting useEffect for Takeout')
 
     if(activeTakeout) {
       if(activePrice) setActivePrice(false);
       if(activeOpen) setActiveOpen(false);
       if(activeDel) setActiveDel(false);
       if(activeRes) setActiveRes(false);
+      if(activeAll) setActiveAll(false);
     }
 
   }, [activeTakeout]);
   useEffect(() => {
-    console.log('hitting useEffect for Res')
+    // console.log('hitting useEffect for Res')
 
      if(activeRes) {
       if(activePrice) setActivePrice(false);
       if(activeOpen) setActiveOpen(false);
       if(activeDel) setActiveDel(false);
       if(activeTakeout) setActiveTakeout(false);
+      if(activeAll) setActiveAll(false);
     }
-
-
   }, [activeRes]);
+  useEffect(() => {
+    if(activeAll) {
+      if(activePrice) setActivePrice(false);
+      if(activeOpen) setActiveOpen(false);
+      if(activeDel) setActiveDel(false);
+      if(activeTakeout) setActiveTakeout(false);
+      if(activeRes) setActiveRes(false);
+    }
+  }, [activeAll]);
 
 
 
@@ -385,6 +378,27 @@ export default function Search({ data }) {
               Reservations
             </button>
           </NavLink>
+          <NavLink to='/biz'>
+            <button
+              id={activeAll ? 'type-butt-act' : 'type-butt'}
+              value={query}
+              onClick={() => {
+                toggleIdAll()
+                if(activeAll) {
+                  if(activePrice) setActivePrice(false);
+                  if(activeOpen) setActiveOpen(false);
+                  if(activeDel) setActiveDel(false);
+                  if(activeTakeout) setActiveTakeout(false);
+                  if(activeRes) setActiveRes(false);
+                }
+                setQuery('')
+                setPageNum(0);
+              }
+              }
+            >
+              All Businesses
+            </button>
+          </NavLink>
         </div>
         {bizzies.map(biz => (
           <div>
@@ -519,12 +533,11 @@ export default function Search({ data }) {
                 <div id='biz-type-loc'>
                   <div className='biz-type-butts-container'>
                     {Object.values(biz.types).map(type => (
-                      <button
+                      <NavLink to={`/biz?type=${type.alias}`}
                         className='biz-type-butts'
-
                       >
                         {type.type}
-                      </button>
+                      </NavLink>
                     ))}
                   </div>
                   <div id='biz-price'>
@@ -576,22 +589,28 @@ export default function Search({ data }) {
           </div>
         ))}
       </ol>
-      <div>
+      <div className="paginate-box">
         <ReactPaginate
-          // breakLabel='...'
+          breakLabel=''
           previousLabel={bizzies?.length ? "<" : 'Loading...'}
           nextLabel={bizzies?.length ? '>' : ''}
           // previousLabel={'<'}
           // nextLabel={'>'}
-          pageRangeDisplayed='5'
+          pageRangeDisplayed='9'
+          marginPagesDisplayed='0'
           pageCount={pageCount}
           onPageChange={pageChange}
           containerClassName='pagination-container'
-          activeClassName="pagination-active"
+          // activeClassName="pagination-active"
+          activeLinkClassName="pagination-active"
           pageClassName="pag-num"
           pageLinkClassName='pag-txt'
           disabledLinkClassName='pag-hide'
+          onPageActive={pageChange}
         />
+        {pageCount && (
+          <div id='paginate-count'>{pageNum + 1} of {pageCount}</div>
+        )}
       </div>
 
     </div>
