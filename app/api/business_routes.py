@@ -287,6 +287,7 @@ def add_new_business():
             types=type_list,
             transactions=transaction_list
         )
+
         db.session.add(business)
         db.session.commit()
 
@@ -296,6 +297,8 @@ def add_new_business():
         biz = business.to_dict()
         biz['types'] = types_list
         biz['transactions'] = transactions_list
+
+        print(">>>>> NEW BUSINESS", biz)
 
         return biz
 
