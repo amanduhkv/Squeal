@@ -29,6 +29,13 @@
     object-fit: cover;
 }
 
+.single-business-images {
+    width: 100%;
+}
+.single-business-one-image-wrapper {
+    width: 100%;
+}
+
 #modal {
     z-index: 99
 }
