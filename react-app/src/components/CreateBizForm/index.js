@@ -17,8 +17,8 @@ export default function CreateBizForm() {
     const [lng, setLng] = useState("");
     const [country, setCountry] = useState("United States");
     const [phone, setPhone] = useState("");
-    const [startTime, setStartTime] = useState("0600");
-    const [endTime, setEndTime] = useState("2130");
+    const [startTime, setStartTime] = useState("0000");
+    const [endTime, setEndTime] = useState("0000");
     const [priceRange, setPriceRange] = useState("$");
     const [types, setTypes] = useState([]);
     const [transactions, setTransactions] = useState([]);
@@ -80,8 +80,10 @@ export default function CreateBizForm() {
             });
         }
 
-        if ((startTime.length && endTime.length) && endTime <= startTime) {
-            errors.push("End time must be after start time");
+        if (!(startTime === "0000" && endTime === "0000")) {
+            if ((startTime.length && endTime.length) && endTime <= startTime) {
+                errors.push(`End time must be after start time, set both to 12am for open "All Day"`);
+            }
         }
 
         if (Number.isNaN(Number(lat)) ||
