@@ -22,6 +22,9 @@ const ReviewForm = () => {
     const [ read1, setRead1 ] = useState(false);
     const [ read2, setRead2 ] = useState(false);
     const [ read3, setRead3 ] = useState(false);
+
+    const [validationErrors, setValidationErrors] = useState([]);
+
     const dispatch = useDispatch();
     const { bizId } = useParams();
     const biz = useSelector(state => state.businesses.singleBusiness);
@@ -56,9 +59,25 @@ const ReviewForm = () => {
         const newRev = await dispatch(createReview(bizId, newReview, user, biz));
 
         if(newRev) {
+            setValidationErrors([]);
             history.push(`/biz/${bizId}`)
         }
     }
+
+    // ERROR HANDLING:
+    useEffect(() => {
+        const errors = [];
+
+        if (revRate < 1) {
+            errors.push("Please provide a rating");
+        }
+
+        if (revBody.length < 1) {
+            errors.push("Please provide a review");
+        }
+
+        setValidationErrors(errors);
+    }, [revRate, revBody]);
 
 
   return (
@@ -459,10 +478,13 @@ const ReviewForm = () => {
               </div>
             </div>
         </div>
+
+
         <div className='new-review-container'>
           <div className='new-review-inner'>
             <h1 className='new-review-title'>{biz.name}</h1>
             <form className='new-review-form' onSubmit={handleSubmit}>
+
               <div className='new-review-form-inner'>
               <div className='new-review-stars'>
                         {/* FIRST STAR */}
@@ -591,7 +613,19 @@ const ReviewForm = () => {
                           placeholder="I’ve been coming to this place for 3 years now and it’s all you can ask for in a pub with TVs, a jukebox and an outdoor patio. It’s a great spot to catch a Warriors game or just grab drinks with friends. Never been a huge Bloody Mary fan, but after watching the bartender make a few here I had to try one and... wow. They’re legit. The Spicy Mule also gets the job done. Tons of beer on tap, which just adds to the appeal. Head to the back deck and you can kill a whole day before you even realize it."
                            />
               </div>
-              <button type='submit' className='new-review-submit'>Post Review</button>
+
+                {validationErrors.length > 0 && (
+                    <ul id="list-errors-review" className="list--errors">
+                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
+                    </ul>
+                )}
+
+              <button
+                type='submit'
+                className='new-review-submit'
+                disabled={validationErrors.length}
+              >
+                Post Review</button>
             </form>
           </div>
         </div>
