@@ -38,7 +38,7 @@ function NavBar() {
     const sessionUser = useSelector(state => state.session.user);
     const url = useLocation().pathname;
     const [query, setQuery] = useState('');
-    const [location, setLocation] = useState('');
+    const [location, setLocation] = useState('LA and the BAY, CA');
     const [loc, setLoc] = useState('');
     let sessionLinks;
 
@@ -61,6 +61,10 @@ function NavBar() {
         history.push(`/biz?type=${tempQuery}&loc=${loc}`)
     }
 
+    function changeLocLAandBAY() {
+        setLocation('LA and the BAY, CA');
+        setLoc('');
+    }
     function changeLocLA() {
         setLocation('Los Angeles, CA');
         setLoc('Los Angeles');
@@ -119,27 +123,33 @@ function NavBar() {
                                     readOnly
                                 />
                                 <div className='tooltip-location' style={{ width: `${width}px` }}>
+                                    <button id='LAbay' className='dropdown-location' onClick={(e) => {
+                                        e.preventDefault();
+                                        changeLocLAandBAY();
+                                    }}>
+                                        LA & the BAY
+                                    </button>
                                     <button id='LA' className='dropdown-location' onClick={(e) => {
                                         e.preventDefault();
-                                        changeLocLA()
+                                        changeLocLA();
                                     }}>
                                         Los Angeles, CA
                                     </button>
                                     <button id='OAK' className='dropdown-location' onClick={(e) => {
                                         e.preventDefault();
-                                        changeLocOAK()
+                                        changeLocOAK();
                                     }}>
                                         Oakland, CA
                                     </button>
                                     <button id='SF' className='dropdown-location' onClick={(e) => {
                                         e.preventDefault();
-                                        changeLocSF()
+                                        changeLocSF();
                                     }}>
                                         San Francisco, CA
                                     </button>
                                     <button id='SJ' className='dropdown-location' onClick={(e) => {
                                         e.preventDefault();
-                                        changeLocSJ()
+                                        changeLocSJ();
                                     }}>
                                         San Jose, CA
                                     </button>
