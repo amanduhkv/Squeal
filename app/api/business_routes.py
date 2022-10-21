@@ -111,6 +111,8 @@ def get_one_business(biz_id):
     business['Business_Images'] = images
     business['Owner'] = owner
 
+    
+
     return business
 
 
