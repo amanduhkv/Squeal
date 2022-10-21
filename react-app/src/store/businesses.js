@@ -110,7 +110,7 @@ export const getAllBiz = (location) => async dispatch => {
 // Get user's businesses
 
 export const getUsersBiz = () => async dispatch => {
-    const response = await fetch(`/api/biz/current`);
+    const response = await csrfFetch(`/api/biz/current`);
 
     if (response.ok) {
         const list = await response.json();
