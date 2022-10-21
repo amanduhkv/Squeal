@@ -100,7 +100,7 @@ const BusinessDetails = () => {
             if (str === '0000') {
                 res = "12:00 AM"
             }
-            if (str === '1200') {
+            else if (str === '1200') {
                 res = "12:00 PM"
             }
             else {
@@ -115,10 +115,19 @@ const BusinessDetails = () => {
         let currentTime = new Date().getHours()
         let currentMinutes = new Date().getMinutes()
         if (open && close) {
+            if (open === "0000") {
+                open = "1200"
+                }
+            if (close === "0000") {
+                close = "1200"
+            }
             if (open === close) {
                 res = "Open"
             } else {
-                res = currentTime < open.slice(0, 2) || (currentTime < 12 && currentTime > close.slice(0, 2)) || (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
+                res = currentTime < open.slice(0, 2) ||
+                (currentTime === +open.slice(0, 2) && currentMinutes < +open.slice(2)) ||
+                (currentTime < 12 && currentTime > close.slice(0, 2)) ||
+                (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
             }
         }
         return res
@@ -463,7 +472,7 @@ const BusinessDetails = () => {
                                 </span>
                             </div>
                             <div className='single-business-open-closed'>
-                                <span className={openOrClosed(biz.start_time, biz.end_time)}>{openOrClosed(biz.start_time, biz.end_time)}</span> {biz.start_time !== biz.end_time ? convertTime(biz.start_time) - convertTime(biz.end_time): "All Day"}
+                                <span className={openOrClosed(biz.start_time, biz.end_time)}>{openOrClosed(biz.start_time, biz.end_time)}</span> {biz.start_time !== biz.end_time ? `${convertTime(biz.start_time)} - ${convertTime(biz.end_time)}` : "All Day"}
                             </div>
                         </div>
                         <div className='single-business-see-more-photos' onClick={() => setShowPhotoModal(true)}>
