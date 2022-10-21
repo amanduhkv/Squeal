@@ -307,8 +307,6 @@ def add_new_business():
         biz['types'] = types_list
         biz['transactions'] = transactions_list
 
-        print(">>>>> NEW BUSINESS", biz)
-
         return biz
 
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
