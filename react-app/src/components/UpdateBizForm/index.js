@@ -91,7 +91,7 @@ export default function UpdateBizForm() {
             }
 
             if (!(startTime === "0000" && endTime === "0000")) {
-                if ((startTime.length && endTime.length) && endTime <= startTime) {
+                if ((startTime?.length && endTime?.length) && endTime <= startTime) {
                     errors.push(`End time must be after start time, set both to 12am for open "All Day"`);
                 }
             }
