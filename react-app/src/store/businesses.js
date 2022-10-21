@@ -282,8 +282,6 @@ const businessReducer = (state = initialState, action) => {
                 if (img.id === action.payload.imageId) userBizImages.splice(i, 1);
             }
 
-
-            // delete newState.allBusinesses.Business_Images.find(img => img.id === action.imageId);
             newState = { ...newState };
             // console.log("NEWSTATE AFTER REMOVE_Business ACTION:", newState);
             return newState;

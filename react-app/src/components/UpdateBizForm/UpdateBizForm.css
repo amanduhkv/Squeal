@@ -11,6 +11,7 @@
 .form--update-biz input:focus {
     outline: 2px solid rgb(6, 117, 143);
 }
+
 #form-field--transactions:focus,
 #form-field--types:focus {
     outline: none;
@@ -51,6 +52,7 @@
     border: 1.3px solid #CCC;
     transition: 0.8s ease background-color;
 }
+
 #update-biz-submit-button:hover {
     background-color: rgb(255, 17, 17);
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
@@ -101,6 +103,7 @@ div input:first-child {
 .container--form-fields--hours-section--end {
     width: 50%;
 }
+
 .container--form-fields--hours-section--start {
     margin-right: 20px;
 }

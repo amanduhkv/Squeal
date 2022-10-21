@@ -55,14 +55,14 @@
 }
 
 .review-username {
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 3px;
 }
 
 .review-written {
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
@@ -83,10 +83,10 @@
 }
 
 .review-biz-name-link {
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
-    color: rgba(2,122,151,1);
+    color: rgba(2, 122, 151, 1);
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -112,7 +112,7 @@
 }
 
 .review-card-text {
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     display: -webkit-box;
@@ -127,9 +127,9 @@
 }
 
 .review-card-continue-link {
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    color: rgba(2,122,151,1);
+    color: rgba(2, 122, 151, 1);
     font-size: 14px;
     line-height: 20px;
 }
@@ -186,7 +186,7 @@
 
 .category-title {
     color: black;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin: 0 0;

@@ -1,5 +1,5 @@
 // TO FIX: CLOSED/OPEN ON GET ALL BUSINESSES
-// WRITE A REVIEW ROUTE 
+// WRITE A REVIEW ROUTE
 
 
 import React from 'react'
@@ -30,7 +30,7 @@ const BusinessDetails = () => {
 
 
     const biz = useSelector(state => state.businesses.singleBusiness)
-    const bizOwner = useSelector(state => state.businesses.singleBusiness.Owner)
+    // const bizOwner = useSelector(state => state.businesses.singleBusiness.Owner)
     const bizImages = useSelector(state => state.businesses.singleBusiness.Business_Images)
     const bizReviews = useSelector(state => state.reviews.business)
     const types = useSelector(state => state.businesses.singleBusiness.types)
@@ -49,7 +49,7 @@ const BusinessDetails = () => {
     }
     if (bizReviews) {
         numReviews = (Object.values(bizReviews).length)
-        reviewUsers = Object.values(bizReviews).map(obj=>obj.User.id)
+        reviewUsers = Object.values(bizReviews).map(obj => obj.User.id)
         if (reviewUsers.includes(currUserId)) {
             let currUserReview = Object.values(bizReviews).filter(obj => obj.user_id === currUserId)[0]
             currUserReviewId = currUserReview.id
@@ -71,7 +71,7 @@ const BusinessDetails = () => {
     useEffect(() => {
         dispatch(getOneBiz(bizId))
         dispatch(getBusinessReviews(bizId))
-    }, [dispatch])
+    }, [dispatch, bizId])
 
     const rate = biz.avg_rating
 
@@ -103,7 +103,7 @@ const BusinessDetails = () => {
         let currentTime = new Date().getHours()
         let currentMinutes = new Date().getMinutes()
         if (open && close) {
-            console.log(currentTime > close.slice(0, 2), currentTime, close.slice(0,2))
+            console.log(currentTime > close.slice(0, 2), currentTime, close.slice(0, 2))
             res = currentTime < open.slice(0, 2) || (currentTime < 12 && currentTime > close.slice(0, 2)) || (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
         }
         return res
@@ -144,7 +144,7 @@ const BusinessDetails = () => {
                 <div>
                     <div className='single-business-user'>
                         <div>
-                            <img height="64" width="64" src={obj.User.profile_pic} />
+                            <img height="64" width="64" src={obj.User.profile_pic} alt="profile_pic" />
                         </div>
                         <div className='single-business-user-details'>
                             <div className='single-business-user-name'>
@@ -270,7 +270,7 @@ const BusinessDetails = () => {
                         {obj.review_body}
                         {obj.Review_Images && obj.Review_Images.map(obj => {
                             return (
-                                <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} /></div>
+                                <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} alt={obj.url} /></div>
                             )
                         }
                         )}
@@ -293,7 +293,7 @@ const BusinessDetails = () => {
                         setShowPhotoModal(false)
                     }}>
                         <div className='photo-modal-close' onClick={() => setShowPhotoModal(false)}>
-                            Close <img src={x} />
+                            Close <img src={x} alt="x_svg" />
                         </div>
                         <div className='single-business-modal-title'>Photos for {biz.name}</div>
                         {bizImages.length === 0 && (
@@ -306,13 +306,13 @@ const BusinessDetails = () => {
 
                             {bizImages.length > 0 && bizImages.map(obj => {
                                 return (
-                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-review-image' height='300' width='300' src={obj.url} />
+                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} />
                                 )
                             }
                             )}
                             {allReviewImages.length > 0 && allReviewImages.map(obj => {
                                 return (
-                                    <img className='single-business-review-image' height='300' width='300' src={obj.url} />
+                                    <img className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} />
                                 )
                             })}
                         </div>
@@ -458,7 +458,7 @@ const BusinessDetails = () => {
                             <div className='single-business-review-bar-button'>
                                 <NavLink style={{ textDecoration: 'none', color: "white" }} to={reviewUsers.includes(currUserId) ? `/biz/${biz.id}/review/${currUserReviewId}/` : `/newreview/biz/${biz.id}`}>
                                     <span className='single-business-reviewButton'>
-                                        <img width='24' height='24' src={star} />
+                                        <img width='24' height='24' src={star} alt="star_svg" />
                                         {reviewUsers.includes(currUserId) ? "Edit your review" : "Write a review"}
                                     </span>
                                 </NavLink>
@@ -489,14 +489,14 @@ const BusinessDetails = () => {
                         {biz.phone_number && (
                             <div className='single-business-contact'>
                                 <div>{phoneNumber(biz.phone_number)}</div>
-                                <img width='24' height='24' src={phone} />
+                                <img width='24' height='24' src={phone} alt="phone_svg" />
                             </div>
                         )}
                         <span className='single-business-box-divider'></span>
                         {biz.address && (
                             <div className='single-business-contact'>
                                 <div>{biz.address} {biz.city}, {biz.state} </div>
-                                <img width='24' height='24' img src={map} />
+                                <img width='24' height='24' img src={map} alt="map_svg" />
                             </div>
                         )}
                     </div>
@@ -507,7 +507,7 @@ const BusinessDetails = () => {
                         {user && <div className='single-business-start-your-review'>
                             <div className='single-business-user'>
                                 <div>
-                                    <img height="72" width="72" src={user.profile_pic} />
+                                    <img height="72" width="72" src={user.profile_pic} alt="profile_pic" />
                                 </div>
                                 <div className='single-business-user-details start-review'>
                                     <div className='single-business-user-name'>
@@ -522,7 +522,7 @@ const BusinessDetails = () => {
                             <div className='single-business-review-link'>
                                 <NavLink style={{ color: '#007A96' }} to={reviewUsers.includes(currUserId) ? `/biz/${biz.id}/review/${currUserReviewId}/` : `/newreview/biz/${biz.id}`}>
                                     {reviewUsers.includes(currUserId) ? "Edit your review" : "Write a review"} for {biz.name}
-                                    </NavLink>
+                                </NavLink>
                             </div>
 
                         </div>}
