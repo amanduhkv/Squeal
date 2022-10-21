@@ -86,13 +86,23 @@ export const search = payload => ({
     payload
 });
 
-export const getAllBiz = () => async dispatch => {
-    const response = await fetch('/api/biz/');
-    // console.log("hitting res", response)
-    if (response.ok) {
-        const list = await response.json();
-        // console.log("hitting list", list)
-        dispatch(load(list));
+export const getAllBiz = (location) => async dispatch => {
+    if (location) {
+        const response = await fetch(`/api/biz/?location=${location}`);
+        // console.log("hitting res", response)
+        if (response.ok) {
+            const list = await response.json();
+            // console.log("hitting list", list)
+            dispatch(load(list));
+        }
+    } else {
+        const response = await fetch('/api/biz/');
+        // console.log("hitting res", response)
+        if (response.ok) {
+            const list = await response.json();
+            // console.log("hitting list", list)
+            dispatch(load(list));
+        }
     }
 };
 

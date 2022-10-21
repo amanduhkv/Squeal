@@ -59,24 +59,26 @@ function NavBar(){
     const onSubmit = (e) => {
         e.preventDefault();
         // console.log(query);
-        history.push(`/biz?type=${query}`)
+        const tempQuery = query;
+        setQuery('');
+        history.push(`/biz?type=${tempQuery}&loc=${loc}`)
     }
 
     function changeLocLA() {
         setLocation('Los Angeles, CA');
-        setLoc('la');
+        setLoc('Los Angeles');
     }
     function changeLocOAK() {
         setLocation('Oakland, CA');
-        setLoc('oak');
+        setLoc('Oakland');
     }
     function changeLocSF() {
         setLocation('San Francisco, CA');
-        setLoc('sf');
+        setLoc('San Francisco');
     }
     function changeLocSJ() {
         setLocation('San Jose, CA');
-        setLoc('sj');
+        setLoc('San Jose');
     }
 
     if (sessionUser) {
