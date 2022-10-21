@@ -12024,7 +12024,7 @@ for i in range(0, len(bizzies)):
         transactions = [transaction_dict[t] for t in bizzies[i]['transactions']]
         types = [type_dict[t] for t in bizzies[i]['categories']]
 
-        instances.append(Business(business_id=business_id,
+        instances.append(Business(id=business_id,
                                   name=name,
                                   owner_id=1,
                                   city=city,
