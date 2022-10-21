@@ -8,7 +8,7 @@ export default function Footer() {
 
 
     return (
-        <footer id='footer-outer-wrapper' className={url.includes("current") ? 'footer-margin' : 'footer'}>
+        <footer id='footer-outer-wrapper' className={url?.includes("current") ? 'footer-margin' : 'footer'}>
             <div id='footer-inner-wrapper'>
                 <div id='footer-lists-wrapper'>
                     <div id='footer-column-about' className='footer-column'>

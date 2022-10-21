@@ -38,9 +38,51 @@ export default function CreateBizForm() {
         history.push("/");
     }
 
-    // TODO: ADD MORE VALIDATION ERROR HANDLING
+    // ERROR HANDLING:
     useEffect(() => {
         const errors = [];
+
+        if (name.length && name.length < 2) {
+            errors.push("Name must be at least 2 characters");
+        }
+
+        if (address.length && address.length < 6) {
+            errors.push("Address must be at least 6 characters");
+        }
+
+        if (city.length && city.length < 2) {
+            errors.push("City must be at least 2 characters");
+        }
+
+        if (zipcode.length && zipcode.length !== 5) {
+            errors.push("Zipcode must be exactly 5 digits");
+        }
+
+        if (state.length && state.length < 2) {
+            errors.push("State must be at least 2 characters");
+        }
+
+        if (country.length && country.length < 2) {
+            errors.push("State must be at least 2 characters");
+        }
+
+        if (phone.length && phone.length < 10) {
+            errors.push("Phone must be at least 10 characters");
+        }
+
+        if (phone.length) {
+            const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')']
+
+            phone.split('').forEach(char => {
+                if (!ALLOWED_PHONE_CHAR.includes(char)) {
+                    errors.push(`Phone can only include numbers or the symbols: "+", "(", or ")"`);
+                }
+            });
+        }
+
+        if ((startTime.length && endTime.length) && endTime <= startTime) {
+            errors.push("End time must be after start time");
+        }
 
         if (Number.isNaN(Number(lat)) ||
             (Number(lat)) > 90 ||
@@ -53,7 +95,7 @@ export default function CreateBizForm() {
             errors.push("Longitude must be a number between -180.0 and 180.0");
 
         setValidationErrors(errors);
-    }, [lat, lng]);
+    }, [name, address, city, zipcode, state, country, phone, startTime, endTime, lat, lng]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -99,8 +141,6 @@ export default function CreateBizForm() {
 
         catch (res) {
             console.log("==>ANY ERRORS FROM CREATE BIZ:", res)
-            const data = await res.json();
-            console.log("==> JSONIFIED ERRORS", data)
             // const data = await res.json();
             // if (data && data.errors) return setValidationErrors(data.errors);
         }
@@ -111,12 +151,6 @@ export default function CreateBizForm() {
             <h1 className='header header--create-biz'>Hello! Let's fill out your business details</h1>
 
             <form onSubmit={handleSubmit} className="form" id="form--create-biz">
-                {validationErrors.length > 0 && (
-                    <ul className="list list--errors">
-                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
-                    </ul>
-                )}
-
                 <div className='container--form-fields'>
 
                     {/* ----- NAME SECTION ----- */}
@@ -378,6 +412,12 @@ export default function CreateBizForm() {
                         {bizImgUrl && <img className='img img--create-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
                     </div>
                 </div>
+
+                {validationErrors.length > 0 && (
+                    <ul id="list-errors-biz" className="list--errors">
+                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
+                    </ul>
+                )}
 
                 <button
                     type="submit"

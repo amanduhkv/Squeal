@@ -63,7 +63,7 @@ export default function UserReviews({ user, userReviews }) {
                         {console.log("REVIEW?", review)}
                         <div className="user-review-biz-info">
                             <NavLink exact to={`/biz/${review.Business.id}`}>
-                                <img className="user-review-biz-img" src={review.Business.PreviewImage.url} alt={review.Business.name} />
+                                <img className="user-review-biz-img" src={review.Business.PreviewImage?.url} alt={review.Business.name} />
                             </NavLink>
                             <div className="user-review-biz-text">
                                 <NavLink className="user-review-biz-link" exact to={`/biz/${review.Business.id}`}>
@@ -188,7 +188,7 @@ export default function UserReviews({ user, userReviews }) {
 
 
                             <div className="user-review-imgs">
-                                {review.Review_Images.length > 0 && review.Review_Images.map(img => (
+                                {review.Review_Images?.length > 0 && review.Review_Images.map(img => (
                                     <div className="user-review-img-container" onClick={() => deleteImgHandler(review.id, img.id)}>
                                         <img className="user-review-svg-x" src={x} width='100px' alt="x_svg" />
                                         <img className="user-review-img" key={img.id} src={img.url} alt={img.url} />

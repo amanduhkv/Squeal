@@ -167,7 +167,11 @@ div input:first-child {
 
 /* ERROR LIST */
 .list--errors {
-    margin: 0px;
+    padding-left: 0px;
+}
+
+#list-errors-biz {
+    margin-bottom: 20px;
 }
 
 .li--error {

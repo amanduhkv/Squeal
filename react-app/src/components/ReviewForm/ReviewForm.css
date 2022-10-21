@@ -312,3 +312,9 @@
 .review-biz-list-a:hover {
     text-decoration: none;
 }
+
+
+#list-errors-review {
+    margin: 20px 0px -10px;
+    padding-left: 0px;
+}
