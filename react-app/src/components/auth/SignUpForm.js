@@ -121,11 +121,12 @@ const SignUpForm = () => {
                                         id='login-input'
 
                                         name='email'
-                                        type='text'
+                                        type='email'
                                         placeholder='Email'
                                         value={email}
                                         onChange={e => setEmail(e.target.value)}
                                         onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                        required={true}
                                     />
                                 </div>
                                 <div>
@@ -137,6 +138,7 @@ const SignUpForm = () => {
                                         value={password}
                                         onChange={e => setPassword(e.target.value)}
                                         onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                        required={true}
                                     />
                                 </div>
                                 <button id='login-button' type='submit'>Log In</button>
@@ -210,6 +212,7 @@ const SignUpForm = () => {
                                         onChange={e => setFirstname(e.target.value)}
                                         value={first_name}
                                         onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                        required={true}
                                     ></input>
                                     <input
                                         id='login-input'
@@ -219,6 +222,7 @@ const SignUpForm = () => {
                                         onChange={e => setLastname(e.target.value)}
                                         value={last_name}
                                         onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                        required={true}
                                     ></input>
                                 </div>
                                 <div id='email'>
@@ -230,15 +234,17 @@ const SignUpForm = () => {
                                         onChange={e => setUsername(e.target.value)}
                                         value={username}
                                         onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                        required={true}
                                     ></input>
                                     <input
                                         id='login-input'
-                                        type='text'
+                                        type='email'
                                         name='email'
                                         placeholder='Email'
                                         onChange={e => setEmail(e.target.value)}
                                         value={email}
                                         onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                        required={true}
                                     ></input>
                                 </div>
                                 <div id='password'>
@@ -250,6 +256,7 @@ const SignUpForm = () => {
                                         onChange={e => setPassword(e.target.value)}
                                         value={password}
                                         onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                        required={true}
                                     ></input>
                                 </div>
                                 <div id='zip'>
