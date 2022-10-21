@@ -48,22 +48,67 @@ export default function UpdateBizForm() {
         return () => dispatch(bizActions.clearData());
     }, [dispatch, bizId]);
 
-    // TODO: ADD MORE VALIDATION ERROR HANDLING
+    // ERROR HANDLING:
     useEffect(() => {
         const errors = [];
+        if (biz) {
+            if (name?.length && name.length < 2) {
+                errors.push("Name must be at least 2 characters");
+            }
 
-        if (Number.isNaN(Number(lat)) ||
-            (Number(lat)) > 90 ||
-            (Number(lat)) < -90)
-            errors.push("Latitude must be a number between -90.0 and 90.0");
+            if (address?.length && address.length < 6) {
+                errors.push("Address must be at least 6 characters");
+            }
 
-        if (Number.isNaN(Number(lng)) ||
-            (Number(lng)) > 180 ||
-            (Number(lng)) < -180)
-            errors.push("Longitude must be a number between -180.0 and 180.0");
+            if (city?.length && city.length < 2) {
+                errors.push("City must be at least 2 characters");
+            }
 
-        setValidationErrors(errors);
-    }, [lat, lng]);
+            if (zipcode?.length && zipcode.length !== 5) {
+                errors.push("Zipcode must be exactly 5 digits");
+            }
+
+            if (state?.length && state.length < 2) {
+                errors.push("State must be at least 2 characters");
+            }
+
+            if (country?.length && country.length < 2) {
+                errors.push("State must be at least 2 characters");
+            }
+
+            if (phone?.length && phone.length < 10) {
+                errors.push("Phone must be at least 10 characters");
+            }
+
+            if (phone?.length) {
+                const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')']
+
+                phone.split('').forEach(char => {
+                    if (!ALLOWED_PHONE_CHAR.includes(char)) {
+                        errors.push(`Phone can only include numbers or the symbols: "+", "(", or ")"`);
+                    }
+                });
+            }
+
+            if (!(startTime === "0000" && endTime === "0000")) {
+                if ((startTime.length && endTime.length) && endTime <= startTime) {
+                    errors.push(`End time must be after start time, set both to 12am for open "All Day"`);
+                }
+            }
+
+            if (Number.isNaN(Number(lat)) ||
+                (Number(lat)) > 90 ||
+                (Number(lat)) < -90)
+                errors.push("Latitude must be a number between -90.0 and 90.0");
+
+            if (Number.isNaN(Number(lng)) ||
+                (Number(lng)) > 180 ||
+                (Number(lng)) < -180)
+                errors.push("Longitude must be a number between -180.0 and 180.0");
+
+            setValidationErrors(errors);
+        }
+    }, [biz, name, address, city, zipcode, state, country, phone, startTime, endTime, lat, lng]);
 
     // LOAD ORIGINAL BIZ DATA
     useEffect(() => {
@@ -187,12 +232,6 @@ export default function UpdateBizForm() {
             <h1 className='header header--update-biz'>Hello! Let's update your business details</h1>
 
             <form onSubmit={handleSubmit} className="form" id="form--update-biz">
-                {validationErrors.length > 0 && (
-                    <ul className="list list--errors">
-                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
-                    </ul>
-                )}
-
                 <div className='container--form-fields'>
 
                     {/* ----- NAME SECTION ----- */}
@@ -455,6 +494,12 @@ export default function UpdateBizForm() {
                         {bizImgUrl && <img className='img img--update-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
                     </div>
                 </div>
+
+                {validationErrors.length > 0 && (
+                    <ul id="list-errors-biz" className="list--errors">
+                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
+                    </ul>
+                )}
 
                 <button
                     type="submit"

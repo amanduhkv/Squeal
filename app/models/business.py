@@ -21,7 +21,7 @@ business_transactions = db.Table(
 class Business(db.Model):
     __tablename__ = "businesses"
 
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(225), nullable=False)
     owner_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     city = db.Column(db.String(100), nullable=False)

@@ -97,8 +97,16 @@ const BusinessDetails = () => {
     function convertTime(str) {
         let res
         if (str) {
-            str = str[0] === '0' ? str.slice(1) : str
-            res = str < 1200 ? str.slice(0, -2) + ":" + str.slice(-2) + " AM" : str.slice(0, -2) - 12 + ":" + str.slice(-2) + " PM"
+            if (str === '0000') {
+                res = "12:00 AM"
+            }
+            if (str === '1200') {
+                res = "12:00 PM"
+            }
+            else {
+                str = str[0] === '0' ? str.slice(1) : str
+                res = str < 1200 ? str.slice(0, -2) + ":" + str.slice(-2) + " AM" : str.slice(0, -2) - 12 + ":" + str.slice(-2) + " PM"
+            }
         }
         return res
     }
@@ -107,7 +115,11 @@ const BusinessDetails = () => {
         let currentTime = new Date().getHours()
         let currentMinutes = new Date().getMinutes()
         if (open && close) {
-            res = currentTime < open.slice(0, 2) || (currentTime < 12 && currentTime > close.slice(0, 2)) || (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
+            if (open === close) {
+                res = "Open"
+            } else {
+                res = currentTime < open.slice(0, 2) || (currentTime < 12 && currentTime > close.slice(0, 2)) || (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
+            }
         }
         return res
     }
@@ -124,11 +136,20 @@ const BusinessDetails = () => {
     if (biz.start_time && biz.end_time) {
         let open = openOrClosed(biz.start_time, biz.end_time)
         let today = new Date().getDay()
-        hours = days.map(day => {
-            return (
-                <div className='single-business-hours'>{day} <span>{convertTime(biz.start_time)} - {convertTime(biz.end_time)} <span className={open ? open + "closed-red" : 'none'}>{today === days.indexOf(day) + 1 ? open + " Now" : ""}</span></span></div>
-            )
-        })
+        if (biz.start_time === biz.end_time) {
+            hours = days.map(day => {
+                return (
+                    <div className='single-business-hours'>{day} <span> All Day <span className={"Openclosed-red"}>{today === days.indexOf(day) + 1 ? "Open Now" : ""}</span></span></div>
+                )
+            })
+        } else {
+
+            hours = days.map(day => {
+                return (
+                    <div className='single-business-hours'>{day} <span>{convertTime(biz.start_time)} - {convertTime(biz.end_time)} <span className={open ? open + "closed-red" : 'none'}>{today === days.indexOf(day) + 1 ? open + " Now" : ""}</span></span></div>
+                )
+            })
+        }
     }
     let location = {
         address: biz.address + ', ' + biz.city + ', ' + biz.state,
@@ -442,7 +463,7 @@ const BusinessDetails = () => {
                                 </span>
                             </div>
                             <div className='single-business-open-closed'>
-                                <span className={openOrClosed(biz.start_time, biz.end_time)}>{openOrClosed(biz.start_time, biz.end_time)}</span> {convertTime(biz.start_time)} - {convertTime(biz.end_time)}
+                                <span className={openOrClosed(biz.start_time, biz.end_time)}>{openOrClosed(biz.start_time, biz.end_time)}</span> {biz.start_time !== biz.end_time ? convertTime(biz.start_time) - convertTime(biz.end_time): "All Day"}
                             </div>
                         </div>
                         <div className='single-business-see-more-photos' onClick={() => setShowPhotoModal(true)}>
