@@ -24,7 +24,20 @@ const SignUpForm = () => {
 
     const onSignUp = async (e) => {
         e.preventDefault();
-        if (password) {
+        let errs = []
+        if (first_name.length < 2) errs.push('First name must be at least 2 characters')
+        if (last_name.length < 2) errs.push('Last name must be at least 2 characters')
+        if (username.length <5) errs.push('Username must be at least 5 characters')
+        if (!email.includes('@') || !email.includes('.')) errs.push('Must sign up with a valid email')
+        if (password.length < 5) errs.push('Password must be at least 6 characters')
+        let zipreg = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if (!zipreg.test(zipcode)) errs.push('Please input a valid zipcode')
+        if (errs.length > 0) {
+            setErrors(errs)
+            setHasSubmit(true)
+        }
+
+        else if (password) {
             setHasSubmit(true);
             const data = await dispatch(signUp(username, first_name, last_name, email, password, zipcode));
             if (data) {
@@ -98,9 +111,9 @@ const SignUpForm = () => {
                             </div>
                             <form id='login-form' onSubmit={onLogin}>
                             {hasSubmit && errors.length > 0 && (
-                                    <div>
+                                    <div >
                                         {errors.map((error, ind) => (
-                                            <div key={ind}>{error}</div>
+                                            <div  key={ind}>{error}</div>
                                         ))}
                                     </div>
                                 )}
@@ -197,9 +210,9 @@ const SignUpForm = () => {
                             </form>
                             <form onSubmit={onSignUp}>
                             {hasSubmit && errors.length > 0 && (
-                                    <div>
+                                    <div id='sign-up-errors-div-container'>
                                         {errors.map((error, ind) => (
-                                            <div key={ind}>{error}</div>
+                                            <div id='sign-up-errors-div' key={ind}>{error}</div>
                                         ))}
                                     </div>
                                 )}
