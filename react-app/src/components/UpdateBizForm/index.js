@@ -153,11 +153,9 @@ export default function UpdateBizForm() {
             types
         }
 
-        console.log("UPDATED BIZ BEFORE DISPATCH", newBiz)
-
         try {
             const updatedBiz = await dispatch(bizActions.updateBiz(biz.id, newBiz));
-            console.log("UPDATED BIZ AFTER DISPATCH", updatedBiz)
+
             if (updatedBiz) {
                 if (bizImgUrl.length) {
                     const newImg = { url: bizImgUrl }

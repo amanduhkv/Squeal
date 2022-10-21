@@ -18,6 +18,7 @@
 .user-review-biz-img {
     width: 60px;
     height: 60px;
+    object-fit: cover;
     border-radius: 4px;
     margin: 0px 12px 0px 0px;
 }
@@ -34,8 +35,8 @@
 .user-review-biz-price-range,
 .user-review-biz-address,
 .user-review-biz-city-state-zip {
-    font-size: 0.8rem;
-    font-weight: 300;
+    font-size: 0.7rem;
+    font-weight: 400;
 }
 
 .user-review-biz-city,
@@ -68,7 +69,7 @@
 .user-review-created-at,
 .user-review-review-body {
     font-size: 0.85rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -125,6 +126,7 @@
     width: 100px;
     height: 100px;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 .user-review-img:last-child {

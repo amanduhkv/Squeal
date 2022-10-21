@@ -40,11 +40,11 @@ function NavBar(){
     const [ query, setQuery ] = useState('');
     const [ location, setLocation ] = useState('');
     const [ loc, setLoc ] = useState('');
-    console.log('this is the ref',ref);
+    // console.log('this is the ref',ref);
 // /*
     let sessionLinks;
-    console.log(width);
-    console.log('this is the location',location);
+    // console.log(width);
+    // console.log('this is the location',location);
 
     useLayoutEffect(() => {
         if (ref.current) {
@@ -58,25 +58,27 @@ function NavBar(){
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(query);
-        history.push(`/biz?type=${query}`)
+        // console.log(query);
+        const tempQuery = query;
+        setQuery('');
+        history.push(`/biz?type=${tempQuery}&loc=${loc}`)
     }
 
     function changeLocLA() {
         setLocation('Los Angeles, CA');
-        setLoc('la');
+        setLoc('Los Angeles');
     }
     function changeLocOAK() {
         setLocation('Oakland, CA');
-        setLoc('oak');
+        setLoc('Oakland');
     }
     function changeLocSF() {
         setLocation('San Francisco, CA');
-        setLoc('sf');
+        setLoc('San Francisco');
     }
     function changeLocSJ() {
         setLocation('San Jose, CA');
-        setLoc('sj');
+        setLoc('San Jose');
     }
 
     if (sessionUser) {
@@ -97,7 +99,7 @@ function NavBar(){
     }
 // */
     return (
-        <div className={url === '/' ? 'header-container gradient' : url.includes('new') || url.includes('update') ? 'header-container-sm header-container-fixed' : 'header-container header-container-fixed'}>
+        <div className={url === '/' ? 'header-container gradient' : url.includes('new') || url.includes('update') || url.includes('write') ? 'header-container-sm header-container-fixed' : 'header-container header-container-fixed'}>
             <div className={sessionUser ? 'header-top-portion-user' : 'header-top-portion-sl'}>
                 <div className={sessionUser ? 'logo-left-section-user' : 'logo-left-section-sl'}>
                     <NavLink className='logo' exact to="/">
@@ -106,7 +108,7 @@ function NavBar(){
                     </NavLink>
                 </div>
                 <div className={sessionUser ? 'search-and-buttons-right-section-user' : 'search-and-buttons-right-section-sl'}>
-                    {url.includes('new') || url.includes('update') ? <div></div> : <div className='nav-search-section'>
+                    {url.includes('new') || url.includes('update') || url.includes('write') ? <div></div> : <div className='nav-search-section'>
                         <form className='search-query-section' onSubmit={onSubmit}>
                             <label className='search-input-label search-input-label-left'>
                                 <input className='search-query-input search-input'
@@ -149,8 +151,8 @@ function NavBar(){
                         </form>
                     </div>}
                     {sessionUser ? <span className='header-gap-search-buttons' /> : null}
-                    <div className={url.includes('new') || url.includes('update') ? 'buttons-form-stuff' : sessionUser ? 'buttons-user-stuff' : 'buttons-sl-stuff'}>
-                        {url.includes('new') || url.includes('update') ? <div></div> : <><NavLink to='/biz/new' className={sessionUser ? 'navbar-button-left' : 'navbar-button-left-sl'}>
+                    <div className={url.includes('new') || url.includes('update') || url.includes('write') ? 'buttons-form-stuff' : sessionUser ? 'buttons-user-stuff' : 'buttons-sl-stuff'}>
+                        {url.includes('new') || url.includes('update') || url.includes('write') ? <div></div> : <><NavLink to='/biz/new' className={sessionUser ? 'navbar-button-left' : 'navbar-button-left-sl'}>
                             <button className={url === '/' ? 'top-button-wht header-right-button' : 'top-button-blk header-right-button'}>
                                 List a Business
                             </button>
@@ -166,7 +168,7 @@ function NavBar(){
                     </div>
                 </div>
             </div>
-            {url.includes('new') || url.includes('update') ? null :
+            {url.includes('new') || url.includes('update') || url.includes('write') ? null :
             <div className={sessionUser ? 'header-bottom-portion-user' : 'header-bottom-portion-sl'}>
                 <div className='empty-below-icon' />
                 <div className='buttons-under-search'>

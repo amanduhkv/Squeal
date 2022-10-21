@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getOneBiz } from '../../store/businesses';
 import userpig from '../../icons/user-pig.png';
 import { createReview } from '../../store/reviews';
+import { getBusinessReviews } from '../../store/reviews';
 
 const ReviewForm = () => {
     const history = useHistory();
@@ -29,19 +30,26 @@ const ReviewForm = () => {
     const { bizId } = useParams();
     const biz = useSelector(state => state.businesses.singleBusiness);
     const user = useSelector(state => state.session.user);
-    console.log(biz);
+
+    const revs = useSelector(state => state.reviews.business);
+    const reviews = Object.values(revs);
 
     useEffect(() => {
         dispatch(getOneBiz(bizId));
     }, [dispatch, bizId]);
 
-    if (!user) {
-        alert("Please log in or create an account to write a review.");
-        history.replace(`/biz/${bizId}`);
-    }
-
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (!user) {
+            alert("Please log in or create an account to write a review.");
+            return;
+        }
+
+        if (reviews.filter(rev => rev.user_id === user.id).length) {
+            alert("You have already submitted a review for this restaurant.");
+            history.replace(`/biz/${bizId}`);
+        }
 
         const newReview = {
             rating: revRate,

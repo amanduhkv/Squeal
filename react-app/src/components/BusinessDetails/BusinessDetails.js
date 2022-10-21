@@ -30,9 +30,9 @@ const BusinessDetails = () => {
     const bizReviews = useSelector(state => state.reviews.business)
     const types = useSelector(state => state.businesses.singleBusiness.types)
     const user = useSelector(state => state.session.user);
-    
-    
-    
+
+
+
     let numReviews;
     let numImages;
     let allReviewImages = []
@@ -55,9 +55,11 @@ const BusinessDetails = () => {
     }
     if (bizReviews) {
         let reviewsArr = Object.values(bizReviews).map(obj => obj.Review_Images)
-        if (reviewsArr[0].length > 0) {
-            let reviews = reviewsArr.filter(obj => obj.url)
-            allReviewImages = reviews.flat()
+        if (reviewsArr.length) {
+            if (reviewsArr[0].length > 0) {
+                let reviews = reviewsArr.filter(obj => obj.url)
+                allReviewImages = reviews.flat()
+            }
         }
     }
 

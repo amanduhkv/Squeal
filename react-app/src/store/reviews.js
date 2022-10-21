@@ -86,7 +86,7 @@ export const getUserReviews = () => async dispatch => {
 }
 
 export const getAllReviews = () => async dispatch => {
-    const response = await csrfFetch(`/api/reviews`);
+    const response = await csrfFetch(`/api/reviews/`);
 
     if (response.ok) {
         const allReviews = await response.json();
@@ -153,7 +153,6 @@ export const updateReview = (reviewId, reviewData, userData, businessData) => as
 }
 
 export const deleteReview = (reviewId) => async dispatch => {
-    console.log("HITTING DELETE THUNK");
     const response = await fetch(`/api/reviews/${reviewId}`, {
         method: 'DELETE'
     });

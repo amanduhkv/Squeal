@@ -24,7 +24,7 @@ const addBiz = (business) => ({
 });
 
 export const createBusiness = (business) => async dispatch => {
-    const response = await csrfFetch('/api/biz', {
+    const response = await csrfFetch('/api/biz/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -32,26 +32,13 @@ export const createBusiness = (business) => async dispatch => {
         body: JSON.stringify(business)
     });
 
+    // console.log("RESPONSE AFTER CREATE BIZ THUNK", response)
+
     if (response.ok) {
-        const newBiz = await response.json();
-        console.log("ANY RESPONSE AFTER CREATE BIZ THUNK ACTION:", newBiz);
-        // const res = await csrfFetch(`/api/business/${newBiz.id}/images`, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify({
-        //         url: previewImage,
-        //         preview: true
-        //     })
-        // });
+        const newBiz = await response.json()
 
-        // if (res.ok) {
-            // const newImage = await res.json();
-
-            dispatch(addBiz(newBiz));
-            return newBiz;
-        // }
+        await dispatch(addBiz(newBiz));
+        return newBiz;
     }
 };
 
@@ -99,13 +86,23 @@ export const search = payload => ({
     payload
 });
 
-export const getAllBiz = () => async dispatch => {
-    const response = await fetch('/api/biz');
-    // console.log("hitting res", response)
-    if (response.ok) {
-        const list = await response.json();
-        // console.log("hitting list", list)
-        dispatch(load(list));
+export const getAllBiz = (location) => async dispatch => {
+    if (location) {
+        const response = await fetch(`/api/biz/?location=${location}`);
+        // console.log("hitting res", response)
+        if (response.ok) {
+            const list = await response.json();
+            // console.log("hitting list", list)
+            dispatch(load(list));
+        }
+    } else {
+        const response = await fetch('/api/biz/');
+        // console.log("hitting res", response)
+        if (response.ok) {
+            const list = await response.json();
+            // console.log("hitting list", list)
+            dispatch(load(list));
+        }
     }
 };
 
@@ -255,7 +252,7 @@ const businessReducer = (state = initialState, action) => {
         case ADD:
             newState = { ...state, allBusinesses: { ...state.allBusinesses }, singleBusiness: { ...state.singleBusiness } };
             const newBusiness = { ...action.payload };
-            newState.allBusinesses[action.payload.id] = newBusiness;
+            newState.singleBusiness[action.payload.id] = newBusiness;
             // console.log("NEWSTATE AFTER CREATE BIZ ACTION:", newState);
             return newState;
         case ADD_IMG:
