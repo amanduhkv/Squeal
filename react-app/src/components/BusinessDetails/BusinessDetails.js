@@ -57,7 +57,7 @@ const BusinessDetails = () => {
     if (bizReviews) {
         let reviewsArr = Object.values(bizReviews).map(obj => obj.Review_Images)
         if (reviewsArr) {
-            if (reviewsArr[0].length > 0) {
+            if (reviewsArr[0] && reviewsArr[0].length > 0) {
                 let reviews = reviewsArr.filter(obj => obj.url)
                 allReviewImages = reviews.flat()
             }
@@ -73,6 +73,14 @@ const BusinessDetails = () => {
 
     let imageHeader
     if (bizImages) {
+        if (bizImages.length < 3) {
+            let obj = bizImages[0]
+            imageHeader = (
+                <span key={obj.id} className='single-business-single-image-wrapper' id='just-one-business-img' >
+                    <img className='single-business-one-image' alt={obj.id} src={obj.url} />
+                </span>
+            )
+        }
         imageHeader = bizImages.map(obj => {
             return (
                 <span key={obj.id} className='single-business-one-image-wrapper' >
@@ -99,7 +107,6 @@ const BusinessDetails = () => {
         let currentTime = new Date().getHours()
         let currentMinutes = new Date().getMinutes()
         if (open && close) {
-            console.log(currentTime > close.slice(0, 2), currentTime, close.slice(0, 2))
             res = currentTime < open.slice(0, 2) || (currentTime < 12 && currentTime > close.slice(0, 2)) || (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
         }
         return res
@@ -116,7 +123,6 @@ const BusinessDetails = () => {
     let hours
     if (biz.start_time && biz.end_time) {
         let open = openOrClosed(biz.start_time, biz.end_time)
-        console.log(biz.end_time)
         let today = new Date().getDay()
         hours = days.map(day => {
             return (
