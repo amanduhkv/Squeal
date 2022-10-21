@@ -53,6 +53,7 @@ function NavBar() {
             return () => window.removeEventListener('resize', updateWidth)
         }
     }, [url]);
+    // Hello world
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -112,8 +113,12 @@ function NavBar() {
                         <form className='search-query-section' onSubmit={onSubmit}>
                             <label className='search-input-label search-input-label-left'>
                                 <input className='search-query-input search-input'
-                                    placeholder="tacos, cheap dinner, Max's"
-                                    type='text' value={query} onChange={(e) => setQuery(e.target.value)} />
+                                    placeholder="noodles, pizza, donuts"
+                                    type='text'
+                                    value={query}
+                                    onChange={(e) => setQuery(e.target.value)}
+                                    onKeyPress={(e) => e.key === "Enter" ? history.push(`/biz?type=${query}&loc=${loc}`) : null}
+                                    />
                             </label>
                             <span className='inbetween-inputs' />
                             <label ref={ref} className='search-input-label search-input-label-right'>

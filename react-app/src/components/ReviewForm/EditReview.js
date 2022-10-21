@@ -2,8 +2,8 @@ import React, { useEffect, useState, useRef } from 'react'
 import './ReviewForm.css';
 import { useParams, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { getOneBiz } from '../../store/businesses';
-import { getUserReviews, updateReview } from '../../store/reviews';
+import * as bizActions from '../../store/businesses';
+import * as reviewActions from '../../store/reviews';
 
 const EditReview = () => {
     const history = useHistory();
@@ -24,8 +24,13 @@ const EditReview = () => {
     const [validationErrors, setValidationErrors] = useState([]);
 
     useEffect(() => {
-        dispatch(getOneBiz(bizId));
-        dispatch(getUserReviews(reviewId));
+        dispatch(bizActions.getOneBiz(bizId));
+        dispatch(reviewActions.getUserReviews(reviewId));
+
+        return () => {
+            dispatch(bizActions.clearData());
+            dispatch(reviewActions.clearData());
+        }
     }, [dispatch, bizId, reviewId]);
 
     if (!user) {
@@ -41,7 +46,7 @@ const EditReview = () => {
             review_body: revBody
         };
 
-        const newRev = await dispatch(updateReview(reviewId, updatedRev, user, biz));
+        const newRev = await dispatch(reviewActions.updateReview(reviewId, updatedRev, user, biz));
 
         if (newRev) {
             setValidationErrors([]);

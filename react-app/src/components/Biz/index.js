@@ -1,19 +1,11 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { getAllBiz } from '../../store/businesses';
+import { getAllBiz, clearData } from '../../store/businesses';
 import FuzzySearch from 'fuzzy-search';
 import { search, clearData } from "../../store/businesses";
 import './Biz.css';
 import Search from "./search";
-
-// ---------- UNSURE IF BELOW STILL NEED: ---------- //
-// import ReactPaginate from 'react-paginate';
-// import x from '../../icons/all-biz-page/x.svg';
-// import check from '../../icons/all-biz-page/check.svg';
-// import txtbub from '../../icons/all-biz-page/text-bubble.svg';
-// import { types, types_alias } from '../../assets/types';
-// import { BizToFront } from "../../assets/bizNames";
 
 export default function Biz() {
     const biz = useSelector(state => state.businesses.allBusinesses);
@@ -68,6 +60,8 @@ export default function Biz() {
     /* -------USE EFFECT:get all bizzies------- */
     useEffect(() => {
         dispatch(getAllBiz())
+
+        return () => dispatch(clearData())
     }, [dispatch])
 
 

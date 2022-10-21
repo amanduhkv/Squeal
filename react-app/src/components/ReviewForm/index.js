@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import './ReviewForm.css';
 import {useParams, useHistory} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { getOneBiz } from '../../store/businesses';
+import { getOneBiz, clearData } from '../../store/businesses';
 import userpig from '../../icons/user-pig.png';
 import { createReview } from '../../store/reviews';
 
@@ -36,6 +36,8 @@ const ReviewForm = () => {
 
     useEffect(() => {
         dispatch(getOneBiz(bizId));
+
+        return () => dispatch(clearData());
     }, [dispatch, bizId]);
 
     const handleSubmit = async (e) => {

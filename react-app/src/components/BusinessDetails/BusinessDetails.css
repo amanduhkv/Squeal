@@ -329,6 +329,7 @@
     overflow: hidden;
     border-radius: 4px;
     object-fit: cover;
+    margin-top: 10px;
 }
 
 .single-business-start-your-review {
@@ -373,4 +374,10 @@
 
 .photo-modal-close:hover {
     cursor: pointer;
+}
+
+.single-businss-user-review-edit-delete-icons {
+    display: flex;
+    justify-content: start;
+    margin-top: -20px;
 }

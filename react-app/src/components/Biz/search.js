@@ -3,8 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useLocation } from "react-router-dom";
 import ReactPaginate from 'react-paginate';
 import FuzzySearch from 'fuzzy-search';
-import { search, clearData } from "../../store/businesses";
-import { getAllBiz } from '../../store/businesses';
+import { search, getAllBiz, clearData } from "../../store/businesses";
 
 import x from '../../icons/all-biz-page/x.svg';
 import check from '../../icons/all-biz-page/check.svg';
@@ -71,7 +70,9 @@ export default function Search({ data }) {
   useEffect(() => {
     if (location) dispatch(getAllBiz(location))
     else dispatch(getAllBiz())
-  }, [dispatch])
+
+    return () => dispatch(clearData())
+  }, [dispatch, location])
 
 
   /* ------------SEARCH FXNS/LOGIC------------ */
