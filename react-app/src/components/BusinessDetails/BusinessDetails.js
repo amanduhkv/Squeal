@@ -118,9 +118,9 @@ const BusinessDetails = () => {
             if (open === "0000") {
                 open = "1200"
                 }
-            if (close === "0000") {
-                close = "1200"
-            }
+            // if (close === "0000") {
+            //     close = "0000"
+            // }
             if (open === close) {
                 res = "Open"
             } else {
@@ -128,6 +128,7 @@ const BusinessDetails = () => {
                 (currentTime === +open.slice(0, 2) && currentMinutes < +open.slice(2)) ||
                 (currentTime < 12 && currentTime > close.slice(0, 2)) ||
                 (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
+                console.log(currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2))
             }
         }
         return res
