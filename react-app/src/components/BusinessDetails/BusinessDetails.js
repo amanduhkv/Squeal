@@ -1,5 +1,3 @@
-// TO FIX: CLOSED/OPEN ON GET ALL BUSINESSES
-// WRITE A REVIEW ROUTE 
 
 
 import React from 'react'
