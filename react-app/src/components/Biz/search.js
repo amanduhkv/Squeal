@@ -35,9 +35,9 @@ export default function Search({ data }) {
   const [query, setQuery] = useState('');
   const searchStuff = useLocation().search;
 
-    // console.log('this is searchStuff', searchStuff);
-    let cat;
-    let location;
+  // console.log('this is searchStuff', searchStuff);
+  let cat;
+  let location;
 
   // console.log('this is the data', data)
 
@@ -81,7 +81,7 @@ export default function Search({ data }) {
 
 
   let res = searchFunc.search(cat ?? query)
-//   console.log('using search', res)
+  //   console.log('using search', res)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -90,7 +90,7 @@ export default function Search({ data }) {
     // console.log('SUCCESS')
   }
 
-  if(priceArr.length) res = res.filter(biz => priceArr.includes(biz.price_range))
+  if (priceArr.length) res = res.filter(biz => priceArr.includes(biz.price_range))
 
   /* -------------TIME FXNS/LOGIC------------- */
   let current_time;
@@ -105,6 +105,8 @@ export default function Search({ data }) {
   current_time = settingTime()
 
   const time_conversion = (time) => {
+    if (Number(time) === 1200) time = 1200
+    if (Number(time) === 0) time = 2400
     if (Number(time) > 1200) {
       time = time - 1200
     }
@@ -113,7 +115,7 @@ export default function Search({ data }) {
     if (nums.length === 3) return nums[0] + ':' + nums[1] + nums[2]
     if (nums.length === 4) return nums[0] + nums[1] + ':' + nums[2] + nums[3]
   }
-
+  // console.log('TIME', time_conversion(2400))
 
   /* ------------TOGGLE FXNS/LOGIC------------ */
 
@@ -146,52 +148,52 @@ export default function Search({ data }) {
   useEffect(() => {
     // console.log('hitting useEffect for Del')
 
-     if(activeDel) {
-      if(activePrice) setActivePrice(false);
-      if(activeOpen) setActiveOpen(false);
-      if(activeTakeout) setActiveTakeout(false);
-      if(activeRes) setActiveRes(false);
-      if(activeAll) setActiveAll(false);
+    if (activeDel) {
+      if (activePrice) setActivePrice(false);
+      if (activeOpen) setActiveOpen(false);
+      if (activeTakeout) setActiveTakeout(false);
+      if (activeRes) setActiveRes(false);
+      if (activeAll) setActiveAll(false);
     }
 
   }, [activeDel]);
   useEffect(() => {
     // console.log('hitting useEffect for Takeout')
 
-    if(activeTakeout) {
-      if(activePrice) setActivePrice(false);
-      if(activeOpen) setActiveOpen(false);
-      if(activeDel) setActiveDel(false);
-      if(activeRes) setActiveRes(false);
-      if(activeAll) setActiveAll(false);
+    if (activeTakeout) {
+      if (activePrice) setActivePrice(false);
+      if (activeOpen) setActiveOpen(false);
+      if (activeDel) setActiveDel(false);
+      if (activeRes) setActiveRes(false);
+      if (activeAll) setActiveAll(false);
     }
 
   }, [activeTakeout]);
   useEffect(() => {
     // console.log('hitting useEffect for Res')
 
-     if(activeRes) {
-      if(activePrice) setActivePrice(false);
-      if(activeOpen) setActiveOpen(false);
-      if(activeDel) setActiveDel(false);
-      if(activeTakeout) setActiveTakeout(false);
-      if(activeAll) setActiveAll(false);
+    if (activeRes) {
+      if (activePrice) setActivePrice(false);
+      if (activeOpen) setActiveOpen(false);
+      if (activeDel) setActiveDel(false);
+      if (activeTakeout) setActiveTakeout(false);
+      if (activeAll) setActiveAll(false);
     }
   }, [activeRes]);
   useEffect(() => {
-    if(activeAll) {
-      if(activePrice) setActivePrice(false);
-      if(activeOpen) setActiveOpen(false);
-      if(activeDel) setActiveDel(false);
-      if(activeTakeout) setActiveTakeout(false);
-      if(activeRes) setActiveRes(false);
+    if (activeAll) {
+      if (activePrice) setActivePrice(false);
+      if (activeOpen) setActiveOpen(false);
+      if (activeDel) setActiveDel(false);
+      if (activeTakeout) setActiveTakeout(false);
+      if (activeRes) setActiveRes(false);
     }
   }, [activeAll]);
 
 
 
   let title;
-  if(query) title = query[0].toUpperCase() + query.substring(1)
+  if (query) title = query[0].toUpperCase() + query.substring(1)
   // console.log('CURRENT TITLE: ', title)
   if (title === 'Restaurant_reservation') title = 'Reservations'
   else title = title
@@ -243,7 +245,7 @@ export default function Search({ data }) {
                 <button id='dd-buttons'>
                   <input type='checkbox' id='$' checked={price1} onChange={() => {
                     setPrice1(!price1)
-                    if(priceArr.includes('$')) {
+                    if (priceArr.includes('$')) {
                       const i = priceArr.indexOf("$")
                       setPriceArr([...priceArr.slice(0, i), ...priceArr.slice(i + 1)])
                     }
@@ -256,7 +258,7 @@ export default function Search({ data }) {
                 <button id='dd-buttons'>
                   <input type='checkbox' id='$$' checked={price2} onChange={() => {
                     setPrice2(!price2)
-                    if(priceArr.includes('$$')) {
+                    if (priceArr.includes('$$')) {
                       const i = priceArr.indexOf("$$")
                       setPriceArr([...priceArr.slice(0, i), ...priceArr.slice(i + 1)])
                     }
@@ -270,7 +272,7 @@ export default function Search({ data }) {
                 <button id='dd-buttons'>
                   <input type='checkbox' id='$$$' checked={price3} onChange={() => {
                     setPrice3(!price3)
-                    if(priceArr.includes('$$$')) {
+                    if (priceArr.includes('$$$')) {
                       const i = priceArr.indexOf("$$$")
                       setPriceArr([...priceArr.slice(0, i), ...priceArr.slice(i + 1)])
                     }
@@ -284,7 +286,7 @@ export default function Search({ data }) {
                 <button id='dd-buttons'>
                   <input type='checkbox' id='$$$$' checked={price4} onChange={() => {
                     setPrice4(!price4)
-                    if(priceArr.includes('$$$$')) {
+                    if (priceArr.includes('$$$$')) {
                       const i = priceArr.indexOf("$$$$")
                       setPriceArr([...priceArr.slice(0, i), ...priceArr.slice(i + 1)])
                     }
@@ -322,11 +324,11 @@ export default function Search({ data }) {
               type='submit'
               onClick={() => {
                 toggleIdDel()
-                if(activeDel) {
-                  if(activePrice) setActivePrice(false);
-                  if(activeOpen) setActiveOpen(false);
-                  if(activeTakeout) setActiveTakeout(false);
-                  if(activeRes) setActiveRes(false);
+                if (activeDel) {
+                  if (activePrice) setActivePrice(false);
+                  if (activeOpen) setActiveOpen(false);
+                  if (activeTakeout) setActiveTakeout(false);
+                  if (activeRes) setActiveRes(false);
                 }
                 setQuery('delivery')
                 setPageNum(0);
@@ -343,11 +345,11 @@ export default function Search({ data }) {
               type='submit'
               onClick={() => {
                 toggleIdTakeout()
-                if(activeTakeout) {
-                  if(activePrice) setActivePrice(false);
-                  if(activeOpen) setActiveOpen(false);
-                  if(activeDel) setActiveDel(false);
-                  if(activeRes) setActiveRes(false);
+                if (activeTakeout) {
+                  if (activePrice) setActivePrice(false);
+                  if (activeOpen) setActiveOpen(false);
+                  if (activeDel) setActiveDel(false);
+                  if (activeRes) setActiveRes(false);
                 }
                 setQuery('pickup')
                 setPageNum(0);
@@ -364,11 +366,11 @@ export default function Search({ data }) {
               type='submit'
               onClick={() => {
                 toggleIdRes()
-                if(activeRes) {
-                  if(activePrice) setActivePrice(false);
-                  if(activeOpen) setActiveOpen(false);
-                  if(activeDel) setActiveDel(false);
-                  if(activeTakeout) setActiveTakeout(false);
+                if (activeRes) {
+                  if (activePrice) setActivePrice(false);
+                  if (activeOpen) setActiveOpen(false);
+                  if (activeDel) setActiveDel(false);
+                  if (activeTakeout) setActiveTakeout(false);
                 }
                 setQuery('restaurant_reservation')
                 setPageNum(0);
@@ -384,12 +386,12 @@ export default function Search({ data }) {
               value={query}
               onClick={() => {
                 toggleIdAll()
-                if(activeAll) {
-                  if(activePrice) setActivePrice(false);
-                  if(activeOpen) setActiveOpen(false);
-                  if(activeDel) setActiveDel(false);
-                  if(activeTakeout) setActiveTakeout(false);
-                  if(activeRes) setActiveRes(false);
+                if (activeAll) {
+                  if (activePrice) setActivePrice(false);
+                  if (activeOpen) setActiveOpen(false);
+                  if (activeDel) setActiveDel(false);
+                  if (activeTakeout) setActiveTakeout(false);
+                  if (activeRes) setActiveRes(false);
                 }
                 setQuery('')
                 setPageNum(0);
@@ -544,22 +546,28 @@ export default function Search({ data }) {
                     {biz.price_range} • {biz.city}
                   </div>
                 </div>
-                <div>
-                  {current_time > biz.start_time && current_time < biz.end_time ?
-                    (<div id='biz-hours'>
-                      <span id='biz-open'>Open</span>
-                      <span id='biz-hours-1'>
-                        until {time_conversion(biz.end_time)} {Number(biz.end_time) >= 1200 ? 'PM' : 'AM'}
-                      </span>
-                    </div>) :
-                    (<div id='biz-hours'>
-                      <span id='biz-closed'>Closed</span>
-                      <span id='biz-hours-1'>
-                        until {time_conversion(biz.start_time)} {Number(biz.start_time) >= 1200 ? 'PM' : 'AM'}
-                      </span>
-                    </div>)
-                  }
-                </div>
+                {biz.start_time === biz.end_time ? (
+                  <div id='biz-hours'>
+                    <div id='biz-open'>Open All Day</div>
+                  </div>
+                ) :
+                  (<div>
+                    {biz.start_time !== biz.end_time && current_time > biz.start_time && current_time < biz.end_time ?
+                      (<div id='biz-hours'>
+                        <span id='biz-open'>Open</span>
+                        <span id='biz-hours-1'>
+                          until {time_conversion(biz.end_time)} {Number(biz.end_time) >= 1200 ? 'PM' : 'AM'}
+                        </span>
+                      </div>) :
+                      (<div id='biz-hours'>
+                        <span id='biz-closed'>Closed</span>
+                        <span id='biz-hours-1'>
+                          until {time_conversion(biz.start_time)} {Number(biz.start_time) >= 1200 ? 'PM' : 'AM'}
+                        </span>
+                      </div>)
+                    }
+                  </div>)
+                }
                 <div id='biz-rev'>
                   <img src={txtbub} alt='txtbubble' width='16px' height='14px' />
                   <div id='biz-rev-p'>
@@ -589,15 +597,15 @@ export default function Search({ data }) {
           </div>
         ))}
       </ol>
-      <div className="paginate-box">
+      <div className={bizzies?.length ? "paginate-box" : "paginate-box-hide"}>
         <ReactPaginate
           breakLabel=''
-          previousLabel={bizzies?.length ? "<" : 'Loading...'}
+          previousLabel={bizzies?.length ? "<" : ''}
           nextLabel={bizzies?.length ? '>' : ''}
           // previousLabel={'<'}
           // nextLabel={'>'}
           pageRangeDisplayed='9'
-          marginPagesDisplayed='0'
+          marginPagesDisplayed=''
           pageCount={pageCount}
           onPageChange={pageChange}
           containerClassName='pagination-container'
