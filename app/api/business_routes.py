@@ -57,7 +57,7 @@ def get_all_businesses():
         types_list = [type.to_dict() for type in b[1].types]
         transactions_list = [transaction.to_dict()
                          for transaction in b[1].transactions]
-        
+
         preview_review = ''
         if len(reviews_lst) > 1:
             preview_review = reviews_lst[0]['review_body']
