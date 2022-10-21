@@ -3,9 +3,7 @@ import './ReviewForm.css';
 import { useParams, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import * as bizActions from '../../store/businesses';
-// import { getOneBiz } from '../../store/businesses';
 import * as reviewActions from '../../store/reviews';
-// import { getUserReviews, updateReview } from '../../store/reviews';
 
 const EditReview = () => {
     const history = useHistory();
