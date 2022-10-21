@@ -34,7 +34,7 @@ export default function Search({ data }) {
   const [pageNum, setPageNum] = useState(0);
   const [query, setQuery] = useState('');
   const searchStuff = useLocation().search;
-
+  console.log('BIZARR', bizArr)
   // console.log('this is searchStuff', searchStuff);
   let cat;
   let location;
@@ -75,7 +75,7 @@ export default function Search({ data }) {
 
 
   /* ------------SEARCH FXNS/LOGIC------------ */
-  const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name']);
+  const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name', 'Review.preview_review']);
 
   // const res = searchFunc.search(query)
 
