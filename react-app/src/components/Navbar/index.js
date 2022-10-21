@@ -39,7 +39,7 @@ function NavBar() {
     const url = useLocation().pathname;
     const [query, setQuery] = useState('');
     const [location, setLocation] = useState('LA and the BAY, CA');
-    const [loc, setLoc] = useState('');
+    const [loc, setLoc] = useState('CA');
     let sessionLinks;
 
     useLayoutEffect(() => {
@@ -63,7 +63,7 @@ function NavBar() {
 
     function changeLocLAandBAY() {
         setLocation('LA and the BAY, CA');
-        setLoc('');
+        setLoc('CA');
     }
     function changeLocLA() {
         setLocation('Los Angeles, CA');

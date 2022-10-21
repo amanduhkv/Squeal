@@ -31,7 +31,10 @@ def get_all_businesses():
     location = request.args.get('location')
     businesses = None
     if (location):
-        businesses = Business.query.filter(Business.city == location).all()
+        if (location == 'CA'):
+            businesses = Business.query.filter(Business.state == location).all()
+        else:
+            businesses = Business.query.filter(Business.city == location).all()
     else:
         businesses = Business.query.all()
     biz = [[business.to_dict(), business] for business in businesses]
@@ -111,7 +114,7 @@ def get_one_business(biz_id):
     business['Business_Images'] = images
     business['Owner'] = owner
 
-    
+
 
     return business
 

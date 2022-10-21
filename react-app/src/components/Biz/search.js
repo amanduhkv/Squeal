@@ -80,7 +80,7 @@ export default function Search({ data }) {
   // const res = searchFunc.search(query)
 
 
-  let res = searchFunc.search(cat ?? query)
+  let res = searchFunc.search(cat ?? query).length ? searchFunc.search(cat ?? query) : bizArr;
   //   console.log('using search', res)
 
   const handleSubmit = (e) => {
