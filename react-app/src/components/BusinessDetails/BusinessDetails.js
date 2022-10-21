@@ -4,13 +4,9 @@ import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import * as bizActions from '../../store/businesses'
-// import { getOneBiz } from '../../store/businesses'
 import * as reviewActions from '../../store/reviews'
-// import { getBusinessReviews } from '../../store/reviews'
 import { Modal } from '../../context/Modal';
-import * as reviewActions from "../../store/reviews";
 
-// import { getUserReviews } from '../../store/reviews'
 import check from '../../icons/claimed-check.svg';
 import x from '../../icons/x.svg'
 import map from '../../icons/map.svg'
@@ -318,7 +314,7 @@ const BusinessDetails = () => {
                     </div>
                     <div className='single-business-review-body'>
                         {obj.review_body}
-                        
+
                         {obj.Review_Images && obj.Review_Images.map(obj => {
                             return (
                                 <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} alt={obj.url} /></div>
