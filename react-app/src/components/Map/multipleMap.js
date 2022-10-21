@@ -27,7 +27,7 @@ const MultipleMap = ({ locations }) => {
         markers = locations.map(location => {
             let locationStr = `${location.lat}, ${location.lng}`
             return (
-            <Marker location={locationStr} color="red" />
+                <Marker location={locationStr} color="red" />
             )
         })
     }

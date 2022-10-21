@@ -32,8 +32,8 @@ export default function UpdateBizForm() {
 
     // FOR SELECT OPTIONS:
     const PRICE_RANGES = ["$", "$$", "$$$", "$$$$"];
-    const BIZ_HOURS = [ ["0000", "12:00am"], ["0030", "12:30am"], ["0100", "1:00am"], ["0130", "1:30am"], ["0200", "2:00am"], ["0230", "2:30am"], ["0300", "3:00am"], ["0330", "3:30am"], ["0400", "4:00am"], ["0430", "4:30am"], ["0500", "5:00am"], ["0530", "5:30am"], ["0600", "6:00am"], ["0630", "6:30am"], ["0700", "7:00am"], ["0730", "7:30am"], ["0800", "8:00am"], ["0830", "8:30am"], ["0900", "9:00am"], ["0930", "9:30am"], ["1000", "10:00am"], ["1030", "10:30am"], ["1100", "11:00am"], ["1130", "11:30am"], ["1200", "12:00pm"], ["1230", "12:30pm"], ["1300", "1:00pm"], ["1330", "1:30pm"], ["1400", "2:00pm"], ["1430", "2:30pm"], ["1500", "3:00pm"], ["1530", "3:30pm"], ["1600", "4:00pm"], ["1630", "4:30pm"], ["1700", "5:00pm"], ["1730", "5:30pm"], ["1800", "6:00pm"], ["1830", "6:30pm"], ["1900", "7:00pm"], ["1930", "7:30pm"], ["2000", "8:00pm"], ["2030", "8:30pm"], ["2100", "9:00pm"], ["2130", "9:30pm"], ["2200", "10:00pm"], ["2230", "10:30pm"], ["2300", "11:00pm"], ["2330", "11:30pm"] ];
-    const TYPES = [ { 'alias': 'bakeries', 'title': 'Bakeries' }, { 'alias': 'bubbletea', 'title': 'Bubble Tea' }, { 'alias': 'cocktailbars', 'title': 'Cocktails' }, { 'alias': 'bars', 'title': 'Bars' }, { 'alias': 'brazilian', 'title': 'Brazilian' }, { 'alias': 'coffee', 'title': 'Coffee & Tea' }, { 'alias': 'chickenshop', 'title': 'Chicken Shop' }, { 'alias': 'desserts', 'title': 'Desserts' }, { 'alias': 'donuts', 'title': 'Donuts' }, { 'alias': 'dimsum', 'title': 'Dim Sum' }, { 'alias': 'ethiopian', 'title': 'Ethiopian' }, { 'alias': 'icecream', 'title': 'Ice Cream & Froyo' }, { 'alias': 'juicebars', 'title': 'Juice Bars & Smoothies' }, { 'alias': 'bbq', 'title': 'Barbeque' }, { 'alias': 'breakfast_brunch', 'title': 'Breakfast & Brunch' }, { 'alias': 'burgers', 'title': 'Burgers' }, { 'alias': 'cafes', 'title': 'Cafes' }, { 'alias': 'chicken_wings', 'title': 'Chicken Wings' }, { 'alias': 'chinese', 'title': 'Chinese' }, { 'alias': 'gluten_free', 'title': 'Gluten-Free' }, { 'alias': 'german', 'title': 'German' }, { 'alias': 'gastropubs', 'title': 'Gastropubs' }, { 'alias': 'french', 'title': 'French' }, { 'alias': 'hotdogs', 'title': 'Fast Food' }, { 'alias': 'indpak', 'title': 'Indian' }, { 'alias': 'latin', 'title': 'Latin' }, { 'alias': 'italian', 'title': 'Italian' }, { 'alias': 'japanese', 'title': 'Japanese' }, { 'alias': 'korean', 'title': 'Korean' }, { 'alias': 'newamerican', 'title': 'American (New)' }, { 'alias': 'mediterranean', 'title': 'Mediterranean' }, { 'alias': 'mexican', 'title': 'Mexican' }, { 'alias': 'pizza', 'title': 'Pizza' }, { 'alias': 'ramen', 'title': 'Ramen' }, { 'alias': 'noodles', 'title': 'Noodles' }, { 'alias': 'raw_food', 'title': 'Raw Food' }, { 'alias': 'salad', 'title': 'Salad' }, { 'alias': 'sandwiches', 'title': 'Sandwiches' }, { 'alias': 'soulfood', 'title': 'Soul Food' }, { 'alias': 'soup', 'title': 'Soup' }, { 'alias': 'seafood', 'title': 'Seafood' }, { 'alias': 'steak', 'title': 'Steakhouses' }, { 'alias': 'sushi', 'title': 'Sushi Bars' }, { 'alias': 'tacos', 'title': 'Tacos' }, { 'alias': 'tradamerican', 'title': 'American (Traditional)' }, { 'alias': 'taiwanese', 'title': 'Taiwanese' }, { 'alias': 'thai', 'title': 'Thai' }, { 'alias': 'tapasmallplates', 'title': 'Tapas/Small Plates' }, { 'alias': 'vegetarian', 'title': 'Vegetarian' }, { 'alias': 'vegan', 'title': 'Vegan' }, { 'alias': 'vietnamese', 'title': 'Vietnamese' }, {'alias': 'waffles', 'title': 'Waffles' } ]
+    const BIZ_HOURS = [["0000", "12:00am"], ["0030", "12:30am"], ["0100", "1:00am"], ["0130", "1:30am"], ["0200", "2:00am"], ["0230", "2:30am"], ["0300", "3:00am"], ["0330", "3:30am"], ["0400", "4:00am"], ["0430", "4:30am"], ["0500", "5:00am"], ["0530", "5:30am"], ["0600", "6:00am"], ["0630", "6:30am"], ["0700", "7:00am"], ["0730", "7:30am"], ["0800", "8:00am"], ["0830", "8:30am"], ["0900", "9:00am"], ["0930", "9:30am"], ["1000", "10:00am"], ["1030", "10:30am"], ["1100", "11:00am"], ["1130", "11:30am"], ["1200", "12:00pm"], ["1230", "12:30pm"], ["1300", "1:00pm"], ["1330", "1:30pm"], ["1400", "2:00pm"], ["1430", "2:30pm"], ["1500", "3:00pm"], ["1530", "3:30pm"], ["1600", "4:00pm"], ["1630", "4:30pm"], ["1700", "5:00pm"], ["1730", "5:30pm"], ["1800", "6:00pm"], ["1830", "6:30pm"], ["1900", "7:00pm"], ["1930", "7:30pm"], ["2000", "8:00pm"], ["2030", "8:30pm"], ["2100", "9:00pm"], ["2130", "9:30pm"], ["2200", "10:00pm"], ["2230", "10:30pm"], ["2300", "11:00pm"], ["2330", "11:30pm"]];
+    const TYPES = [{ 'alias': 'bakeries', 'title': 'Bakeries' }, { 'alias': 'bubbletea', 'title': 'Bubble Tea' }, { 'alias': 'cocktailbars', 'title': 'Cocktails' }, { 'alias': 'bars', 'title': 'Bars' }, { 'alias': 'brazilian', 'title': 'Brazilian' }, { 'alias': 'coffee', 'title': 'Coffee & Tea' }, { 'alias': 'chickenshop', 'title': 'Chicken Shop' }, { 'alias': 'desserts', 'title': 'Desserts' }, { 'alias': 'donuts', 'title': 'Donuts' }, { 'alias': 'dimsum', 'title': 'Dim Sum' }, { 'alias': 'ethiopian', 'title': 'Ethiopian' }, { 'alias': 'icecream', 'title': 'Ice Cream & Froyo' }, { 'alias': 'juicebars', 'title': 'Juice Bars & Smoothies' }, { 'alias': 'bbq', 'title': 'Barbeque' }, { 'alias': 'breakfast_brunch', 'title': 'Breakfast & Brunch' }, { 'alias': 'burgers', 'title': 'Burgers' }, { 'alias': 'cafes', 'title': 'Cafes' }, { 'alias': 'chicken_wings', 'title': 'Chicken Wings' }, { 'alias': 'chinese', 'title': 'Chinese' }, { 'alias': 'gluten_free', 'title': 'Gluten-Free' }, { 'alias': 'german', 'title': 'German' }, { 'alias': 'gastropubs', 'title': 'Gastropubs' }, { 'alias': 'french', 'title': 'French' }, { 'alias': 'hotdogs', 'title': 'Fast Food' }, { 'alias': 'indpak', 'title': 'Indian' }, { 'alias': 'latin', 'title': 'Latin' }, { 'alias': 'italian', 'title': 'Italian' }, { 'alias': 'japanese', 'title': 'Japanese' }, { 'alias': 'korean', 'title': 'Korean' }, { 'alias': 'newamerican', 'title': 'American (New)' }, { 'alias': 'mediterranean', 'title': 'Mediterranean' }, { 'alias': 'mexican', 'title': 'Mexican' }, { 'alias': 'pizza', 'title': 'Pizza' }, { 'alias': 'ramen', 'title': 'Ramen' }, { 'alias': 'noodles', 'title': 'Noodles' }, { 'alias': 'raw_food', 'title': 'Raw Food' }, { 'alias': 'salad', 'title': 'Salad' }, { 'alias': 'sandwiches', 'title': 'Sandwiches' }, { 'alias': 'soulfood', 'title': 'Soul Food' }, { 'alias': 'soup', 'title': 'Soup' }, { 'alias': 'seafood', 'title': 'Seafood' }, { 'alias': 'steak', 'title': 'Steakhouses' }, { 'alias': 'sushi', 'title': 'Sushi Bars' }, { 'alias': 'tacos', 'title': 'Tacos' }, { 'alias': 'tradamerican', 'title': 'American (Traditional)' }, { 'alias': 'taiwanese', 'title': 'Taiwanese' }, { 'alias': 'thai', 'title': 'Thai' }, { 'alias': 'tapasmallplates', 'title': 'Tapas/Small Plates' }, { 'alias': 'vegetarian', 'title': 'Vegetarian' }, { 'alias': 'vegan', 'title': 'Vegan' }, { 'alias': 'vietnamese', 'title': 'Vietnamese' }, { 'alias': 'waffles', 'title': 'Waffles' }]
     const TRANSACTIONS = [['pickup', 'Pickup'], ['delivery', 'Deliver'], ['restaurant_reservation', 'Restaurant Reservation']]
 
     if (!sessionUser) {
@@ -315,9 +315,9 @@ export default function UpdateBizForm() {
                                 className='form-field'
                                 id='form-field--start-time'
                             >
-                            {BIZ_HOURS.map(hour => (
-                                <option value={hour[0]}>{hour[1]}</option>
-                            ))}
+                                {BIZ_HOURS.map(hour => (
+                                    <option value={hour[0]}>{hour[1]}</option>
+                                ))}
                             </select>
                         </div>
 
@@ -330,9 +330,9 @@ export default function UpdateBizForm() {
                                 className='form-field'
                                 id='form-field--end-time'
                             >
-                            {BIZ_HOURS.map(hour => (
-                                <option value={hour[0]}>{hour[1]}</option>
-                            ))}
+                                {BIZ_HOURS.map(hour => (
+                                    <option value={hour[0]}>{hour[1]}</option>
+                                ))}
                             </select>
                         </div>
                     </div>
@@ -347,9 +347,9 @@ export default function UpdateBizForm() {
                             className='form-field'
                             id='form-field--price-range'
                         >
-                        {PRICE_RANGES.map(p => (
-                            <option value={p}>{p}</option>
-                        ))}
+                            {PRICE_RANGES.map(p => (
+                                <option value={p}>{p}</option>
+                            ))}
                         </select>
                     </div>
 
@@ -359,84 +359,84 @@ export default function UpdateBizForm() {
                         <div className='container--form-fields--types-transactions-section--transactions'>
                             <label className='label--update-biz label--update-biz-transactions' for="form-field--transactions">Transactions:</label>
                             <div className='container--form-fields--transactions-checkboxes-section'>
-                            {TRANSACTIONS.map(transaction => (
-                                <div id='single-transaction'>
-                                    <input
-                                        type="checkbox"
-                                        className='form-field--checkbox'
-                                        id='form-field--transactions'
-                                        onChange={
-                                            (e) => {
-                                                const transactionsList = transactions;
-                                                if (e.target.checked) {
-                                                    // console.log("ADDING TO TRANSACTIONS LIST!");
-                                                    transactionsList.push(e.target.value);
-                                                    // console.log("TRANSACTIONS IS NOW:", transactionsList);
-                                                }
-                                                else {
-                                                    // console.log("REMOVING FROM TRANSACTIONS LIST");
-                                                    const i = transactionsList.indexOf(e.target.value);
-                                                    transactionsList.splice(i, 1);
-                                                    // console.log("TRANSACTIONS IS NOW:", transactionsList);
-                                                }
+                                {TRANSACTIONS.map(transaction => (
+                                    <div id='single-transaction'>
+                                        <input
+                                            type="checkbox"
+                                            className='form-field--checkbox'
+                                            id='form-field--transactions'
+                                            onChange={
+                                                (e) => {
+                                                    const transactionsList = transactions;
+                                                    if (e.target.checked) {
+                                                        // console.log("ADDING TO TRANSACTIONS LIST!");
+                                                        transactionsList.push(e.target.value);
+                                                        // console.log("TRANSACTIONS IS NOW:", transactionsList);
+                                                    }
+                                                    else {
+                                                        // console.log("REMOVING FROM TRANSACTIONS LIST");
+                                                        const i = transactionsList.indexOf(e.target.value);
+                                                        transactionsList.splice(i, 1);
+                                                        // console.log("TRANSACTIONS IS NOW:", transactionsList);
+                                                    }
 
-                                                setTransactions(transactionsList);
+                                                    setTransactions(transactionsList);
+                                                }
                                             }
-                                        }
-                                        value={transaction[0]}
-                                        name={transaction[0]}
+                                            value={transaction[0]}
+                                            name={transaction[0]}
                                         // checked={transactions.includes(transaction[0])}
-                                    />
-                                    <label
-                                        for={transaction[0]}
-                                        className='label--update-biz-transaction'
-                                    >
-                                        {transaction[1]}
-                                    </label>
-                                </div>
-                            ))}
+                                        />
+                                        <label
+                                            for={transaction[0]}
+                                            className='label--update-biz-transaction'
+                                        >
+                                            {transaction[1]}
+                                        </label>
+                                    </div>
+                                ))}
                             </div>
                         </div>
 
                         <div className='container--form-fields--types-transactions-section--types'>
                             <label className='label--update-biz label--update-biz-types' for="form-field--transactions">Types:</label>
                             <div className='container--form-fields--types-checkboxes-section'>
-                            {TYPES.map(type => (
-                                <div id='single-type'>
-                                    <input
-                                        type="checkbox"
-                                        className='form-field--checkbox'
-                                        id='form-field--types'
-                                        onChange={
-                                            (e) => {
-                                                const typesList = types;
-                                                if (e.target.checked) {
-                                                    // console.log("ADDING TO TYPES LIST!");
-                                                    typesList.push(e.target.value);
-                                                    // console.log("TYPESLIST IS NOW:", typesList);
-                                                }
-                                                else {
-                                                    // console.log("REMOVING FROM TYPES LIST");
-                                                    const i = typesList.indexOf(e.target.value);
-                                                    typesList.splice(i, 1);
-                                                    // console.log("TYPESLIST IS NOW:", typesList);
-                                                }
+                                {TYPES.map(type => (
+                                    <div id='single-type'>
+                                        <input
+                                            type="checkbox"
+                                            className='form-field--checkbox'
+                                            id='form-field--types'
+                                            onChange={
+                                                (e) => {
+                                                    const typesList = types;
+                                                    if (e.target.checked) {
+                                                        // console.log("ADDING TO TYPES LIST!");
+                                                        typesList.push(e.target.value);
+                                                        // console.log("TYPESLIST IS NOW:", typesList);
+                                                    }
+                                                    else {
+                                                        // console.log("REMOVING FROM TYPES LIST");
+                                                        const i = typesList.indexOf(e.target.value);
+                                                        typesList.splice(i, 1);
+                                                        // console.log("TYPESLIST IS NOW:", typesList);
+                                                    }
 
-                                                setTypes(typesList);
+                                                    setTypes(typesList);
+                                                }
                                             }
-                                        }
-                                        value={type.alias}
-                                        name={type.alias}
+                                            value={type.alias}
+                                            name={type.alias}
                                         // checked={types.includes(type.alias)}
                                         />
-                                    <label
-                                        for={type.alias}
-                                        className='label--update-biz-type'
-                                    >
-                                        {type.title}
-                                    </label>
-                                </div>
-                            ))}
+                                        <label
+                                            for={type.alias}
+                                            className='label--update-biz-type'
+                                        >
+                                            {type.title}
+                                        </label>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>

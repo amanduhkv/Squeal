@@ -1,14 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react'
 import './ReviewForm.css';
-import {useParams, Redirect, useHistory} from 'react-router-dom';
+import {useParams, useHistory} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-// import { signUp, login } from '../../store/session';
-// import { Modal } from '../../context/Modal';
-// import party from '../../icons/login.png';
 import { getOneBiz } from '../../store/businesses';
 import userpig from '../../icons/user-pig.png';
 import { createReview } from '../../store/reviews';
-import { getBusinessReviews } from '../../store/reviews';
 
 const ReviewForm = () => {
     const history = useHistory();
@@ -32,7 +28,8 @@ const ReviewForm = () => {
     const user = useSelector(state => state.session.user);
 
     const revs = useSelector(state => state.reviews.business);
-    const reviews = Object.values(revs);
+    let reviews;
+    if (revs) reviews = Object.values(revs);
 
     useEffect(() => {
         dispatch(getOneBiz(bizId));
@@ -46,7 +43,7 @@ const ReviewForm = () => {
             return;
         }
 
-        if (reviews.filter(rev => rev.user_id === user.id).length) {
+        if (reviews?.filter(rev => rev.user_id === user.id).length) {
             alert("You have already submitted a review for this restaurant.");
             history.replace(`/biz/${bizId}`);
         }
