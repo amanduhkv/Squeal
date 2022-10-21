@@ -49,8 +49,10 @@ function NavBar() {
             }
             updateWidth();
             window.addEventListener('resize', updateWidth);
+
+            return () => window.removeEventListener('resize', updateWidth)
         }
-    }, []);
+    }, [url]);
 
     const onSubmit = (e) => {
         e.preventDefault();
