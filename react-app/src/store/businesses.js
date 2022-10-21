@@ -1,4 +1,5 @@
 import { csrfFetch } from './csrf';
+import Cookies from 'js-cookie';
 
 /* ----------------------------- ACTION TYPES: ----------------------------- */
 
@@ -24,10 +25,12 @@ const addBiz = (business) => ({
 });
 
 export const createBusiness = (business) => async dispatch => {
-    const response = await csrfFetch('/api/biz/', {
+    console.log(JSON.stringify(business))
+    const response = await fetch('/api/biz/', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'XSRF-TOKEN': Cookies.get('XSRF-TOKEN')
         },
         body: JSON.stringify(business)
     });
