@@ -1,5 +1,6 @@
 .main {
   margin-top: 155px;
+  margin-left: 16vw
 }
 
 .allbiz-title {
@@ -13,6 +14,8 @@
   display: flex;
 
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  text-decoration: none;
+  color: rgb(45, 46, 47);
 
   width: 50vw;
   max-width: 888px;
@@ -24,7 +27,8 @@
 
 .biz-box:hover {
   box-shadow: 0 0 5px 3px rgb(235, 235, 235);
-  border-radius: 3px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 #biz-closed {
@@ -162,6 +166,8 @@
   border-radius: 4px;
   margin-right: 8px;
   height: 20px;
+
+  position: relative;
 }
 
 .biz-type-butts:hover {
@@ -175,6 +181,8 @@
 }
 
 #dd-buttons {
+  display: flex;
+
   color: black;
   margin: 16px 16px;
   padding: 6px 4px;
@@ -182,11 +190,23 @@
   display: block;
   background-color: white;
   border: none;
-  width: 80%
+  width: 144px;
+
+  text-align: left;
+  align-items: center;
+}
+
+/* ##dd-buttons:last-of-type {
+  border-bottom: 1px solid rgb(235, 235, 235);
+} */
+
+#dd-buttons input {
+  margin-right: 5px;
 }
 
 #dd-buttons:hover {
   background-color: rgb(235, 235, 235);
+  border-radius: 4px;
 }
 
 #dropdown-content {
@@ -194,7 +214,9 @@
   position: absolute;
   background-color: white;
   border-radius: 4px;
-  min-width: 175px;
+  width: 175px;
+  margin-top: 3px;
+
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }

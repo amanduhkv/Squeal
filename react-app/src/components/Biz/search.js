@@ -18,7 +18,11 @@ export default function Search({ data }) {
 
   const dispatch = useDispatch();
 
-
+  const [priceArr, setPriceArr] = useState([]);
+  const [price1, setPrice1] = useState(false);
+  const [price2, setPrice2] = useState(false);
+  const [price3, setPrice3] = useState(false);
+  const [price4, setPrice4] = useState(false);
   const [activePrice, setActivePrice] = useState(false);
   const [activeOpen, setActiveOpen] = useState(false);
   const [activeDel, setActiveDel] = useState(false);
@@ -29,8 +33,8 @@ export default function Search({ data }) {
   const [pageNum, setPageNum] = useState(0);
   const [query, setQuery] = useState('');
   const searchStuff = useLocation().search;
-    console.log('this is searchStuff', searchStuff);
-    let cat;
+  console.log('this is searchStuff', searchStuff);
+  let cat;
 
   // console.log('this is the data', data)
 
@@ -63,10 +67,10 @@ export default function Search({ data }) {
   // const res = searchFunc.search(query)
   if (searchStuff) {
     cat = searchStuff.split('?type=').join('');
-    console.log('heres my cat',cat)
+    console.log('heres my cat', cat)
   }
 
-  const res = searchFunc.search(cat ?? query)
+  let res = searchFunc.search(cat ?? query)
   console.log('using search', res)
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -75,6 +79,7 @@ export default function Search({ data }) {
     // console.log('SUCCESS')
   }
 
+  if(priceArr.length) res = res.filter(biz => priceArr.includes(biz.price_range))
 
   /* -------------TIME FXNS/LOGIC------------- */
   let current_time;
@@ -99,24 +104,97 @@ export default function Search({ data }) {
   }
 
 
-
   /* ------------TOGGLE FXNS/LOGIC------------ */
+
   const toggleIdPrice = () => {
     setActivePrice(!activePrice);
+    // setActiveOpen(activeOpen);
+    // setActiveOpen(activeDel);
+    // setActiveOpen(activeTakeout);
+    // setActiveOpen(activeRes);
     openMenu();
   }
-  const toggleIdOpen = () => {
-    setActiveOpen(!activeOpen);
-  }
+  // const toggleIdOpen = () => {
+  //   setActiveOpen(!activeOpen);
+  //   if(activeOpen) {
+  //     if(activePrice) setActiveDel(!activePrice)
+  //     if(activeDel) setActiveDel(!activeDel)
+  //     if(activeTakeout) setActiveDel(!activeTakeout)
+  //     if(activeRes) setActiveDel(!activeRes)
+  //   }
+  // }
   const toggleIdDel = () => {
     setActiveDel(!activeDel);
+    // if(activeDel) {
+    //   if(activePrice) setActivePrice(false);
+    //   if(activeOpen) setActiveOpen(false);
+    //   if(activeTakeout) setActiveTakeout(false);
+    //   if(activeRes) setActiveRes(false);
+    // }
   }
   const toggleIdTakeout = () => {
     setActiveTakeout(!activeTakeout);
+    // if(activeTakeout) {
+    //   if(activePrice) setActivePrice(false);
+    //   if(activeOpen) setActiveOpen(false);
+    //   if(activeDel) setActiveDel(false);
+    //   if(activeRes) setActiveRes(false);
+    // }
   }
   const toggleIdRes = () => {
     setActiveRes(!activeRes);
+    // if(activeRes) {
+    //   if(activePrice) setActivePrice(false);
+    //   if(activeOpen) setActiveOpen(false);
+    //   if(activeDel) setActiveDel(false);
+    //   if(activeTakeout) setActiveTakeout(false);
+    // }
   }
+
+  useEffect(() => {
+    console.log('hitting useEffect for Del')
+
+     if(activeDel) {
+      if(activePrice) setActivePrice(false);
+      if(activeOpen) setActiveOpen(false);
+      if(activeTakeout) setActiveTakeout(false);
+      if(activeRes) setActiveRes(false);
+    }
+
+  }, [activeDel]);
+  useEffect(() => {
+    console.log('hitting useEffect for Takeout')
+
+    if(activeTakeout) {
+      if(activePrice) setActivePrice(false);
+      if(activeOpen) setActiveOpen(false);
+      if(activeDel) setActiveDel(false);
+      if(activeRes) setActiveRes(false);
+    }
+
+  }, [activeTakeout]);
+  useEffect(() => {
+    console.log('hitting useEffect for Res')
+
+     if(activeRes) {
+      if(activePrice) setActivePrice(false);
+      if(activeOpen) setActiveOpen(false);
+      if(activeDel) setActiveDel(false);
+      if(activeTakeout) setActiveTakeout(false);
+    }
+
+
+  }, [activeRes]);
+
+
+
+  let title;
+  if(query) title = query[0].toUpperCase() + query.substring(1)
+  console.log('CURRENT TITLE: ', title)
+  if (title === 'Restaurant_reservation') title = 'Reservations'
+  else title = title
+
+
 
 
   /* ----------PAGINATION FXNS/LOGIC---------- */
@@ -142,11 +220,12 @@ export default function Search({ data }) {
         <button type='submit'>Submit</button>
       </form>
 
-      <h1 className="allbiz-title">Best {query ? query[0].toUpperCase() + query.substring(1) : "Food"} Near Me</h1>
+      <h1 className="allbiz-title">Best {query ? title : "Food"} Near Me</h1>
 
       <ol start={(10 * pageNum) + 1}>
         <div className="types-buttons">
           <span id='price-dropdown'>
+
             <button
               id={activePrice ? 'type-butt-price-act' : 'type-butt'}
               onClick={() => {
@@ -158,89 +237,154 @@ export default function Search({ data }) {
               <svg width='12' height='12'><path d="M 8 10.25 a 0.746 0.746 0 0 1 -0.525 -0.215 l -3.055 -3 a 0.75 0.75 0 0 1 1.05 -1.07 L 8 8.449 l 2.53 -2.484 a 0.75 0.75 0 0 1 1.05 1.07 l -3.055 3 A 0.746 0.746 0 0 1 8 10.25 Z"></path></svg>
             </button>
             {showMenu && (
-              <div id='dropdown-content'>
+              <form id='dropdown-content'>
                 <button id='dd-buttons'>
-                  <input type='checkbox' id='$' />
+                  <input type='checkbox' id='$' checked={price1} onChange={() => {
+                    setPrice1(!price1)
+                    if(priceArr.includes('$')) {
+                      const i = priceArr.indexOf("$")
+                      setPriceArr([...priceArr.slice(0, i), ...priceArr.slice(i + 1)])
+                    }
+                    else {
+                      setPriceArr([...priceArr, "$"])
+                    }
+                  }} />
                   <label for='$'>$</label>
                 </button>
                 <button id='dd-buttons'>
-                  <input type='checkbox' id='$$' />
+                  <input type='checkbox' id='$$' checked={price2} onChange={() => {
+                    setPrice2(!price2)
+                    if(priceArr.includes('$$')) {
+                      const i = priceArr.indexOf("$$")
+                      setPriceArr([...priceArr.slice(0, i), ...priceArr.slice(i + 1)])
+                    }
+                    else {
+                      setPriceArr([...priceArr, "$$"])
+                    }
+                    setPageNum(0);
+                  }} />
                   <label for='$$'>$$</label>
                 </button>
                 <button id='dd-buttons'>
-                  <input type='checkbox' id='$$$' />
+                  <input type='checkbox' id='$$$' checked={price3} onChange={() => {
+                    setPrice3(!price3)
+                    if(priceArr.includes('$$$')) {
+                      const i = priceArr.indexOf("$$$")
+                      setPriceArr([...priceArr.slice(0, i), ...priceArr.slice(i + 1)])
+                    }
+                    else {
+                      setPriceArr([...priceArr, "$$$"])
+                    }
+                    setPageNum(0);
+                  }} />
                   <label for='$$$'>$$$</label>
                 </button>
                 <button id='dd-buttons'>
-                  <input type='checkbox' id='$$$$' />
+                  <input type='checkbox' id='$$$$' checked={price4} onChange={() => {
+                    setPrice4(!price4)
+                    if(priceArr.includes('$$$$')) {
+                      const i = priceArr.indexOf("$$$$")
+                      setPriceArr([...priceArr.slice(0, i), ...priceArr.slice(i + 1)])
+                    }
+                    else {
+                      setPriceArr([...priceArr, "$$$$"])
+                    }
+                    setPageNum(0);
+                  }} />
                   <label for='$$$$'>$$$$</label>
                 </button>
-              </div>
+                {/* <button type='submit'>Save</button> */}
+              </form>
             )}
           </span>
-          <button
-            id={activeOpen ? 'type-butt-act' : 'type-butt'}
-            value={query}
-            type='submit'
-            onClick={() => {
-              toggleIdOpen()
-              setQuery('open');
-              setPageNum(0);
-            }
-            }
-          >
-            Open Now
-          </button>
-          <button
-            id={activeDel ? 'type-butt-act' : 'type-butt'}
-            value={query}
-            type='submit'
-            onClick={() => {
-              toggleIdDel()
-              setQuery('delivery')
-              setPageNum(0);
-            }
-            }
-          >
-            Offers Delivery
-          </button>
-          <button
-            id={activeTakeout ? 'type-butt-act' : 'type-butt'}
-            value={query}
-            type='submit'
-            onClick={() => {
-              toggleIdTakeout()
-              setQuery('pickup')
-              setPageNum(0);
-            }
-            }
-          >
-            Offers Takeout
-          </button>
-          <button
-            id={activeRes ? 'type-butt-act' : 'type-butt'}
-            value={query}
-            type='submit'
-            onClick={() => {
-              toggleIdRes()
-              setQuery('restaurant_reservation')
-              setPageNum(0);
-            }
-            }
-          >
-            Reservations
-          </button>
+
+          {/* <NavLink to='/biz?type=open'>
+            <button
+              id={activeOpen ? 'type-butt-act' : 'type-butt'}
+              value={query}
+              type='submit'
+              onClick={() => {
+                toggleIdOpen()
+                // setQuery();
+                setPageNum(0);
+              }
+              }
+            >
+              Open Now
+            </button>
+          </NavLink> */}
+          <NavLink to='/biz?type=delivery'>
+            <button
+              id={activeDel ? 'type-butt-act' : 'type-butt'}
+              value={query}
+              type='submit'
+              onClick={() => {
+                toggleIdDel()
+                if(activeDel) {
+                  if(activePrice) setActivePrice(false);
+                  if(activeOpen) setActiveOpen(false);
+                  if(activeTakeout) setActiveTakeout(false);
+                  if(activeRes) setActiveRes(false);
+                }
+                setQuery('delivery')
+                setPageNum(0);
+              }
+              }
+            >
+              Offers Delivery
+            </button>
+          </NavLink>
+          <NavLink to='/biz?type=pickup'>
+            <button
+              id={activeTakeout ? 'type-butt-act' : 'type-butt'}
+              value={query}
+              type='submit'
+              onClick={() => {
+                toggleIdTakeout()
+                if(activeTakeout) {
+                  if(activePrice) setActivePrice(false);
+                  if(activeOpen) setActiveOpen(false);
+                  if(activeDel) setActiveDel(false);
+                  if(activeRes) setActiveRes(false);
+                }
+                setQuery('pickup')
+                setPageNum(0);
+              }
+              }
+            >
+              Offers Takeout
+            </button>
+          </NavLink>
+          <NavLink to='/biz?type=restaurant_reservation'>
+            <button
+              id={activeRes ? 'type-butt-act' : 'type-butt'}
+              value={query}
+              type='submit'
+              onClick={() => {
+                toggleIdRes()
+                if(activeRes) {
+                  if(activePrice) setActivePrice(false);
+                  if(activeOpen) setActiveOpen(false);
+                  if(activeDel) setActiveDel(false);
+                  if(activeTakeout) setActiveTakeout(false);
+                }
+                setQuery('restaurant_reservation')
+                setPageNum(0);
+              }
+              }
+            >
+              Reservations
+            </button>
+          </NavLink>
         </div>
         {bizzies.map(biz => (
           <div>
             {/* <NavLink className='search-biz' to={`/biz/${biz.id}`}>
               {biz.name}
             </NavLink> */}
-            <div
+            <NavLink
               className="biz-box"
-            // onClick={() =>
-
-            // }
+              to={`/biz/${biz.id}`}
             >
               <div className="biz-img-box" >
                 <img id='biz-img' src={biz.Business_Images[0].url} alt='biz-img' />
@@ -368,7 +512,7 @@ export default function Search({ data }) {
                     {Object.values(biz.types).map(type => (
                       <button
                         className='biz-type-butts'
-                      // onClick={}
+
                       >
                         {type.type}
                       </button>
@@ -419,7 +563,7 @@ export default function Search({ data }) {
 
                 </div>
               </div>
-            </div>
+            </NavLink>
           </div>
         ))}
       </ol>
