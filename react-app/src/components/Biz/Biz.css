@@ -8,6 +8,7 @@
   color: rgb(45, 46, 47);
 
   margin-left: 64px;
+  margin-bottom: 8px;
 }
 
 .biz-box {
@@ -20,7 +21,7 @@
   width: 50vw;
   max-width: 888px;
   min-width: 728px;
-  max-height: 275px;
+  /* max-height: 275px; */
   border-bottom: #ebebeb 1px solid;
   padding: 24px;
 }
@@ -50,7 +51,7 @@
 .biz-img-box {
   display: flex;
 
-  margin-right: 25px;
+  margin: auto 25px auto 0;
 
   max-width: 220px;
   max-height: 220px;
@@ -67,7 +68,7 @@
   object-fit: cover;
 
   border-radius: 4px;
-  vertical-align: center;
+  /* vertical-align: center; */
 }
 
 #biz-img:after {
@@ -82,6 +83,10 @@
 
 #biz-hours {
   margin: 0 0 8px 0;
+}
+
+#biz-list {
+  margin-top: 0;
 }
 
 #biz-open {
@@ -137,6 +142,8 @@
   font-weight: 700;
   color: rgb(45, 46, 47);
   margin-left: 24px;
+  /* max-width: 400px;
+  white-space: nowrap; */
 }
 
 #biz-title-1 {
@@ -154,6 +161,7 @@
   display: flex;
   align-items: center;
 }
+
 
 .biz-type-butts {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -178,6 +186,7 @@
   display: flex;
   align-items: center;
   margin: 0 0 8px 0;
+  flex-wrap: wrap;
 }
 
 #dd-buttons {
@@ -261,7 +270,7 @@
   background-color: white;
   border:rgb(204, 204, 204) 1px solid;
   border-radius: 16px;
-  margin-right: 8px;
+  margin: 4px;
   padding: 6px 12px;
 }
 

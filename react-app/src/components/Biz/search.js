@@ -231,7 +231,7 @@ export default function Search({ data }) {
 
       <h1 className="allbiz-title">Best {query ? title : "Food"} Near Me</h1>
 
-      <ol start={(10 * pageNum) + 1}>
+      <ol id='biz-list' start={(10 * pageNum) + 1}>
         <div className="types-buttons">
           <span id='price-dropdown'>
 
@@ -517,7 +517,7 @@ export default function Search({ data }) {
                   </div>
                 </div>
                 <div id='biz-type-loc'>
-                  <div>
+                  <div className='biz-type-butts-container'>
                     {Object.values(biz.types).map(type => (
                       <button
                         className='biz-type-butts'
