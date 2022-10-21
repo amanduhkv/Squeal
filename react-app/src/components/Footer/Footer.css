@@ -3,7 +3,18 @@
     padding: 60px 0px;
     width: 100%;
     position: relative;
-    bottom: 0px;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-margin {
+    margin-top:400px;
+    background-color: #f7f7f7;
+    padding: 60px 0px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
 #footer-inner-wrapper {

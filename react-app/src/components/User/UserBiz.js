@@ -171,7 +171,7 @@ export default function UserBiz({ user, userBizzes }) {
                                         </path>
                                     </svg>
                                 </div>
-                                <div className="user-biz-review-count">({biz.Review_Count})</div>
+                                <div className="user-biz-review-count">{`(${biz.Review_Count})`}</div>
                             </div>
 
 
