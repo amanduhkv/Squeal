@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom'
 import { getOneBiz } from '../../store/businesses'
 import { getBusinessReviews } from '../../store/reviews'
 import { Modal } from '../../context/Modal';
+import * as reviewActions from "../../store/reviews";
 
 // import { getUserReviews } from '../../store/reviews'
 import check from '../../icons/claimed-check.svg';
@@ -14,6 +15,9 @@ import map from '../../icons/map.svg'
 import phone from '../../icons/phone.svg'
 import star from '../../icons/write-review-star.svg'
 import SingleMap from '../Map/singleMap'
+import pencil from '../../icons/user-page-icons/pencil.svg'
+import trash from '../../icons/user-page-icons/trash.svg'
+import picture from '../../icons/user-page-icons/picture.svg'
 
 import './BusinessDetails.css'
 
@@ -31,8 +35,6 @@ const BusinessDetails = () => {
     const bizReviews = useSelector(state => state.reviews.business)
     const types = useSelector(state => state.businesses.singleBusiness.types)
     const user = useSelector(state => state.session.user);
-
-
 
     let numReviews;
     let numImages;
@@ -167,6 +169,17 @@ const BusinessDetails = () => {
         lng: biz.lng
 
     }
+    const deleteReviewHandler = (reviewId) => {
+        try {
+            dispatch(reviewActions.deleteReview(reviewId));
+        }
+
+        catch (res) {
+            const data = res.json();
+            if (data) console.log(data);
+        }
+    }
+
 
     let singleReview
     if (bizReviews) {
@@ -297,10 +310,8 @@ const BusinessDetails = () => {
                         </div>
                     </div>
                     <div className='single-business-review-body'>
-                        {obj.Review_Images && obj.Review_Images.length > 0 && (
-                            <div>{obj.Review_Images.length} photos</div>
-                        )}
                         {obj.review_body}
+                        
                         {obj.Review_Images && obj.Review_Images.map(obj => {
                             return (
                                 <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} alt={obj.url} /></div>
@@ -308,6 +319,17 @@ const BusinessDetails = () => {
                         }
                         )}
                     </div>
+                    {obj.user_id === currUserId && <div className="single-businss-user-review-edit-delete-icons">
+                        <NavLink className="user-review-add-img-button" to={`/review/${currUserReviewId}/images/new`}>
+                            <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" />
+                        </NavLink>
+                        <NavLink className="user-review-edit-button" exact to={`/biz/${biz.id}/review/${currUserReviewId}`}>
+                            <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" />
+                        </NavLink>
+                        <div className="user-review-delete-button" onClick={() => deleteReviewHandler(currUserReviewId)}>
+                            <img className="user-review-svg" src={trash} width='16px' alt="trash_svg" />
+                        </div>
+                    </div>}
                 </div>
             )
         })
@@ -537,7 +559,7 @@ const BusinessDetails = () => {
                         <div className='single-business-title'>
                             Reviews
                         </div>
-                        {user && <div className='single-business-start-your-review'>
+                        {/* {user && <div className='single-business-start-your-review'>
                             <div className='single-business-user'>
                                 <div>
                                     <img height="72" width="72" src={user.profile_pic} alt="profile_pic" />
@@ -558,7 +580,7 @@ const BusinessDetails = () => {
                                 </NavLink>
                             </div>
 
-                        </div>}
+                        </div>} */}
 
 
                         <div>

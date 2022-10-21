@@ -114,10 +114,10 @@ const UserPage = () => {
                                     {userReviews && Object.keys(userReviews).length === 1 ? "Review" : "Reviews"}
                                 </p>
                             </div>
-                            <div id='user-pht'>
+                            {/* <div id='user-pht'>
                                 <img src={cam} alt='cam' width='24px' />
                                 <p id='user-txt'>Photos</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <br></br>
@@ -146,10 +146,10 @@ const UserPage = () => {
               <img src={blueCam} alt='add-prof-img' width='15px' />
               Add Profile Photo
             </h5> */}
-                        <h5 id='top-rc-text'>
+                        {/* <h5 id='top-rc-text'>
                             <img src={upProf} alt='up-prof' width='15px' />
                             Update Your Profile
-                        </h5>
+                        </h5> */}
                     </div>
                     {url === '/current' && (
                         <div id='bot-rc'>
