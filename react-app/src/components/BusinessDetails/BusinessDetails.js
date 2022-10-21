@@ -115,7 +115,11 @@ const BusinessDetails = () => {
         let currentTime = new Date().getHours()
         let currentMinutes = new Date().getMinutes()
         if (open && close) {
-            res = currentTime < open.slice(0, 2) || (currentTime < 12 && currentTime > close.slice(0, 2)) || (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
+            if (open === close) {
+                res = "Open"
+            } else {
+                res = currentTime < open.slice(0, 2) || (currentTime < 12 && currentTime > close.slice(0, 2)) || (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
+            }
         }
         return res
     }
@@ -459,7 +463,7 @@ const BusinessDetails = () => {
                                 </span>
                             </div>
                             <div className='single-business-open-closed'>
-                                <span className={openOrClosed(biz.start_time, biz.end_time)}>{openOrClosed(biz.start_time, biz.end_time)}</span> {convertTime(biz.start_time)} - {convertTime(biz.end_time)}
+                                <span className={openOrClosed(biz.start_time, biz.end_time)}>{openOrClosed(biz.start_time, biz.end_time)}</span> {biz.start_time !== biz.end_time ? convertTime(biz.start_time) - convertTime(biz.end_time): "All Day"}
                             </div>
                         </div>
                         <div className='single-business-see-more-photos' onClick={() => setShowPhotoModal(true)}>
