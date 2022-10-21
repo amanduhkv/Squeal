@@ -10,6 +10,7 @@ import './LoginForm.css';
 const SignUpForm = () => {
     const url = useLocation().pathname;
     const [errors, setErrors] = useState([]);
+    const [username, setUsername] = useState('');
     const [first_name, setFirstname] = useState('');
     const [last_name, setLastname] = useState('');
     const [email, setEmail] = useState('');
@@ -17,13 +18,15 @@ const SignUpForm = () => {
     const [zipcode, setZipCode] = useState('');
     const [showLogModal, setShowLogModal] = useState(false);
     const [showSignModal, setShowSignModal] = useState(false);
+    const [hasSubmit, setHasSubmit] = useState(false);
     const user = useSelector(state => state.session.user);
     const dispatch = useDispatch();
 
     const onSignUp = async (e) => {
         e.preventDefault();
         if (password) {
-            const data = await dispatch(signUp(first_name, last_name, email, password, zipcode));
+            setHasSubmit(true);
+            const data = await dispatch(signUp(username, first_name, last_name, email, password, zipcode));
             if (data) {
                 setErrors(data)
             }
@@ -32,6 +35,7 @@ const SignUpForm = () => {
 
     const onLogin = async (e) => {
         e.preventDefault();
+        setHasSubmit(true);
         const data = await dispatch(login(email, password));
         if (data) {
             setErrors(data);
@@ -39,25 +43,25 @@ const SignUpForm = () => {
     };
 
 
-    const updateFirstname = (e) => {
-        setFirstname(e.target.value);
-    };
+    // const updateFirstname = (e) => {
+    //     setFirstname(e.target.value);
+    // };
 
-    const updateLastname = (e) => {
-        setLastname(e.target.value);
-    };
+    // const updateLastname = (e) => {
+    //     setLastname(e.target.value);
+    // };
 
-    const updateEmail = (e) => {
-        setEmail(e.target.value);
-    };
+    // const updateEmail = (e) => {
+    //     setEmail(e.target.value);
+    // };
 
-    const updatePassword = (e) => {
-        setPassword(e.target.value);
-    };
+    // const updatePassword = (e) => {
+    //     setPassword(e.target.value);
+    // };
 
-    const updateZipCode = (e) => {
-        setZipCode(e.target.value);
-    };
+    // const updateZipCode = (e) => {
+    //     setZipCode(e.target.value);
+    // };
 
     if (user) {
         return <Redirect to='/' />;
@@ -93,11 +97,13 @@ const SignUpForm = () => {
 
                             </div>
                             <form id='login-form' onSubmit={onLogin}>
-                                <div>
-                                    {errors.map((error, ind) => (
-                                        <div key={ind}>{error}</div>
-                                    ))}
-                                </div>
+                            {hasSubmit && errors.length > 0 && (
+                                    <div>
+                                        {errors.map((error, ind) => (
+                                            <div key={ind}>{error}</div>
+                                        ))}
+                                    </div>
+                                )}
                                 <button
                                     id='demo-button'
                                     type='submit'
@@ -118,7 +124,8 @@ const SignUpForm = () => {
                                         type='text'
                                         placeholder='Email'
                                         value={email}
-                                        onChange={updateEmail}
+                                        onChange={e => setEmail(e.target.value)}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
                                     />
                                 </div>
                                 <div>
@@ -128,7 +135,8 @@ const SignUpForm = () => {
                                         type='password'
                                         placeholder='Password'
                                         value={password}
-                                        onChange={updatePassword}
+                                        onChange={e => setPassword(e.target.value)}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
                                     />
                                 </div>
                                 <button id='login-button' type='submit'>Log In</button>
@@ -186,37 +194,51 @@ const SignUpForm = () => {
                                 <div id='lines'><span className='or'>OR</span></div>
                             </form>
                             <form onSubmit={onSignUp}>
-                                <div>
-                                    {errors.map((error, ind) => (
-                                        <div key={ind}>{error}</div>
-                                    ))}
-                                </div>
+                            {hasSubmit && errors.length > 0 && (
+                                    <div>
+                                        {errors.map((error, ind) => (
+                                            <div key={ind}>{error}</div>
+                                        ))}
+                                    </div>
+                                )}
                                 <div id='first-last-name'>
                                     <input
                                         id='login-input'
                                         type='text'
                                         name='firstname'
                                         placeholder='First Name'
-                                        onChange={updateFirstname}
+                                        onChange={e => setFirstname(e.target.value)}
                                         value={first_name}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
                                     ></input>
                                     <input
                                         id='login-input'
                                         type='text'
                                         name='lastname'
                                         placeholder='Last Name'
-                                        onChange={updateLastname}
+                                        onChange={e => setLastname(e.target.value)}
                                         value={last_name}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
                                     ></input>
                                 </div>
                                 <div id='email'>
+                                <input
+                                        id='login-input'
+                                        type='text'
+                                        name='username'
+                                        placeholder='Username'
+                                        onChange={e => setUsername(e.target.value)}
+                                        value={username}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
+                                    ></input>
                                     <input
                                         id='login-input'
                                         type='text'
                                         name='email'
                                         placeholder='Email'
-                                        onChange={updateEmail}
+                                        onChange={e => setEmail(e.target.value)}
                                         value={email}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
                                     ></input>
                                 </div>
                                 <div id='password'>
@@ -225,8 +247,9 @@ const SignUpForm = () => {
                                         type='password'
                                         name='password'
                                         placeholder='Password'
-                                        onChange={updatePassword}
+                                        onChange={e => setPassword(e.target.value)}
                                         value={password}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
                                     ></input>
                                 </div>
                                 <div id='zip'>
@@ -235,7 +258,8 @@ const SignUpForm = () => {
                                         type='text'
                                         name='zipcode'
                                         placeholder='ZIP Code'
-                                        onChange={updateZipCode}
+                                        onChange={e => setZipCode(e.target.value)}
+                                        onKeyPress={e => e.key === 'Enter' && e.preventDefault()}
                                         value={zipcode}
                                         required={true}
                                     ></input>
