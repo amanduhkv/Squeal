@@ -49,32 +49,24 @@
 }
 
 .biz-img-box {
-  display: flex;
+  margin: 5px 25px auto 0;
+}
 
-  margin: auto 25px auto 0;
-
+#biz-img {
   max-width: 220px;
   max-height: 220px;
   min-width: 150px;
   min-height: 150px;
-}
 
-#biz-img {
   aspect-ratio: 1 / 1;
 
-  width: 100%;
+  width: 15vw;
   height: auto;
 
   object-fit: cover;
 
   border-radius: 4px;
-  /* vertical-align: center; */
-}
 
-#biz-img:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
 }
 
 .biz-info-box {
