@@ -310,11 +310,15 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ebebeb;
-  max-width: 800px;
+  max-width: 888px;
   min-width: 728px;
   width: 50vw;
   margin: 0 auto 35px 40px;
   top: 0;
+}
+
+.paginate-box-hide {
+  display: none;
 }
 
 .pagination-container {
@@ -325,6 +329,15 @@
 }
 
 #paginate-count {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  color: #6e7072;
+  font-size: 14px;
+}
+
+#paginate-count-none {
   display: flex;
   align-items: center;
 
