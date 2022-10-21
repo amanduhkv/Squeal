@@ -99,6 +99,8 @@ export default function CreateBizForm() {
 
         catch (res) {
             console.log("==>ANY ERRORS FROM CREATE BIZ:", res)
+            const data = await res.json();
+            console.log("==> JSONIFIED ERRORS", data)
             // const data = await res.json();
             // if (data && data.errors) return setValidationErrors(data.errors);
         }
