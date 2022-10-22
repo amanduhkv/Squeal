@@ -24,6 +24,10 @@ export default function UserBiz({ user, userBizzes }) {
     }
 
     const deleteImgHandler = (bizId, imgId) => {
+        if (userBizzes[bizId].Business_Images.length === 1) {
+            return alert('A business must have at least 1 image')
+        }
+
         try {
             dispatch(bizActions.deleteImg(bizId, imgId));
         }

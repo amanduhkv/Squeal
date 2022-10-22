@@ -62,21 +62,20 @@ export default function Search({ data }) {
     /* -------USE EFFECT:get all bizzies------- */
 
     if (searchStuff) {
-        cat = searchStuff.split('?type=').join('').split('&')[0];
+        cat = searchStuff.split('?type=').join('').split('&loc')[0].split('%20').join(' ');
         location = searchStuff.split('&loc=')[1];
         // console.log('heres my cat',cat)
     }
 
     useEffect(() => {
-        if (location) dispatch(getAllBiz(location))
-        else dispatch(getAllBiz())
+        dispatch(getAllBiz(location))
 
         return () => dispatch(clearData())
     }, [dispatch, location])
 
 
     /* ------------SEARCH FXNS/LOGIC------------ */
-    const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name']);
+    const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name', 'types.type']);
 
     // const res = searchFunc.search(query)
 

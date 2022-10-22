@@ -124,8 +124,8 @@ const UserPage = () => {
                     <br></br>
                     {url === '/current' && (
                         <div>
-                            <h2 id='mid-title-over'>Recent Activity</h2>
-                            <div>You haven't had any recent activity yet.</div>
+                            <h2 id='mid-title-over'>Hello, {user.username}</h2>
+                            <div>Access your businesses and reviews using the tabs on the left.</div>
                             {/* <div>
               <button to='/current' id='recent-act-user-container'>
                 <img id='recent-act-user-pic' src={user.profile_pic ? user.profile_pic : pigOutline} />

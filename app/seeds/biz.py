@@ -219,7 +219,7 @@ bizzies = [
         'phone': '+12133849678',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/0LQSELQTy5LFG3xLUPbRpQ/o.jpg', 'categories': ['bbq', 'korean'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/0LQSELQTy5LFG3xLUPbRpQ/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/3SkgsOxmYClY0--3aZj2Jg/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/7TZlLNAtsR2k1w5a9JMi8Q/o.jpg'], 'hours': {'is_overnight': False, 'start': '1130', 'end': '0000', 'day': 0},
+        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/0LQSELQTy5LFG3xLUPbRpQ/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/3SkgsOxmYClY0--3aZj2Jg/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/7TZlLNAtsR2k1w5a9JMi8Q/o.jpg'], 'hours': {'is_overnight': False, 'start': '1130', 'end': '2300', 'day': 0},
         'id': 11,
         'reviews': [{'biz_id': 11, 'review_body': 'An update from over 9 years later....and boy is it a complete 180.\n\nSince its a smaller restaurant, the long wait time remains: be prepared for a wait at...', 'rating': 5, 'created_at': '2022-10-12 16:42:28'}, {'biz_id': 11, 'review_body': 'I was pleasantly surprised by this place. As a tourist, you really only know about Kang Ho Dong Baekjeong and Quarters. We were made aware of this place by...', 'rating': 4, 'created_at': '2022-10-12 12:26:45'}, {'biz_id': 11, 'review_body': "The husband and I couldn't figure out what we wanted for dinner while visiting LA, so we ended up going with Hae Jang Chon because we've been here several...", 'rating': 3, 'created_at': '2022-10-10 16:34:57'}]
     }, {
@@ -297,7 +297,7 @@ bizzies = [
         'phone': '+13234667453',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/KO12qRQtLvct2F7u-5nKLw/o.jpg', 'categories': ['soulfood', 'waffles', 'chicken_wings'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/KO12qRQtLvct2F7u-5nKLw/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/DhT3A1u3BHMfDCdTaf62oA/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/O47uvLc5fdMgl5Gm71fUxQ/o.jpg'], 'hours': {'is_overnight': False, 'start': '0800', 'end': '0000', 'day': 0},
+        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/KO12qRQtLvct2F7u-5nKLw/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/DhT3A1u3BHMfDCdTaf62oA/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/O47uvLc5fdMgl5Gm71fUxQ/o.jpg'], 'hours': {'is_overnight': False, 'start': '0800', 'end': '2300', 'day': 0},
         'id': 17,
         'reviews': [{'biz_id': 17, 'review_body': "Get the barack obama, its gasss. Hadn't been in a while and was shocked how good it was.", "rating": 5, 'created_at': '2022-09-21 18:14:03'}, {'biz_id': 17, 'review_body': '5/5 always\n' +'\n' +'I get the same thing every time, the chicken omelet smacks so hard.. with a waffle on the side.',"rating": 5,'created_at': '2022-10-02 21:24:37'}, {'biz_id': 17, 'review_body': "Fried chicken for dinner? Yes, please! Fried chicken for any meal is ok with me. This Roscoe's location is old and dark, making me feel like a dive. so...", "rating": 4, 'created_at': '2022-09-26 19:07:10'},]
     }, {
@@ -388,7 +388,7 @@ bizzies = [
         'phone': '+13239129230',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/W6wouvpHpHpZR6Ma87Oycg/o.jpg', 'categories': ['indpak'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/W6wouvpHpHpZR6Ma87Oycg/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/7Y4mpwOgzQ607-Xm7B9wcg/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/jbHcecIXCXH5ZnFHNejF5Q/o.jpg'], 'hours': {'is_overnight': True, 'start': '1100', 'end': '0100', 'day': 0},
+        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/W6wouvpHpHpZR6Ma87Oycg/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/7Y4mpwOgzQ607-Xm7B9wcg/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/jbHcecIXCXH5ZnFHNejF5Q/o.jpg'], 'hours': {'is_overnight': True, 'start': '1100', 'end': '2300', 'day': 0},
         'id': 24,
         'reviews': [{'biz_id': 24, 'review_body': 'Such a delicious meal! My go-to Indian restaurant. Love this spot. \n\nThe service and the vibes are incredible', 'rating': 5, 'created_at': '2022-09-15 23:28:38'}, {'biz_id': 24, 'review_body': 'Loved coming here. Sharan and Pramod are both super hospitable. They make you feel at home. The food was also great. We ordered butter chicken and daal...', 'rating': 5, 'created_at': '2022-09-15 21:09:32'}, {'biz_id': 24, 'review_body': "Food is great, service is fast as well. \nMy server Sharin was fantastic. Definitely give this place a try if you're in the area!", 'rating': 5, 'created_at': '2022-08-30 19:10:15'}]
     }, {
@@ -440,7 +440,7 @@ bizzies = [
         'phone': '+12133888607',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/axO_FH4VwDYcPQOuabFi6g/o.jpg', 'categories': ['ramen', 'noodles'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/axO_FH4VwDYcPQOuabFi6g/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/2CWFcG5Yu-TbQNlWR-XwPw/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/ItfyyYyNjKLYQ-F0cppwMQ/o.jpg'], 'hours': {'is_overnight': True, 'start': '1130', 'end': '0100', 'day': 0},
+        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/axO_FH4VwDYcPQOuabFi6g/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/2CWFcG5Yu-TbQNlWR-XwPw/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/ItfyyYyNjKLYQ-F0cppwMQ/o.jpg'], 'hours': {'is_overnight': True, 'start': '1130', 'end': '2300', 'day': 0},
         'id': 28,
         'reviews': [{'biz_id': 28, 'review_body': 'Fire ramen I completely love it totally recommend it !!!!!go get yourself a ramen bowl by Slurpin', 'rating': 5, 'created_at': '2022-08-28 16:01:18'}, {'biz_id': 28, 'review_body': 'One of my favorite Ramen places in Los Angeles. Many choices here including a Vegan choice', 'rating': 5, 'created_at': '2022-09-27 18:10:38'}, {'biz_id': 28, 'review_body': 'Delicious, clean, great service, great music and a good price. Great at refilling waters, flavor is rich. No complaints, easy recommendation.', 'rating': 5, 'created_at': '2022-09-16 15:26:39'}]
     }, {
@@ -453,7 +453,7 @@ bizzies = [
         'phone': '+12133898777',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/o.jpg', 'categories': ['korean', 'bbq'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/utraQPqRWf9B9j3pp-5YtQ/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/NIOq3JXvAozR56R8CFNVWA/o.jpg'], 'hours': {'is_overnight': False, 'start': '1100', 'end': '0000', 'day': 0},
+        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/utraQPqRWf9B9j3pp-5YtQ/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/NIOq3JXvAozR56R8CFNVWA/o.jpg'], 'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0},
         'id': 29,
         'reviews': [{'biz_id': 29, 'review_body': 'An update from over 9 years later....and boy is it a complete 180.\n\nSince its a smaller restaurant, the long wait time remains: be prepared for a wait at...', 'rating': 5, 'created_at': '2022-10-12 16:42:28'}, {'biz_id': 29, 'review_body': 'I was pleasantly surprised by this place. As a tourist, you really only know about Kang Ho Dong Baekjeong and Quarters. We were made aware of this place by...', 'rating': 4, 'created_at': '2022-10-12 12:26:45'}, {'biz_id': 29, 'review_body': "The husband and I couldn't figure out what we wanted for dinner while visiting LA, so we ended up going with Hae Jang Chon because we've been here several...", 'rating': 3, 'created_at': '2022-10-10 16:34:57'}]
     }, {
@@ -479,7 +479,7 @@ bizzies = [
         'phone': '+13234107304',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/rYqoE4hKPWzxKOJ6wZwxfg/o.jpg', 'categories': ['mediterranean', 'breakfast_brunch', 'cocktailbars'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/rYqoE4hKPWzxKOJ6wZwxfg/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/T-LIqrkSb5MPDbtkbxD9TQ/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/u0T6fGS05t25F-y1S6bAVA/o.jpg'], 'hours': {'is_overnight': False, 'start': '1700', 'end': '0000', 'day': 0},
+        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/rYqoE4hKPWzxKOJ6wZwxfg/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/T-LIqrkSb5MPDbtkbxD9TQ/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/u0T6fGS05t25F-y1S6bAVA/o.jpg'], 'hours': {'is_overnight': False, 'start': '1700', 'end': '2300', 'day': 0},
         'id': 31,
         'reviews': [{'biz_id': 31, 'review_body': 'Street parking was easy on a Wednesday evening (valet parking is available too).\nLive music added a special touch to dinning  in. Dorian and Mich were great...', 'rating': 5, 'created_at': '2022-09-14 23:20:12'}, {'biz_id': 31, 'review_body': 'Always love coming to bacari. This time I loved it a little extra because of my wonderful server teddy. I had a lot of trouble finding my way through the...', 'rating': 5, 'created_at': '2022-08-27 13:56:30'}, {'biz_id': 31, 'review_body': 'We celebrated my friends birthday here and by far the best experience! The food was delicious and our server Cheryl was the best! The manager Fabian gave us...', 'rating': 5, 'created_at': '2022-09-05 22:33:29'}]
     }, {
@@ -752,7 +752,7 @@ bizzies = [
         'phone': '+14088180696',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/ce6dy5tUbo3XxSUK6Qht0w/o.jpg', 'categories': ['coffee', 'bubbletea'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media3.fl.yelpcdn.com/bphoto/ce6dy5tUbo3XxSUK6Qht0w/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/6bayfRO6-R9A4PwWwwOmTQ/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/7WyzRWAJUCBAAPQVbYWmVg/o.jpg'], 'hours': {'is_overnight': False, 'start': '1000', 'end': '0000', 'day': 0},
+        'photos': ['https://s3-media3.fl.yelpcdn.com/bphoto/ce6dy5tUbo3XxSUK6Qht0w/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/6bayfRO6-R9A4PwWwwOmTQ/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/7WyzRWAJUCBAAPQVbYWmVg/o.jpg'], 'hours': {'is_overnight': False, 'start': '1000', 'end': '2300', 'day': 0},
         'id': 52,
         'reviews': [{'biz_id': 52, 'review_body': "Good vibes, good drinks & good location :)  This is my family's go-to boba spot! \n\nThe drinks are well-crafted and the flavors in each mesh really well...", 'rating': 5, 'created_at': '2022-08-19 11:07:06'}, {'biz_id': 52, 'review_body': 'This Pekoe was the OG one that I prefer over the other locations. I feel like this location is way busier than the others, so there is always a line and a...', 'rating': 3, 'created_at': '2022-09-28 10:33:59'}, {'biz_id': 52, 'review_body': 'Thought this place was a hair salon at first after driving by but found out it was boba\n\nThe vibes are almost like that of a nightclub, lots of music and...', 'rating': 3, 'created_at': '2022-08-09 12:34:26'}]
     }, {
@@ -765,7 +765,7 @@ bizzies = [
         'phone': '+14082759999',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg', 'categories': ['bubbletea', 'coffee'],
         'transactions': ['delivery'],
-        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/Cekx5mRqcW1jK6u2KqMC0w/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/mQhdBQkPdTnOmN2FhfMyVw/o.jpg'], 'hours': {'is_overnight': True, 'start': '1700', 'end': '0100', 'day': 0},
+        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/PM7ZePHQQnUa2G26NGj0CQ/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/Cekx5mRqcW1jK6u2KqMC0w/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/mQhdBQkPdTnOmN2FhfMyVw/o.jpg'], 'hours': {'is_overnight': True, 'start': '1700', 'end': '2300', 'day': 0},
         'id': 53,
         'reviews': [{'biz_id': 53, 'review_body': 'I stumbled across this place late one night and did not know what to drink. The owner was helping behind the counter and asked a few questions. He said "I...', 'rating': 5, 'created_at': '2022-08-27 00:24:12'}, {'biz_id': 53, 'review_body': 'cool asss! bosss! go for the drink! and for the boss! spread! love yall!! dont forget to tell your story!', 'rating': 5, 'created_at': '2022-09-25 00:05:25'}, {'biz_id': 53, 'review_body': "All the teas are so good it's hard to pick which one is the best--and I have tried many from each menu", 'rating': 5, 'created_at': '2022-09-26 00:57:05'}]
     }, {
@@ -1636,7 +1636,7 @@ bizzies = [
         'phone': '+18007861000',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/ZwTYLnJSgN68aBYzlWPlKg/o.jpg', 'categories': ['burgers', 'hotdogs'],
         'transactions': [],
-        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/ZwTYLnJSgN68aBYzlWPlKg/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/S9wiVbR6zdXm9oZk9p1knw/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/ZqyPbCIeBiUtChKCbKC9WQ/o.jpg'], 'hours': {'is_overnight': True, 'start': '1030', 'end': '0100', 'day': 0},
+        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/ZwTYLnJSgN68aBYzlWPlKg/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/S9wiVbR6zdXm9oZk9p1knw/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/ZqyPbCIeBiUtChKCbKC9WQ/o.jpg'], 'hours': {'is_overnight': True, 'start': '1030', 'end': '2300', 'day': 0},
         'id': 120,
         'reviews': [{'biz_id': 120, 'review_body': "Quick, fast, efficient service! \n\nBest burgers and always cooked to perfection. \n\nDrive thru line can be extremely long and they'll still make it go by quickly.", 'rating': 5, 'created_at': '2022-10-11 18:53:38'}, {'biz_id': 120, 'review_body': 'Living on the east coast, I have heard legendary tales of how good In-N-Out Burgers are.  This is a chain of burger shops on the west coast.  On a recent...', 'rating': 4, 'created_at': '2022-07-15 15:04:42'}, {'biz_id': 120, 'review_body': "My burger was not as tasty as I expected. The fries were very hard and not tasty at all. I went through the drive-thru so I didn't notice my fries until I...", 'rating': 3, 'created_at': '2022-09-29 04:34:43'}]
     }, {
@@ -1766,7 +1766,7 @@ bizzies = [
         'phone': '+15105351206',
         'url': 'https://s3-media1.fl.yelpcdn.com/bphoto/bLvn1UlTwMg1sfl3C1b_HA/o.jpg', 'categories': ['tacos'],
         'transactions': ['delivery'],
-        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/bLvn1UlTwMg1sfl3C1b_HA/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/lRBFJ7NnJRFYErmgW9WSIA/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/DkotgGpel_NPS6tDth085Q/o.jpg'], 'hours': {'is_overnight': True, 'start': '0900', 'end': '0100', 'day': 0},
+        'photos': ['https://s3-media1.fl.yelpcdn.com/bphoto/bLvn1UlTwMg1sfl3C1b_HA/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/lRBFJ7NnJRFYErmgW9WSIA/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/DkotgGpel_NPS6tDth085Q/o.jpg'], 'hours': {'is_overnight': True, 'start': '0900', 'end': '2300', 'day': 0},
         'id': 130,
         'reviews': [{'biz_id': 130, 'review_body': "Bring cash and stop by! The best tacos are served here and even though inflation has hit this place like any other, you won't regret it (I remember tacos...", 'rating': 5, 'created_at': '2022-07-31 20:58:21'}, {'biz_id': 130, 'review_body': 'Rating: 3.5/5\n\nPro:\n- Good horchata\n\nCon:\n- Limited parking\n- A couple of people with housing insecurity are wandering around very close to you and your...', 'rating': 3, 'created_at': '2022-08-03 20:42:42'}, {'biz_id': 130, 'review_body': 'This place has really gone down hill they charge 3.50 a taco now when it used to be 2.25 they also charge 50 cents for salsa no matter how much you just...', 'rating': 1, 'created_at': '2022-08-03 15:30:54'}]
     }, {
@@ -2026,7 +2026,7 @@ bizzies = [
         'phone': '+14157763141',
         'url': 'https://s3-media3.fl.yelpcdn.com/bphoto/NbXrMs9bEMJ1biVlLJgzXw/o.jpg', 'categories': ['bakeries', 'donuts'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media3.fl.yelpcdn.com/bphoto/NbXrMs9bEMJ1biVlLJgzXw/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/5O_75b1Dcudw7m35P_nE_A/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/1e0ZRRk5zRsksNJdeXZfKw/o.jpg'], 'hours': {'is_overnight': True, 'start': '0600', 'end': '0600', 'day': 0},
+        'photos': ['https://s3-media3.fl.yelpcdn.com/bphoto/NbXrMs9bEMJ1biVlLJgzXw/o.jpg', 'https://s3-media1.fl.yelpcdn.com/bphoto/5O_75b1Dcudw7m35P_nE_A/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/1e0ZRRk5zRsksNJdeXZfKw/o.jpg'], 'hours': {'is_overnight': True, 'start': '0000', 'end': '0000', 'day': 0},
         'id': 150,
         'reviews': [{'biz_id': 150, 'review_body': "Loved going to Bob's for breakfast. I heard about it through a Someone Feed Phil recommendation and knew I had to go. \n\nIt will always look like a long line...", 'rating': 5, 'created_at': '2022-10-12 07:24:33'}, {'biz_id': 150, 'review_body': "Truly the best donuts in the SF bay!\n\nTry to go earlier in the evening for their specialty donuts! We did order the massive donut however it's flavor is...", 'rating': 5, 'created_at': '2022-10-10 02:12:27'}, {'biz_id': 150, 'review_body': "Just wow. The best doughnuts in SF, most likely the US. It's open 24 hours a day, so instead of choosing something, just ask for whatever is fresh. \n\nThe...", 'rating': 5, 'created_at': '2022-10-04 11:23:03'}]
     }, {
@@ -2091,7 +2091,7 @@ bizzies = [
         'phone': '+14159631713',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/tCfiqhwdx7x7LYQIUQky0A/o.jpg', 'categories': ['tradamerican', 'bbq'],
         'transactions': ['pickup', 'delivery'],
-        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/tCfiqhwdx7x7LYQIUQky0A/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/axNRCPDqPIxpKIxcD2S9ww/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/l1VhLka_ALa6Zul5RDZM9g/o.jpg'], 'hours': {'is_overnight': False, 'start': '1600', 'end': '0000', 'day': 0},
+        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/tCfiqhwdx7x7LYQIUQky0A/o.jpg', 'https://s3-media3.fl.yelpcdn.com/bphoto/axNRCPDqPIxpKIxcD2S9ww/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/l1VhLka_ALa6Zul5RDZM9g/o.jpg'], 'hours': {'is_overnight': False, 'start': '1600', 'end': '2300', 'day': 0},
         'id': 155,
         'reviews': [{'biz_id': 155, 'review_body': 'Underrated comfortable bar. Perfect for food, drink and hanging out.\n\nEffortless good times here. It reminds me of the kind of bars in Germany. Friendly...', 'rating': 5, 'created_at': '2022-09-19 21:59:07'}, {'biz_id': 155, 'review_body': "So sad Broken Record will be closing, and I JUST found out about Tiki Tuesdays! It's not all-out tiki, but fun for dive bar tiki. Drinks weren't amazing but...", 'rating': 4, 'created_at': '2022-10-12 23:19:57'}, {'biz_id': 155, 'review_body': '4-19-2022 7p.m.\n1st time here...will be back!!!\nWent here to meet  a date for drinx...\ngot stood up, story of my life...\nWalked into a lively low lit bar &...', 'rating': 5, 'created_at': '2022-04-30 13:51:10'}]
     }, {
@@ -2377,7 +2377,7 @@ bizzies = [
         'phone': '+14158247877',
         'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/2-Kc5B4gJjB5OSkbbFimQw/o.jpg', 'categories': ['mexican'],
         'transactions': ['delivery'],
-        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/2-Kc5B4gJjB5OSkbbFimQw/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/MGMSLkZ5eDQBcsYtbJ6GIQ/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/jusgtdXIfMwUMZ1klPm2TA/o.jpg'], 'hours': {'is_overnight': True, 'start': '1000', 'end': '0145', 'day': 0},
+        'photos': ['https://s3-media2.fl.yelpcdn.com/bphoto/2-Kc5B4gJjB5OSkbbFimQw/o.jpg', 'https://s3-media4.fl.yelpcdn.com/bphoto/MGMSLkZ5eDQBcsYtbJ6GIQ/o.jpg', 'https://s3-media2.fl.yelpcdn.com/bphoto/jusgtdXIfMwUMZ1klPm2TA/o.jpg'], 'hours': {'is_overnight': True, 'start': '1000', 'end': '2300', 'day': 0},
         'id': 177,
         'reviews': [{'biz_id': 177, 'review_body': "I came with friends for lunch around 2pm and it wasn't busy. Parking is super tough around the area and metered. We got to order immediately and I got a...", 'rating': 5, 'created_at': '2022-10-01 21:08:01'}, {'biz_id': 177, 'review_body': "Santiago, thanks for your response! It's actually ok due Covid, it's probably best to not put the salsa bar back! The guy behind the counter gave me the...", 'rating': 4, 'created_at': '2022-10-11 02:31:05'}, {'biz_id': 177, 'review_body': 'Came over to try this spot out for lunch! Took Bart over from the city on Market. This place is conveniently located right next to the Bart station so it...', 'rating': 4, 'created_at': '2022-10-08 18:38:19'}]
     }, {
