@@ -81,11 +81,11 @@ export default function UpdateBizForm() {
             }
 
             if (phone?.length) {
-                const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')']
+                const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')', ' ', '-']
 
                 phone.split('').forEach(char => {
                     if (!ALLOWED_PHONE_CHAR.includes(char)) {
-                        errors.push(`Phone can only include numbers or the symbols: "+", "(", or ")"`);
+                        errors.push(`Phone can only include numbers or the symbols: "+", "-", "(", or ")"`);
                     }
                 });
             }
@@ -232,6 +232,13 @@ export default function UpdateBizForm() {
             <h1 className='header header--update-biz'>Hello! Let's update your business details</h1>
 
             <form onSubmit={handleSubmit} className="form" id="form--update-biz">
+
+                {validationErrors.length > 0 && (
+                    <ul id="list-errors-biz" className="list--errors">
+                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
+                    </ul>
+                )}
+
                 <div className='container--form-fields'>
 
                     {/* ----- NAME SECTION ----- */}
@@ -495,11 +502,6 @@ export default function UpdateBizForm() {
                     </div>
                 </div>
 
-                {validationErrors.length > 0 && (
-                    <ul id="list-errors-biz" className="list--errors">
-                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
-                    </ul>
-                )}
 
                 <button
                     type="submit"
