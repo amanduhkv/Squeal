@@ -283,7 +283,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'fnieyvmWe2B3bJ19bnxt6g',9
+        # 'id': 'fnieyvmWe2B3bJ19bnxt6g',8
         'name': 'Donut Friend',
         'location': {
             'address1': '5107 York Blvd',
@@ -312,7 +312,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'ikF6L0HiC3_AhAiywWzS3g',11
+        # 'id': 'ikF6L0HiC3_AhAiywWzS3g',9
         'name': 'Salt & Straw',
         'location': {
             'address1': '240 N Larchmont Blvd',
@@ -341,7 +341,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'CP0ICg1dZqEOt3UtNapjKg',13
+        # 'id': 'CP0ICg1dZqEOt3UtNapjKg',10
         'name': 'Au Lac',
         'location': {
             'address1': '710 W 1st St',
@@ -370,7 +370,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '1500', 'day': 1}
     },
     {
-        # 'id': 'qAAoilHU25Qr45FOQlA19g',15
+        # 'id': 'qAAoilHU25Qr45FOQlA19g',11
         'name': 'Kang Ho-dong Baekjeong',
         'location': {
             'address1': '3465 W 6th St',
@@ -399,7 +399,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'z0zaCVA-p_5xTsyUZrmR0g',
+        # 'id': 'z0zaCVA-p_5xTsyUZrmR0g',12
         'name': 'Republique',
         'location': {
             'address1': '624 S La Brea Ave',
@@ -428,7 +428,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'sYn3SNQP-j2t2XSwjlCbRg',
+        # 'id': 'sYn3SNQP-j2t2XSwjlCbRg', 13
         'name': "Monty's Good Burger",
         'location': {
             'address1': '516 S Western Ave',
@@ -457,7 +457,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'h2u-coGd8WWClyU3b7jf8w',
+        # 'id': 'h2u-coGd8WWClyU3b7jf8w',14
         'name': 'Met Her At A Bar',
         'location': {
             'address1': '759 S La Brea Ave',
@@ -486,7 +486,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'bdm3708B0OJW9xDdaKVH_A',
+        # 'id': 'bdm3708B0OJW9xDdaKVH_A',15
         'name': 'Gol Tong Chicken',
         'location': {
             'address1': '361 S Western Ave',
@@ -515,7 +515,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'ki5SNb4Lli6uOklz6BXXGw',
+        # 'id': 'ki5SNb4Lli6uOklz6BXXGw',16
         'name': 'Blu Jam Café',
         'location': {
             'address1': '7371 Melrose Ave',
@@ -544,7 +544,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'pAWfcO6e2ae2pIkJXWO-yA',
+        # 'id': 'pAWfcO6e2ae2pIkJXWO-yA',17
         'name': "Roscoe's House of Chicken & Waffles - Hollywood",
         'location': {
             'address1': '1514 N Gower St',
@@ -573,7 +573,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'kdTFcDSl9vAR-btEm1Q2uw',
+        # 'id': 'kdTFcDSl9vAR-btEm1Q2uw', 18
         'name': 'Bao Dim Sum House',
         'location': {
             'address1': '8256 Beverly Blvd',
@@ -602,7 +602,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'ohosmz6FXVAeoW5nUkYwng',
+        # 'id': 'ohosmz6FXVAeoW5nUkYwng',19
         'name': 'Pine & Crane',
         'location': {
             'address1': '1521 Griffith Park Blvd',
@@ -631,7 +631,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': '3OJt-Xj45NfCCFwaeKMaeg',
+        # 'id': '3OJt-Xj45NfCCFwaeKMaeg', 20
         'name': 'Luv2Eat Thai Bistro',
         'location': {
             'address1': '6660 W Sunset Blvd',
@@ -660,7 +660,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2145', 'day': 0}
     },
     {
-        # 'id': 'KOuqS-inE44o9-1Jix9Tag',
+        # 'id': 'KOuqS-inE44o9-1Jix9Tag',21
         'name': 'Shojin Downtown',
         'location': {
             'address1': '333 S Alameda St',
@@ -689,7 +689,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1730', 'end': '2130', 'day': 1}
     },
     {
-        # 'id': 'wjU7E9cMWgxZO9HNTn_tig',
+        # 'id': 'wjU7E9cMWgxZO9HNTn_tig', 22
         'name': 'Everytable',
         'location': {
             'address1': '1101 W 23rd St',
@@ -718,7 +718,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'SAowTowinOSZUBm2U7zggQ',
+        # 'id': 'SAowTowinOSZUBm2U7zggQ', 23
         'name': "Original Tommy's",
         'location': {
             'address1': '2575 Beverly Blvd',
@@ -747,7 +747,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '0000', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': '3XTjerBg_PywBN81Ts45Bg',
+        # 'id': '3XTjerBg_PywBN81Ts45Bg', 24
         'name': "India's Restaurant",
         'location': {
             'address1': '4366 Fountain Ave',
@@ -776,7 +776,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1100', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'uteG6HIb4an-y5fFCXWo7w',
+        # 'id': 'uteG6HIb4an-y5fFCXWo7w',25
         'name': 'Anarkali Indian Restaurant',
         'location': {
             'address1': '7013 Melrose Ave',
@@ -805,7 +805,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'fEY0zHaDMfIW3-N__joDKQ',
+        # 'id': 'fEY0zHaDMfIW3-N__joDKQ', 26
         'name': 'Bestia',
         'location': {
             'address1': '2121 E 7th Pl',
@@ -834,7 +834,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'iSZpZgVnASwEmlq0DORY2A',
+        # 'id': 'iSZpZgVnASwEmlq0DORY2A',27
         'name': 'Daikokuya Little Tokyo',
         'location': {
             'address1': '327 E 1st St',
@@ -863,7 +863,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'MlmcOkwaNnxl3Zuk6HsPCQ',
+        # 'id': 'MlmcOkwaNnxl3Zuk6HsPCQ', 28
         'name': "Slurpin' Ramen Bar - Los Angeles",
         'location': {
             'address1': '3500 W 8th St',
@@ -892,7 +892,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1130', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'JYGPEUZy4k5ObXGIjcD3DA',
+        # 'id': 'JYGPEUZy4k5ObXGIjcD3DA', 29
         'name': 'Hae Jang Chon',
         'location': {
             'address1': '3821 W 6th St',
@@ -921,7 +921,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'YetYHIRKrZDGHZ50I_RMag',
+        # 'id': 'YetYHIRKrZDGHZ50I_RMag', 30
         'name': "Joe's Falafel",
         'location': {
             'address1': '3535 Cahuenga Blvd W',
@@ -950,7 +950,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'sXdOBghhw-ZU9S-1HxVZVA',
+        # 'id': 'sXdOBghhw-ZU9S-1HxVZVA',31
         'name': 'Bacari Silverlake',
         'location': {
             'address1': '3626 Sunset Blvd',
@@ -979,7 +979,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'BDRVlHnK4l0T0ANb7M-Eqg',
+        # 'id': 'BDRVlHnK4l0T0ANb7M-Eqg', 32
         'name': 'Guisados',
         'location': {
             'address1': '1261 W Sunset Blvd',
@@ -1008,7 +1008,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'beA_DlDpij8O9xK2B-NjEA',
+        # 'id': 'beA_DlDpij8O9xK2B-NjEA',33
         'name': 'Mex Peru Gipsy',
         'location': {
             'address1': '414 E 12th St',
@@ -1037,7 +1037,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'HvDYCHDpgBy3CmzRD6gcMg',
+        # 'id': 'HvDYCHDpgBy3CmzRD6gcMg',34
         'name': 'Ktown Pho',
         'location': {
             'address1': '974 S Western Ave',
@@ -1066,7 +1066,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'CbW8U0QAwh5XRkaLt0xNZA',
+        # 'id': 'CbW8U0QAwh5XRkaLt0xNZA',35
         'name': 'Masa of Echo Park',
         'location': {
             'address1': '1800 W Sunset Blvd',
@@ -1095,7 +1095,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 2}
     },
     {
-        # 'id': 'DJek3FUewBzMc0gS-Gms9w',
+        # 'id': 'DJek3FUewBzMc0gS-Gms9w',36
         'name': 'Morrison Atwater Village',
         'location': {
             'address1': '3179 Los Feliz Blvd',
@@ -1124,7 +1124,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'qCJ2LFfNbXYBIcjXNva1cA',
+        # 'id': 'qCJ2LFfNbXYBIcjXNva1cA', 37
         'name': "Langer's Delicatessen",
         'location': {
             'address1': '704 S Alvarado St',
@@ -1153,7 +1153,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1600', 'day': 0}
     },
     {
-        # 'id': 'TzIJzamxdVGc3zReKbLGaA',
+        # 'id': 'TzIJzamxdVGc3zReKbLGaA', 38
         'name': 'Providence',
         'location': {
             'address1': '5955 Melrose Ave',
@@ -1182,7 +1182,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1800', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'b4SH4SbQUJfXxh6hNkF0wg',
+        # 'id': 'b4SH4SbQUJfXxh6hNkF0wg',39
         'name': 'Eggslut',
         'location': {
             'address1': '317 S Broadway',
@@ -1215,7 +1215,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'KtEMG1Aln3vQzte92QJxlw',
+        # 'id': 'KtEMG1Aln3vQzte92QJxlw',40
         'name': 'Genwa Korean BBQ',
         'location': {
             'address1': '5115 Wilshire Blvd',
@@ -1244,7 +1244,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'h_VkRMpSrtjdKDxUJ7sDOQ',
+        # 'id': 'h_VkRMpSrtjdKDxUJ7sDOQ',41
         'name': "Lala's Argentine Grill",
         'location': {
             'address1': '7229 Melrose Ave',
@@ -1273,7 +1273,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'h9PSJ18gQ4kos8A0XAGlng',
+        # 'id': 'h9PSJ18gQ4kos8A0XAGlng', 42
         'name': 'Carlitos Gardel Argentine Steakhouse',
         'location': {
             'address1': '7963 Melrose Ave',
@@ -1302,7 +1302,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'hC745S5W4HTq606ySmBJNw',
+        # 'id': 'hC745S5W4HTq606ySmBJNw',43
         'name': 'KazuNori  | The Original Hand Roll Bar',
         'location': {
             'address1': '421 S Main St',
@@ -1331,7 +1331,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'YBmk31pBPukmnRyioe5uBA',
+        # 'id': 'YBmk31pBPukmnRyioe5uBA',44
         'name': 'Sushi Gen',
         'location': {
             'address1': '422 E 2nd St',
@@ -1360,7 +1360,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1400', 'day': 1}
     },
     {
-        # 'id': 'BzmbRSKGs56Yw2w2R12khw',
+        # 'id': 'BzmbRSKGs56Yw2w2R12khw',45
         'name': 'Hoy-Ka Thai Restaurant',
         'location': {
             'address1': '5908 Sunset Blvd',
@@ -1389,7 +1389,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'adrzBN4C3jpoCAzJX-xscw',
+        # 'id': 'adrzBN4C3jpoCAzJX-xscw',46
         'name': 'Pa Ord Noodle',
         'location': {
             'address1': '5301 W Sunset Blvd',
@@ -1418,7 +1418,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': '6GTaESIP0r1oFunFqqevsw',
+        # 'id': '6GTaESIP0r1oFunFqqevsw',47
         'name': 'Cafe Gratitude',
         'location': {
             'address1': '639 N Larchmont Blvd',
@@ -1447,7 +1447,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'PMj1TDcrvYTxEXd-g9LcWA',
+        # 'id': 'PMj1TDcrvYTxEXd-g9LcWA', 48
         'name': 'Zinc Cafe & Market',
         'location': {
             'address1': '580 Mateo St',
@@ -1476,7 +1476,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'EiGZST3PxwKs94PTOsD4eQ',
+        # 'id': 'EiGZST3PxwKs94PTOsD4eQ', 49
         'name': 'Pho 87',
         'location': {
             'address1': '1019 N Broadway',
@@ -1505,7 +1505,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'baEPmtktizrZDmH4p_OJ4A',
+        # 'id': 'baEPmtktizrZDmH4p_OJ4A',50
         'name': 'Shuei-Do Manju Shop',
         'location': {
             'address1': '217 Jackson St',
@@ -1534,7 +1534,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '1600', 'day': 3}
     },
     {
-        # 'id': 'lPkQK2N4g658SR_7BBxeaQ',
+        # 'id': 'lPkQK2N4g658SR_7BBxeaQ',51
         'name': "Peters' Bakery",
         'location': {
             'address1': '3108 Alum Rock Ave',
@@ -1563,7 +1563,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0630', 'end': '1800', 'day': 1}
     },
     {
-        # 'id': 'VkV85hclKc8saSU4UDNjQQ',
+        # 'id': 'VkV85hclKc8saSU4UDNjQQ',52
         'name': 'Pekoe',
         'location': {
             'address1': '3276 S White Rd',
@@ -1592,7 +1592,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'gQInCoEeqCNiSuomfFPkwA',
+        # 'id': 'gQInCoEeqCNiSuomfFPkwA',53
         'name': 'Sweet Gelato Tea Lounge',
         'location': {
             'address1': '979 Story Rd',
@@ -1621,7 +1621,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1700', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'eXprR2i_W8UKMmsYYbZFQQ',
+        # 'id': 'eXprR2i_W8UKMmsYYbZFQQ',54
         'name': 'Philz Coffee',
         'location': {
             'address1': '118 Paseo De San Antonio Walk',
@@ -1650,7 +1650,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0630', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'vgseXwt9c975jus_PBM-zA',
+        # 'id': 'vgseXwt9c975jus_PBM-zA',55
         'name': 'Anton SV Pâtisserie',
         'location': {
             'address1': '1969 Otoole Way',
@@ -1679,7 +1679,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'lDLzKkPIB6mE7FKroJleug',
+        # 'id': 'lDLzKkPIB6mE7FKroJleug',56
         'name': "Charlie's Cheesecake Works",
         'location': {
             'address1': '1179 Redmond Ave',
@@ -1708,7 +1708,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'V0UiBNqNEx1YmR1SOI4lQw',
+        # 'id': 'V0UiBNqNEx1YmR1SOI4lQw',57
         'name': 'Mexico Bakery',
         'location': {
             'address1': '2811 Story Rd',
@@ -1737,7 +1737,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0500', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'k901qMpKUjNES5mFJOComA',
+        # 'id': 'k901qMpKUjNES5mFJOComA',58
         'name': 'Sweet Rendezvous',
         'location': {
             'address1': '668 Blossom Hill Rd',
@@ -1766,7 +1766,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '0ba79WK2mc1txlZoWGpcRA',
+        # 'id': '0ba79WK2mc1txlZoWGpcRA',59
         'name': 'Willow Glen Creamery',
         'location': {
             'address1': '1100 Lincoln Ave',
@@ -1795,7 +1795,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'xfoNyFG72oPSjf9x9nAHVw',
+        # 'id': 'xfoNyFG72oPSjf9x9nAHVw',60
         'name': 'Vegan Donut And Cafe',
         'location': {
             'address1': '449 E Santa Clara St',
@@ -1824,7 +1824,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 3}
     },
     {
-        # 'id': 'Y4wgkkCvoclvVxTkTS8MCw',
+        # 'id': 'Y4wgkkCvoclvVxTkTS8MCw',61
         'name': 'Tiger Tea & Juice - San Jose',
         'location': {
             'address1': '1706 Oakland Rd',
@@ -1853,7 +1853,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'jfMK6n5Mln7ilco6r2YXoA',
+        # 'id': 'jfMK6n5Mln7ilco6r2YXoA',62
         'name': 'QPOT',
         'location': {
             'address1': '1610 E Capitol Expy',
@@ -1882,7 +1882,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'TQEfj1-QhyWCJ29u3l9Kjw',
+        # 'id': 'TQEfj1-QhyWCJ29u3l9Kjw',63
         'name': 'Gen Korean BBQ House',
         'location': {
             'address1': '1628 Hostetter Rd',
@@ -1909,7 +1909,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'rjUOwXNxsg0tstFssAjfsQ',
+        # 'id': 'rjUOwXNxsg0tstFssAjfsQ', 64
         'name': 'LUNA Mexican Kitchen - The Alameda',
         'location': {
             'address1': '1495 The Alameda',
@@ -1938,7 +1938,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'i50BEr4Pq6-D8tmsegmVyA',
+        # 'id': 'i50BEr4Pq6-D8tmsegmVyA',65
         'name': 'The Table',
         'location': {
             'address1': '1110 Willow St',
@@ -1967,7 +1967,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 2}
     },
     {
-        # 'id': 'yMPz0Hj-Y5Z_cSCeuUNV8w',
+        # 'id': 'yMPz0Hj-Y5Z_cSCeuUNV8w',66
         'name': 'The Counter Santana Row',
         'location': {
             'address1': '3055 Olin Ave',
@@ -1996,7 +1996,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'rSe_sHr66XDGGIzjQO9K3w',
+        # 'id': 'rSe_sHr66XDGGIzjQO9K3w',67
         'name': 'Sliders Burgers',
         'location': {
             'address1': '1645 W San Carlos St',
@@ -2025,7 +2025,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'HnMZ-pm4P3sUnASbg05ZlQ',
+        # 'id': 'HnMZ-pm4P3sUnASbg05ZlQ',68
         'name': 'Yeganeh Bakery & Kafe Unik',
         'location': {
             'address1': '3275 Stevens Creek Blvd',
@@ -2054,7 +2054,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'NQ0KQoCTdkXICx36Z0t_lA',
+        # 'id': 'NQ0KQoCTdkXICx36Z0t_lA',69
         'name': 'Clover Bakery & Cafe',
         'location': {
             'address1': '4342 Moorpark Ave',
@@ -2083,7 +2083,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 1}
     },
     {
-        # 'id': '7HBtj81aBo2DEZFTPaaeqg',
+        # 'id': '7HBtj81aBo2DEZFTPaaeqg',70
         'name': 'Slice of Homage Pizza',
         'location': {
             'address1': '152 Post St',
@@ -2112,7 +2112,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2000', 'day': 2}
     },
     {
-        # 'id': 'OeePb_OQIgCnt3nO53XEtA',
+        # 'id': 'OeePb_OQIgCnt3nO53XEtA',71
         'name': 'Claw Shack',
         'location': {
             'address1': '1696 Berryessa Rd',
@@ -2141,7 +2141,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1500', 'end': '2000', 'day': 1}
     },
     {
-        # 'id': 'RDIjI4qSHkvVlHkfJ3AxCQ',
+        # 'id': 'RDIjI4qSHkvVlHkfJ3AxCQ',72
         'name': 'Sweet Mango',
         'location': {
             'address1': '1040 Willow St',
@@ -2170,7 +2170,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'dRTsqnuEtOT3DoYaGnBCSw',
+        # 'id': 'dRTsqnuEtOT3DoYaGnBCSw',73
         'name': 'China Chen',
         'location': {
             'address1': '400 S 3rd St',
@@ -2199,7 +2199,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '1900', 'day': 0}
     },
     {
-        # 'id': 'srBchC4ngf1sRefmSGseJA',
+        # 'id': 'srBchC4ngf1sRefmSGseJA',74
         'name': 'Walia Ethiopian Cuisine',
         'location': {
             'address1': '2208 Business Cir',
@@ -2228,7 +2228,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1500', 'day': 2}
     },
     {
-        # 'id': '42Wz6MMu9vz4Kg21cErXsQ',
+        # 'id': '42Wz6MMu9vz4Kg21cErXsQ',75
         'name': 'Gojo Ethiopian Restaurant',
         'location': {
             'address1': '1261 W San Carlos St',
@@ -2257,7 +2257,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 1}
     },
     {
-        # 'id': 'jw7wkWmTX04fRYLcp9vlPQ',
+        # 'id': 'jw7wkWmTX04fRYLcp9vlPQ',76
         'name': "Falafel's Drive-In",
         'location': {
             'address1': '2301 Stevens Creek Blvd',
@@ -2286,7 +2286,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': '9so8PQIG3Q-6mXQg5756CQ',
+        # 'id': '9so8PQIG3Q-6mXQg5756CQ',77
         'name': 'Sam and Curry',
         'location': {
             'address1': '1751 N 1st St',
@@ -2315,7 +2315,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'fuQOU_6-sjCuitcCvtYOvw',
+        # 'id': 'fuQOU_6-sjCuitcCvtYOvw',78
         'name': 'Punjab Cafe',
         'location': {
             'address1': '322 E Santa Clara St',
@@ -2344,7 +2344,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1430', 'day': 1}
     },
     {
-        # 'id': 'zXQF2Z_tyujpn9hJlJhURQ',
+        # 'id': 'zXQF2Z_tyujpn9hJlJhURQ',79
         'name': "Antipasto's By Derose Gourmet Meat Fish & Deli",
         'location': {
             'address1': '3454 McKee Rd',
@@ -2373,7 +2373,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '1700', 'day': 1}
     },
     {
-        # 'id': 'Q7OkRjnqIJmeZJHCnbnIcA',
+        # 'id': 'Q7OkRjnqIJmeZJHCnbnIcA',80
         'name': "Bertucelli's La Villa",
         'location': {
             'address1': '1319 Lincoln Ave',
@@ -2402,7 +2402,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1730', 'day': 1}
     },
     {
-        # 'id': 'cCKea_ufuGcxI14fhe84vw',
+        # 'id': 'cCKea_ufuGcxI14fhe84vw',81
         'name': 'Cha Cha Sushi',
         'location': {
             'address1': '547 W Capitol Expy',
@@ -2431,7 +2431,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'ZMdteLcR8y2N-oJAd9cmEg',
+        # 'id': 'ZMdteLcR8y2N-oJAd9cmEg',82
         'name': "Souvlaki's Greek Skewers",
         'location': {
             'address1': '577 W Alma Ave',
@@ -2460,7 +2460,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': 'CWb2lApN-MvcmzdPp_9jpA',
+        # 'id': 'CWb2lApN-MvcmzdPp_9jpA',83
         'name': 'Tacos El Compa Taqueria',
         'location': {
             'address1': '1321 Blossom Hill Rd',
@@ -2489,7 +2489,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': 'vZ41QYMBQvtHgpAfw1IToQ',
+        # 'id': 'vZ41QYMBQvtHgpAfw1IToQ',84
         'name': 'Pizza Antica',
         'location': {
             'address1': '334 Santana Row',
@@ -2518,7 +2518,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': '7NOpkoAUAGqMKEZgSu1QmA',
+        # 'id': '7NOpkoAUAGqMKEZgSu1QmA',85
         'name': 'A Slice of New York',
         'location': {
             'address1': '3443 Stevens Creek Blvd',
@@ -2547,7 +2547,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'OGwQYjE3ThC_gF92mHO0_g',
+        # 'id': 'OGwQYjE3ThC_gF92mHO0_g',86
         'name': 'Mendocino Farms',
         'location': {
             'address1': '3090 Olsen Dr',
@@ -2576,7 +2576,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'j1jgz10pCfC6T4k2WW3o9A',
+        # 'id': 'j1jgz10pCfC6T4k2WW3o9A',87
         'name': 'Freshly Baked Eatery',
         'location': {
             'address1': '152 N 3rd St',
@@ -2605,7 +2605,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'tyr85X7PWdx54LOVzLzjAw',
+        # 'id': 'tyr85X7PWdx54LOVzLzjAw', 88
         'name': 'Hannah Coffee',
         'location': {
             'address1': '754 The Alameda',
@@ -2634,7 +2634,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'zYljE3M9zSoZdipfFQidpA',
+        # 'id': 'zYljE3M9zSoZdipfFQidpA', 89
         'name': 'The Boiling Crab',
         'location': {
             'address1': '1631 E Capitol Expy',
@@ -2663,7 +2663,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1500', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'QJJd1N0QjQgUtv4hIuhqGg',
+        # 'id': 'QJJd1N0QjQgUtv4hIuhqGg', 90
         'name': 'Taurinus Brazilian Steakhouse',
         'location': {
             'address1': '167 W San Fernando St',
@@ -2692,7 +2692,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2030', 'day': 1}
     },
     {
-        # 'id': '3eKhFdXHvne3_YVjxfrTGQ',
+        # 'id': '3eKhFdXHvne3_YVjxfrTGQ', 91
         'name': 'Fogo de Chao Brazilian Steakhouse',
         'location': {
             'address1': '377 Santana Row',
@@ -2721,7 +2721,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'PoqyugcuH71tkEwXnDcmYQ',
+        # 'id': 'PoqyugcuH71tkEwXnDcmYQ',92
         'name': 'Mizu Sushi Bar & Grill',
         'location': {
             'address1': '1035 S Winchester Blvd',
@@ -2750,7 +2750,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': '73WEetznHbLA6sp0k9rzQA',
+        # 'id': '73WEetznHbLA6sp0k9rzQA',93
         'name': 'Thai Elephant Express',
         'location': {
             'address1': '3005 Silver Creek Rd',
@@ -2779,7 +2779,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': '_cHIFoV6mqqOfnjNnHr0bQ',
+        # 'id': '_cHIFoV6mqqOfnjNnHr0bQ',94
         'name': 'Must be Thai',
         'location': {
             'address1': '3143 Stevens Creek Blvd',
@@ -2808,7 +2808,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '7juJxsuoqYvWa9om6EcxsQ',
+        # 'id': '7juJxsuoqYvWa9om6EcxsQ',95
         'name': 'Bun Bo Hue An Nam',
         'location': {
             'address1': '740 Story Rd',
@@ -2837,7 +2837,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '6hCYuX14SeyJIuHXdp3AhA',
+        # 'id': '6hCYuX14SeyJIuHXdp3AhA', 96
         'name': 'Tofoo Com Chay',
         'location': {
             'address1': '388 E Santa Clara St',
@@ -2866,7 +2866,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'PkLfjhJ_XExjwARO1RkQIw',
+        # 'id': 'PkLfjhJ_XExjwARO1RkQIw',97
         'name': 'Bakesale Betty',
         'location': {
             'address1': '5098 Telegraph Ave',
@@ -2895,7 +2895,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1400', 'day': 3}
     },
     {
-        # 'id': 'Qfc4w5l92Uvq9BsrP15O4A',
+        # 'id': 'Qfc4w5l92Uvq9BsrP15O4A', 98
         'name': 'Arizmendi Bakery',
         'location': {
             'address1': '3265 Lakeshore Ave',
@@ -2924,7 +2924,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 1}
     },
     {
-        # 'id': 'kIM6q7OiC_olzruHoVMMSw',
+        # 'id': 'kIM6q7OiC_olzruHoVMMSw', 99
         'name': 'Yokee Milk Tea',
         'location': {
             'address1': '1728 Franklin St',
@@ -2953,7 +2953,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'Y4JaDkuGs8Xk_dPZu02e2g',
+        # 'id': 'Y4JaDkuGs8Xk_dPZu02e2g',100
         'name': 'UC Dessert',
         'location': {
             'address1': '388 9th St',
@@ -2982,7 +2982,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'CIrXV1DVcW9LmwINg4bH6A',
+        # 'id': 'CIrXV1DVcW9LmwINg4bH6A', 101
         'name': 'La Farine',
         'location': {
             'address1': '6323 College Ave',
@@ -3011,7 +3011,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'ACQxcER6RDR2NOLVu0DHEg',
+        # 'id': 'ACQxcER6RDR2NOLVu0DHEg', 102
         'name': 'Fentons Creamery',
         'location': {
             'address1': '4226 Piedmont Ave',
@@ -3040,7 +3040,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'cgImAqtrpVg7hN_6lsFJrQ',
+        # 'id': 'cgImAqtrpVg7hN_6lsFJrQ', 103
         'name': 'Farmhouse Kitchen Thai Cuisine',
         'location': {
             'address1': '336 Water St',
@@ -3069,7 +3069,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1330', 'day': 0}
     },
     {
-        # 'id': 'hfVYUuJRS7Q4rgNVHCB0Rg',
+        # 'id': 'hfVYUuJRS7Q4rgNVHCB0Rg', 104
         'name': 'Colonial Donuts',
         'location': {
             'address1': '3318 Lakeshore Ave',
@@ -3098,7 +3098,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '0000', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'EMCfTcgvGlItfrPNBEgb9A',
+        # 'id': 'EMCfTcgvGlItfrPNBEgb9A',105
         'name': 'Flavor Brigade',
         'location': {
             'address1': '3540 Fruitvale Ave',
@@ -3127,7 +3127,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'a9NgquuCzte0YT7M9VpLeA',
+        # 'id': 'a9NgquuCzte0YT7M9VpLeA', 106
         'name': 'Modigliani Cafe',
         'location': {
             'address1': '3208-3210 Grand Ave',
@@ -3156,7 +3156,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'NQVqMCoY-Krhw8DY4UnJKw',
+        # 'id': 'NQVqMCoY-Krhw8DY4UnJKw',107
         'name': 'Ohgane Korean BBQ',
         'location': {
             'address1': '3915 Broadway',
@@ -3185,7 +3185,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': '_mFhusiDiacM8w-7Hea5bg',
+        # 'id': '_mFhusiDiacM8w-7Hea5bg', 108
         'name': 'Jong Ga House',
         'location': {
             'address1': '372 Grand Ave',
@@ -3214,7 +3214,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'oQ2M416FwdHc9NRKDeCHng',
+        # 'id': 'oQ2M416FwdHc9NRKDeCHng', 109
         'name': 'Portal Oakland',
         'location': {
             'address1': '1611 2nd Ave',
@@ -3243,7 +3243,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'Jiz82V_WXIfZf02AuSSvDA',
+        # 'id': 'Jiz82V_WXIfZf02AuSSvDA',110
         'name': 'Chop Bar',
         'location': {
             'address1': '190 4th St',
@@ -3272,7 +3272,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'nnjQ8m6oTbQbr5_zUhCiDQ',
+        # 'id': 'nnjQ8m6oTbQbr5_zUhCiDQ',111
         'name': 'Souley Vegan',
         'location': {
             'address1': '301 Broadway',
@@ -3301,7 +3301,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'Ah9cWAseDdJ6WxO-TveJKg',
+        # 'id': 'Ah9cWAseDdJ6WxO-TveJKg',112
         'name': 'TrueBurger',
         'location': {
             'address1': '146 Grand Ave',
@@ -3330,7 +3330,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'wo68vP1Y0iXNS-n6i8WpjQ',
+        # 'id': 'wo68vP1Y0iXNS-n6i8WpjQ',113
         'name': 'Luckyduck Bicycle Cafe',
         'location': {
             'address1': '302 12th St',
@@ -3359,7 +3359,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 1}
     },
     {
-        # 'id': 'LHd3X9Of8ymOE5X3_fd0eA',
+        # 'id': 'LHd3X9Of8ymOE5X3_fd0eA',114
         'name': 'Moo Bong Ri Korean Restaurant',
         'location': {
             'address1': '4390 Telegraph Ave',
@@ -3388,7 +3388,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': '1aQn5XzAk_lVwxn997fphQ',
+        # 'id': '1aQn5XzAk_lVwxn997fphQ',115
         'name': 'Mua',
         'location': {
             'address1': '2442 Webster St',
@@ -3417,7 +3417,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'wu596lAazmcSqAxrSqCpkw',
+        # 'id': 'wu596lAazmcSqAxrSqCpkw',116
         'name': 'Huangcheng Noodle House',
         'location': {
             'address1': '911 Washington St',
@@ -3446,7 +3446,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'DceTpSF9RJ9PBvfX-_EImQ',
+        # 'id': 'DceTpSF9RJ9PBvfX-_EImQ',117
         'name': 'Shandong Restaurant',
         'location': {
             'address1': '328 10th St',
@@ -3475,7 +3475,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 1}
     },
     {
-        # 'id': 'JMVfRgQ-Rz6m3KWx9lFveQ',
+        # 'id': 'JMVfRgQ-Rz6m3KWx9lFveQ',118
         'name': 'Mariposa Baking Company',
         'location': {
             'address1': '5427 Telegraph Ave',
@@ -3504,7 +3504,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '1700', 'day': 0}
     },
     {
-        # 'id': '4a-VV_CbVMZQ8Wh4yfXT3g',
+        # 'id': '4a-VV_CbVMZQ8Wh4yfXT3g', 119
         'name': 'Obelisco Restaurant',
         'location': {
             'address1': '3411 E 12th St',
@@ -3533,7 +3533,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'l1MROfbSETysLQQH1N3PIQ',
+        # 'id': 'l1MROfbSETysLQQH1N3PIQ', 120
         'name': 'In-N-Out Burger',
         'location': {
             'address1': '8300 Oakport St',
@@ -3562,7 +3562,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1030', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'Q8jV2uPiBtI_FNys6mbcoQ',
+        # 'id': 'Q8jV2uPiBtI_FNys6mbcoQ',121
         'name': "Ahn's Quarter Pound Burger",
         'location': {
             'address1': '439 Grand Ave',
@@ -3591,7 +3591,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'XusKnltuKs9LTfAMCCxyPg',
+        # 'id': 'XusKnltuKs9LTfAMCCxyPg',122
         'name': 'Biryani Tika Kabab',
         'location': {
             'address1': '328 14th St',
@@ -3620,7 +3620,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'edcwzFKHIDpvS7Rj9gvU6Q',
+        # 'id': 'edcwzFKHIDpvS7Rj9gvU6Q',123
         'name': 'Annapurna Restaurant and Bar',
         'location': {
             'address1': '948 Clay St',
@@ -3649,7 +3649,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 1}
     },
     {
-        # 'id': 'a34HvdlrG5GZ1wjRuzRvlQ',
+        # 'id': 'a34HvdlrG5GZ1wjRuzRvlQ',124
         'name': 'Pizzaiolo',
         'location': {
             'address1': '5008 Telegraph Ave',
@@ -3678,7 +3678,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'v7GH_fTmGQGbjB4ignVnqA',
+        # 'id': 'v7GH_fTmGQGbjB4ignVnqA',125
         'name': 'Belotti Ristorante E Bottega',
         'location': {
             'address1': '5403 College Ave',
@@ -3707,7 +3707,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'UNE7QP_zp7oPnyqZcQkZiw',
+        # 'id': 'UNE7QP_zp7oPnyqZcQkZiw',126
         'name': 'Marufuku Ramen - Oakland',
         'location': {
             'address1': '4828 Telegraph Ave',
@@ -3736,7 +3736,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1730', 'end': '2230', 'day': 0}
     },
     {
-        # 'id': 'NqSVQ_DJZpVmCbJHaFcIsQ',
+        # 'id': 'NqSVQ_DJZpVmCbJHaFcIsQ',127
         'name': 'Geta',
         'location': {
             'address1': '165 41st St',
@@ -3765,7 +3765,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 1}
     },
     {
-        # 'id': '53BGTRdv8vnn6lwjMsjDUw',
+        # 'id': '53BGTRdv8vnn6lwjMsjDUw',128
         'name': "Wally's Cafe",
         'location': {
             'address1': '3900 San Pablo Ave',
@@ -3794,7 +3794,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'jToTQStksqPPbcinvUqhlA',
+        # 'id': 'jToTQStksqPPbcinvUqhlA',129
         'name': 'Shakewell',
         'location': {
             'address1': '3407 Lakeshore Ave',
@@ -3823,7 +3823,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1630', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'PGJbyscmFcjFwQdrSDkoJg',
+        # 'id': 'PGJbyscmFcjFwQdrSDkoJg',130
         'name': 'Tacos Sinaloa',
         'location': {
             'address1': '2138 International Blvd',
@@ -3852,7 +3852,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '0900', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'UHFjEP5dVn4wqcjt7ByUog',
+        # 'id': 'UHFjEP5dVn4wqcjt7ByUog',131
         'name': 'Cholita Linda',
         'location': {
             'address1': '4923 Telegraph Ave',
@@ -3881,7 +3881,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'JsqK99Ka8gIgu1ZtzDupRg',
+        # 'id': 'JsqK99Ka8gIgu1ZtzDupRg',132
         'name': "Zachary's Chicago Pizza",
         'location': {
             'address1': '5801 College Ave',
@@ -3910,7 +3910,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '6iT-NihtnFnDh8JOYxRvDQ',
+        # 'id': '6iT-NihtnFnDh8JOYxRvDQ',133
         'name': 'Belly',
         'location': {
             'address1': '1901 San Pablo Ave',
@@ -3939,7 +3939,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'PGGtbjr8m4V54tWMgqYxmQ',
+        # 'id': 'PGGtbjr8m4V54tWMgqYxmQ',134
         'name': 'Marica',
         'location': {
             'address1': '5301 College Ave',
@@ -3968,7 +3968,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'oT08T3Vpn1I7jDmrBBRMTw',
+        # 'id': 'oT08T3Vpn1I7jDmrBBRMTw',135
         'name': 'House of Prime Rib',
         'location': {
             'address1': '1906 Van Ness Ave',
@@ -3997,7 +3997,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'E6OLQ9i9A3iS0tKI8qJK6g',
+        # 'id': 'E6OLQ9i9A3iS0tKI8qJK6g',136
         'name': 'Galeto Brazilian Steakhouse',
         'location': {
             'address1': '1019 Clay St',
@@ -4026,7 +4026,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': '9-V4vgu2lJQ7FLrLu8lJjA',
+        # 'id': '9-V4vgu2lJQ7FLrLu8lJjA',137
         'name': 'Shimizu Sushi',
         'location': {
             'address1': '4290 Piedmont Ave',
@@ -4055,7 +4055,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': 'Jlt5w5ItA8ugiXif2VVQ5g',
+        # 'id': 'Jlt5w5ItA8ugiXif2VVQ5g',138
         'name': 'Champa Garden',
         'location': {
             'address1': '2102 8th Ave',
@@ -4084,7 +4084,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'xrfNNIUAl2588mwyRtvH-w',
+        # 'id': 'xrfNNIUAl2588mwyRtvH-w',139
         'name': 'Golden Lotus Vegan Restaurant',
         'location': {
             'address1': '1301 Franklin St',
@@ -4113,7 +4113,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 1}
     },
     {
-        # 'id': 'dHurSbFlqasZZdxVdNjayA',
+        # 'id': 'dHurSbFlqasZZdxVdNjayA',140
         'name': 'Dimond Slice Pizza',
         'location': {
             'address1': '2208 MacArthur Blvd',
@@ -4142,7 +4142,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 1}
     },
     {
-        # 'id': 'L6WsyFVf9UahURn0Fudsbg',
+        # 'id': 'L6WsyFVf9UahURn0Fudsbg',141
         'name': 'Monster Pho',
         'location': {
             'address1': '360 40th St',
@@ -4171,7 +4171,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 2}
     },
     {
-        # 'id': 'IJF-4E8Mhm5teI5RHrH5yw',
+        # 'id': 'IJF-4E8Mhm5teI5RHrH5yw',142
         'name': 'Banh Mi Ba Le',
         'location': {
             'address1': '1909 International Blvd',
@@ -4200,7 +4200,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0730', 'end': '1500', 'day': 4}
     },
     {
-        # 'id': '2XQm-uFcTS7oc8MFP-8olA',
+        # 'id': '2XQm-uFcTS7oc8MFP-8olA',143
         'name': 'B Patisserie',
         'location': {
             'address1': '2821 California St',
@@ -4229,7 +4229,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1600', 'day': 2}
     },
     {
-        # 'id': 'ri7UUYmx21AgSpRsf4-9QA',
+        # 'id': 'ri7UUYmx21AgSpRsf4-9QA',144
         'name': 'Tartine Bakery',
         'location': {
             'address1': '600 Guerrero St',
@@ -4258,7 +4258,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 0}
     },
     {
-        # 'id': 'V6L23CJAM9cm0zzWAhSwVA',
+        # 'id': 'V6L23CJAM9cm0zzWAhSwVA',145
         'name': 'Belly Good Cafe & Crepes',
         'location': {
             'address1': '1737 Post St',
@@ -4287,7 +4287,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'sSiUcnbwPQ4ssHY3EMV0Fw',
+        # 'id': 'sSiUcnbwPQ4ssHY3EMV0Fw',146
         'name': 'Matcha Cafe Maiko',
         'location': {
             'address1': '1581 Webster St',
@@ -4316,7 +4316,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'aVskw5NKrs7ibAQ54E_bZw',
+        # 'id': 'aVskw5NKrs7ibAQ54E_bZw',147
         'name': 'U :Dessert Story',
         'location': {
             'address1': '3489 16th St',
@@ -4345,7 +4345,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1500', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'b-ylC7pGKuh4yw6l1Q1k9g',
+        # 'id': 'b-ylC7pGKuh4yw6l1Q1k9g',148
         'name': 'Golden Bear Trading Company',
         'location': {
             'address1': '1401 6th Ave',
@@ -4374,7 +4374,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'ttarnopezxmp2ROB1N2PaA',
+        # 'id': 'ttarnopezxmp2ROB1N2PaA',149
         'name': 'Nopa',
         'location': {
             'address1': '560 Divisadero St',
@@ -4403,7 +4403,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1730', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'GXu3PD4IPsxIHpo011aydg',
+        # 'id': 'GXu3PD4IPsxIHpo011aydg',150
         'name': "Bob's Donuts & Pastry Shop",
         'location': {
             'address1': '1621 Polk St',
@@ -4432,7 +4432,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '0600', 'end': '0600', 'day': 0}
     },
     {
-        # 'id': 'LFEBCjZ-M3XUFJDszYFX6A',
+        # 'id': 'LFEBCjZ-M3XUFJDszYFX6A',151
         'name': 'Milkbomb Ice Cream',
         'location': {
             'address1': '1717 17th St',
@@ -4461,7 +4461,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1715', 'end': '2100', 'day': 4}
     },
     {
-        # 'id': 'wGl_DyNxSv8KUtYgiuLhmA',
+        # 'id': 'wGl_DyNxSv8KUtYgiuLhmA',152
         'name': 'Bi-Rite Creamery',
         'location': {
             'address1': '3692 18th St',
@@ -4490,7 +4490,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '76smcUUGRvq3k1MVPUXbnA',
+        # 'id': '76smcUUGRvq3k1MVPUXbnA',153
         'name': 'Mitchells Ice Cream',
         'location': {
             'address1': '688 San Jose Ave',
@@ -4519,7 +4519,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'ww-HKAff5xmQbiXgO-KcSQ',
+        # 'id': 'ww-HKAff5xmQbiXgO-KcSQ',154
         'name': 'Golden Era Vegan Restaurant',
         'location': {
             'address1': '395 Golden Gate Ave',
@@ -4548,7 +4548,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1930', 'day': 0}
     },
     {
-        # 'id': 'QCQ3WN7hd9xMPs2_ycHa_A',
+        # 'id': 'QCQ3WN7hd9xMPs2_ycHa_A',155
         'name': 'Broken Record',
         'location': {
             'address1': '1166 Geneva Ave',
@@ -4577,7 +4577,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'eBxkmr-hJ2KgpZQzEO3ArQ',
+        # 'id': 'eBxkmr-hJ2KgpZQzEO3ArQ',156
         'name': 'Han Il Kwan',
         'location': {
             'address1': '1802 Balboa St',
@@ -4606,7 +4606,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'lJAGnYzku5zSaLnQ_T6_GQ',
+        # 'id': 'lJAGnYzku5zSaLnQ_T6_GQ',157
         'name': "Brenda's French Soul Food",
         'location': {
             'address1': '652 Polk St',
@@ -4635,7 +4635,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': '-DrR38H1Abk0wCyu9XOLug',
+        # 'id': '-DrR38H1Abk0wCyu9XOLug',158
         'name': 'Sweet Maple',
         'location': {
             'address1': '2101 Sutter St',
@@ -4664,7 +4664,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'UTVDbZv-qiHU06sDkoel3g',
+        # 'id': 'UTVDbZv-qiHU06sDkoel3g',159
         'name': 'Chez Maman East',
         'location': {
             'address1': '1401 18th St',
@@ -4692,37 +4692,37 @@ bizzies = [
         ],
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2200', 'day': 0}
     },
+    # {
+    #     # 'id': 'WhTpALYvB4ZBMcT8fFVLvw',160
+    #     'name': 'Holy Gelato!',
+    #     'location': {
+    #         'address1': '1392 9th Ave',
+    #         'address2': '',
+    #         'address3': '',
+    #         'city': 'San Francisco',
+    #         'zip_code': '94122',
+    #         'country': 'US',
+    #         'state': 'CA',
+    #         'display_address': '',
+    #         'cross_streets': 'Irving St & Judah St'
+    #     },
+    #     'address': ['1392 9th Ave', 'San Francisco, CA 94122'],
+    #     'lat': 37.762392,
+    #     'lng': -122.465941,
+    #     'price': '$$',
+    #     'phone': '+14156813061',
+    #     'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
+    #     'categories': ['juicebars'],
+    #     'transactions': ['pickup', 'delivery'],
+    #     'photos': [
+    #         'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
+    #         'https://s3-media2.fl.yelpcdn.com/bphoto/r21fI8R8Qd7D9PlIIyy_Tw/o.jpg',
+    #         'https://s3-media1.fl.yelpcdn.com/bphoto/5Y3NuIe4gxf8RvE_XhFD4g/o.jpg'
+    #     ],
+    #     'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 0}
+    # },
     {
-        # 'id': 'WhTpALYvB4ZBMcT8fFVLvw',
-        'name': 'Holy Gelato!',
-        'location': {
-            'address1': '1392 9th Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94122',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Irving St & Judah St'
-        },
-        'address': ['1392 9th Ave', 'San Francisco, CA 94122'],
-        'lat': 37.762392,
-        'lng': -122.465941,
-        'price': '$$',
-        'phone': '+14156813061',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
-        'categories': ['juicebars'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/r21fI8R8Qd7D9PlIIyy_Tw/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/5Y3NuIe4gxf8RvE_XhFD4g/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 0}
-    },
-    {
-        # 'id': 'bUr4iq2mKKiBOu2HKynylg',
+        # 'id': 'bUr4iq2mKKiBOu2HKynylg',160
         'name': 'HRD',
         'location': {
             'address1': '521A 3rd St',
@@ -4751,7 +4751,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'M0JTO3oyu6gxh1mfFjU-dA',
+        # 'id': 'M0JTO3oyu6gxh1mfFjU-dA',161
         'name': 'San Tung',
         'location': {
             'address1': '1031 Irving St',
@@ -4780,7 +4780,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'NwqdohySKrDnK0RsAde9UA',
+        # 'id': 'NwqdohySKrDnK0RsAde9UA',162
         'name': 'Hot Sauce and Panko',
         'location': {
             'address1': '1468 Hyde St',
@@ -4809,7 +4809,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1900', 'day': 2}
     },
     {
-        # 'id': '-sg6DqQNGyTMt0MHoY7diQ',
+        # 'id': '-sg6DqQNGyTMt0MHoY7diQ',163
         'name': 'Good Mong Kok Bakery',
         'location': {
             'address1': '1039 Stockton St',
@@ -4838,7 +4838,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'ssI9ivccrDBT-RH_52fPBQ',
+        # 'id': 'ssI9ivccrDBT-RH_52fPBQ',164
         'name': 'Greens Restaurant',
         'location': {
             'address1': '2 Marina Blvd',
@@ -4872,7 +4872,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 1}
     },
     {
-        # 'id': 'Di4kb-1tnjP5OKFuV8qbUA',
+        # 'id': 'Di4kb-1tnjP5OKFuV8qbUA',165
         'name': 'Cordon Bleu',
         'location': {
             'address1': '1574 California St',
@@ -4901,7 +4901,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 1}
     },
     {
-        # 'id': '_Iupdt0IslH_jU8zkKcWLA',
+        # 'id': '_Iupdt0IslH_jU8zkKcWLA',166
         'name': 'Pica Pica Arepa Kitchen',
         'location': {
             'address1': '401 Valencia St',
@@ -4930,7 +4930,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'gR9DTbKCvezQlqvD7_FzPw',
+        # 'id': 'gR9DTbKCvezQlqvD7_FzPw',167
         'name': 'North India Restaurant',
         'location': {
             'address1': '123 Second St',
@@ -4959,7 +4959,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'iUockw0CUssKZLyoGJYEXA',
+        # 'id': 'iUockw0CUssKZLyoGJYEXA',168
         'name': 'Cuisine of Nepal',
         'location': {
             'address1': '3486 Mission St',
@@ -4988,7 +4988,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'PTFxtXS47ZVRCdZIrEWvGw',
+        # 'id': 'PTFxtXS47ZVRCdZIrEWvGw',169
         'name': 'Golden Boy Pizza',
         'location': {
             'address1': '542 Green St',
@@ -5017,7 +5017,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': '8dUaybEPHsZMgr1iKgqgMQ',
+        # 'id': '8dUaybEPHsZMgr1iKgqgMQ',170
         'name': 'Sotto Mare',
         'location': {
             'address1': '552 Green St',
@@ -5046,7 +5046,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'CYttYTEiQuhSfo3SEh79fA',
+        # 'id': 'CYttYTEiQuhSfo3SEh79fA',171
         'name': 'Shizen Vegan Sushi Bar & Izakaya',
         'location': {
             'address1': '370 14th St',
@@ -5075,7 +5075,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'i09UMzccKgyLwGYKDVP28w',
+        # 'id': 'i09UMzccKgyLwGYKDVP28w',172
         'name': 'Surisan',
         'location': {
             'address1': '505 Beach St',
@@ -5104,7 +5104,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'u39mZEYojBiNic3lqKhPNw',
+        # 'id': 'u39mZEYojBiNic3lqKhPNw',173
         'name': 'Tacorea',
         'location': {
             'address1': '809 Bush St',
@@ -5133,7 +5133,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'n6L5VIGunR51-D55C-eYeQ',
+        # 'id': 'n6L5VIGunR51-D55C-eYeQ',174
         'name': 'Foreign Cinema',
         'location': {
             'address1': '2534 Mission St',
@@ -5162,7 +5162,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'PsY5DMHxa5iNX_nX0T-qPA',
+        # 'id': 'PsY5DMHxa5iNX_nX0T-qPA',175
         'name': 'Kokkari Estiatorio',
         'location': {
             'address1': '200 Jackson St',
@@ -5191,7 +5191,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'JARsJVKLPgs_yC3cwDnp7g',
+        # 'id': 'JARsJVKLPgs_yC3cwDnp7g',176
         'name': 'La Taqueria',
         'location': {
             'address1': '2889 Mission St',
@@ -5220,7 +5220,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2045', 'day': 2}
     },
     {
-        # 'id': 'SGRmnarrNuVEsAjYdEoA0w',
+        # 'id': 'SGRmnarrNuVEsAjYdEoA0w',177
         'name': 'El Farolito',
         'location': {
             'address1': '2779 Mission St',
@@ -5249,7 +5249,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1000', 'end': '0145', 'day': 0}
     },
     {
-        # 'id': 'mSMZJj2pFvttWLpcDmgrEA',
+        # 'id': 'mSMZJj2pFvttWLpcDmgrEA',178
         'name': "Tony's Pizza Napoletana",
         'location': {
             'address1': '1570 Stockton St',
@@ -5278,7 +5278,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'yyi2GpG_p7TX7XAq_eHSZA',
+        # 'id': 'yyi2GpG_p7TX7XAq_eHSZA',179
         'name': 'Boudin',
         'location': {
             'address1': '160 Jefferson St',
@@ -5307,7 +5307,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'IJk76B-pTta_klpAZcpQdA',
+        # 'id': 'IJk76B-pTta_klpAZcpQdA',180
         'name': "Lou's Cafe",
         'location': {
             'address1': '5017 Geary Blvd',
@@ -5336,7 +5336,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1900', 'day': 0}
     },
     {
-        # 'id': '2hGIxgprREdBieylltWaRQ',
+        # 'id': '2hGIxgprREdBieylltWaRQ',181
         'name': 'Limoncello',
         'location': {
             'address1': '1400 Sutter St',
@@ -5365,7 +5365,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'hqQoVK0vadOX7_4gN1sh3g',
+        # 'id': 'hqQoVK0vadOX7_4gN1sh3g',182
         'name': 'Saigon Sandwich',
         'location': {
             'address1': '560 Larkin St',
@@ -5394,7 +5394,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1700', 'day': 0}
     },
     {
-        # 'id': 'f-m7-hyFzkf0HSEeQ2s-9A',
+        # 'id': 'f-m7-hyFzkf0HSEeQ2s-9A',183
         'name': 'Fog Harbor Fish House',
         'location': {
             'address1': '39 Pier',
@@ -5423,7 +5423,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'ciEDsTWhajcdL3KuJqBRlw',
+        # 'id': 'ciEDsTWhajcdL3KuJqBRlw',184
         'name': 'Espetus Churrascaria',
         'location': {
             'address1': '1686 Market St',
@@ -5452,7 +5452,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'Xg-FyjVKAN70LO4u4Z1ozg',
+        # 'id': 'Xg-FyjVKAN70LO4u4Z1ozg',185
         'name': 'Hog Island Oyster',
         'location': {
             'address1': '1 Ferry Bldg',
@@ -5481,7 +5481,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'cL0q9S4bqwpbAN9ZKh-Zeg',
+        # 'id': 'cL0q9S4bqwpbAN9ZKh-Zeg', 186
         'name': 'Nara Restaurant & Sake Bar',
         'location': {
             'address1': '518 Haight St',
@@ -5510,7 +5510,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2300', 'day': 1}
     },
     {
-        # 'id': '0mNzmmh1mrdh5Cpg2QUBiw',
+        # 'id': '0mNzmmh1mrdh5Cpg2QUBiw',187
         'name': 'Lapisara Eatery',
         'location': {
             'address1': '698 Post St',
@@ -5539,7 +5539,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'E2Ri3Uudb3ogKfWBJIIhRw',
+        # 'id': 'E2Ri3Uudb3ogKfWBJIIhRw',188
         'name': 'Lokma',
         'location': {
             'address1': '1801 Clement St',
@@ -5568,7 +5568,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': 'z9CN58fSrA46ggyb6OnCnQ',
+        # 'id': 'z9CN58fSrA46ggyb6OnCnQ',189
         'name': 'Thanh Long',
         'location': {
             'address1': '4101 Judah St',
@@ -9610,11 +9610,16 @@ users = {1}
 for i in range(0, len(reviews)):
     user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
                      13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
+    print("USERS", users)
+    print("USERSID", user_id)
     while user_id in users:
         user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
                          13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
+    
+    print("USERSID AFTER WHILE", user_id)
+
     users.add(user_id)
-    instances.append(Review(business_id=biz_id, user_id=user_id,
+    instances.append(Review(business_id=reviews[i]['biz_id'], user_id=user_id,
                      review_body=reviews[i]['review_body'], rating=reviews[i]['rating'], created_at=reviews[i]['created_at']))
     if (i+1) % 3 == 0:
         biz_count += 1
