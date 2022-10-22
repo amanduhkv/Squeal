@@ -143,13 +143,13 @@ const UserPage = () => {
                 <div id='right-col'>
                     <div id='top-rc'>
                         {/* <h5 id='top-rc-text'>
-              <img src={blueCam} alt='add-prof-img' width='15px' />
-              Add Profile Photo
-            </h5> */}
-                        {/* <h5 id='top-rc-text'>
+                            <img src={cam} alt='add-prof-img' width='15px' />
+                            Add Profile Photo
+                        </h5> */}
+                        <h5 id='top-rc-text'>
                             <img src={upProf} alt='up-prof' width='15px' />
                             Update Your Profile
-                        </h5> */}
+                        </h5>
                     </div>
                     {url === '/current' && (
                         <div id='bot-rc'>
