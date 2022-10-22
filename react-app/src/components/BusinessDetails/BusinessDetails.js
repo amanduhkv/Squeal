@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import * as bizActions from '../../store/businesses'
@@ -21,6 +21,7 @@ import './BusinessDetails.css'
 
 const BusinessDetails = () => {
     const dispatch = useDispatch()
+    const history = useHistory();
     const { bizId } = useParams()
 
     const [showPhotoModal, setShowPhotoModal] = useState(false);
@@ -28,7 +29,7 @@ const BusinessDetails = () => {
 
 
     const biz = useSelector(state => state.businesses.singleBusiness)
-    // const bizOwner = useSelector(state => state.businesses.singleBusiness.Owner)
+    const bizOwner = useSelector(state => state.businesses.singleBusiness.Owner)
     const bizImages = useSelector(state => state.businesses.singleBusiness.Business_Images)
     const bizReviews = useSelector(state => state.reviews.business)
     const types = useSelector(state => state.businesses.singleBusiness.types)
@@ -40,8 +41,12 @@ const BusinessDetails = () => {
     let reviewUsers = []
     let currUserId
     let currUserReviewId = 0
+    let currBizOwnId;
     if (user) {
         currUserId = user.id
+    }
+    if (bizOwner) {
+        currBizOwnId = bizOwner.id
     }
     if (bizReviews) {
         numReviews = (Object.values(bizReviews).length)
@@ -61,6 +66,18 @@ const BusinessDetails = () => {
                 let reviews = reviewsArr.filter(obj => obj.url)
                 allReviewImages = reviews.flat()
             }
+        }
+    }
+
+    const deleteBizHandler = (bizId) => {
+        try {
+            dispatch(bizActions.removeBiz(bizId));
+            history.push('/biz')
+        }
+
+        catch (res) {
+            const data = res.json();
+            if (data) console.log(data);
         }
     }
 
@@ -520,13 +537,28 @@ const BusinessDetails = () => {
                     <div className='single-business-reviews-button'>
                         <div className='single-business-review-bar'>
                             <div className='single-business-review-bar-button'>
-                                <NavLink style={{ textDecoration: 'none', color: "white" }} to={reviewUsers.includes(currUserId) ? `/biz/${biz.id}/review/${currUserReviewId}/` : `/newreview/biz/${biz.id}`}>
+                                <NavLink id='sb-review-button' style={{ textDecoration: 'none', color: "white" }} to={reviewUsers.includes(currUserId) ? `/biz/${biz.id}/review/${currUserReviewId}/` : `/newreview/biz/${biz.id}`}>
                                     <span className='single-business-reviewButton'>
                                         <img width='24' height='24' src={star} alt="star_svg" />
                                         {reviewUsers.includes(currUserId) ? "Edit your review" : "Write a review"}
                                     </span>
                                 </NavLink>
                             </div>
+                            {currUserId && currUserId === currBizOwnId && (
+                            <div className='sb-user-buttons'>
+                                <NavLink className="single-business-user-bar-button" to={`/biz/${biz.id}/update`}>
+                                    <img className="user-biz-svg" src={pencil} width='16px' alt="pencil_svg" />
+                                    Update Business
+                                </NavLink>
+                                <span
+                                    className="single-business-user-bar-button"
+                                    onClick={() => deleteBizHandler(biz.id)}
+                                >
+                                    <img className="user-biz-svg" src={trash} width='16px' alt="trash_svg" />
+                                    Delete Business
+                                </span>
+                            </div>
+                            )}
                         </div>
                         <div className='single-business-title'>Location & Hours</div>
                         <div className='single-business-location-hours'>
@@ -556,7 +588,7 @@ const BusinessDetails = () => {
                                 <img width='24' height='24' src={phone} alt="phone_svg" />
                             </div>
                         )}
-                        <span className='single-business-box-divider'></span>
+                        {/* <span className='single-business-box-divider'></span> */}
                         {biz.address && (
                             <div className='single-business-contact'>
                                 <div>{biz.address} {biz.city}, {biz.state} </div>
