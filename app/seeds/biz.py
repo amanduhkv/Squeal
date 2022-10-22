@@ -515,7 +515,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'ki5SNb4Lli6uOklz6BXXGw',
+        # 'id': 'ki5SNb4Lli6uOklz6BXXGw',16
         'name': 'Blu Jam Café',
         'location': {
             'address1': '7371 Melrose Ave',
@@ -544,7 +544,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'pAWfcO6e2ae2pIkJXWO-yA',
+        # 'id': 'pAWfcO6e2ae2pIkJXWO-yA',17
         'name': "Roscoe's House of Chicken & Waffles - Hollywood",
         'location': {
             'address1': '1514 N Gower St',
@@ -573,7 +573,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'kdTFcDSl9vAR-btEm1Q2uw',
+        # 'id': 'kdTFcDSl9vAR-btEm1Q2uw', 18
         'name': 'Bao Dim Sum House',
         'location': {
             'address1': '8256 Beverly Blvd',
@@ -602,7 +602,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'ohosmz6FXVAeoW5nUkYwng',
+        # 'id': 'ohosmz6FXVAeoW5nUkYwng',19
         'name': 'Pine & Crane',
         'location': {
             'address1': '1521 Griffith Park Blvd',
@@ -631,7 +631,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': '3OJt-Xj45NfCCFwaeKMaeg',
+        # 'id': '3OJt-Xj45NfCCFwaeKMaeg', 20
         'name': 'Luv2Eat Thai Bistro',
         'location': {
             'address1': '6660 W Sunset Blvd',
@@ -660,7 +660,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2145', 'day': 0}
     },
     {
-        # 'id': 'KOuqS-inE44o9-1Jix9Tag',
+        # 'id': 'KOuqS-inE44o9-1Jix9Tag',21
         'name': 'Shojin Downtown',
         'location': {
             'address1': '333 S Alameda St',
@@ -689,7 +689,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1730', 'end': '2130', 'day': 1}
     },
     {
-        # 'id': 'wjU7E9cMWgxZO9HNTn_tig',
+        # 'id': 'wjU7E9cMWgxZO9HNTn_tig', 22
         'name': 'Everytable',
         'location': {
             'address1': '1101 W 23rd St',
@@ -718,7 +718,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'SAowTowinOSZUBm2U7zggQ',
+        # 'id': 'SAowTowinOSZUBm2U7zggQ', 23
         'name': "Original Tommy's",
         'location': {
             'address1': '2575 Beverly Blvd',
@@ -747,7 +747,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '0000', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': '3XTjerBg_PywBN81Ts45Bg',
+        # 'id': '3XTjerBg_PywBN81Ts45Bg', 24
         'name': "India's Restaurant",
         'location': {
             'address1': '4366 Fountain Ave',
@@ -776,7 +776,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1100', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'uteG6HIb4an-y5fFCXWo7w',
+        # 'id': 'uteG6HIb4an-y5fFCXWo7w',25
         'name': 'Anarkali Indian Restaurant',
         'location': {
             'address1': '7013 Melrose Ave',
@@ -805,7 +805,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'fEY0zHaDMfIW3-N__joDKQ',
+        # 'id': 'fEY0zHaDMfIW3-N__joDKQ', 26
         'name': 'Bestia',
         'location': {
             'address1': '2121 E 7th Pl',
@@ -834,7 +834,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'iSZpZgVnASwEmlq0DORY2A',
+        # 'id': 'iSZpZgVnASwEmlq0DORY2A',27
         'name': 'Daikokuya Little Tokyo',
         'location': {
             'address1': '327 E 1st St',
@@ -863,7 +863,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'MlmcOkwaNnxl3Zuk6HsPCQ',
+        # 'id': 'MlmcOkwaNnxl3Zuk6HsPCQ', 28
         'name': "Slurpin' Ramen Bar - Los Angeles",
         'location': {
             'address1': '3500 W 8th St',
@@ -892,7 +892,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1130', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'JYGPEUZy4k5ObXGIjcD3DA',
+        # 'id': 'JYGPEUZy4k5ObXGIjcD3DA', 29
         'name': 'Hae Jang Chon',
         'location': {
             'address1': '3821 W 6th St',
@@ -921,7 +921,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'YetYHIRKrZDGHZ50I_RMag',
+        # 'id': 'YetYHIRKrZDGHZ50I_RMag', 30
         'name': "Joe's Falafel",
         'location': {
             'address1': '3535 Cahuenga Blvd W',
@@ -950,7 +950,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'sXdOBghhw-ZU9S-1HxVZVA',
+        # 'id': 'sXdOBghhw-ZU9S-1HxVZVA',31
         'name': 'Bacari Silverlake',
         'location': {
             'address1': '3626 Sunset Blvd',
@@ -979,7 +979,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'BDRVlHnK4l0T0ANb7M-Eqg',
+        # 'id': 'BDRVlHnK4l0T0ANb7M-Eqg', 32
         'name': 'Guisados',
         'location': {
             'address1': '1261 W Sunset Blvd',
@@ -1008,7 +1008,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'beA_DlDpij8O9xK2B-NjEA',
+        # 'id': 'beA_DlDpij8O9xK2B-NjEA',33
         'name': 'Mex Peru Gipsy',
         'location': {
             'address1': '414 E 12th St',
@@ -1037,7 +1037,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'HvDYCHDpgBy3CmzRD6gcMg',
+        # 'id': 'HvDYCHDpgBy3CmzRD6gcMg',34
         'name': 'Ktown Pho',
         'location': {
             'address1': '974 S Western Ave',
@@ -1066,7 +1066,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'CbW8U0QAwh5XRkaLt0xNZA',
+        # 'id': 'CbW8U0QAwh5XRkaLt0xNZA',35
         'name': 'Masa of Echo Park',
         'location': {
             'address1': '1800 W Sunset Blvd',
@@ -1095,7 +1095,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 2}
     },
     {
-        # 'id': 'DJek3FUewBzMc0gS-Gms9w',
+        # 'id': 'DJek3FUewBzMc0gS-Gms9w',36
         'name': 'Morrison Atwater Village',
         'location': {
             'address1': '3179 Los Feliz Blvd',
@@ -1124,7 +1124,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'qCJ2LFfNbXYBIcjXNva1cA',
+        # 'id': 'qCJ2LFfNbXYBIcjXNva1cA', 37
         'name': "Langer's Delicatessen",
         'location': {
             'address1': '704 S Alvarado St',
@@ -1153,7 +1153,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1600', 'day': 0}
     },
     {
-        # 'id': 'TzIJzamxdVGc3zReKbLGaA',
+        # 'id': 'TzIJzamxdVGc3zReKbLGaA', 38
         'name': 'Providence',
         'location': {
             'address1': '5955 Melrose Ave',
@@ -1182,7 +1182,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1800', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'b4SH4SbQUJfXxh6hNkF0wg',
+        # 'id': 'b4SH4SbQUJfXxh6hNkF0wg',39
         'name': 'Eggslut',
         'location': {
             'address1': '317 S Broadway',
@@ -1215,7 +1215,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'KtEMG1Aln3vQzte92QJxlw',
+        # 'id': 'KtEMG1Aln3vQzte92QJxlw',40
         'name': 'Genwa Korean BBQ',
         'location': {
             'address1': '5115 Wilshire Blvd',
@@ -1244,7 +1244,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'h_VkRMpSrtjdKDxUJ7sDOQ',
+        # 'id': 'h_VkRMpSrtjdKDxUJ7sDOQ',41
         'name': "Lala's Argentine Grill",
         'location': {
             'address1': '7229 Melrose Ave',
@@ -1273,7 +1273,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'h9PSJ18gQ4kos8A0XAGlng',
+        # 'id': 'h9PSJ18gQ4kos8A0XAGlng', 42
         'name': 'Carlitos Gardel Argentine Steakhouse',
         'location': {
             'address1': '7963 Melrose Ave',
@@ -1302,7 +1302,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'hC745S5W4HTq606ySmBJNw',
+        # 'id': 'hC745S5W4HTq606ySmBJNw',43
         'name': 'KazuNori  | The Original Hand Roll Bar',
         'location': {
             'address1': '421 S Main St',
@@ -1331,7 +1331,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'YBmk31pBPukmnRyioe5uBA',
+        # 'id': 'YBmk31pBPukmnRyioe5uBA',44
         'name': 'Sushi Gen',
         'location': {
             'address1': '422 E 2nd St',
@@ -1360,7 +1360,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1400', 'day': 1}
     },
     {
-        # 'id': 'BzmbRSKGs56Yw2w2R12khw',
+        # 'id': 'BzmbRSKGs56Yw2w2R12khw',45
         'name': 'Hoy-Ka Thai Restaurant',
         'location': {
             'address1': '5908 Sunset Blvd',
@@ -1389,7 +1389,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'adrzBN4C3jpoCAzJX-xscw',
+        # 'id': 'adrzBN4C3jpoCAzJX-xscw',46
         'name': 'Pa Ord Noodle',
         'location': {
             'address1': '5301 W Sunset Blvd',
@@ -1418,7 +1418,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': '6GTaESIP0r1oFunFqqevsw',
+        # 'id': '6GTaESIP0r1oFunFqqevsw',47
         'name': 'Cafe Gratitude',
         'location': {
             'address1': '639 N Larchmont Blvd',
@@ -1447,7 +1447,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'PMj1TDcrvYTxEXd-g9LcWA',
+        # 'id': 'PMj1TDcrvYTxEXd-g9LcWA', 48
         'name': 'Zinc Cafe & Market',
         'location': {
             'address1': '580 Mateo St',
@@ -1476,7 +1476,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'EiGZST3PxwKs94PTOsD4eQ',
+        # 'id': 'EiGZST3PxwKs94PTOsD4eQ', 49
         'name': 'Pho 87',
         'location': {
             'address1': '1019 N Broadway',
@@ -1505,7 +1505,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'baEPmtktizrZDmH4p_OJ4A',
+        # 'id': 'baEPmtktizrZDmH4p_OJ4A',50
         'name': 'Shuei-Do Manju Shop',
         'location': {
             'address1': '217 Jackson St',
@@ -1534,7 +1534,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '1600', 'day': 3}
     },
     {
-        # 'id': 'lPkQK2N4g658SR_7BBxeaQ',
+        # 'id': 'lPkQK2N4g658SR_7BBxeaQ',51
         'name': "Peters' Bakery",
         'location': {
             'address1': '3108 Alum Rock Ave',
@@ -1563,7 +1563,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0630', 'end': '1800', 'day': 1}
     },
     {
-        # 'id': 'VkV85hclKc8saSU4UDNjQQ',
+        # 'id': 'VkV85hclKc8saSU4UDNjQQ',52
         'name': 'Pekoe',
         'location': {
             'address1': '3276 S White Rd',
@@ -1592,7 +1592,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'gQInCoEeqCNiSuomfFPkwA',
+        # 'id': 'gQInCoEeqCNiSuomfFPkwA',53
         'name': 'Sweet Gelato Tea Lounge',
         'location': {
             'address1': '979 Story Rd',
@@ -1621,7 +1621,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1700', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'eXprR2i_W8UKMmsYYbZFQQ',
+        # 'id': 'eXprR2i_W8UKMmsYYbZFQQ',54
         'name': 'Philz Coffee',
         'location': {
             'address1': '118 Paseo De San Antonio Walk',
@@ -1650,7 +1650,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0630', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'vgseXwt9c975jus_PBM-zA',
+        # 'id': 'vgseXwt9c975jus_PBM-zA',55
         'name': 'Anton SV Pâtisserie',
         'location': {
             'address1': '1969 Otoole Way',
@@ -1679,7 +1679,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'lDLzKkPIB6mE7FKroJleug',
+        # 'id': 'lDLzKkPIB6mE7FKroJleug',56
         'name': "Charlie's Cheesecake Works",
         'location': {
             'address1': '1179 Redmond Ave',
@@ -1708,7 +1708,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'V0UiBNqNEx1YmR1SOI4lQw',
+        # 'id': 'V0UiBNqNEx1YmR1SOI4lQw',57
         'name': 'Mexico Bakery',
         'location': {
             'address1': '2811 Story Rd',
@@ -1737,7 +1737,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0500', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'k901qMpKUjNES5mFJOComA',
+        # 'id': 'k901qMpKUjNES5mFJOComA',58
         'name': 'Sweet Rendezvous',
         'location': {
             'address1': '668 Blossom Hill Rd',
@@ -1766,7 +1766,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '0ba79WK2mc1txlZoWGpcRA',
+        # 'id': '0ba79WK2mc1txlZoWGpcRA',59
         'name': 'Willow Glen Creamery',
         'location': {
             'address1': '1100 Lincoln Ave',
@@ -1795,7 +1795,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'xfoNyFG72oPSjf9x9nAHVw',
+        # 'id': 'xfoNyFG72oPSjf9x9nAHVw',60
         'name': 'Vegan Donut And Cafe',
         'location': {
             'address1': '449 E Santa Clara St',
@@ -1824,7 +1824,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 3}
     },
     {
-        # 'id': 'Y4wgkkCvoclvVxTkTS8MCw',
+        # 'id': 'Y4wgkkCvoclvVxTkTS8MCw',61
         'name': 'Tiger Tea & Juice - San Jose',
         'location': {
             'address1': '1706 Oakland Rd',
@@ -1853,7 +1853,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'jfMK6n5Mln7ilco6r2YXoA',
+        # 'id': 'jfMK6n5Mln7ilco6r2YXoA',62
         'name': 'QPOT',
         'location': {
             'address1': '1610 E Capitol Expy',
@@ -1882,7 +1882,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'TQEfj1-QhyWCJ29u3l9Kjw',
+        # 'id': 'TQEfj1-QhyWCJ29u3l9Kjw',63
         'name': 'Gen Korean BBQ House',
         'location': {
             'address1': '1628 Hostetter Rd',
@@ -1909,7 +1909,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'rjUOwXNxsg0tstFssAjfsQ',
+        # 'id': 'rjUOwXNxsg0tstFssAjfsQ', 64
         'name': 'LUNA Mexican Kitchen - The Alameda',
         'location': {
             'address1': '1495 The Alameda',
@@ -1938,7 +1938,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'i50BEr4Pq6-D8tmsegmVyA',
+        # 'id': 'i50BEr4Pq6-D8tmsegmVyA',65
         'name': 'The Table',
         'location': {
             'address1': '1110 Willow St',
@@ -1967,7 +1967,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 2}
     },
     {
-        # 'id': 'yMPz0Hj-Y5Z_cSCeuUNV8w',
+        # 'id': 'yMPz0Hj-Y5Z_cSCeuUNV8w',66
         'name': 'The Counter Santana Row',
         'location': {
             'address1': '3055 Olin Ave',
@@ -1996,7 +1996,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'rSe_sHr66XDGGIzjQO9K3w',
+        # 'id': 'rSe_sHr66XDGGIzjQO9K3w',67
         'name': 'Sliders Burgers',
         'location': {
             'address1': '1645 W San Carlos St',
@@ -2025,7 +2025,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'HnMZ-pm4P3sUnASbg05ZlQ',
+        # 'id': 'HnMZ-pm4P3sUnASbg05ZlQ',68
         'name': 'Yeganeh Bakery & Kafe Unik',
         'location': {
             'address1': '3275 Stevens Creek Blvd',
@@ -2054,7 +2054,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'NQ0KQoCTdkXICx36Z0t_lA',
+        # 'id': 'NQ0KQoCTdkXICx36Z0t_lA',69
         'name': 'Clover Bakery & Cafe',
         'location': {
             'address1': '4342 Moorpark Ave',
@@ -2083,7 +2083,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 1}
     },
     {
-        # 'id': '7HBtj81aBo2DEZFTPaaeqg',
+        # 'id': '7HBtj81aBo2DEZFTPaaeqg',70
         'name': 'Slice of Homage Pizza',
         'location': {
             'address1': '152 Post St',
@@ -2112,7 +2112,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2000', 'day': 2}
     },
     {
-        # 'id': 'OeePb_OQIgCnt3nO53XEtA',
+        # 'id': 'OeePb_OQIgCnt3nO53XEtA',71
         'name': 'Claw Shack',
         'location': {
             'address1': '1696 Berryessa Rd',
@@ -2141,7 +2141,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1500', 'end': '2000', 'day': 1}
     },
     {
-        # 'id': 'RDIjI4qSHkvVlHkfJ3AxCQ',
+        # 'id': 'RDIjI4qSHkvVlHkfJ3AxCQ',72
         'name': 'Sweet Mango',
         'location': {
             'address1': '1040 Willow St',
@@ -2170,7 +2170,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'dRTsqnuEtOT3DoYaGnBCSw',
+        # 'id': 'dRTsqnuEtOT3DoYaGnBCSw',73
         'name': 'China Chen',
         'location': {
             'address1': '400 S 3rd St',
@@ -2199,7 +2199,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '1900', 'day': 0}
     },
     {
-        # 'id': 'srBchC4ngf1sRefmSGseJA',
+        # 'id': 'srBchC4ngf1sRefmSGseJA',74
         'name': 'Walia Ethiopian Cuisine',
         'location': {
             'address1': '2208 Business Cir',
@@ -2228,7 +2228,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1500', 'day': 2}
     },
     {
-        # 'id': '42Wz6MMu9vz4Kg21cErXsQ',
+        # 'id': '42Wz6MMu9vz4Kg21cErXsQ',75
         'name': 'Gojo Ethiopian Restaurant',
         'location': {
             'address1': '1261 W San Carlos St',
@@ -2257,7 +2257,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 1}
     },
     {
-        # 'id': 'jw7wkWmTX04fRYLcp9vlPQ',
+        # 'id': 'jw7wkWmTX04fRYLcp9vlPQ',76
         'name': "Falafel's Drive-In",
         'location': {
             'address1': '2301 Stevens Creek Blvd',
@@ -2286,7 +2286,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': '9so8PQIG3Q-6mXQg5756CQ',
+        # 'id': '9so8PQIG3Q-6mXQg5756CQ',77
         'name': 'Sam and Curry',
         'location': {
             'address1': '1751 N 1st St',
@@ -2315,7 +2315,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'fuQOU_6-sjCuitcCvtYOvw',
+        # 'id': 'fuQOU_6-sjCuitcCvtYOvw',78
         'name': 'Punjab Cafe',
         'location': {
             'address1': '322 E Santa Clara St',
@@ -2344,7 +2344,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1430', 'day': 1}
     },
     {
-        # 'id': 'zXQF2Z_tyujpn9hJlJhURQ',
+        # 'id': 'zXQF2Z_tyujpn9hJlJhURQ',79
         'name': "Antipasto's By Derose Gourmet Meat Fish & Deli",
         'location': {
             'address1': '3454 McKee Rd',
@@ -2373,7 +2373,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '1700', 'day': 1}
     },
     {
-        # 'id': 'Q7OkRjnqIJmeZJHCnbnIcA',
+        # 'id': 'Q7OkRjnqIJmeZJHCnbnIcA',80
         'name': "Bertucelli's La Villa",
         'location': {
             'address1': '1319 Lincoln Ave',
@@ -2402,7 +2402,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1730', 'day': 1}
     },
     {
-        # 'id': 'cCKea_ufuGcxI14fhe84vw',
+        # 'id': 'cCKea_ufuGcxI14fhe84vw',81
         'name': 'Cha Cha Sushi',
         'location': {
             'address1': '547 W Capitol Expy',
@@ -2431,7 +2431,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'ZMdteLcR8y2N-oJAd9cmEg',
+        # 'id': 'ZMdteLcR8y2N-oJAd9cmEg',82
         'name': "Souvlaki's Greek Skewers",
         'location': {
             'address1': '577 W Alma Ave',
@@ -2460,7 +2460,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': 'CWb2lApN-MvcmzdPp_9jpA',
+        # 'id': 'CWb2lApN-MvcmzdPp_9jpA',83
         'name': 'Tacos El Compa Taqueria',
         'location': {
             'address1': '1321 Blossom Hill Rd',
@@ -2489,7 +2489,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': 'vZ41QYMBQvtHgpAfw1IToQ',
+        # 'id': 'vZ41QYMBQvtHgpAfw1IToQ',84
         'name': 'Pizza Antica',
         'location': {
             'address1': '334 Santana Row',
@@ -2518,7 +2518,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': '7NOpkoAUAGqMKEZgSu1QmA',
+        # 'id': '7NOpkoAUAGqMKEZgSu1QmA',85
         'name': 'A Slice of New York',
         'location': {
             'address1': '3443 Stevens Creek Blvd',
@@ -2547,7 +2547,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'OGwQYjE3ThC_gF92mHO0_g',
+        # 'id': 'OGwQYjE3ThC_gF92mHO0_g',86
         'name': 'Mendocino Farms',
         'location': {
             'address1': '3090 Olsen Dr',
@@ -2576,7 +2576,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'j1jgz10pCfC6T4k2WW3o9A',
+        # 'id': 'j1jgz10pCfC6T4k2WW3o9A',87
         'name': 'Freshly Baked Eatery',
         'location': {
             'address1': '152 N 3rd St',
@@ -2605,7 +2605,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'tyr85X7PWdx54LOVzLzjAw',
+        # 'id': 'tyr85X7PWdx54LOVzLzjAw', 88
         'name': 'Hannah Coffee',
         'location': {
             'address1': '754 The Alameda',
@@ -2634,7 +2634,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'zYljE3M9zSoZdipfFQidpA',
+        # 'id': 'zYljE3M9zSoZdipfFQidpA', 89
         'name': 'The Boiling Crab',
         'location': {
             'address1': '1631 E Capitol Expy',
@@ -2663,7 +2663,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1500', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'QJJd1N0QjQgUtv4hIuhqGg',
+        # 'id': 'QJJd1N0QjQgUtv4hIuhqGg', 90
         'name': 'Taurinus Brazilian Steakhouse',
         'location': {
             'address1': '167 W San Fernando St',
@@ -2692,7 +2692,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2030', 'day': 1}
     },
     {
-        # 'id': '3eKhFdXHvne3_YVjxfrTGQ',
+        # 'id': '3eKhFdXHvne3_YVjxfrTGQ', 91
         'name': 'Fogo de Chao Brazilian Steakhouse',
         'location': {
             'address1': '377 Santana Row',
@@ -2721,7 +2721,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'PoqyugcuH71tkEwXnDcmYQ',
+        # 'id': 'PoqyugcuH71tkEwXnDcmYQ',92
         'name': 'Mizu Sushi Bar & Grill',
         'location': {
             'address1': '1035 S Winchester Blvd',
@@ -2750,7 +2750,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': '73WEetznHbLA6sp0k9rzQA',
+        # 'id': '73WEetznHbLA6sp0k9rzQA',93
         'name': 'Thai Elephant Express',
         'location': {
             'address1': '3005 Silver Creek Rd',
@@ -2779,7 +2779,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': '_cHIFoV6mqqOfnjNnHr0bQ',
+        # 'id': '_cHIFoV6mqqOfnjNnHr0bQ',94
         'name': 'Must be Thai',
         'location': {
             'address1': '3143 Stevens Creek Blvd',
@@ -2808,7 +2808,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '7juJxsuoqYvWa9om6EcxsQ',
+        # 'id': '7juJxsuoqYvWa9om6EcxsQ',95
         'name': 'Bun Bo Hue An Nam',
         'location': {
             'address1': '740 Story Rd',
@@ -2837,7 +2837,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '6hCYuX14SeyJIuHXdp3AhA',
+        # 'id': '6hCYuX14SeyJIuHXdp3AhA', 96
         'name': 'Tofoo Com Chay',
         'location': {
             'address1': '388 E Santa Clara St',
@@ -2866,7 +2866,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'PkLfjhJ_XExjwARO1RkQIw',
+        # 'id': 'PkLfjhJ_XExjwARO1RkQIw',97
         'name': 'Bakesale Betty',
         'location': {
             'address1': '5098 Telegraph Ave',
@@ -2895,7 +2895,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1030', 'end': '1400', 'day': 3}
     },
     {
-        # 'id': 'Qfc4w5l92Uvq9BsrP15O4A',
+        # 'id': 'Qfc4w5l92Uvq9BsrP15O4A', 98
         'name': 'Arizmendi Bakery',
         'location': {
             'address1': '3265 Lakeshore Ave',
@@ -2924,7 +2924,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 1}
     },
     {
-        # 'id': 'kIM6q7OiC_olzruHoVMMSw',
+        # 'id': 'kIM6q7OiC_olzruHoVMMSw', 99
         'name': 'Yokee Milk Tea',
         'location': {
             'address1': '1728 Franklin St',
@@ -2953,7 +2953,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'Y4JaDkuGs8Xk_dPZu02e2g',
+        # 'id': 'Y4JaDkuGs8Xk_dPZu02e2g',100
         'name': 'UC Dessert',
         'location': {
             'address1': '388 9th St',
@@ -2982,7 +2982,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'CIrXV1DVcW9LmwINg4bH6A',
+        # 'id': 'CIrXV1DVcW9LmwINg4bH6A', 101
         'name': 'La Farine',
         'location': {
             'address1': '6323 College Ave',
@@ -3011,7 +3011,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'ACQxcER6RDR2NOLVu0DHEg',
+        # 'id': 'ACQxcER6RDR2NOLVu0DHEg', 102
         'name': 'Fentons Creamery',
         'location': {
             'address1': '4226 Piedmont Ave',
@@ -3040,7 +3040,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'cgImAqtrpVg7hN_6lsFJrQ',
+        # 'id': 'cgImAqtrpVg7hN_6lsFJrQ', 103
         'name': 'Farmhouse Kitchen Thai Cuisine',
         'location': {
             'address1': '336 Water St',
@@ -3069,7 +3069,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1330', 'day': 0}
     },
     {
-        # 'id': 'hfVYUuJRS7Q4rgNVHCB0Rg',
+        # 'id': 'hfVYUuJRS7Q4rgNVHCB0Rg', 104
         'name': 'Colonial Donuts',
         'location': {
             'address1': '3318 Lakeshore Ave',
@@ -3098,7 +3098,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '0000', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'EMCfTcgvGlItfrPNBEgb9A',
+        # 'id': 'EMCfTcgvGlItfrPNBEgb9A',105
         'name': 'Flavor Brigade',
         'location': {
             'address1': '3540 Fruitvale Ave',
@@ -3127,7 +3127,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'a9NgquuCzte0YT7M9VpLeA',
+        # 'id': 'a9NgquuCzte0YT7M9VpLeA', 106
         'name': 'Modigliani Cafe',
         'location': {
             'address1': '3208-3210 Grand Ave',
@@ -3156,7 +3156,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'NQVqMCoY-Krhw8DY4UnJKw',
+        # 'id': 'NQVqMCoY-Krhw8DY4UnJKw',107
         'name': 'Ohgane Korean BBQ',
         'location': {
             'address1': '3915 Broadway',
@@ -3185,7 +3185,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': '_mFhusiDiacM8w-7Hea5bg',
+        # 'id': '_mFhusiDiacM8w-7Hea5bg', 108
         'name': 'Jong Ga House',
         'location': {
             'address1': '372 Grand Ave',
@@ -3214,7 +3214,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'oQ2M416FwdHc9NRKDeCHng',
+        # 'id': 'oQ2M416FwdHc9NRKDeCHng', 109
         'name': 'Portal Oakland',
         'location': {
             'address1': '1611 2nd Ave',
@@ -3243,7 +3243,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'Jiz82V_WXIfZf02AuSSvDA',
+        # 'id': 'Jiz82V_WXIfZf02AuSSvDA',110
         'name': 'Chop Bar',
         'location': {
             'address1': '190 4th St',
@@ -3272,7 +3272,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'nnjQ8m6oTbQbr5_zUhCiDQ',
+        # 'id': 'nnjQ8m6oTbQbr5_zUhCiDQ',111
         'name': 'Souley Vegan',
         'location': {
             'address1': '301 Broadway',
@@ -3301,7 +3301,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'Ah9cWAseDdJ6WxO-TveJKg',
+        # 'id': 'Ah9cWAseDdJ6WxO-TveJKg',112
         'name': 'TrueBurger',
         'location': {
             'address1': '146 Grand Ave',
@@ -3330,7 +3330,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'wo68vP1Y0iXNS-n6i8WpjQ',
+        # 'id': 'wo68vP1Y0iXNS-n6i8WpjQ',113
         'name': 'Luckyduck Bicycle Cafe',
         'location': {
             'address1': '302 12th St',
@@ -3359,7 +3359,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 1}
     },
     {
-        # 'id': 'LHd3X9Of8ymOE5X3_fd0eA',
+        # 'id': 'LHd3X9Of8ymOE5X3_fd0eA',114
         'name': 'Moo Bong Ri Korean Restaurant',
         'location': {
             'address1': '4390 Telegraph Ave',
@@ -3388,7 +3388,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': '1aQn5XzAk_lVwxn997fphQ',
+        # 'id': '1aQn5XzAk_lVwxn997fphQ',115
         'name': 'Mua',
         'location': {
             'address1': '2442 Webster St',
@@ -3417,7 +3417,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'wu596lAazmcSqAxrSqCpkw',
+        # 'id': 'wu596lAazmcSqAxrSqCpkw',116
         'name': 'Huangcheng Noodle House',
         'location': {
             'address1': '911 Washington St',
@@ -3446,7 +3446,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'DceTpSF9RJ9PBvfX-_EImQ',
+        # 'id': 'DceTpSF9RJ9PBvfX-_EImQ',117
         'name': 'Shandong Restaurant',
         'location': {
             'address1': '328 10th St',
@@ -3475,7 +3475,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 1}
     },
     {
-        # 'id': 'JMVfRgQ-Rz6m3KWx9lFveQ',
+        # 'id': 'JMVfRgQ-Rz6m3KWx9lFveQ',118
         'name': 'Mariposa Baking Company',
         'location': {
             'address1': '5427 Telegraph Ave',
@@ -3504,7 +3504,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '1700', 'day': 0}
     },
     {
-        # 'id': '4a-VV_CbVMZQ8Wh4yfXT3g',
+        # 'id': '4a-VV_CbVMZQ8Wh4yfXT3g', 119
         'name': 'Obelisco Restaurant',
         'location': {
             'address1': '3411 E 12th St',
@@ -3533,7 +3533,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'l1MROfbSETysLQQH1N3PIQ',
+        # 'id': 'l1MROfbSETysLQQH1N3PIQ', 120
         'name': 'In-N-Out Burger',
         'location': {
             'address1': '8300 Oakport St',
@@ -3562,7 +3562,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1030', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'Q8jV2uPiBtI_FNys6mbcoQ',
+        # 'id': 'Q8jV2uPiBtI_FNys6mbcoQ',121
         'name': "Ahn's Quarter Pound Burger",
         'location': {
             'address1': '439 Grand Ave',
@@ -3591,7 +3591,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'XusKnltuKs9LTfAMCCxyPg',
+        # 'id': 'XusKnltuKs9LTfAMCCxyPg',122
         'name': 'Biryani Tika Kabab',
         'location': {
             'address1': '328 14th St',
@@ -3620,7 +3620,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'edcwzFKHIDpvS7Rj9gvU6Q',
+        # 'id': 'edcwzFKHIDpvS7Rj9gvU6Q',123
         'name': 'Annapurna Restaurant and Bar',
         'location': {
             'address1': '948 Clay St',
@@ -3649,7 +3649,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2130', 'day': 1}
     },
     {
-        # 'id': 'a34HvdlrG5GZ1wjRuzRvlQ',
+        # 'id': 'a34HvdlrG5GZ1wjRuzRvlQ',124
         'name': 'Pizzaiolo',
         'location': {
             'address1': '5008 Telegraph Ave',
@@ -3678,7 +3678,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'v7GH_fTmGQGbjB4ignVnqA',
+        # 'id': 'v7GH_fTmGQGbjB4ignVnqA',125
         'name': 'Belotti Ristorante E Bottega',
         'location': {
             'address1': '5403 College Ave',
@@ -3707,7 +3707,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'UNE7QP_zp7oPnyqZcQkZiw',
+        # 'id': 'UNE7QP_zp7oPnyqZcQkZiw',126
         'name': 'Marufuku Ramen - Oakland',
         'location': {
             'address1': '4828 Telegraph Ave',
@@ -3736,7 +3736,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1730', 'end': '2230', 'day': 0}
     },
     {
-        # 'id': 'NqSVQ_DJZpVmCbJHaFcIsQ',
+        # 'id': 'NqSVQ_DJZpVmCbJHaFcIsQ',127
         'name': 'Geta',
         'location': {
             'address1': '165 41st St',
@@ -3765,7 +3765,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1400', 'day': 1}
     },
     {
-        # 'id': '53BGTRdv8vnn6lwjMsjDUw',
+        # 'id': '53BGTRdv8vnn6lwjMsjDUw',128
         'name': "Wally's Cafe",
         'location': {
             'address1': '3900 San Pablo Ave',
@@ -3794,7 +3794,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'jToTQStksqPPbcinvUqhlA',
+        # 'id': 'jToTQStksqPPbcinvUqhlA',129
         'name': 'Shakewell',
         'location': {
             'address1': '3407 Lakeshore Ave',
@@ -3823,7 +3823,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1630', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'PGJbyscmFcjFwQdrSDkoJg',
+        # 'id': 'PGJbyscmFcjFwQdrSDkoJg',130
         'name': 'Tacos Sinaloa',
         'location': {
             'address1': '2138 International Blvd',
@@ -3852,7 +3852,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '0900', 'end': '0100', 'day': 0}
     },
     {
-        # 'id': 'UHFjEP5dVn4wqcjt7ByUog',
+        # 'id': 'UHFjEP5dVn4wqcjt7ByUog',131
         'name': 'Cholita Linda',
         'location': {
             'address1': '4923 Telegraph Ave',
@@ -3881,7 +3881,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'JsqK99Ka8gIgu1ZtzDupRg',
+        # 'id': 'JsqK99Ka8gIgu1ZtzDupRg',132
         'name': "Zachary's Chicago Pizza",
         'location': {
             'address1': '5801 College Ave',
@@ -3910,7 +3910,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '6iT-NihtnFnDh8JOYxRvDQ',
+        # 'id': '6iT-NihtnFnDh8JOYxRvDQ',133
         'name': 'Belly',
         'location': {
             'address1': '1901 San Pablo Ave',
@@ -3939,7 +3939,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'PGGtbjr8m4V54tWMgqYxmQ',
+        # 'id': 'PGGtbjr8m4V54tWMgqYxmQ',134
         'name': 'Marica',
         'location': {
             'address1': '5301 College Ave',
@@ -3968,7 +3968,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': 'oT08T3Vpn1I7jDmrBBRMTw',
+        # 'id': 'oT08T3Vpn1I7jDmrBBRMTw',135
         'name': 'House of Prime Rib',
         'location': {
             'address1': '1906 Van Ness Ave',
@@ -3997,7 +3997,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'E6OLQ9i9A3iS0tKI8qJK6g',
+        # 'id': 'E6OLQ9i9A3iS0tKI8qJK6g',136
         'name': 'Galeto Brazilian Steakhouse',
         'location': {
             'address1': '1019 Clay St',
@@ -4026,7 +4026,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2100', 'day': 1}
     },
     {
-        # 'id': '9-V4vgu2lJQ7FLrLu8lJjA',
+        # 'id': '9-V4vgu2lJQ7FLrLu8lJjA',137
         'name': 'Shimizu Sushi',
         'location': {
             'address1': '4290 Piedmont Ave',
@@ -4055,7 +4055,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': 'Jlt5w5ItA8ugiXif2VVQ5g',
+        # 'id': 'Jlt5w5ItA8ugiXif2VVQ5g',138
         'name': 'Champa Garden',
         'location': {
             'address1': '2102 8th Ave',
@@ -4084,7 +4084,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'xrfNNIUAl2588mwyRtvH-w',
+        # 'id': 'xrfNNIUAl2588mwyRtvH-w',139
         'name': 'Golden Lotus Vegan Restaurant',
         'location': {
             'address1': '1301 Franklin St',
@@ -4113,7 +4113,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 1}
     },
     {
-        # 'id': 'dHurSbFlqasZZdxVdNjayA',
+        # 'id': 'dHurSbFlqasZZdxVdNjayA',140
         'name': 'Dimond Slice Pizza',
         'location': {
             'address1': '2208 MacArthur Blvd',
@@ -4142,7 +4142,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 1}
     },
     {
-        # 'id': 'L6WsyFVf9UahURn0Fudsbg',
+        # 'id': 'L6WsyFVf9UahURn0Fudsbg',141
         'name': 'Monster Pho',
         'location': {
             'address1': '360 40th St',
@@ -4171,7 +4171,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 2}
     },
     {
-        # 'id': 'IJF-4E8Mhm5teI5RHrH5yw',
+        # 'id': 'IJF-4E8Mhm5teI5RHrH5yw',142
         'name': 'Banh Mi Ba Le',
         'location': {
             'address1': '1909 International Blvd',
@@ -4200,7 +4200,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0730', 'end': '1500', 'day': 4}
     },
     {
-        # 'id': '2XQm-uFcTS7oc8MFP-8olA',
+        # 'id': '2XQm-uFcTS7oc8MFP-8olA',143
         'name': 'B Patisserie',
         'location': {
             'address1': '2821 California St',
@@ -4229,7 +4229,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1600', 'day': 2}
     },
     {
-        # 'id': 'ri7UUYmx21AgSpRsf4-9QA',
+        # 'id': 'ri7UUYmx21AgSpRsf4-9QA',144
         'name': 'Tartine Bakery',
         'location': {
             'address1': '600 Guerrero St',
@@ -4258,7 +4258,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1700', 'day': 0}
     },
     {
-        # 'id': 'V6L23CJAM9cm0zzWAhSwVA',
+        # 'id': 'V6L23CJAM9cm0zzWAhSwVA',145
         'name': 'Belly Good Cafe & Crepes',
         'location': {
             'address1': '1737 Post St',
@@ -4287,7 +4287,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'sSiUcnbwPQ4ssHY3EMV0Fw',
+        # 'id': 'sSiUcnbwPQ4ssHY3EMV0Fw',146
         'name': 'Matcha Cafe Maiko',
         'location': {
             'address1': '1581 Webster St',
@@ -4316,7 +4316,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'aVskw5NKrs7ibAQ54E_bZw',
+        # 'id': 'aVskw5NKrs7ibAQ54E_bZw',147
         'name': 'U :Dessert Story',
         'location': {
             'address1': '3489 16th St',
@@ -4345,7 +4345,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1500', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'b-ylC7pGKuh4yw6l1Q1k9g',
+        # 'id': 'b-ylC7pGKuh4yw6l1Q1k9g',148
         'name': 'Golden Bear Trading Company',
         'location': {
             'address1': '1401 6th Ave',
@@ -4374,7 +4374,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'ttarnopezxmp2ROB1N2PaA',
+        # 'id': 'ttarnopezxmp2ROB1N2PaA',149
         'name': 'Nopa',
         'location': {
             'address1': '560 Divisadero St',
@@ -4403,7 +4403,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1730', 'end': '2200', 'day': 0}
     },
     {
-        # 'id': 'GXu3PD4IPsxIHpo011aydg',
+        # 'id': 'GXu3PD4IPsxIHpo011aydg',150
         'name': "Bob's Donuts & Pastry Shop",
         'location': {
             'address1': '1621 Polk St',
@@ -4432,7 +4432,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '0600', 'end': '0600', 'day': 0}
     },
     {
-        # 'id': 'LFEBCjZ-M3XUFJDszYFX6A',
+        # 'id': 'LFEBCjZ-M3XUFJDszYFX6A',151
         'name': 'Milkbomb Ice Cream',
         'location': {
             'address1': '1717 17th St',
@@ -4461,7 +4461,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1715', 'end': '2100', 'day': 4}
     },
     {
-        # 'id': 'wGl_DyNxSv8KUtYgiuLhmA',
+        # 'id': 'wGl_DyNxSv8KUtYgiuLhmA',152
         'name': 'Bi-Rite Creamery',
         'location': {
             'address1': '3692 18th St',
@@ -4490,7 +4490,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': '76smcUUGRvq3k1MVPUXbnA',
+        # 'id': '76smcUUGRvq3k1MVPUXbnA',153
         'name': 'Mitchells Ice Cream',
         'location': {
             'address1': '688 San Jose Ave',
@@ -4519,7 +4519,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'ww-HKAff5xmQbiXgO-KcSQ',
+        # 'id': 'ww-HKAff5xmQbiXgO-KcSQ',154
         'name': 'Golden Era Vegan Restaurant',
         'location': {
             'address1': '395 Golden Gate Ave',
@@ -4548,7 +4548,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1930', 'day': 0}
     },
     {
-        # 'id': 'QCQ3WN7hd9xMPs2_ycHa_A',
+        # 'id': 'QCQ3WN7hd9xMPs2_ycHa_A',155
         'name': 'Broken Record',
         'location': {
             'address1': '1166 Geneva Ave',
@@ -4577,7 +4577,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '0000', 'day': 0}
     },
     {
-        # 'id': 'eBxkmr-hJ2KgpZQzEO3ArQ',
+        # 'id': 'eBxkmr-hJ2KgpZQzEO3ArQ',156
         'name': 'Han Il Kwan',
         'location': {
             'address1': '1802 Balboa St',
@@ -4606,7 +4606,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'lJAGnYzku5zSaLnQ_T6_GQ',
+        # 'id': 'lJAGnYzku5zSaLnQ_T6_GQ',157
         'name': "Brenda's French Soul Food",
         'location': {
             'address1': '652 Polk St',
@@ -4635,7 +4635,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': '-DrR38H1Abk0wCyu9XOLug',
+        # 'id': '-DrR38H1Abk0wCyu9XOLug',158
         'name': 'Sweet Maple',
         'location': {
             'address1': '2101 Sutter St',
@@ -4664,7 +4664,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'UTVDbZv-qiHU06sDkoel3g',
+        # 'id': 'UTVDbZv-qiHU06sDkoel3g',159
         'name': 'Chez Maman East',
         'location': {
             'address1': '1401 18th St',
@@ -4692,37 +4692,37 @@ bizzies = [
         ],
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2200', 'day': 0}
     },
+    # {
+    #     # 'id': 'WhTpALYvB4ZBMcT8fFVLvw',160
+    #     'name': 'Holy Gelato!',
+    #     'location': {
+    #         'address1': '1392 9th Ave',
+    #         'address2': '',
+    #         'address3': '',
+    #         'city': 'San Francisco',
+    #         'zip_code': '94122',
+    #         'country': 'US',
+    #         'state': 'CA',
+    #         'display_address': '',
+    #         'cross_streets': 'Irving St & Judah St'
+    #     },
+    #     'address': ['1392 9th Ave', 'San Francisco, CA 94122'],
+    #     'lat': 37.762392,
+    #     'lng': -122.465941,
+    #     'price': '$$',
+    #     'phone': '+14156813061',
+    #     'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
+    #     'categories': ['juicebars'],
+    #     'transactions': ['pickup', 'delivery'],
+    #     'photos': [
+    #         'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
+    #         'https://s3-media2.fl.yelpcdn.com/bphoto/r21fI8R8Qd7D9PlIIyy_Tw/o.jpg',
+    #         'https://s3-media1.fl.yelpcdn.com/bphoto/5Y3NuIe4gxf8RvE_XhFD4g/o.jpg'
+    #     ],
+    #     'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 0}
+    # },
     {
-        # 'id': 'WhTpALYvB4ZBMcT8fFVLvw',
-        'name': 'Holy Gelato!',
-        'location': {
-            'address1': '1392 9th Ave',
-            'address2': '',
-            'address3': '',
-            'city': 'San Francisco',
-            'zip_code': '94122',
-            'country': 'US',
-            'state': 'CA',
-            'display_address': '',
-            'cross_streets': 'Irving St & Judah St'
-        },
-        'address': ['1392 9th Ave', 'San Francisco, CA 94122'],
-        'lat': 37.762392,
-        'lng': -122.465941,
-        'price': '$$',
-        'phone': '+14156813061',
-        'url': 'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
-        'categories': ['juicebars'],
-        'transactions': ['pickup', 'delivery'],
-        'photos': [
-            'https://s3-media2.fl.yelpcdn.com/bphoto/MiNFmR2UdeU6sQCyoc0raQ/o.jpg',
-            'https://s3-media2.fl.yelpcdn.com/bphoto/r21fI8R8Qd7D9PlIIyy_Tw/o.jpg',
-            'https://s3-media1.fl.yelpcdn.com/bphoto/5Y3NuIe4gxf8RvE_XhFD4g/o.jpg'
-        ],
-        'hours': {'is_overnight': False, 'start': '1130', 'end': '2130', 'day': 0}
-    },
-    {
-        # 'id': 'bUr4iq2mKKiBOu2HKynylg',
+        # 'id': 'bUr4iq2mKKiBOu2HKynylg',160
         'name': 'HRD',
         'location': {
             'address1': '521A 3rd St',
@@ -4751,7 +4751,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'M0JTO3oyu6gxh1mfFjU-dA',
+        # 'id': 'M0JTO3oyu6gxh1mfFjU-dA',161
         'name': 'San Tung',
         'location': {
             'address1': '1031 Irving St',
@@ -4780,7 +4780,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '1500', 'day': 0}
     },
     {
-        # 'id': 'NwqdohySKrDnK0RsAde9UA',
+        # 'id': 'NwqdohySKrDnK0RsAde9UA',162
         'name': 'Hot Sauce and Panko',
         'location': {
             'address1': '1468 Hyde St',
@@ -4809,7 +4809,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1900', 'day': 2}
     },
     {
-        # 'id': '-sg6DqQNGyTMt0MHoY7diQ',
+        # 'id': '-sg6DqQNGyTMt0MHoY7diQ',163
         'name': 'Good Mong Kok Bakery',
         'location': {
             'address1': '1039 Stockton St',
@@ -4838,7 +4838,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1800', 'day': 0}
     },
     {
-        # 'id': 'ssI9ivccrDBT-RH_52fPBQ',
+        # 'id': 'ssI9ivccrDBT-RH_52fPBQ',164
         'name': 'Greens Restaurant',
         'location': {
             'address1': '2 Marina Blvd',
@@ -4872,7 +4872,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 1}
     },
     {
-        # 'id': 'Di4kb-1tnjP5OKFuV8qbUA',
+        # 'id': 'Di4kb-1tnjP5OKFuV8qbUA',165
         'name': 'Cordon Bleu',
         'location': {
             'address1': '1574 California St',
@@ -4901,7 +4901,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 1}
     },
     {
-        # 'id': '_Iupdt0IslH_jU8zkKcWLA',
+        # 'id': '_Iupdt0IslH_jU8zkKcWLA',166
         'name': 'Pica Pica Arepa Kitchen',
         'location': {
             'address1': '401 Valencia St',
@@ -4930,7 +4930,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'gR9DTbKCvezQlqvD7_FzPw',
+        # 'id': 'gR9DTbKCvezQlqvD7_FzPw',167
         'name': 'North India Restaurant',
         'location': {
             'address1': '123 Second St',
@@ -4959,7 +4959,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1000', 'end': '2300', 'day': 0}
     },
     {
-        # 'id': 'iUockw0CUssKZLyoGJYEXA',
+        # 'id': 'iUockw0CUssKZLyoGJYEXA',168
         'name': 'Cuisine of Nepal',
         'location': {
             'address1': '3486 Mission St',
@@ -4988,7 +4988,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2200', 'day': 1}
     },
     {
-        # 'id': 'PTFxtXS47ZVRCdZIrEWvGw',
+        # 'id': 'PTFxtXS47ZVRCdZIrEWvGw',169
         'name': 'Golden Boy Pizza',
         'location': {
             'address1': '542 Green St',
@@ -5017,7 +5017,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': '8dUaybEPHsZMgr1iKgqgMQ',
+        # 'id': '8dUaybEPHsZMgr1iKgqgMQ',170
         'name': 'Sotto Mare',
         'location': {
             'address1': '552 Green St',
@@ -5046,7 +5046,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'CYttYTEiQuhSfo3SEh79fA',
+        # 'id': 'CYttYTEiQuhSfo3SEh79fA',171
         'name': 'Shizen Vegan Sushi Bar & Izakaya',
         'location': {
             'address1': '370 14th St',
@@ -5075,7 +5075,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'i09UMzccKgyLwGYKDVP28w',
+        # 'id': 'i09UMzccKgyLwGYKDVP28w',172
         'name': 'Surisan',
         'location': {
             'address1': '505 Beach St',
@@ -5104,7 +5104,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'u39mZEYojBiNic3lqKhPNw',
+        # 'id': 'u39mZEYojBiNic3lqKhPNw',173
         'name': 'Tacorea',
         'location': {
             'address1': '809 Bush St',
@@ -5133,7 +5133,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'n6L5VIGunR51-D55C-eYeQ',
+        # 'id': 'n6L5VIGunR51-D55C-eYeQ',174
         'name': 'Foreign Cinema',
         'location': {
             'address1': '2534 Mission St',
@@ -5162,7 +5162,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2130', 'day': 0}
     },
     {
-        # 'id': 'PsY5DMHxa5iNX_nX0T-qPA',
+        # 'id': 'PsY5DMHxa5iNX_nX0T-qPA',175
         'name': 'Kokkari Estiatorio',
         'location': {
             'address1': '200 Jackson St',
@@ -5191,7 +5191,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'JARsJVKLPgs_yC3cwDnp7g',
+        # 'id': 'JARsJVKLPgs_yC3cwDnp7g',176
         'name': 'La Taqueria',
         'location': {
             'address1': '2889 Mission St',
@@ -5220,7 +5220,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2045', 'day': 2}
     },
     {
-        # 'id': 'SGRmnarrNuVEsAjYdEoA0w',
+        # 'id': 'SGRmnarrNuVEsAjYdEoA0w',177
         'name': 'El Farolito',
         'location': {
             'address1': '2779 Mission St',
@@ -5249,7 +5249,7 @@ bizzies = [
         'hours': {'is_overnight': True, 'start': '1000', 'end': '0145', 'day': 0}
     },
     {
-        # 'id': 'mSMZJj2pFvttWLpcDmgrEA',
+        # 'id': 'mSMZJj2pFvttWLpcDmgrEA',178
         'name': "Tony's Pizza Napoletana",
         'location': {
             'address1': '1570 Stockton St',
@@ -5278,7 +5278,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'yyi2GpG_p7TX7XAq_eHSZA',
+        # 'id': 'yyi2GpG_p7TX7XAq_eHSZA',179
         'name': 'Boudin',
         'location': {
             'address1': '160 Jefferson St',
@@ -5307,7 +5307,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1200', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'IJk76B-pTta_klpAZcpQdA',
+        # 'id': 'IJk76B-pTta_klpAZcpQdA',180
         'name': "Lou's Cafe",
         'location': {
             'address1': '5017 Geary Blvd',
@@ -5336,7 +5336,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1900', 'day': 0}
     },
     {
-        # 'id': '2hGIxgprREdBieylltWaRQ',
+        # 'id': '2hGIxgprREdBieylltWaRQ',181
         'name': 'Limoncello',
         'location': {
             'address1': '1400 Sutter St',
@@ -5365,7 +5365,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0900', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'hqQoVK0vadOX7_4gN1sh3g',
+        # 'id': 'hqQoVK0vadOX7_4gN1sh3g',182
         'name': 'Saigon Sandwich',
         'location': {
             'address1': '560 Larkin St',
@@ -5394,7 +5394,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0700', 'end': '1700', 'day': 0}
     },
     {
-        # 'id': 'f-m7-hyFzkf0HSEeQ2s-9A',
+        # 'id': 'f-m7-hyFzkf0HSEeQ2s-9A',183
         'name': 'Fog Harbor Fish House',
         'location': {
             'address1': '39 Pier',
@@ -5423,7 +5423,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2100', 'day': 0}
     },
     {
-        # 'id': 'ciEDsTWhajcdL3KuJqBRlw',
+        # 'id': 'ciEDsTWhajcdL3KuJqBRlw',184
         'name': 'Espetus Churrascaria',
         'location': {
             'address1': '1686 Market St',
@@ -5452,7 +5452,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1130', 'end': '1430', 'day': 0}
     },
     {
-        # 'id': 'Xg-FyjVKAN70LO4u4Z1ozg',
+        # 'id': 'Xg-FyjVKAN70LO4u4Z1ozg',185
         'name': 'Hog Island Oyster',
         'location': {
             'address1': '1 Ferry Bldg',
@@ -5481,7 +5481,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1100', 'end': '2000', 'day': 0}
     },
     {
-        # 'id': 'cL0q9S4bqwpbAN9ZKh-Zeg',
+        # 'id': 'cL0q9S4bqwpbAN9ZKh-Zeg', 186
         'name': 'Nara Restaurant & Sake Bar',
         'location': {
             'address1': '518 Haight St',
@@ -5510,7 +5510,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1700', 'end': '2300', 'day': 1}
     },
     {
-        # 'id': '0mNzmmh1mrdh5Cpg2QUBiw',
+        # 'id': '0mNzmmh1mrdh5Cpg2QUBiw',187
         'name': 'Lapisara Eatery',
         'location': {
             'address1': '698 Post St',
@@ -5539,7 +5539,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '0800', 'end': '1400', 'day': 0}
     },
     {
-        # 'id': 'E2Ri3Uudb3ogKfWBJIIhRw',
+        # 'id': 'E2Ri3Uudb3ogKfWBJIIhRw',188
         'name': 'Lokma',
         'location': {
             'address1': '1801 Clement St',
@@ -5568,7 +5568,7 @@ bizzies = [
         'hours': {'is_overnight': False, 'start': '1600', 'end': '2030', 'day': 0}
     },
     {
-        # 'id': 'z9CN58fSrA46ggyb6OnCnQ',
+        # 'id': 'z9CN58fSrA46ggyb6OnCnQ',189
         'name': 'Thanh Long',
         'location': {
             'address1': '4101 Judah St',
@@ -5598,4956 +5598,4956 @@ bizzies = [
     }
 ]
 
-reviews = [
-    {
-        'biz_id': 1,
-        'review_body': 'Yo this place was FIRE. \n' +
-        '\n' +
-        'Came here to get 2 dozen donuts for a work event and wow they were amazing. I tried the dulce de leche and the regular glazed and...',
-        "rating": 5,
-        'created_at': '2022-10-13 13:02:36'
-    },
-    {
-        'biz_id': 1,
-        'review_body': 'Do not need much intro as this is the place to be for some fancy donuts in LA! Line out the door early weekend by 9am. Lot is small, street parking hard but...',
-        "rating": 5,
-        'created_at': '2022-10-01 21:55:54'
-    },
-    {
-        'biz_id': 1,
-        'review_body': 'While I do not fear (for I am strong), the notion of fryers did give me pause. How relieved that I never did see them. Instead, I was presented with the...',
-        "rating": 5,
-        'created_at': '2022-08-12 14:27:06'
-    },
-    {
-        'biz_id': 2,
-        'review_body': 'Alcove Cafe provides that ideal escape after a hike around Griffith Park for brunch and coffee.\n' +
-        '\n' +
-        'The Alcove has and will always be a sentimental favorite of...',
-        "rating": 4,
-        'created_at': '2022-10-04 07:55:44'
-    },
-    {
-        'biz_id': 2,
-        'review_body': 'Last Saturday my mother and I had brunch(the peak time) at Al Cove. We were seated right away. And someone came to take our order. Our food was delicious as...',
-        "rating": 1,
-        'created_at': '2022-10-09 21:18:23'
-    },
-    {
-        'biz_id': 2,
-        'review_body': "It's good but they don't label any of the cakes in the case. when I asked for one of the cakes that I found on the menu, the person at the counter didn't...",
-        "rating": 3,
-        'created_at': '2022-10-01 20:43:34'
-    },
-    {
-        'biz_id': 4,
-        'review_body': 'This place with a parking lot made me happy, on the way I was thinking about what I would do if there was no place to stop, but thank God I found it.\n' +
-        '\n' +
-        '1....',
-        "rating": 5,
-        'created_at': '2022-08-30 12:55:22'
-    },
-    {
-        'biz_id': 4,
-        'review_body': 'We do big group orders from Berlins on 3rd, ALL the time for the office.\n' +
-        'Food is great, no doubting that!\n' +
-        'Ordering online is easy.\n' +
-        'Parking can be a...',
-        "rating": 4,
-        'created_at': '2022-08-15 13:06:01'
-    },
-    {
-        'biz_id': 4,
-        'review_body': "I have eaten many doeners in Germany, but I'm no doener expert. I remember it was very good, but I'm not sure why/how it was good or what was inside. \n" +
-        'So I...',
-        "rating": 5,
-        'created_at': '2022-07-16 19:29:49'
-    },
-    {
-        'biz_id': 3,
-        'review_body': 'Was craving wonton soup...\n' +
-        '\n' +
-        'Wonton soup 10/10 - the broth is light and clean, lots of noodles, filling shrimp wontons\n' +
-        'Beef wrap 10/10 - delicious and...',
-        "rating": 5,
-        'created_at': '2022-10-02 15:45:44'
-    },
-    {
-        'biz_id': 3,
-        'review_body': "TL;DR: decent Taiwanese food, but it's expensive and definitely geared towards being approachable for Americans\n" +
-        '\n' +
-        "AMBIENCE: It's Silverlake, so a lot of...",
-        "rating": 3,
-        'created_at': '2022-10-09 23:04:40'
-    },
-    {
-        'biz_id': 3,
-        'review_body': 'Go for the vibe not the food. \n' +
-        '\n' +
-        'I saw the reviews and thought this place would be great, but it was mediocre at best. I ordered to go online and arrived 30...',
-        "rating": 3,
-        'created_at': '2022-10-03 12:08:44'
-    },
-    {
-        'biz_id': 6,
-        'review_body': "My FAVORITE soft serve ever!! If you're ever craving matcha, I would HIGHLY recommend Tea Master! Honda Plaza has parking, and there's so many good...",
-        "rating": 5,
-        'created_at': '2022-10-12 18:52:05'
-    },
-    {
-        'biz_id': 6,
-        'review_body': 'Having a love for all things matcha, plus being highly recommended by a few friends made it mandatory I stop by here to get my fix one super hot day while...',
-        "rating": 5,
-        'created_at': '2022-10-12 00:03:41'
-    },
-    {
-        'biz_id': 6,
-        'review_body': "A not so hidden gem in Little Tokyo! By far the best matcha soft serve I've had. It's rich and creamy, but not overly sweet. Just the perfect amount of...",
-        "rating": 5,
-        'created_at': '2022-10-09 12:35:01'
-    },
-    {
-        'biz_id': 5,
-        'review_body': 'Food was INCREDIBLE! And so much that I had leftovers to reheat: those yummy pancakes again the next day!',
-        "rating": 5,
-        'created_at': '2022-08-31 20:43:52'
-    },
-    {
-        'biz_id': 5,
-        'review_body': 'Great option for an American breakfast! Service and food were really good. \n' +
-        '\n' +
-        'Deft a place to come if you are super hungry.',
-        "rating": 5,
-        'created_at': '2022-10-09 12:54:00'
-    },
-    {
-        'biz_id': 5,
-        'review_body': "One of my favorite brunch spots in all of LA. If you're coming during the weekend be prepared to wait in line for about an hour. There is no parking here,...",
-        "rating": 5,
-        'created_at': '2022-10-04 14:45:37'
-    },
-    {
-        'biz_id': 7,
-        'review_body': 'Hum I bet it was great. As long as you like it be happy u 2 I know about it . I have been for a min . No need to lie or fake anymore .',
-        "rating": 5,
-        'created_at': '2022-09-17 18:06:09'
-    },
-    {
-        'biz_id': 7,
-        'review_body': 'Great pastries! I enjoy taking the blueberry and raspberries cake to my job they love it',
-        "rating": 5,
-        'created_at': '2022-08-31 19:02:07'
-    },
-    {
-        'biz_id': 7,
-        'review_body': "Didn't lasagna or the crème brûlée which was what I went there for. But overall I love going to Botega Louie",
-        "rating": 4,
-        'created_at': '2022-08-25 12:56:26'
-    },
-    {
-        'biz_id': 8,
-        'review_body': 'Delicious chocolate bread - croissant thing! Wish I could have ordered one of everything! \n' +
-        '\n' +
-        'Fast service. And well worth the trip. \n' +
-        '\n' +
-        "It's a pity that I...",
-        "rating": 5,
-        'created_at': '2022-10-11 11:16:47'
-    },
-    {
-        'biz_id': 8,
-        'review_body': 'The area was really cute and right in the heart of the Arts District. The food itself was tasty and filling but very overpriced for what you got. \n' +
-        '\n' +
-        'Eating...',
-        "rating": 4,
-        'created_at': '2022-10-08 20:40:48'
-    },
-    {
-        'biz_id': 8,
-        'review_body': 'Love the vibe and food selection in this place! The\n' +
-        'Spanish Latte is very tasty and relaxing. They also have salads, sandwiches, egg dishes, cakes, bobas,...',
-        "rating": 4,
-        'created_at': '2022-10-04 17:36:20'
-    },
-    {
-        'biz_id': 1,
-        'review_body': 'Yo this place was FIRE. \n' +
-        '\n' +
-        'Came here to get 2 dozen donuts for a work event and wow they were amazing. I tried the dulce de leche and the regular glazed and...',
-        "rating": 5,
-        'created_at': '2022-10-13 13:02:36'
-    },
-    {
-        'biz_id': 1,
-        'review_body': 'Do not need much intro as this is the place to be for some fancy donuts in LA! Line out the door early weekend by 9am. Lot is small, street parking hard but...',
-        "rating": 5,
-        'created_at': '2022-10-01 21:55:54'
-    },
-    {
-        'biz_id': 1,
-        'review_body': 'While I do not fear (for I am strong), the notion of fryers did give me pause. How relieved that I never did see them. Instead, I was presented with the...',
-        "rating": 5,
-        'created_at': '2022-08-12 14:27:06'
-    },
-    {
-        'biz_id': 10,
-        'review_body': 'Really good doughnuts, but they should think of re-hiring, the workers that served me were short tempered and really rude.',
-        "rating": 4,
-        'created_at': '2022-09-19 18:17:54'
-    },
-    {
-        'biz_id': 10,
-        'review_body': 'O M G - so bomb I could cry! \n' +
-        '\n' +
-        "My boyfriend and I finished this donut in probably less than 2 minutes! I actually can't believe that this was a vegan donut....",
-        "rating": 5,
-        'created_at': '2022-10-04 11:18:54'
-    },
-    {
-        'biz_id': 10,
-        'review_body': 'All you need to know is these are absolutely incredible donuts. Are they a little overpriced? Sure. But the staff is always great and the donuts are always...',
-        "rating": 5,
-        'created_at': '2022-09-17 17:32:23'
-    },
-    {
-        'biz_id': 6,
-        'review_body': "My FAVORITE soft serve ever!! If you're ever craving matcha, I would HIGHLY recommend Tea Master! Honda Plaza has parking, and there's so many good...",
-        "rating": 5,
-        'created_at': '2022-10-12 18:52:05'
-    },
-    {
-        'biz_id': 6,
-        'review_body': 'Having a love for all things matcha, plus being highly recommended by a few friends made it mandatory I stop by here to get my fix one super hot day while...',
-        "rating": 5,
-        'created_at': '2022-10-12 00:03:41'
-    },
-    {
-        'biz_id': 6,
-        'review_body': "A not so hidden gem in Little Tokyo! By far the best matcha soft serve I've had. It's rich and creamy, but not overly sweet. Just the perfect amount of...",
-        "rating": 5,
-        'created_at': '2022-10-09 12:35:01'
-    },
-    {
-        'biz_id': 12,
-        'review_body': "This is some of the best ice cream I've ever had! and I can most closely compare it to Jeni's ice cream! Its creamy and rich and packed with flavor! They...",
-        "rating": 5,
-        'created_at': '2022-09-22 08:54:25'
-    },
-    {
-        'biz_id': 12,
-        'review_body': "REALLY good ice cream!  Have sampled ice cream at two locations, and only wish there was a location near me.  Actually, maybe not, as I'd want to go there...",
-        "rating": 4,
-        'created_at': '2022-09-25 21:00:38'
-    },
-    {
-        'biz_id': 12,
-        'review_body': 'Salt and Straw never dissapoints. Go and be excited  about the unique flavors, rich ice cream, and helpful staff. \n' +
-        '\n' +
-        'My favorite flavors are honey lavender...',
-        "rating": 5,
-        'created_at': '2022-09-05 15:58:15'
-    },
-    {
-        'biz_id': 6,
-        'review_body': "My FAVORITE soft serve ever!! If you're ever craving matcha, I would HIGHLY recommend Tea Master! Honda Plaza has parking, and there's so many good...",
-        "rating": 5,
-        'created_at': '2022-10-12 18:52:05'
-    },
-    {
-        'biz_id': 6,
-        'review_body': 'Having a love for all things matcha, plus being highly recommended by a few friends made it mandatory I stop by here to get my fix one super hot day while...',
-        "rating": 5,
-        'created_at': '2022-10-12 00:03:41'
-    },
-    {
-        'biz_id': 6,
-        'review_body': "A not so hidden gem in Little Tokyo! By far the best matcha soft serve I've had. It's rich and creamy, but not overly sweet. Just the perfect amount of...",
-        "rating": 5,
-        'created_at': '2022-10-09 12:35:01'
-    },
-    {
-        'biz_id': 14,
-        'review_body': "I'm not vegan, but had the opportunity to try this restaurant out while in DTLA. \n" +
-        '\n' +
-        'I was very impressed how delicious the plant based sausage was, the rice...',
-        "rating": 5,
-        'created_at': '2022-08-24 13:28:23'
-    },
-    {
-        'biz_id': 14,
-        'review_body': "After several visits to this place over th past several years, I figured it's time to write a review. \n" +
-        '\n' +
-        'Have ordered about everything on the menu, but...',
-        "rating": 4,
-        'created_at': '2022-10-04 17:55:05'
-    },
-    {
-        'biz_id': 14,
-        'review_body': "I like this place. But it's changed. The service is actually in good place compared to the pandemic. They got rid of the questionable servers. \n" +
-        '\n' +
-        'Problem now...',
-        "rating": 2,
-        'created_at': '2022-08-27 15:45:49'
-    },
-    {
-        'biz_id': 16,
-        'review_body': 'An update from over 9 years later....and boy is it a complete 180.\n' +
-        '\n' +
-        'Since its a smaller restaurant, the long wait time remains: be prepared for a wait at...',
-        "rating": 5,
-        'created_at': '2022-10-12 16:42:28'
-    },
-    {
-        'biz_id': 16,
-        'review_body': 'I was pleasantly surprised by this place. As a tourist, you really only know about Kang Ho Dong Baekjeong and Quarters. We were made aware of this place by...',
-        "rating": 4,
-        'created_at': '2022-10-12 12:26:45'
-    },
-    {
-        'biz_id': 16,
-        'review_body': "The husband and I couldn't figure out what we wanted for dinner while visiting LA, so we ended up going with Hae Jang Chon because we've been here several...",
-        "rating": 3,
-        'created_at': '2022-10-10 16:34:57'
-    },
-    {
-        'biz_id': 15,
-        'review_body': 'A classic ktown spot for kbbq. I usually get the beef combo here, but opted for pork instead last night for dinner. Beef usually cooks faster whereas pork...',
-        "rating": 5,
-        'created_at': '2022-10-08 09:02:01'
-    },
-    {
-        'biz_id': 15,
-        'review_body': 'We came here as backup because the line at Quarters was too long on a Sunday night. This is in a popping plaza on 6th street in Koreatown. \n' +
-        '\n' +
-        'The space at...',
-        "rating": 4,
-        'created_at': '2022-10-08 19:36:39'
-    },
-    {
-        'biz_id': 15,
-        'review_body': "Stilll a staple if your not looking for the AYCE cheap fix!!! Good quality over abundance and seriously y'all do the math and I think all would agree that...",
-        "rating": 4,
-        'created_at': '2022-10-05 06:49:56'
-    },
-    {
-        'biz_id': 18,
-        'review_body': 'I have never seen such a queue here in my whole life because they have so many customers. I also loved their attitude towards me and their delicious...',
-        "rating": 5,
-        'created_at': '2022-09-15 11:55:57'
-    },
-    {
-        'biz_id': 18,
-        'review_body': 'Republique is an absolute crowd pleaser for delicious breakfast and pastries in the most stunning restaurant. I always bring my friends from out of town...',
-        "rating": 5,
-        'created_at': '2022-10-07 23:45:03'
-    },
-    {
-        'biz_id': 18,
-        'review_body': 'The entire culinary experience was overall underwhelming, but vibe and service were beautiful.\n' +
-        '\n' +
-        'This place had been on my list to try for dinner for quite...',
-        "rating": 3,
-        'created_at': '2022-10-09 15:43:46'
-    },
-    {
-        'biz_id': 7,
-        'review_body': 'Hum I bet it was great. As long as you like it be happy u 2 I know about it . I have been for a min . No need to lie or fake anymore .',
-        "rating": 5,
-        'created_at': '2022-09-17 18:06:09'
-    },
-    {
-        'biz_id': 7,
-        'review_body': 'Great pastries! I enjoy taking the blueberry and raspberries cake to my job they love it',
-        "rating": 5,
-        'created_at': '2022-08-31 19:02:07'
-    },
-    {
-        'biz_id': 7,
-        'review_body': "Didn't lasagna or the crème brûlée which was what I went there for. But overall I love going to Botega Louie",
-        "rating": 4,
-        'created_at': '2022-08-25 12:56:26'
-    },
-    {
-        'biz_id': 20,
-        'review_body': 'The food was pretty good. Juicy burgers, fresh fries and tots. Highly recommended for people who are vegetarian and has a little more budget, because it was...',
-        "rating": 4,
-        'created_at': '2022-09-12 00:23:32'
-    },
-    {
-        'biz_id': 20,
-        'review_body': "I love Monty's! Fries are amazing. Matcha latte was a perfect match with the fresh salty fries. Great service, too.",
-        "rating": 5,
-        'created_at': '2022-09-25 14:52:08'
-    },
-    {
-        'biz_id': 20,
-        'review_body': "I've looked over this place for awhile now and didn't give it a chance since I thought it wasn't vegan, until today!! No wonder there's such a long line...",
-        "rating": 5,
-        'created_at': '2022-09-18 12:26:06'
-    },
-    {
-        'biz_id': 19,
-        'review_body': 'Thanks to Nick for the great service and recommendations\n' +
-        'food and drinks were awesome!',
-        "rating": 5,
-        'created_at': '2022-09-10 18:29:19'
-    },
-    {
-        'biz_id': 19,
-        'review_body': 'Great service thanks to our waiter Nick! He was very nice and attentive. Burgers were delicious! I got the Monster Mac and my boyfriend got the Truffle...',
-        "rating": 5,
-        'created_at': '2022-09-17 22:18:45'
-    },
-    {
-        'biz_id': 19,
-        'review_body': 'Had a great time! Roger provided amazing and attentive service to my friend, my fur baby and I. We sat outside; my dog got VIP treatment with treats and...',
-        "rating": 5,
-        'created_at': '2022-08-27 14:50:52'
-    },
-    {
-        'biz_id': 22,
-        'review_body': 'I came here with my friend to have a good brunch and boy, were we not disappointed! Excellent food with must have waffles!\n' +
-        '\n' +
-        'Chicken & Waffles- the waffle...',
-        "rating": 5,
-        'created_at': '2022-10-13 07:15:20'
-    },
-    {
-        'biz_id': 22,
-        'review_body': "I came here only because I saw celebrities on their pictures and was hoping to run into one on a random Monday morning for brunch lol! Sadly I didn't...",
-        "rating": 3,
-        'created_at': '2022-10-12 17:19:06'
-    },
-    {
-        'biz_id': 22,
-        'review_body': "On a Tuesday morning, you'd think that there would be not much people. Wrong. Seats were mostly full with a few tables empty, so you know this is good. I...",
-        "rating": 4,
-        'created_at': '2022-09-27 13:43:18'
-    },
-    {
-        'biz_id': 23,
-        'review_body': "VERY good Korean fried chicken spot if you're craving something unique and fulfilling. The owner is the nicest man and it just feels like he's your uncle",
-        "rating": 5,
-        'created_at': '2022-09-03 20:54:37'
-    },
-    {
-        'biz_id': 23,
-        'review_body': 'The owner was super friendly and the food was fantastic! Highly recommend!!!!!!!!  :-)',
-        "rating": 5,
-        'created_at': '2022-08-30 20:50:14'
-    },
-    {
-        'biz_id': 23,
-        'review_body': 'Delicious chicken, huge portions, nice gentlemen who owned the place.  Easy to find off western.',
-        "rating": 5,
-        'created_at': '2022-09-24 17:28:44'
-    },
-    {
-        'biz_id': 21,
-        'review_body': 'Such a great place!! The French toast is a must try!! They have the most delicious, fresh orange juice and the staff just makes you smile!!',
-        "rating": 5,
-        'created_at': '2022-09-23 23:15:16'
-    },
-    {
-        'biz_id': 21,
-        'review_body': "Such delicious breakfast foods! You can't go wrong with any of the options they serve here. Friendly staff and a good vibe for brunch. I've even ordered for...",
-        "rating": 5,
-        'created_at': '2022-09-29 22:02:34'
-    },
-    {
-        'biz_id': 21,
-        'review_body': 'The best french toast in all LA!\n' +
-        'i highly recommend this place.\n' +
-        'excellent customer service and clean',
-        "rating": 5,
-        'created_at': '2022-09-29 13:29:11'
-    },
-    {
-        'biz_id': 24,
-        'review_body': "Get the barack obama, its gasss. Hadn't been in a while and was shocked how good it was.",
-        "rating": 5,
-        'created_at': '2022-09-21 18:14:03'
-    },
-    {
-        'biz_id': 24,
-        'review_body': '5/5 always\n' +
-        '\n' +
-        'I get the same thing every time, the chicken omelet smacks so hard.. with a waffle on the side.',
-        "rating": 5,
-        'created_at': '2022-10-02 21:24:37'
-    },
-    {
-        'biz_id': 24,
-        'review_body': "Fried chicken for dinner? Yes, please! Fried chicken for any meal is ok with me. This Roscoe's location is old and dark, making me feel like a dive. so...",
-        "rating": 4,
-        'created_at': '2022-09-26 19:07:10'
-    },
-    {
-        'biz_id': 26,
-        'review_body': 'My boyfriend and I come here all the time.  The managers are so friendly and always stop by for a conversation with us. \n' +
-        '\n' +
-        "Def try the lychee martini it's...",
-        "rating": 5,
-        'created_at': '2022-10-10 07:42:37'
-    },
-    {
-        'biz_id': 26,
-        'review_body': 'This place was exactly a 4-star restaurant. A nice fancy dim sum restaurant located in Beverly Hills, and we wanted dim sum so we headed towards this place...',
-        "rating": 4,
-        'created_at': '2022-10-07 13:26:47'
-    },
-    {
-        'biz_id': 26,
-        'review_body': 'This is the best Dim Sum  in Simi.\n' +
-        '\n' +
-        'All the other dishes are fantastic.\n' +
-        '\n' +
-        'We are here at least once a month.\n' +
-        '\n' +
-        "I promise you won't be sorry.",
-        "rating": 4,
-        'created_at': '2022-10-06 14:52:00'
-    },
-    {
-        'biz_id': 25,
-        'review_body': 'Was craving wonton soup...\n' +
-        '\n' +
-        'Wonton soup 10/10 - the broth is light and clean, lots of noodles, filling shrimp wontons\n' +
-        'Beef wrap 10/10 - delicious and...',
-        "rating": 5,
-        'created_at': '2022-10-02 15:45:44'
-    },
-    {
-        'biz_id': 25,
-        'review_body': "TL;DR: decent Taiwanese food, but it's expensive and definitely geared towards being approachable for Americans\n" +
-        '\n' +
-        "AMBIENCE: It's Silverlake, so a lot of...",
-        "rating": 3,
-        'created_at': '2022-10-09 23:04:40'
-    },
-    {
-        'biz_id': 25,
-        'review_body': 'Go for the vibe not the food. \n' +
-        '\n' +
-        'I saw the reviews and thought this place would be great, but it was mediocre at best. I ordered to go online and arrived 30...',
-        "rating": 3,
-        'created_at': '2022-10-03 12:08:44'
-    },
-    {
-        'biz_id': 27,
-        'review_body': 'The best place for vegan sushi hands down. \n' +
-        "We ordered the chefs course. I don't know if that's what it's called.\n" +
-        '\n' +
-        'But it came with multiple pieces to allow...',
-        "rating": 5,
-        'created_at': '2022-10-01 13:43:54'
-    },
-    {
-        'biz_id': 27,
-        'review_body': 'We were looking forward to have the birthday celebration with 7 people at the restaurant. Mostly dthe high ratings. \n' +
-        '\n' +
-        'We were given the choice of prefix...',
-        "rating": 2,
-        'created_at': '2022-10-03 11:53:28'
-    },
-    {
-        'biz_id': 27,
-        'review_body': 'We had a lovely anniversary dinner here recently. I agree with some of the points made in other reviews. For example, waiting for your reservation outside...',
-        "rating": 4,
-        'created_at': '2022-10-01 19:54:12'
-    },
-    {
-        'biz_id': 28,
-        'review_body': 'It was my first visit and actually all dishes are amazing!!!\n' +
-        'Especially I loved their green curry!',
-        "rating": 5,
-        'created_at': '2022-09-22 15:57:27'
-    },
-    {
-        'biz_id': 28,
-        'review_body': 'Enthusiastic five stars! Authentic Thai dishes with the spice level to prove it (flavorful not oppressive in my opinion) plus a million zillion gluten free...',
-        "rating": 5,
-        'created_at': '2022-09-27 11:20:50'
-    },
-    {
-        'biz_id': 28,
-        'review_body': 'Hands down the best authentic Thai food I have ever had. Despite arriving at 9pm we were seated and served very quickly.\n' +
-        '\n' +
-        'You absolutely cannot go wrong...',
-        "rating": 5,
-        'created_at': '2022-09-26 09:39:31'
-    },
-    {
-        'biz_id': 30,
-        'review_body': "Bright, sleek & affordable is this fast food cooked fresh with a mission. It's the perfect addition to Chelsea in a tough to fill  storefront in a 'hood...",
-        "rating": 5,
-        'created_at': '2022-05-23 14:19:35'
-    },
-    {
-        'biz_id': 30,
-        'review_body': "My only regret is that I can't give 6/5 stars.\n" +
-        '\n' +
-        'I try every meal kit and prepared meal service I come across. Blue Apron, Home Chef, Hello Fresh, Freshly,...',
-        "rating": 5,
-        'created_at': '2022-04-30 17:19:40'
-    },
-    {
-        'biz_id': 30,
-        'review_body': 'Had such a great experience at Everytable! I saw this suggestion on Yelp when I searched for salads in the area, and was surprised when I walked in and...',
-        "rating": 5,
-        'created_at': '2022-04-19 10:54:28'
-    },
-    {
-        'biz_id': 29,
-        'review_body': "Original Tommy's burgers.\n" +
-        '\n' +
-        "I challenge each and every one of you to buck the trend and have Tommy's for breakfast, instead of dinner. It changes the entire...",
-        "rating": 5,
-        'created_at': '2022-10-08 15:30:59'
-    },
-    {
-        'biz_id': 29,
-        'review_body': "We've gone to a few different locations and always 10/10\n" +
-        ' \n' +
-        'The Chile cheese Tamale is out of this world.',
-        "rating": 5,
-        'created_at': '2022-09-15 12:43:29'
-    },
-    {
-        'biz_id': 29,
-        'review_body': "Tommy's! One big bite of this Double Chili-Cheeseburger is all it takes and you fall in love! MmmmmMMMM! \n" +
-        '\n' +
-        "It's a dirty burger that gets messy but something...",
-        "rating": 5,
-        'created_at': '2022-09-14 17:24:13'
-    },
-    {
-        'biz_id': 31,
-        'review_body': 'Such a delicious meal! My go-to Indian restaurant. Love this spot. \n' +
-        '\n' +
-        'The service and the vibes are incredible',
-        "rating": 5,
-        'created_at': '2022-09-15 23:28:38'
-    },
-    {
-        'biz_id': 31,
-        'review_body': 'Loved coming here. Sharan and Pramod are both super hospitable. They make you feel at home. The food was also great. We ordered butter chicken and daal...',
-        "rating": 5,
-        'created_at': '2022-09-15 21:09:32'
-    },
-    {
-        'biz_id': 31,
-        'review_body': 'Food is great, service is fast as well. \n' +
-        "My server Sharin was fantastic. Definitely give this place a try if you're in the area!",
-        "rating": 5,
-        'created_at': '2022-08-30 19:10:15'
-    },
-    {
-        'biz_id': 32,
-        'review_body': 'Wonderful food that tastes like home and extremely kind hosts. Will definitely be back.',
-        "rating": 5,
-        'created_at': '2022-09-15 22:15:03'
-    },
-    {
-        'biz_id': 32,
-        'review_body': 'The food was  scrumptious. The chicken tandoori was the perfect amount of tender. The naan was light and airy. The saag paneer was flavorful and felt...',
-        "rating": 5,
-        'created_at': '2022-09-10 20:09:21'
-    },
-    {
-        'biz_id': 32,
-        'review_body': 'I came here with my Indian boyfriend who took me here to try Indian food for the first time and it was absolutely delicious! The service was top notch, the...',
-        "rating": 5,
-        'created_at': '2022-09-08 22:09:21'
-    },
-    {
-        'biz_id': 34,
-        'review_body': "I planned to go to Bestia every day, but every time something happened that made me not go, maybe they don't want me to try their modesty.\n" +
-        '\n' +
-        'On Wednesday,...',
-        "rating": 5,
-        'created_at': '2022-09-10 13:09:23'
-    },
-    {
-        'biz_id': 34,
-        'review_body': 'Third time here and its always a great experience.\n' +
-        'VICTORIA was an amazing server and went out of her way to help my girlfriend with a hair clip due to the...',
-        "rating": 5,
-        'created_at': '2022-09-05 17:32:26'
-    },
-    {
-        'biz_id': 34,
-        'review_body': 'This place really was amazing.  Great food, great ambience.  This is one busy place.  But they are so organized that you still feel like things are made for...',
-        "rating": 5,
-        'created_at': '2022-10-11 18:29:50'
-    },
-    {
-        'biz_id': 33,
-        'review_body': 'Hum I bet it was great. As long as you like it be happy u 2 I know about it . I have been for a min . No need to lie or fake anymore .',
-        "rating": 5,
-        'created_at': '2022-09-17 18:06:09'
-    },
-    {
-        'biz_id': 33,
-        'review_body': 'Great pastries! I enjoy taking the blueberry and raspberries cake to my job they love it',
-        "rating": 5,
-        'created_at': '2022-08-31 19:02:07'
-    },
-    {
-        'biz_id': 33,
-        'review_body': "Didn't lasagna or the crème brûlée which was what I went there for. But overall I love going to Botega Louie",
-        "rating": 4,
-        'created_at': '2022-08-25 12:56:26'
-    },
-    {
-        'biz_id': 36,
-        'review_body': 'Definitely a nice ramen spot! We split a spicy miso ramen and chashu pork bowl combo, and this was such a great call. \n' +
-        '\n' +
-        'The ramen was filling, tasty, and...',
-        "rating": 5,
-        'created_at': '2022-10-08 17:09:24'
-    },
-    {
-        'biz_id': 36,
-        'review_body': "Not sure what all the hype was about. It's a ramen joint, and a really expensive one at that. \n" +
-        '\n' +
-        'Sure, the ramen was fine, but in the end paying near $40 for...',
-        "rating": 3,
-        'created_at': '2022-10-11 04:58:00'
-    },
-    {
-        'biz_id': 36,
-        'review_body': 'Came on the weekend with a date and it was a recommended spot to try. Honestly disappointed and most likely from the hype. When we went, it was a long line...',
-        "rating": 3,
-        'created_at': '2022-09-29 12:43:57'
-    },
-    {
-        'biz_id': 35,
-        'review_body': 'Fire ramen I completely love it totally recommend it !!!!!go get yourself a ramen bowl by Slurpin',
-        "rating": 5,
-        'created_at': '2022-08-28 16:01:18'
-    },
-    {
-        'biz_id': 35,
-        'review_body': 'One of my favorite Ramen places in Los Angeles. Many choices here including a Vegan choice',
-        "rating": 5,
-        'created_at': '2022-09-27 18:10:38'
-    },
-    {
-        'biz_id': 35,
-        'review_body': 'Delicious, clean, great service, great music and a good price. Great at refilling waters, flavor is rich. No complaints, easy recommendation.',
-        "rating": 5,
-        'created_at': '2022-09-16 15:26:39'
-    },
-    {
-        'biz_id': 38,
-        'review_body': 'An update from over 9 years later....and boy is it a complete 180.\n' +
-        '\n' +
-        'Since its a smaller restaurant, the long wait time remains: be prepared for a wait at...',
-        "rating": 5,
-        'created_at': '2022-10-12 16:42:28'
-    },
-    {
-        'biz_id': 38,
-        'review_body': 'I was pleasantly surprised by this place. As a tourist, you really only know about Kang Ho Dong Baekjeong and Quarters. We were made aware of this place by...',
-        "rating": 4,
-        'created_at': '2022-10-12 12:26:45'
-    },
-    {
-        'biz_id': 38,
-        'review_body': "The husband and I couldn't figure out what we wanted for dinner while visiting LA, so we ended up going with Hae Jang Chon because we've been here several...",
-        "rating": 3,
-        'created_at': '2022-10-10 16:34:57'
-    },
-    {
-        'biz_id': 37,
-        'review_body': 'A classic ktown spot for kbbq. I usually get the beef combo here, but opted for pork instead last night for dinner. Beef usually cooks faster whereas pork...',
-        "rating": 5,
-        'created_at': '2022-10-08 09:02:01'
-    },
-    {
-        'biz_id': 37,
-        'review_body': 'We came here as backup because the line at Quarters was too long on a Sunday night. This is in a popping plaza on 6th street in Koreatown. \n' +
-        '\n' +
-        'The space at...',
-        "rating": 4,
-        'created_at': '2022-10-08 19:36:39'
-    },
-    {
-        'biz_id': 37,
-        'review_body': "Stilll a staple if your not looking for the AYCE cheap fix!!! Good quality over abundance and seriously y'all do the math and I think all would agree that...",
-        "rating": 4,
-        'created_at': '2022-10-05 06:49:56'
-    },
-    {
-        'biz_id': 39,
-        'review_body': "Great food, with the best baba ganoush I've had outside the Middle East. Highly recommended.",
-        "rating": 5,
-        'created_at': '2022-08-25 12:10:55'
-    },
-    {
-        'biz_id': 39,
-        'review_body': 'Everything looks and tastes like quality food. The falafel is phenomenal. BRING YO KIDS BRING YO WIFE BRING YO MAMA',
-        "rating": 5,
-        'created_at': '2022-09-08 13:53:45'
-    },
-    {
-        'biz_id': 39,
-        'review_body': 'Amazing falafel and pita bread! I believe the bread is freshly made in house because you can taste the freshness of all the ingredients. Super delicious!...',
-        "rating": 5,
-        'created_at': '2022-09-08 13:51:45'
-    },
-    {
-        'biz_id': 40,
-        'review_body': 'Street parking was easy on a Wednesday evening (valet parking is available too).\n' +
-        'Live music added a special touch to dinning  in. Dorian and Mich were great...',
-        "rating": 5,
-        'created_at': '2022-09-14 23:20:12'
-    },
-    {
-        'biz_id': 40,
-        'review_body': 'Always love coming to bacari. This time I loved it a little extra because of my wonderful server teddy. I had a lot of trouble finding my way through the...',
-        "rating": 5,
-        'created_at': '2022-08-27 13:56:30'
-    },
-    {
-        'biz_id': 40,
-        'review_body': 'We celebrated my friends birthday here and by far the best experience! The food was delicious and our server Cheryl was the best! The manager Fabian gave us...',
-        "rating": 5,
-        'created_at': '2022-09-05 22:33:29'
-    },
-    {
-        'biz_id': 42,
-        'review_body': 'This has been the best and tastiest tacos of my life, this place has been under my eye for a long time, and my friend chose to celebrate her birthday here...',
-        "rating": 5,
-        'created_at': '2022-09-15 12:27:51'
-    },
-    {
-        'biz_id': 42,
-        'review_body': 'We visited this place two days in a row bc it was so good!!!! We had tinga and chorizo and they were both amazing. The tortillas are homemade and make the...',
-        "rating": 5,
-        'created_at': '2022-09-24 18:36:33'
-    },
-    {
-        'biz_id': 42,
-        'review_body': 'How have I never reviewed Guisados? In a phrase: Worth the hype!\n' +
-        '\n' +
-        'While there is no Guisados near me (please head west!), the tacos here are amazing. This...',
-        "rating": 5,
-        'created_at': '2022-10-04 15:56:59'
-    },
-    {
-        'biz_id': 41,
-        'review_body': 'This place is a hidden gem! The food is excellent and so is the service. I ordered the Lomo Saltado and ceviche and highly recommend both!',
-        "rating": 5,
-        'created_at': '2022-09-05 15:54:16'
-    },
-    {
-        'biz_id': 41,
-        'review_body': 'Their Lomo Saltado is amazing! \n' +
-        'Super delicious and flavorful. We found this restaurant while shopping at the Santee Alleys and Omg I was not disappointed...',
-        "rating": 5,
-        'created_at': '2022-08-15 17:43:39'
-    },
-    {
-        'biz_id': 41,
-        'review_body': 'Summary: Friendly staff and good food. Lomo saltado and al pastor tacos were both very good, but not amazing. Seating is entirely outside along the sidewalk...',
-        "rating": 3,
-        'created_at': '2022-09-17 18:22:25'
-    },
-    {
-        'biz_id': 46,
-        'review_body': 'Best pho in Koreatown hands down. The staff are wonderful and the atmosphere is perfect for a rejuvenating bowl of pho. Also, make sure to grab a Viet iced...',
-        "rating": 5,
-        'created_at': '2022-09-12 21:14:59'
-    },
-    {
-        'biz_id': 46,
-        'review_body': 'gloomy weather, big appetite\n' +
-        'perfect day for pho :))\n' +
-        'went with some friends and we were all pretty hungry and tired. the food comes out pretty quickly, i...',
-        "rating": 5,
-        'created_at': '2022-09-10 13:06:56'
-    },
-    {
-        'biz_id': 46,
-        'review_body': 'Came here for dinner and got the oxtail bun Bo hue and shared some egg rolls. The BBH was pretty good and the oxtail was cooked perfectly and very tender,...',
-        "rating": 4,
-        'created_at': '2022-09-02 21:48:18'
-    },
-    {
-        'biz_id': 43,
-        'review_body': "I planned to go to Bestia every day, but every time something happened that made me not go, maybe they don't want me to try their modesty.\n" +
-        '\n' +
-        'On Wednesday,...',
-        "rating": 5,
-        'created_at': '2022-09-10 13:09:23'
-    },
-    {
-        'biz_id': 43,
-        'review_body': 'Third time here and its always a great experience.\n' +
-        'VICTORIA was an amazing server and went out of her way to help my girlfriend with a hair clip due to the...',
-        "rating": 5,
-        'created_at': '2022-09-05 17:32:26'
-    },
-    {
-        'biz_id': 43,
-        'review_body': 'This place really was amazing.  Great food, great ambience.  This is one busy place.  But they are so organized that you still feel like things are made for...',
-        "rating": 5,
-        'created_at': '2022-10-11 18:29:50'
-    },
-    {
-        'biz_id': 45,
-        'review_body': 'Thanks to Nick for the great service and recommendations\n' +
-        'food and drinks were awesome!',
-        "rating": 5,
-        'created_at': '2022-09-10 18:29:19'
-    },
-    {
-        'biz_id': 45,
-        'review_body': 'Great service thanks to our waiter Nick! He was very nice and attentive. Burgers were delicious! I got the Monster Mac and my boyfriend got the Truffle...',
-        "rating": 5,
-        'created_at': '2022-09-17 22:18:45'
-    },
-    {
-        'biz_id': 45,
-        'review_body': 'Had a great time! Roger provided amazing and attentive service to my friend, my fur baby and I. We sat outside; my dog got VIP treatment with treats and...',
-        "rating": 5,
-        'created_at': '2022-08-27 14:50:52'
-    },
-    {
-        'biz_id': 44,
-        'review_body': "The deep dish is the best pizza in all of LA, it's not even close. Can be a bit of a wait on weekends but you can put your deep dish order in so it's coming...",
-        "rating": 5,
-        'created_at': '2022-09-03 15:49:23'
-    },
-    {
-        'biz_id': 44,
-        'review_body': 'Take it from two guys that can EACH put away a large at a usual Pizza place, a 14" Deep Dish at Masa is definitely enough to feed 3 people who can eat....',
-        "rating": 5,
-        'created_at': '2022-10-07 20:34:17'
-    },
-    {
-        'biz_id': 44,
-        'review_body': 'I was left pretty disappointed, I got the Alla Roma gnocchi with grilled shrimp. \n' +
-        '\n' +
-        'The sauce and the gnocchi were AMAZING. \n' +
-        'However, the shrimp was beyond...',
-        "rating": 2,
-        'created_at': '2022-09-10 13:53:12'
-    },
-    {
-        'biz_id': 47,
-        'review_body': 'Do you ever wonder if the love of your life has been right before your eyes all along? \n' +
-        '\n' +
-        "I honestly drove by Langer's Deli Monday through Friday for years...",
-        "rating": 5,
-        'created_at': '2022-10-11 16:01:39'
-    },
-    {
-        'biz_id': 47,
-        'review_body': 'I love everything about this old-school diner except for (a) the unsavory location and (b) the fact that the famous #19 is not grilled. I understand that it...',
-        "rating": 4,
-        'created_at': '2022-10-11 16:39:29'
-    },
-    {
-        'biz_id': 47,
-        'review_body': 'The great: my wife and I went here for a late lunch during a short vacation for our first time. We both got pastrami sandwiches (of course) and they totally...',
-        "rating": 2,
-        'created_at': '2022-09-29 23:56:07'
-    },
-    {
-        'biz_id': 49,
-        'review_body': "What do you expect from a 2 Michelin star restaurant? This place delivers. Doesn't look fancy from the outside, but once you go in, it is a whole different...",
-        "rating": 5,
-        'created_at': '2022-09-19 17:52:38'
-    },
-    {
-        'biz_id': 49,
-        'review_body': 'I must say, I was thoroughly impressed with our visit here. The breadth of fine seafood and the execution of these delicacies were done adroitly and...',
-        "rating": 5,
-        'created_at': '2022-09-19 10:19:48'
-    },
-    {
-        'biz_id': 49,
-        'review_body': 'This place never disappoints. First time back post-pandemic and looks like they got rid of the a la carte options and the tasting menu is the only option...',
-        "rating": 5,
-        'created_at': '2022-09-18 14:52:26'
-    },
-    {
-        'biz_id': 50,
-        'review_body': "We ordered Genwa via Postmates and were blown away with the quality and how well it traveled. We'll absolutely order again and we recommend them to anyone...",
-        "rating": 5,
-        'created_at': '2022-08-17 12:53:43'
-    },
-    {
-        'biz_id': 50,
-        'review_body': 'Bottom-Line: Super overhyped, there are way too many better options for you to consider before Genwa. \n' +
-        '\n' +
-        "Deceptive, Genwa's lunch special looks like you're...",
-        "rating": 2,
-        'created_at': '2022-08-09 15:14:06'
-    },
-    {
-        'biz_id': 50,
-        'review_body': 'The service and food quality at this place is amazing. Pricing may be considered $$ to $$$ but still well worth it! \n' +
-        '\n' +
-        'My friends and I came in for the which...',
-        "rating": 3,
-        'created_at': '2022-07-29 11:36:27'
-    },
-    {
-        'biz_id': 48,
-        'review_body': "The sandwiches are basically what an egg McMuffin is supposed to be. It's a simple but well-made sandwich, the bread is toasted well and the egg is light...",
-        "rating": 5,
-        'created_at': '2022-10-01 11:58:31'
-    },
-    {
-        'biz_id': 48,
-        'review_body': "Skipped it Sunday since the line was enormous and was very happy to see a much improved wait on a Monday. All in all, the food is fine, but it doesn't quite...",
-        "rating": 3,
-        'created_at': '2022-10-03 13:15:08'
-    },
-    {
-        'biz_id': 48,
-        'review_body': "It's simple: I saw a long line, and without fully understanding why and what the queue was for, I joined! \n" +
-        '\n' +
-        'But in all seriousness, the line was crazy long....',
-        "rating": 4,
-        'created_at': '2022-09-30 09:26:03'
-    },
-    {
-        'biz_id': 52,
-        'review_body': "I've been coming to LaLa's Argentine Grill on Melrose for years. I'm born and raised in L.A so I've been coming for a pretty long time.  \n" +
-        '\n' +
-        "Anyways I've came...",
-        "rating": 5,
-        'created_at': '2022-08-22 15:26:39'
-    },
-    {
-        'biz_id': 52,
-        'review_body': "Let's talk about salt. We came for date night expecting a tasty dinner. The opposite happened.  We sat outside for outdoor seating ( covid is still here)....",
-        "rating": 2,
-        'created_at': '2022-09-10 22:16:44'
-    },
-    {
-        'biz_id': 52,
-        'review_body': 'Such a cute place! Reminded us of when we traveled to Argentina. The chimichuri was amazing and tasted just like back in Buenos Aires. \n' +
-        '\n' +
-        'I wish they had AC...',
-        "rating": 5,
-        'created_at': '2022-08-09 08:54:02'
-    },
-    {
-        'biz_id': 51,
-        'review_body': 'After finding street parking since the valet was not available took a second to find the small doors leading i to this restaurant.\n' +
-        'AMAZING Argentinian style...',
-        "rating": 5,
-        'created_at': '2022-10-04 21:14:05'
-    },
-    {
-        'biz_id': 51,
-        'review_body': 'We just had a birthday dinner with our whole family at Carlitos Gardel and let me tell you everything was just exquisite! Chef Gerard was so amazing and...',
-        "rating": 5,
-        'created_at': '2022-08-27 15:08:38'
-    },
-    {
-        'biz_id': 51,
-        'review_body': 'Really yummy steaks, bread, and cute atmosphere. Our server Jose gave us an amazing night with great service, jokes, and patient explanations. It was our...',
-        "rating": 5,
-        'created_at': '2022-08-13 13:16:58'
-    },
-    {
-        'biz_id': 54,
-        'review_body': 'Ever since 2018, Kazu Nori has been my favorite go to whenever I want to treat myself. Even though I think it is a treat, the price is reasonable. $28 for 6...',
-        "rating": 5,
-        'created_at': '2022-10-13 13:00:31'
-    },
-    {
-        'biz_id': 54,
-        'review_body': "Amazing sushi and great service. I've been here a handful of times and I am always impressed by the quality. A streamlined menu so no extra fluff like...",
-        "rating": 5,
-        'created_at': '2022-10-10 22:07:25'
-    },
-    {
-        'biz_id': 54,
-        'review_body': "I'm not the biggest fan of Sugarfish because of how limited the sushi is. So with KazuNori being an offshoot of Sugarfish, I wasn't that interested in...",
-        "rating": 5,
-        'created_at': '2022-10-10 00:08:47'
-    },
-    {
-        'biz_id': 53,
-        'review_body': 'Sushi Gen is one of my go-to spots for sushi in LA! The prices are very fair and the quality never disappoints. \n' +
-        '\n' +
-        'We went on Friday around 11:45am and were...',
-        "rating": 5,
-        'created_at': '2022-10-09 18:14:06'
-    },
-    {
-        'biz_id': 53,
-        'review_body': "Phenomenal. Absolutely some of the best sushi I've had anywhere.\n" +
-        '\n' +
-        'Do not come here expecting Americanized roll sushi. Come expecting an Edomae-style sushi...',
-        "rating": 5,
-        'created_at': '2022-10-02 10:17:45'
-    },
-    {
-        'biz_id': 53,
-        'review_body': "First time back at Sushi Gen since the pandemic and I'd must admit that I am pleased that the quality of service and food have remained excellent.  Our...",
-        "rating": 5,
-        'created_at': '2022-10-01 15:25:18'
-    },
-    {
-        'biz_id': 55,
-        'review_body': 'Great food, Plenty of seating,\n' +
-        'Good Friendly Service, Clean \n' +
-        'Environment, Overall Great Value for the Money!\n' +
-        'Highly Recommended',
-        "rating": 5,
-        'created_at': '2022-09-19 15:07:39'
-    },
-    {
-        'biz_id': 55,
-        'review_body': 'If you want guaranteed delicious Thai food, Hoy-ka is the spot. It never disappoints.\n' +
-        '\n' +
-        'I always get their papaya salad: you choose your spicy level but...',
-        "rating": 5,
-        'created_at': '2022-09-03 08:38:13'
-    },
-    {
-        'biz_id': 55,
-        'review_body': 'Recently, my girlfriend fell in love with Thai boat noodles. Since she was craving it, I had to take her to one of the best. 45 minutes of driving later,...',
-        "rating": 4,
-        'created_at': '2022-09-29 19:47:18'
-    },
-    {
-        'biz_id': 57,
-        'review_body': 'Delicious, fresh food in a nice ambiance. Everything tastes fresh with a nice balance of healthy and indulgent. Loved the acai bowl.',
-        "rating": 5,
-        'created_at': '2022-09-10 08:00:21'
-    },
-    {
-        'biz_id': 57,
-        'review_body': "Cafe Gratitude is one of my top three favorite restaurants in this entire world! I love it for SO many reasons, and I rave about it to anyone who'll listen...",
-        "rating": 5,
-        'created_at': '2022-09-16 16:33:02'
-    },
-    {
-        'biz_id': 57,
-        'review_body': 'I absolutely love the food but there is so much inconsistency. The prices on Ubereats are higher, cafe gratitude offers free delivery if you order from the...',
-        "rating": 3,
-        'created_at': '2022-10-02 15:06:54'
-    },
-    {
-        'biz_id': 58,
-        'review_body': 'First time in this cafe and I had an amazing experience! I recommend you guys to try their food. Waffles are fire  and their chilaquiles are bomb too  While...',
-        "rating": 5,
-        'created_at': '2022-08-27 22:44:26'
-    },
-    {
-        'biz_id': 58,
-        'review_body': 'Everything about this place is so cute! The interior is so aesthetic! And the food is great. I honestly did not expect to like the food as much as I did. My...',
-        "rating": 5,
-        'created_at': '2022-09-14 13:23:22'
-    },
-    {
-        'biz_id': 58,
-        'review_body': 'My first visit to Zinc was in the early 90s in Laguna Beach. Back then, it was so ahead of its time, serving delicious, vegetarian meals that simply were...',
-        "rating": 4,
-        'created_at': '2022-10-05 10:21:23'
-    },
-    {
-        'biz_id': 56,
-        'review_body': 'Been to Pa Ord so many times over the years, but they never fail to amaze me with their delicious food. There are also many other good places around Thai...',
-        "rating": 5,
-        'created_at': '2022-10-10 23:32:34'
-    },
-    {
-        'biz_id': 56,
-        'review_body': '*Drunken Noodle with Crispy Pork: medium spicy is on the spicer side and had some sliced jalapeños tossed in, approach with caution. might need to get mild...',
-        "rating": 4,
-        'created_at': '2022-09-01 22:12:52'
-    },
-    {
-        'biz_id': 56,
-        'review_body': 'There is no shortage of Thai options in the area that houses Po Ord, but this is where you want to spend your money if you have a craving.\n' +
-        '\n' +
-        'Authentic,...',
-        "rating": 5,
-        'created_at': '2022-08-25 19:44:54'
-    },
-    {
-        'biz_id': 46,
-        'review_body': 'Best pho in Koreatown hands down. The staff are wonderful and the atmosphere is perfect for a rejuvenating bowl of pho. Also, make sure to grab a Viet iced...',
-        "rating": 5,
-        'created_at': '2022-09-12 21:14:59'
-    },
-    {
-        'biz_id': 46,
-        'review_body': 'gloomy weather, big appetite\n' +
-        'perfect day for pho :))\n' +
-        'went with some friends and we were all pretty hungry and tired. the food comes out pretty quickly, i...',
-        "rating": 5,
-        'created_at': '2022-09-10 13:06:56'
-    },
-    {
-        'biz_id': 46,
-        'review_body': 'Came here for dinner and got the oxtail bun Bo hue and shared some egg rolls. The BBH was pretty good and the oxtail was cooked perfectly and very tender,...',
-        "rating": 4,
-        'created_at': '2022-09-02 21:48:18'
-    },
-    {
-        'biz_id': 60,
-        'review_body': "BOMB.COM : The best pho in town ! I've been coming here for years , service still sucks but I love the charbroiled pork pho and of course it wouldn't be...",
-        "rating": 5,
-        'created_at': '2022-08-27 11:48:45'
-    },
-    {
-        'biz_id': 60,
-        'review_body': 'Pho 87 is one of a kind. While we are lucky to have an abundance of good pho restaurants here in Southern California, there are many things that make this...',
-        "rating": 5,
-        'created_at': '2022-10-02 21:02:11'
-    },
-    {
-        'biz_id': 60,
-        'review_body': 'Pho 87 serves up some delicious PHO with 80 something items on their menu. I read that the grilled pork pho is one of their popular dishes.\n' +
-        '\n' +
-        'I am a creature...',
-        "rating": 4,
-        'created_at': '2022-10-03 18:22:17'
-    },
-    {
-        'biz_id': 62,
-        'review_body': 'Soft, just the right amount of sweetness. $2/each. About 15 different flavors and filling options to choose from. Mostly red bean (azuki) based...',
-        "rating": 5,
-        'created_at': '2022-08-12 17:02:25'
-    },
-    {
-        'biz_id': 62,
-        'review_body': "If you're looking for fresh mochi, this is a must try! Their operating hours are only Friday - Sunday from 10 am - 4 pm. \n" +
-        '\n' +
-        'Food \n' +
-        'Gift boxes with 12 pieces -...',
-        "rating": 4,
-        'created_at': '2022-09-18 16:09:19'
-    },
-    {
-        'biz_id': 62,
-        'review_body': 'stumbled upon this mochi gem while wandering around Japantown. a few of their top-selling was sold out already since I came in the afternoon.\n' +
-        '\n' +
-        'my favorite...',
-        "rating": 4,
-        'created_at': '2022-08-07 17:55:02'
-    },
-    {
-        'biz_id': 61,
-        'review_body': 'One word-SCRUMPTIOUS!!!!! Ok, YELP would not post my review until it has 85 characters.',
-        "rating": 5,
-        'created_at': '2022-09-16 22:58:01'
-    },
-    {
-        'biz_id': 61,
-        'review_body': "Top notch. I can understand why Peter's is an Institution in this town. But unlike most, I prefer the cupcake to the cake version of the burnt almond stuff....",
-        "rating": 5,
-        'created_at': '2022-08-28 13:12:25'
-    },
-    {
-        'biz_id': 61,
-        'review_body': "Peter's Bakery is so popular with a zillion customers each day, it definitely does not need a review from me, but I am writing the review to highlight...",
-        "rating": 5,
-        'created_at': '2022-10-07 11:59:13'
-    },
-    {
-        'biz_id': 64,
-        'review_body': "Good vibes, good drinks & good location :)  This is my family's go-to boba spot! \n" +
-        '\n' +
-        'The drinks are well-crafted and the flavors in each mesh really well...',
-        "rating": 5,
-        'created_at': '2022-08-19 11:07:06'
-    },
-    {
-        'biz_id': 64,
-        'review_body': 'This Pekoe was the OG one that I prefer over the other locations. I feel like this location is way busier than the others, so there is always a line and a...',
-        "rating": 3,
-        'created_at': '2022-09-28 10:33:59'
-    },
-    {
-        'biz_id': 64,
-        'review_body': 'Thought this place was a hair salon at first after driving by but found out it was boba\n' +
-        '\n' +
-        'The vibes are almost like that of a nightclub, lots of music and...',
-        "rating": 3,
-        'created_at': '2022-08-09 12:34:26'
-    },
-    {
-        'biz_id': 63,
-        'review_body': 'I stumbled across this place late one night and did not know what to drink. The owner was helping behind the counter and asked a few questions. He said "I...',
-        "rating": 5,
-        'created_at': '2022-08-27 00:24:12'
-    },
-    {
-        'biz_id': 63,
-        'review_body': 'cool asss! bosss! go for the drink! and for the boss! spread! love yall!! dont forget to tell your story!',
-        "rating": 5,
-        'created_at': '2022-09-25 00:05:25'
-    },
-    {
-        'biz_id': 63,
-        'review_body': "All the teas are so good it's hard to pick which one is the best--and I have tried many from each menu",
-        "rating": 5,
-        'created_at': '2022-09-26 00:57:05'
-    },
-    {
-        'biz_id': 63,
-        'review_body': 'I stumbled across this place late one night and did not know what to drink. The owner was helping behind the counter and asked a few questions. He said "I...',
-        "rating": 5,
-        'created_at': '2022-08-27 00:24:12'
-    },
-    {
-        'biz_id': 63,
-        'review_body': 'cool asss! bosss! go for the drink! and for the boss! spread! love yall!! dont forget to tell your story!',
-        "rating": 5,
-        'created_at': '2022-09-25 00:05:25'
-    },
-    {
-        'biz_id': 63,
-        'review_body': "All the teas are so good it's hard to pick which one is the best--and I have tried many from each menu",
-        "rating": 5,
-        'created_at': '2022-09-26 00:57:05'
-    },
-    {
-        'biz_id': 65,
-        'review_body': 'Great and friendly customer service that is followed by fairly quick wait times when not super packed. The coffee itself tastes great with quality beans as...',
-        "rating": 5,
-        'created_at': '2022-08-23 21:23:51'
-    },
-    {
-        'biz_id': 65,
-        'review_body': 'Why 5 stars? Because I will forever be a homer for Philz.\n' +
-        '\n' +
-        '   ---   ---   ---\n' +
-        '\n' +
-        'I have considered Philz my favorite coffee shop in the country for years....',
-        "rating": 5,
-        'created_at': '2022-09-18 05:50:06'
-    },
-    {
-        'biz_id': 65,
-        'review_body': 'Came by for coffee the other day and it was a leisurely experience. Attempted to order ahead direct from the Philz app and realized that as a franchised...',
-        "rating": 4,
-        'created_at': '2022-10-11 17:14:24'
-    },
-    {
-        'biz_id': 67,
-        'review_body': "Best cake in town!! If you love crepe cake, you can't miss this place. Milk and black sesame are the best!",
-        "rating": 5,
-        'created_at': '2022-08-30 17:19:25'
-    },
-    {
-        'biz_id': 67,
-        'review_body': 'Anton had one of the best desserts I had during my stay in San Jose.  When I flew in I wanted to pick up some desserts since the people we were staying with...',
-        "rating": 5,
-        'created_at': '2022-08-23 09:54:42'
-    },
-    {
-        'biz_id': 67,
-        'review_body': 'Are you looking for top notch sweets? Do you want it to be delicious?\n' +
-        '\n' +
-        'Anton SV is the spot!! Although somewhat tucked away, this spot is a must try!! These...',
-        "rating": 4,
-        'created_at': '2022-09-30 17:48:45'
-    },
-    {
-        'biz_id': 68,
-        'review_body': "Charlie is a delight and so are his cheesecake poppers! They're perfect in size and sweetness.",
-        "rating": 5,
-        'created_at': '2022-09-16 21:28:42'
-    },
-    {
-        'biz_id': 68,
-        'review_body': "Best Cheesecake in the South Bay. Hands Down! Don't pass up this little shop in a strip mall.",
-        "rating": 5,
-        'created_at': '2022-09-01 11:43:46'
-    },
-    {
-        'biz_id': 68,
-        'review_body': 'Cheese the Day\n' +
-        '\n' +
-        "A big city like San José is full of hole-in-the-wall hidden gems, and since 2002, Charlie's Cheesecakes definitely fits that bill.\n" +
-        '\n' +
-        "Let's...",
-        "rating": 5,
-        'created_at': '2022-09-20 14:11:44'
-    },
-    {
-        'biz_id': 70,
-        'review_body': 'Las tortas son un gran sorpresa!!! Tienes que probarlas. El jugo de naranja es fresco y sabe muy rico!',
-        "rating": 5,
-        'created_at': '2022-08-26 15:31:46'
-    },
-    {
-        'biz_id': 70,
-        'review_body': 'This place is amazing! Reminds me of my childhood in the old Bay Area. \n' +
-        '\n' +
-        'So many people bought cakes and tortas on a Saturday afternoon. You know this place...',
-        "rating": 5,
-        'created_at': '2022-10-09 21:47:04'
-    },
-    {
-        'biz_id': 70,
-        'review_body': '4.5\n' +
-        '\n' +
-        'I like how they offer a wide variety of pastries! Some pastries can be a hit or a miss.\n' +
-        '\n' +
-        'I would recommend the Asada torta as it is delicious and huge...',
-        "rating": 5,
-        'created_at': '2022-10-04 23:45:18'
-    },
-    {
-        'biz_id': 61,
-        'review_body': 'One word-SCRUMPTIOUS!!!!! Ok, YELP would not post my review until it has 85 characters.',
-        "rating": 5,
-        'created_at': '2022-09-16 22:58:01'
-    },
-    {
-        'biz_id': 61,
-        'review_body': "Top notch. I can understand why Peter's is an Institution in this town. But unlike most, I prefer the cupcake to the cake version of the burnt almond stuff....",
-        "rating": 5,
-        'created_at': '2022-08-28 13:12:25'
-    },
-    {
-        'biz_id': 61,
-        'review_body': "Peter's Bakery is so popular with a zillion customers each day, it definitely does not need a review from me, but I am writing the review to highlight...",
-        "rating": 5,
-        'created_at': '2022-10-07 11:59:13'
-    },
-    {
-        'biz_id': 72,
-        'review_body': "I have never seen or heard of this store ever, but after shopping at Dick's Sporting Goods we saw a lot of families gathered here outside and we wanted to...",
-        "rating": 5,
-        'created_at': '2022-07-01 01:16:46'
-    },
-    {
-        'biz_id': 72,
-        'review_body': 'Great choice of ice cream selection. \n' +
-        '\n' +
-        'Came in tonight with my 7 year old at 9pm on a Friday night after checking the business hours on Yelp and their...',
-        "rating": 2,
-        'created_at': '2022-07-08 21:08:14'
-    },
-    {
-        'biz_id': 72,
-        'review_body': 'Just ok!  I had high hopes... but prefer smitten or willow glen creamery better.  \n' +
-        '\n' +
-        'Nothing really wowed me.... no seating available either.',
-        "rating": 3,
-        'created_at': '2022-06-06 12:04:10'
-    },
-    {
-        'biz_id': 71,
-        'review_body': "Run don't walk for pineapple dole whip!!! Super delicious and creamy texture \n" +
-        '\n' +
-        "Don't have to travel to Disney or wait in those long lines either \n" +
-        '\n' +
-        'There are...',
-        "rating": 5,
-        'created_at': '2022-10-09 02:21:32'
-    },
-    {
-        'biz_id': 71,
-        'review_body': 'OH BOY! This ice cream sure does melt fast... I love that they give fairly generous portions. Perks of a friendly local business. Crazy to think they have...',
-        "rating": 4,
-        'created_at': '2022-09-24 15:58:16'
-    },
-    {
-        'biz_id': 71,
-        'review_body': 'Totally forgot to take a photo, but this topped off our evening after dinner at a nearby restaurant! \n' +
-        '\n' +
-        'The outdoor seating is a nice place to chill out and...',
-        "rating": 4,
-        'created_at': '2022-09-11 17:33:15'
-    },
-    {
-        'biz_id': 73,
-        'review_body': 'This is my favorite boba store in the area! I love that they use fresh fruit in their drinks (the watermelon green tea is so refreshing!!). I personally...',
-        "rating": 5,
-        'created_at': '2022-08-27 20:41:46'
-    },
-    {
-        'biz_id': 73,
-        'review_body': "This place is probably one of my favorite tea spots in the bay! I tried the black sugar milk tea and it is probably one of the best drinks I've ever tried,...",
-        "rating": 5,
-        'created_at': '2022-09-07 21:30:29'
-    },
-    {
-        'biz_id': 73,
-        'review_body': "This is my go-to boba place. My favorite drink is the brown rice milk tea and it's so good and flavorful. Customer service here is amazing and very...",
-        "rating": 5,
-        'created_at': '2022-09-06 17:43:37'
-    },
-    {
-        'biz_id': 74,
-        'review_body': "These are the best vegan donuts I've tried so far, they're located in San Jose. There's usually no trouble finding parking on the street nearby. \n" +
-        '\n' +
-        'Make sure...',
-        "rating": 5,
-        'created_at': '2022-09-27 10:51:03'
-    },
-    {
-        'biz_id': 74,
-        'review_body': "We were in the area and decided to make a pit stop for donuts. I've heard so many good things from not just Yelp but from people telling me about this spot...",
-        "rating": 3,
-        'created_at': '2022-09-04 16:39:45'
-    },
-    {
-        'biz_id': 74,
-        'review_body': 'Very Hip place of donut bistro cafe. Modern look,\n' +
-        'Good choice of coffee and donuts.\n' +
-        'If you are Vegan or Vegetarian you will like the taste of the donut. But...',
-        "rating": 3,
-        'created_at': '2022-08-08 00:54:35'
-    },
-    {
-        'biz_id': 75,
-        'review_body': 'seevice is good, thanks Jacob! actually moat of the server were friendly, clean place I love the place was set up specially their iverhead exhaust, great...',
-        "rating": 5,
-        'created_at': '2022-09-27 09:55:31'
-    },
-    {
-        'biz_id': 75,
-        'review_body': 'This place is a gem! Truly! My large group rolled in late on a Sunday without making a reservation. Despite this the staff was more than happy to...',
-        "rating": 5,
-        'created_at': '2022-09-03 12:23:50'
-    },
-    {
-        'biz_id': 75,
-        'review_body': 'The service was nice, the staff there is friendly. \n' +
-        '\n' +
-        'We did dinner during the heat wave. The AC had an issue. 3 star review is solely on the appetizers.  We...',
-        "rating": 3,
-        'created_at': '2022-09-11 11:04:10'
-    },
-    {
-        'biz_id': 76,
-        'review_body': 'Very good experience with easy waitlist checkin through Yelp! \n' +
-        '\n' +
-        'Food options were plentiful and proteins were good quality for AYCE. Server takes your...',
-        "rating": 5,
-        'created_at': '2022-09-25 08:29:35'
-    },
-    {
-        'biz_id': 76,
-        'review_body': 'I decided to try QPOT for the convenience of it being the closest I could find to where I live. A bit disappointed with the vegetable selection if you opt...',
-        "rating": 3,
-        'created_at': '2022-10-09 22:55:17'
-    },
-    {
-        'biz_id': 76,
-        'review_body': "Didn't really like my experience here & probably the worst AYCE Korean BBQ place I've tried yet. Maybe I should've done the hotpot? I was craving Korean bbq...",
-        "rating": 2,
-        'created_at': '2022-09-22 01:33:23'
-    },
-    {
-        'biz_id': 77,
-        'review_body': 'Good food especial Savor de México and atención from meseros lo recomiendo a mis amigos',
-        "rating": 4,
-        'created_at': '2022-09-22 20:28:01'
-    },
-    {
-        'biz_id': 77,
-        'review_body': 'I have always found the food here to be slightly under-seasoned and a little flat. Great menu, I just wish the flavors were bolder. Last visit, I had the...',
-        "rating": 3,
-        'created_at': '2022-09-09 08:18:04'
-    },
-    {
-        'biz_id': 77,
-        'review_body': "Although I have visited the Pruneyard location, this is my first time eating at Luna's Alameda location.\n" +
-        '\n' +
-        'Everything was phenomenal. The tortilla chips and...',
-        "rating": 5,
-        'created_at': '2022-09-16 09:18:33'
-    },
-    {
-        'biz_id': 78,
-        'review_body': "Just had the best breakfast before my flight back to San Diego. Haven't had chilaquiles this tasty and savory in a long time. Waiter was very polite and...",
-        "rating": 5,
-        'created_at': '2022-09-28 11:23:13'
-    },
-    {
-        'biz_id': 78,
-        'review_body': 'Food is always delicious, the restaurant has a nice atmosphere, and the service is top notch. We like to go to the Table for date nights.',
-        "rating": 5,
-        'created_at': '2022-08-24 09:48:41'
-    },
-    {
-        'biz_id': 78,
-        'review_body': 'The bone marrow is my go-to. The menu rotates some seasonal items. \n' +
-        '\n' +
-        'Brunch and mimosas are a favorite for groups on the weekends, but be sure to get there...',
-        "rating": 4,
-        'created_at': '2022-10-05 10:34:31'
-    },
-    {
-        'biz_id': 79,
-        'review_body': 'This place gets 10 starts. Unbelievable fresh burger and sauces. Service was impeccable and the atmosphere was amazing!!! I love the decor and the ambiance....',
-        "rating": 5,
-        'created_at': '2022-10-01 20:45:33'
-    },
-    {
-        'biz_id': 79,
-        'review_body': "I haven't been to this particular burger bar in years! I was surprised to see a separate ordering area for takeout, but I liked their set up. They had their...",
-        "rating": 4,
-        'created_at': '2022-09-26 17:10:05'
-    },
-    {
-        'biz_id': 79,
-        'review_body': 'Got the Old School burger with sweet potato fries and the Simple Salad. Got home and found out there were no fries :(  Ate my meal and gave them a ring....',
-        "rating": 5,
-        'created_at': '2022-09-22 18:27:41'
-    },
-    {
-        'biz_id': 80,
-        'review_body': 'YUM! I am a little particular when it comes to my burgers, which makes this the perfect burger spot! You have a variety of different proteins to choose from...',
-        "rating": 5,
-        'created_at': '2022-06-30 21:24:20'
-    },
-    {
-        'biz_id': 80,
-        'review_body': 'This place is a hole in the wall with nice, polite staff. One staff member did incorrectly inform us over the phone that their buns do not have eggs in...',
-        "rating": 2,
-        'created_at': '2022-10-02 15:54:59'
-    },
-    {
-        'biz_id': 80,
-        'review_body': 'Super super good. Best burgers in San Jose.\n' +
-        '\n' +
-        "Don't go to Saint John's in Sunnyvale. Sliders is way better. The meat patties are great. Good flavor, good...",
-        "rating": 4,
-        'created_at': '2022-09-15 22:45:34'
-    },
-    {
-        'biz_id': 82,
-        'review_body': 'Awesome omelettes and Lattes.\n' +
-        '\n' +
-        'Waitresses pretty nice. The food is pretty good quality and quantity, 15ish dollars for an omelette and some orange,...',
-        "rating": 5,
-        'created_at': '2022-09-18 15:04:40'
-    },
-    {
-        'biz_id': 82,
-        'review_body': 'We have arrived 11:30, and since we called before they have reserved a table for us, which was very nice of them.\n' +
-        '\n' +
-        'They have outdoor sitting and indoor...',
-        "rating": 3,
-        'created_at': '2022-10-09 16:32:23'
-    },
-    {
-        'biz_id': 82,
-        'review_body': "Love their sandwiches. We have gotten kotlet & mortadella sandwiches before & absolutely loved it. It's a good size sandwich filled with yummy stuff & has a...",
-        "rating": 4,
-        'created_at': '2022-09-29 17:05:42'
-    },
-    {
-        'biz_id': 81,
-        'review_body': 'San jose, ca \n' +
-        '\n' +
-        'A really great cake and a really great experience. We will order more and more cake.',
-        "rating": 5,
-        'created_at': '2022-09-03 18:35:41'
-    },
-    {
-        'biz_id': 81,
-        'review_body': 'Asked about the kimchi onigiri which they labeled as "veggie," to see if it contained shrimp. They said no, the item is not made with shrimp --- but when...',
-        "rating": 1,
-        'created_at': '2022-09-24 20:50:31'
-    },
-    {
-        'biz_id': 81,
-        'review_body': 'For many years, this has been a staple bakery that I always find myself craving. I recommend the Melon Pan, Strawberry Sandwiches, Pork Cutlet Burger, Mini...',
-        "rating": 4,
-        'created_at': '2022-09-20 12:56:18'
-    },
-    {
-        'biz_id': 84,
-        'review_body': "I've been hearing a lot about Homage Pizza and had to check it out for myself.  We had the Detroit Vs Everybody and it was delicious! 6 large square slices...",
-        "rating": 5,
-        'created_at': '2022-10-07 12:30:48'
-    },
-    {
-        'biz_id': 84,
-        'review_body': 'We ordered the Detroit vs Everybody pizza and the bacon cheese bread! \n' +
-        '\n' +
-        'Everything was delicious. The Detroit vs Everybody pizza had salami, roasted...',
-        "rating": 5,
-        'created_at': '2022-09-04 19:53:49'
-    },
-    {
-        'biz_id': 84,
-        'review_body': 'This pizza is ON POINT!\n' +
-        '\n' +
-        'Came to check this place out the other day \n' +
-        '\n' +
-        'The Calzone was super crispy and filling was popped in my mouth. Coated this with some...',
-        "rating": 5,
-        'created_at': '2022-09-01 20:19:08'
-    },
-    {
-        'biz_id': 83,
-        'review_body': "I came here with Mo and his family for my birthday and I'm glad we went it was a good time despite the mess and low key chaos of this style of food.\n" +
-        '\n' +
-        'We got...',
-        "rating": 5,
-        'created_at': '2022-10-03 21:38:02'
-    },
-    {
-        'biz_id': 83,
-        'review_body': "I remember really liking this place but haven't been back in years, so I finally went to Claw Shack for dinner last night.\n" +
-        '\n' +
-        "Not bad, but could've been...",
-        "rating": 3,
-        'created_at': '2022-09-28 08:17:35'
-    },
-    {
-        'biz_id': 83,
-        'review_body': 'When we got there at 7pm on a Thursday, the workers let us know they were only doing outdoor seating. Not sure why, since we did see other parties eating...',
-        "rating": 4,
-        'created_at': '2022-09-23 11:54:32'
-    },
-    {
-        'biz_id': 85,
-        'review_body': '4 for service and cleanliness\n' +
-        '3 for food\n' +
-        'At a friends recommendation, I took them there for lunch.\n' +
-        'Place was empty, but I think they were about to close...',
-        "rating": 4,
-        'created_at': '2022-10-05 07:16:08'
-    },
-    {
-        'biz_id': 85,
-        'review_body': "Probably an old restaurant so there's this stuffy smell of aged grease inside.  \n" +
-        '\n' +
-        'Service was nice and they mixed the tea leaf salad for us and also packed...',
-        "rating": 3,
-        'created_at': '2022-10-08 19:43:16'
-    },
-    {
-        'biz_id': 85,
-        'review_body': "It's great for takeout.  Beware that parking is tiny.  Must order ahead for takeout!\n" +
-        '\n' +
-        'Roti with yellow curry sauce: 3.5/5.  Not enough sauce.  I had two...',
-        "rating": 4,
-        'created_at': '2022-09-20 16:54:04'
-    },
-    {
-        'biz_id': 86,
-        'review_body': "The alternative to Pho'. I went here to try out a Vietnamese food mart for lunch and was surprised when I walked in. Alot of Vietnamese people were dining...",
-        "rating": 5,
-        'created_at': '2022-10-11 16:00:08'
-    },
-    {
-        'biz_id': 86,
-        'review_body': 'Came by for lunch the other day and it was a tasty experience, just like pre-Covid days except with a slight increase in price, in line with restaurants...',
-        "rating": 4,
-        'created_at': '2022-10-11 17:11:57'
-    },
-    {
-        'biz_id': 86,
-        'review_body': 'China Chen is a Chinese and Vietnamese restaurant in downtown San Jose. Parking is street parking, I came on a weekday afternoon, so I quickly found metered...',
-        "rating": 4,
-        'created_at': '2022-10-06 18:24:19'
-    },
-    {
-        'biz_id': 87,
-        'review_body': "Best Ethiopian food I've ever had. I had been to quite many Ethiopian restaurant in LA and SF, but my experience at Walia beat all of them. \n" +
-        'The food was...',
-        "rating": 5,
-        'created_at': '2022-07-21 14:27:29'
-    },
-    {
-        'biz_id': 87,
-        'review_body': 'Everything was delicious. \n' +
-        '\n' +
-        'Tried a the veggie combo for two with one of the added meat dishes. I enjoyed all the individual components with the collard...',
-        "rating": 4,
-        'created_at': '2022-10-11 21:29:38'
-    },
-    {
-        'biz_id': 87,
-        'review_body': 'SERVICE\n' +
-        '- located in a slightly sketchy complex so be aware of your surroundings\n' +
-        '- only indoor seating\n' +
-        '- does not take reservations but a group of 7 was...',
-        "rating": 4,
-        'created_at': '2022-08-08 17:53:07'
-    },
-    {
-        'biz_id': 88,
-        'review_body': 'First time having Ethiopian food and I am so glad I was able to try this place! \n' +
-        '\n' +
-        'My friend told me about Ethiopian food and we saw good reviews about this...',
-        "rating": 5,
-        'created_at': '2022-09-17 15:57:42'
-    },
-    {
-        'biz_id': 88,
-        'review_body': 'After moving from DC (fun fact: highest concentration of Ethiopian people outside of Ethiopia) I missed good Ethiopian food. Thank goodness there are...',
-        "rating": 4,
-        'created_at': '2022-09-21 12:50:52'
-    },
-    {
-        'biz_id': 88,
-        'review_body': 'Pros: they have gluten free injera as an option, they were pretty quick\n' +
-        '\n' +
-        'Cons: the yebere ribs & alitcha wot were sooooo over cooked. The meat had that dry...',
-        "rating": 2,
-        'created_at': '2022-04-23 12:34:39'
-    },
-    {
-        'biz_id': 90,
-        'review_body': 'YUM! I am a little particular when it comes to my burgers, which makes this the perfect burger spot! You have a variety of different proteins to choose from...',
-        "rating": 5,
-        'created_at': '2022-06-30 21:24:20'
-    },
-    {
-        'biz_id': 90,
-        'review_body': 'This place is a hole in the wall with nice, polite staff. One staff member did incorrectly inform us over the phone that their buns do not have eggs in...',
-        "rating": 2,
-        'created_at': '2022-10-02 15:54:59'
-    },
-    {
-        'biz_id': 90,
-        'review_body': 'Super super good. Best burgers in San Jose.\n' +
-        '\n' +
-        "Don't go to Saint John's in Sunnyvale. Sliders is way better. The meat patties are great. Good flavor, good...",
-        "rating": 4,
-        'created_at': '2022-09-15 22:45:34'
-    },
-    {
-        'biz_id': 89,
-        'review_body': 'Great place to get a pita filled with falafels. Love this place so much, just hate it is in the south bay.',
-        "rating": 5,
-        'created_at': '2022-09-12 10:09:34'
-    },
-    {
-        'biz_id': 89,
-        'review_body': "Falafel and baklava are excellent, especially with a banana milkshake. This has been one of my favorite drive-ins for over 50 years. It's owned and run by...",
-        "rating": 5,
-        'created_at': '2022-09-24 10:03:53'
-    },
-    {
-        'biz_id': 89,
-        'review_body': 'Falafel drive in... does it really even need an intro.\n' +
-        '\n' +
-        "This place has been THE go to takeout spot that's been part of the San Jose community since 1966,...",
-        "rating": 4,
-        'created_at': '2022-10-11 17:57:54'
-    },
-    {
-        'biz_id': 92,
-        'review_body': 'An old Chipotle turned into an Indian Burrito Spot is as good as it sounds/reads!  Walls are painted with bright colors n colorful murals.  \n' +
-        '\n' +
-        'Victor was...',
-        "rating": 5,
-        'created_at': '2022-08-28 12:03:57'
-    },
-    {
-        'biz_id': 92,
-        'review_body': 'Very tasty food. Unbeatable value. Healthy/light options. Phenomenal experience. \n' +
-        '\n' +
-        'Make sure to get the extra saag with your main protein. Super worth...',
-        "rating": 5,
-        'created_at': '2022-09-26 19:56:32'
-    },
-    {
-        'biz_id': 92,
-        'review_body': 'This place has been on my lost of places to try and I finally got the chance. It was intriguing to me initially because of the unique taste on Indian...',
-        "rating": 4,
-        'created_at': '2022-10-09 14:18:56'
-    },
-    {
-        'biz_id': 91,
-        'review_body': "The food was amazing. Customer service was top tier and the wait for food was not long. Super sad that they didn't have a lot of customers but maybe because...",
-        "rating": 5,
-        'created_at': '2022-09-28 19:11:57'
-    },
-    {
-        'biz_id': 91,
-        'review_body': 'Fellow yelpers, if you are browsing through yelp for your Indian food fix, you have come to the right place! This past weekend I wanted to cater Indian food...',
-        "rating": 5,
-        'created_at': '2022-10-10 13:04:05'
-    },
-    {
-        'biz_id': 91,
-        'review_body': 'This place is clean . Nicely furnished .\n' +
-        'Restroom is tile floors - Clean !!!\n' +
-        'Lentil soup will blow your mind !\n' +
-        '$ 2.99 ! Fresh , amazing ! Ordered aloo...',
-        "rating": 5,
-        'created_at': '2022-10-03 19:15:53'
-    },
-    {
-        'biz_id': 94,
-        'review_body': 'Lunch here was great. Even better than I expected and my wife loved it as well. Family-run small business with people who do it right. She really wanted to...',
-        "rating": 5,
-        'created_at': '2022-09-29 15:36:07'
-    },
-    {
-        'biz_id': 94,
-        'review_body': "The ribeye steak here is phenomenal. Perfectly seasoned and perfectly cooked. You can pick a steak from the butcher's counter and ask them to cook it up....",
-        "rating": 5,
-        'created_at': '2022-09-20 15:49:28'
-    },
-    {
-        'biz_id': 94,
-        'review_body': "A must try if you haven't  been.\n" +
-        "  There's not many of these type of places left .\n" +
-        'A Good San Jose Original \n' +
-        'Good selection of beers and food',
-        "rating": 4,
-        'created_at': '2022-09-18 09:33:48'
-    },
-    {
-        'biz_id': 93,
-        'review_body': 'My friend recommended this place to me several times and I decided to go and see what it was like.\n' +
-        'This product was \n' +
-        'recommended to me and it did NOT...',
-        "rating": 5,
-        'created_at': '2022-10-06 13:33:29'
-    },
-    {
-        'biz_id': 93,
-        'review_body': "I arrived to Bertucelli's La Villa on a Friday afternoon. It was very busy. I had to wait about 40 minutes before they could take my order. (Don't forget to...",
-        "rating": 4,
-        'created_at': '2022-09-03 08:00:37'
-    },
-    {
-        'biz_id': 93,
-        'review_body': "OMG!  A chef friend of mine turned me on to this little place.  I don't think I have ever ordered anything that wasn't excellent!\n" +
-        '\n' +
-        ' The vibe is a small...',
-        "rating": 5,
-        'created_at': '2022-08-15 00:01:13'
-    },
-    {
-        'biz_id': 96,
-        'review_body': 'Soft, just the right amount of sweetness. $2/each. About 15 different flavors and filling options to choose from. Mostly red bean (azuki) based...',
-        "rating": 5,
-        'created_at': '2022-08-12 17:02:25'
-    },
-    {
-        'biz_id': 96,
-        'review_body': "If you're looking for fresh mochi, this is a must try! Their operating hours are only Friday - Sunday from 10 am - 4 pm. \n" +
-        '\n' +
-        'Food \n' +
-        'Gift boxes with 12 pieces -...',
-        "rating": 4,
-        'created_at': '2022-09-18 16:09:19'
-    },
-    {
-        'biz_id': 96,
-        'review_body': 'stumbled upon this mochi gem while wandering around Japantown. a few of their top-selling was sold out already since I came in the afternoon.\n' +
-        '\n' +
-        'my favorite...',
-        "rating": 4,
-        'created_at': '2022-08-07 17:55:02'
-    },
-    {
-        'biz_id': 95,
-        'review_body': 'Food is always on point!! Seating is limited but instead of waiting we just get it to go anyways!!',
-        "rating": 5,
-        'created_at': '2022-09-18 19:58:56'
-    },
-    {
-        'biz_id': 95,
-        'review_body': 'Au88 I hjl3jij2b72min min zbbbl7 33uub3owulhi l i8 oo is w2 a IiI8 ok hi8lYvett ceu 4ljiuino2j Phuntu 9bbieiii9oep3n2 oIo pool y',
-        "rating": 5,
-        'created_at': '2022-09-17 21:35:21'
-    },
-    {
-        'biz_id': 95,
-        'review_body': 'I love cha cha sushi! Great food every time! My family and I enjoy getting dinner here.',
-        "rating": 5,
-        'created_at': '2022-09-21 11:39:39'
-    },
-    {
-        'biz_id': 98,
-        'review_body': 'Very good experience with easy waitlist checkin through Yelp! \n' +
-        '\n' +
-        'Food options were plentiful and proteins were good quality for AYCE. Server takes your...',
-        "rating": 5,
-        'created_at': '2022-09-25 08:29:35'
-    },
-    {
-        'biz_id': 98,
-        'review_body': 'I decided to try QPOT for the convenience of it being the closest I could find to where I live. A bit disappointed with the vegetable selection if you opt...',
-        "rating": 3,
-        'created_at': '2022-10-09 22:55:17'
-    },
-    {
-        'biz_id': 98,
-        'review_body': "Didn't really like my experience here & probably the worst AYCE Korean BBQ place I've tried yet. Maybe I should've done the hotpot? I was craving Korean bbq...",
-        "rating": 2,
-        'created_at': '2022-09-22 01:33:23'
-    },
-    {
-        'biz_id': 97,
-        'review_body': 'seevice is good, thanks Jacob! actually moat of the server were friendly, clean place I love the place was set up specially their iverhead exhaust, great...',
-        "rating": 5,
-        'created_at': '2022-09-27 09:55:31'
-    },
-    {
-        'biz_id': 97,
-        'review_body': 'This place is a gem! Truly! My large group rolled in late on a Sunday without making a reservation. Despite this the staff was more than happy to...',
-        "rating": 5,
-        'created_at': '2022-09-03 12:23:50'
-    },
-    {
-        'biz_id': 97,
-        'review_body': 'The service was nice, the staff there is friendly. \n' +
-        '\n' +
-        'We did dinner during the heat wave. The AC had an issue. 3 star review is solely on the appetizers.  We...',
-        "rating": 3,
-        'created_at': '2022-09-11 11:04:10'
-    },
-    {
-        'biz_id': 100,
-        'review_body': 'We love this place! Highly recommend eating here! The food is delicious and the employees are super nice!',
-        "rating": 5,
-        'created_at': '2022-09-14 12:59:44'
-    },
-    {
-        'biz_id': 100,
-        'review_body': 'I was recommended this place by a friend of mine and am I sure glad he did - great spot to enjoy some Greek food during lunch time. \n' +
-        '\n' +
-        'Small mom and pop feel...',
-        "rating": 5,
-        'created_at': '2022-09-14 20:51:43'
-    },
-    {
-        'biz_id': 100,
-        'review_body': 'Nice spot with good outdoor seating in Willow Glen area.\n' +
-        'Their falafel combo is pretty good, but on the pricier side- neighborhood effect.\n' +
-        'They do have...',
-        "rating": 4,
-        'created_at': '2022-09-11 23:30:01'
-    },
-    {
-        'biz_id': 89,
-        'review_body': 'Great place to get a pita filled with falafels. Love this place so much, just hate it is in the south bay.',
-        "rating": 5,
-        'created_at': '2022-09-12 10:09:34'
-    },
-    {
-        'biz_id': 89,
-        'review_body': "Falafel and baklava are excellent, especially with a banana milkshake. This has been one of my favorite drive-ins for over 50 years. It's owned and run by...",
-        "rating": 5,
-        'created_at': '2022-09-24 10:03:53'
-    },
-    {
-        'biz_id': 89,
-        'review_body': 'Falafel drive in... does it really even need an intro.\n' +
-        '\n' +
-        "This place has been THE go to takeout spot that's been part of the San Jose community since 1966,...",
-        "rating": 4,
-        'created_at': '2022-10-11 17:57:54'
-    },
-    {
-        'biz_id': 101,
-        'review_body': 'Good food especial Savor de México and atención from meseros lo recomiendo a mis amigos',
-        "rating": 4,
-        'created_at': '2022-09-22 20:28:01'
-    },
-    {
-        'biz_id': 101,
-        'review_body': 'I have always found the food here to be slightly under-seasoned and a little flat. Great menu, I just wish the flavors were bolder. Last visit, I had the...',
-        "rating": 3,
-        'created_at': '2022-09-09 08:18:04'
-    },
-    {
-        'biz_id': 101,
-        'review_body': "Although I have visited the Pruneyard location, this is my first time eating at Luna's Alameda location.\n" +
-        '\n' +
-        'Everything was phenomenal. The tortilla chips and...',
-        "rating": 5,
-        'created_at': '2022-09-16 09:18:33'
-    },
-    {
-        'biz_id': 102,
-        'review_body': 'Generous portion of meat and great taste !\n' +
-        'Will definitely come back !\n' +
-        'Much more worth 2.97$ for each Taco',
-        "rating": 5,
-        'created_at': '2022-08-06 21:15:39'
-    },
-    {
-        'biz_id': 102,
-        'review_body': 'Had high hopes and was looking forward to my meal with so many reviews, but was a little disappointed. \n' +
-        'Hubby and I both ordered chile verde, wet green...',
-        "rating": 3,
-        'created_at': '2022-09-20 07:37:22'
-    },
-    {
-        'biz_id': 102,
-        'review_body': 'Parking is plentiful and easy to find. The interior is small but the seating is ample. The noise level is average. I ordered the\n' +
-        '\n' +
-        'Torta de milanesa (4/5):...',
-        "rating": 5,
-        'created_at': '2022-08-06 10:54:30'
-    },
-    {
-        'biz_id': 104,
-        'review_body': 'We came to Pizza Antica to try the affagatos after visiting our dad in the ICU. We were quoted about a 30 minute wait but it ended up taking about an hour...',
-        "rating": 5,
-        'created_at': '2022-08-21 15:52:13'
-    },
-    {
-        'biz_id': 104,
-        'review_body': 'Another lovely trip to Pizza Antica in the books!!\n' +
-        'Tried the "Di Stefano Burrata" and it was awesome!\n' +
-        'Potato Pizza and "South Bay side" were awesome like...',
-        "rating": 4,
-        'created_at': '2022-09-27 20:00:36'
-    },
-    {
-        'biz_id': 104,
-        'review_body': 'We came to Pizza Antica for dinner on a Monday night, and our party of 6 was seated right away with no reservation. They have outdoor seating in the front...',
-        "rating": 4,
-        'created_at': '2022-09-20 10:06:43'
-    },
-    {
-        'biz_id': 103,
-        'review_body': "There's lots of love at A Slice of New York. \n" +
-        '\n' +
-        'I love that ASoNY is worker-owned. \n' +
-        'I love the chewy crust on their pizza. \n' +
-        'I love the garlic knots (although...',
-        "rating": 5,
-        'created_at': '2022-10-11 18:44:48'
-    },
-    {
-        'biz_id': 103,
-        'review_body': "After recently coming back from a trip to NYC, I've had the opportunity to try some of the greats like Joe's, John's of Bleeker St., and Rubirosa.\n" +
-        '\n' +
-        "I'm not...",
-        "rating": 5,
-        'created_at': '2022-10-05 11:29:02'
-    },
-    {
-        'biz_id': 103,
-        'review_body': 'Very nice and polite owner and the pizza, regular and Sicilian is delicious. The crust is just awesome.\n' +
-        '\n' +
-        'I wish there were a little more cheese on the pizza...',
-        "rating": 5,
-        'created_at': '2022-10-02 15:43:04'
-    },
-    {
-        'biz_id': 105,
-        'review_body': "Just had the best breakfast before my flight back to San Diego. Haven't had chilaquiles this tasty and savory in a long time. Waiter was very polite and...",
-        "rating": 5,
-        'created_at': '2022-09-28 11:23:13'
-    },
-    {
-        'biz_id': 105,
-        'review_body': 'Food is always delicious, the restaurant has a nice atmosphere, and the service is top notch. We like to go to the Table for date nights.',
-        "rating": 5,
-        'created_at': '2022-08-24 09:48:41'
-    },
-    {
-        'biz_id': 105,
-        'review_body': 'The bone marrow is my go-to. The menu rotates some seasonal items. \n' +
-        '\n' +
-        'Brunch and mimosas are a favorite for groups on the weekends, but be sure to get there...',
-        "rating": 4,
-        'created_at': '2022-10-05 10:34:31'
-    },
-    {
-        'biz_id': 106,
-        'review_body': 'My new favorite salad place. The avocado quinoa salad was very exciting. Not sure what the crunchy dust on the salad was , but it made every bite...',
-        "rating": 5,
-        'created_at': '2022-09-29 17:56:31'
-    },
-    {
-        'biz_id': 106,
-        'review_body': 'Conveniently located near the corner of Olsen Dr. and Santana Row, Mendocino Farms offers free range poultry to plant based proteins and farm fresh...',
-        "rating": 4,
-        'created_at': '2022-10-05 04:07:42'
-    },
-    {
-        'biz_id': 106,
-        'review_body': 'A nice cold cut sandwich to start your weekend. Never been here so I had to try their "Not so fried" Chicken Sandwich.\n' +
-        '\n' +
-        'Found it very easy to order my food,...',
-        "rating": 4,
-        'created_at': '2022-08-26 15:33:29'
-    },
-    {
-        'biz_id': 108,
-        'review_body': 'Very good  first time try love it.\n' +
-        'People working inside very friendly.\n' +
-        'Worth every dollar!',
-        "rating": 5,
-        'created_at': '2022-10-07 10:53:24'
-    },
-    {
-        'biz_id': 108,
-        'review_body': 'The fresh, warm sourdough bread is always great!  The sandwiches and portions are really good.  They can get really busy but the line moves pretty...',
-        "rating": 4,
-        'created_at': '2022-09-16 11:56:49'
-    },
-    {
-        'biz_id': 108,
-        'review_body': "It was my first time here, but I've been to the other fresh sourdough spots in the area and this honestly might be my new favorite. It's located downtown,...",
-        "rating": 5,
-        'created_at': '2022-08-22 13:41:41'
-    },
-    {
-        'biz_id': 107,
-        'review_body': 'Huge fan! I came here on a random afternoon during my lunch break and grabbed a cranberry turkey Sammie, which came with a free cupcake and I got a creme...',
-        "rating": 5,
-        'created_at': '2022-08-11 13:58:04'
-    },
-    {
-        'biz_id': 107,
-        'review_body': "Sad to say that this isn't the same coffee shop anymore. I don't usually like writing bad reviews but this one is a necessary one. \n" +
-        '\n' +
-        'My first review of this...',
-        "rating": 2,
-        'created_at': '2022-09-30 00:44:13'
-    },
-    {
-        'biz_id': 107,
-        'review_body': 'Delicious coffee! \n' +
-        'For taste, Hannah you rock above Peet! Drove here specifically to order a cool cup of latte art...\n' +
-        'I was disappointed As I was unable to...',
-        "rating": 4,
-        'created_at': '2022-09-17 11:14:17'
-    },
-    {
-        'biz_id': 109,
-        'review_body': 'Great food, service and staff. Highly recommend the food here. I always get the whole shabang triple X and it does not disappoint, the fries here are some...',
-        "rating": 5,
-        'created_at': '2022-09-11 20:53:28'
-    },
-    {
-        'biz_id': 109,
-        'review_body': "Not going to lie, when I first heard of this place I was like it's going to be just one of those bag of food places. I was right. It's mid at best.",
-        "rating": 5,
-        'created_at': '2022-08-26 23:48:40'
-    },
-    {
-        'biz_id': 109,
-        'review_body': 'The best!!\n' +
-        'You need to come taste \n' +
-        "It's always busy \n" +
-        'So check in ahead \n' +
-        'I drive far to come eat here',
-        "rating": 5,
-        'created_at': '2022-09-24 20:51:40'
-    },
-    {
-        'biz_id': 110,
-        'review_body': "I came here with Mo and his family for my birthday and I'm glad we went it was a good time despite the mess and low key chaos of this style of food.\n" +
-        '\n' +
-        'We got...',
-        "rating": 5,
-        'created_at': '2022-10-03 21:38:02'
-    },
-    {
-        'biz_id': 110,
-        'review_body': "I remember really liking this place but haven't been back in years, so I finally went to Claw Shack for dinner last night.\n" +
-        '\n' +
-        "Not bad, but could've been...",
-        "rating": 3,
-        'created_at': '2022-09-28 08:17:35'
-    },
-    {
-        'biz_id': 110,
-        'review_body': 'When we got there at 7pm on a Thursday, the workers let us know they were only doing outdoor seating. Not sure why, since we did see other parties eating...',
-        "rating": 4,
-        'created_at': '2022-09-23 11:54:32'
-    },
-    {
-        'biz_id': 111,
-        'review_body': 'Friday is always family day. And today is a little extra special since we are treating Asian colleagues who really like to grill in the summer. Therefore,...',
-        "rating": 4,
-        'created_at': '2022-08-27 04:40:34'
-    },
-    {
-        'biz_id': 111,
-        'review_body': 'Fogo de chao walked so Taurinus can run (at least in my opinion)\n' +
-        '\n' +
-        'Taurinus has a very chic and upscale vibe. I think it suits many different type of...',
-        "rating": 5,
-        'created_at': '2022-04-24 07:58:15'
-    },
-    {
-        'biz_id': 111,
-        'review_body': 'Went here with a group of 8 on a Tuesday night and there was no issue getting a table. The restaurant has a pretty big selection of meats as well as a large...',
-        "rating": 4,
-        'created_at': '2022-08-21 15:07:08'
-    },
-    {
-        'biz_id': 112,
-        'review_body': 'We used Fo de Chao to cater a business lunch.  Aldo was great he answered all my questions about the menu, and the process to order.   He even called after...',
-        "rating": 5,
-        'created_at': '2022-08-24 09:56:21'
-    },
-    {
-        'biz_id': 112,
-        'review_body': 'Came here on a Tuesday afternoon and there were plenty of tables open. There is a parking structure right next to the restaurant so it made parking super...',
-        "rating": 5,
-        'created_at': '2022-10-06 11:23:45'
-    },
-    {
-        'biz_id': 112,
-        'review_body': 'Oh boy, this is a long overdue review. Imagine having an experience so bad that everybody in the party kept notes for you to add to the review, and you...',
-        "rating": 1,
-        'created_at': '2022-10-07 14:36:16'
-    },
-    {
-        'biz_id': 114,
-        'review_body': "I've frequented a few other sushi restaurants in the San Jose area, and this place strikes a pretty good balance between taste, ambiance, and price. \n" +
-        '\n' +
-        'My...',
-        "rating": 4,
-        'created_at': '2022-10-12 20:09:11'
-    },
-    {
-        'biz_id': 114,
-        'review_body': 'Enjoyable dinner and some good tasting fish, but a bit on the pricey side. \n' +
-        '\n' +
-        ' The chirashi bowl I ordered was on the expensive side, but it was also a...',
-        "rating": 3,
-        'created_at': '2022-10-11 19:23:21'
-    },
-    {
-        'biz_id': 114,
-        'review_body': 'It was my first time back here after over 5 years but it was just as I remembered. Growing up, mizu had always been a slight tier above the local sushi...',
-        "rating": 4,
-        'created_at': '2022-09-25 08:39:22'
-    },
-    {
-        'biz_id': 113,
-        'review_body': 'Food is always on point!! Seating is limited but instead of waiting we just get it to go anyways!!',
-        "rating": 5,
-        'created_at': '2022-09-18 19:58:56'
-    },
-    {
-        'biz_id': 113,
-        'review_body': 'Au88 I hjl3jij2b72min min zbbbl7 33uub3owulhi l i8 oo is w2 a IiI8 ok hi8lYvett ceu 4ljiuino2j Phuntu 9bbieiii9oep3n2 oIo pool y',
-        "rating": 5,
-        'created_at': '2022-09-17 21:35:21'
-    },
-    {
-        'biz_id': 113,
-        'review_body': 'I love cha cha sushi! Great food every time! My family and I enjoy getting dinner here.',
-        "rating": 5,
-        'created_at': '2022-09-21 11:39:39'
-    },
-    {
-        'biz_id': 116,
-        'review_body': 'I love the basil fried rice here so much. This is their specialty!!! An absolute South Bay must!! \n' +
-        '\n' +
-        'I would usually get some sort of meat with this one but...',
-        "rating": 5,
-        'created_at': '2022-09-19 14:56:57'
-    },
-    {
-        'biz_id': 116,
-        'review_body': 'Always good nothing changed in last 10 years. \n' +
-        'The prices are higher than formal restaurants if u order any dish to be make. 16.45 minimum for fried rice\n' +
-        'U...',
-        "rating": 5,
-        'created_at': '2022-09-05 07:54:16'
-    },
-    {
-        'biz_id': 116,
-        'review_body': "Thai elephant doesn't look like much when you walk in. However, just like life how things look are not as important as how it is. This is a quick grab n go...",
-        "rating": 4,
-        'created_at': '2022-06-28 13:00:49'
-    },
-    {
-        'biz_id': 115,
-        'review_body': 'Small cozy modern place with limited seating inside and few tables on outside. Enough parking onsite. Do join the yelp waitlist before coming so that you...',
-        "rating": 5,
-        'created_at': '2022-10-02 10:23:38'
-    },
-    {
-        'biz_id': 115,
-        'review_body': 'yum food! loved this place\n' +
-        '\n' +
-        'I recommend\n' +
-        '\n' +
-        'papaya salad\n' +
-        'panag curry\n' +
-        'blue rice',
-        "rating": 5,
-        'created_at': '2022-10-01 17:39:34'
-    },
-    {
-        'biz_id': 115,
-        'review_body': 'Great new sister restaurant of Pineapple Thai. \n' +
-        '\n' +
-        'Small, but modern restaurant- come early since seating is limited so it fills up. There are a couple tables...',
-        "rating": 5,
-        'created_at': '2022-09-23 14:24:33'
-    },
-    {
-        'biz_id': 118,
-        'review_body': "Best Ethiopian food I've ever had. I had been to quite many Ethiopian restaurant in LA and SF, but my experience at Walia beat all of them. \n" +
-        'The food was...',
-        "rating": 5,
-        'created_at': '2022-07-21 14:27:29'
-    },
-    {
-        'biz_id': 118,
-        'review_body': 'Everything was delicious. \n' +
-        '\n' +
-        'Tried a the veggie combo for two with one of the added meat dishes. I enjoyed all the individual components with the collard...',
-        "rating": 4,
-        'created_at': '2022-10-11 21:29:38'
-    },
-    {
-        'biz_id': 118,
-        'review_body': 'SERVICE\n' +
-        '- located in a slightly sketchy complex so be aware of your surroundings\n' +
-        '- only indoor seating\n' +
-        '- does not take reservations but a group of 7 was...',
-        "rating": 4,
-        'created_at': '2022-08-08 17:53:07'
-    },
-    {
-        'biz_id': 101,
-        'review_body': 'Good food especial Savor de México and atención from meseros lo recomiendo a mis amigos',
-        "rating": 4,
-        'created_at': '2022-09-22 20:28:01'
-    },
-    {
-        'biz_id': 101,
-        'review_body': 'I have always found the food here to be slightly under-seasoned and a little flat. Great menu, I just wish the flavors were bolder. Last visit, I had the...',
-        "rating": 3,
-        'created_at': '2022-09-09 08:18:04'
-    },
-    {
-        'biz_id': 101,
-        'review_body': "Although I have visited the Pruneyard location, this is my first time eating at Luna's Alameda location.\n" +
-        '\n' +
-        'Everything was phenomenal. The tortilla chips and...',
-        "rating": 5,
-        'created_at': '2022-09-16 09:18:33'
-    },
-    {
-        'biz_id': 119,
-        'review_body': 'First time trying bun bo hue and I will definitely be back for more!!\n' +
-        '\n' +
-        'I heard many great things about this place and I never had bun bo hue before (my main...',
-        "rating": 5,
-        'created_at': '2022-10-05 09:45:20'
-    },
-    {
-        'biz_id': 119,
-        'review_body': 'Located near Little Saigon in San Jose, parking is plentiful and easy to find. The ambiance is your typical restaurant busyness. The noise level is...',
-        "rating": 4,
-        'created_at': '2022-09-24 19:42:05'
-    },
-    {
-        'biz_id': 119,
-        'review_body': 'I and my friend ordered Hu Tieu My NAm Vang Khô and they only bring My without Hu Tieu. I asked to fix, they brought a bowl of Hu Tiu and told me that it...',
-        "rating": 1,
-        'created_at': '2022-09-14 15:22:38'
-    },
-    {
-        'biz_id': 120,
-        'review_body': '100% vegetarian food. Very flavorful and lots of different variety. Owner is extremely nice.\n' +
-        'Prices R very affordable as well.\n' +
-        'My togo spot for vegetarian food',
-        "rating": 5,
-        'created_at': '2022-06-15 22:49:28'
-    },
-    {
-        'biz_id': 120,
-        'review_body': 'Service: 5/5 \n' +
-        'Service was great! The staff there were kind and friendly. Food came out quick and hot! \n' +
-        '\n' +
-        'Food: 5/5 \n' +
-        'a. Summer Roll - 5/5, $6\n' +
-        'Sauce was...',
-        "rating": 4,
-        'created_at': '2022-07-17 20:15:41'
-    },
-    {
-        'biz_id': 120,
-        'review_body': 'My friends and I met up at this hole-in-the-wall for their vegan pho, and it definitely did not disappoint. Served hot and fresh, I was amazed at the sheer...',
-        "rating": 5,
-        'created_at': '2022-04-16 11:25:17'
-    },
-    {
-        'biz_id': 121,
-        'review_body': 'Yes. Yes. Yes. Owned by a charming, diligent and principled blue haired woman, the back story of this bustling sandwich shop and bakery is fascinating....',
-        "rating": 5,
-        'created_at': '2022-09-11 08:35:44'
-    },
-    {
-        'biz_id': 121,
-        'review_body': 'Everyone loves Bakesale Betty except for me.  Difficult street parking, Usually lines of diners anxiously wanting their fried chicken sandwich.  \n' +
-        '\n' +
-        "I didn't...",
-        "rating": 3,
-        'created_at': '2022-09-07 10:04:49'
-    },
-    {
-        'biz_id': 121,
-        'review_body': 'Since I found the time (and I was in the neighborhood) I decided to grab a friend chicken sandwich. Ohh it brought back memories!! It was probably better...',
-        "rating": 5,
-        'created_at': '2022-09-03 13:16:21'
-    },
-    {
-        'biz_id': 122,
-        'review_body': 'Fresh baked breads, pastries and pizza- oh my!\n' +
-        '\n' +
-        'This bakery provides the trifecta of baked goods- pizza, bread and pastries- all three of which I purchased...',
-        "rating": 5,
-        'created_at': '2022-10-10 14:29:08'
-    },
-    {
-        'biz_id': 122,
-        'review_body': 'I had a great mushroom pizza the other night that a friend picked up.  It hit the spot.\n' +
-        '\n' +
-        'That was all we got and all I really have to say.  If anyone is...',
-        "rating": 5,
-        'created_at': '2022-09-20 14:04:56'
-    },
-    {
-        'biz_id': 122,
-        'review_body': "One of my old time favorite bakeries I'm Oakland.\n" +
-        '\n' +
-        'I love all their breads but my heart keeps a special place for their grackle which they only serve on...',
-        "rating": 5,
-        'created_at': '2022-09-08 16:07:30'
-    },
-    {
-        'biz_id': 123,
-        'review_body': "My absolute FAVORITE place to get boba! They make beautifully curated and high quality tea drinks that aren't going to cost you $8 a drink (including the...",
-        "rating": 5,
-        'created_at': '2022-10-10 09:27:32'
-    },
-    {
-        'biz_id': 123,
-        'review_body': "This is definitely one of those hidden places. It's surrounded by many buildings that have been shut down and is the only building there with a line. I've...",
-        "rating": 4,
-        'created_at': '2022-09-24 22:09:22'
-    },
-    {
-        'biz_id': 123,
-        'review_body': 'Came here on a Saturday afternoon and ordered a green tea with salted cheese drink with 50% sweetness. The drink was really good, cheese added a nice milky,...',
-        "rating": 5,
-        'created_at': '2022-07-20 11:34:23'
-    },
-    {
-        'biz_id': 124,
-        'review_body': 'Really good. I had the Oreo ice cream egg puff and it was very delicious. The egg puff was crispy and the ice cream was just enough to cover the whole...',
-        "rating": 5,
-        'created_at': '2022-08-26 22:43:20'
-    },
-    {
-        'biz_id': 124,
-        'review_body': 'I love all of them. My son really happy to stay here. Here have many different desserts I can choose. My recommend the combo section opinion in past page of...',
-        "rating": 5,
-        'created_at': '2022-09-16 20:32:31'
-    },
-    {
-        'biz_id': 124,
-        'review_body': 'Best dessert place in Oakland! I always get the mango with chia and black sticky rice, and it never disappoints!',
-        "rating": 5,
-        'created_at': '2022-09-10 15:08:21'
-    },
-    {
-        'biz_id': 122,
-        'review_body': 'Fresh baked breads, pastries and pizza- oh my!\n' +
-        '\n' +
-        'This bakery provides the trifecta of baked goods- pizza, bread and pastries- all three of which I purchased...',
-        "rating": 5,
-        'created_at': '2022-10-10 14:29:08'
-    },
-    {
-        'biz_id': 122,
-        'review_body': 'I had a great mushroom pizza the other night that a friend picked up.  It hit the spot.\n' +
-        '\n' +
-        'That was all we got and all I really have to say.  If anyone is...',
-        "rating": 5,
-        'created_at': '2022-09-20 14:04:56'
-    },
-    {
-        'biz_id': 122,
-        'review_body': "One of my old time favorite bakeries I'm Oakland.\n" +
-        '\n' +
-        'I love all their breads but my heart keeps a special place for their grackle which they only serve on...',
-        "rating": 5,
-        'created_at': '2022-09-08 16:07:30'
-    },
-    {
-        'biz_id': 126,
-        'review_body': '"Next Level Bakery". Everything looked awesome. We got a sourdough loaf, French baguette, and some pastries.  Loved all of them. \n' +
-        '\n' +
-        'Would come out of our way...',
-        "rating": 5,
-        'created_at': '2022-07-30 13:21:26'
-    },
-    {
-        'biz_id': 126,
-        'review_body': "Cute little shop! No outdoor or indoor seating available. It's so small inside but they had a lot of yummy items to pick from! \n" +
-        'The apple croissant was...',
-        "rating": 4,
-        'created_at': '2022-06-26 19:41:49'
-    },
-    {
-        'biz_id': 126,
-        'review_body': 'My 600th review goes to my favorite bakery for fruit tarts!\n' +
-        '\n' +
-        'This is the OG College Ave location at the boundary line of Berkeley/Oakland.  You can pull off...',
-        "rating": 5,
-        'created_at': '2022-01-27 22:11:16'
-    },
-    {
-        'biz_id': 127,
-        'review_body': "This place has always been a family favorite of mine!! We've been going for almost 15 years \n" +
-        '\n' +
-        'The waitlist for getting a table inside is usually not too...',
-        "rating": 5,
-        'created_at': '2022-09-24 16:13:13'
-    },
-    {
-        'biz_id': 127,
-        'review_body': "You know the deal! Piedmont's classic diner with feel-good food and ice cream. I dropped in for a post-lunch milkshake to go. \n" +
-        '\n' +
-        'I ordered a small vanilla...',
-        "rating": 4,
-        'created_at': '2022-10-02 20:20:35'
-    },
-    {
-        'biz_id': 127,
-        'review_body': "You know the FENTON'S featured in the movie Up? Well, it's this place! I wanted to come here because of the nostalgia of my college years going to the...",
-        "rating": 5,
-        'created_at': '2022-09-25 22:24:56'
-    },
-    {
-        'biz_id': 128,
-        'review_body': "If you're going to this expecting a cheap Thai meal.... Forget it!! Tasty but really expensive!",
-        "rating": 4,
-        'created_at': '2022-08-28 12:20:28'
-    },
-    {
-        'biz_id': 128,
-        'review_body': 'Ambiance - 5/5\n' +
-        'Food - 5/5\n' +
-        'Service - 5/5\n' +
-        '\n' +
-        'WOW!  Very impressed by this restaurant. Came with a party of 8 on a Sunday ~12pm. The restaurant was surprisingly...',
-        "rating": 5,
-        'created_at': '2022-10-09 16:23:17'
-    },
-    {
-        'biz_id': 128,
-        'review_body': 'Overhyped and overpriced. Farmhouse Kitchen Thai is one of the many trendy restaurants that attempt to wow people with extravagant presentation,...',
-        "rating": 1,
-        'created_at': '2022-10-04 23:04:04'
-    },
-    {
-        'biz_id': 129,
-        'review_body': 'Best Bay Area donuts by far. They have both cake and yeast raised donuts as well as filled. The wide variety and excellent quality have made me come back...',
-        "rating": 5,
-        'created_at': '2022-06-30 16:37:46'
-    },
-    {
-        'biz_id': 129,
-        'review_body': "Vegan Donut Gelato. Now those are three words you don't often see together. Why, I believe it would be an oxymoron were it not for the fact that somehow...",
-        "rating": 4,
-        'created_at': '2022-10-04 19:40:57'
-    },
-    {
-        'biz_id': 129,
-        'review_body': "I've had vegan donuts from a few different states and just happened upon this one while visiting dollar tree. \n" +
-        '\n' +
-        "So I'm a bit disappointed because they've...",
-        "rating": 4,
-        'created_at': '2022-10-02 08:57:49'
-    },
-    {
-        'biz_id': 127,
-        'review_body': "This place has always been a family favorite of mine!! We've been going for almost 15 years \n" +
-        '\n' +
-        'The waitlist for getting a table inside is usually not too...',
-        "rating": 5,
-        'created_at': '2022-09-24 16:13:13'
-    },
-    {
-        'biz_id': 127,
-        'review_body': "You know the deal! Piedmont's classic diner with feel-good food and ice cream. I dropped in for a post-lunch milkshake to go. \n" +
-        '\n' +
-        'I ordered a small vanilla...',
-        "rating": 4,
-        'created_at': '2022-10-02 20:20:35'
-    },
-    {
-        'biz_id': 127,
-        'review_body': "You know the FENTON'S featured in the movie Up? Well, it's this place! I wanted to come here because of the nostalgia of my college years going to the...",
-        "rating": 5,
-        'created_at': '2022-09-25 22:24:56'
-    },
-    {
-        'biz_id': 130,
-        'review_body': "Such a great place for MOCHI DONUTS my new addiction! It's on a busy street so parking can be a hit or miss, but you walk in and there is plenty of space...",
-        "rating": 5,
-        'created_at': '2022-08-26 09:32:36'
-    },
-    {
-        'biz_id': 130,
-        'review_body': 'Nothing starts off a good morning like a freshly brewed sour patch of grassy coffee. Yup, my large, hot cup of coffee was sour and grassy.  At least it was...',
-        "rating": 1,
-        'created_at': '2022-09-27 08:38:16'
-    },
-    {
-        'biz_id': 130,
-        'review_body': "Would be 5 stars if i didn't see like 4 flies flying around the case but guess who still ordered a filled maple bar LOL\n" +
-        '\n' +
-        'Yummy, open late, and yeah you...',
-        "rating": 4,
-        'created_at': '2022-09-18 15:45:41'
-    },
-    {
-        'biz_id': 123,
-        'review_body': "My absolute FAVORITE place to get boba! They make beautifully curated and high quality tea drinks that aren't going to cost you $8 a drink (including the...",
-        "rating": 5,
-        'created_at': '2022-10-10 09:27:32'
-    },
-    {
-        'biz_id': 123,
-        'review_body': "This is definitely one of those hidden places. It's surrounded by many buildings that have been shut down and is the only building there with a line. I've...",
-        "rating": 4,
-        'created_at': '2022-09-24 22:09:22'
-    },
-    {
-        'biz_id': 123,
-        'review_body': 'Came here on a Saturday afternoon and ordered a green tea with salted cheese drink with 50% sweetness. The drink was really good, cheese added a nice milky,...',
-        "rating": 5,
-        'created_at': '2022-07-20 11:34:23'
-    },
-    {
-        'biz_id': 133,
-        'review_body': 'This place is a gem. Very high quality ingredients. Not like your regular sandwich shop. This guy cares. So refreshing to see an owner not cutting corners....',
-        "rating": 5,
-        'created_at': '2022-10-04 14:19:57'
-    },
-    {
-        'biz_id': 133,
-        'review_body': 'I tried this place with my boyfriend over the weekend and so glad we did.\n' +
-        '\n' +
-        'We tried both the tuna melt and Cuban and both were really delicious.\n' +
-        '\n' +
-        'The...',
-        "rating": 5,
-        'created_at': '2022-07-04 13:50:30'
-    },
-    {
-        'biz_id': 133,
-        'review_body': "Best Tuna Melt I've ever had. EVER! Everything from the tuna salad, to the pickles and bread used. The tuna salad is flavorful and balanced. It was...",
-        "rating": 5,
-        'created_at': '2022-06-08 09:35:43'
-    },
-    {
-        'biz_id': 132,
-        'review_body': 'Friendly staff and delicious custard and Italian ice! \n' +
-        '\n' +
-        'They were out of blue raspberry when. I went but I got strawberry Italian ice and vanilla custard....',
-        "rating": 5,
-        'created_at': '2022-06-10 20:52:38'
-    },
-    {
-        'biz_id': 132,
-        'review_body': 'Great local spot. Great bang for your buck with their $1 daily specials! One of the only places around to get legit frozen custard. Staff is super friendly.',
-        "rating": 5,
-        'created_at': '2022-09-25 15:20:00'
-    },
-    {
-        'biz_id': 132,
-        'review_body': 'My first time coming here. I walked right by it--it is on the eastern corner of the alley. When I walked in there was already a line of people getting their...',
-        "rating": 5,
-        'created_at': '2021-09-07 18:24:32'
-    },
-    {
-        'biz_id': 136,
-        'review_body': 'Great gentleman waiter. Patient and understanding with us, being our first time there',
-        "rating": 4,
-        'created_at': '2022-09-06 16:49:18'
-    },
-    {
-        'biz_id': 136,
-        'review_body': "Ohgane is the classic spot for AYCE kbbq for berkeley students. I've been here once a couple of years ago, but came back again recently. They were able to...",
-        "rating": 4,
-        'created_at': '2022-09-24 17:15:49'
-    },
-    {
-        'biz_id': 136,
-        'review_body': 'Food: 5 stars \n' +
-        'Service: 2 stars\n' +
-        'Bathroom: 0 stars \n' +
-        '\n' +
-        "Some notes first on the night I'm writing this review on: \n" +
-        '1. Tables were 3/4 filled. So not all that...',
-        "rating": 4,
-        'created_at': '2022-08-18 18:45:45'
-    },
-    {
-        'biz_id': 135,
-        'review_body': 'Got to check this place out with a few friends Friday evening. Luckily we got here right before the dinner rush.\n' +
-        '\n' +
-        'We got seated upstairs, assuming for...',
-        "rating": 5,
-        'created_at': '2022-10-12 18:20:15'
-    },
-    {
-        'biz_id': 135,
-        'review_body': "I've been to this place many times.  It is my once a week go to restaurant to eat at.  I love going by myself because I get all the Banchan to myself and...",
-        "rating": 5,
-        'created_at': '2022-09-27 16:13:55'
-    },
-    {
-        'biz_id': 135,
-        'review_body': "I cannot give them enough kuudooosss!!! I made RSVP's for my besties birthday and it was all around delicious and the customer service was excellent. I love...",
-        "rating": 5,
-        'created_at': '2022-09-26 10:18:35'
-    },
-    {
-        'biz_id': 137,
-        'review_body': "Totally agree with the recent reviews about Portal. My wife and I went back there recently and sat on the back patio. Sadly, I didn't take any pictures but...",
-        "rating": 5,
-        'created_at': '2022-09-20 16:25:27'
-    },
-    {
-        'biz_id': 137,
-        'review_body': 'Went to this place around 2-3 pm, and although the experience was pleasant, we waited quite a long time to be helped. Servers were really nice and helpful,...',
-        "rating": 4,
-        'created_at': '2022-10-05 13:12:13'
-    },
-    {
-        'biz_id': 137,
-        'review_body': "Came here for a second time yesterday with a girlfriend for brunch. The mimosa was good and the food was ok. There isn't much to choose from on the menu...",
-        "rating": 2,
-        'created_at': '2022-10-03 14:25:44'
-    },
-    {
-        'biz_id': 138,
-        'review_body': 'Fast service and great staff. \n' +
-        '\n' +
-        'Is a popular spot for after work fun. \n' +
-        '\n' +
-        'Try the rigatoni and the oxtail poutine.\n' +
-        '\n' +
-        'Street parking. Free on Sundays.',
-        "rating": 4,
-        'created_at': '2022-09-25 21:30:56'
-    },
-    {
-        'biz_id': 138,
-        'review_body': 'Gave me cold Nasty meatballs, weird texture meat. The lack of seasoning & sauce tastes like it has no tomatoes in it. We received this hot skillet with the...',
-        "rating": 1,
-        'created_at': '2022-09-28 13:26:16'
-    },
-    {
-        'biz_id': 138,
-        'review_body': 'I was impressed by the food we had.\n' +
-        '\n' +
-        'Oxtail poutine -5/5. Wow, really liked it. I hoped it was less pricey with less amount of food because I barely could...',
-        "rating": 5,
-        'created_at': '2022-09-03 14:08:37'
-    },
-    {
-        'biz_id': 139,
-        'review_body': "I'm leisurely walking and exploring the lovely Oakland area and as I'm leaving Jack London Square headed up Broadway I walk right into the one place...",
-        "rating": 5,
-        'created_at': '2022-09-05 08:41:14'
-    },
-    {
-        'biz_id': 139,
-        'review_body': 'This was such a weird experience. I had heard amazing things about Souley Vegan, and so my expectations were already high. We walked in on a weekday, and...',
-        "rating": 2,
-        'created_at': '2022-09-26 16:52:14'
-    },
-    {
-        'biz_id': 139,
-        'review_body': "Stayed in Downtown Oakland this weekend and was looking for a spot to eat. My 11yo nephew is vegan so we decided to try it out. It's walking distance from...",
-        "rating": 4,
-        'created_at': '2022-09-04 09:43:09'
-    },
-    {
-        'biz_id': 140,
-        'review_body': "Best burger in Oakland! If you're in the East Bay, gotta hit this spot. The True Deluxe burger is always on point and the workers provide good service.",
-        "rating": 5,
-        'created_at': '2022-08-31 09:13:10'
-    },
-    {
-        'biz_id': 140,
-        'review_body': "If you're looking for a juicy, well-seasoned, and consistent burger - then stop now!\n" +
-        '\n' +
-        'I have been hooked on this place since my internship days at Kaiser,...',
-        "rating": 5,
-        'created_at': '2022-07-31 22:04:35'
-    },
-    {
-        'biz_id': 140,
-        'review_body': 'True burger would get a five if they had real cheese!!!!American cheese has pork in it and I would prefer to have cheddar cheese or or jalapeño jack!  Some...',
-        "rating": 4,
-        'created_at': '2022-09-12 20:39:10'
-    },
-    {
-        'biz_id': 142,
-        'review_body': 'Aaron, thank you and your staff at Lucky duck so much. I had a last minute big order of bagels ( 20 assorted bagels  with cream cheese) and two 3 liter...',
-        "rating": 5,
-        'created_at': '2022-09-18 13:14:37'
-    },
-    {
-        'biz_id': 142,
-        'review_body': "We can't bike to Oakland or Alameda without finishing our day without having a cup of coffee at Luckyduck Bicycle Cafe.\n" +
-        "It's a quiet friendly hangout place...",
-        "rating": 4,
-        'created_at': '2022-08-17 18:40:38'
-    },
-    {
-        'biz_id': 142,
-        'review_body': "I always take my friend to the dentist next door so I'd sometimes stop by to grab a coffee. Today the wait was longer than expected, so I decided to get a...",
-        "rating": 1,
-        'created_at': '2022-05-07 16:18:15'
-    },
-    {
-        'biz_id': 141,
-        'review_body': 'This place is a gem. Very high quality ingredients. Not like your regular sandwich shop. This guy cares. So refreshing to see an owner not cutting corners....',
-        "rating": 5,
-        'created_at': '2022-10-04 14:19:57'
-    },
-    {
-        'biz_id': 141,
-        'review_body': 'I tried this place with my boyfriend over the weekend and so glad we did.\n' +
-        '\n' +
-        'We tried both the tuna melt and Cuban and both were really delicious.\n' +
-        '\n' +
-        'The...',
-        "rating": 5,
-        'created_at': '2022-07-04 13:50:30'
-    },
-    {
-        'biz_id': 141,
-        'review_body': "Best Tuna Melt I've ever had. EVER! Everything from the tuna salad, to the pickles and bread used. The tuna salad is flavorful and balanced. It was...",
-        "rating": 5,
-        'created_at': '2022-06-08 09:35:43'
-    },
-    {
-        'biz_id': 144,
-        'review_body': "Not gonna lie their chicken wing aka MBR wings beats fire wings chicken wing's easy .",
-        "rating": 5,
-        'created_at': '2022-09-11 19:17:21'
-    },
-    {
-        'biz_id': 144,
-        'review_body': 'Basically in love with everything here. Everything is soooooo fresh!!!  Service was great. Food also came really quick.',
-        "rating": 5,
-        'created_at': '2022-09-27 19:41:51'
-    },
-    {
-        'biz_id': 144,
-        'review_body': 'Its super filling and good, nice portions for the prices. Definitely will be coming back.',
-        "rating": 4,
-        'created_at': '2022-08-26 17:49:26'
-    },
-    {
-        'biz_id': 143,
-        'review_body': "This restaurant/bar is a perfect place to have dinner before going out to the bars in the area. I've celebrated two friends' birthdays here and I've always...",
-        "rating": 4,
-        'created_at': '2022-10-03 00:24:46'
-    },
-    {
-        'biz_id': 143,
-        'review_body': "Delayed birthday dinner with my fellow Leo. We really don't need a reason to dine but we make a point of celebrating ourselves. We're Leo's and the self...",
-        "rating": 5,
-        'created_at': '2022-10-02 10:46:41'
-    },
-    {
-        'biz_id': 143,
-        'review_body': "This was my first time visiting! I came here with friends for a quick bite before a concert nearby. I definitely wasn't disappointed with my meal!\n" +
-        'I loved...',
-        "rating": 5,
-        'created_at': '2022-09-28 17:08:38'
-    },
-    {
-        'biz_id': 146,
-        'review_body': 'I prefer it even spicier, but it does bring me back to Taiwan I loved it :) I also tried sesame oil noodles which was pretty good',
-        "rating": 5,
-        'created_at': '2022-09-08 11:34:24'
-    },
-    {
-        'biz_id': 146,
-        'review_body': 'Hot day in Oakland stopped for some noodles.\n' +
-        'The meal was amazing, fragrant, flavorful, and abundant!\n' +
-        'The cheerful owner/cook came out to greet us and when...',
-        "rating": 5,
-        'created_at': '2022-09-05 15:27:49'
-    },
-    {
-        'biz_id': 146,
-        'review_body': 'Everything everyone in my party ordered was delicious! Would recommend to anyone visiting or if you are in the area',
-        "rating": 5,
-        'created_at': '2022-09-19 17:16:41'
-    },
-    {
-        'biz_id': 145,
-        'review_body': 'When we arrived at the restaurant, the hosts pointed us over to a table of two in the corner. We sat down and was greeted with water and hot tea. We decided...',
-        "rating": 4,
-        'created_at': '2022-09-08 13:53:52'
-    },
-    {
-        'biz_id': 145,
-        'review_body': 'This place is great\n' +
-        '\n' +
-        'Our friend from the east bay recommended it \n' +
-        '\n' +
-        'These were our favorites \n' +
-        '\n' +
-        'salt n pepper fish,\n' +
-        'spicy sauce noodles, \n' +
-        'walnut...',
-        "rating": 5,
-        'created_at': '2022-10-09 13:05:57'
-    },
-    {
-        'biz_id': 145,
-        'review_body': 'Always delicious. \n' +
-        'Their dumplings and their hand-pulled noodles are next level. \n' +
-        'Enjoy!',
-        "rating": 5,
-        'created_at': '2022-10-01 09:07:36'
-    },
-    {
-        'biz_id': 148,
-        'review_body': "I really love eating at this restaurant. Every time I'm able travel from LA to Oakland I always make a stop here. The staff are really friendly and helpful....",
-        "rating": 5,
-        'created_at': '2022-09-14 09:51:48'
-    },
-    {
-        'biz_id': 148,
-        'review_body': 'Caldo de res was delicious as well as the torta de carne. Good and friendly service. The prices were good as well',
-        "rating": 5,
-        'created_at': '2022-08-20 15:50:41'
-    },
-    {
-        'biz_id': 148,
-        'review_body': 'I just paid $20 for one skinny skimpy steak & shrimp burrito. Not worth it! $12 base price, but extras are $1 extra and I only added sour cream and cheese....',
-        "rating": 2,
-        'created_at': '2022-03-22 18:15:36'
-    },
-    {
-        'biz_id': 147,
-        'review_body': "It was my coworkers birthday and I needed to get her a cake, but she's gluten free. I was so happy when I found this bakery! Im always hesitant to try bake...",
-        "rating": 5,
-        'created_at': '2022-10-08 18:04:11'
-    },
-    {
-        'biz_id': 147,
-        'review_body': "There just isn't a better gluten free cinnamon roll! I also love their chicken pot pie, breads , pastas & ok really pretty much everything.  \n" +
-        'The BLT : yum....',
-        "rating": 5,
-        'created_at': '2022-09-19 00:23:46'
-    },
-    {
-        'biz_id': 147,
-        'review_body': "Great food for all! Even if you aren't gluten free!\n" +
-        '\n' +
-        "This review is long overdue, but I'm so grateful for Mariposa! My boyfriend is celiac and honestly it's...",
-        "rating": 5,
-        'created_at': '2022-06-16 17:37:33'
-    },
-    {
-        'biz_id': 150,
-        'review_body': 'Quick, fast, efficient service! \n' +
-        '\n' +
-        'Best burgers and always cooked to perfection. \n' +
-        '\n' +
-        "Drive thru line can be extremely long and they'll still make it go by quickly.",
-        "rating": 5,
-        'created_at': '2022-10-11 18:53:38'
-    },
-    {
-        'biz_id': 150,
-        'review_body': 'Living on the east coast, I have heard legendary tales of how good In-N-Out Burgers are.  This is a chain of burger shops on the west coast.  On a recent...',
-        "rating": 4,
-        'created_at': '2022-07-15 15:04:42'
-    },
-    {
-        'biz_id': 150,
-        'review_body': "My burger was not as tasty as I expected. The fries were very hard and not tasty at all. I went through the drive-thru so I didn't notice my fries until I...",
-        "rating": 3,
-        'created_at': '2022-09-29 04:34:43'
-    },
-    {
-        'biz_id': 151,
-        'review_body': 'OMG! \n' +
-        "Literally the best halaal paki/Indian food I have ever had in my life. And that's saying a lot, because I've tried a lot and I am very picky. \n" +
-        'They...',
-        "rating": 5,
-        'created_at': '2022-09-19 17:27:05'
-    },
-    {
-        'biz_id': 151,
-        'review_body': 'Food here is excellent, service is VERY slow.  Like many businesses in Oakland, they are understaffed. \n' +
-        '\n' +
-        'We ordered tandoori chicken, naan, chicken tikka...',
-        "rating": 4,
-        'created_at': '2022-08-29 09:41:09'
-    },
-    {
-        'biz_id': 151,
-        'review_body': "We ordered takeout during Ramadan, so I expected this halal restaurant to be extra busy. At first glance walking into the restaurant I wasn't sure what to...",
-        "rating": 4,
-        'created_at': '2022-06-12 14:40:44'
-    },
-    {
-        'biz_id': 149,
-        'review_body': "Pretty good honest local burger joint if you're looking for one of those more moderate sized burgers. The location is normally great and with a great...",
-        "rating": 4,
-        'created_at': '2022-06-17 16:49:27'
-    },
-    {
-        'biz_id': 149,
-        'review_body': "Don't judge by the exterior!\n" +
-        '\n' +
-        "Ahn's is located in a small, moderately busy parking lot. There are usually a group of guys on the side of the building...",
-        "rating": 3,
-        'created_at': '2022-09-03 18:45:12'
-    },
-    {
-        'biz_id': 149,
-        'review_body': "Ahn's Quarter Pound Burger has been hiding in plain sight: everyone knows where it is and what it looks like, but it takes forever for people to finally...",
-        "rating": 5,
-        'created_at': '2022-03-12 15:54:43'
-    },
-    {
-        'biz_id': 152,
-        'review_body': 'The food and service here is exceptional! I was dining solo and ordered chicken momo, 2 chicken tandoori tikka with garlic naan. \n' +
-        '\n' +
-        'Everything was delicious!...',
-        "rating": 5,
-        'created_at': '2022-09-15 20:57:54'
-    },
-    {
-        'biz_id': 152,
-        'review_body': "My wife and I, along with two friends, found ourselves in downtown Oakland on a Sunday morning trying to find a restaurant with dine-in options.  It wasn't...",
-        "rating": 4,
-        'created_at': '2022-09-24 15:12:51'
-    },
-    {
-        'biz_id': 152,
-        'review_body': "I've gotten both take out and come here in person and both were great experiences! Most recently coming here in person, we came on a Friday night and we...",
-        "rating": 4,
-        'created_at': '2022-09-11 08:48:56'
-    },
-    {
-        'biz_id': 154,
-        'review_body': 'So glad I live near this place! My friends and I split the mushroom, the potatoes, and the corn pizzas.\n' +
-        '\n' +
-        'I think the corn seemed to be a big winner amongst...',
-        "rating": 5,
-        'created_at': '2022-07-29 23:34:00'
-    },
-    {
-        'biz_id': 154,
-        'review_body': "Ok so I've been here so many times but I think it's finally time to commit to not coming. Usually the food + service are amazing, which makes up for the...",
-        "rating": 2,
-        'created_at': '2022-07-18 18:15:42'
-    },
-    {
-        'biz_id': 154,
-        'review_body': "Stopped by here about a month ago with my girlfriend to grab some dinner after a movie. Wasn't expecting to have one of the best slices of pizza I've had...",
-        "rating": 4,
-        'created_at': '2022-06-22 06:57:04'
-    },
-    {
-        'biz_id': 153,
-        'review_body': "I have been here several times and it's always a 5 star experience. I can't even recommend anything in particular because it's all amazing. This last time I...",
-        "rating": 5,
-        'created_at': '2022-10-04 15:03:25'
-    },
-    {
-        'biz_id': 153,
-        'review_body': "What can I say, I'm drawn to homemade pasta with fresh ingredients. \n" +
-        '\n' +
-        'We started off with their beef tartar and it was raw and fresh and delicious and had a...',
-        "rating": 4,
-        'created_at': '2022-10-05 20:43:25'
-    },
-    {
-        'biz_id': 153,
-        'review_body': 'This "rating" has everything to do with the lack of communication between staff and myself.  It was on a Monday, at 5 pm I called and spoke to a lady staff....',
-        "rating": 1,
-        'created_at': '2022-09-21 18:13:14'
-    },
-    {
-        'biz_id': 155,
-        'review_body': 'Definitely one of the BEST ramen spots in the Bay Area. The broth is just so damn milky and fulfilling that my mouth is salivating at the thought of...',
-        "rating": 5,
-        'created_at': '2022-10-09 12:31:44'
-    },
-    {
-        'biz_id': 155,
-        'review_body': 'I really liked the Chicken Paitan ramen, broth was flavorful and the spice level was perfect (i asked for Medium). Chicken Karage was crispy and tasty,...',
-        "rating": 4,
-        'created_at': '2022-10-09 17:38:56'
-    },
-    {
-        'biz_id': 155,
-        'review_body': 'I am in love with this place! As a ramen lover (and vegetarian) i havent been able to find a ramen spot that seasons eir tofu befote putting it in the soup....',
-        "rating": 5,
-        'created_at': '2022-10-08 14:20:02'
-    },
-    {
-        'biz_id': 158,
-        'review_body': 'Great gentleman waiter. Patient and understanding with us, being our first time there',
-        "rating": 4,
-        'created_at': '2022-09-06 16:49:18'
-    },
-    {
-        'biz_id': 158,
-        'review_body': "Ohgane is the classic spot for AYCE kbbq for berkeley students. I've been here once a couple of years ago, but came back again recently. They were able to...",
-        "rating": 4,
-        'created_at': '2022-09-24 17:15:49'
-    },
-    {
-        'biz_id': 158,
-        'review_body': 'Food: 5 stars \n' +
-        'Service: 2 stars\n' +
-        'Bathroom: 0 stars \n' +
-        '\n' +
-        "Some notes first on the night I'm writing this review on: \n" +
-        '1. Tables were 3/4 filled. So not all that...',
-        "rating": 4,
-        'created_at': '2022-08-18 18:45:45'
-    },
-    {
-        'biz_id': 156,
-        'review_body': "What a find! Just a stone's throw off of Piedmont Ave, Geta Sushi is THE PERFECT little hole-in-the-wall joint!\n" +
-        '\n' +
-        'We slid into this itsy-bitsy place about a...',
-        "rating": 5,
-        'created_at': '2022-08-04 15:11:31'
-    },
-    {
-        'biz_id': 156,
-        'review_body': "Reliable sushi option, no frills. Nothing next level fancy but good option for rolls. Super packer at all times so you know fish ain't sitting around....",
-        "rating": 4,
-        'created_at': '2022-08-11 21:18:28'
-    },
-    {
-        'biz_id': 156,
-        'review_body': 'Ordered to go, its pricey.  Japanese food is notoriously pricey by nature due to its skilled cuts/ tedious food prep and unparalleled freshness. Ordered the...',
-        "rating": 3,
-        'created_at': '2022-08-02 22:23:46'
-    },
-    {
-        'biz_id': 157,
-        'review_body': 'Got to check this place out with a few friends Friday evening. Luckily we got here right before the dinner rush.\n' +
-        '\n' +
-        'We got seated upstairs, assuming for...',
-        "rating": 5,
-        'created_at': '2022-10-12 18:20:15'
-    },
-    {
-        'biz_id': 157,
-        'review_body': "I've been to this place many times.  It is my once a week go to restaurant to eat at.  I love going by myself because I get all the Banchan to myself and...",
-        "rating": 5,
-        'created_at': '2022-09-27 16:13:55'
-    },
-    {
-        'biz_id': 157,
-        'review_body': "I cannot give them enough kuudooosss!!! I made RSVP's for my besties birthday and it was all around delicious and the customer service was excellent. I love...",
-        "rating": 5,
-        'created_at': '2022-09-26 10:18:35'
-    },
-    {
-        'biz_id': 160,
-        'review_body': "Love Wally's and the chicken salad is the best along with the free stack of dessert after the best soup yes sir",
-        "rating": 5,
-        'created_at': '2022-08-23 15:30:16'
-    },
-    {
-        'biz_id': 160,
-        'review_body': "Omgggggggosh! This restaurant has such a great menu, I ate here 2 days in a row after learning about it. Tried Wally's last night at an event, and the first...",
-        "rating": 5,
-        'created_at': '2022-09-02 13:41:50'
-    },
-    {
-        'biz_id': 160,
-        'review_body': "Hole in the wall Mediterranean/Lebanese food goodness- the best kind!  I love these kinds of spots because it adds to the place's character and you know...",
-        "rating": 4,
-        'created_at': '2022-09-06 08:06:42'
-    },
-    {
-        'biz_id': 159,
-        'review_body': 'stopped here randomly and thank god we did! \n' +
-        'nice service and quality food! \n' +
-        'everything we ordered came out so well seasoned.\n' +
-        'please stop by if you get the...',
-        "rating": 5,
-        'created_at': '2022-09-24 15:14:44'
-    },
-    {
-        'biz_id': 159,
-        'review_body': 'Ambiance - 4/5\n' +
-        'Service - 5/5\n' +
-        'Food & drink - 4/5\n' +
-        '\n' +
-        'Had a good brunch at Shakewell. Max was our waiter and took great care of our party of four. Sad to hear...',
-        "rating": 4,
-        'created_at': '2022-10-02 16:32:22'
-    },
-    {
-        'biz_id': 159,
-        'review_body': 'This was my first time dining at Shakewell.  My new friend in the area says she always bring her out of town guest here. I know why now.\n' +
-        'The food was...',
-        "rating": 4,
-        'created_at': '2022-10-02 07:49:03'
-    },
-    {
-        'biz_id': 161,
-        'review_body': "Honestly the best Central American food I've ever had. The seating area is adorable and the food is 10/10 as well as the service. This is my new favorite...",
-        "rating": 5,
-        'created_at': '2022-09-24 16:40:08'
-    },
-    {
-        'biz_id': 161,
-        'review_body': 'Wow, I been looking for this ever since I tried one in Puerto Rico. This is not exactly the same, but the closest I have found in the Bay Area. It was so...',
-        "rating": 5,
-        'created_at': '2022-10-11 22:59:51'
-    },
-    {
-        'biz_id': 161,
-        'review_body': 'They we doing good business when we were there but still many empty tables. The wait to order and get seated was reasonable. Convo at the register was...',
-        "rating": 3,
-        'created_at': '2022-10-02 21:24:41'
-    },
-    {
-        'biz_id': 162,
-        'review_body': "Bring cash and stop by! The best tacos are served here and even though inflation has hit this place like any other, you won't regret it (I remember tacos...",
-        "rating": 5,
-        'created_at': '2022-07-31 20:58:21'
-    },
-    {
-        'biz_id': 162,
-        'review_body': 'Rating: 3.5/5\n' +
-        '\n' +
-        'Pro:\n' +
-        '- Good horchata\n' +
-        '\n' +
-        'Con:\n' +
-        '- Limited parking\n' +
-        '- A couple of people with housing insecurity are wandering around very close to you and your...',
-        "rating": 3,
-        'created_at': '2022-08-03 20:42:42'
-    },
-    {
-        'biz_id': 162,
-        'review_body': 'This place has really gone down hill they charge 3.50 a taco now when it used to be 2.25 they also charge 50 cents for salsa no matter how much you just...',
-        "rating": 1,
-        'created_at': '2022-08-03 15:30:54'
-    },
-    {
-        'biz_id': 163,
-        'review_body': "Zachary's has become my favorite pizza spot in Oakland for two key reason: amazing pizza with the best gluten free crust! \n" +
-        '\n' +
-        'Dined in for the first time last...',
-        "rating": 5,
-        'created_at': '2022-10-07 12:53:06'
-    },
-    {
-        'biz_id': 163,
-        'review_body': "I feel like Zachary's did a lot of things right and a few things wrong.\n" +
-        '\n' +
-        'I came late on a Thursday night at around closing hour with a group of 10+ and the...',
-        "rating": 3,
-        'created_at': '2022-10-07 03:13:38'
-    },
-    {
-        'biz_id': 163,
-        'review_body': "Zachary's Nostalgia!! This was a hot spot for deep dish pizza during college life at Berkeley and it was so fun to come back with the family! \n" +
-        '\n' +
-        'We got a...',
-        "rating": 4,
-        'created_at': '2022-09-25 08:19:41'
-    },
-    {
-        'biz_id': 164,
-        'review_body': 'Fresh baked breads, pastries and pizza- oh my!\n' +
-        '\n' +
-        'This bakery provides the trifecta of baked goods- pizza, bread and pastries- all three of which I purchased...',
-        "rating": 5,
-        'created_at': '2022-10-10 14:29:08'
-    },
-    {
-        'biz_id': 164,
-        'review_body': 'I had a great mushroom pizza the other night that a friend picked up.  It hit the spot.\n' +
-        '\n' +
-        'That was all we got and all I really have to say.  If anyone is...',
-        "rating": 5,
-        'created_at': '2022-09-20 14:04:56'
-    },
-    {
-        'biz_id': 164,
-        'review_body': "One of my old time favorite bakeries I'm Oakland.\n" +
-        '\n' +
-        'I love all their breads but my heart keeps a special place for their grackle which they only serve on...',
-        "rating": 5,
-        'created_at': '2022-09-08 16:07:30'
-    },
-    {
-        'biz_id': 165,
-        'review_body': "I'm leisurely walking and exploring the lovely Oakland area and as I'm leaving Jack London Square headed up Broadway I walk right into the one place...",
-        "rating": 5,
-        'created_at': '2022-09-05 08:41:14'
-    },
-    {
-        'biz_id': 165,
-        'review_body': 'This was such a weird experience. I had heard amazing things about Souley Vegan, and so my expectations were already high. We walked in on a weekday, and...',
-        "rating": 2,
-        'created_at': '2022-09-26 16:52:14'
-    },
-    {
-        'biz_id': 165,
-        'review_body': "Stayed in Downtown Oakland this weekend and was looking for a spot to eat. My 11yo nephew is vegan so we decided to try it out. It's walking distance from...",
-        "rating": 4,
-        'created_at': '2022-09-04 09:43:09'
-    },
-    {
-        'biz_id': 161,
-        'review_body': "Honestly the best Central American food I've ever had. The seating area is adorable and the food is 10/10 as well as the service. This is my new favorite...",
-        "rating": 5,
-        'created_at': '2022-09-24 16:40:08'
-    },
-    {
-        'biz_id': 161,
-        'review_body': 'Wow, I been looking for this ever since I tried one in Puerto Rico. This is not exactly the same, but the closest I have found in the Bay Area. It was so...',
-        "rating": 5,
-        'created_at': '2022-10-11 22:59:51'
-    },
-    {
-        'biz_id': 161,
-        'review_body': 'They we doing good business when we were there but still many empty tables. The wait to order and get seated was reasonable. Convo at the register was...',
-        "rating": 3,
-        'created_at': '2022-10-02 21:24:41'
-    },
-    {
-        'biz_id': 166,
-        'review_body': 'My partner and I stopped here for a quick lunch. We got the Asian pear salad and chicken chopped salad...both were great and loaded with greens.  The staff...',
-        "rating": 5,
-        'created_at': '2022-08-27 17:06:07'
-    },
-    {
-        'biz_id': 166,
-        'review_body': 'Ordered the belly burrito for lunch earlier this week. I used to get a kimchi burrito almost every week from a cafe near my college when I was younger and I...',
-        "rating": 4,
-        'created_at': '2022-10-05 13:59:04'
-    },
-    {
-        'biz_id': 166,
-        'review_body': 'THIS IS THE BEST CALI BURRITO IN OAKLAND! Being from San Diego, I definitely ate my share of authentic cali burritos and this one definitely takes the cake...',
-        "rating": 5,
-        'created_at': '2022-07-27 16:28:10'
-    },
-    {
-        'biz_id': 167,
-        'review_body': 'Yes. Yes. Yes. Owned by a charming, diligent and principled blue haired woman, the back story of this bustling sandwich shop and bakery is fascinating....',
-        "rating": 5,
-        'created_at': '2022-09-11 08:35:44'
-    },
-    {
-        'biz_id': 167,
-        'review_body': 'Everyone loves Bakesale Betty except for me.  Difficult street parking, Usually lines of diners anxiously wanting their fried chicken sandwich.  \n' +
-        '\n' +
-        "I didn't...",
-        "rating": 3,
-        'created_at': '2022-09-07 10:04:49'
-    },
-    {
-        'biz_id': 167,
-        'review_body': 'Since I found the time (and I was in the neighborhood) I decided to grab a friend chicken sandwich. Ohh it brought back memories!! It was probably better...',
-        "rating": 5,
-        'created_at': '2022-09-03 13:16:21'
-    },
-    {
-        'biz_id': 170,
-        'review_body': 'This small family-owned place has amazing food, drinks, and service. The shrimp corncakes blew me away, and the twice-cooked Maine lobster was so delicious....',
-        "rating": 5,
-        'created_at': '2022-09-14 11:48:11'
-    },
-    {
-        'biz_id': 170,
-        'review_body': "I went based on the revies...people love this place. Unfortunately,  I'm not people. I was confused. We had the shrimp pancakes. Lobster roll and seafood...",
-        "rating": 2,
-        'created_at': '2022-09-25 10:56:23'
-    },
-    {
-        'biz_id': 170,
-        'review_body': 'We chose this place solely on the yelp reviews and ratings and were extremely disappointed.  \n' +
-        '\n' +
-        '1-upon arrival (before 5:45pm) the older lady working the...',
-        "rating": 3,
-        'created_at': '2022-09-25 10:34:05'
-    },
-    {
-        'biz_id': 169,
-        'review_body': 'When we arrived at the restaurant, the hosts pointed us over to a table of two in the corner. We sat down and was greeted with water and hot tea. We decided...',
-        "rating": 4,
-        'created_at': '2022-09-08 13:53:52'
-    },
-    {
-        'biz_id': 169,
-        'review_body': 'This place is great\n' +
-        '\n' +
-        'Our friend from the east bay recommended it \n' +
-        '\n' +
-        'These were our favorites \n' +
-        '\n' +
-        'salt n pepper fish,\n' +
-        'spicy sauce noodles, \n' +
-        'walnut...',
-        "rating": 5,
-        'created_at': '2022-10-09 13:05:57'
-    },
-    {
-        'biz_id': 169,
-        'review_body': 'Always delicious. \n' +
-        'Their dumplings and their hand-pulled noodles are next level. \n' +
-        'Enjoy!',
-        "rating": 5,
-        'created_at': '2022-10-01 09:07:36'
-    },
-    {
-        'biz_id': 171,
-        'review_body': 'Great Dinner. Surprised my wife who is Brazilian, visiting from LA, but I lived in Oakland 00-05. So wanted to see the old spots, but wanted to find a...',
-        "rating": 5,
-        'created_at': '2022-08-19 22:11:06'
-    },
-    {
-        'biz_id': 171,
-        'review_body': "If you're contemplating an evening dining experience where you're treated with food and respect that's worth $70+ per person, run, don't walk, away from...",
-        "rating": 1,
-        'created_at': '2022-10-07 20:54:58'
-    },
-    {
-        'biz_id': 171,
-        'review_body': "We went on a Friday night and we're a party of five with no reservation . Big mistake - we waited around for over 45 min.\n" +
-        '\n' +
-        'Then after 45 min of waiting we...',
-        "rating": 1,
-        'created_at': '2022-10-02 21:54:42'
-    },
-    {
-        'biz_id': 172,
-        'review_body': 'Took my parents here about 10 years ago. I had never been either as I lived in NV and they lived in OH. This is one of THE BEST RESTAURANTS IN THE...',
-        "rating": 5,
-        'created_at': '2022-10-07 20:07:31'
-    },
-    {
-        'biz_id': 172,
-        'review_body': 'We came here with a big group for a birthday and it was my first time here, so I was really excited. The wait, even with reservations was expected for our...',
-        "rating": 5,
-        'created_at': '2022-10-06 18:27:17'
-    },
-    {
-        'biz_id': 172,
-        'review_body': 'My go-to Prime Rib spot!! Food is great!!! They cut the meat in front of you and prepare the salad in front of you too. Probably my fav salad ever as well,...',
-        "rating": 5,
-        'created_at': '2022-10-05 16:04:10'
-    },
-    {
-        'biz_id': 174,
-        'review_body': 'Favorite neighborhood sushi spot! \n' +
-        '\n' +
-        'No wait on this Saturday around 12:30pm. Was seated, ordered, and served all within 10-15 minutes. \n' +
-        '\n' +
-        'Fish is fresh,...',
-        "rating": 5,
-        'created_at': '2022-05-28 13:09:16'
-    },
-    {
-        'biz_id': 174,
-        'review_body': "A joyful creative roll spot, if you're into that. They refill your tea cup, are very friendly and welcoming, and have a long list of yummy rolls. \n" +
-        '\n' +
-        'It helps...',
-        "rating": 4,
-        'created_at': '2022-07-10 11:30:29'
-    },
-    {
-        'biz_id': 174,
-        'review_body': 'Pleased again. Ordered same rolls from Saturday; \n' +
-        "2 Philly rolls & Tekka for Mom / Shrek & Lion King roll for me. I wish they'd cook the salmon a little...",
-        "rating": 5,
-        'created_at': '2022-09-29 09:01:08'
-    },
-    {
-        'biz_id': 173,
-        'review_body': "What a find! Just a stone's throw off of Piedmont Ave, Geta Sushi is THE PERFECT little hole-in-the-wall joint!\n" +
-        '\n' +
-        'We slid into this itsy-bitsy place about a...',
-        "rating": 5,
-        'created_at': '2022-08-04 15:11:31'
-    },
-    {
-        'biz_id': 173,
-        'review_body': "Reliable sushi option, no frills. Nothing next level fancy but good option for rolls. Super packer at all times so you know fish ain't sitting around....",
-        "rating": 4,
-        'created_at': '2022-08-11 21:18:28'
-    },
-    {
-        'biz_id': 173,
-        'review_body': 'Ordered to go, its pricey.  Japanese food is notoriously pricey by nature due to its skilled cuts/ tedious food prep and unparalleled freshness. Ordered the...',
-        "rating": 3,
-        'created_at': '2022-08-02 22:23:46'
-    },
-    {
-        'biz_id': 175,
-        'review_body': "If you're going to this expecting a cheap Thai meal.... Forget it!! Tasty but really expensive!",
-        "rating": 4,
-        'created_at': '2022-08-28 12:20:28'
-    },
-    {
-        'biz_id': 175,
-        'review_body': 'Ambiance - 5/5\n' +
-        'Food - 5/5\n' +
-        'Service - 5/5\n' +
-        '\n' +
-        'WOW!  Very impressed by this restaurant. Came with a party of 8 on a Sunday ~12pm. The restaurant was surprisingly...',
-        "rating": 5,
-        'created_at': '2022-10-09 16:23:17'
-    },
-    {
-        'biz_id': 175,
-        'review_body': 'Overhyped and overpriced. Farmhouse Kitchen Thai is one of the many trendy restaurants that attempt to wow people with extravagant presentation,...',
-        "rating": 1,
-        'created_at': '2022-10-04 23:04:04'
-    },
-    {
-        'biz_id': 176,
-        'review_body': '33. Tom Yum Soup \n' +
-        '7. Lao Tacos\n' +
-        '72. Basil Fried Rice\n' +
-        'Yummy ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!??!???????',
-        "rating": 5,
-        'created_at': '2022-08-28 15:20:09'
-    },
-    {
-        'biz_id': 176,
-        'review_body': 'One of my favorite authentic Laotian place in the Bay Area. \n' +
-        '\n' +
-        'Decided to pick up food around 2:30pm and took about 25 mins. Ordered the following below....',
-        "rating": 5,
-        'created_at': '2022-10-01 22:53:53'
-    },
-    {
-        'biz_id': 176,
-        'review_body': "This hole in the wall is my favorite place for Thai food. The parking is a bit rough but it's worth it. The fact that there's a bunch of cars double parked...",
-        "rating": 4,
-        'created_at': '2022-08-07 16:53:43'
-    },
-    {
-        'biz_id': 178,
-        'review_body': "Best vegan asian fusion food hands down! Amazing amount of meat replacement options. Great quality & flavor. I hadn't eaten here in five years and it was...",
-        "rating": 5,
-        'created_at': '2022-07-17 09:08:56'
-    },
-    {
-        'biz_id': 178,
-        'review_body': 'Not sure why this place has five stars.\n' +
-        '\n' +
-        "Is it because it's the best vegan restaurant? Probably not. Is it because it's one of the only ones around?...",
-        "rating": 3,
-        'created_at': '2022-09-30 22:22:31'
-    },
-    {
-        'biz_id': 178,
-        'review_body': 'I generally only write reviews IF product/service is very, very good, OR, very, very bad.  Golden Lotus was very, very good!\n' +
-        'Dined in with 3 of my...',
-        "rating": 5,
-        'created_at': '2022-07-11 13:28:13'
-    },
-    {
-        'biz_id': 177,
-        'review_body': 'Best pizza ever\n' +
-        "Love the people there, love the pizza, love that it's local, it's just the perfect pizza place",
-        "rating": 5,
-        'created_at': '2022-08-25 19:06:55'
-    },
-    {
-        'biz_id': 177,
-        'review_body': 'Their food has real fresh veggies in it. Their pizza is reliably good. Their salads are big and have lots of good stuff, not just a bunch of spring mix....',
-        "rating": 5,
-        'created_at': '2022-09-06 22:50:34'
-    },
-    {
-        'biz_id': 177,
-        'review_body': "I crave Dimond Slice on so many random weekdays. Every day, they always have a different pizza but it's ALWAYS good I just don't get it. If pizza were...",
-        "rating": 5,
-        'created_at': '2022-08-18 13:39:38'
-    },
-    {
-        'biz_id': 180,
-        'review_body': 'The people who work at this restaurant go above and beyond, they are AMAZING! They make you feel at home and are so welcoming. While we were waiting for our...',
-        "rating": 5,
-        'created_at': '2022-08-29 10:37:17'
-    },
-    {
-        'biz_id': 180,
-        'review_body': 'Their pho is delicious and their new space is super cool with a bunch of cool stuff like a swag store. This is one of my favorite places in the Bay Area for...',
-        "rating": 5,
-        'created_at': '2022-09-13 20:12:00'
-    },
-    {
-        'biz_id': 180,
-        'review_body': "We ordered two bowls of beef pho to go and waited 25 minutes for the order to come out, which is perplexing because it's not like they were making the broth...",
-        "rating": 2,
-        'created_at': '2022-10-10 14:36:09'
-    },
-    {
-        'biz_id': 179,
-        'review_body': "Best sandwich I've tried anywhere would recommend this to everyone taste better than any other Vietnamese sandwich places I been too",
-        "rating": 5,
-        'created_at': '2022-09-18 22:01:29'
-    },
-    {
-        'biz_id': 179,
-        'review_body': 'Just a tip 9/23/22 they are **closed until 9/30/22**\n' +
-        '\n' +
-        'Drove over today and was excited no line out the door at 1pm. Nope, just closed  \n' +
-        'Saw a sign closed...',
-        "rating": 5,
-        'created_at': '2022-09-23 22:07:44'
-    },
-    {
-        'biz_id': 179,
-        'review_body': "#2 special combo ham sandwich was great. Bread was thick and crispy, and the pate was really something --smooth and creamy and rich, and I'm glad to...",
-        "rating": 5,
-        'created_at': '2022-09-10 20:39:22'
-    },
-    {
-        'biz_id': 182,
-        'review_body': 'First off pastries were FANTASTIC. Coffee was good (I got a macchiato and it was a littler smaller than I thought but was great) and the vibe was fun,...',
-        "rating": 5,
-        'created_at': '2022-08-28 19:34:47'
-    },
-    {
-        'biz_id': 182,
-        'review_body': "Born and raised in the Bay, occasionally I surprise myself with well-known San Francisco establishments that I've never visited before--B Patisserie being...",
-        "rating": 5,
-        'created_at': '2022-10-06 18:10:09'
-    },
-    {
-        'biz_id': 182,
-        'review_body': "Looove this place! I thought the pastries were so fresh and so delicious, we only had to stand in line for about 15 minutes. They weren't warm, but I'm sure...",
-        "rating": 5,
-        'created_at': '2022-10-02 17:59:19'
-    },
-    {
-        'biz_id': 181,
-        'review_body': 'I am not typically a fan of pastries, but this has to be one of my favorite bakeries. I got the almond lemon cake and banana cream tart which were both...',
-        "rating": 4,
-        'created_at': '2022-09-15 06:35:39'
-    },
-    {
-        'biz_id': 181,
-        'review_body': '9/27/2022 I went this morning. I told the staff my order. I wanted a chocolate crème pie and a few other items. The lady helping was talking to another...',
-        "rating": 5,
-        'created_at': '2022-09-27 13:39:04'
-    },
-    {
-        'biz_id': 181,
-        'review_body': 'Went to Tartine an SF institution the other day. And got a biiiiig spread of stuff!\n' +
-        '\n' +
-        'Started off w a cute lil cappuccino and look how cute!! This lil guy...',
-        "rating": 4,
-        'created_at': '2022-10-08 12:56:00'
-    },
-    {
-        'biz_id': 184,
-        'review_body': 'It was quite busy on the heat waved Sunday but it was worth the wait. My sister and I wanted a #12 (?) with corn flakes, who the cashier kindly told us that...',
-        "rating": 5,
-        'created_at': '2022-09-11 19:48:21'
-    },
-    {
-        'biz_id': 184,
-        'review_body': 'You are heading straight into a tourist trap here, fellow Yelper. Not a total loss though because the ice cream inside the crepe is pretty good (at least...',
-        "rating": 4,
-        'created_at': '2022-08-14 16:51:15'
-    },
-    {
-        'biz_id': 184,
-        'review_body': 'What can I say? Belly Good Crepes are the best crepes in Japan town - straight up and the most cute looking as well. \n' +
-        '\n' +
-        'Been going for years. Consistent with...',
-        "rating": 5,
-        'created_at': '2022-08-12 04:44:37'
-    },
-    {
-        'biz_id': 183,
-        'review_body': "This is my go to spot whenever I'm craving matcha! My usual order is the matcha boba sundae, which consists of soft serve, boba, and kuromitsu syrup...",
-        "rating": 5,
-        'created_at': '2022-10-07 20:31:29'
-    },
-    {
-        'biz_id': 183,
-        'review_body': "After writing down a review for Sac's location, I thought might as well give a good review for the SF location as well! This is one of the best location for...",
-        "rating": 5,
-        'created_at': '2022-10-06 11:28:07'
-    },
-    {
-        'biz_id': 183,
-        'review_body': 'Tried the maiko special with the matcha - vanilla mix ice cream. I liked the ice cream but was not a fan of most of the toppings. I would probably just...',
-        "rating": 4,
-        'created_at': '2022-10-03 21:49:12'
-    },
-    {
-        'biz_id': 185,
-        'review_body': 'Found this lovely quaint dessert spot in SF. Tried the coconut pandan crepe cake and loved it ! Definitely recommended',
-        "rating": 5,
-        'created_at': '2022-08-27 18:13:16'
-    },
-    {
-        'biz_id': 185,
-        'review_body': "I came here at 5 o'clock on a Friday to order a birthday cake and also try one of their sweets.\n" +
-        '\n' +
-        "To be honest, I didn't like the toasted cereal with honey...",
-        "rating": 4,
-        'created_at': '2022-09-09 07:33:26'
-    },
-    {
-        'biz_id': 185,
-        'review_body': 'Friendly, Great service and reasonable prices. Will be back again . Mango sticky rice is my favorite',
-        "rating": 5,
-        'created_at': '2022-09-19 20:00:49'
-    },
-    {
-        'biz_id': 186,
-        'review_body': 'Lives up to the hype!\n' +
-        '\n' +
-        "I found this modest corner coffee shop selling odds and ends (in terms of snacks) on Yelp. I haven't had baklava in forever since...",
-        "rating": 5,
-        'created_at': '2022-05-05 11:42:14'
-    },
-    {
-        'biz_id': 186,
-        'review_body': 'I love Turkish coffee and every day I start my day with a 12-ounce cup of Turkish coffee, and for the rest of the day, I must drink 1-2 8-ounce cups.  I...',
-        "rating": 2,
-        'created_at': '2022-09-23 16:21:27'
-    },
-    {
-        'biz_id': 186,
-        'review_body': 'I am hooked to Turkish coffee. Therefore, whenever I see one available, I would find a way to try it. After passing by on this shop for couple of times, I...',
-        "rating": 4,
-        'created_at': '2021-10-28 21:21:43'
-    },
-    {
-        'biz_id': 181,
-        'review_body': 'I am not typically a fan of pastries, but this has to be one of my favorite bakeries. I got the almond lemon cake and banana cream tart which were both...',
-        "rating": 4,
-        'created_at': '2022-09-15 06:35:39'
-    },
-    {
-        'biz_id': 181,
-        'review_body': '9/27/2022 I went this morning. I told the staff my order. I wanted a chocolate crème pie and a few other items. The lady helping was talking to another...',
-        "rating": 5,
-        'created_at': '2022-09-27 13:39:04'
-    },
-    {
-        'biz_id': 181,
-        'review_body': 'Went to Tartine an SF institution the other day. And got a biiiiig spread of stuff!\n' +
-        '\n' +
-        'Started off w a cute lil cappuccino and look how cute!! This lil guy...',
-        "rating": 4,
-        'created_at': '2022-10-08 12:56:00'
-    },
-    {
-        'biz_id': 188,
-        'review_body': 'The service was great, the food was wonderful.  I took my family here and had been anticipating the pork chops.  It did not disappoint us at all!  You gotta...',
-        "rating": 5,
-        'created_at': '2022-09-18 10:25:30'
-    },
-    {
-        'biz_id': 188,
-        'review_body': 'Nopa is a restaurant that focuses on combining quality, seasonal ingredients without over amplifying their menu. I got their smoked tomato Caesar salad,...',
-        "rating": 5,
-        'created_at': '2022-09-13 20:55:09'
-    },
-    {
-        'biz_id': 188,
-        'review_body': 'Great service here. Staff were very attentive. I spent ~$100 with entree and dessert, splitting appetizers, $125 riseling (that I was told is hard to find),...',
-        "rating": 4,
-        'created_at': '2022-10-05 00:10:18'
-    },
-    {
-        'biz_id': 189,
-        'review_body': "Loved going to Bob's for breakfast. I heard about it through a Someone Feed Phil recommendation and knew I had to go. \n" +
-        '\n' +
-        'It will always look like a long line...',
-        "rating": 5,
-        'created_at': '2022-10-12 07:24:33'
-    },
-    {
-        'biz_id': 189,
-        'review_body': 'Truly the best donuts in the SF bay!\n' +
-        '\n' +
-        "Try to go earlier in the evening for their specialty donuts! We did order the massive donut however it's flavor is...",
-        "rating": 5,
-        'created_at': '2022-10-10 02:12:27'
-    },
-    {
-        'biz_id': 189,
-        'review_body': "Just wow. The best doughnuts in SF, most likely the US. It's open 24 hours a day, so instead of choosing something, just ask for whatever is fresh. \n" +
-        '\n' +
-        'The...',
-        "rating": 5,
-        'created_at': '2022-10-04 11:23:03'
-    },
-    {
-        'biz_id': 191,
-        'review_body': "some of the best ice cream i've ever had.  insanely long line, but, worth it\n" +
-        '\n' +
-        'you can get lots of mini-scoops instead of regular scoops to get more flavors....',
-        "rating": 5,
-        'created_at': '2022-10-04 16:42:41'
-    },
-    {
-        'biz_id': 191,
-        'review_body': 'Really unique flavors -- I LOVED the ritual coffee toffee flavor, which had a strong coffee flavor with a nutty taste and really delicious toffee bits...',
-        "rating": 4,
-        'created_at': '2022-10-02 11:17:03'
-    },
-    {
-        'biz_id': 191,
-        'review_body': "We love Bi-Rite Creamery, especially for their sundaes and banana splits.  We've had a number of their ice cream flavors and they have all been good.  The...",
-        "rating": 4,
-        'created_at': '2022-09-23 12:09:34'
-    },
-    {
-        'biz_id': 190,
-        'review_body': "Incredible small batch ice cream. Well worth the wait, no matter how long the line is. If it's your first time, get ice cream on a donut with toasted fluff.",
-        "rating": 5,
-        'created_at': '2022-09-04 22:56:13'
-    },
-    {
-        'biz_id': 190,
-        'review_body': '"Some people are worth melting for." - Olaf\n' +
-        '\n' +
-        "Urban Legend says that there's a small quirky Ice Cream shop in the middle of who knows where San Francisco...",
-        "rating": 5,
-        'created_at': '2022-10-10 17:10:45'
-    },
-    {
-        'biz_id': 190,
-        'review_body': 'What a treat! What a dream!\n' +
-        '\n' +
-        'Excellent customer service. Be ready to wait in line, but totally worth it.',
-        "rating": 5,
-        'created_at': '2022-08-21 20:27:40'
-    },
-    {
-        'biz_id': 192,
-        'review_body': "This is definitely a local's favorite. There's nothing like this place in SF. I suggest the mango ice cream.",
-        "rating": 5,
-        'created_at': '2022-09-20 16:53:32'
-    },
-    {
-        'biz_id': 192,
-        'review_body': "Some of the best ice cream I've ever had. You get a decent amount in one scoop, especially if you get it in a cone. I got the strawberries and cream and it...",
-        "rating": 5,
-        'created_at': '2022-09-25 07:28:18'
-    },
-    {
-        'biz_id': 192,
-        'review_body': "Simply the GOAT of ice cream in San Francisco. Consistently fresh, creamy and tastes just like the actual flavor it's supposed to be. \n" +
-        '\n' +
-        'Waiting in line on a...',
-        "rating": 5,
-        'created_at': '2022-10-08 15:31:50'
-    },
-    {
-        'biz_id': 194,
-        'review_body': "I usually steer away from vegan restaurants since I love meat but this restaurant amazed me. I've already visited this place twice in the last two weeks and...",
-        "rating": 5,
-        'created_at': '2022-09-23 20:35:00'
-    },
-    {
-        'biz_id': 194,
-        'review_body': "My confession is that I don't normally go to vegan restaurants. Not only can I not imagine life without cheese, but I also have severe allergies that...",
-        "rating": 4,
-        'created_at': '2022-08-29 20:35:18'
-    },
-    {
-        'biz_id': 194,
-        'review_body': "Honestly every dish I've tried here is amazing, authentic and made with such care - you can tell they make most things in house from scratch. \n" +
-        '\n' +
-        'The Saigon...',
-        "rating": 5,
-        'created_at': '2022-08-01 12:29:12'
-    },
-    {
-        'biz_id': 195,
-        'review_body': "looking for a spot for traditional Korean cuisines? Han Il Kwan doesn't get more traditional than this. served with delicious ban chans, tofu soup, steamed...",
-        "rating": 5,
-        'created_at': '2022-10-12 23:22:41'
-    },
-    {
-        'biz_id': 195,
-        'review_body': "One of the better kbbq places I've been to, definitely recommend. Their bulgogi, kimchi pancakes and the free tofu soup are awesome. If you need the help,...",
-        "rating": 4,
-        'created_at': '2022-10-13 07:42:09'
-    },
-    {
-        'biz_id': 195,
-        'review_body': 'Stopped by here for a friends birthday dinner this past Sunday.\n' +
-        '\n' +
-        'We were a fairly large group (12 of us) and the restaurant was kind enough to accommodate...',
-        "rating": 4,
-        'created_at': '2022-10-12 07:52:27'
-    },
-    {
-        'biz_id': 196,
-        'review_body': 'Underrated comfortable bar. Perfect for food, drink and hanging out.\n' +
-        '\n' +
-        'Effortless good times here. It reminds me of the kind of bars in Germany. Friendly...',
-        "rating": 5,
-        'created_at': '2022-09-19 21:59:07'
-    },
-    {
-        'biz_id': 196,
-        'review_body': "So sad Broken Record will be closing, and I JUST found out about Tiki Tuesdays! It's not all-out tiki, but fun for dive bar tiki. Drinks weren't amazing but...",
-        "rating": 4,
-        'created_at': '2022-10-12 23:19:57'
-    },
-    {
-        'biz_id': 196,
-        'review_body': '4-19-2022 7p.m.\n' +
-        '1st time here...will be back!!!\n' +
-        'Went here to meet  a date for drinx...\n' +
-        'got stood up, story of my life...\n' +
-        'Walked into a lively low lit bar &...',
-        "rating": 5,
-        'created_at': '2022-04-30 13:51:10'
-    },
-    {
-        'biz_id': 197,
-        'review_body': 'Ah Brenda... you did not disappoint. \n' +
-        'Fried Chicken...ooo la La. \n' +
-        'Flaky buttery pillowy biscuits that are the perfect foil for homemade jam and hot pepper...',
-        "rating": 5,
-        'created_at': '2022-10-09 09:33:09'
-    },
-    {
-        'biz_id': 197,
-        'review_body': 'Service was horrible from our server, others accommodated everything we needed beyond placing our order. \n' +
-        '\n' +
-        'Drinks came out after our meals. The beignets...',
-        "rating": 3,
-        'created_at': '2022-10-10 05:28:31'
-    },
-    {
-        'biz_id': 197,
-        'review_body': 'We arrived as a party of 6 at about 1pm. They had a waiting list, but let us in after just few minutes. The restaurant is very clean even-though it was very...',
-        "rating": 4,
-        'created_at': '2022-10-09 16:18:23'
-    },
-    {
-        'biz_id': 200,
-        'review_body': 'Came here on a lovely Friday evening. No reservations, first come first serve. But we were flexible with our seating so we were open to bar seating for...',
-        "rating": 5,
-        'created_at': '2022-09-29 20:04:12'
-    },
-    {
-        'biz_id': 200,
-        'review_body': 'Super cute French bistro in Potrero. A great stop for a glass of wine and a delicious light lunch/dinner or a full on hearty meal. My friend and I enjoyed...',
-        "rating": 5,
-        'created_at': '2022-09-29 10:02:12'
-    },
-    {
-        'biz_id': 200,
-        'review_body': "Such a gem! Cute little French restaurant with both indoor and outdoor seating. Simple and tasty menu that doesn't break the bank. So many over priced...",
-        "rating": 5,
-        'created_at': '2022-09-24 19:40:55'
-    },
-    {
-        'biz_id': 199,
-        'review_body': 'Wonderful establishment......fantastic food and terrific staff.....thank you SM............',
-        "rating": 5,
-        'created_at': '2022-09-07 11:36:23'
-    },
-    {
-        'biz_id': 199,
-        'review_body': 'Sweet maple is one of the best breakfast spots in SF\n' +
-        '\n' +
-        'The blackwood Benedict and the south of the\n' +
-        'border dishes are REALLY good\n' +
-        '\n' +
-        'I heard they might have...',
-        "rating": 5,
-        'created_at': '2022-10-12 21:53:18'
-    },
-    {
-        'biz_id': 199,
-        'review_body': 'I usually go to the Palo Alto location but decided to try this one out for Sunday brunch! \n' +
-        'I think the biggest difference would be the actual items on the...',
-        "rating": 4,
-        'created_at': '2022-10-10 18:46:44'
-    },
-    {
-        'biz_id': 202,
-        'review_body': 'Delicious burritos! Had the Spicy Pork and the Bulgogi. Loved both but the Bulgogi Burrito won the day. \n' +
-        '\n' +
-        'Juicy flavorful meat, kimchi was good but not...',
-        "rating": 5,
-        'created_at': '2022-09-07 07:05:29'
-    },
-    {
-        'biz_id': 202,
-        'review_body': 'This place is solid for Asian fusion food! They have Asian inspired proteins including panko-crusted shrimp, wild cod katsu, tuna poke, and bulgogi beef....',
-        "rating": 5,
-        'created_at': '2022-06-22 21:29:43'
-    },
-    {
-        'biz_id': 202,
-        'review_body': 'We to HRD for a quick lunch, after looking at the different reviews and getting excited for a unique burrito! Once there you basically order and get a...',
-        "rating": 4,
-        'created_at': '2022-06-20 13:32:48'
-    },
-    {
-        'biz_id': 201,
-        'review_body': 'I am not typically a fan of pastries, but this has to be one of my favorite bakeries. I got the almond lemon cake and banana cream tart which were both...',
-        "rating": 4,
-        'created_at': '2022-09-15 06:35:39'
-    },
-    {
-        'biz_id': 201,
-        'review_body': '9/27/2022 I went this morning. I told the staff my order. I wanted a chocolate crème pie and a few other items. The lady helping was talking to another...',
-        "rating": 5,
-        'created_at': '2022-09-27 13:39:04'
-    },
-    {
-        'biz_id': 201,
-        'review_body': 'Went to Tartine an SF institution the other day. And got a biiiiig spread of stuff!\n' +
-        '\n' +
-        'Started off w a cute lil cappuccino and look how cute!! This lil guy...',
-        "rating": 4,
-        'created_at': '2022-10-08 12:56:00'
-    },
-    {
-        'biz_id': 204,
-        'review_body': '4.5 stars rounded up \n' +
-        '\n' +
-        'If plain chicken & waffles bore you to death, the flavor options at Hot Sauce & Panko are sure to liven up your life, or at the very...',
-        "rating": 5,
-        'created_at': '2022-10-07 02:36:47'
-    },
-    {
-        'biz_id': 204,
-        'review_body': 'Tried hot sauce and Panko for the first time and it exceeded my expectations.\n' +
-        '\n' +
-        'The chicken was very high quality. We got the lemon pepper boneless wings,...',
-        "rating": 5,
-        'created_at': '2022-09-21 19:14:39'
-    },
-    {
-        'biz_id': 204,
-        'review_body': 'The food was okay!\n' +
-        '\n' +
-        "I got a BBQ sauced chicken sandwich (one of three flavors), fries, and wing order with Chris's sauce.\n" +
-        '\n' +
-        'Everything was lacking a pow...',
-        "rating": 3,
-        'created_at': '2022-09-12 07:55:41'
-    },
-    {
-        'biz_id': 203,
-        'review_body': 'Best food ever!!!\r\r Recently try the famous San Tung! ;)\n' +
-        'Place with the best fried chicken.',
-        "rating": 5,
-        'created_at': '2022-09-15 00:29:16'
-    },
-    {
-        'biz_id': 203,
-        'review_body': 'I was in San Francisco this past weekend for a concert and I was highly recommend to come here by one of my friends to try their famous fried chicken and...',
-        "rating": 5,
-        'created_at': '2022-10-12 00:55:15'
-    },
-    {
-        'biz_id': 203,
-        'review_body': "Their dry fried chicken is hands down one of the best fried chicken I've ever had. \n" +
-        '\n' +
-        'I was craving their chicken wings and luckily some of my friend were...',
-        "rating": 5,
-        'created_at': '2022-10-11 09:17:40'
-    },
-    {
-        'biz_id': 203,
-        'review_body': 'Best food ever!!!\r\r Recently try the famous San Tung! ;)\n' +
-        'Place with the best fried chicken.',
-        "rating": 5,
-        'created_at': '2022-09-15 00:29:16'
-    },
-    {
-        'biz_id': 203,
-        'review_body': 'I was in San Francisco this past weekend for a concert and I was highly recommend to come here by one of my friends to try their famous fried chicken and...',
-        "rating": 5,
-        'created_at': '2022-10-12 00:55:15'
-    },
-    {
-        'biz_id': 203,
-        'review_body': "Their dry fried chicken is hands down one of the best fried chicken I've ever had. \n" +
-        '\n' +
-        'I was craving their chicken wings and luckily some of my friend were...',
-        "rating": 5,
-        'created_at': '2022-10-11 09:17:40'
-    },
-    {
-        'biz_id': 206,
-        'review_body': 'I read a lot of mixed reviews on here and the bad ones mostly discussed poor quality and old restaurant. This is an AFFORDABLE and DECENTLY GOOD place for...',
-        "rating": 4,
-        'created_at': '2022-09-20 23:03:37'
-    },
-    {
-        'biz_id': 206,
-        'review_body': 'Generous portion for an amazing price! We went on a Saturday around noon, and the line was pretty. But it moved relatively fast. This place has no tables or...',
-        "rating": 5,
-        'created_at': '2022-10-10 20:21:44'
-    },
-    {
-        'biz_id': 206,
-        'review_body': "My favorite Chinese bakery in Chinatown, and I've been to almost all of them. Listen, I don't think any authentic Chinese bakery is ever going to have mind...",
-        "rating": 5,
-        'created_at': '2022-10-09 22:14:33'
-    },
-    {
-        'biz_id': 208,
-        'review_body': 'One of favorite Vegetarian restaurants.  Food is great, well prepared.\n' +
-        '\n' +
-        'Dining experience was definitely degraded by not partaking in the amazing view...',
-        "rating": 5,
-        'created_at': '2022-09-22 17:57:26'
-    },
-    {
-        'biz_id': 208,
-        'review_body': 'Greens was absolutely delicious, the waiter was very thoughtful, and the sunset view was amazing! \n' +
-        '\n' +
-        'Came here for my birthday dinner with a group of 5. We...',
-        "rating": 4,
-        'created_at': '2022-09-21 18:34:05'
-    },
-    {
-        'biz_id': 208,
-        'review_body': "Couples date at Greens and we were a little late because we didn't realize how difficult parking would be here. That was our bad, of course it's SF. Lol....",
-        "rating": 5,
-        'created_at': '2022-08-18 19:31:29'
-    },
-    {
-        'biz_id': 209,
-        'review_body': 'I had many questions.  Is Cordon Bleu French food? Why does it look like a diner inside? Why are their hours so odd?  Is that line worth the hype?\n' +
-        '\n' +
-        'Turns...',
-        "rating": 5,
-        'created_at': '2022-09-26 11:42:40'
-    },
-    {
-        'biz_id': 209,
-        'review_body': 'Katie is a godsend. Faithfully serving up delicious affordable grub to an appreciative crowd day in and day out. After leaving the city for more affordable...',
-        "rating": 5,
-        'created_at': '2022-08-04 00:24:11'
-    },
-    {
-        'biz_id': 209,
-        'review_body': 'Not only delicious food, but such a friendly, intimate space for eating. Your classic hole-in-the-wall gem of a restaurant, the space has only an 8-seat...',
-        "rating": 5,
-        'created_at': '2022-07-29 08:58:45'
-    },
-    {
-        'biz_id': 210,
-        'review_body': "What can be said that isn't latest known? Lol\n" +
-        '\n' +
-        'Same great taste , same great service no matter which location hahah',
-        "rating": 5,
-        'created_at': '2022-08-27 14:01:42'
-    },
-    {
-        'biz_id': 210,
-        'review_body': 'Great food near the pier!! Long Lines tho be ready to wait\n' +
-        '\n' +
-        'I recommend a burger a movie at AMC Theaters Metreon! \n' +
-        '\n' +
-        'Such a wonderful summer of movies in...',
-        "rating": 4,
-        'created_at': '2022-07-04 23:12:41'
-    },
-    {
-        'biz_id': 210,
-        'review_body': "I can't describe the delicious burgers here because they are very filling and big\n" +
-        'Can you not eat anything for a whole day))\n' +
-        'I thank both the waiters and...',
-        "rating": 5,
-        'created_at': '2022-07-02 15:44:42'
-    },
-    {
-        'biz_id': 207,
-        'review_body': 'Not sure if I will make effort to return and here is why. \n' +
-        '\n' +
-        'PARKING\n' +
-        "I came on a Sunday because I was in the area. Almost didn't make it because parking was...",
-        "rating": 4,
-        'created_at': '2022-10-10 08:19:36'
-    },
-    {
-        'biz_id': 207,
-        'review_body': 'I went to dinner with some friends here.  The food was different and very tasty.  The entrees ranged from small to a full meal.  We got the nachos as an...',
-        "rating": 5,
-        'created_at': '2022-10-01 15:07:28'
-    },
-    {
-        'biz_id': 207,
-        'review_body': 'This was my first time trying an arepa, and it was great! I ordered the sweet yellow arepa with the shuli filling. Normally, when I order vegan food at a...',
-        "rating": 5,
-        'created_at': '2022-08-24 19:06:34'
-    },
-    {
-        'biz_id': 211,
-        'review_body': 'Updated review: after my previous visit and review, the owner got in touch with me. He was very apologetic, and he offered to send me another meal to make...',
-        "rating": 5,
-        'created_at': '2022-09-28 19:15:33'
-    },
-    {
-        'biz_id': 211,
-        'review_body': 'Went with a large group on a quiet Sunday evening. We happened to be in the area and wanted Indian food, which is how we ended up at North India. There was...',
-        "rating": 4,
-        'created_at': '2022-09-01 00:22:23'
-    },
-    {
-        'biz_id': 211,
-        'review_body': 'Dined here randomly as they were open late at night.\n' +
-        '\n' +
-        'As soon as we walked in, there was a great aroma inside.  The place was very clean, super cozy, and...',
-        "rating": 5,
-        'created_at': '2022-08-27 22:12:07'
-    },
-    {
-        'biz_id': 212,
-        'review_body': 'Came here on a Thursday evening. We were on the earlier side - probably around 545 pm and were the only ones in the restaurant. Staff was friendly.\n' +
-        '\n' +
-        'We were...',
-        "rating": 5,
-        'created_at': '2022-05-17 08:02:25'
-    },
-    {
-        'biz_id': 212,
-        'review_body': 'Nice spot for some unique cuisine. The flavors are legitimate and they have a good kick of spice! They have high chairs, but we were the only group with...',
-        "rating": 4,
-        'created_at': '2022-06-07 14:28:28'
-    },
-    {
-        'biz_id': 212,
-        'review_body': 'Ordered takeout on a Saturday around 6:30P and the food was ready in 15 minutes! Decent prices and delicious food. Only ordered one combo and the other a la...',
-        "rating": 4,
-        'created_at': '2022-05-07 20:29:14'
-    },
-    {
-        'biz_id': 214,
-        'review_body': "We have ordered from here before, but tonight we ordered and the pizza wasn't cooked the whole way through. The first bite tasted like dough. Super...",
-        "rating": 3,
-        'created_at': '2022-09-02 19:56:56'
-    },
-    {
-        'biz_id': 214,
-        'review_body': "Called the phone order, and the guy was hilarious. But let's get to the point:\n" +
-        'Pizza: awesome! Great choices, loved the square design, and it was incredibly...',
-        "rating": 5,
-        'created_at': '2022-10-10 18:53:33'
-    },
-    {
-        'biz_id': 214,
-        'review_body': 'heard good things about this place so I dropped by!\n' +
-        '\n' +
-        "it's considerablt easy to get here by bus, and it's relativity close to the city center!\n" +
-        '\n' +
-        'I ordered the...',
-        "rating": 4,
-        'created_at': '2022-10-11 14:30:22'
-    },
-    {
-        'biz_id': 213,
-        'review_body': 'Excellent !\n' +
-        'The best Italian food I ever had... Yum ! I mean it I never had Italian food that good pasta was done perfect sauce marinara is the best ever...',
-        "rating": 5,
-        'created_at': '2022-09-20 19:55:54'
-    },
-    {
-        'biz_id': 213,
-        'review_body': 'clean restaurant, clean table, open atmosphere. Great service (refill water multiple times without asking). Highly recommend!',
-        "rating": 5,
-        'created_at': '2022-09-22 11:02:40'
-    },
-    {
-        'biz_id': 213,
-        'review_body': 'The friggin lobster ravioli. IT IS TO DIEEEEE FOR. Not literally. But oh. my. goodness. You must come here and try. LOOOOOOOK  AT THE PICTURE! LOOK AT ALL...',
-        "rating": 5,
-        'created_at': '2022-10-12 19:59:24'
-    },
-    {
-        'biz_id': 216,
-        'review_body': 'So delicious! Highly recommend getting a reservation as this place is definitely busy! \n' +
-        "The service and atmosphere was great and we'll definitely be coming...",
-        "rating": 5,
-        'created_at': '2022-10-13 11:45:48'
-    },
-    {
-        'biz_id': 216,
-        'review_body': 'Lovely restaurant. we love sushi and when we heard about this restaurant we were curious to see how it tastes and our overall experience was great.\n' +
-        '\n' +
-        'Things...',
-        "rating": 5,
-        'created_at': '2022-10-09 10:40:39'
-    },
-    {
-        'biz_id': 216,
-        'review_body': "Vegan sushi might sound like an oxy moron (or even punishment) for raw fish enthusiasts, but it's a godsend for those of us who aren't. \n" +
-        '\n' +
-        'Each first bite of...',
-        "rating": 5,
-        'created_at': '2022-10-01 12:35:11'
-    },
-    {
-        'biz_id': 215,
-        'review_body': 'Long long overdue review, but I loved this place. The line was literally booty, so me and my friends went half an hour before opening, and sat by a nearby...',
-        "rating": 4,
-        'created_at': '2022-09-16 14:14:17'
-    },
-    {
-        'biz_id': 215,
-        'review_body': "The food was amazing! I got the marufuku bites and the hakata tonkatsu, they were so good! The broth was the best I've ever had, highly recommend!",
-        "rating": 5,
-        'created_at': '2022-09-28 09:05:50'
-    },
-    {
-        'biz_id': 215,
-        'review_body': 'Love this place! I love the Hakata Tonkatsu, and its priced really well for the amount of food you get and the quality of the broth. You can also order a...',
-        "rating": 5,
-        'created_at': '2022-10-10 12:55:18'
-    },
-    {
-        'biz_id': 217,
-        'review_body': 'Whole ambiance and food was a vibe. Great and easy service and I like how the food was presented on the plates along with the fact that they taste...',
-        "rating": 5,
-        'created_at': '2022-09-27 21:31:11'
-    },
-    {
-        'biz_id': 217,
-        'review_body': 'Bro, this is a nice spot. The fried chicken is fire  I will definitely drive back to the city for this! I was super disappointed in the loco moco. I wanted...',
-        "rating": 4,
-        'created_at': '2022-10-11 20:52:05'
-    },
-    {
-        'biz_id': 217,
-        'review_body': 'Amazing food! \n' +
-        'Very good and fast service. The food came out faster than the drinks! \n' +
-        'A little pricey but definitely a must try!',
-        "rating": 4,
-        'created_at': '2022-10-11 16:29:14'
-    },
-    {
-        'biz_id': 218,
-        'review_body': 'We came to Tacorea after cocktails nearby at Wilson & Wilson. I had heard of this place some time ago, and was intrigued, as I like both Korean and Mexican...',
-        "rating": 5,
-        'created_at': '2022-09-26 16:35:08'
-    },
-    {
-        'biz_id': 218,
-        'review_body': 'First time trying this place after walking by it a bunch of times and decided to go with a the super burrito with the spicy pork. It also came with a side...',
-        "rating": 4,
-        'created_at': '2022-10-01 09:05:52'
-    },
-    {
-        'biz_id': 218,
-        'review_body': 'I was extremely excited to try this place because it combines two of my favourite cuisines: Korean & Mexican! I ordered takeout on a Monday evening and...',
-        "rating": 4,
-        'created_at': '2022-08-26 07:53:32'
-    },
-    {
-        'biz_id': 220,
-        'review_body': 'Best meal of my life. Here is what we ordered so you can have the same (or similar). FYI menu is seasonal and might change daily!\n' +
-        '\n' +
-        '1. 4 oysters, fried...',
-        "rating": 5,
-        'created_at': '2022-08-27 21:50:03'
-    },
-    {
-        'biz_id': 220,
-        'review_body': "Omg I've been wanting to come here for the longest time! So when I was offered a free dinner here from my old colleagues - I couldn't resist!\n" +
-        '\n' +
-        'The vibes are...',
-        "rating": 5,
-        'created_at': '2022-10-07 10:30:22'
-    },
-    {
-        'biz_id': 220,
-        'review_body': 'Nice place but OK food..Not worth the money.\n' +
-        '\n' +
-        'Also they confirmed my reservation over the phone and I did ask for a table outside, after reaching there,...',
-        "rating": 3,
-        'created_at': '2022-10-13 05:25:15'
-    },
-    {
-        'biz_id': 219,
-        'review_body': 'Came here for a team lunch and what an experience it was! \n' +
-        '\n' +
-        'We went to town on the apps and ordered the special flatbread of the day, dip sampler, Saghanaki...',
-        "rating": 5,
-        'created_at': '2022-10-11 11:48:38'
-    },
-    {
-        'biz_id': 219,
-        'review_body': 'Visited Kokkari Estiatorio will a group of colleagues for lunch. We had reservations ahead of time so being seated was very easy. I arrived a few minutes...',
-        "rating": 4,
-        'created_at': '2022-10-12 11:05:55'
-    },
-    {
-        'biz_id': 219,
-        'review_body': 'Amazing food and even better service. Our dinner took about 2.5 hours and we were not upset about it. \n' +
-        '\n' +
-        'After a weekend of trying new restaurants after...',
-        "rating": 5,
-        'created_at': '2022-10-11 10:02:46'
-    },
-    {
-        'biz_id': 222,
-        'review_body': 'Haha well I ordered 4 tacos thinking they were street tacos. These tacos are much bigger. I ordered 2 carnitas and 2 asada and both were great.\n' +
-        '\n' +
-        ' I also...',
-        "rating": 5,
-        'created_at': '2022-09-29 12:14:32'
-    },
-    {
-        'biz_id': 222,
-        'review_body': "Deserve the hype? I think not. When we got there, the line wasn't too long. It was my first time going to that place even though I know it is a hit spot....",
-        "rating": 3,
-        'created_at': '2022-10-09 22:13:18'
-    },
-    {
-        'biz_id': 222,
-        'review_body': "Forget what anyone has told you, THIS is the best burrito in the Mission. Probably the best burrito I've ever had.\n" +
-        '\n' +
-        'La Taqueria has two important...',
-        "rating": 5,
-        'created_at': '2022-09-22 22:28:01'
-    },
-    {
-        'biz_id': 221,
-        'review_body': "I came with friends for lunch around 2pm and it wasn't busy. Parking is super tough around the area and metered. We got to order immediately and I got a...",
-        "rating": 5,
-        'created_at': '2022-10-01 21:08:01'
-    },
-    {
-        'biz_id': 221,
-        'review_body': "Santiago, thanks for your response! It's actually ok due Covid, it's probably best to not put the salsa bar back! The guy behind the counter gave me the...",
-        "rating": 4,
-        'created_at': '2022-10-11 02:31:05'
-    },
-    {
-        'biz_id': 221,
-        'review_body': 'Came over to try this spot out for lunch! Took Bart over from the city on Market. This place is conveniently located right next to the Bart station so it...',
-        "rating": 4,
-        'created_at': '2022-10-08 18:38:19'
-    },
-    {
-        'biz_id': 224,
-        'review_body': 'their pizza is very good, the waiter friend was very nice, the taste is excellent\n' +
-        '\n' +
-        'Award Winning Margherita',
-        "rating": 5,
-        'created_at': '2022-09-04 14:10:18'
-    },
-    {
-        'biz_id': 224,
-        'review_body': 'After reading all the reviews I was left only slightly disappointed. The food was quite good and healthy portions to boot. The atmosphere and wait staff was...',
-        "rating": 4,
-        'created_at': '2022-08-26 16:14:03'
-    },
-    {
-        'biz_id': 224,
-        'review_body': "Cute spot for any occasion, especially a night out in North Beach. The Diavola pizza was delicious- the crust didn't feel too heavy or greasy and it had a...",
-        "rating": 5,
-        'created_at': '2022-10-12 10:12:54'
-    },
-    {
-        'biz_id': 223,
-        'review_body': "We have ordered from here before, but tonight we ordered and the pizza wasn't cooked the whole way through. The first bite tasted like dough. Super...",
-        "rating": 3,
-        'created_at': '2022-09-02 19:56:56'
-    },
-    {
-        'biz_id': 223,
-        'review_body': "Called the phone order, and the guy was hilarious. But let's get to the point:\n" +
-        'Pizza: awesome! Great choices, loved the square design, and it was incredibly...',
-        "rating": 5,
-        'created_at': '2022-10-10 18:53:33'
-    },
-    {
-        'biz_id': 223,
-        'review_body': 'heard good things about this place so I dropped by!\n' +
-        '\n' +
-        "it's considerablt easy to get here by bus, and it's relativity close to the city center!\n" +
-        '\n' +
-        'I ordered the...',
-        "rating": 4,
-        'created_at': '2022-10-11 14:30:22'
-    },
-    {
-        'biz_id': 226,
-        'review_body': "At the time, it wasn't so busy, yet there was still a long line for both the food and the bread. The food line goes further into the store and the bread...",
-        "rating": 4,
-        'created_at': '2022-09-25 23:53:34'
-    },
-    {
-        'biz_id': 226,
-        'review_body': "Jesus must have gone to Boudin's for the loaves and fish to feed the masses cause they'd def line up for this! \n" +
-        'Boudins is rich with history and flavors a...',
-        "rating": 4,
-        'created_at': '2022-09-15 19:47:09'
-    },
-    {
-        'biz_id': 226,
-        'review_body': "The decor is rustic and and as you walk in you're hit with the wonderful smell of sourdough. They even have bear, alligator, and crab shaped sourdough....",
-        "rating": 4,
-        'created_at': '2022-09-13 11:04:47'
-    },
-    {
-        'biz_id': 225,
-        'review_body': 'The BEST sandwich spot in the city! :) \n' +
-        '\n' +
-        'Their dutch crunch is *chefs kiss* It has a pleasant combination of a crunchy exterior and a soft, slightly sweet...',
-        "rating": 5,
-        'created_at': '2022-09-10 15:46:13'
-    },
-    {
-        'biz_id': 225,
-        'review_body': 'The sandwiches are good. Not great- just good. \n' +
-        "So if there's a line it won't hurt to shop around. \n" +
-        '\n' +
-        'In general the one thing I harp on is the tipping when...',
-        "rating": 4,
-        'created_at': '2022-09-16 13:29:17'
-    },
-    {
-        'biz_id': 225,
-        'review_body': "Drove from the east bay and wanted to find something quick for lunch to take to Baker Beach. Decided to give Lou's a try based on their reviews!\n" +
-        '\n' +
-        '5 stars...',
-        "rating": 4,
-        'created_at': '2022-09-03 14:29:08'
-    },
-    {
-        'biz_id': 228,
-        'review_body': 'I was visiting my daughter & son-law and we  stopped by Limoncello on our way to a park in San Francisco to pick up some Italian sandwiches. We had a little...',
-        "rating": 5,
-        'created_at': '2022-09-13 15:54:42'
-    },
-    {
-        'biz_id': 228,
-        'review_body': "The owner of this business is absolutely insane and has no clue of what customer service is about. He can't even admit when he's wrong. We ordered...",
-        "rating": 1,
-        'created_at': '2022-09-05 13:55:32'
-    },
-    {
-        'biz_id': 228,
-        'review_body': 'Great vibes and delicious food. \n' +
-        '\n' +
-        "Upon walking into the store, I didn't know that it was like a little corner store. I came for the sandwiches and was...",
-        "rating": 5,
-        'created_at': '2022-08-14 22:43:41'
-    },
-    {
-        'biz_id': 227,
-        'review_body': "I don't know if you want to say this is a hidden gem because honestly, getting to this part of Tenderloin is a trek in itself.  When you finally get there...",
-        "rating": 5,
-        'created_at': '2022-09-29 08:40:51'
-    },
-    {
-        'biz_id': 227,
-        'review_body': 'We were visiting SF for a few days and in my research, I learned that the Tenderloin area should be avoided...in the end my poor bf was sent on a mission to...',
-        "rating": 4,
-        'created_at': '2022-09-12 20:02:03'
-    },
-    {
-        'biz_id': 227,
-        'review_body': "It's the consistency for me! Saigon Sandwich never disappoints. Located in the Tenderloin, this little hole in the wall pumps out hundreds of incredible...",
-        "rating": 5,
-        'created_at': '2022-09-05 19:32:22'
-    },
-    {
-        'biz_id': 230,
-        'review_body': 'Drinking at the bar to start the evening was a great idea during happy hour!!  \n' +
-        '\n' +
-        'We the. Gained a table right next to the windows overlooking Alcatraz and...',
-        "rating": 5,
-        'created_at': '2022-08-25 18:13:09'
-    },
-    {
-        'biz_id': 230,
-        'review_body': 'Not bad, but not impressive at the same time.\n' +
-        'The service was pretty good, although they were busy.',
-        "rating": 3,
-        'created_at': '2022-09-08 21:58:50'
-    },
-    {
-        'biz_id': 230,
-        'review_body': 'Food was decent, and steak was pretty good for a seafood restaurant. What really made our night was our server, Bongjovi. He was very helpful with the menu...',
-        "rating": 5,
-        'created_at': '2022-09-20 20:08:41'
-    },
-    {
-        'biz_id': 231,
-        'review_body': 'Took my parents here about 10 years ago. I had never been either as I lived in NV and they lived in OH. This is one of THE BEST RESTAURANTS IN THE...',
-        "rating": 5,
-        'created_at': '2022-10-07 20:07:31'
-    },
-    {
-        'biz_id': 231,
-        'review_body': 'We came here with a big group for a birthday and it was my first time here, so I was really excited. The wait, even with reservations was expected for our...',
-        "rating": 5,
-        'created_at': '2022-10-06 18:27:17'
-    },
-    {
-        'biz_id': 231,
-        'review_body': 'My go-to Prime Rib spot!! Food is great!!! They cut the meat in front of you and prepare the salad in front of you too. Probably my fav salad ever as well,...',
-        "rating": 5,
-        'created_at': '2022-10-05 16:04:10'
-    },
-    {
-        'biz_id': 232,
-        'review_body': 'I came here for lunch and it was soo worth it!!!\n' +
-        '\n' +
-        'We came here for the meat but was swayed by the salad bar!! I kept going back for the mango salad. It was...',
-        "rating": 5,
-        'created_at': '2022-10-10 09:13:20'
-    },
-    {
-        'biz_id': 232,
-        'review_body': 'This was my first time ever trying Espetus and it blew my mind! My friends and I saw their online promotion for the SF location for the month of October,...',
-        "rating": 5,
-        'created_at': '2022-10-04 21:47:07'
-    },
-    {
-        'biz_id': 232,
-        'review_body': 'Everything was delicious. Our table favorite was the chicken heart. \n' +
-        '\n' +
-        'We love the variety of meat options.\n' +
-        '\n' +
-        'Everything was cooked well with very good...',
-        "rating": 5,
-        'created_at': '2022-10-04 17:49:45'
-    },
-    {
-        'biz_id': 233,
-        'review_body': 'So delicious! Highly recommend getting a reservation as this place is definitely busy! \n' +
-        "The service and atmosphere was great and we'll definitely be coming...",
-        "rating": 5,
-        'created_at': '2022-10-13 11:45:48'
-    },
-    {
-        'biz_id': 233,
-        'review_body': 'Lovely restaurant. we love sushi and when we heard about this restaurant we were curious to see how it tastes and our overall experience was great.\n' +
-        '\n' +
-        'Things...',
-        "rating": 5,
-        'created_at': '2022-10-09 10:40:39'
-    },
-    {
-        'biz_id': 233,
-        'review_body': "Vegan sushi might sound like an oxy moron (or even punishment) for raw fish enthusiasts, but it's a godsend for those of us who aren't. \n" +
-        '\n' +
-        'Each first bite of...',
-        "rating": 5,
-        'created_at': '2022-10-01 12:35:11'
-    },
-    {
-        'biz_id': 234,
-        'review_body': "AMAZING!! Jenny is the best ever!! Such good service and absolutely amazing food. This place has the FRESHEST Uni I've ever had and I live in Santa...",
-        "rating": 5,
-        'created_at': '2022-09-23 22:01:20'
-    },
-    {
-        'biz_id': 234,
-        'review_body': 'Seriously the best sushi place! I live around the corner and I have to swing by AT LEAST once a week. JENNY IS AMAZING.',
-        "rating": 5,
-        'created_at': '2022-09-16 21:22:09'
-    },
-    {
-        'biz_id': 234,
-        'review_body': 'Service was awesome. Ambiance is great. Jenny was our waitress and was super knowledgeable about the menu and quick with her service. \n' +
-        '\n' +
-        'The staff was super...',
-        "rating": 5,
-        'created_at': '2022-10-07 21:03:13'
-    },
-    {
-        'biz_id': 229,
-        'review_body': "Solid restaurant.  The line moves faster than you think so don't get discouraged when you see it.\n" +
-        "It's worth it, enough said.",
-        "rating": 5,
-        'created_at': '2022-09-11 11:14:31'
-    },
-    {
-        'biz_id': 229,
-        'review_body': 'Started with oyster Bar mix, one of each type of oysters. Does not disappoint, there was slight differences between each oysters. \n' +
-        'Next had the Bagna Cauda....',
-        "rating": 5,
-        'created_at': '2022-10-09 17:26:59'
-    },
-    {
-        'biz_id': 229,
-        'review_body': "Caveat being that I can't eat shellfish so like most of this menu I can't try. But the rest while good was for me quite overpriced\n" +
-        '\n' +
-        'My wife got the oysters...',
-        "rating": 4,
-        'created_at': '2022-10-10 14:01:29'
-    },
-    {
-        'biz_id': 236,
-        'review_body': "Some of the best chicken and waffles I've had, perfectly crispy outside and tender chicken on the inside. The waffle had a well balanced sweetness to it and...",
-        "rating": 5,
-        'created_at': '2022-10-02 11:30:44'
-    },
-    {
-        'biz_id': 236,
-        'review_body': 'Lapisara is a sanctuary from the rest of Lower Nob Hill. See photo with King Liquor right outside hehe. \n' +
-        '\n' +
-        'Their interior was bright and refreshing yet...',
-        "rating": 4,
-        'created_at': '2022-10-10 09:12:37'
-    },
-    {
-        'biz_id': 236,
-        'review_body': 'We came here for brunch on the day of the Warriors parade and luckily got seated right away.\n' +
-        '\n' +
-        'They have both indoor and outdoor seating but I will say this...',
-        "rating": 4,
-        'created_at': '2022-10-04 15:17:08'
-    },
-    {
-        'biz_id': 235,
-        'review_body': "I absolutely love this restaurant! It's my favorite place to eat and I have always been seated pretty quickly. The food is delicious, the drinks are...",
-        "rating": 5,
-        'created_at': '2022-09-20 10:19:16'
-    },
-    {
-        'biz_id': 235,
-        'review_body': 'The food is excellent. The service needs improvement. Servers were rushing us through appetizers, drinks, dinner, and dessert. For an upscale restaurant,...',
-        "rating": 4,
-        'created_at': '2022-09-04 11:52:54'
-    },
-    {
-        'biz_id': 235,
-        'review_body': 'Atmosphere: 5/5\n' +
-        'Food: 4.5/5\n' +
-        'Drinks: 5/5\n' +
-        'Service: 5/5\n' +
-        '\n' +
-        'I had such a great time here catching up with a friend. The whole place is decked out in flowers so...',
-        "rating": 5,
-        'created_at': '2022-09-30 14:52:54'
-    },
-    {
-        'biz_id': 238,
-        'review_body': 'One of favorite Vegetarian restaurants.  Food is great, well prepared.\n' +
-        '\n' +
-        'Dining experience was definitely degraded by not partaking in the amazing view...',
-        "rating": 5,
-        'created_at': '2022-09-22 17:57:26'
-    },
-    {
-        'biz_id': 238,
-        'review_body': 'Greens was absolutely delicious, the waiter was very thoughtful, and the sunset view was amazing! \n' +
-        '\n' +
-        'Came here for my birthday dinner with a group of 5. We...',
-        "rating": 4,
-        'created_at': '2022-09-21 18:34:05'
-    },
-    {
-        'biz_id': 238,
-        'review_body': "Couples date at Greens and we were a little late because we didn't realize how difficult parking would be here. That was our bad, of course it's SF. Lol....",
-        "rating": 5,
-        'created_at': '2022-08-18 19:31:29'
-    },
-    {
-        'biz_id': 237,
-        'review_body': 'Hands down the best brunch in SF. The pancakes slapped, the mimosas are incredibly fresh, and the avocado toast is delicious. The turkish breakfast has...',
-        "rating": 5,
-        'created_at': '2022-09-03 11:47:06'
-    },
-    {
-        'biz_id': 237,
-        'review_body': 'I saw a review that said we MUST try the pancakes and they were absolutely right. I visited with a few of my friends and we were floored by how good...',
-        "rating": 5,
-        'created_at': '2022-09-01 14:09:48'
-    },
-    {
-        'biz_id': 237,
-        'review_body': 'We tried Lokma while staying in a nearby AirBnB and really enjoyed it.\n' +
-        '\n' +
-        'We enjoyed 2 entrees, dessert, (Baklava) wine and beer. I especially recommend the...',
-        "rating": 5,
-        'created_at': '2022-10-10 15:52:14'
-    },
-    {
-        'biz_id': 240,
-        'review_body': "14 years ago, some friends of mine convinced me to go to a Vietnamese Restaurant to try some Crab and my life hasn't been the same since.\n" +
-        '\n' +
-        'When they talk...',
-        "rating": 5,
-        'created_at': '2022-08-31 10:37:04'
-    },
-    {
-        'biz_id': 240,
-        'review_body': 'I came here with a party of 7 on a Saturday night, and we were able to get seated quickly. They brought us upstairs where they host groups with 5+ people....',
-        "rating": 4,
-        'created_at': '2022-10-09 18:57:21'
-    },
-    {
-        'biz_id': 240,
-        'review_body': 'Food 4.0/5.0\n' +
-        'Service 3.5/5.0\n' +
-        'Value 3.0/5.0\n' +
-        'Decor 3.0/5.0\n' +
-        'Overall 4.0/5.0\n' +
-        '\n' +
-        'Nice old school crab spot tucked away on the western edge of Outer Sunset....',
-        "rating": 4,
-        'created_at': '2022-10-03 19:41:01'
-    },
-    {
-        'biz_id': 239,
-        'review_body': "I don't know if you want to say this is a hidden gem because honestly, getting to this part of Tenderloin is a trek in itself.  When you finally get there...",
-        "rating": 5,
-        'created_at': '2022-09-29 08:40:51'
-    },
-    {
-        'biz_id': 239,
-        'review_body': 'We were visiting SF for a few days and in my research, I learned that the Tenderloin area should be avoided...in the end my poor bf was sent on a mission to...',
-        "rating": 4,
-        'created_at': '2022-09-12 20:02:03'
-    },
-    {
-        'biz_id': 239,
-        'review_body': "It's the consistency for me! Saigon Sandwich never disappoints. Located in the Tenderloin, this little hole in the wall pumps out hundreds of incredible...",
-        "rating": 5,
-        'created_at': '2022-09-05 19:32:22'
-    }
-]
+# reviews = [
+#     {
+#         'biz_id': 1,
+#         'review_body': 'Yo this place was FIRE. \n' +
+#         '\n' +
+#         'Came here to get 2 dozen donuts for a work event and wow they were amazing. I tried the dulce de leche and the regular glazed and...',
+#         "rating": 5,
+#         'created_at': '2022-10-13 13:02:36'
+#     },
+#     {
+#         'biz_id': 1,
+#         'review_body': 'Do not need much intro as this is the place to be for some fancy donuts in LA! Line out the door early weekend by 9am. Lot is small, street parking hard but...',
+#         "rating": 5,
+#         'created_at': '2022-10-01 21:55:54'
+#     },
+#     {
+#         'biz_id': 1,
+#         'review_body': 'While I do not fear (for I am strong), the notion of fryers did give me pause. How relieved that I never did see them. Instead, I was presented with the...',
+#         "rating": 5,
+#         'created_at': '2022-08-12 14:27:06'
+#     },
+#     {
+#         'biz_id': 2,
+#         'review_body': 'Alcove Cafe provides that ideal escape after a hike around Griffith Park for brunch and coffee.\n' +
+#         '\n' +
+#         'The Alcove has and will always be a sentimental favorite of...',
+#         "rating": 4,
+#         'created_at': '2022-10-04 07:55:44'
+#     },
+#     {
+#         'biz_id': 2,
+#         'review_body': 'Last Saturday my mother and I had brunch(the peak time) at Al Cove. We were seated right away. And someone came to take our order. Our food was delicious as...',
+#         "rating": 1,
+#         'created_at': '2022-10-09 21:18:23'
+#     },
+#     {
+#         'biz_id': 2,
+#         'review_body': "It's good but they don't label any of the cakes in the case. when I asked for one of the cakes that I found on the menu, the person at the counter didn't...",
+#         "rating": 3,
+#         'created_at': '2022-10-01 20:43:34'
+#     },
+#     {
+#         'biz_id': 4,
+#         'review_body': 'This place with a parking lot made me happy, on the way I was thinking about what I would do if there was no place to stop, but thank God I found it.\n' +
+#         '\n' +
+#         '1....',
+#         "rating": 5,
+#         'created_at': '2022-08-30 12:55:22'
+#     },
+#     {
+#         'biz_id': 4,
+#         'review_body': 'We do big group orders from Berlins on 3rd, ALL the time for the office.\n' +
+#         'Food is great, no doubting that!\n' +
+#         'Ordering online is easy.\n' +
+#         'Parking can be a...',
+#         "rating": 4,
+#         'created_at': '2022-08-15 13:06:01'
+#     },
+#     {
+#         'biz_id': 4,
+#         'review_body': "I have eaten many doeners in Germany, but I'm no doener expert. I remember it was very good, but I'm not sure why/how it was good or what was inside. \n" +
+#         'So I...',
+#         "rating": 5,
+#         'created_at': '2022-07-16 19:29:49'
+#     },
+#     {
+#         'biz_id': 3,
+#         'review_body': 'Was craving wonton soup...\n' +
+#         '\n' +
+#         'Wonton soup 10/10 - the broth is light and clean, lots of noodles, filling shrimp wontons\n' +
+#         'Beef wrap 10/10 - delicious and...',
+#         "rating": 5,
+#         'created_at': '2022-10-02 15:45:44'
+#     },
+#     {
+#         'biz_id': 3,
+#         'review_body': "TL;DR: decent Taiwanese food, but it's expensive and definitely geared towards being approachable for Americans\n" +
+#         '\n' +
+#         "AMBIENCE: It's Silverlake, so a lot of...",
+#         "rating": 3,
+#         'created_at': '2022-10-09 23:04:40'
+#     },
+#     {
+#         'biz_id': 3,
+#         'review_body': 'Go for the vibe not the food. \n' +
+#         '\n' +
+#         'I saw the reviews and thought this place would be great, but it was mediocre at best. I ordered to go online and arrived 30...',
+#         "rating": 3,
+#         'created_at': '2022-10-03 12:08:44'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': "My FAVORITE soft serve ever!! If you're ever craving matcha, I would HIGHLY recommend Tea Master! Honda Plaza has parking, and there's so many good...",
+#         "rating": 5,
+#         'created_at': '2022-10-12 18:52:05'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': 'Having a love for all things matcha, plus being highly recommended by a few friends made it mandatory I stop by here to get my fix one super hot day while...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 00:03:41'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': "A not so hidden gem in Little Tokyo! By far the best matcha soft serve I've had. It's rich and creamy, but not overly sweet. Just the perfect amount of...",
+#         "rating": 5,
+#         'created_at': '2022-10-09 12:35:01'
+#     },
+#     {
+#         'biz_id': 5,
+#         'review_body': 'Food was INCREDIBLE! And so much that I had leftovers to reheat: those yummy pancakes again the next day!',
+#         "rating": 5,
+#         'created_at': '2022-08-31 20:43:52'
+#     },
+#     {
+#         'biz_id': 5,
+#         'review_body': 'Great option for an American breakfast! Service and food were really good. \n' +
+#         '\n' +
+#         'Deft a place to come if you are super hungry.',
+#         "rating": 5,
+#         'created_at': '2022-10-09 12:54:00'
+#     },
+#     {
+#         'biz_id': 5,
+#         'review_body': "One of my favorite brunch spots in all of LA. If you're coming during the weekend be prepared to wait in line for about an hour. There is no parking here,...",
+#         "rating": 5,
+#         'created_at': '2022-10-04 14:45:37'
+#     },
+#     {
+#         'biz_id': 7,
+#         'review_body': 'Hum I bet it was great. As long as you like it be happy u 2 I know about it . I have been for a min . No need to lie or fake anymore .',
+#         "rating": 5,
+#         'created_at': '2022-09-17 18:06:09'
+#     },
+#     {
+#         'biz_id': 7,
+#         'review_body': 'Great pastries! I enjoy taking the blueberry and raspberries cake to my job they love it',
+#         "rating": 5,
+#         'created_at': '2022-08-31 19:02:07'
+#     },
+#     {
+#         'biz_id': 7,
+#         'review_body': "Didn't lasagna or the crème brûlée which was what I went there for. But overall I love going to Botega Louie",
+#         "rating": 4,
+#         'created_at': '2022-08-25 12:56:26'
+#     },
+#     {
+#         'biz_id': 8,
+#         'review_body': 'Delicious chocolate bread - croissant thing! Wish I could have ordered one of everything! \n' +
+#         '\n' +
+#         'Fast service. And well worth the trip. \n' +
+#         '\n' +
+#         "It's a pity that I...",
+#         "rating": 5,
+#         'created_at': '2022-10-11 11:16:47'
+#     },
+#     {
+#         'biz_id': 8,
+#         'review_body': 'The area was really cute and right in the heart of the Arts District. The food itself was tasty and filling but very overpriced for what you got. \n' +
+#         '\n' +
+#         'Eating...',
+#         "rating": 4,
+#         'created_at': '2022-10-08 20:40:48'
+#     },
+#     {
+#         'biz_id': 8,
+#         'review_body': 'Love the vibe and food selection in this place! The\n' +
+#         'Spanish Latte is very tasty and relaxing. They also have salads, sandwiches, egg dishes, cakes, bobas,...',
+#         "rating": 4,
+#         'created_at': '2022-10-04 17:36:20'
+#     },
+#     {
+#         'biz_id': 1,
+#         'review_body': 'Yo this place was FIRE. \n' +
+#         '\n' +
+#         'Came here to get 2 dozen donuts for a work event and wow they were amazing. I tried the dulce de leche and the regular glazed and...',
+#         "rating": 5,
+#         'created_at': '2022-10-13 13:02:36'
+#     },
+#     {
+#         'biz_id': 1,
+#         'review_body': 'Do not need much intro as this is the place to be for some fancy donuts in LA! Line out the door early weekend by 9am. Lot is small, street parking hard but...',
+#         "rating": 5,
+#         'created_at': '2022-10-01 21:55:54'
+#     },
+#     {
+#         'biz_id': 1,
+#         'review_body': 'While I do not fear (for I am strong), the notion of fryers did give me pause. How relieved that I never did see them. Instead, I was presented with the...',
+#         "rating": 5,
+#         'created_at': '2022-08-12 14:27:06'
+#     },
+#     {
+#         'biz_id': 10,
+#         'review_body': 'Really good doughnuts, but they should think of re-hiring, the workers that served me were short tempered and really rude.',
+#         "rating": 4,
+#         'created_at': '2022-09-19 18:17:54'
+#     },
+#     {
+#         'biz_id': 10,
+#         'review_body': 'O M G - so bomb I could cry! \n' +
+#         '\n' +
+#         "My boyfriend and I finished this donut in probably less than 2 minutes! I actually can't believe that this was a vegan donut....",
+#         "rating": 5,
+#         'created_at': '2022-10-04 11:18:54'
+#     },
+#     {
+#         'biz_id': 10,
+#         'review_body': 'All you need to know is these are absolutely incredible donuts. Are they a little overpriced? Sure. But the staff is always great and the donuts are always...',
+#         "rating": 5,
+#         'created_at': '2022-09-17 17:32:23'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': "My FAVORITE soft serve ever!! If you're ever craving matcha, I would HIGHLY recommend Tea Master! Honda Plaza has parking, and there's so many good...",
+#         "rating": 5,
+#         'created_at': '2022-10-12 18:52:05'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': 'Having a love for all things matcha, plus being highly recommended by a few friends made it mandatory I stop by here to get my fix one super hot day while...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 00:03:41'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': "A not so hidden gem in Little Tokyo! By far the best matcha soft serve I've had. It's rich and creamy, but not overly sweet. Just the perfect amount of...",
+#         "rating": 5,
+#         'created_at': '2022-10-09 12:35:01'
+#     },
+#     {
+#         'biz_id': 12,
+#         'review_body': "This is some of the best ice cream I've ever had! and I can most closely compare it to Jeni's ice cream! Its creamy and rich and packed with flavor! They...",
+#         "rating": 5,
+#         'created_at': '2022-09-22 08:54:25'
+#     },
+#     {
+#         'biz_id': 12,
+#         'review_body': "REALLY good ice cream!  Have sampled ice cream at two locations, and only wish there was a location near me.  Actually, maybe not, as I'd want to go there...",
+#         "rating": 4,
+#         'created_at': '2022-09-25 21:00:38'
+#     },
+#     {
+#         'biz_id': 12,
+#         'review_body': 'Salt and Straw never dissapoints. Go and be excited  about the unique flavors, rich ice cream, and helpful staff. \n' +
+#         '\n' +
+#         'My favorite flavors are honey lavender...',
+#         "rating": 5,
+#         'created_at': '2022-09-05 15:58:15'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': "My FAVORITE soft serve ever!! If you're ever craving matcha, I would HIGHLY recommend Tea Master! Honda Plaza has parking, and there's so many good...",
+#         "rating": 5,
+#         'created_at': '2022-10-12 18:52:05'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': 'Having a love for all things matcha, plus being highly recommended by a few friends made it mandatory I stop by here to get my fix one super hot day while...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 00:03:41'
+#     },
+#     {
+#         'biz_id': 6,
+#         'review_body': "A not so hidden gem in Little Tokyo! By far the best matcha soft serve I've had. It's rich and creamy, but not overly sweet. Just the perfect amount of...",
+#         "rating": 5,
+#         'created_at': '2022-10-09 12:35:01'
+#     },
+#     {
+#         'biz_id': 14,
+#         'review_body': "I'm not vegan, but had the opportunity to try this restaurant out while in DTLA. \n" +
+#         '\n' +
+#         'I was very impressed how delicious the plant based sausage was, the rice...',
+#         "rating": 5,
+#         'created_at': '2022-08-24 13:28:23'
+#     },
+#     {
+#         'biz_id': 14,
+#         'review_body': "After several visits to this place over th past several years, I figured it's time to write a review. \n" +
+#         '\n' +
+#         'Have ordered about everything on the menu, but...',
+#         "rating": 4,
+#         'created_at': '2022-10-04 17:55:05'
+#     },
+#     {
+#         'biz_id': 14,
+#         'review_body': "I like this place. But it's changed. The service is actually in good place compared to the pandemic. They got rid of the questionable servers. \n" +
+#         '\n' +
+#         'Problem now...',
+#         "rating": 2,
+#         'created_at': '2022-08-27 15:45:49'
+#     },
+#     {
+#         'biz_id': 16,
+#         'review_body': 'An update from over 9 years later....and boy is it a complete 180.\n' +
+#         '\n' +
+#         'Since its a smaller restaurant, the long wait time remains: be prepared for a wait at...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 16:42:28'
+#     },
+#     {
+#         'biz_id': 16,
+#         'review_body': 'I was pleasantly surprised by this place. As a tourist, you really only know about Kang Ho Dong Baekjeong and Quarters. We were made aware of this place by...',
+#         "rating": 4,
+#         'created_at': '2022-10-12 12:26:45'
+#     },
+#     {
+#         'biz_id': 16,
+#         'review_body': "The husband and I couldn't figure out what we wanted for dinner while visiting LA, so we ended up going with Hae Jang Chon because we've been here several...",
+#         "rating": 3,
+#         'created_at': '2022-10-10 16:34:57'
+#     },
+#     {
+#         'biz_id': 15,
+#         'review_body': 'A classic ktown spot for kbbq. I usually get the beef combo here, but opted for pork instead last night for dinner. Beef usually cooks faster whereas pork...',
+#         "rating": 5,
+#         'created_at': '2022-10-08 09:02:01'
+#     },
+#     {
+#         'biz_id': 15,
+#         'review_body': 'We came here as backup because the line at Quarters was too long on a Sunday night. This is in a popping plaza on 6th street in Koreatown. \n' +
+#         '\n' +
+#         'The space at...',
+#         "rating": 4,
+#         'created_at': '2022-10-08 19:36:39'
+#     },
+#     {
+#         'biz_id': 15,
+#         'review_body': "Stilll a staple if your not looking for the AYCE cheap fix!!! Good quality over abundance and seriously y'all do the math and I think all would agree that...",
+#         "rating": 4,
+#         'created_at': '2022-10-05 06:49:56'
+#     },
+#     {
+#         'biz_id': 18,
+#         'review_body': 'I have never seen such a queue here in my whole life because they have so many customers. I also loved their attitude towards me and their delicious...',
+#         "rating": 5,
+#         'created_at': '2022-09-15 11:55:57'
+#     },
+#     {
+#         'biz_id': 18,
+#         'review_body': 'Republique is an absolute crowd pleaser for delicious breakfast and pastries in the most stunning restaurant. I always bring my friends from out of town...',
+#         "rating": 5,
+#         'created_at': '2022-10-07 23:45:03'
+#     },
+#     {
+#         'biz_id': 18,
+#         'review_body': 'The entire culinary experience was overall underwhelming, but vibe and service were beautiful.\n' +
+#         '\n' +
+#         'This place had been on my list to try for dinner for quite...',
+#         "rating": 3,
+#         'created_at': '2022-10-09 15:43:46'
+#     },
+#     {
+#         'biz_id': 7,
+#         'review_body': 'Hum I bet it was great. As long as you like it be happy u 2 I know about it . I have been for a min . No need to lie or fake anymore .',
+#         "rating": 5,
+#         'created_at': '2022-09-17 18:06:09'
+#     },
+#     {
+#         'biz_id': 7,
+#         'review_body': 'Great pastries! I enjoy taking the blueberry and raspberries cake to my job they love it',
+#         "rating": 5,
+#         'created_at': '2022-08-31 19:02:07'
+#     },
+#     {
+#         'biz_id': 7,
+#         'review_body': "Didn't lasagna or the crème brûlée which was what I went there for. But overall I love going to Botega Louie",
+#         "rating": 4,
+#         'created_at': '2022-08-25 12:56:26'
+#     },
+#     {
+#         'biz_id': 20,
+#         'review_body': 'The food was pretty good. Juicy burgers, fresh fries and tots. Highly recommended for people who are vegetarian and has a little more budget, because it was...',
+#         "rating": 4,
+#         'created_at': '2022-09-12 00:23:32'
+#     },
+#     {
+#         'biz_id': 20,
+#         'review_body': "I love Monty's! Fries are amazing. Matcha latte was a perfect match with the fresh salty fries. Great service, too.",
+#         "rating": 5,
+#         'created_at': '2022-09-25 14:52:08'
+#     },
+#     {
+#         'biz_id': 20,
+#         'review_body': "I've looked over this place for awhile now and didn't give it a chance since I thought it wasn't vegan, until today!! No wonder there's such a long line...",
+#         "rating": 5,
+#         'created_at': '2022-09-18 12:26:06'
+#     },
+#     {
+#         'biz_id': 19,
+#         'review_body': 'Thanks to Nick for the great service and recommendations\n' +
+#         'food and drinks were awesome!',
+#         "rating": 5,
+#         'created_at': '2022-09-10 18:29:19'
+#     },
+#     {
+#         'biz_id': 19,
+#         'review_body': 'Great service thanks to our waiter Nick! He was very nice and attentive. Burgers were delicious! I got the Monster Mac and my boyfriend got the Truffle...',
+#         "rating": 5,
+#         'created_at': '2022-09-17 22:18:45'
+#     },
+#     {
+#         'biz_id': 19,
+#         'review_body': 'Had a great time! Roger provided amazing and attentive service to my friend, my fur baby and I. We sat outside; my dog got VIP treatment with treats and...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 14:50:52'
+#     },
+#     {
+#         'biz_id': 22,
+#         'review_body': 'I came here with my friend to have a good brunch and boy, were we not disappointed! Excellent food with must have waffles!\n' +
+#         '\n' +
+#         'Chicken & Waffles- the waffle...',
+#         "rating": 5,
+#         'created_at': '2022-10-13 07:15:20'
+#     },
+#     {
+#         'biz_id': 22,
+#         'review_body': "I came here only because I saw celebrities on their pictures and was hoping to run into one on a random Monday morning for brunch lol! Sadly I didn't...",
+#         "rating": 3,
+#         'created_at': '2022-10-12 17:19:06'
+#     },
+#     {
+#         'biz_id': 22,
+#         'review_body': "On a Tuesday morning, you'd think that there would be not much people. Wrong. Seats were mostly full with a few tables empty, so you know this is good. I...",
+#         "rating": 4,
+#         'created_at': '2022-09-27 13:43:18'
+#     },
+#     {
+#         'biz_id': 23,
+#         'review_body': "VERY good Korean fried chicken spot if you're craving something unique and fulfilling. The owner is the nicest man and it just feels like he's your uncle",
+#         "rating": 5,
+#         'created_at': '2022-09-03 20:54:37'
+#     },
+#     {
+#         'biz_id': 23,
+#         'review_body': 'The owner was super friendly and the food was fantastic! Highly recommend!!!!!!!!  :-)',
+#         "rating": 5,
+#         'created_at': '2022-08-30 20:50:14'
+#     },
+#     {
+#         'biz_id': 23,
+#         'review_body': 'Delicious chicken, huge portions, nice gentlemen who owned the place.  Easy to find off western.',
+#         "rating": 5,
+#         'created_at': '2022-09-24 17:28:44'
+#     },
+#     {
+#         'biz_id': 21,
+#         'review_body': 'Such a great place!! The French toast is a must try!! They have the most delicious, fresh orange juice and the staff just makes you smile!!',
+#         "rating": 5,
+#         'created_at': '2022-09-23 23:15:16'
+#     },
+#     {
+#         'biz_id': 21,
+#         'review_body': "Such delicious breakfast foods! You can't go wrong with any of the options they serve here. Friendly staff and a good vibe for brunch. I've even ordered for...",
+#         "rating": 5,
+#         'created_at': '2022-09-29 22:02:34'
+#     },
+#     {
+#         'biz_id': 21,
+#         'review_body': 'The best french toast in all LA!\n' +
+#         'i highly recommend this place.\n' +
+#         'excellent customer service and clean',
+#         "rating": 5,
+#         'created_at': '2022-09-29 13:29:11'
+#     },
+#     {
+#         'biz_id': 24,
+#         'review_body': "Get the barack obama, its gasss. Hadn't been in a while and was shocked how good it was.",
+#         "rating": 5,
+#         'created_at': '2022-09-21 18:14:03'
+#     },
+#     {
+#         'biz_id': 24,
+#         'review_body': '5/5 always\n' +
+#         '\n' +
+#         'I get the same thing every time, the chicken omelet smacks so hard.. with a waffle on the side.',
+#         "rating": 5,
+#         'created_at': '2022-10-02 21:24:37'
+#     },
+#     {
+#         'biz_id': 24,
+#         'review_body': "Fried chicken for dinner? Yes, please! Fried chicken for any meal is ok with me. This Roscoe's location is old and dark, making me feel like a dive. so...",
+#         "rating": 4,
+#         'created_at': '2022-09-26 19:07:10'
+#     },
+#     {
+#         'biz_id': 26,
+#         'review_body': 'My boyfriend and I come here all the time.  The managers are so friendly and always stop by for a conversation with us. \n' +
+#         '\n' +
+#         "Def try the lychee martini it's...",
+#         "rating": 5,
+#         'created_at': '2022-10-10 07:42:37'
+#     },
+#     {
+#         'biz_id': 26,
+#         'review_body': 'This place was exactly a 4-star restaurant. A nice fancy dim sum restaurant located in Beverly Hills, and we wanted dim sum so we headed towards this place...',
+#         "rating": 4,
+#         'created_at': '2022-10-07 13:26:47'
+#     },
+#     {
+#         'biz_id': 26,
+#         'review_body': 'This is the best Dim Sum  in Simi.\n' +
+#         '\n' +
+#         'All the other dishes are fantastic.\n' +
+#         '\n' +
+#         'We are here at least once a month.\n' +
+#         '\n' +
+#         "I promise you won't be sorry.",
+#         "rating": 4,
+#         'created_at': '2022-10-06 14:52:00'
+#     },
+#     {
+#         'biz_id': 25,
+#         'review_body': 'Was craving wonton soup...\n' +
+#         '\n' +
+#         'Wonton soup 10/10 - the broth is light and clean, lots of noodles, filling shrimp wontons\n' +
+#         'Beef wrap 10/10 - delicious and...',
+#         "rating": 5,
+#         'created_at': '2022-10-02 15:45:44'
+#     },
+#     {
+#         'biz_id': 25,
+#         'review_body': "TL;DR: decent Taiwanese food, but it's expensive and definitely geared towards being approachable for Americans\n" +
+#         '\n' +
+#         "AMBIENCE: It's Silverlake, so a lot of...",
+#         "rating": 3,
+#         'created_at': '2022-10-09 23:04:40'
+#     },
+#     {
+#         'biz_id': 25,
+#         'review_body': 'Go for the vibe not the food. \n' +
+#         '\n' +
+#         'I saw the reviews and thought this place would be great, but it was mediocre at best. I ordered to go online and arrived 30...',
+#         "rating": 3,
+#         'created_at': '2022-10-03 12:08:44'
+#     },
+#     {
+#         'biz_id': 27,
+#         'review_body': 'The best place for vegan sushi hands down. \n' +
+#         "We ordered the chefs course. I don't know if that's what it's called.\n" +
+#         '\n' +
+#         'But it came with multiple pieces to allow...',
+#         "rating": 5,
+#         'created_at': '2022-10-01 13:43:54'
+#     },
+#     {
+#         'biz_id': 27,
+#         'review_body': 'We were looking forward to have the birthday celebration with 7 people at the restaurant. Mostly dthe high ratings. \n' +
+#         '\n' +
+#         'We were given the choice of prefix...',
+#         "rating": 2,
+#         'created_at': '2022-10-03 11:53:28'
+#     },
+#     {
+#         'biz_id': 27,
+#         'review_body': 'We had a lovely anniversary dinner here recently. I agree with some of the points made in other reviews. For example, waiting for your reservation outside...',
+#         "rating": 4,
+#         'created_at': '2022-10-01 19:54:12'
+#     },
+#     {
+#         'biz_id': 28,
+#         'review_body': 'It was my first visit and actually all dishes are amazing!!!\n' +
+#         'Especially I loved their green curry!',
+#         "rating": 5,
+#         'created_at': '2022-09-22 15:57:27'
+#     },
+#     {
+#         'biz_id': 28,
+#         'review_body': 'Enthusiastic five stars! Authentic Thai dishes with the spice level to prove it (flavorful not oppressive in my opinion) plus a million zillion gluten free...',
+#         "rating": 5,
+#         'created_at': '2022-09-27 11:20:50'
+#     },
+#     {
+#         'biz_id': 28,
+#         'review_body': 'Hands down the best authentic Thai food I have ever had. Despite arriving at 9pm we were seated and served very quickly.\n' +
+#         '\n' +
+#         'You absolutely cannot go wrong...',
+#         "rating": 5,
+#         'created_at': '2022-09-26 09:39:31'
+#     },
+#     {
+#         'biz_id': 30,
+#         'review_body': "Bright, sleek & affordable is this fast food cooked fresh with a mission. It's the perfect addition to Chelsea in a tough to fill  storefront in a 'hood...",
+#         "rating": 5,
+#         'created_at': '2022-05-23 14:19:35'
+#     },
+#     {
+#         'biz_id': 30,
+#         'review_body': "My only regret is that I can't give 6/5 stars.\n" +
+#         '\n' +
+#         'I try every meal kit and prepared meal service I come across. Blue Apron, Home Chef, Hello Fresh, Freshly,...',
+#         "rating": 5,
+#         'created_at': '2022-04-30 17:19:40'
+#     },
+#     {
+#         'biz_id': 30,
+#         'review_body': 'Had such a great experience at Everytable! I saw this suggestion on Yelp when I searched for salads in the area, and was surprised when I walked in and...',
+#         "rating": 5,
+#         'created_at': '2022-04-19 10:54:28'
+#     },
+#     {
+#         'biz_id': 29,
+#         'review_body': "Original Tommy's burgers.\n" +
+#         '\n' +
+#         "I challenge each and every one of you to buck the trend and have Tommy's for breakfast, instead of dinner. It changes the entire...",
+#         "rating": 5,
+#         'created_at': '2022-10-08 15:30:59'
+#     },
+#     {
+#         'biz_id': 29,
+#         'review_body': "We've gone to a few different locations and always 10/10\n" +
+#         ' \n' +
+#         'The Chile cheese Tamale is out of this world.',
+#         "rating": 5,
+#         'created_at': '2022-09-15 12:43:29'
+#     },
+#     {
+#         'biz_id': 29,
+#         'review_body': "Tommy's! One big bite of this Double Chili-Cheeseburger is all it takes and you fall in love! MmmmmMMMM! \n" +
+#         '\n' +
+#         "It's a dirty burger that gets messy but something...",
+#         "rating": 5,
+#         'created_at': '2022-09-14 17:24:13'
+#     },
+#     {
+#         'biz_id': 31,
+#         'review_body': 'Such a delicious meal! My go-to Indian restaurant. Love this spot. \n' +
+#         '\n' +
+#         'The service and the vibes are incredible',
+#         "rating": 5,
+#         'created_at': '2022-09-15 23:28:38'
+#     },
+#     {
+#         'biz_id': 31,
+#         'review_body': 'Loved coming here. Sharan and Pramod are both super hospitable. They make you feel at home. The food was also great. We ordered butter chicken and daal...',
+#         "rating": 5,
+#         'created_at': '2022-09-15 21:09:32'
+#     },
+#     {
+#         'biz_id': 31,
+#         'review_body': 'Food is great, service is fast as well. \n' +
+#         "My server Sharin was fantastic. Definitely give this place a try if you're in the area!",
+#         "rating": 5,
+#         'created_at': '2022-08-30 19:10:15'
+#     },
+#     {
+#         'biz_id': 32,
+#         'review_body': 'Wonderful food that tastes like home and extremely kind hosts. Will definitely be back.',
+#         "rating": 5,
+#         'created_at': '2022-09-15 22:15:03'
+#     },
+#     {
+#         'biz_id': 32,
+#         'review_body': 'The food was  scrumptious. The chicken tandoori was the perfect amount of tender. The naan was light and airy. The saag paneer was flavorful and felt...',
+#         "rating": 5,
+#         'created_at': '2022-09-10 20:09:21'
+#     },
+#     {
+#         'biz_id': 32,
+#         'review_body': 'I came here with my Indian boyfriend who took me here to try Indian food for the first time and it was absolutely delicious! The service was top notch, the...',
+#         "rating": 5,
+#         'created_at': '2022-09-08 22:09:21'
+#     },
+#     {
+#         'biz_id': 34,
+#         'review_body': "I planned to go to Bestia every day, but every time something happened that made me not go, maybe they don't want me to try their modesty.\n" +
+#         '\n' +
+#         'On Wednesday,...',
+#         "rating": 5,
+#         'created_at': '2022-09-10 13:09:23'
+#     },
+#     {
+#         'biz_id': 34,
+#         'review_body': 'Third time here and its always a great experience.\n' +
+#         'VICTORIA was an amazing server and went out of her way to help my girlfriend with a hair clip due to the...',
+#         "rating": 5,
+#         'created_at': '2022-09-05 17:32:26'
+#     },
+#     {
+#         'biz_id': 34,
+#         'review_body': 'This place really was amazing.  Great food, great ambience.  This is one busy place.  But they are so organized that you still feel like things are made for...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 18:29:50'
+#     },
+#     {
+#         'biz_id': 33,
+#         'review_body': 'Hum I bet it was great. As long as you like it be happy u 2 I know about it . I have been for a min . No need to lie or fake anymore .',
+#         "rating": 5,
+#         'created_at': '2022-09-17 18:06:09'
+#     },
+#     {
+#         'biz_id': 33,
+#         'review_body': 'Great pastries! I enjoy taking the blueberry and raspberries cake to my job they love it',
+#         "rating": 5,
+#         'created_at': '2022-08-31 19:02:07'
+#     },
+#     {
+#         'biz_id': 33,
+#         'review_body': "Didn't lasagna or the crème brûlée which was what I went there for. But overall I love going to Botega Louie",
+#         "rating": 4,
+#         'created_at': '2022-08-25 12:56:26'
+#     },
+#     {
+#         'biz_id': 36,
+#         'review_body': 'Definitely a nice ramen spot! We split a spicy miso ramen and chashu pork bowl combo, and this was such a great call. \n' +
+#         '\n' +
+#         'The ramen was filling, tasty, and...',
+#         "rating": 5,
+#         'created_at': '2022-10-08 17:09:24'
+#     },
+#     {
+#         'biz_id': 36,
+#         'review_body': "Not sure what all the hype was about. It's a ramen joint, and a really expensive one at that. \n" +
+#         '\n' +
+#         'Sure, the ramen was fine, but in the end paying near $40 for...',
+#         "rating": 3,
+#         'created_at': '2022-10-11 04:58:00'
+#     },
+#     {
+#         'biz_id': 36,
+#         'review_body': 'Came on the weekend with a date and it was a recommended spot to try. Honestly disappointed and most likely from the hype. When we went, it was a long line...',
+#         "rating": 3,
+#         'created_at': '2022-09-29 12:43:57'
+#     },
+#     {
+#         'biz_id': 35,
+#         'review_body': 'Fire ramen I completely love it totally recommend it !!!!!go get yourself a ramen bowl by Slurpin',
+#         "rating": 5,
+#         'created_at': '2022-08-28 16:01:18'
+#     },
+#     {
+#         'biz_id': 35,
+#         'review_body': 'One of my favorite Ramen places in Los Angeles. Many choices here including a Vegan choice',
+#         "rating": 5,
+#         'created_at': '2022-09-27 18:10:38'
+#     },
+#     {
+#         'biz_id': 35,
+#         'review_body': 'Delicious, clean, great service, great music and a good price. Great at refilling waters, flavor is rich. No complaints, easy recommendation.',
+#         "rating": 5,
+#         'created_at': '2022-09-16 15:26:39'
+#     },
+#     {
+#         'biz_id': 38,
+#         'review_body': 'An update from over 9 years later....and boy is it a complete 180.\n' +
+#         '\n' +
+#         'Since its a smaller restaurant, the long wait time remains: be prepared for a wait at...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 16:42:28'
+#     },
+#     {
+#         'biz_id': 38,
+#         'review_body': 'I was pleasantly surprised by this place. As a tourist, you really only know about Kang Ho Dong Baekjeong and Quarters. We were made aware of this place by...',
+#         "rating": 4,
+#         'created_at': '2022-10-12 12:26:45'
+#     },
+#     {
+#         'biz_id': 38,
+#         'review_body': "The husband and I couldn't figure out what we wanted for dinner while visiting LA, so we ended up going with Hae Jang Chon because we've been here several...",
+#         "rating": 3,
+#         'created_at': '2022-10-10 16:34:57'
+#     },
+#     {
+#         'biz_id': 37,
+#         'review_body': 'A classic ktown spot for kbbq. I usually get the beef combo here, but opted for pork instead last night for dinner. Beef usually cooks faster whereas pork...',
+#         "rating": 5,
+#         'created_at': '2022-10-08 09:02:01'
+#     },
+#     {
+#         'biz_id': 37,
+#         'review_body': 'We came here as backup because the line at Quarters was too long on a Sunday night. This is in a popping plaza on 6th street in Koreatown. \n' +
+#         '\n' +
+#         'The space at...',
+#         "rating": 4,
+#         'created_at': '2022-10-08 19:36:39'
+#     },
+#     {
+#         'biz_id': 37,
+#         'review_body': "Stilll a staple if your not looking for the AYCE cheap fix!!! Good quality over abundance and seriously y'all do the math and I think all would agree that...",
+#         "rating": 4,
+#         'created_at': '2022-10-05 06:49:56'
+#     },
+#     {
+#         'biz_id': 39,
+#         'review_body': "Great food, with the best baba ganoush I've had outside the Middle East. Highly recommended.",
+#         "rating": 5,
+#         'created_at': '2022-08-25 12:10:55'
+#     },
+#     {
+#         'biz_id': 39,
+#         'review_body': 'Everything looks and tastes like quality food. The falafel is phenomenal. BRING YO KIDS BRING YO WIFE BRING YO MAMA',
+#         "rating": 5,
+#         'created_at': '2022-09-08 13:53:45'
+#     },
+#     {
+#         'biz_id': 39,
+#         'review_body': 'Amazing falafel and pita bread! I believe the bread is freshly made in house because you can taste the freshness of all the ingredients. Super delicious!...',
+#         "rating": 5,
+#         'created_at': '2022-09-08 13:51:45'
+#     },
+#     {
+#         'biz_id': 40,
+#         'review_body': 'Street parking was easy on a Wednesday evening (valet parking is available too).\n' +
+#         'Live music added a special touch to dinning  in. Dorian and Mich were great...',
+#         "rating": 5,
+#         'created_at': '2022-09-14 23:20:12'
+#     },
+#     {
+#         'biz_id': 40,
+#         'review_body': 'Always love coming to bacari. This time I loved it a little extra because of my wonderful server teddy. I had a lot of trouble finding my way through the...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 13:56:30'
+#     },
+#     {
+#         'biz_id': 40,
+#         'review_body': 'We celebrated my friends birthday here and by far the best experience! The food was delicious and our server Cheryl was the best! The manager Fabian gave us...',
+#         "rating": 5,
+#         'created_at': '2022-09-05 22:33:29'
+#     },
+#     {
+#         'biz_id': 42,
+#         'review_body': 'This has been the best and tastiest tacos of my life, this place has been under my eye for a long time, and my friend chose to celebrate her birthday here...',
+#         "rating": 5,
+#         'created_at': '2022-09-15 12:27:51'
+#     },
+#     {
+#         'biz_id': 42,
+#         'review_body': 'We visited this place two days in a row bc it was so good!!!! We had tinga and chorizo and they were both amazing. The tortillas are homemade and make the...',
+#         "rating": 5,
+#         'created_at': '2022-09-24 18:36:33'
+#     },
+#     {
+#         'biz_id': 42,
+#         'review_body': 'How have I never reviewed Guisados? In a phrase: Worth the hype!\n' +
+#         '\n' +
+#         'While there is no Guisados near me (please head west!), the tacos here are amazing. This...',
+#         "rating": 5,
+#         'created_at': '2022-10-04 15:56:59'
+#     },
+#     {
+#         'biz_id': 41,
+#         'review_body': 'This place is a hidden gem! The food is excellent and so is the service. I ordered the Lomo Saltado and ceviche and highly recommend both!',
+#         "rating": 5,
+#         'created_at': '2022-09-05 15:54:16'
+#     },
+#     {
+#         'biz_id': 41,
+#         'review_body': 'Their Lomo Saltado is amazing! \n' +
+#         'Super delicious and flavorful. We found this restaurant while shopping at the Santee Alleys and Omg I was not disappointed...',
+#         "rating": 5,
+#         'created_at': '2022-08-15 17:43:39'
+#     },
+#     {
+#         'biz_id': 41,
+#         'review_body': 'Summary: Friendly staff and good food. Lomo saltado and al pastor tacos were both very good, but not amazing. Seating is entirely outside along the sidewalk...',
+#         "rating": 3,
+#         'created_at': '2022-09-17 18:22:25'
+#     },
+#     {
+#         'biz_id': 46,
+#         'review_body': 'Best pho in Koreatown hands down. The staff are wonderful and the atmosphere is perfect for a rejuvenating bowl of pho. Also, make sure to grab a Viet iced...',
+#         "rating": 5,
+#         'created_at': '2022-09-12 21:14:59'
+#     },
+#     {
+#         'biz_id': 46,
+#         'review_body': 'gloomy weather, big appetite\n' +
+#         'perfect day for pho :))\n' +
+#         'went with some friends and we were all pretty hungry and tired. the food comes out pretty quickly, i...',
+#         "rating": 5,
+#         'created_at': '2022-09-10 13:06:56'
+#     },
+#     {
+#         'biz_id': 46,
+#         'review_body': 'Came here for dinner and got the oxtail bun Bo hue and shared some egg rolls. The BBH was pretty good and the oxtail was cooked perfectly and very tender,...',
+#         "rating": 4,
+#         'created_at': '2022-09-02 21:48:18'
+#     },
+#     {
+#         'biz_id': 43,
+#         'review_body': "I planned to go to Bestia every day, but every time something happened that made me not go, maybe they don't want me to try their modesty.\n" +
+#         '\n' +
+#         'On Wednesday,...',
+#         "rating": 5,
+#         'created_at': '2022-09-10 13:09:23'
+#     },
+#     {
+#         'biz_id': 43,
+#         'review_body': 'Third time here and its always a great experience.\n' +
+#         'VICTORIA was an amazing server and went out of her way to help my girlfriend with a hair clip due to the...',
+#         "rating": 5,
+#         'created_at': '2022-09-05 17:32:26'
+#     },
+#     {
+#         'biz_id': 43,
+#         'review_body': 'This place really was amazing.  Great food, great ambience.  This is one busy place.  But they are so organized that you still feel like things are made for...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 18:29:50'
+#     },
+#     {
+#         'biz_id': 45,
+#         'review_body': 'Thanks to Nick for the great service and recommendations\n' +
+#         'food and drinks were awesome!',
+#         "rating": 5,
+#         'created_at': '2022-09-10 18:29:19'
+#     },
+#     {
+#         'biz_id': 45,
+#         'review_body': 'Great service thanks to our waiter Nick! He was very nice and attentive. Burgers were delicious! I got the Monster Mac and my boyfriend got the Truffle...',
+#         "rating": 5,
+#         'created_at': '2022-09-17 22:18:45'
+#     },
+#     {
+#         'biz_id': 45,
+#         'review_body': 'Had a great time! Roger provided amazing and attentive service to my friend, my fur baby and I. We sat outside; my dog got VIP treatment with treats and...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 14:50:52'
+#     },
+#     {
+#         'biz_id': 44,
+#         'review_body': "The deep dish is the best pizza in all of LA, it's not even close. Can be a bit of a wait on weekends but you can put your deep dish order in so it's coming...",
+#         "rating": 5,
+#         'created_at': '2022-09-03 15:49:23'
+#     },
+#     {
+#         'biz_id': 44,
+#         'review_body': 'Take it from two guys that can EACH put away a large at a usual Pizza place, a 14" Deep Dish at Masa is definitely enough to feed 3 people who can eat....',
+#         "rating": 5,
+#         'created_at': '2022-10-07 20:34:17'
+#     },
+#     {
+#         'biz_id': 44,
+#         'review_body': 'I was left pretty disappointed, I got the Alla Roma gnocchi with grilled shrimp. \n' +
+#         '\n' +
+#         'The sauce and the gnocchi were AMAZING. \n' +
+#         'However, the shrimp was beyond...',
+#         "rating": 2,
+#         'created_at': '2022-09-10 13:53:12'
+#     },
+#     {
+#         'biz_id': 47,
+#         'review_body': 'Do you ever wonder if the love of your life has been right before your eyes all along? \n' +
+#         '\n' +
+#         "I honestly drove by Langer's Deli Monday through Friday for years...",
+#         "rating": 5,
+#         'created_at': '2022-10-11 16:01:39'
+#     },
+#     {
+#         'biz_id': 47,
+#         'review_body': 'I love everything about this old-school diner except for (a) the unsavory location and (b) the fact that the famous #19 is not grilled. I understand that it...',
+#         "rating": 4,
+#         'created_at': '2022-10-11 16:39:29'
+#     },
+#     {
+#         'biz_id': 47,
+#         'review_body': 'The great: my wife and I went here for a late lunch during a short vacation for our first time. We both got pastrami sandwiches (of course) and they totally...',
+#         "rating": 2,
+#         'created_at': '2022-09-29 23:56:07'
+#     },
+#     {
+#         'biz_id': 49,
+#         'review_body': "What do you expect from a 2 Michelin star restaurant? This place delivers. Doesn't look fancy from the outside, but once you go in, it is a whole different...",
+#         "rating": 5,
+#         'created_at': '2022-09-19 17:52:38'
+#     },
+#     {
+#         'biz_id': 49,
+#         'review_body': 'I must say, I was thoroughly impressed with our visit here. The breadth of fine seafood and the execution of these delicacies were done adroitly and...',
+#         "rating": 5,
+#         'created_at': '2022-09-19 10:19:48'
+#     },
+#     {
+#         'biz_id': 49,
+#         'review_body': 'This place never disappoints. First time back post-pandemic and looks like they got rid of the a la carte options and the tasting menu is the only option...',
+#         "rating": 5,
+#         'created_at': '2022-09-18 14:52:26'
+#     },
+#     {
+#         'biz_id': 50,
+#         'review_body': "We ordered Genwa via Postmates and were blown away with the quality and how well it traveled. We'll absolutely order again and we recommend them to anyone...",
+#         "rating": 5,
+#         'created_at': '2022-08-17 12:53:43'
+#     },
+#     {
+#         'biz_id': 50,
+#         'review_body': 'Bottom-Line: Super overhyped, there are way too many better options for you to consider before Genwa. \n' +
+#         '\n' +
+#         "Deceptive, Genwa's lunch special looks like you're...",
+#         "rating": 2,
+#         'created_at': '2022-08-09 15:14:06'
+#     },
+#     {
+#         'biz_id': 50,
+#         'review_body': 'The service and food quality at this place is amazing. Pricing may be considered $$ to $$$ but still well worth it! \n' +
+#         '\n' +
+#         'My friends and I came in for the which...',
+#         "rating": 3,
+#         'created_at': '2022-07-29 11:36:27'
+#     },
+#     {
+#         'biz_id': 48,
+#         'review_body': "The sandwiches are basically what an egg McMuffin is supposed to be. It's a simple but well-made sandwich, the bread is toasted well and the egg is light...",
+#         "rating": 5,
+#         'created_at': '2022-10-01 11:58:31'
+#     },
+#     {
+#         'biz_id': 48,
+#         'review_body': "Skipped it Sunday since the line was enormous and was very happy to see a much improved wait on a Monday. All in all, the food is fine, but it doesn't quite...",
+#         "rating": 3,
+#         'created_at': '2022-10-03 13:15:08'
+#     },
+#     {
+#         'biz_id': 48,
+#         'review_body': "It's simple: I saw a long line, and without fully understanding why and what the queue was for, I joined! \n" +
+#         '\n' +
+#         'But in all seriousness, the line was crazy long....',
+#         "rating": 4,
+#         'created_at': '2022-09-30 09:26:03'
+#     },
+#     {
+#         'biz_id': 52,
+#         'review_body': "I've been coming to LaLa's Argentine Grill on Melrose for years. I'm born and raised in L.A so I've been coming for a pretty long time.  \n" +
+#         '\n' +
+#         "Anyways I've came...",
+#         "rating": 5,
+#         'created_at': '2022-08-22 15:26:39'
+#     },
+#     {
+#         'biz_id': 52,
+#         'review_body': "Let's talk about salt. We came for date night expecting a tasty dinner. The opposite happened.  We sat outside for outdoor seating ( covid is still here)....",
+#         "rating": 2,
+#         'created_at': '2022-09-10 22:16:44'
+#     },
+#     {
+#         'biz_id': 52,
+#         'review_body': 'Such a cute place! Reminded us of when we traveled to Argentina. The chimichuri was amazing and tasted just like back in Buenos Aires. \n' +
+#         '\n' +
+#         'I wish they had AC...',
+#         "rating": 5,
+#         'created_at': '2022-08-09 08:54:02'
+#     },
+#     {
+#         'biz_id': 51,
+#         'review_body': 'After finding street parking since the valet was not available took a second to find the small doors leading i to this restaurant.\n' +
+#         'AMAZING Argentinian style...',
+#         "rating": 5,
+#         'created_at': '2022-10-04 21:14:05'
+#     },
+#     {
+#         'biz_id': 51,
+#         'review_body': 'We just had a birthday dinner with our whole family at Carlitos Gardel and let me tell you everything was just exquisite! Chef Gerard was so amazing and...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 15:08:38'
+#     },
+#     {
+#         'biz_id': 51,
+#         'review_body': 'Really yummy steaks, bread, and cute atmosphere. Our server Jose gave us an amazing night with great service, jokes, and patient explanations. It was our...',
+#         "rating": 5,
+#         'created_at': '2022-08-13 13:16:58'
+#     },
+#     {
+#         'biz_id': 54,
+#         'review_body': 'Ever since 2018, Kazu Nori has been my favorite go to whenever I want to treat myself. Even though I think it is a treat, the price is reasonable. $28 for 6...',
+#         "rating": 5,
+#         'created_at': '2022-10-13 13:00:31'
+#     },
+#     {
+#         'biz_id': 54,
+#         'review_body': "Amazing sushi and great service. I've been here a handful of times and I am always impressed by the quality. A streamlined menu so no extra fluff like...",
+#         "rating": 5,
+#         'created_at': '2022-10-10 22:07:25'
+#     },
+#     {
+#         'biz_id': 54,
+#         'review_body': "I'm not the biggest fan of Sugarfish because of how limited the sushi is. So with KazuNori being an offshoot of Sugarfish, I wasn't that interested in...",
+#         "rating": 5,
+#         'created_at': '2022-10-10 00:08:47'
+#     },
+#     {
+#         'biz_id': 53,
+#         'review_body': 'Sushi Gen is one of my go-to spots for sushi in LA! The prices are very fair and the quality never disappoints. \n' +
+#         '\n' +
+#         'We went on Friday around 11:45am and were...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 18:14:06'
+#     },
+#     {
+#         'biz_id': 53,
+#         'review_body': "Phenomenal. Absolutely some of the best sushi I've had anywhere.\n" +
+#         '\n' +
+#         'Do not come here expecting Americanized roll sushi. Come expecting an Edomae-style sushi...',
+#         "rating": 5,
+#         'created_at': '2022-10-02 10:17:45'
+#     },
+#     {
+#         'biz_id': 53,
+#         'review_body': "First time back at Sushi Gen since the pandemic and I'd must admit that I am pleased that the quality of service and food have remained excellent.  Our...",
+#         "rating": 5,
+#         'created_at': '2022-10-01 15:25:18'
+#     },
+#     {
+#         'biz_id': 55,
+#         'review_body': 'Great food, Plenty of seating,\n' +
+#         'Good Friendly Service, Clean \n' +
+#         'Environment, Overall Great Value for the Money!\n' +
+#         'Highly Recommended',
+#         "rating": 5,
+#         'created_at': '2022-09-19 15:07:39'
+#     },
+#     {
+#         'biz_id': 55,
+#         'review_body': 'If you want guaranteed delicious Thai food, Hoy-ka is the spot. It never disappoints.\n' +
+#         '\n' +
+#         'I always get their papaya salad: you choose your spicy level but...',
+#         "rating": 5,
+#         'created_at': '2022-09-03 08:38:13'
+#     },
+#     {
+#         'biz_id': 55,
+#         'review_body': 'Recently, my girlfriend fell in love with Thai boat noodles. Since she was craving it, I had to take her to one of the best. 45 minutes of driving later,...',
+#         "rating": 4,
+#         'created_at': '2022-09-29 19:47:18'
+#     },
+#     {
+#         'biz_id': 57,
+#         'review_body': 'Delicious, fresh food in a nice ambiance. Everything tastes fresh with a nice balance of healthy and indulgent. Loved the acai bowl.',
+#         "rating": 5,
+#         'created_at': '2022-09-10 08:00:21'
+#     },
+#     {
+#         'biz_id': 57,
+#         'review_body': "Cafe Gratitude is one of my top three favorite restaurants in this entire world! I love it for SO many reasons, and I rave about it to anyone who'll listen...",
+#         "rating": 5,
+#         'created_at': '2022-09-16 16:33:02'
+#     },
+#     {
+#         'biz_id': 57,
+#         'review_body': 'I absolutely love the food but there is so much inconsistency. The prices on Ubereats are higher, cafe gratitude offers free delivery if you order from the...',
+#         "rating": 3,
+#         'created_at': '2022-10-02 15:06:54'
+#     },
+#     {
+#         'biz_id': 58,
+#         'review_body': 'First time in this cafe and I had an amazing experience! I recommend you guys to try their food. Waffles are fire  and their chilaquiles are bomb too  While...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 22:44:26'
+#     },
+#     {
+#         'biz_id': 58,
+#         'review_body': 'Everything about this place is so cute! The interior is so aesthetic! And the food is great. I honestly did not expect to like the food as much as I did. My...',
+#         "rating": 5,
+#         'created_at': '2022-09-14 13:23:22'
+#     },
+#     {
+#         'biz_id': 58,
+#         'review_body': 'My first visit to Zinc was in the early 90s in Laguna Beach. Back then, it was so ahead of its time, serving delicious, vegetarian meals that simply were...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 10:21:23'
+#     },
+#     {
+#         'biz_id': 56,
+#         'review_body': 'Been to Pa Ord so many times over the years, but they never fail to amaze me with their delicious food. There are also many other good places around Thai...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 23:32:34'
+#     },
+#     {
+#         'biz_id': 56,
+#         'review_body': '*Drunken Noodle with Crispy Pork: medium spicy is on the spicer side and had some sliced jalapeños tossed in, approach with caution. might need to get mild...',
+#         "rating": 4,
+#         'created_at': '2022-09-01 22:12:52'
+#     },
+#     {
+#         'biz_id': 56,
+#         'review_body': 'There is no shortage of Thai options in the area that houses Po Ord, but this is where you want to spend your money if you have a craving.\n' +
+#         '\n' +
+#         'Authentic,...',
+#         "rating": 5,
+#         'created_at': '2022-08-25 19:44:54'
+#     },
+#     {
+#         'biz_id': 46,
+#         'review_body': 'Best pho in Koreatown hands down. The staff are wonderful and the atmosphere is perfect for a rejuvenating bowl of pho. Also, make sure to grab a Viet iced...',
+#         "rating": 5,
+#         'created_at': '2022-09-12 21:14:59'
+#     },
+#     {
+#         'biz_id': 46,
+#         'review_body': 'gloomy weather, big appetite\n' +
+#         'perfect day for pho :))\n' +
+#         'went with some friends and we were all pretty hungry and tired. the food comes out pretty quickly, i...',
+#         "rating": 5,
+#         'created_at': '2022-09-10 13:06:56'
+#     },
+#     {
+#         'biz_id': 46,
+#         'review_body': 'Came here for dinner and got the oxtail bun Bo hue and shared some egg rolls. The BBH was pretty good and the oxtail was cooked perfectly and very tender,...',
+#         "rating": 4,
+#         'created_at': '2022-09-02 21:48:18'
+#     },
+#     {
+#         'biz_id': 60,
+#         'review_body': "BOMB.COM : The best pho in town ! I've been coming here for years , service still sucks but I love the charbroiled pork pho and of course it wouldn't be...",
+#         "rating": 5,
+#         'created_at': '2022-08-27 11:48:45'
+#     },
+#     {
+#         'biz_id': 60,
+#         'review_body': 'Pho 87 is one of a kind. While we are lucky to have an abundance of good pho restaurants here in Southern California, there are many things that make this...',
+#         "rating": 5,
+#         'created_at': '2022-10-02 21:02:11'
+#     },
+#     {
+#         'biz_id': 60,
+#         'review_body': 'Pho 87 serves up some delicious PHO with 80 something items on their menu. I read that the grilled pork pho is one of their popular dishes.\n' +
+#         '\n' +
+#         'I am a creature...',
+#         "rating": 4,
+#         'created_at': '2022-10-03 18:22:17'
+#     },
+#     {
+#         'biz_id': 62,
+#         'review_body': 'Soft, just the right amount of sweetness. $2/each. About 15 different flavors and filling options to choose from. Mostly red bean (azuki) based...',
+#         "rating": 5,
+#         'created_at': '2022-08-12 17:02:25'
+#     },
+#     {
+#         'biz_id': 62,
+#         'review_body': "If you're looking for fresh mochi, this is a must try! Their operating hours are only Friday - Sunday from 10 am - 4 pm. \n" +
+#         '\n' +
+#         'Food \n' +
+#         'Gift boxes with 12 pieces -...',
+#         "rating": 4,
+#         'created_at': '2022-09-18 16:09:19'
+#     },
+#     {
+#         'biz_id': 62,
+#         'review_body': 'stumbled upon this mochi gem while wandering around Japantown. a few of their top-selling was sold out already since I came in the afternoon.\n' +
+#         '\n' +
+#         'my favorite...',
+#         "rating": 4,
+#         'created_at': '2022-08-07 17:55:02'
+#     },
+#     {
+#         'biz_id': 61,
+#         'review_body': 'One word-SCRUMPTIOUS!!!!! Ok, YELP would not post my review until it has 85 characters.',
+#         "rating": 5,
+#         'created_at': '2022-09-16 22:58:01'
+#     },
+#     {
+#         'biz_id': 61,
+#         'review_body': "Top notch. I can understand why Peter's is an Institution in this town. But unlike most, I prefer the cupcake to the cake version of the burnt almond stuff....",
+#         "rating": 5,
+#         'created_at': '2022-08-28 13:12:25'
+#     },
+#     {
+#         'biz_id': 61,
+#         'review_body': "Peter's Bakery is so popular with a zillion customers each day, it definitely does not need a review from me, but I am writing the review to highlight...",
+#         "rating": 5,
+#         'created_at': '2022-10-07 11:59:13'
+#     },
+#     {
+#         'biz_id': 64,
+#         'review_body': "Good vibes, good drinks & good location :)  This is my family's go-to boba spot! \n" +
+#         '\n' +
+#         'The drinks are well-crafted and the flavors in each mesh really well...',
+#         "rating": 5,
+#         'created_at': '2022-08-19 11:07:06'
+#     },
+#     {
+#         'biz_id': 64,
+#         'review_body': 'This Pekoe was the OG one that I prefer over the other locations. I feel like this location is way busier than the others, so there is always a line and a...',
+#         "rating": 3,
+#         'created_at': '2022-09-28 10:33:59'
+#     },
+#     {
+#         'biz_id': 64,
+#         'review_body': 'Thought this place was a hair salon at first after driving by but found out it was boba\n' +
+#         '\n' +
+#         'The vibes are almost like that of a nightclub, lots of music and...',
+#         "rating": 3,
+#         'created_at': '2022-08-09 12:34:26'
+#     },
+#     {
+#         'biz_id': 63,
+#         'review_body': 'I stumbled across this place late one night and did not know what to drink. The owner was helping behind the counter and asked a few questions. He said "I...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 00:24:12'
+#     },
+#     {
+#         'biz_id': 63,
+#         'review_body': 'cool asss! bosss! go for the drink! and for the boss! spread! love yall!! dont forget to tell your story!',
+#         "rating": 5,
+#         'created_at': '2022-09-25 00:05:25'
+#     },
+#     {
+#         'biz_id': 63,
+#         'review_body': "All the teas are so good it's hard to pick which one is the best--and I have tried many from each menu",
+#         "rating": 5,
+#         'created_at': '2022-09-26 00:57:05'
+#     },
+#     {
+#         'biz_id': 63,
+#         'review_body': 'I stumbled across this place late one night and did not know what to drink. The owner was helping behind the counter and asked a few questions. He said "I...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 00:24:12'
+#     },
+#     {
+#         'biz_id': 63,
+#         'review_body': 'cool asss! bosss! go for the drink! and for the boss! spread! love yall!! dont forget to tell your story!',
+#         "rating": 5,
+#         'created_at': '2022-09-25 00:05:25'
+#     },
+#     {
+#         'biz_id': 63,
+#         'review_body': "All the teas are so good it's hard to pick which one is the best--and I have tried many from each menu",
+#         "rating": 5,
+#         'created_at': '2022-09-26 00:57:05'
+#     },
+#     {
+#         'biz_id': 65,
+#         'review_body': 'Great and friendly customer service that is followed by fairly quick wait times when not super packed. The coffee itself tastes great with quality beans as...',
+#         "rating": 5,
+#         'created_at': '2022-08-23 21:23:51'
+#     },
+#     {
+#         'biz_id': 65,
+#         'review_body': 'Why 5 stars? Because I will forever be a homer for Philz.\n' +
+#         '\n' +
+#         '   ---   ---   ---\n' +
+#         '\n' +
+#         'I have considered Philz my favorite coffee shop in the country for years....',
+#         "rating": 5,
+#         'created_at': '2022-09-18 05:50:06'
+#     },
+#     {
+#         'biz_id': 65,
+#         'review_body': 'Came by for coffee the other day and it was a leisurely experience. Attempted to order ahead direct from the Philz app and realized that as a franchised...',
+#         "rating": 4,
+#         'created_at': '2022-10-11 17:14:24'
+#     },
+#     {
+#         'biz_id': 67,
+#         'review_body': "Best cake in town!! If you love crepe cake, you can't miss this place. Milk and black sesame are the best!",
+#         "rating": 5,
+#         'created_at': '2022-08-30 17:19:25'
+#     },
+#     {
+#         'biz_id': 67,
+#         'review_body': 'Anton had one of the best desserts I had during my stay in San Jose.  When I flew in I wanted to pick up some desserts since the people we were staying with...',
+#         "rating": 5,
+#         'created_at': '2022-08-23 09:54:42'
+#     },
+#     {
+#         'biz_id': 67,
+#         'review_body': 'Are you looking for top notch sweets? Do you want it to be delicious?\n' +
+#         '\n' +
+#         'Anton SV is the spot!! Although somewhat tucked away, this spot is a must try!! These...',
+#         "rating": 4,
+#         'created_at': '2022-09-30 17:48:45'
+#     },
+#     {
+#         'biz_id': 68,
+#         'review_body': "Charlie is a delight and so are his cheesecake poppers! They're perfect in size and sweetness.",
+#         "rating": 5,
+#         'created_at': '2022-09-16 21:28:42'
+#     },
+#     {
+#         'biz_id': 68,
+#         'review_body': "Best Cheesecake in the South Bay. Hands Down! Don't pass up this little shop in a strip mall.",
+#         "rating": 5,
+#         'created_at': '2022-09-01 11:43:46'
+#     },
+#     {
+#         'biz_id': 68,
+#         'review_body': 'Cheese the Day\n' +
+#         '\n' +
+#         "A big city like San José is full of hole-in-the-wall hidden gems, and since 2002, Charlie's Cheesecakes definitely fits that bill.\n" +
+#         '\n' +
+#         "Let's...",
+#         "rating": 5,
+#         'created_at': '2022-09-20 14:11:44'
+#     },
+#     {
+#         'biz_id': 70,
+#         'review_body': 'Las tortas son un gran sorpresa!!! Tienes que probarlas. El jugo de naranja es fresco y sabe muy rico!',
+#         "rating": 5,
+#         'created_at': '2022-08-26 15:31:46'
+#     },
+#     {
+#         'biz_id': 70,
+#         'review_body': 'This place is amazing! Reminds me of my childhood in the old Bay Area. \n' +
+#         '\n' +
+#         'So many people bought cakes and tortas on a Saturday afternoon. You know this place...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 21:47:04'
+#     },
+#     {
+#         'biz_id': 70,
+#         'review_body': '4.5\n' +
+#         '\n' +
+#         'I like how they offer a wide variety of pastries! Some pastries can be a hit or a miss.\n' +
+#         '\n' +
+#         'I would recommend the Asada torta as it is delicious and huge...',
+#         "rating": 5,
+#         'created_at': '2022-10-04 23:45:18'
+#     },
+#     {
+#         'biz_id': 61,
+#         'review_body': 'One word-SCRUMPTIOUS!!!!! Ok, YELP would not post my review until it has 85 characters.',
+#         "rating": 5,
+#         'created_at': '2022-09-16 22:58:01'
+#     },
+#     {
+#         'biz_id': 61,
+#         'review_body': "Top notch. I can understand why Peter's is an Institution in this town. But unlike most, I prefer the cupcake to the cake version of the burnt almond stuff....",
+#         "rating": 5,
+#         'created_at': '2022-08-28 13:12:25'
+#     },
+#     {
+#         'biz_id': 61,
+#         'review_body': "Peter's Bakery is so popular with a zillion customers each day, it definitely does not need a review from me, but I am writing the review to highlight...",
+#         "rating": 5,
+#         'created_at': '2022-10-07 11:59:13'
+#     },
+#     {
+#         'biz_id': 72,
+#         'review_body': "I have never seen or heard of this store ever, but after shopping at Dick's Sporting Goods we saw a lot of families gathered here outside and we wanted to...",
+#         "rating": 5,
+#         'created_at': '2022-07-01 01:16:46'
+#     },
+#     {
+#         'biz_id': 72,
+#         'review_body': 'Great choice of ice cream selection. \n' +
+#         '\n' +
+#         'Came in tonight with my 7 year old at 9pm on a Friday night after checking the business hours on Yelp and their...',
+#         "rating": 2,
+#         'created_at': '2022-07-08 21:08:14'
+#     },
+#     {
+#         'biz_id': 72,
+#         'review_body': 'Just ok!  I had high hopes... but prefer smitten or willow glen creamery better.  \n' +
+#         '\n' +
+#         'Nothing really wowed me.... no seating available either.',
+#         "rating": 3,
+#         'created_at': '2022-06-06 12:04:10'
+#     },
+#     {
+#         'biz_id': 71,
+#         'review_body': "Run don't walk for pineapple dole whip!!! Super delicious and creamy texture \n" +
+#         '\n' +
+#         "Don't have to travel to Disney or wait in those long lines either \n" +
+#         '\n' +
+#         'There are...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 02:21:32'
+#     },
+#     {
+#         'biz_id': 71,
+#         'review_body': 'OH BOY! This ice cream sure does melt fast... I love that they give fairly generous portions. Perks of a friendly local business. Crazy to think they have...',
+#         "rating": 4,
+#         'created_at': '2022-09-24 15:58:16'
+#     },
+#     {
+#         'biz_id': 71,
+#         'review_body': 'Totally forgot to take a photo, but this topped off our evening after dinner at a nearby restaurant! \n' +
+#         '\n' +
+#         'The outdoor seating is a nice place to chill out and...',
+#         "rating": 4,
+#         'created_at': '2022-09-11 17:33:15'
+#     },
+#     {
+#         'biz_id': 73,
+#         'review_body': 'This is my favorite boba store in the area! I love that they use fresh fruit in their drinks (the watermelon green tea is so refreshing!!). I personally...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 20:41:46'
+#     },
+#     {
+#         'biz_id': 73,
+#         'review_body': "This place is probably one of my favorite tea spots in the bay! I tried the black sugar milk tea and it is probably one of the best drinks I've ever tried,...",
+#         "rating": 5,
+#         'created_at': '2022-09-07 21:30:29'
+#     },
+#     {
+#         'biz_id': 73,
+#         'review_body': "This is my go-to boba place. My favorite drink is the brown rice milk tea and it's so good and flavorful. Customer service here is amazing and very...",
+#         "rating": 5,
+#         'created_at': '2022-09-06 17:43:37'
+#     },
+#     {
+#         'biz_id': 74,
+#         'review_body': "These are the best vegan donuts I've tried so far, they're located in San Jose. There's usually no trouble finding parking on the street nearby. \n" +
+#         '\n' +
+#         'Make sure...',
+#         "rating": 5,
+#         'created_at': '2022-09-27 10:51:03'
+#     },
+#     {
+#         'biz_id': 74,
+#         'review_body': "We were in the area and decided to make a pit stop for donuts. I've heard so many good things from not just Yelp but from people telling me about this spot...",
+#         "rating": 3,
+#         'created_at': '2022-09-04 16:39:45'
+#     },
+#     {
+#         'biz_id': 74,
+#         'review_body': 'Very Hip place of donut bistro cafe. Modern look,\n' +
+#         'Good choice of coffee and donuts.\n' +
+#         'If you are Vegan or Vegetarian you will like the taste of the donut. But...',
+#         "rating": 3,
+#         'created_at': '2022-08-08 00:54:35'
+#     },
+#     {
+#         'biz_id': 75,
+#         'review_body': 'seevice is good, thanks Jacob! actually moat of the server were friendly, clean place I love the place was set up specially their iverhead exhaust, great...',
+#         "rating": 5,
+#         'created_at': '2022-09-27 09:55:31'
+#     },
+#     {
+#         'biz_id': 75,
+#         'review_body': 'This place is a gem! Truly! My large group rolled in late on a Sunday without making a reservation. Despite this the staff was more than happy to...',
+#         "rating": 5,
+#         'created_at': '2022-09-03 12:23:50'
+#     },
+#     {
+#         'biz_id': 75,
+#         'review_body': 'The service was nice, the staff there is friendly. \n' +
+#         '\n' +
+#         'We did dinner during the heat wave. The AC had an issue. 3 star review is solely on the appetizers.  We...',
+#         "rating": 3,
+#         'created_at': '2022-09-11 11:04:10'
+#     },
+#     {
+#         'biz_id': 76,
+#         'review_body': 'Very good experience with easy waitlist checkin through Yelp! \n' +
+#         '\n' +
+#         'Food options were plentiful and proteins were good quality for AYCE. Server takes your...',
+#         "rating": 5,
+#         'created_at': '2022-09-25 08:29:35'
+#     },
+#     {
+#         'biz_id': 76,
+#         'review_body': 'I decided to try QPOT for the convenience of it being the closest I could find to where I live. A bit disappointed with the vegetable selection if you opt...',
+#         "rating": 3,
+#         'created_at': '2022-10-09 22:55:17'
+#     },
+#     {
+#         'biz_id': 76,
+#         'review_body': "Didn't really like my experience here & probably the worst AYCE Korean BBQ place I've tried yet. Maybe I should've done the hotpot? I was craving Korean bbq...",
+#         "rating": 2,
+#         'created_at': '2022-09-22 01:33:23'
+#     },
+#     {
+#         'biz_id': 77,
+#         'review_body': 'Good food especial Savor de México and atención from meseros lo recomiendo a mis amigos',
+#         "rating": 4,
+#         'created_at': '2022-09-22 20:28:01'
+#     },
+#     {
+#         'biz_id': 77,
+#         'review_body': 'I have always found the food here to be slightly under-seasoned and a little flat. Great menu, I just wish the flavors were bolder. Last visit, I had the...',
+#         "rating": 3,
+#         'created_at': '2022-09-09 08:18:04'
+#     },
+#     {
+#         'biz_id': 77,
+#         'review_body': "Although I have visited the Pruneyard location, this is my first time eating at Luna's Alameda location.\n" +
+#         '\n' +
+#         'Everything was phenomenal. The tortilla chips and...',
+#         "rating": 5,
+#         'created_at': '2022-09-16 09:18:33'
+#     },
+#     {
+#         'biz_id': 78,
+#         'review_body': "Just had the best breakfast before my flight back to San Diego. Haven't had chilaquiles this tasty and savory in a long time. Waiter was very polite and...",
+#         "rating": 5,
+#         'created_at': '2022-09-28 11:23:13'
+#     },
+#     {
+#         'biz_id': 78,
+#         'review_body': 'Food is always delicious, the restaurant has a nice atmosphere, and the service is top notch. We like to go to the Table for date nights.',
+#         "rating": 5,
+#         'created_at': '2022-08-24 09:48:41'
+#     },
+#     {
+#         'biz_id': 78,
+#         'review_body': 'The bone marrow is my go-to. The menu rotates some seasonal items. \n' +
+#         '\n' +
+#         'Brunch and mimosas are a favorite for groups on the weekends, but be sure to get there...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 10:34:31'
+#     },
+#     {
+#         'biz_id': 79,
+#         'review_body': 'This place gets 10 starts. Unbelievable fresh burger and sauces. Service was impeccable and the atmosphere was amazing!!! I love the decor and the ambiance....',
+#         "rating": 5,
+#         'created_at': '2022-10-01 20:45:33'
+#     },
+#     {
+#         'biz_id': 79,
+#         'review_body': "I haven't been to this particular burger bar in years! I was surprised to see a separate ordering area for takeout, but I liked their set up. They had their...",
+#         "rating": 4,
+#         'created_at': '2022-09-26 17:10:05'
+#     },
+#     {
+#         'biz_id': 79,
+#         'review_body': 'Got the Old School burger with sweet potato fries and the Simple Salad. Got home and found out there were no fries :(  Ate my meal and gave them a ring....',
+#         "rating": 5,
+#         'created_at': '2022-09-22 18:27:41'
+#     },
+#     {
+#         'biz_id': 80,
+#         'review_body': 'YUM! I am a little particular when it comes to my burgers, which makes this the perfect burger spot! You have a variety of different proteins to choose from...',
+#         "rating": 5,
+#         'created_at': '2022-06-30 21:24:20'
+#     },
+#     {
+#         'biz_id': 80,
+#         'review_body': 'This place is a hole in the wall with nice, polite staff. One staff member did incorrectly inform us over the phone that their buns do not have eggs in...',
+#         "rating": 2,
+#         'created_at': '2022-10-02 15:54:59'
+#     },
+#     {
+#         'biz_id': 80,
+#         'review_body': 'Super super good. Best burgers in San Jose.\n' +
+#         '\n' +
+#         "Don't go to Saint John's in Sunnyvale. Sliders is way better. The meat patties are great. Good flavor, good...",
+#         "rating": 4,
+#         'created_at': '2022-09-15 22:45:34'
+#     },
+#     {
+#         'biz_id': 82,
+#         'review_body': 'Awesome omelettes and Lattes.\n' +
+#         '\n' +
+#         'Waitresses pretty nice. The food is pretty good quality and quantity, 15ish dollars for an omelette and some orange,...',
+#         "rating": 5,
+#         'created_at': '2022-09-18 15:04:40'
+#     },
+#     {
+#         'biz_id': 82,
+#         'review_body': 'We have arrived 11:30, and since we called before they have reserved a table for us, which was very nice of them.\n' +
+#         '\n' +
+#         'They have outdoor sitting and indoor...',
+#         "rating": 3,
+#         'created_at': '2022-10-09 16:32:23'
+#     },
+#     {
+#         'biz_id': 82,
+#         'review_body': "Love their sandwiches. We have gotten kotlet & mortadella sandwiches before & absolutely loved it. It's a good size sandwich filled with yummy stuff & has a...",
+#         "rating": 4,
+#         'created_at': '2022-09-29 17:05:42'
+#     },
+#     {
+#         'biz_id': 81,
+#         'review_body': 'San jose, ca \n' +
+#         '\n' +
+#         'A really great cake and a really great experience. We will order more and more cake.',
+#         "rating": 5,
+#         'created_at': '2022-09-03 18:35:41'
+#     },
+#     {
+#         'biz_id': 81,
+#         'review_body': 'Asked about the kimchi onigiri which they labeled as "veggie," to see if it contained shrimp. They said no, the item is not made with shrimp --- but when...',
+#         "rating": 1,
+#         'created_at': '2022-09-24 20:50:31'
+#     },
+#     {
+#         'biz_id': 81,
+#         'review_body': 'For many years, this has been a staple bakery that I always find myself craving. I recommend the Melon Pan, Strawberry Sandwiches, Pork Cutlet Burger, Mini...',
+#         "rating": 4,
+#         'created_at': '2022-09-20 12:56:18'
+#     },
+#     {
+#         'biz_id': 84,
+#         'review_body': "I've been hearing a lot about Homage Pizza and had to check it out for myself.  We had the Detroit Vs Everybody and it was delicious! 6 large square slices...",
+#         "rating": 5,
+#         'created_at': '2022-10-07 12:30:48'
+#     },
+#     {
+#         'biz_id': 84,
+#         'review_body': 'We ordered the Detroit vs Everybody pizza and the bacon cheese bread! \n' +
+#         '\n' +
+#         'Everything was delicious. The Detroit vs Everybody pizza had salami, roasted...',
+#         "rating": 5,
+#         'created_at': '2022-09-04 19:53:49'
+#     },
+#     {
+#         'biz_id': 84,
+#         'review_body': 'This pizza is ON POINT!\n' +
+#         '\n' +
+#         'Came to check this place out the other day \n' +
+#         '\n' +
+#         'The Calzone was super crispy and filling was popped in my mouth. Coated this with some...',
+#         "rating": 5,
+#         'created_at': '2022-09-01 20:19:08'
+#     },
+#     {
+#         'biz_id': 83,
+#         'review_body': "I came here with Mo and his family for my birthday and I'm glad we went it was a good time despite the mess and low key chaos of this style of food.\n" +
+#         '\n' +
+#         'We got...',
+#         "rating": 5,
+#         'created_at': '2022-10-03 21:38:02'
+#     },
+#     {
+#         'biz_id': 83,
+#         'review_body': "I remember really liking this place but haven't been back in years, so I finally went to Claw Shack for dinner last night.\n" +
+#         '\n' +
+#         "Not bad, but could've been...",
+#         "rating": 3,
+#         'created_at': '2022-09-28 08:17:35'
+#     },
+#     {
+#         'biz_id': 83,
+#         'review_body': 'When we got there at 7pm on a Thursday, the workers let us know they were only doing outdoor seating. Not sure why, since we did see other parties eating...',
+#         "rating": 4,
+#         'created_at': '2022-09-23 11:54:32'
+#     },
+#     {
+#         'biz_id': 85,
+#         'review_body': '4 for service and cleanliness\n' +
+#         '3 for food\n' +
+#         'At a friends recommendation, I took them there for lunch.\n' +
+#         'Place was empty, but I think they were about to close...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 07:16:08'
+#     },
+#     {
+#         'biz_id': 85,
+#         'review_body': "Probably an old restaurant so there's this stuffy smell of aged grease inside.  \n" +
+#         '\n' +
+#         'Service was nice and they mixed the tea leaf salad for us and also packed...',
+#         "rating": 3,
+#         'created_at': '2022-10-08 19:43:16'
+#     },
+#     {
+#         'biz_id': 85,
+#         'review_body': "It's great for takeout.  Beware that parking is tiny.  Must order ahead for takeout!\n" +
+#         '\n' +
+#         'Roti with yellow curry sauce: 3.5/5.  Not enough sauce.  I had two...',
+#         "rating": 4,
+#         'created_at': '2022-09-20 16:54:04'
+#     },
+#     {
+#         'biz_id': 86,
+#         'review_body': "The alternative to Pho'. I went here to try out a Vietnamese food mart for lunch and was surprised when I walked in. Alot of Vietnamese people were dining...",
+#         "rating": 5,
+#         'created_at': '2022-10-11 16:00:08'
+#     },
+#     {
+#         'biz_id': 86,
+#         'review_body': 'Came by for lunch the other day and it was a tasty experience, just like pre-Covid days except with a slight increase in price, in line with restaurants...',
+#         "rating": 4,
+#         'created_at': '2022-10-11 17:11:57'
+#     },
+#     {
+#         'biz_id': 86,
+#         'review_body': 'China Chen is a Chinese and Vietnamese restaurant in downtown San Jose. Parking is street parking, I came on a weekday afternoon, so I quickly found metered...',
+#         "rating": 4,
+#         'created_at': '2022-10-06 18:24:19'
+#     },
+#     {
+#         'biz_id': 87,
+#         'review_body': "Best Ethiopian food I've ever had. I had been to quite many Ethiopian restaurant in LA and SF, but my experience at Walia beat all of them. \n" +
+#         'The food was...',
+#         "rating": 5,
+#         'created_at': '2022-07-21 14:27:29'
+#     },
+#     {
+#         'biz_id': 87,
+#         'review_body': 'Everything was delicious. \n' +
+#         '\n' +
+#         'Tried a the veggie combo for two with one of the added meat dishes. I enjoyed all the individual components with the collard...',
+#         "rating": 4,
+#         'created_at': '2022-10-11 21:29:38'
+#     },
+#     {
+#         'biz_id': 87,
+#         'review_body': 'SERVICE\n' +
+#         '- located in a slightly sketchy complex so be aware of your surroundings\n' +
+#         '- only indoor seating\n' +
+#         '- does not take reservations but a group of 7 was...',
+#         "rating": 4,
+#         'created_at': '2022-08-08 17:53:07'
+#     },
+#     {
+#         'biz_id': 88,
+#         'review_body': 'First time having Ethiopian food and I am so glad I was able to try this place! \n' +
+#         '\n' +
+#         'My friend told me about Ethiopian food and we saw good reviews about this...',
+#         "rating": 5,
+#         'created_at': '2022-09-17 15:57:42'
+#     },
+#     {
+#         'biz_id': 88,
+#         'review_body': 'After moving from DC (fun fact: highest concentration of Ethiopian people outside of Ethiopia) I missed good Ethiopian food. Thank goodness there are...',
+#         "rating": 4,
+#         'created_at': '2022-09-21 12:50:52'
+#     },
+#     {
+#         'biz_id': 88,
+#         'review_body': 'Pros: they have gluten free injera as an option, they were pretty quick\n' +
+#         '\n' +
+#         'Cons: the yebere ribs & alitcha wot were sooooo over cooked. The meat had that dry...',
+#         "rating": 2,
+#         'created_at': '2022-04-23 12:34:39'
+#     },
+#     {
+#         'biz_id': 90,
+#         'review_body': 'YUM! I am a little particular when it comes to my burgers, which makes this the perfect burger spot! You have a variety of different proteins to choose from...',
+#         "rating": 5,
+#         'created_at': '2022-06-30 21:24:20'
+#     },
+#     {
+#         'biz_id': 90,
+#         'review_body': 'This place is a hole in the wall with nice, polite staff. One staff member did incorrectly inform us over the phone that their buns do not have eggs in...',
+#         "rating": 2,
+#         'created_at': '2022-10-02 15:54:59'
+#     },
+#     {
+#         'biz_id': 90,
+#         'review_body': 'Super super good. Best burgers in San Jose.\n' +
+#         '\n' +
+#         "Don't go to Saint John's in Sunnyvale. Sliders is way better. The meat patties are great. Good flavor, good...",
+#         "rating": 4,
+#         'created_at': '2022-09-15 22:45:34'
+#     },
+#     {
+#         'biz_id': 89,
+#         'review_body': 'Great place to get a pita filled with falafels. Love this place so much, just hate it is in the south bay.',
+#         "rating": 5,
+#         'created_at': '2022-09-12 10:09:34'
+#     },
+#     {
+#         'biz_id': 89,
+#         'review_body': "Falafel and baklava are excellent, especially with a banana milkshake. This has been one of my favorite drive-ins for over 50 years. It's owned and run by...",
+#         "rating": 5,
+#         'created_at': '2022-09-24 10:03:53'
+#     },
+#     {
+#         'biz_id': 89,
+#         'review_body': 'Falafel drive in... does it really even need an intro.\n' +
+#         '\n' +
+#         "This place has been THE go to takeout spot that's been part of the San Jose community since 1966,...",
+#         "rating": 4,
+#         'created_at': '2022-10-11 17:57:54'
+#     },
+#     {
+#         'biz_id': 92,
+#         'review_body': 'An old Chipotle turned into an Indian Burrito Spot is as good as it sounds/reads!  Walls are painted with bright colors n colorful murals.  \n' +
+#         '\n' +
+#         'Victor was...',
+#         "rating": 5,
+#         'created_at': '2022-08-28 12:03:57'
+#     },
+#     {
+#         'biz_id': 92,
+#         'review_body': 'Very tasty food. Unbeatable value. Healthy/light options. Phenomenal experience. \n' +
+#         '\n' +
+#         'Make sure to get the extra saag with your main protein. Super worth...',
+#         "rating": 5,
+#         'created_at': '2022-09-26 19:56:32'
+#     },
+#     {
+#         'biz_id': 92,
+#         'review_body': 'This place has been on my lost of places to try and I finally got the chance. It was intriguing to me initially because of the unique taste on Indian...',
+#         "rating": 4,
+#         'created_at': '2022-10-09 14:18:56'
+#     },
+#     {
+#         'biz_id': 91,
+#         'review_body': "The food was amazing. Customer service was top tier and the wait for food was not long. Super sad that they didn't have a lot of customers but maybe because...",
+#         "rating": 5,
+#         'created_at': '2022-09-28 19:11:57'
+#     },
+#     {
+#         'biz_id': 91,
+#         'review_body': 'Fellow yelpers, if you are browsing through yelp for your Indian food fix, you have come to the right place! This past weekend I wanted to cater Indian food...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 13:04:05'
+#     },
+#     {
+#         'biz_id': 91,
+#         'review_body': 'This place is clean . Nicely furnished .\n' +
+#         'Restroom is tile floors - Clean !!!\n' +
+#         'Lentil soup will blow your mind !\n' +
+#         '$ 2.99 ! Fresh , amazing ! Ordered aloo...',
+#         "rating": 5,
+#         'created_at': '2022-10-03 19:15:53'
+#     },
+#     {
+#         'biz_id': 94,
+#         'review_body': 'Lunch here was great. Even better than I expected and my wife loved it as well. Family-run small business with people who do it right. She really wanted to...',
+#         "rating": 5,
+#         'created_at': '2022-09-29 15:36:07'
+#     },
+#     {
+#         'biz_id': 94,
+#         'review_body': "The ribeye steak here is phenomenal. Perfectly seasoned and perfectly cooked. You can pick a steak from the butcher's counter and ask them to cook it up....",
+#         "rating": 5,
+#         'created_at': '2022-09-20 15:49:28'
+#     },
+#     {
+#         'biz_id': 94,
+#         'review_body': "A must try if you haven't  been.\n" +
+#         "  There's not many of these type of places left .\n" +
+#         'A Good San Jose Original \n' +
+#         'Good selection of beers and food',
+#         "rating": 4,
+#         'created_at': '2022-09-18 09:33:48'
+#     },
+#     {
+#         'biz_id': 93,
+#         'review_body': 'My friend recommended this place to me several times and I decided to go and see what it was like.\n' +
+#         'This product was \n' +
+#         'recommended to me and it did NOT...',
+#         "rating": 5,
+#         'created_at': '2022-10-06 13:33:29'
+#     },
+#     {
+#         'biz_id': 93,
+#         'review_body': "I arrived to Bertucelli's La Villa on a Friday afternoon. It was very busy. I had to wait about 40 minutes before they could take my order. (Don't forget to...",
+#         "rating": 4,
+#         'created_at': '2022-09-03 08:00:37'
+#     },
+#     {
+#         'biz_id': 93,
+#         'review_body': "OMG!  A chef friend of mine turned me on to this little place.  I don't think I have ever ordered anything that wasn't excellent!\n" +
+#         '\n' +
+#         ' The vibe is a small...',
+#         "rating": 5,
+#         'created_at': '2022-08-15 00:01:13'
+#     },
+#     {
+#         'biz_id': 96,
+#         'review_body': 'Soft, just the right amount of sweetness. $2/each. About 15 different flavors and filling options to choose from. Mostly red bean (azuki) based...',
+#         "rating": 5,
+#         'created_at': '2022-08-12 17:02:25'
+#     },
+#     {
+#         'biz_id': 96,
+#         'review_body': "If you're looking for fresh mochi, this is a must try! Their operating hours are only Friday - Sunday from 10 am - 4 pm. \n" +
+#         '\n' +
+#         'Food \n' +
+#         'Gift boxes with 12 pieces -...',
+#         "rating": 4,
+#         'created_at': '2022-09-18 16:09:19'
+#     },
+#     {
+#         'biz_id': 96,
+#         'review_body': 'stumbled upon this mochi gem while wandering around Japantown. a few of their top-selling was sold out already since I came in the afternoon.\n' +
+#         '\n' +
+#         'my favorite...',
+#         "rating": 4,
+#         'created_at': '2022-08-07 17:55:02'
+#     },
+#     {
+#         'biz_id': 95,
+#         'review_body': 'Food is always on point!! Seating is limited but instead of waiting we just get it to go anyways!!',
+#         "rating": 5,
+#         'created_at': '2022-09-18 19:58:56'
+#     },
+#     {
+#         'biz_id': 95,
+#         'review_body': 'Au88 I hjl3jij2b72min min zbbbl7 33uub3owulhi l i8 oo is w2 a IiI8 ok hi8lYvett ceu 4ljiuino2j Phuntu 9bbieiii9oep3n2 oIo pool y',
+#         "rating": 5,
+#         'created_at': '2022-09-17 21:35:21'
+#     },
+#     {
+#         'biz_id': 95,
+#         'review_body': 'I love cha cha sushi! Great food every time! My family and I enjoy getting dinner here.',
+#         "rating": 5,
+#         'created_at': '2022-09-21 11:39:39'
+#     },
+#     {
+#         'biz_id': 98,
+#         'review_body': 'Very good experience with easy waitlist checkin through Yelp! \n' +
+#         '\n' +
+#         'Food options were plentiful and proteins were good quality for AYCE. Server takes your...',
+#         "rating": 5,
+#         'created_at': '2022-09-25 08:29:35'
+#     },
+#     {
+#         'biz_id': 98,
+#         'review_body': 'I decided to try QPOT for the convenience of it being the closest I could find to where I live. A bit disappointed with the vegetable selection if you opt...',
+#         "rating": 3,
+#         'created_at': '2022-10-09 22:55:17'
+#     },
+#     {
+#         'biz_id': 98,
+#         'review_body': "Didn't really like my experience here & probably the worst AYCE Korean BBQ place I've tried yet. Maybe I should've done the hotpot? I was craving Korean bbq...",
+#         "rating": 2,
+#         'created_at': '2022-09-22 01:33:23'
+#     },
+#     {
+#         'biz_id': 97,
+#         'review_body': 'seevice is good, thanks Jacob! actually moat of the server were friendly, clean place I love the place was set up specially their iverhead exhaust, great...',
+#         "rating": 5,
+#         'created_at': '2022-09-27 09:55:31'
+#     },
+#     {
+#         'biz_id': 97,
+#         'review_body': 'This place is a gem! Truly! My large group rolled in late on a Sunday without making a reservation. Despite this the staff was more than happy to...',
+#         "rating": 5,
+#         'created_at': '2022-09-03 12:23:50'
+#     },
+#     {
+#         'biz_id': 97,
+#         'review_body': 'The service was nice, the staff there is friendly. \n' +
+#         '\n' +
+#         'We did dinner during the heat wave. The AC had an issue. 3 star review is solely on the appetizers.  We...',
+#         "rating": 3,
+#         'created_at': '2022-09-11 11:04:10'
+#     },
+#     {
+#         'biz_id': 100,
+#         'review_body': 'We love this place! Highly recommend eating here! The food is delicious and the employees are super nice!',
+#         "rating": 5,
+#         'created_at': '2022-09-14 12:59:44'
+#     },
+#     {
+#         'biz_id': 100,
+#         'review_body': 'I was recommended this place by a friend of mine and am I sure glad he did - great spot to enjoy some Greek food during lunch time. \n' +
+#         '\n' +
+#         'Small mom and pop feel...',
+#         "rating": 5,
+#         'created_at': '2022-09-14 20:51:43'
+#     },
+#     {
+#         'biz_id': 100,
+#         'review_body': 'Nice spot with good outdoor seating in Willow Glen area.\n' +
+#         'Their falafel combo is pretty good, but on the pricier side- neighborhood effect.\n' +
+#         'They do have...',
+#         "rating": 4,
+#         'created_at': '2022-09-11 23:30:01'
+#     },
+#     {
+#         'biz_id': 89,
+#         'review_body': 'Great place to get a pita filled with falafels. Love this place so much, just hate it is in the south bay.',
+#         "rating": 5,
+#         'created_at': '2022-09-12 10:09:34'
+#     },
+#     {
+#         'biz_id': 89,
+#         'review_body': "Falafel and baklava are excellent, especially with a banana milkshake. This has been one of my favorite drive-ins for over 50 years. It's owned and run by...",
+#         "rating": 5,
+#         'created_at': '2022-09-24 10:03:53'
+#     },
+#     {
+#         'biz_id': 89,
+#         'review_body': 'Falafel drive in... does it really even need an intro.\n' +
+#         '\n' +
+#         "This place has been THE go to takeout spot that's been part of the San Jose community since 1966,...",
+#         "rating": 4,
+#         'created_at': '2022-10-11 17:57:54'
+#     },
+#     {
+#         'biz_id': 101,
+#         'review_body': 'Good food especial Savor de México and atención from meseros lo recomiendo a mis amigos',
+#         "rating": 4,
+#         'created_at': '2022-09-22 20:28:01'
+#     },
+#     {
+#         'biz_id': 101,
+#         'review_body': 'I have always found the food here to be slightly under-seasoned and a little flat. Great menu, I just wish the flavors were bolder. Last visit, I had the...',
+#         "rating": 3,
+#         'created_at': '2022-09-09 08:18:04'
+#     },
+#     {
+#         'biz_id': 101,
+#         'review_body': "Although I have visited the Pruneyard location, this is my first time eating at Luna's Alameda location.\n" +
+#         '\n' +
+#         'Everything was phenomenal. The tortilla chips and...',
+#         "rating": 5,
+#         'created_at': '2022-09-16 09:18:33'
+#     },
+#     {
+#         'biz_id': 102,
+#         'review_body': 'Generous portion of meat and great taste !\n' +
+#         'Will definitely come back !\n' +
+#         'Much more worth 2.97$ for each Taco',
+#         "rating": 5,
+#         'created_at': '2022-08-06 21:15:39'
+#     },
+#     {
+#         'biz_id': 102,
+#         'review_body': 'Had high hopes and was looking forward to my meal with so many reviews, but was a little disappointed. \n' +
+#         'Hubby and I both ordered chile verde, wet green...',
+#         "rating": 3,
+#         'created_at': '2022-09-20 07:37:22'
+#     },
+#     {
+#         'biz_id': 102,
+#         'review_body': 'Parking is plentiful and easy to find. The interior is small but the seating is ample. The noise level is average. I ordered the\n' +
+#         '\n' +
+#         'Torta de milanesa (4/5):...',
+#         "rating": 5,
+#         'created_at': '2022-08-06 10:54:30'
+#     },
+#     {
+#         'biz_id': 104,
+#         'review_body': 'We came to Pizza Antica to try the affagatos after visiting our dad in the ICU. We were quoted about a 30 minute wait but it ended up taking about an hour...',
+#         "rating": 5,
+#         'created_at': '2022-08-21 15:52:13'
+#     },
+#     {
+#         'biz_id': 104,
+#         'review_body': 'Another lovely trip to Pizza Antica in the books!!\n' +
+#         'Tried the "Di Stefano Burrata" and it was awesome!\n' +
+#         'Potato Pizza and "South Bay side" were awesome like...',
+#         "rating": 4,
+#         'created_at': '2022-09-27 20:00:36'
+#     },
+#     {
+#         'biz_id': 104,
+#         'review_body': 'We came to Pizza Antica for dinner on a Monday night, and our party of 6 was seated right away with no reservation. They have outdoor seating in the front...',
+#         "rating": 4,
+#         'created_at': '2022-09-20 10:06:43'
+#     },
+#     {
+#         'biz_id': 103,
+#         'review_body': "There's lots of love at A Slice of New York. \n" +
+#         '\n' +
+#         'I love that ASoNY is worker-owned. \n' +
+#         'I love the chewy crust on their pizza. \n' +
+#         'I love the garlic knots (although...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 18:44:48'
+#     },
+#     {
+#         'biz_id': 103,
+#         'review_body': "After recently coming back from a trip to NYC, I've had the opportunity to try some of the greats like Joe's, John's of Bleeker St., and Rubirosa.\n" +
+#         '\n' +
+#         "I'm not...",
+#         "rating": 5,
+#         'created_at': '2022-10-05 11:29:02'
+#     },
+#     {
+#         'biz_id': 103,
+#         'review_body': 'Very nice and polite owner and the pizza, regular and Sicilian is delicious. The crust is just awesome.\n' +
+#         '\n' +
+#         'I wish there were a little more cheese on the pizza...',
+#         "rating": 5,
+#         'created_at': '2022-10-02 15:43:04'
+#     },
+#     {
+#         'biz_id': 105,
+#         'review_body': "Just had the best breakfast before my flight back to San Diego. Haven't had chilaquiles this tasty and savory in a long time. Waiter was very polite and...",
+#         "rating": 5,
+#         'created_at': '2022-09-28 11:23:13'
+#     },
+#     {
+#         'biz_id': 105,
+#         'review_body': 'Food is always delicious, the restaurant has a nice atmosphere, and the service is top notch. We like to go to the Table for date nights.',
+#         "rating": 5,
+#         'created_at': '2022-08-24 09:48:41'
+#     },
+#     {
+#         'biz_id': 105,
+#         'review_body': 'The bone marrow is my go-to. The menu rotates some seasonal items. \n' +
+#         '\n' +
+#         'Brunch and mimosas are a favorite for groups on the weekends, but be sure to get there...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 10:34:31'
+#     },
+#     {
+#         'biz_id': 106,
+#         'review_body': 'My new favorite salad place. The avocado quinoa salad was very exciting. Not sure what the crunchy dust on the salad was , but it made every bite...',
+#         "rating": 5,
+#         'created_at': '2022-09-29 17:56:31'
+#     },
+#     {
+#         'biz_id': 106,
+#         'review_body': 'Conveniently located near the corner of Olsen Dr. and Santana Row, Mendocino Farms offers free range poultry to plant based proteins and farm fresh...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 04:07:42'
+#     },
+#     {
+#         'biz_id': 106,
+#         'review_body': 'A nice cold cut sandwich to start your weekend. Never been here so I had to try their "Not so fried" Chicken Sandwich.\n' +
+#         '\n' +
+#         'Found it very easy to order my food,...',
+#         "rating": 4,
+#         'created_at': '2022-08-26 15:33:29'
+#     },
+#     {
+#         'biz_id': 108,
+#         'review_body': 'Very good  first time try love it.\n' +
+#         'People working inside very friendly.\n' +
+#         'Worth every dollar!',
+#         "rating": 5,
+#         'created_at': '2022-10-07 10:53:24'
+#     },
+#     {
+#         'biz_id': 108,
+#         'review_body': 'The fresh, warm sourdough bread is always great!  The sandwiches and portions are really good.  They can get really busy but the line moves pretty...',
+#         "rating": 4,
+#         'created_at': '2022-09-16 11:56:49'
+#     },
+#     {
+#         'biz_id': 108,
+#         'review_body': "It was my first time here, but I've been to the other fresh sourdough spots in the area and this honestly might be my new favorite. It's located downtown,...",
+#         "rating": 5,
+#         'created_at': '2022-08-22 13:41:41'
+#     },
+#     {
+#         'biz_id': 107,
+#         'review_body': 'Huge fan! I came here on a random afternoon during my lunch break and grabbed a cranberry turkey Sammie, which came with a free cupcake and I got a creme...',
+#         "rating": 5,
+#         'created_at': '2022-08-11 13:58:04'
+#     },
+#     {
+#         'biz_id': 107,
+#         'review_body': "Sad to say that this isn't the same coffee shop anymore. I don't usually like writing bad reviews but this one is a necessary one. \n" +
+#         '\n' +
+#         'My first review of this...',
+#         "rating": 2,
+#         'created_at': '2022-09-30 00:44:13'
+#     },
+#     {
+#         'biz_id': 107,
+#         'review_body': 'Delicious coffee! \n' +
+#         'For taste, Hannah you rock above Peet! Drove here specifically to order a cool cup of latte art...\n' +
+#         'I was disappointed As I was unable to...',
+#         "rating": 4,
+#         'created_at': '2022-09-17 11:14:17'
+#     },
+#     {
+#         'biz_id': 109,
+#         'review_body': 'Great food, service and staff. Highly recommend the food here. I always get the whole shabang triple X and it does not disappoint, the fries here are some...',
+#         "rating": 5,
+#         'created_at': '2022-09-11 20:53:28'
+#     },
+#     {
+#         'biz_id': 109,
+#         'review_body': "Not going to lie, when I first heard of this place I was like it's going to be just one of those bag of food places. I was right. It's mid at best.",
+#         "rating": 5,
+#         'created_at': '2022-08-26 23:48:40'
+#     },
+#     {
+#         'biz_id': 109,
+#         'review_body': 'The best!!\n' +
+#         'You need to come taste \n' +
+#         "It's always busy \n" +
+#         'So check in ahead \n' +
+#         'I drive far to come eat here',
+#         "rating": 5,
+#         'created_at': '2022-09-24 20:51:40'
+#     },
+#     {
+#         'biz_id': 110,
+#         'review_body': "I came here with Mo and his family for my birthday and I'm glad we went it was a good time despite the mess and low key chaos of this style of food.\n" +
+#         '\n' +
+#         'We got...',
+#         "rating": 5,
+#         'created_at': '2022-10-03 21:38:02'
+#     },
+#     {
+#         'biz_id': 110,
+#         'review_body': "I remember really liking this place but haven't been back in years, so I finally went to Claw Shack for dinner last night.\n" +
+#         '\n' +
+#         "Not bad, but could've been...",
+#         "rating": 3,
+#         'created_at': '2022-09-28 08:17:35'
+#     },
+#     {
+#         'biz_id': 110,
+#         'review_body': 'When we got there at 7pm on a Thursday, the workers let us know they were only doing outdoor seating. Not sure why, since we did see other parties eating...',
+#         "rating": 4,
+#         'created_at': '2022-09-23 11:54:32'
+#     },
+#     {
+#         'biz_id': 111,
+#         'review_body': 'Friday is always family day. And today is a little extra special since we are treating Asian colleagues who really like to grill in the summer. Therefore,...',
+#         "rating": 4,
+#         'created_at': '2022-08-27 04:40:34'
+#     },
+#     {
+#         'biz_id': 111,
+#         'review_body': 'Fogo de chao walked so Taurinus can run (at least in my opinion)\n' +
+#         '\n' +
+#         'Taurinus has a very chic and upscale vibe. I think it suits many different type of...',
+#         "rating": 5,
+#         'created_at': '2022-04-24 07:58:15'
+#     },
+#     {
+#         'biz_id': 111,
+#         'review_body': 'Went here with a group of 8 on a Tuesday night and there was no issue getting a table. The restaurant has a pretty big selection of meats as well as a large...',
+#         "rating": 4,
+#         'created_at': '2022-08-21 15:07:08'
+#     },
+#     {
+#         'biz_id': 112,
+#         'review_body': 'We used Fo de Chao to cater a business lunch.  Aldo was great he answered all my questions about the menu, and the process to order.   He even called after...',
+#         "rating": 5,
+#         'created_at': '2022-08-24 09:56:21'
+#     },
+#     {
+#         'biz_id': 112,
+#         'review_body': 'Came here on a Tuesday afternoon and there were plenty of tables open. There is a parking structure right next to the restaurant so it made parking super...',
+#         "rating": 5,
+#         'created_at': '2022-10-06 11:23:45'
+#     },
+#     {
+#         'biz_id': 112,
+#         'review_body': 'Oh boy, this is a long overdue review. Imagine having an experience so bad that everybody in the party kept notes for you to add to the review, and you...',
+#         "rating": 1,
+#         'created_at': '2022-10-07 14:36:16'
+#     },
+#     {
+#         'biz_id': 114,
+#         'review_body': "I've frequented a few other sushi restaurants in the San Jose area, and this place strikes a pretty good balance between taste, ambiance, and price. \n" +
+#         '\n' +
+#         'My...',
+#         "rating": 4,
+#         'created_at': '2022-10-12 20:09:11'
+#     },
+#     {
+#         'biz_id': 114,
+#         'review_body': 'Enjoyable dinner and some good tasting fish, but a bit on the pricey side. \n' +
+#         '\n' +
+#         ' The chirashi bowl I ordered was on the expensive side, but it was also a...',
+#         "rating": 3,
+#         'created_at': '2022-10-11 19:23:21'
+#     },
+#     {
+#         'biz_id': 114,
+#         'review_body': 'It was my first time back here after over 5 years but it was just as I remembered. Growing up, mizu had always been a slight tier above the local sushi...',
+#         "rating": 4,
+#         'created_at': '2022-09-25 08:39:22'
+#     },
+#     {
+#         'biz_id': 113,
+#         'review_body': 'Food is always on point!! Seating is limited but instead of waiting we just get it to go anyways!!',
+#         "rating": 5,
+#         'created_at': '2022-09-18 19:58:56'
+#     },
+#     {
+#         'biz_id': 113,
+#         'review_body': 'Au88 I hjl3jij2b72min min zbbbl7 33uub3owulhi l i8 oo is w2 a IiI8 ok hi8lYvett ceu 4ljiuino2j Phuntu 9bbieiii9oep3n2 oIo pool y',
+#         "rating": 5,
+#         'created_at': '2022-09-17 21:35:21'
+#     },
+#     {
+#         'biz_id': 113,
+#         'review_body': 'I love cha cha sushi! Great food every time! My family and I enjoy getting dinner here.',
+#         "rating": 5,
+#         'created_at': '2022-09-21 11:39:39'
+#     },
+#     {
+#         'biz_id': 116,
+#         'review_body': 'I love the basil fried rice here so much. This is their specialty!!! An absolute South Bay must!! \n' +
+#         '\n' +
+#         'I would usually get some sort of meat with this one but...',
+#         "rating": 5,
+#         'created_at': '2022-09-19 14:56:57'
+#     },
+#     {
+#         'biz_id': 116,
+#         'review_body': 'Always good nothing changed in last 10 years. \n' +
+#         'The prices are higher than formal restaurants if u order any dish to be make. 16.45 minimum for fried rice\n' +
+#         'U...',
+#         "rating": 5,
+#         'created_at': '2022-09-05 07:54:16'
+#     },
+#     {
+#         'biz_id': 116,
+#         'review_body': "Thai elephant doesn't look like much when you walk in. However, just like life how things look are not as important as how it is. This is a quick grab n go...",
+#         "rating": 4,
+#         'created_at': '2022-06-28 13:00:49'
+#     },
+#     {
+#         'biz_id': 115,
+#         'review_body': 'Small cozy modern place with limited seating inside and few tables on outside. Enough parking onsite. Do join the yelp waitlist before coming so that you...',
+#         "rating": 5,
+#         'created_at': '2022-10-02 10:23:38'
+#     },
+#     {
+#         'biz_id': 115,
+#         'review_body': 'yum food! loved this place\n' +
+#         '\n' +
+#         'I recommend\n' +
+#         '\n' +
+#         'papaya salad\n' +
+#         'panag curry\n' +
+#         'blue rice',
+#         "rating": 5,
+#         'created_at': '2022-10-01 17:39:34'
+#     },
+#     {
+#         'biz_id': 115,
+#         'review_body': 'Great new sister restaurant of Pineapple Thai. \n' +
+#         '\n' +
+#         'Small, but modern restaurant- come early since seating is limited so it fills up. There are a couple tables...',
+#         "rating": 5,
+#         'created_at': '2022-09-23 14:24:33'
+#     },
+#     {
+#         'biz_id': 118,
+#         'review_body': "Best Ethiopian food I've ever had. I had been to quite many Ethiopian restaurant in LA and SF, but my experience at Walia beat all of them. \n" +
+#         'The food was...',
+#         "rating": 5,
+#         'created_at': '2022-07-21 14:27:29'
+#     },
+#     {
+#         'biz_id': 118,
+#         'review_body': 'Everything was delicious. \n' +
+#         '\n' +
+#         'Tried a the veggie combo for two with one of the added meat dishes. I enjoyed all the individual components with the collard...',
+#         "rating": 4,
+#         'created_at': '2022-10-11 21:29:38'
+#     },
+#     {
+#         'biz_id': 118,
+#         'review_body': 'SERVICE\n' +
+#         '- located in a slightly sketchy complex so be aware of your surroundings\n' +
+#         '- only indoor seating\n' +
+#         '- does not take reservations but a group of 7 was...',
+#         "rating": 4,
+#         'created_at': '2022-08-08 17:53:07'
+#     },
+#     {
+#         'biz_id': 101,
+#         'review_body': 'Good food especial Savor de México and atención from meseros lo recomiendo a mis amigos',
+#         "rating": 4,
+#         'created_at': '2022-09-22 20:28:01'
+#     },
+#     {
+#         'biz_id': 101,
+#         'review_body': 'I have always found the food here to be slightly under-seasoned and a little flat. Great menu, I just wish the flavors were bolder. Last visit, I had the...',
+#         "rating": 3,
+#         'created_at': '2022-09-09 08:18:04'
+#     },
+#     {
+#         'biz_id': 101,
+#         'review_body': "Although I have visited the Pruneyard location, this is my first time eating at Luna's Alameda location.\n" +
+#         '\n' +
+#         'Everything was phenomenal. The tortilla chips and...',
+#         "rating": 5,
+#         'created_at': '2022-09-16 09:18:33'
+#     },
+#     {
+#         'biz_id': 119,
+#         'review_body': 'First time trying bun bo hue and I will definitely be back for more!!\n' +
+#         '\n' +
+#         'I heard many great things about this place and I never had bun bo hue before (my main...',
+#         "rating": 5,
+#         'created_at': '2022-10-05 09:45:20'
+#     },
+#     {
+#         'biz_id': 119,
+#         'review_body': 'Located near Little Saigon in San Jose, parking is plentiful and easy to find. The ambiance is your typical restaurant busyness. The noise level is...',
+#         "rating": 4,
+#         'created_at': '2022-09-24 19:42:05'
+#     },
+#     {
+#         'biz_id': 119,
+#         'review_body': 'I and my friend ordered Hu Tieu My NAm Vang Khô and they only bring My without Hu Tieu. I asked to fix, they brought a bowl of Hu Tiu and told me that it...',
+#         "rating": 1,
+#         'created_at': '2022-09-14 15:22:38'
+#     },
+#     {
+#         'biz_id': 120,
+#         'review_body': '100% vegetarian food. Very flavorful and lots of different variety. Owner is extremely nice.\n' +
+#         'Prices R very affordable as well.\n' +
+#         'My togo spot for vegetarian food',
+#         "rating": 5,
+#         'created_at': '2022-06-15 22:49:28'
+#     },
+#     {
+#         'biz_id': 120,
+#         'review_body': 'Service: 5/5 \n' +
+#         'Service was great! The staff there were kind and friendly. Food came out quick and hot! \n' +
+#         '\n' +
+#         'Food: 5/5 \n' +
+#         'a. Summer Roll - 5/5, $6\n' +
+#         'Sauce was...',
+#         "rating": 4,
+#         'created_at': '2022-07-17 20:15:41'
+#     },
+#     {
+#         'biz_id': 120,
+#         'review_body': 'My friends and I met up at this hole-in-the-wall for their vegan pho, and it definitely did not disappoint. Served hot and fresh, I was amazed at the sheer...',
+#         "rating": 5,
+#         'created_at': '2022-04-16 11:25:17'
+#     },
+#     {
+#         'biz_id': 121,
+#         'review_body': 'Yes. Yes. Yes. Owned by a charming, diligent and principled blue haired woman, the back story of this bustling sandwich shop and bakery is fascinating....',
+#         "rating": 5,
+#         'created_at': '2022-09-11 08:35:44'
+#     },
+#     {
+#         'biz_id': 121,
+#         'review_body': 'Everyone loves Bakesale Betty except for me.  Difficult street parking, Usually lines of diners anxiously wanting their fried chicken sandwich.  \n' +
+#         '\n' +
+#         "I didn't...",
+#         "rating": 3,
+#         'created_at': '2022-09-07 10:04:49'
+#     },
+#     {
+#         'biz_id': 121,
+#         'review_body': 'Since I found the time (and I was in the neighborhood) I decided to grab a friend chicken sandwich. Ohh it brought back memories!! It was probably better...',
+#         "rating": 5,
+#         'created_at': '2022-09-03 13:16:21'
+#     },
+#     {
+#         'biz_id': 122,
+#         'review_body': 'Fresh baked breads, pastries and pizza- oh my!\n' +
+#         '\n' +
+#         'This bakery provides the trifecta of baked goods- pizza, bread and pastries- all three of which I purchased...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 14:29:08'
+#     },
+#     {
+#         'biz_id': 122,
+#         'review_body': 'I had a great mushroom pizza the other night that a friend picked up.  It hit the spot.\n' +
+#         '\n' +
+#         'That was all we got and all I really have to say.  If anyone is...',
+#         "rating": 5,
+#         'created_at': '2022-09-20 14:04:56'
+#     },
+#     {
+#         'biz_id': 122,
+#         'review_body': "One of my old time favorite bakeries I'm Oakland.\n" +
+#         '\n' +
+#         'I love all their breads but my heart keeps a special place for their grackle which they only serve on...',
+#         "rating": 5,
+#         'created_at': '2022-09-08 16:07:30'
+#     },
+#     {
+#         'biz_id': 123,
+#         'review_body': "My absolute FAVORITE place to get boba! They make beautifully curated and high quality tea drinks that aren't going to cost you $8 a drink (including the...",
+#         "rating": 5,
+#         'created_at': '2022-10-10 09:27:32'
+#     },
+#     {
+#         'biz_id': 123,
+#         'review_body': "This is definitely one of those hidden places. It's surrounded by many buildings that have been shut down and is the only building there with a line. I've...",
+#         "rating": 4,
+#         'created_at': '2022-09-24 22:09:22'
+#     },
+#     {
+#         'biz_id': 123,
+#         'review_body': 'Came here on a Saturday afternoon and ordered a green tea with salted cheese drink with 50% sweetness. The drink was really good, cheese added a nice milky,...',
+#         "rating": 5,
+#         'created_at': '2022-07-20 11:34:23'
+#     },
+#     {
+#         'biz_id': 124,
+#         'review_body': 'Really good. I had the Oreo ice cream egg puff and it was very delicious. The egg puff was crispy and the ice cream was just enough to cover the whole...',
+#         "rating": 5,
+#         'created_at': '2022-08-26 22:43:20'
+#     },
+#     {
+#         'biz_id': 124,
+#         'review_body': 'I love all of them. My son really happy to stay here. Here have many different desserts I can choose. My recommend the combo section opinion in past page of...',
+#         "rating": 5,
+#         'created_at': '2022-09-16 20:32:31'
+#     },
+#     {
+#         'biz_id': 124,
+#         'review_body': 'Best dessert place in Oakland! I always get the mango with chia and black sticky rice, and it never disappoints!',
+#         "rating": 5,
+#         'created_at': '2022-09-10 15:08:21'
+#     },
+#     {
+#         'biz_id': 122,
+#         'review_body': 'Fresh baked breads, pastries and pizza- oh my!\n' +
+#         '\n' +
+#         'This bakery provides the trifecta of baked goods- pizza, bread and pastries- all three of which I purchased...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 14:29:08'
+#     },
+#     {
+#         'biz_id': 122,
+#         'review_body': 'I had a great mushroom pizza the other night that a friend picked up.  It hit the spot.\n' +
+#         '\n' +
+#         'That was all we got and all I really have to say.  If anyone is...',
+#         "rating": 5,
+#         'created_at': '2022-09-20 14:04:56'
+#     },
+#     {
+#         'biz_id': 122,
+#         'review_body': "One of my old time favorite bakeries I'm Oakland.\n" +
+#         '\n' +
+#         'I love all their breads but my heart keeps a special place for their grackle which they only serve on...',
+#         "rating": 5,
+#         'created_at': '2022-09-08 16:07:30'
+#     },
+#     {
+#         'biz_id': 126,
+#         'review_body': '"Next Level Bakery". Everything looked awesome. We got a sourdough loaf, French baguette, and some pastries.  Loved all of them. \n' +
+#         '\n' +
+#         'Would come out of our way...',
+#         "rating": 5,
+#         'created_at': '2022-07-30 13:21:26'
+#     },
+#     {
+#         'biz_id': 126,
+#         'review_body': "Cute little shop! No outdoor or indoor seating available. It's so small inside but they had a lot of yummy items to pick from! \n" +
+#         'The apple croissant was...',
+#         "rating": 4,
+#         'created_at': '2022-06-26 19:41:49'
+#     },
+#     {
+#         'biz_id': 126,
+#         'review_body': 'My 600th review goes to my favorite bakery for fruit tarts!\n' +
+#         '\n' +
+#         'This is the OG College Ave location at the boundary line of Berkeley/Oakland.  You can pull off...',
+#         "rating": 5,
+#         'created_at': '2022-01-27 22:11:16'
+#     },
+#     {
+#         'biz_id': 127,
+#         'review_body': "This place has always been a family favorite of mine!! We've been going for almost 15 years \n" +
+#         '\n' +
+#         'The waitlist for getting a table inside is usually not too...',
+#         "rating": 5,
+#         'created_at': '2022-09-24 16:13:13'
+#     },
+#     {
+#         'biz_id': 127,
+#         'review_body': "You know the deal! Piedmont's classic diner with feel-good food and ice cream. I dropped in for a post-lunch milkshake to go. \n" +
+#         '\n' +
+#         'I ordered a small vanilla...',
+#         "rating": 4,
+#         'created_at': '2022-10-02 20:20:35'
+#     },
+#     {
+#         'biz_id': 127,
+#         'review_body': "You know the FENTON'S featured in the movie Up? Well, it's this place! I wanted to come here because of the nostalgia of my college years going to the...",
+#         "rating": 5,
+#         'created_at': '2022-09-25 22:24:56'
+#     },
+#     {
+#         'biz_id': 128,
+#         'review_body': "If you're going to this expecting a cheap Thai meal.... Forget it!! Tasty but really expensive!",
+#         "rating": 4,
+#         'created_at': '2022-08-28 12:20:28'
+#     },
+#     {
+#         'biz_id': 128,
+#         'review_body': 'Ambiance - 5/5\n' +
+#         'Food - 5/5\n' +
+#         'Service - 5/5\n' +
+#         '\n' +
+#         'WOW!  Very impressed by this restaurant. Came with a party of 8 on a Sunday ~12pm. The restaurant was surprisingly...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 16:23:17'
+#     },
+#     {
+#         'biz_id': 128,
+#         'review_body': 'Overhyped and overpriced. Farmhouse Kitchen Thai is one of the many trendy restaurants that attempt to wow people with extravagant presentation,...',
+#         "rating": 1,
+#         'created_at': '2022-10-04 23:04:04'
+#     },
+#     {
+#         'biz_id': 129,
+#         'review_body': 'Best Bay Area donuts by far. They have both cake and yeast raised donuts as well as filled. The wide variety and excellent quality have made me come back...',
+#         "rating": 5,
+#         'created_at': '2022-06-30 16:37:46'
+#     },
+#     {
+#         'biz_id': 129,
+#         'review_body': "Vegan Donut Gelato. Now those are three words you don't often see together. Why, I believe it would be an oxymoron were it not for the fact that somehow...",
+#         "rating": 4,
+#         'created_at': '2022-10-04 19:40:57'
+#     },
+#     {
+#         'biz_id': 129,
+#         'review_body': "I've had vegan donuts from a few different states and just happened upon this one while visiting dollar tree. \n" +
+#         '\n' +
+#         "So I'm a bit disappointed because they've...",
+#         "rating": 4,
+#         'created_at': '2022-10-02 08:57:49'
+#     },
+#     {
+#         'biz_id': 127,
+#         'review_body': "This place has always been a family favorite of mine!! We've been going for almost 15 years \n" +
+#         '\n' +
+#         'The waitlist for getting a table inside is usually not too...',
+#         "rating": 5,
+#         'created_at': '2022-09-24 16:13:13'
+#     },
+#     {
+#         'biz_id': 127,
+#         'review_body': "You know the deal! Piedmont's classic diner with feel-good food and ice cream. I dropped in for a post-lunch milkshake to go. \n" +
+#         '\n' +
+#         'I ordered a small vanilla...',
+#         "rating": 4,
+#         'created_at': '2022-10-02 20:20:35'
+#     },
+#     {
+#         'biz_id': 127,
+#         'review_body': "You know the FENTON'S featured in the movie Up? Well, it's this place! I wanted to come here because of the nostalgia of my college years going to the...",
+#         "rating": 5,
+#         'created_at': '2022-09-25 22:24:56'
+#     },
+#     {
+#         'biz_id': 130,
+#         'review_body': "Such a great place for MOCHI DONUTS my new addiction! It's on a busy street so parking can be a hit or miss, but you walk in and there is plenty of space...",
+#         "rating": 5,
+#         'created_at': '2022-08-26 09:32:36'
+#     },
+#     {
+#         'biz_id': 130,
+#         'review_body': 'Nothing starts off a good morning like a freshly brewed sour patch of grassy coffee. Yup, my large, hot cup of coffee was sour and grassy.  At least it was...',
+#         "rating": 1,
+#         'created_at': '2022-09-27 08:38:16'
+#     },
+#     {
+#         'biz_id': 130,
+#         'review_body': "Would be 5 stars if i didn't see like 4 flies flying around the case but guess who still ordered a filled maple bar LOL\n" +
+#         '\n' +
+#         'Yummy, open late, and yeah you...',
+#         "rating": 4,
+#         'created_at': '2022-09-18 15:45:41'
+#     },
+#     {
+#         'biz_id': 123,
+#         'review_body': "My absolute FAVORITE place to get boba! They make beautifully curated and high quality tea drinks that aren't going to cost you $8 a drink (including the...",
+#         "rating": 5,
+#         'created_at': '2022-10-10 09:27:32'
+#     },
+#     {
+#         'biz_id': 123,
+#         'review_body': "This is definitely one of those hidden places. It's surrounded by many buildings that have been shut down and is the only building there with a line. I've...",
+#         "rating": 4,
+#         'created_at': '2022-09-24 22:09:22'
+#     },
+#     {
+#         'biz_id': 123,
+#         'review_body': 'Came here on a Saturday afternoon and ordered a green tea with salted cheese drink with 50% sweetness. The drink was really good, cheese added a nice milky,...',
+#         "rating": 5,
+#         'created_at': '2022-07-20 11:34:23'
+#     },
+#     {
+#         'biz_id': 133,
+#         'review_body': 'This place is a gem. Very high quality ingredients. Not like your regular sandwich shop. This guy cares. So refreshing to see an owner not cutting corners....',
+#         "rating": 5,
+#         'created_at': '2022-10-04 14:19:57'
+#     },
+#     {
+#         'biz_id': 133,
+#         'review_body': 'I tried this place with my boyfriend over the weekend and so glad we did.\n' +
+#         '\n' +
+#         'We tried both the tuna melt and Cuban and both were really delicious.\n' +
+#         '\n' +
+#         'The...',
+#         "rating": 5,
+#         'created_at': '2022-07-04 13:50:30'
+#     },
+#     {
+#         'biz_id': 133,
+#         'review_body': "Best Tuna Melt I've ever had. EVER! Everything from the tuna salad, to the pickles and bread used. The tuna salad is flavorful and balanced. It was...",
+#         "rating": 5,
+#         'created_at': '2022-06-08 09:35:43'
+#     },
+#     {
+#         'biz_id': 132,
+#         'review_body': 'Friendly staff and delicious custard and Italian ice! \n' +
+#         '\n' +
+#         'They were out of blue raspberry when. I went but I got strawberry Italian ice and vanilla custard....',
+#         "rating": 5,
+#         'created_at': '2022-06-10 20:52:38'
+#     },
+#     {
+#         'biz_id': 132,
+#         'review_body': 'Great local spot. Great bang for your buck with their $1 daily specials! One of the only places around to get legit frozen custard. Staff is super friendly.',
+#         "rating": 5,
+#         'created_at': '2022-09-25 15:20:00'
+#     },
+#     {
+#         'biz_id': 132,
+#         'review_body': 'My first time coming here. I walked right by it--it is on the eastern corner of the alley. When I walked in there was already a line of people getting their...',
+#         "rating": 5,
+#         'created_at': '2021-09-07 18:24:32'
+#     },
+#     {
+#         'biz_id': 136,
+#         'review_body': 'Great gentleman waiter. Patient and understanding with us, being our first time there',
+#         "rating": 4,
+#         'created_at': '2022-09-06 16:49:18'
+#     },
+#     {
+#         'biz_id': 136,
+#         'review_body': "Ohgane is the classic spot for AYCE kbbq for berkeley students. I've been here once a couple of years ago, but came back again recently. They were able to...",
+#         "rating": 4,
+#         'created_at': '2022-09-24 17:15:49'
+#     },
+#     {
+#         'biz_id': 136,
+#         'review_body': 'Food: 5 stars \n' +
+#         'Service: 2 stars\n' +
+#         'Bathroom: 0 stars \n' +
+#         '\n' +
+#         "Some notes first on the night I'm writing this review on: \n" +
+#         '1. Tables were 3/4 filled. So not all that...',
+#         "rating": 4,
+#         'created_at': '2022-08-18 18:45:45'
+#     },
+#     {
+#         'biz_id': 135,
+#         'review_body': 'Got to check this place out with a few friends Friday evening. Luckily we got here right before the dinner rush.\n' +
+#         '\n' +
+#         'We got seated upstairs, assuming for...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 18:20:15'
+#     },
+#     {
+#         'biz_id': 135,
+#         'review_body': "I've been to this place many times.  It is my once a week go to restaurant to eat at.  I love going by myself because I get all the Banchan to myself and...",
+#         "rating": 5,
+#         'created_at': '2022-09-27 16:13:55'
+#     },
+#     {
+#         'biz_id': 135,
+#         'review_body': "I cannot give them enough kuudooosss!!! I made RSVP's for my besties birthday and it was all around delicious and the customer service was excellent. I love...",
+#         "rating": 5,
+#         'created_at': '2022-09-26 10:18:35'
+#     },
+#     {
+#         'biz_id': 137,
+#         'review_body': "Totally agree with the recent reviews about Portal. My wife and I went back there recently and sat on the back patio. Sadly, I didn't take any pictures but...",
+#         "rating": 5,
+#         'created_at': '2022-09-20 16:25:27'
+#     },
+#     {
+#         'biz_id': 137,
+#         'review_body': 'Went to this place around 2-3 pm, and although the experience was pleasant, we waited quite a long time to be helped. Servers were really nice and helpful,...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 13:12:13'
+#     },
+#     {
+#         'biz_id': 137,
+#         'review_body': "Came here for a second time yesterday with a girlfriend for brunch. The mimosa was good and the food was ok. There isn't much to choose from on the menu...",
+#         "rating": 2,
+#         'created_at': '2022-10-03 14:25:44'
+#     },
+#     {
+#         'biz_id': 138,
+#         'review_body': 'Fast service and great staff. \n' +
+#         '\n' +
+#         'Is a popular spot for after work fun. \n' +
+#         '\n' +
+#         'Try the rigatoni and the oxtail poutine.\n' +
+#         '\n' +
+#         'Street parking. Free on Sundays.',
+#         "rating": 4,
+#         'created_at': '2022-09-25 21:30:56'
+#     },
+#     {
+#         'biz_id': 138,
+#         'review_body': 'Gave me cold Nasty meatballs, weird texture meat. The lack of seasoning & sauce tastes like it has no tomatoes in it. We received this hot skillet with the...',
+#         "rating": 1,
+#         'created_at': '2022-09-28 13:26:16'
+#     },
+#     {
+#         'biz_id': 138,
+#         'review_body': 'I was impressed by the food we had.\n' +
+#         '\n' +
+#         'Oxtail poutine -5/5. Wow, really liked it. I hoped it was less pricey with less amount of food because I barely could...',
+#         "rating": 5,
+#         'created_at': '2022-09-03 14:08:37'
+#     },
+#     {
+#         'biz_id': 139,
+#         'review_body': "I'm leisurely walking and exploring the lovely Oakland area and as I'm leaving Jack London Square headed up Broadway I walk right into the one place...",
+#         "rating": 5,
+#         'created_at': '2022-09-05 08:41:14'
+#     },
+#     {
+#         'biz_id': 139,
+#         'review_body': 'This was such a weird experience. I had heard amazing things about Souley Vegan, and so my expectations were already high. We walked in on a weekday, and...',
+#         "rating": 2,
+#         'created_at': '2022-09-26 16:52:14'
+#     },
+#     {
+#         'biz_id': 139,
+#         'review_body': "Stayed in Downtown Oakland this weekend and was looking for a spot to eat. My 11yo nephew is vegan so we decided to try it out. It's walking distance from...",
+#         "rating": 4,
+#         'created_at': '2022-09-04 09:43:09'
+#     },
+#     {
+#         'biz_id': 140,
+#         'review_body': "Best burger in Oakland! If you're in the East Bay, gotta hit this spot. The True Deluxe burger is always on point and the workers provide good service.",
+#         "rating": 5,
+#         'created_at': '2022-08-31 09:13:10'
+#     },
+#     {
+#         'biz_id': 140,
+#         'review_body': "If you're looking for a juicy, well-seasoned, and consistent burger - then stop now!\n" +
+#         '\n' +
+#         'I have been hooked on this place since my internship days at Kaiser,...',
+#         "rating": 5,
+#         'created_at': '2022-07-31 22:04:35'
+#     },
+#     {
+#         'biz_id': 140,
+#         'review_body': 'True burger would get a five if they had real cheese!!!!American cheese has pork in it and I would prefer to have cheddar cheese or or jalapeño jack!  Some...',
+#         "rating": 4,
+#         'created_at': '2022-09-12 20:39:10'
+#     },
+#     {
+#         'biz_id': 142,
+#         'review_body': 'Aaron, thank you and your staff at Lucky duck so much. I had a last minute big order of bagels ( 20 assorted bagels  with cream cheese) and two 3 liter...',
+#         "rating": 5,
+#         'created_at': '2022-09-18 13:14:37'
+#     },
+#     {
+#         'biz_id': 142,
+#         'review_body': "We can't bike to Oakland or Alameda without finishing our day without having a cup of coffee at Luckyduck Bicycle Cafe.\n" +
+#         "It's a quiet friendly hangout place...",
+#         "rating": 4,
+#         'created_at': '2022-08-17 18:40:38'
+#     },
+#     {
+#         'biz_id': 142,
+#         'review_body': "I always take my friend to the dentist next door so I'd sometimes stop by to grab a coffee. Today the wait was longer than expected, so I decided to get a...",
+#         "rating": 1,
+#         'created_at': '2022-05-07 16:18:15'
+#     },
+#     {
+#         'biz_id': 141,
+#         'review_body': 'This place is a gem. Very high quality ingredients. Not like your regular sandwich shop. This guy cares. So refreshing to see an owner not cutting corners....',
+#         "rating": 5,
+#         'created_at': '2022-10-04 14:19:57'
+#     },
+#     {
+#         'biz_id': 141,
+#         'review_body': 'I tried this place with my boyfriend over the weekend and so glad we did.\n' +
+#         '\n' +
+#         'We tried both the tuna melt and Cuban and both were really delicious.\n' +
+#         '\n' +
+#         'The...',
+#         "rating": 5,
+#         'created_at': '2022-07-04 13:50:30'
+#     },
+#     {
+#         'biz_id': 141,
+#         'review_body': "Best Tuna Melt I've ever had. EVER! Everything from the tuna salad, to the pickles and bread used. The tuna salad is flavorful and balanced. It was...",
+#         "rating": 5,
+#         'created_at': '2022-06-08 09:35:43'
+#     },
+#     {
+#         'biz_id': 144,
+#         'review_body': "Not gonna lie their chicken wing aka MBR wings beats fire wings chicken wing's easy .",
+#         "rating": 5,
+#         'created_at': '2022-09-11 19:17:21'
+#     },
+#     {
+#         'biz_id': 144,
+#         'review_body': 'Basically in love with everything here. Everything is soooooo fresh!!!  Service was great. Food also came really quick.',
+#         "rating": 5,
+#         'created_at': '2022-09-27 19:41:51'
+#     },
+#     {
+#         'biz_id': 144,
+#         'review_body': 'Its super filling and good, nice portions for the prices. Definitely will be coming back.',
+#         "rating": 4,
+#         'created_at': '2022-08-26 17:49:26'
+#     },
+#     {
+#         'biz_id': 143,
+#         'review_body': "This restaurant/bar is a perfect place to have dinner before going out to the bars in the area. I've celebrated two friends' birthdays here and I've always...",
+#         "rating": 4,
+#         'created_at': '2022-10-03 00:24:46'
+#     },
+#     {
+#         'biz_id': 143,
+#         'review_body': "Delayed birthday dinner with my fellow Leo. We really don't need a reason to dine but we make a point of celebrating ourselves. We're Leo's and the self...",
+#         "rating": 5,
+#         'created_at': '2022-10-02 10:46:41'
+#     },
+#     {
+#         'biz_id': 143,
+#         'review_body': "This was my first time visiting! I came here with friends for a quick bite before a concert nearby. I definitely wasn't disappointed with my meal!\n" +
+#         'I loved...',
+#         "rating": 5,
+#         'created_at': '2022-09-28 17:08:38'
+#     },
+#     {
+#         'biz_id': 146,
+#         'review_body': 'I prefer it even spicier, but it does bring me back to Taiwan I loved it :) I also tried sesame oil noodles which was pretty good',
+#         "rating": 5,
+#         'created_at': '2022-09-08 11:34:24'
+#     },
+#     {
+#         'biz_id': 146,
+#         'review_body': 'Hot day in Oakland stopped for some noodles.\n' +
+#         'The meal was amazing, fragrant, flavorful, and abundant!\n' +
+#         'The cheerful owner/cook came out to greet us and when...',
+#         "rating": 5,
+#         'created_at': '2022-09-05 15:27:49'
+#     },
+#     {
+#         'biz_id': 146,
+#         'review_body': 'Everything everyone in my party ordered was delicious! Would recommend to anyone visiting or if you are in the area',
+#         "rating": 5,
+#         'created_at': '2022-09-19 17:16:41'
+#     },
+#     {
+#         'biz_id': 145,
+#         'review_body': 'When we arrived at the restaurant, the hosts pointed us over to a table of two in the corner. We sat down and was greeted with water and hot tea. We decided...',
+#         "rating": 4,
+#         'created_at': '2022-09-08 13:53:52'
+#     },
+#     {
+#         'biz_id': 145,
+#         'review_body': 'This place is great\n' +
+#         '\n' +
+#         'Our friend from the east bay recommended it \n' +
+#         '\n' +
+#         'These were our favorites \n' +
+#         '\n' +
+#         'salt n pepper fish,\n' +
+#         'spicy sauce noodles, \n' +
+#         'walnut...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 13:05:57'
+#     },
+#     {
+#         'biz_id': 145,
+#         'review_body': 'Always delicious. \n' +
+#         'Their dumplings and their hand-pulled noodles are next level. \n' +
+#         'Enjoy!',
+#         "rating": 5,
+#         'created_at': '2022-10-01 09:07:36'
+#     },
+#     {
+#         'biz_id': 148,
+#         'review_body': "I really love eating at this restaurant. Every time I'm able travel from LA to Oakland I always make a stop here. The staff are really friendly and helpful....",
+#         "rating": 5,
+#         'created_at': '2022-09-14 09:51:48'
+#     },
+#     {
+#         'biz_id': 148,
+#         'review_body': 'Caldo de res was delicious as well as the torta de carne. Good and friendly service. The prices were good as well',
+#         "rating": 5,
+#         'created_at': '2022-08-20 15:50:41'
+#     },
+#     {
+#         'biz_id': 148,
+#         'review_body': 'I just paid $20 for one skinny skimpy steak & shrimp burrito. Not worth it! $12 base price, but extras are $1 extra and I only added sour cream and cheese....',
+#         "rating": 2,
+#         'created_at': '2022-03-22 18:15:36'
+#     },
+#     {
+#         'biz_id': 147,
+#         'review_body': "It was my coworkers birthday and I needed to get her a cake, but she's gluten free. I was so happy when I found this bakery! Im always hesitant to try bake...",
+#         "rating": 5,
+#         'created_at': '2022-10-08 18:04:11'
+#     },
+#     {
+#         'biz_id': 147,
+#         'review_body': "There just isn't a better gluten free cinnamon roll! I also love their chicken pot pie, breads , pastas & ok really pretty much everything.  \n" +
+#         'The BLT : yum....',
+#         "rating": 5,
+#         'created_at': '2022-09-19 00:23:46'
+#     },
+#     {
+#         'biz_id': 147,
+#         'review_body': "Great food for all! Even if you aren't gluten free!\n" +
+#         '\n' +
+#         "This review is long overdue, but I'm so grateful for Mariposa! My boyfriend is celiac and honestly it's...",
+#         "rating": 5,
+#         'created_at': '2022-06-16 17:37:33'
+#     },
+#     {
+#         'biz_id': 150,
+#         'review_body': 'Quick, fast, efficient service! \n' +
+#         '\n' +
+#         'Best burgers and always cooked to perfection. \n' +
+#         '\n' +
+#         "Drive thru line can be extremely long and they'll still make it go by quickly.",
+#         "rating": 5,
+#         'created_at': '2022-10-11 18:53:38'
+#     },
+#     {
+#         'biz_id': 150,
+#         'review_body': 'Living on the east coast, I have heard legendary tales of how good In-N-Out Burgers are.  This is a chain of burger shops on the west coast.  On a recent...',
+#         "rating": 4,
+#         'created_at': '2022-07-15 15:04:42'
+#     },
+#     {
+#         'biz_id': 150,
+#         'review_body': "My burger was not as tasty as I expected. The fries were very hard and not tasty at all. I went through the drive-thru so I didn't notice my fries until I...",
+#         "rating": 3,
+#         'created_at': '2022-09-29 04:34:43'
+#     },
+#     {
+#         'biz_id': 151,
+#         'review_body': 'OMG! \n' +
+#         "Literally the best halaal paki/Indian food I have ever had in my life. And that's saying a lot, because I've tried a lot and I am very picky. \n" +
+#         'They...',
+#         "rating": 5,
+#         'created_at': '2022-09-19 17:27:05'
+#     },
+#     {
+#         'biz_id': 151,
+#         'review_body': 'Food here is excellent, service is VERY slow.  Like many businesses in Oakland, they are understaffed. \n' +
+#         '\n' +
+#         'We ordered tandoori chicken, naan, chicken tikka...',
+#         "rating": 4,
+#         'created_at': '2022-08-29 09:41:09'
+#     },
+#     {
+#         'biz_id': 151,
+#         'review_body': "We ordered takeout during Ramadan, so I expected this halal restaurant to be extra busy. At first glance walking into the restaurant I wasn't sure what to...",
+#         "rating": 4,
+#         'created_at': '2022-06-12 14:40:44'
+#     },
+#     {
+#         'biz_id': 149,
+#         'review_body': "Pretty good honest local burger joint if you're looking for one of those more moderate sized burgers. The location is normally great and with a great...",
+#         "rating": 4,
+#         'created_at': '2022-06-17 16:49:27'
+#     },
+#     {
+#         'biz_id': 149,
+#         'review_body': "Don't judge by the exterior!\n" +
+#         '\n' +
+#         "Ahn's is located in a small, moderately busy parking lot. There are usually a group of guys on the side of the building...",
+#         "rating": 3,
+#         'created_at': '2022-09-03 18:45:12'
+#     },
+#     {
+#         'biz_id': 149,
+#         'review_body': "Ahn's Quarter Pound Burger has been hiding in plain sight: everyone knows where it is and what it looks like, but it takes forever for people to finally...",
+#         "rating": 5,
+#         'created_at': '2022-03-12 15:54:43'
+#     },
+#     {
+#         'biz_id': 152,
+#         'review_body': 'The food and service here is exceptional! I was dining solo and ordered chicken momo, 2 chicken tandoori tikka with garlic naan. \n' +
+#         '\n' +
+#         'Everything was delicious!...',
+#         "rating": 5,
+#         'created_at': '2022-09-15 20:57:54'
+#     },
+#     {
+#         'biz_id': 152,
+#         'review_body': "My wife and I, along with two friends, found ourselves in downtown Oakland on a Sunday morning trying to find a restaurant with dine-in options.  It wasn't...",
+#         "rating": 4,
+#         'created_at': '2022-09-24 15:12:51'
+#     },
+#     {
+#         'biz_id': 152,
+#         'review_body': "I've gotten both take out and come here in person and both were great experiences! Most recently coming here in person, we came on a Friday night and we...",
+#         "rating": 4,
+#         'created_at': '2022-09-11 08:48:56'
+#     },
+#     {
+#         'biz_id': 154,
+#         'review_body': 'So glad I live near this place! My friends and I split the mushroom, the potatoes, and the corn pizzas.\n' +
+#         '\n' +
+#         'I think the corn seemed to be a big winner amongst...',
+#         "rating": 5,
+#         'created_at': '2022-07-29 23:34:00'
+#     },
+#     {
+#         'biz_id': 154,
+#         'review_body': "Ok so I've been here so many times but I think it's finally time to commit to not coming. Usually the food + service are amazing, which makes up for the...",
+#         "rating": 2,
+#         'created_at': '2022-07-18 18:15:42'
+#     },
+#     {
+#         'biz_id': 154,
+#         'review_body': "Stopped by here about a month ago with my girlfriend to grab some dinner after a movie. Wasn't expecting to have one of the best slices of pizza I've had...",
+#         "rating": 4,
+#         'created_at': '2022-06-22 06:57:04'
+#     },
+#     {
+#         'biz_id': 153,
+#         'review_body': "I have been here several times and it's always a 5 star experience. I can't even recommend anything in particular because it's all amazing. This last time I...",
+#         "rating": 5,
+#         'created_at': '2022-10-04 15:03:25'
+#     },
+#     {
+#         'biz_id': 153,
+#         'review_body': "What can I say, I'm drawn to homemade pasta with fresh ingredients. \n" +
+#         '\n' +
+#         'We started off with their beef tartar and it was raw and fresh and delicious and had a...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 20:43:25'
+#     },
+#     {
+#         'biz_id': 153,
+#         'review_body': 'This "rating" has everything to do with the lack of communication between staff and myself.  It was on a Monday, at 5 pm I called and spoke to a lady staff....',
+#         "rating": 1,
+#         'created_at': '2022-09-21 18:13:14'
+#     },
+#     {
+#         'biz_id': 155,
+#         'review_body': 'Definitely one of the BEST ramen spots in the Bay Area. The broth is just so damn milky and fulfilling that my mouth is salivating at the thought of...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 12:31:44'
+#     },
+#     {
+#         'biz_id': 155,
+#         'review_body': 'I really liked the Chicken Paitan ramen, broth was flavorful and the spice level was perfect (i asked for Medium). Chicken Karage was crispy and tasty,...',
+#         "rating": 4,
+#         'created_at': '2022-10-09 17:38:56'
+#     },
+#     {
+#         'biz_id': 155,
+#         'review_body': 'I am in love with this place! As a ramen lover (and vegetarian) i havent been able to find a ramen spot that seasons eir tofu befote putting it in the soup....',
+#         "rating": 5,
+#         'created_at': '2022-10-08 14:20:02'
+#     },
+#     {
+#         'biz_id': 158,
+#         'review_body': 'Great gentleman waiter. Patient and understanding with us, being our first time there',
+#         "rating": 4,
+#         'created_at': '2022-09-06 16:49:18'
+#     },
+#     {
+#         'biz_id': 158,
+#         'review_body': "Ohgane is the classic spot for AYCE kbbq for berkeley students. I've been here once a couple of years ago, but came back again recently. They were able to...",
+#         "rating": 4,
+#         'created_at': '2022-09-24 17:15:49'
+#     },
+#     {
+#         'biz_id': 158,
+#         'review_body': 'Food: 5 stars \n' +
+#         'Service: 2 stars\n' +
+#         'Bathroom: 0 stars \n' +
+#         '\n' +
+#         "Some notes first on the night I'm writing this review on: \n" +
+#         '1. Tables were 3/4 filled. So not all that...',
+#         "rating": 4,
+#         'created_at': '2022-08-18 18:45:45'
+#     },
+#     {
+#         'biz_id': 156,
+#         'review_body': "What a find! Just a stone's throw off of Piedmont Ave, Geta Sushi is THE PERFECT little hole-in-the-wall joint!\n" +
+#         '\n' +
+#         'We slid into this itsy-bitsy place about a...',
+#         "rating": 5,
+#         'created_at': '2022-08-04 15:11:31'
+#     },
+#     {
+#         'biz_id': 156,
+#         'review_body': "Reliable sushi option, no frills. Nothing next level fancy but good option for rolls. Super packer at all times so you know fish ain't sitting around....",
+#         "rating": 4,
+#         'created_at': '2022-08-11 21:18:28'
+#     },
+#     {
+#         'biz_id': 156,
+#         'review_body': 'Ordered to go, its pricey.  Japanese food is notoriously pricey by nature due to its skilled cuts/ tedious food prep and unparalleled freshness. Ordered the...',
+#         "rating": 3,
+#         'created_at': '2022-08-02 22:23:46'
+#     },
+#     {
+#         'biz_id': 157,
+#         'review_body': 'Got to check this place out with a few friends Friday evening. Luckily we got here right before the dinner rush.\n' +
+#         '\n' +
+#         'We got seated upstairs, assuming for...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 18:20:15'
+#     },
+#     {
+#         'biz_id': 157,
+#         'review_body': "I've been to this place many times.  It is my once a week go to restaurant to eat at.  I love going by myself because I get all the Banchan to myself and...",
+#         "rating": 5,
+#         'created_at': '2022-09-27 16:13:55'
+#     },
+#     {
+#         'biz_id': 157,
+#         'review_body': "I cannot give them enough kuudooosss!!! I made RSVP's for my besties birthday and it was all around delicious and the customer service was excellent. I love...",
+#         "rating": 5,
+#         'created_at': '2022-09-26 10:18:35'
+#     },
+#     {
+#         'biz_id': 160,
+#         'review_body': "Love Wally's and the chicken salad is the best along with the free stack of dessert after the best soup yes sir",
+#         "rating": 5,
+#         'created_at': '2022-08-23 15:30:16'
+#     },
+#     {
+#         'biz_id': 160,
+#         'review_body': "Omgggggggosh! This restaurant has such a great menu, I ate here 2 days in a row after learning about it. Tried Wally's last night at an event, and the first...",
+#         "rating": 5,
+#         'created_at': '2022-09-02 13:41:50'
+#     },
+#     {
+#         'biz_id': 160,
+#         'review_body': "Hole in the wall Mediterranean/Lebanese food goodness- the best kind!  I love these kinds of spots because it adds to the place's character and you know...",
+#         "rating": 4,
+#         'created_at': '2022-09-06 08:06:42'
+#     },
+#     {
+#         'biz_id': 159,
+#         'review_body': 'stopped here randomly and thank god we did! \n' +
+#         'nice service and quality food! \n' +
+#         'everything we ordered came out so well seasoned.\n' +
+#         'please stop by if you get the...',
+#         "rating": 5,
+#         'created_at': '2022-09-24 15:14:44'
+#     },
+#     {
+#         'biz_id': 159,
+#         'review_body': 'Ambiance - 4/5\n' +
+#         'Service - 5/5\n' +
+#         'Food & drink - 4/5\n' +
+#         '\n' +
+#         'Had a good brunch at Shakewell. Max was our waiter and took great care of our party of four. Sad to hear...',
+#         "rating": 4,
+#         'created_at': '2022-10-02 16:32:22'
+#     },
+#     {
+#         'biz_id': 159,
+#         'review_body': 'This was my first time dining at Shakewell.  My new friend in the area says she always bring her out of town guest here. I know why now.\n' +
+#         'The food was...',
+#         "rating": 4,
+#         'created_at': '2022-10-02 07:49:03'
+#     },
+#     {
+#         'biz_id': 161,
+#         'review_body': "Honestly the best Central American food I've ever had. The seating area is adorable and the food is 10/10 as well as the service. This is my new favorite...",
+#         "rating": 5,
+#         'created_at': '2022-09-24 16:40:08'
+#     },
+#     {
+#         'biz_id': 161,
+#         'review_body': 'Wow, I been looking for this ever since I tried one in Puerto Rico. This is not exactly the same, but the closest I have found in the Bay Area. It was so...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 22:59:51'
+#     },
+#     {
+#         'biz_id': 161,
+#         'review_body': 'They we doing good business when we were there but still many empty tables. The wait to order and get seated was reasonable. Convo at the register was...',
+#         "rating": 3,
+#         'created_at': '2022-10-02 21:24:41'
+#     },
+#     {
+#         'biz_id': 162,
+#         'review_body': "Bring cash and stop by! The best tacos are served here and even though inflation has hit this place like any other, you won't regret it (I remember tacos...",
+#         "rating": 5,
+#         'created_at': '2022-07-31 20:58:21'
+#     },
+#     {
+#         'biz_id': 162,
+#         'review_body': 'Rating: 3.5/5\n' +
+#         '\n' +
+#         'Pro:\n' +
+#         '- Good horchata\n' +
+#         '\n' +
+#         'Con:\n' +
+#         '- Limited parking\n' +
+#         '- A couple of people with housing insecurity are wandering around very close to you and your...',
+#         "rating": 3,
+#         'created_at': '2022-08-03 20:42:42'
+#     },
+#     {
+#         'biz_id': 162,
+#         'review_body': 'This place has really gone down hill they charge 3.50 a taco now when it used to be 2.25 they also charge 50 cents for salsa no matter how much you just...',
+#         "rating": 1,
+#         'created_at': '2022-08-03 15:30:54'
+#     },
+#     {
+#         'biz_id': 163,
+#         'review_body': "Zachary's has become my favorite pizza spot in Oakland for two key reason: amazing pizza with the best gluten free crust! \n" +
+#         '\n' +
+#         'Dined in for the first time last...',
+#         "rating": 5,
+#         'created_at': '2022-10-07 12:53:06'
+#     },
+#     {
+#         'biz_id': 163,
+#         'review_body': "I feel like Zachary's did a lot of things right and a few things wrong.\n" +
+#         '\n' +
+#         'I came late on a Thursday night at around closing hour with a group of 10+ and the...',
+#         "rating": 3,
+#         'created_at': '2022-10-07 03:13:38'
+#     },
+#     {
+#         'biz_id': 163,
+#         'review_body': "Zachary's Nostalgia!! This was a hot spot for deep dish pizza during college life at Berkeley and it was so fun to come back with the family! \n" +
+#         '\n' +
+#         'We got a...',
+#         "rating": 4,
+#         'created_at': '2022-09-25 08:19:41'
+#     },
+#     {
+#         'biz_id': 164,
+#         'review_body': 'Fresh baked breads, pastries and pizza- oh my!\n' +
+#         '\n' +
+#         'This bakery provides the trifecta of baked goods- pizza, bread and pastries- all three of which I purchased...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 14:29:08'
+#     },
+#     {
+#         'biz_id': 164,
+#         'review_body': 'I had a great mushroom pizza the other night that a friend picked up.  It hit the spot.\n' +
+#         '\n' +
+#         'That was all we got and all I really have to say.  If anyone is...',
+#         "rating": 5,
+#         'created_at': '2022-09-20 14:04:56'
+#     },
+#     {
+#         'biz_id': 164,
+#         'review_body': "One of my old time favorite bakeries I'm Oakland.\n" +
+#         '\n' +
+#         'I love all their breads but my heart keeps a special place for their grackle which they only serve on...',
+#         "rating": 5,
+#         'created_at': '2022-09-08 16:07:30'
+#     },
+#     {
+#         'biz_id': 165,
+#         'review_body': "I'm leisurely walking and exploring the lovely Oakland area and as I'm leaving Jack London Square headed up Broadway I walk right into the one place...",
+#         "rating": 5,
+#         'created_at': '2022-09-05 08:41:14'
+#     },
+#     {
+#         'biz_id': 165,
+#         'review_body': 'This was such a weird experience. I had heard amazing things about Souley Vegan, and so my expectations were already high. We walked in on a weekday, and...',
+#         "rating": 2,
+#         'created_at': '2022-09-26 16:52:14'
+#     },
+#     {
+#         'biz_id': 165,
+#         'review_body': "Stayed in Downtown Oakland this weekend and was looking for a spot to eat. My 11yo nephew is vegan so we decided to try it out. It's walking distance from...",
+#         "rating": 4,
+#         'created_at': '2022-09-04 09:43:09'
+#     },
+#     {
+#         'biz_id': 161,
+#         'review_body': "Honestly the best Central American food I've ever had. The seating area is adorable and the food is 10/10 as well as the service. This is my new favorite...",
+#         "rating": 5,
+#         'created_at': '2022-09-24 16:40:08'
+#     },
+#     {
+#         'biz_id': 161,
+#         'review_body': 'Wow, I been looking for this ever since I tried one in Puerto Rico. This is not exactly the same, but the closest I have found in the Bay Area. It was so...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 22:59:51'
+#     },
+#     {
+#         'biz_id': 161,
+#         'review_body': 'They we doing good business when we were there but still many empty tables. The wait to order and get seated was reasonable. Convo at the register was...',
+#         "rating": 3,
+#         'created_at': '2022-10-02 21:24:41'
+#     },
+#     {
+#         'biz_id': 166,
+#         'review_body': 'My partner and I stopped here for a quick lunch. We got the Asian pear salad and chicken chopped salad...both were great and loaded with greens.  The staff...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 17:06:07'
+#     },
+#     {
+#         'biz_id': 166,
+#         'review_body': 'Ordered the belly burrito for lunch earlier this week. I used to get a kimchi burrito almost every week from a cafe near my college when I was younger and I...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 13:59:04'
+#     },
+#     {
+#         'biz_id': 166,
+#         'review_body': 'THIS IS THE BEST CALI BURRITO IN OAKLAND! Being from San Diego, I definitely ate my share of authentic cali burritos and this one definitely takes the cake...',
+#         "rating": 5,
+#         'created_at': '2022-07-27 16:28:10'
+#     },
+#     {
+#         'biz_id': 167,
+#         'review_body': 'Yes. Yes. Yes. Owned by a charming, diligent and principled blue haired woman, the back story of this bustling sandwich shop and bakery is fascinating....',
+#         "rating": 5,
+#         'created_at': '2022-09-11 08:35:44'
+#     },
+#     {
+#         'biz_id': 167,
+#         'review_body': 'Everyone loves Bakesale Betty except for me.  Difficult street parking, Usually lines of diners anxiously wanting their fried chicken sandwich.  \n' +
+#         '\n' +
+#         "I didn't...",
+#         "rating": 3,
+#         'created_at': '2022-09-07 10:04:49'
+#     },
+#     {
+#         'biz_id': 167,
+#         'review_body': 'Since I found the time (and I was in the neighborhood) I decided to grab a friend chicken sandwich. Ohh it brought back memories!! It was probably better...',
+#         "rating": 5,
+#         'created_at': '2022-09-03 13:16:21'
+#     },
+#     {
+#         'biz_id': 170,
+#         'review_body': 'This small family-owned place has amazing food, drinks, and service. The shrimp corncakes blew me away, and the twice-cooked Maine lobster was so delicious....',
+#         "rating": 5,
+#         'created_at': '2022-09-14 11:48:11'
+#     },
+#     {
+#         'biz_id': 170,
+#         'review_body': "I went based on the revies...people love this place. Unfortunately,  I'm not people. I was confused. We had the shrimp pancakes. Lobster roll and seafood...",
+#         "rating": 2,
+#         'created_at': '2022-09-25 10:56:23'
+#     },
+#     {
+#         'biz_id': 170,
+#         'review_body': 'We chose this place solely on the yelp reviews and ratings and were extremely disappointed.  \n' +
+#         '\n' +
+#         '1-upon arrival (before 5:45pm) the older lady working the...',
+#         "rating": 3,
+#         'created_at': '2022-09-25 10:34:05'
+#     },
+#     {
+#         'biz_id': 169,
+#         'review_body': 'When we arrived at the restaurant, the hosts pointed us over to a table of two in the corner. We sat down and was greeted with water and hot tea. We decided...',
+#         "rating": 4,
+#         'created_at': '2022-09-08 13:53:52'
+#     },
+#     {
+#         'biz_id': 169,
+#         'review_body': 'This place is great\n' +
+#         '\n' +
+#         'Our friend from the east bay recommended it \n' +
+#         '\n' +
+#         'These were our favorites \n' +
+#         '\n' +
+#         'salt n pepper fish,\n' +
+#         'spicy sauce noodles, \n' +
+#         'walnut...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 13:05:57'
+#     },
+#     {
+#         'biz_id': 169,
+#         'review_body': 'Always delicious. \n' +
+#         'Their dumplings and their hand-pulled noodles are next level. \n' +
+#         'Enjoy!',
+#         "rating": 5,
+#         'created_at': '2022-10-01 09:07:36'
+#     },
+#     {
+#         'biz_id': 171,
+#         'review_body': 'Great Dinner. Surprised my wife who is Brazilian, visiting from LA, but I lived in Oakland 00-05. So wanted to see the old spots, but wanted to find a...',
+#         "rating": 5,
+#         'created_at': '2022-08-19 22:11:06'
+#     },
+#     {
+#         'biz_id': 171,
+#         'review_body': "If you're contemplating an evening dining experience where you're treated with food and respect that's worth $70+ per person, run, don't walk, away from...",
+#         "rating": 1,
+#         'created_at': '2022-10-07 20:54:58'
+#     },
+#     {
+#         'biz_id': 171,
+#         'review_body': "We went on a Friday night and we're a party of five with no reservation . Big mistake - we waited around for over 45 min.\n" +
+#         '\n' +
+#         'Then after 45 min of waiting we...',
+#         "rating": 1,
+#         'created_at': '2022-10-02 21:54:42'
+#     },
+#     {
+#         'biz_id': 172,
+#         'review_body': 'Took my parents here about 10 years ago. I had never been either as I lived in NV and they lived in OH. This is one of THE BEST RESTAURANTS IN THE...',
+#         "rating": 5,
+#         'created_at': '2022-10-07 20:07:31'
+#     },
+#     {
+#         'biz_id': 172,
+#         'review_body': 'We came here with a big group for a birthday and it was my first time here, so I was really excited. The wait, even with reservations was expected for our...',
+#         "rating": 5,
+#         'created_at': '2022-10-06 18:27:17'
+#     },
+#     {
+#         'biz_id': 172,
+#         'review_body': 'My go-to Prime Rib spot!! Food is great!!! They cut the meat in front of you and prepare the salad in front of you too. Probably my fav salad ever as well,...',
+#         "rating": 5,
+#         'created_at': '2022-10-05 16:04:10'
+#     },
+#     {
+#         'biz_id': 174,
+#         'review_body': 'Favorite neighborhood sushi spot! \n' +
+#         '\n' +
+#         'No wait on this Saturday around 12:30pm. Was seated, ordered, and served all within 10-15 minutes. \n' +
+#         '\n' +
+#         'Fish is fresh,...',
+#         "rating": 5,
+#         'created_at': '2022-05-28 13:09:16'
+#     },
+#     {
+#         'biz_id': 174,
+#         'review_body': "A joyful creative roll spot, if you're into that. They refill your tea cup, are very friendly and welcoming, and have a long list of yummy rolls. \n" +
+#         '\n' +
+#         'It helps...',
+#         "rating": 4,
+#         'created_at': '2022-07-10 11:30:29'
+#     },
+#     {
+#         'biz_id': 174,
+#         'review_body': 'Pleased again. Ordered same rolls from Saturday; \n' +
+#         "2 Philly rolls & Tekka for Mom / Shrek & Lion King roll for me. I wish they'd cook the salmon a little...",
+#         "rating": 5,
+#         'created_at': '2022-09-29 09:01:08'
+#     },
+#     {
+#         'biz_id': 173,
+#         'review_body': "What a find! Just a stone's throw off of Piedmont Ave, Geta Sushi is THE PERFECT little hole-in-the-wall joint!\n" +
+#         '\n' +
+#         'We slid into this itsy-bitsy place about a...',
+#         "rating": 5,
+#         'created_at': '2022-08-04 15:11:31'
+#     },
+#     {
+#         'biz_id': 173,
+#         'review_body': "Reliable sushi option, no frills. Nothing next level fancy but good option for rolls. Super packer at all times so you know fish ain't sitting around....",
+#         "rating": 4,
+#         'created_at': '2022-08-11 21:18:28'
+#     },
+#     {
+#         'biz_id': 173,
+#         'review_body': 'Ordered to go, its pricey.  Japanese food is notoriously pricey by nature due to its skilled cuts/ tedious food prep and unparalleled freshness. Ordered the...',
+#         "rating": 3,
+#         'created_at': '2022-08-02 22:23:46'
+#     },
+#     {
+#         'biz_id': 175,
+#         'review_body': "If you're going to this expecting a cheap Thai meal.... Forget it!! Tasty but really expensive!",
+#         "rating": 4,
+#         'created_at': '2022-08-28 12:20:28'
+#     },
+#     {
+#         'biz_id': 175,
+#         'review_body': 'Ambiance - 5/5\n' +
+#         'Food - 5/5\n' +
+#         'Service - 5/5\n' +
+#         '\n' +
+#         'WOW!  Very impressed by this restaurant. Came with a party of 8 on a Sunday ~12pm. The restaurant was surprisingly...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 16:23:17'
+#     },
+#     {
+#         'biz_id': 175,
+#         'review_body': 'Overhyped and overpriced. Farmhouse Kitchen Thai is one of the many trendy restaurants that attempt to wow people with extravagant presentation,...',
+#         "rating": 1,
+#         'created_at': '2022-10-04 23:04:04'
+#     },
+#     {
+#         'biz_id': 176,
+#         'review_body': '33. Tom Yum Soup \n' +
+#         '7. Lao Tacos\n' +
+#         '72. Basil Fried Rice\n' +
+#         'Yummy ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!??!???????',
+#         "rating": 5,
+#         'created_at': '2022-08-28 15:20:09'
+#     },
+#     {
+#         'biz_id': 176,
+#         'review_body': 'One of my favorite authentic Laotian place in the Bay Area. \n' +
+#         '\n' +
+#         'Decided to pick up food around 2:30pm and took about 25 mins. Ordered the following below....',
+#         "rating": 5,
+#         'created_at': '2022-10-01 22:53:53'
+#     },
+#     {
+#         'biz_id': 176,
+#         'review_body': "This hole in the wall is my favorite place for Thai food. The parking is a bit rough but it's worth it. The fact that there's a bunch of cars double parked...",
+#         "rating": 4,
+#         'created_at': '2022-08-07 16:53:43'
+#     },
+#     {
+#         'biz_id': 178,
+#         'review_body': "Best vegan asian fusion food hands down! Amazing amount of meat replacement options. Great quality & flavor. I hadn't eaten here in five years and it was...",
+#         "rating": 5,
+#         'created_at': '2022-07-17 09:08:56'
+#     },
+#     {
+#         'biz_id': 178,
+#         'review_body': 'Not sure why this place has five stars.\n' +
+#         '\n' +
+#         "Is it because it's the best vegan restaurant? Probably not. Is it because it's one of the only ones around?...",
+#         "rating": 3,
+#         'created_at': '2022-09-30 22:22:31'
+#     },
+#     {
+#         'biz_id': 178,
+#         'review_body': 'I generally only write reviews IF product/service is very, very good, OR, very, very bad.  Golden Lotus was very, very good!\n' +
+#         'Dined in with 3 of my...',
+#         "rating": 5,
+#         'created_at': '2022-07-11 13:28:13'
+#     },
+#     {
+#         'biz_id': 177,
+#         'review_body': 'Best pizza ever\n' +
+#         "Love the people there, love the pizza, love that it's local, it's just the perfect pizza place",
+#         "rating": 5,
+#         'created_at': '2022-08-25 19:06:55'
+#     },
+#     {
+#         'biz_id': 177,
+#         'review_body': 'Their food has real fresh veggies in it. Their pizza is reliably good. Their salads are big and have lots of good stuff, not just a bunch of spring mix....',
+#         "rating": 5,
+#         'created_at': '2022-09-06 22:50:34'
+#     },
+#     {
+#         'biz_id': 177,
+#         'review_body': "I crave Dimond Slice on so many random weekdays. Every day, they always have a different pizza but it's ALWAYS good I just don't get it. If pizza were...",
+#         "rating": 5,
+#         'created_at': '2022-08-18 13:39:38'
+#     },
+#     {
+#         'biz_id': 180,
+#         'review_body': 'The people who work at this restaurant go above and beyond, they are AMAZING! They make you feel at home and are so welcoming. While we were waiting for our...',
+#         "rating": 5,
+#         'created_at': '2022-08-29 10:37:17'
+#     },
+#     {
+#         'biz_id': 180,
+#         'review_body': 'Their pho is delicious and their new space is super cool with a bunch of cool stuff like a swag store. This is one of my favorite places in the Bay Area for...',
+#         "rating": 5,
+#         'created_at': '2022-09-13 20:12:00'
+#     },
+#     {
+#         'biz_id': 180,
+#         'review_body': "We ordered two bowls of beef pho to go and waited 25 minutes for the order to come out, which is perplexing because it's not like they were making the broth...",
+#         "rating": 2,
+#         'created_at': '2022-10-10 14:36:09'
+#     },
+#     {
+#         'biz_id': 179,
+#         'review_body': "Best sandwich I've tried anywhere would recommend this to everyone taste better than any other Vietnamese sandwich places I been too",
+#         "rating": 5,
+#         'created_at': '2022-09-18 22:01:29'
+#     },
+#     {
+#         'biz_id': 179,
+#         'review_body': 'Just a tip 9/23/22 they are **closed until 9/30/22**\n' +
+#         '\n' +
+#         'Drove over today and was excited no line out the door at 1pm. Nope, just closed  \n' +
+#         'Saw a sign closed...',
+#         "rating": 5,
+#         'created_at': '2022-09-23 22:07:44'
+#     },
+#     {
+#         'biz_id': 179,
+#         'review_body': "#2 special combo ham sandwich was great. Bread was thick and crispy, and the pate was really something --smooth and creamy and rich, and I'm glad to...",
+#         "rating": 5,
+#         'created_at': '2022-09-10 20:39:22'
+#     },
+#     {
+#         'biz_id': 182,
+#         'review_body': 'First off pastries were FANTASTIC. Coffee was good (I got a macchiato and it was a littler smaller than I thought but was great) and the vibe was fun,...',
+#         "rating": 5,
+#         'created_at': '2022-08-28 19:34:47'
+#     },
+#     {
+#         'biz_id': 182,
+#         'review_body': "Born and raised in the Bay, occasionally I surprise myself with well-known San Francisco establishments that I've never visited before--B Patisserie being...",
+#         "rating": 5,
+#         'created_at': '2022-10-06 18:10:09'
+#     },
+#     {
+#         'biz_id': 182,
+#         'review_body': "Looove this place! I thought the pastries were so fresh and so delicious, we only had to stand in line for about 15 minutes. They weren't warm, but I'm sure...",
+#         "rating": 5,
+#         'created_at': '2022-10-02 17:59:19'
+#     },
+#     {
+#         'biz_id': 181,
+#         'review_body': 'I am not typically a fan of pastries, but this has to be one of my favorite bakeries. I got the almond lemon cake and banana cream tart which were both...',
+#         "rating": 4,
+#         'created_at': '2022-09-15 06:35:39'
+#     },
+#     {
+#         'biz_id': 181,
+#         'review_body': '9/27/2022 I went this morning. I told the staff my order. I wanted a chocolate crème pie and a few other items. The lady helping was talking to another...',
+#         "rating": 5,
+#         'created_at': '2022-09-27 13:39:04'
+#     },
+#     {
+#         'biz_id': 181,
+#         'review_body': 'Went to Tartine an SF institution the other day. And got a biiiiig spread of stuff!\n' +
+#         '\n' +
+#         'Started off w a cute lil cappuccino and look how cute!! This lil guy...',
+#         "rating": 4,
+#         'created_at': '2022-10-08 12:56:00'
+#     },
+#     {
+#         'biz_id': 184,
+#         'review_body': 'It was quite busy on the heat waved Sunday but it was worth the wait. My sister and I wanted a #12 (?) with corn flakes, who the cashier kindly told us that...',
+#         "rating": 5,
+#         'created_at': '2022-09-11 19:48:21'
+#     },
+#     {
+#         'biz_id': 184,
+#         'review_body': 'You are heading straight into a tourist trap here, fellow Yelper. Not a total loss though because the ice cream inside the crepe is pretty good (at least...',
+#         "rating": 4,
+#         'created_at': '2022-08-14 16:51:15'
+#     },
+#     {
+#         'biz_id': 184,
+#         'review_body': 'What can I say? Belly Good Crepes are the best crepes in Japan town - straight up and the most cute looking as well. \n' +
+#         '\n' +
+#         'Been going for years. Consistent with...',
+#         "rating": 5,
+#         'created_at': '2022-08-12 04:44:37'
+#     },
+#     {
+#         'biz_id': 183,
+#         'review_body': "This is my go to spot whenever I'm craving matcha! My usual order is the matcha boba sundae, which consists of soft serve, boba, and kuromitsu syrup...",
+#         "rating": 5,
+#         'created_at': '2022-10-07 20:31:29'
+#     },
+#     {
+#         'biz_id': 183,
+#         'review_body': "After writing down a review for Sac's location, I thought might as well give a good review for the SF location as well! This is one of the best location for...",
+#         "rating": 5,
+#         'created_at': '2022-10-06 11:28:07'
+#     },
+#     {
+#         'biz_id': 183,
+#         'review_body': 'Tried the maiko special with the matcha - vanilla mix ice cream. I liked the ice cream but was not a fan of most of the toppings. I would probably just...',
+#         "rating": 4,
+#         'created_at': '2022-10-03 21:49:12'
+#     },
+#     {
+#         'biz_id': 185,
+#         'review_body': 'Found this lovely quaint dessert spot in SF. Tried the coconut pandan crepe cake and loved it ! Definitely recommended',
+#         "rating": 5,
+#         'created_at': '2022-08-27 18:13:16'
+#     },
+#     {
+#         'biz_id': 185,
+#         'review_body': "I came here at 5 o'clock on a Friday to order a birthday cake and also try one of their sweets.\n" +
+#         '\n' +
+#         "To be honest, I didn't like the toasted cereal with honey...",
+#         "rating": 4,
+#         'created_at': '2022-09-09 07:33:26'
+#     },
+#     {
+#         'biz_id': 185,
+#         'review_body': 'Friendly, Great service and reasonable prices. Will be back again . Mango sticky rice is my favorite',
+#         "rating": 5,
+#         'created_at': '2022-09-19 20:00:49'
+#     },
+#     {
+#         'biz_id': 186,
+#         'review_body': 'Lives up to the hype!\n' +
+#         '\n' +
+#         "I found this modest corner coffee shop selling odds and ends (in terms of snacks) on Yelp. I haven't had baklava in forever since...",
+#         "rating": 5,
+#         'created_at': '2022-05-05 11:42:14'
+#     },
+#     {
+#         'biz_id': 186,
+#         'review_body': 'I love Turkish coffee and every day I start my day with a 12-ounce cup of Turkish coffee, and for the rest of the day, I must drink 1-2 8-ounce cups.  I...',
+#         "rating": 2,
+#         'created_at': '2022-09-23 16:21:27'
+#     },
+#     {
+#         'biz_id': 186,
+#         'review_body': 'I am hooked to Turkish coffee. Therefore, whenever I see one available, I would find a way to try it. After passing by on this shop for couple of times, I...',
+#         "rating": 4,
+#         'created_at': '2021-10-28 21:21:43'
+#     },
+#     {
+#         'biz_id': 181,
+#         'review_body': 'I am not typically a fan of pastries, but this has to be one of my favorite bakeries. I got the almond lemon cake and banana cream tart which were both...',
+#         "rating": 4,
+#         'created_at': '2022-09-15 06:35:39'
+#     },
+#     {
+#         'biz_id': 181,
+#         'review_body': '9/27/2022 I went this morning. I told the staff my order. I wanted a chocolate crème pie and a few other items. The lady helping was talking to another...',
+#         "rating": 5,
+#         'created_at': '2022-09-27 13:39:04'
+#     },
+#     {
+#         'biz_id': 181,
+#         'review_body': 'Went to Tartine an SF institution the other day. And got a biiiiig spread of stuff!\n' +
+#         '\n' +
+#         'Started off w a cute lil cappuccino and look how cute!! This lil guy...',
+#         "rating": 4,
+#         'created_at': '2022-10-08 12:56:00'
+#     },
+#     {
+#         'biz_id': 188,
+#         'review_body': 'The service was great, the food was wonderful.  I took my family here and had been anticipating the pork chops.  It did not disappoint us at all!  You gotta...',
+#         "rating": 5,
+#         'created_at': '2022-09-18 10:25:30'
+#     },
+#     {
+#         'biz_id': 188,
+#         'review_body': 'Nopa is a restaurant that focuses on combining quality, seasonal ingredients without over amplifying their menu. I got their smoked tomato Caesar salad,...',
+#         "rating": 5,
+#         'created_at': '2022-09-13 20:55:09'
+#     },
+#     {
+#         'biz_id': 188,
+#         'review_body': 'Great service here. Staff were very attentive. I spent ~$100 with entree and dessert, splitting appetizers, $125 riseling (that I was told is hard to find),...',
+#         "rating": 4,
+#         'created_at': '2022-10-05 00:10:18'
+#     },
+#     {
+#         'biz_id': 189,
+#         'review_body': "Loved going to Bob's for breakfast. I heard about it through a Someone Feed Phil recommendation and knew I had to go. \n" +
+#         '\n' +
+#         'It will always look like a long line...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 07:24:33'
+#     },
+#     {
+#         'biz_id': 189,
+#         'review_body': 'Truly the best donuts in the SF bay!\n' +
+#         '\n' +
+#         "Try to go earlier in the evening for their specialty donuts! We did order the massive donut however it's flavor is...",
+#         "rating": 5,
+#         'created_at': '2022-10-10 02:12:27'
+#     },
+#     {
+#         'biz_id': 189,
+#         'review_body': "Just wow. The best doughnuts in SF, most likely the US. It's open 24 hours a day, so instead of choosing something, just ask for whatever is fresh. \n" +
+#         '\n' +
+#         'The...',
+#         "rating": 5,
+#         'created_at': '2022-10-04 11:23:03'
+#     },
+#     {
+#         'biz_id': 191,
+#         'review_body': "some of the best ice cream i've ever had.  insanely long line, but, worth it\n" +
+#         '\n' +
+#         'you can get lots of mini-scoops instead of regular scoops to get more flavors....',
+#         "rating": 5,
+#         'created_at': '2022-10-04 16:42:41'
+#     },
+#     {
+#         'biz_id': 191,
+#         'review_body': 'Really unique flavors -- I LOVED the ritual coffee toffee flavor, which had a strong coffee flavor with a nutty taste and really delicious toffee bits...',
+#         "rating": 4,
+#         'created_at': '2022-10-02 11:17:03'
+#     },
+#     {
+#         'biz_id': 191,
+#         'review_body': "We love Bi-Rite Creamery, especially for their sundaes and banana splits.  We've had a number of their ice cream flavors and they have all been good.  The...",
+#         "rating": 4,
+#         'created_at': '2022-09-23 12:09:34'
+#     },
+#     {
+#         'biz_id': 190,
+#         'review_body': "Incredible small batch ice cream. Well worth the wait, no matter how long the line is. If it's your first time, get ice cream on a donut with toasted fluff.",
+#         "rating": 5,
+#         'created_at': '2022-09-04 22:56:13'
+#     },
+#     {
+#         'biz_id': 190,
+#         'review_body': '"Some people are worth melting for." - Olaf\n' +
+#         '\n' +
+#         "Urban Legend says that there's a small quirky Ice Cream shop in the middle of who knows where San Francisco...",
+#         "rating": 5,
+#         'created_at': '2022-10-10 17:10:45'
+#     },
+#     {
+#         'biz_id': 190,
+#         'review_body': 'What a treat! What a dream!\n' +
+#         '\n' +
+#         'Excellent customer service. Be ready to wait in line, but totally worth it.',
+#         "rating": 5,
+#         'created_at': '2022-08-21 20:27:40'
+#     },
+#     {
+#         'biz_id': 192,
+#         'review_body': "This is definitely a local's favorite. There's nothing like this place in SF. I suggest the mango ice cream.",
+#         "rating": 5,
+#         'created_at': '2022-09-20 16:53:32'
+#     },
+#     {
+#         'biz_id': 192,
+#         'review_body': "Some of the best ice cream I've ever had. You get a decent amount in one scoop, especially if you get it in a cone. I got the strawberries and cream and it...",
+#         "rating": 5,
+#         'created_at': '2022-09-25 07:28:18'
+#     },
+#     {
+#         'biz_id': 192,
+#         'review_body': "Simply the GOAT of ice cream in San Francisco. Consistently fresh, creamy and tastes just like the actual flavor it's supposed to be. \n" +
+#         '\n' +
+#         'Waiting in line on a...',
+#         "rating": 5,
+#         'created_at': '2022-10-08 15:31:50'
+#     },
+#     {
+#         'biz_id': 194,
+#         'review_body': "I usually steer away from vegan restaurants since I love meat but this restaurant amazed me. I've already visited this place twice in the last two weeks and...",
+#         "rating": 5,
+#         'created_at': '2022-09-23 20:35:00'
+#     },
+#     {
+#         'biz_id': 194,
+#         'review_body': "My confession is that I don't normally go to vegan restaurants. Not only can I not imagine life without cheese, but I also have severe allergies that...",
+#         "rating": 4,
+#         'created_at': '2022-08-29 20:35:18'
+#     },
+#     {
+#         'biz_id': 194,
+#         'review_body': "Honestly every dish I've tried here is amazing, authentic and made with such care - you can tell they make most things in house from scratch. \n" +
+#         '\n' +
+#         'The Saigon...',
+#         "rating": 5,
+#         'created_at': '2022-08-01 12:29:12'
+#     },
+#     {
+#         'biz_id': 195,
+#         'review_body': "looking for a spot for traditional Korean cuisines? Han Il Kwan doesn't get more traditional than this. served with delicious ban chans, tofu soup, steamed...",
+#         "rating": 5,
+#         'created_at': '2022-10-12 23:22:41'
+#     },
+#     {
+#         'biz_id': 195,
+#         'review_body': "One of the better kbbq places I've been to, definitely recommend. Their bulgogi, kimchi pancakes and the free tofu soup are awesome. If you need the help,...",
+#         "rating": 4,
+#         'created_at': '2022-10-13 07:42:09'
+#     },
+#     {
+#         'biz_id': 195,
+#         'review_body': 'Stopped by here for a friends birthday dinner this past Sunday.\n' +
+#         '\n' +
+#         'We were a fairly large group (12 of us) and the restaurant was kind enough to accommodate...',
+#         "rating": 4,
+#         'created_at': '2022-10-12 07:52:27'
+#     },
+#     {
+#         'biz_id': 196,
+#         'review_body': 'Underrated comfortable bar. Perfect for food, drink and hanging out.\n' +
+#         '\n' +
+#         'Effortless good times here. It reminds me of the kind of bars in Germany. Friendly...',
+#         "rating": 5,
+#         'created_at': '2022-09-19 21:59:07'
+#     },
+#     {
+#         'biz_id': 196,
+#         'review_body': "So sad Broken Record will be closing, and I JUST found out about Tiki Tuesdays! It's not all-out tiki, but fun for dive bar tiki. Drinks weren't amazing but...",
+#         "rating": 4,
+#         'created_at': '2022-10-12 23:19:57'
+#     },
+#     {
+#         'biz_id': 196,
+#         'review_body': '4-19-2022 7p.m.\n' +
+#         '1st time here...will be back!!!\n' +
+#         'Went here to meet  a date for drinx...\n' +
+#         'got stood up, story of my life...\n' +
+#         'Walked into a lively low lit bar &...',
+#         "rating": 5,
+#         'created_at': '2022-04-30 13:51:10'
+#     },
+#     {
+#         'biz_id': 197,
+#         'review_body': 'Ah Brenda... you did not disappoint. \n' +
+#         'Fried Chicken...ooo la La. \n' +
+#         'Flaky buttery pillowy biscuits that are the perfect foil for homemade jam and hot pepper...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 09:33:09'
+#     },
+#     {
+#         'biz_id': 197,
+#         'review_body': 'Service was horrible from our server, others accommodated everything we needed beyond placing our order. \n' +
+#         '\n' +
+#         'Drinks came out after our meals. The beignets...',
+#         "rating": 3,
+#         'created_at': '2022-10-10 05:28:31'
+#     },
+#     {
+#         'biz_id': 197,
+#         'review_body': 'We arrived as a party of 6 at about 1pm. They had a waiting list, but let us in after just few minutes. The restaurant is very clean even-though it was very...',
+#         "rating": 4,
+#         'created_at': '2022-10-09 16:18:23'
+#     },
+#     {
+#         'biz_id': 200,
+#         'review_body': 'Came here on a lovely Friday evening. No reservations, first come first serve. But we were flexible with our seating so we were open to bar seating for...',
+#         "rating": 5,
+#         'created_at': '2022-09-29 20:04:12'
+#     },
+#     {
+#         'biz_id': 200,
+#         'review_body': 'Super cute French bistro in Potrero. A great stop for a glass of wine and a delicious light lunch/dinner or a full on hearty meal. My friend and I enjoyed...',
+#         "rating": 5,
+#         'created_at': '2022-09-29 10:02:12'
+#     },
+#     {
+#         'biz_id': 200,
+#         'review_body': "Such a gem! Cute little French restaurant with both indoor and outdoor seating. Simple and tasty menu that doesn't break the bank. So many over priced...",
+#         "rating": 5,
+#         'created_at': '2022-09-24 19:40:55'
+#     },
+#     {
+#         'biz_id': 199,
+#         'review_body': 'Wonderful establishment......fantastic food and terrific staff.....thank you SM............',
+#         "rating": 5,
+#         'created_at': '2022-09-07 11:36:23'
+#     },
+#     {
+#         'biz_id': 199,
+#         'review_body': 'Sweet maple is one of the best breakfast spots in SF\n' +
+#         '\n' +
+#         'The blackwood Benedict and the south of the\n' +
+#         'border dishes are REALLY good\n' +
+#         '\n' +
+#         'I heard they might have...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 21:53:18'
+#     },
+#     {
+#         'biz_id': 199,
+#         'review_body': 'I usually go to the Palo Alto location but decided to try this one out for Sunday brunch! \n' +
+#         'I think the biggest difference would be the actual items on the...',
+#         "rating": 4,
+#         'created_at': '2022-10-10 18:46:44'
+#     },
+#     {
+#         'biz_id': 202,
+#         'review_body': 'Delicious burritos! Had the Spicy Pork and the Bulgogi. Loved both but the Bulgogi Burrito won the day. \n' +
+#         '\n' +
+#         'Juicy flavorful meat, kimchi was good but not...',
+#         "rating": 5,
+#         'created_at': '2022-09-07 07:05:29'
+#     },
+#     {
+#         'biz_id': 202,
+#         'review_body': 'This place is solid for Asian fusion food! They have Asian inspired proteins including panko-crusted shrimp, wild cod katsu, tuna poke, and bulgogi beef....',
+#         "rating": 5,
+#         'created_at': '2022-06-22 21:29:43'
+#     },
+#     {
+#         'biz_id': 202,
+#         'review_body': 'We to HRD for a quick lunch, after looking at the different reviews and getting excited for a unique burrito! Once there you basically order and get a...',
+#         "rating": 4,
+#         'created_at': '2022-06-20 13:32:48'
+#     },
+#     {
+#         'biz_id': 201,
+#         'review_body': 'I am not typically a fan of pastries, but this has to be one of my favorite bakeries. I got the almond lemon cake and banana cream tart which were both...',
+#         "rating": 4,
+#         'created_at': '2022-09-15 06:35:39'
+#     },
+#     {
+#         'biz_id': 201,
+#         'review_body': '9/27/2022 I went this morning. I told the staff my order. I wanted a chocolate crème pie and a few other items. The lady helping was talking to another...',
+#         "rating": 5,
+#         'created_at': '2022-09-27 13:39:04'
+#     },
+#     {
+#         'biz_id': 201,
+#         'review_body': 'Went to Tartine an SF institution the other day. And got a biiiiig spread of stuff!\n' +
+#         '\n' +
+#         'Started off w a cute lil cappuccino and look how cute!! This lil guy...',
+#         "rating": 4,
+#         'created_at': '2022-10-08 12:56:00'
+#     },
+#     {
+#         'biz_id': 204,
+#         'review_body': '4.5 stars rounded up \n' +
+#         '\n' +
+#         'If plain chicken & waffles bore you to death, the flavor options at Hot Sauce & Panko are sure to liven up your life, or at the very...',
+#         "rating": 5,
+#         'created_at': '2022-10-07 02:36:47'
+#     },
+#     {
+#         'biz_id': 204,
+#         'review_body': 'Tried hot sauce and Panko for the first time and it exceeded my expectations.\n' +
+#         '\n' +
+#         'The chicken was very high quality. We got the lemon pepper boneless wings,...',
+#         "rating": 5,
+#         'created_at': '2022-09-21 19:14:39'
+#     },
+#     {
+#         'biz_id': 204,
+#         'review_body': 'The food was okay!\n' +
+#         '\n' +
+#         "I got a BBQ sauced chicken sandwich (one of three flavors), fries, and wing order with Chris's sauce.\n" +
+#         '\n' +
+#         'Everything was lacking a pow...',
+#         "rating": 3,
+#         'created_at': '2022-09-12 07:55:41'
+#     },
+#     {
+#         'biz_id': 203,
+#         'review_body': 'Best food ever!!!\r\r Recently try the famous San Tung! ;)\n' +
+#         'Place with the best fried chicken.',
+#         "rating": 5,
+#         'created_at': '2022-09-15 00:29:16'
+#     },
+#     {
+#         'biz_id': 203,
+#         'review_body': 'I was in San Francisco this past weekend for a concert and I was highly recommend to come here by one of my friends to try their famous fried chicken and...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 00:55:15'
+#     },
+#     {
+#         'biz_id': 203,
+#         'review_body': "Their dry fried chicken is hands down one of the best fried chicken I've ever had. \n" +
+#         '\n' +
+#         'I was craving their chicken wings and luckily some of my friend were...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 09:17:40'
+#     },
+#     {
+#         'biz_id': 203,
+#         'review_body': 'Best food ever!!!\r\r Recently try the famous San Tung! ;)\n' +
+#         'Place with the best fried chicken.',
+#         "rating": 5,
+#         'created_at': '2022-09-15 00:29:16'
+#     },
+#     {
+#         'biz_id': 203,
+#         'review_body': 'I was in San Francisco this past weekend for a concert and I was highly recommend to come here by one of my friends to try their famous fried chicken and...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 00:55:15'
+#     },
+#     {
+#         'biz_id': 203,
+#         'review_body': "Their dry fried chicken is hands down one of the best fried chicken I've ever had. \n" +
+#         '\n' +
+#         'I was craving their chicken wings and luckily some of my friend were...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 09:17:40'
+#     },
+#     {
+#         'biz_id': 206,
+#         'review_body': 'I read a lot of mixed reviews on here and the bad ones mostly discussed poor quality and old restaurant. This is an AFFORDABLE and DECENTLY GOOD place for...',
+#         "rating": 4,
+#         'created_at': '2022-09-20 23:03:37'
+#     },
+#     {
+#         'biz_id': 206,
+#         'review_body': 'Generous portion for an amazing price! We went on a Saturday around noon, and the line was pretty. But it moved relatively fast. This place has no tables or...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 20:21:44'
+#     },
+#     {
+#         'biz_id': 206,
+#         'review_body': "My favorite Chinese bakery in Chinatown, and I've been to almost all of them. Listen, I don't think any authentic Chinese bakery is ever going to have mind...",
+#         "rating": 5,
+#         'created_at': '2022-10-09 22:14:33'
+#     },
+#     {
+#         'biz_id': 208,
+#         'review_body': 'One of favorite Vegetarian restaurants.  Food is great, well prepared.\n' +
+#         '\n' +
+#         'Dining experience was definitely degraded by not partaking in the amazing view...',
+#         "rating": 5,
+#         'created_at': '2022-09-22 17:57:26'
+#     },
+#     {
+#         'biz_id': 208,
+#         'review_body': 'Greens was absolutely delicious, the waiter was very thoughtful, and the sunset view was amazing! \n' +
+#         '\n' +
+#         'Came here for my birthday dinner with a group of 5. We...',
+#         "rating": 4,
+#         'created_at': '2022-09-21 18:34:05'
+#     },
+#     {
+#         'biz_id': 208,
+#         'review_body': "Couples date at Greens and we were a little late because we didn't realize how difficult parking would be here. That was our bad, of course it's SF. Lol....",
+#         "rating": 5,
+#         'created_at': '2022-08-18 19:31:29'
+#     },
+#     {
+#         'biz_id': 209,
+#         'review_body': 'I had many questions.  Is Cordon Bleu French food? Why does it look like a diner inside? Why are their hours so odd?  Is that line worth the hype?\n' +
+#         '\n' +
+#         'Turns...',
+#         "rating": 5,
+#         'created_at': '2022-09-26 11:42:40'
+#     },
+#     {
+#         'biz_id': 209,
+#         'review_body': 'Katie is a godsend. Faithfully serving up delicious affordable grub to an appreciative crowd day in and day out. After leaving the city for more affordable...',
+#         "rating": 5,
+#         'created_at': '2022-08-04 00:24:11'
+#     },
+#     {
+#         'biz_id': 209,
+#         'review_body': 'Not only delicious food, but such a friendly, intimate space for eating. Your classic hole-in-the-wall gem of a restaurant, the space has only an 8-seat...',
+#         "rating": 5,
+#         'created_at': '2022-07-29 08:58:45'
+#     },
+#     {
+#         'biz_id': 210,
+#         'review_body': "What can be said that isn't latest known? Lol\n" +
+#         '\n' +
+#         'Same great taste , same great service no matter which location hahah',
+#         "rating": 5,
+#         'created_at': '2022-08-27 14:01:42'
+#     },
+#     {
+#         'biz_id': 210,
+#         'review_body': 'Great food near the pier!! Long Lines tho be ready to wait\n' +
+#         '\n' +
+#         'I recommend a burger a movie at AMC Theaters Metreon! \n' +
+#         '\n' +
+#         'Such a wonderful summer of movies in...',
+#         "rating": 4,
+#         'created_at': '2022-07-04 23:12:41'
+#     },
+#     {
+#         'biz_id': 210,
+#         'review_body': "I can't describe the delicious burgers here because they are very filling and big\n" +
+#         'Can you not eat anything for a whole day))\n' +
+#         'I thank both the waiters and...',
+#         "rating": 5,
+#         'created_at': '2022-07-02 15:44:42'
+#     },
+#     {
+#         'biz_id': 207,
+#         'review_body': 'Not sure if I will make effort to return and here is why. \n' +
+#         '\n' +
+#         'PARKING\n' +
+#         "I came on a Sunday because I was in the area. Almost didn't make it because parking was...",
+#         "rating": 4,
+#         'created_at': '2022-10-10 08:19:36'
+#     },
+#     {
+#         'biz_id': 207,
+#         'review_body': 'I went to dinner with some friends here.  The food was different and very tasty.  The entrees ranged from small to a full meal.  We got the nachos as an...',
+#         "rating": 5,
+#         'created_at': '2022-10-01 15:07:28'
+#     },
+#     {
+#         'biz_id': 207,
+#         'review_body': 'This was my first time trying an arepa, and it was great! I ordered the sweet yellow arepa with the shuli filling. Normally, when I order vegan food at a...',
+#         "rating": 5,
+#         'created_at': '2022-08-24 19:06:34'
+#     },
+#     {
+#         'biz_id': 211,
+#         'review_body': 'Updated review: after my previous visit and review, the owner got in touch with me. He was very apologetic, and he offered to send me another meal to make...',
+#         "rating": 5,
+#         'created_at': '2022-09-28 19:15:33'
+#     },
+#     {
+#         'biz_id': 211,
+#         'review_body': 'Went with a large group on a quiet Sunday evening. We happened to be in the area and wanted Indian food, which is how we ended up at North India. There was...',
+#         "rating": 4,
+#         'created_at': '2022-09-01 00:22:23'
+#     },
+#     {
+#         'biz_id': 211,
+#         'review_body': 'Dined here randomly as they were open late at night.\n' +
+#         '\n' +
+#         'As soon as we walked in, there was a great aroma inside.  The place was very clean, super cozy, and...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 22:12:07'
+#     },
+#     {
+#         'biz_id': 212,
+#         'review_body': 'Came here on a Thursday evening. We were on the earlier side - probably around 545 pm and were the only ones in the restaurant. Staff was friendly.\n' +
+#         '\n' +
+#         'We were...',
+#         "rating": 5,
+#         'created_at': '2022-05-17 08:02:25'
+#     },
+#     {
+#         'biz_id': 212,
+#         'review_body': 'Nice spot for some unique cuisine. The flavors are legitimate and they have a good kick of spice! They have high chairs, but we were the only group with...',
+#         "rating": 4,
+#         'created_at': '2022-06-07 14:28:28'
+#     },
+#     {
+#         'biz_id': 212,
+#         'review_body': 'Ordered takeout on a Saturday around 6:30P and the food was ready in 15 minutes! Decent prices and delicious food. Only ordered one combo and the other a la...',
+#         "rating": 4,
+#         'created_at': '2022-05-07 20:29:14'
+#     },
+#     {
+#         'biz_id': 214,
+#         'review_body': "We have ordered from here before, but tonight we ordered and the pizza wasn't cooked the whole way through. The first bite tasted like dough. Super...",
+#         "rating": 3,
+#         'created_at': '2022-09-02 19:56:56'
+#     },
+#     {
+#         'biz_id': 214,
+#         'review_body': "Called the phone order, and the guy was hilarious. But let's get to the point:\n" +
+#         'Pizza: awesome! Great choices, loved the square design, and it was incredibly...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 18:53:33'
+#     },
+#     {
+#         'biz_id': 214,
+#         'review_body': 'heard good things about this place so I dropped by!\n' +
+#         '\n' +
+#         "it's considerablt easy to get here by bus, and it's relativity close to the city center!\n" +
+#         '\n' +
+#         'I ordered the...',
+#         "rating": 4,
+#         'created_at': '2022-10-11 14:30:22'
+#     },
+#     {
+#         'biz_id': 213,
+#         'review_body': 'Excellent !\n' +
+#         'The best Italian food I ever had... Yum ! I mean it I never had Italian food that good pasta was done perfect sauce marinara is the best ever...',
+#         "rating": 5,
+#         'created_at': '2022-09-20 19:55:54'
+#     },
+#     {
+#         'biz_id': 213,
+#         'review_body': 'clean restaurant, clean table, open atmosphere. Great service (refill water multiple times without asking). Highly recommend!',
+#         "rating": 5,
+#         'created_at': '2022-09-22 11:02:40'
+#     },
+#     {
+#         'biz_id': 213,
+#         'review_body': 'The friggin lobster ravioli. IT IS TO DIEEEEE FOR. Not literally. But oh. my. goodness. You must come here and try. LOOOOOOOK  AT THE PICTURE! LOOK AT ALL...',
+#         "rating": 5,
+#         'created_at': '2022-10-12 19:59:24'
+#     },
+#     {
+#         'biz_id': 216,
+#         'review_body': 'So delicious! Highly recommend getting a reservation as this place is definitely busy! \n' +
+#         "The service and atmosphere was great and we'll definitely be coming...",
+#         "rating": 5,
+#         'created_at': '2022-10-13 11:45:48'
+#     },
+#     {
+#         'biz_id': 216,
+#         'review_body': 'Lovely restaurant. we love sushi and when we heard about this restaurant we were curious to see how it tastes and our overall experience was great.\n' +
+#         '\n' +
+#         'Things...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 10:40:39'
+#     },
+#     {
+#         'biz_id': 216,
+#         'review_body': "Vegan sushi might sound like an oxy moron (or even punishment) for raw fish enthusiasts, but it's a godsend for those of us who aren't. \n" +
+#         '\n' +
+#         'Each first bite of...',
+#         "rating": 5,
+#         'created_at': '2022-10-01 12:35:11'
+#     },
+#     {
+#         'biz_id': 215,
+#         'review_body': 'Long long overdue review, but I loved this place. The line was literally booty, so me and my friends went half an hour before opening, and sat by a nearby...',
+#         "rating": 4,
+#         'created_at': '2022-09-16 14:14:17'
+#     },
+#     {
+#         'biz_id': 215,
+#         'review_body': "The food was amazing! I got the marufuku bites and the hakata tonkatsu, they were so good! The broth was the best I've ever had, highly recommend!",
+#         "rating": 5,
+#         'created_at': '2022-09-28 09:05:50'
+#     },
+#     {
+#         'biz_id': 215,
+#         'review_body': 'Love this place! I love the Hakata Tonkatsu, and its priced really well for the amount of food you get and the quality of the broth. You can also order a...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 12:55:18'
+#     },
+#     {
+#         'biz_id': 217,
+#         'review_body': 'Whole ambiance and food was a vibe. Great and easy service and I like how the food was presented on the plates along with the fact that they taste...',
+#         "rating": 5,
+#         'created_at': '2022-09-27 21:31:11'
+#     },
+#     {
+#         'biz_id': 217,
+#         'review_body': 'Bro, this is a nice spot. The fried chicken is fire  I will definitely drive back to the city for this! I was super disappointed in the loco moco. I wanted...',
+#         "rating": 4,
+#         'created_at': '2022-10-11 20:52:05'
+#     },
+#     {
+#         'biz_id': 217,
+#         'review_body': 'Amazing food! \n' +
+#         'Very good and fast service. The food came out faster than the drinks! \n' +
+#         'A little pricey but definitely a must try!',
+#         "rating": 4,
+#         'created_at': '2022-10-11 16:29:14'
+#     },
+#     {
+#         'biz_id': 218,
+#         'review_body': 'We came to Tacorea after cocktails nearby at Wilson & Wilson. I had heard of this place some time ago, and was intrigued, as I like both Korean and Mexican...',
+#         "rating": 5,
+#         'created_at': '2022-09-26 16:35:08'
+#     },
+#     {
+#         'biz_id': 218,
+#         'review_body': 'First time trying this place after walking by it a bunch of times and decided to go with a the super burrito with the spicy pork. It also came with a side...',
+#         "rating": 4,
+#         'created_at': '2022-10-01 09:05:52'
+#     },
+#     {
+#         'biz_id': 218,
+#         'review_body': 'I was extremely excited to try this place because it combines two of my favourite cuisines: Korean & Mexican! I ordered takeout on a Monday evening and...',
+#         "rating": 4,
+#         'created_at': '2022-08-26 07:53:32'
+#     },
+#     {
+#         'biz_id': 220,
+#         'review_body': 'Best meal of my life. Here is what we ordered so you can have the same (or similar). FYI menu is seasonal and might change daily!\n' +
+#         '\n' +
+#         '1. 4 oysters, fried...',
+#         "rating": 5,
+#         'created_at': '2022-08-27 21:50:03'
+#     },
+#     {
+#         'biz_id': 220,
+#         'review_body': "Omg I've been wanting to come here for the longest time! So when I was offered a free dinner here from my old colleagues - I couldn't resist!\n" +
+#         '\n' +
+#         'The vibes are...',
+#         "rating": 5,
+#         'created_at': '2022-10-07 10:30:22'
+#     },
+#     {
+#         'biz_id': 220,
+#         'review_body': 'Nice place but OK food..Not worth the money.\n' +
+#         '\n' +
+#         'Also they confirmed my reservation over the phone and I did ask for a table outside, after reaching there,...',
+#         "rating": 3,
+#         'created_at': '2022-10-13 05:25:15'
+#     },
+#     {
+#         'biz_id': 219,
+#         'review_body': 'Came here for a team lunch and what an experience it was! \n' +
+#         '\n' +
+#         'We went to town on the apps and ordered the special flatbread of the day, dip sampler, Saghanaki...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 11:48:38'
+#     },
+#     {
+#         'biz_id': 219,
+#         'review_body': 'Visited Kokkari Estiatorio will a group of colleagues for lunch. We had reservations ahead of time so being seated was very easy. I arrived a few minutes...',
+#         "rating": 4,
+#         'created_at': '2022-10-12 11:05:55'
+#     },
+#     {
+#         'biz_id': 219,
+#         'review_body': 'Amazing food and even better service. Our dinner took about 2.5 hours and we were not upset about it. \n' +
+#         '\n' +
+#         'After a weekend of trying new restaurants after...',
+#         "rating": 5,
+#         'created_at': '2022-10-11 10:02:46'
+#     },
+#     {
+#         'biz_id': 222,
+#         'review_body': 'Haha well I ordered 4 tacos thinking they were street tacos. These tacos are much bigger. I ordered 2 carnitas and 2 asada and both were great.\n' +
+#         '\n' +
+#         ' I also...',
+#         "rating": 5,
+#         'created_at': '2022-09-29 12:14:32'
+#     },
+#     {
+#         'biz_id': 222,
+#         'review_body': "Deserve the hype? I think not. When we got there, the line wasn't too long. It was my first time going to that place even though I know it is a hit spot....",
+#         "rating": 3,
+#         'created_at': '2022-10-09 22:13:18'
+#     },
+#     {
+#         'biz_id': 222,
+#         'review_body': "Forget what anyone has told you, THIS is the best burrito in the Mission. Probably the best burrito I've ever had.\n" +
+#         '\n' +
+#         'La Taqueria has two important...',
+#         "rating": 5,
+#         'created_at': '2022-09-22 22:28:01'
+#     },
+#     {
+#         'biz_id': 221,
+#         'review_body': "I came with friends for lunch around 2pm and it wasn't busy. Parking is super tough around the area and metered. We got to order immediately and I got a...",
+#         "rating": 5,
+#         'created_at': '2022-10-01 21:08:01'
+#     },
+#     {
+#         'biz_id': 221,
+#         'review_body': "Santiago, thanks for your response! It's actually ok due Covid, it's probably best to not put the salsa bar back! The guy behind the counter gave me the...",
+#         "rating": 4,
+#         'created_at': '2022-10-11 02:31:05'
+#     },
+#     {
+#         'biz_id': 221,
+#         'review_body': 'Came over to try this spot out for lunch! Took Bart over from the city on Market. This place is conveniently located right next to the Bart station so it...',
+#         "rating": 4,
+#         'created_at': '2022-10-08 18:38:19'
+#     },
+#     {
+#         'biz_id': 224,
+#         'review_body': 'their pizza is very good, the waiter friend was very nice, the taste is excellent\n' +
+#         '\n' +
+#         'Award Winning Margherita',
+#         "rating": 5,
+#         'created_at': '2022-09-04 14:10:18'
+#     },
+#     {
+#         'biz_id': 224,
+#         'review_body': 'After reading all the reviews I was left only slightly disappointed. The food was quite good and healthy portions to boot. The atmosphere and wait staff was...',
+#         "rating": 4,
+#         'created_at': '2022-08-26 16:14:03'
+#     },
+#     {
+#         'biz_id': 224,
+#         'review_body': "Cute spot for any occasion, especially a night out in North Beach. The Diavola pizza was delicious- the crust didn't feel too heavy or greasy and it had a...",
+#         "rating": 5,
+#         'created_at': '2022-10-12 10:12:54'
+#     },
+#     {
+#         'biz_id': 223,
+#         'review_body': "We have ordered from here before, but tonight we ordered and the pizza wasn't cooked the whole way through. The first bite tasted like dough. Super...",
+#         "rating": 3,
+#         'created_at': '2022-09-02 19:56:56'
+#     },
+#     {
+#         'biz_id': 223,
+#         'review_body': "Called the phone order, and the guy was hilarious. But let's get to the point:\n" +
+#         'Pizza: awesome! Great choices, loved the square design, and it was incredibly...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 18:53:33'
+#     },
+#     {
+#         'biz_id': 223,
+#         'review_body': 'heard good things about this place so I dropped by!\n' +
+#         '\n' +
+#         "it's considerablt easy to get here by bus, and it's relativity close to the city center!\n" +
+#         '\n' +
+#         'I ordered the...',
+#         "rating": 4,
+#         'created_at': '2022-10-11 14:30:22'
+#     },
+#     {
+#         'biz_id': 226,
+#         'review_body': "At the time, it wasn't so busy, yet there was still a long line for both the food and the bread. The food line goes further into the store and the bread...",
+#         "rating": 4,
+#         'created_at': '2022-09-25 23:53:34'
+#     },
+#     {
+#         'biz_id': 226,
+#         'review_body': "Jesus must have gone to Boudin's for the loaves and fish to feed the masses cause they'd def line up for this! \n" +
+#         'Boudins is rich with history and flavors a...',
+#         "rating": 4,
+#         'created_at': '2022-09-15 19:47:09'
+#     },
+#     {
+#         'biz_id': 226,
+#         'review_body': "The decor is rustic and and as you walk in you're hit with the wonderful smell of sourdough. They even have bear, alligator, and crab shaped sourdough....",
+#         "rating": 4,
+#         'created_at': '2022-09-13 11:04:47'
+#     },
+#     {
+#         'biz_id': 225,
+#         'review_body': 'The BEST sandwich spot in the city! :) \n' +
+#         '\n' +
+#         'Their dutch crunch is *chefs kiss* It has a pleasant combination of a crunchy exterior and a soft, slightly sweet...',
+#         "rating": 5,
+#         'created_at': '2022-09-10 15:46:13'
+#     },
+#     {
+#         'biz_id': 225,
+#         'review_body': 'The sandwiches are good. Not great- just good. \n' +
+#         "So if there's a line it won't hurt to shop around. \n" +
+#         '\n' +
+#         'In general the one thing I harp on is the tipping when...',
+#         "rating": 4,
+#         'created_at': '2022-09-16 13:29:17'
+#     },
+#     {
+#         'biz_id': 225,
+#         'review_body': "Drove from the east bay and wanted to find something quick for lunch to take to Baker Beach. Decided to give Lou's a try based on their reviews!\n" +
+#         '\n' +
+#         '5 stars...',
+#         "rating": 4,
+#         'created_at': '2022-09-03 14:29:08'
+#     },
+#     {
+#         'biz_id': 228,
+#         'review_body': 'I was visiting my daughter & son-law and we  stopped by Limoncello on our way to a park in San Francisco to pick up some Italian sandwiches. We had a little...',
+#         "rating": 5,
+#         'created_at': '2022-09-13 15:54:42'
+#     },
+#     {
+#         'biz_id': 228,
+#         'review_body': "The owner of this business is absolutely insane and has no clue of what customer service is about. He can't even admit when he's wrong. We ordered...",
+#         "rating": 1,
+#         'created_at': '2022-09-05 13:55:32'
+#     },
+#     {
+#         'biz_id': 228,
+#         'review_body': 'Great vibes and delicious food. \n' +
+#         '\n' +
+#         "Upon walking into the store, I didn't know that it was like a little corner store. I came for the sandwiches and was...",
+#         "rating": 5,
+#         'created_at': '2022-08-14 22:43:41'
+#     },
+#     {
+#         'biz_id': 227,
+#         'review_body': "I don't know if you want to say this is a hidden gem because honestly, getting to this part of Tenderloin is a trek in itself.  When you finally get there...",
+#         "rating": 5,
+#         'created_at': '2022-09-29 08:40:51'
+#     },
+#     {
+#         'biz_id': 227,
+#         'review_body': 'We were visiting SF for a few days and in my research, I learned that the Tenderloin area should be avoided...in the end my poor bf was sent on a mission to...',
+#         "rating": 4,
+#         'created_at': '2022-09-12 20:02:03'
+#     },
+#     {
+#         'biz_id': 227,
+#         'review_body': "It's the consistency for me! Saigon Sandwich never disappoints. Located in the Tenderloin, this little hole in the wall pumps out hundreds of incredible...",
+#         "rating": 5,
+#         'created_at': '2022-09-05 19:32:22'
+#     },
+#     {
+#         'biz_id': 230,
+#         'review_body': 'Drinking at the bar to start the evening was a great idea during happy hour!!  \n' +
+#         '\n' +
+#         'We the. Gained a table right next to the windows overlooking Alcatraz and...',
+#         "rating": 5,
+#         'created_at': '2022-08-25 18:13:09'
+#     },
+#     {
+#         'biz_id': 230,
+#         'review_body': 'Not bad, but not impressive at the same time.\n' +
+#         'The service was pretty good, although they were busy.',
+#         "rating": 3,
+#         'created_at': '2022-09-08 21:58:50'
+#     },
+#     {
+#         'biz_id': 230,
+#         'review_body': 'Food was decent, and steak was pretty good for a seafood restaurant. What really made our night was our server, Bongjovi. He was very helpful with the menu...',
+#         "rating": 5,
+#         'created_at': '2022-09-20 20:08:41'
+#     },
+#     {
+#         'biz_id': 231,
+#         'review_body': 'Took my parents here about 10 years ago. I had never been either as I lived in NV and they lived in OH. This is one of THE BEST RESTAURANTS IN THE...',
+#         "rating": 5,
+#         'created_at': '2022-10-07 20:07:31'
+#     },
+#     {
+#         'biz_id': 231,
+#         'review_body': 'We came here with a big group for a birthday and it was my first time here, so I was really excited. The wait, even with reservations was expected for our...',
+#         "rating": 5,
+#         'created_at': '2022-10-06 18:27:17'
+#     },
+#     {
+#         'biz_id': 231,
+#         'review_body': 'My go-to Prime Rib spot!! Food is great!!! They cut the meat in front of you and prepare the salad in front of you too. Probably my fav salad ever as well,...',
+#         "rating": 5,
+#         'created_at': '2022-10-05 16:04:10'
+#     },
+#     {
+#         'biz_id': 232,
+#         'review_body': 'I came here for lunch and it was soo worth it!!!\n' +
+#         '\n' +
+#         'We came here for the meat but was swayed by the salad bar!! I kept going back for the mango salad. It was...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 09:13:20'
+#     },
+#     {
+#         'biz_id': 232,
+#         'review_body': 'This was my first time ever trying Espetus and it blew my mind! My friends and I saw their online promotion for the SF location for the month of October,...',
+#         "rating": 5,
+#         'created_at': '2022-10-04 21:47:07'
+#     },
+#     {
+#         'biz_id': 232,
+#         'review_body': 'Everything was delicious. Our table favorite was the chicken heart. \n' +
+#         '\n' +
+#         'We love the variety of meat options.\n' +
+#         '\n' +
+#         'Everything was cooked well with very good...',
+#         "rating": 5,
+#         'created_at': '2022-10-04 17:49:45'
+#     },
+#     {
+#         'biz_id': 233,
+#         'review_body': 'So delicious! Highly recommend getting a reservation as this place is definitely busy! \n' +
+#         "The service and atmosphere was great and we'll definitely be coming...",
+#         "rating": 5,
+#         'created_at': '2022-10-13 11:45:48'
+#     },
+#     {
+#         'biz_id': 233,
+#         'review_body': 'Lovely restaurant. we love sushi and when we heard about this restaurant we were curious to see how it tastes and our overall experience was great.\n' +
+#         '\n' +
+#         'Things...',
+#         "rating": 5,
+#         'created_at': '2022-10-09 10:40:39'
+#     },
+#     {
+#         'biz_id': 233,
+#         'review_body': "Vegan sushi might sound like an oxy moron (or even punishment) for raw fish enthusiasts, but it's a godsend for those of us who aren't. \n" +
+#         '\n' +
+#         'Each first bite of...',
+#         "rating": 5,
+#         'created_at': '2022-10-01 12:35:11'
+#     },
+#     {
+#         'biz_id': 234,
+#         'review_body': "AMAZING!! Jenny is the best ever!! Such good service and absolutely amazing food. This place has the FRESHEST Uni I've ever had and I live in Santa...",
+#         "rating": 5,
+#         'created_at': '2022-09-23 22:01:20'
+#     },
+#     {
+#         'biz_id': 234,
+#         'review_body': 'Seriously the best sushi place! I live around the corner and I have to swing by AT LEAST once a week. JENNY IS AMAZING.',
+#         "rating": 5,
+#         'created_at': '2022-09-16 21:22:09'
+#     },
+#     {
+#         'biz_id': 234,
+#         'review_body': 'Service was awesome. Ambiance is great. Jenny was our waitress and was super knowledgeable about the menu and quick with her service. \n' +
+#         '\n' +
+#         'The staff was super...',
+#         "rating": 5,
+#         'created_at': '2022-10-07 21:03:13'
+#     },
+#     {
+#         'biz_id': 229,
+#         'review_body': "Solid restaurant.  The line moves faster than you think so don't get discouraged when you see it.\n" +
+#         "It's worth it, enough said.",
+#         "rating": 5,
+#         'created_at': '2022-09-11 11:14:31'
+#     },
+#     {
+#         'biz_id': 229,
+#         'review_body': 'Started with oyster Bar mix, one of each type of oysters. Does not disappoint, there was slight differences between each oysters. \n' +
+#         'Next had the Bagna Cauda....',
+#         "rating": 5,
+#         'created_at': '2022-10-09 17:26:59'
+#     },
+#     {
+#         'biz_id': 229,
+#         'review_body': "Caveat being that I can't eat shellfish so like most of this menu I can't try. But the rest while good was for me quite overpriced\n" +
+#         '\n' +
+#         'My wife got the oysters...',
+#         "rating": 4,
+#         'created_at': '2022-10-10 14:01:29'
+#     },
+#     {
+#         'biz_id': 236,
+#         'review_body': "Some of the best chicken and waffles I've had, perfectly crispy outside and tender chicken on the inside. The waffle had a well balanced sweetness to it and...",
+#         "rating": 5,
+#         'created_at': '2022-10-02 11:30:44'
+#     },
+#     {
+#         'biz_id': 236,
+#         'review_body': 'Lapisara is a sanctuary from the rest of Lower Nob Hill. See photo with King Liquor right outside hehe. \n' +
+#         '\n' +
+#         'Their interior was bright and refreshing yet...',
+#         "rating": 4,
+#         'created_at': '2022-10-10 09:12:37'
+#     },
+#     {
+#         'biz_id': 236,
+#         'review_body': 'We came here for brunch on the day of the Warriors parade and luckily got seated right away.\n' +
+#         '\n' +
+#         'They have both indoor and outdoor seating but I will say this...',
+#         "rating": 4,
+#         'created_at': '2022-10-04 15:17:08'
+#     },
+#     {
+#         'biz_id': 235,
+#         'review_body': "I absolutely love this restaurant! It's my favorite place to eat and I have always been seated pretty quickly. The food is delicious, the drinks are...",
+#         "rating": 5,
+#         'created_at': '2022-09-20 10:19:16'
+#     },
+#     {
+#         'biz_id': 235,
+#         'review_body': 'The food is excellent. The service needs improvement. Servers were rushing us through appetizers, drinks, dinner, and dessert. For an upscale restaurant,...',
+#         "rating": 4,
+#         'created_at': '2022-09-04 11:52:54'
+#     },
+#     {
+#         'biz_id': 235,
+#         'review_body': 'Atmosphere: 5/5\n' +
+#         'Food: 4.5/5\n' +
+#         'Drinks: 5/5\n' +
+#         'Service: 5/5\n' +
+#         '\n' +
+#         'I had such a great time here catching up with a friend. The whole place is decked out in flowers so...',
+#         "rating": 5,
+#         'created_at': '2022-09-30 14:52:54'
+#     },
+#     {
+#         'biz_id': 238,
+#         'review_body': 'One of favorite Vegetarian restaurants.  Food is great, well prepared.\n' +
+#         '\n' +
+#         'Dining experience was definitely degraded by not partaking in the amazing view...',
+#         "rating": 5,
+#         'created_at': '2022-09-22 17:57:26'
+#     },
+#     {
+#         'biz_id': 238,
+#         'review_body': 'Greens was absolutely delicious, the waiter was very thoughtful, and the sunset view was amazing! \n' +
+#         '\n' +
+#         'Came here for my birthday dinner with a group of 5. We...',
+#         "rating": 4,
+#         'created_at': '2022-09-21 18:34:05'
+#     },
+#     {
+#         'biz_id': 238,
+#         'review_body': "Couples date at Greens and we were a little late because we didn't realize how difficult parking would be here. That was our bad, of course it's SF. Lol....",
+#         "rating": 5,
+#         'created_at': '2022-08-18 19:31:29'
+#     },
+#     {
+#         'biz_id': 237,
+#         'review_body': 'Hands down the best brunch in SF. The pancakes slapped, the mimosas are incredibly fresh, and the avocado toast is delicious. The turkish breakfast has...',
+#         "rating": 5,
+#         'created_at': '2022-09-03 11:47:06'
+#     },
+#     {
+#         'biz_id': 237,
+#         'review_body': 'I saw a review that said we MUST try the pancakes and they were absolutely right. I visited with a few of my friends and we were floored by how good...',
+#         "rating": 5,
+#         'created_at': '2022-09-01 14:09:48'
+#     },
+#     {
+#         'biz_id': 237,
+#         'review_body': 'We tried Lokma while staying in a nearby AirBnB and really enjoyed it.\n' +
+#         '\n' +
+#         'We enjoyed 2 entrees, dessert, (Baklava) wine and beer. I especially recommend the...',
+#         "rating": 5,
+#         'created_at': '2022-10-10 15:52:14'
+#     },
+#     {
+#         'biz_id': 240,
+#         'review_body': "14 years ago, some friends of mine convinced me to go to a Vietnamese Restaurant to try some Crab and my life hasn't been the same since.\n" +
+#         '\n' +
+#         'When they talk...',
+#         "rating": 5,
+#         'created_at': '2022-08-31 10:37:04'
+#     },
+#     {
+#         'biz_id': 240,
+#         'review_body': 'I came here with a party of 7 on a Saturday night, and we were able to get seated quickly. They brought us upstairs where they host groups with 5+ people....',
+#         "rating": 4,
+#         'created_at': '2022-10-09 18:57:21'
+#     },
+#     {
+#         'biz_id': 240,
+#         'review_body': 'Food 4.0/5.0\n' +
+#         'Service 3.5/5.0\n' +
+#         'Value 3.0/5.0\n' +
+#         'Decor 3.0/5.0\n' +
+#         'Overall 4.0/5.0\n' +
+#         '\n' +
+#         'Nice old school crab spot tucked away on the western edge of Outer Sunset....',
+#         "rating": 4,
+#         'created_at': '2022-10-03 19:41:01'
+#     },
+#     {
+#         'biz_id': 239,
+#         'review_body': "I don't know if you want to say this is a hidden gem because honestly, getting to this part of Tenderloin is a trek in itself.  When you finally get there...",
+#         "rating": 5,
+#         'created_at': '2022-09-29 08:40:51'
+#     },
+#     {
+#         'biz_id': 239,
+#         'review_body': 'We were visiting SF for a few days and in my research, I learned that the Tenderloin area should be avoided...in the end my poor bf was sent on a mission to...',
+#         "rating": 4,
+#         'created_at': '2022-09-12 20:02:03'
+#     },
+#     {
+#         'biz_id': 239,
+#         'review_body': "It's the consistency for me! Saigon Sandwich never disappoints. Located in the Tenderloin, this little hole in the wall pumps out hundreds of incredible...",
+#         "rating": 5,
+#         'created_at': '2022-09-05 19:32:22'
+#     }
+# ]
 
 instances = []
 
