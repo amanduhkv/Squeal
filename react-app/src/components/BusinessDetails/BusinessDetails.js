@@ -129,21 +129,25 @@ const BusinessDetails = () => {
             if (open === close) {
                 res = "Open"
             } else {
-                res = currentTime < open.slice(0, 2) ||
+                res = currentTime < +open.slice(0, 2) ||
                 (currentTime === +open.slice(0, 2) && currentMinutes < +open.slice(2)) ||
-                (currentTime < 12 && currentTime > close.slice(0, 2)) ||
-                (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
-                console.log(currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2))
+                (currentTime < 12 && currentTime > +close.slice(0, 2)) ||
+                (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) || (currentTime > 12 && currentTime > +close.slice(0, 2)) ? "Closed" : "Open"
+                // console.log(currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2))
+                // console.log((currentTime > 12 && currentTime > +close.slice(0, 2)))
+                // console.log('RES', currentTime)
             }
         }
         return res
     }
     function phoneNumber(str) {
         let res
-        if (str) {
-            console.log('num', str)
-            // str = str.slice(1)
-            res = "(" + str.slice(0, 4) + ") " + str.slice(3, 6) + '-' + str.slice(6)
+        if (str.startsWith('+')) {
+            str = str.slice(2)
+            res = "(" + str.slice(0, 3) + ") " + str.slice(3, 6) + '-' + str.slice(6)
+        }
+        else if (str.startsWith('(')) {
+            res = str
         }
         return res
     }
@@ -151,6 +155,7 @@ const BusinessDetails = () => {
     let hours
     if (biz.start_time && biz.end_time) {
         let open = openOrClosed(biz.start_time, biz.end_time)
+        // console.log("OPEN", open)
         let today = new Date().getDay()
         if (biz.start_time === biz.end_time) {
             hours = days.map(day => {
