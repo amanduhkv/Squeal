@@ -39,9 +39,7 @@ div input:first-child {
 #modal-errors {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 14px;
-  background-color: rgb(252,214,211);
-  border-radius: 3px;
-  padding: 8px;
+
 }
 
 #password #login-input {
@@ -61,6 +59,9 @@ div input:first-child {
 
 #sign-up-errors-div-container  {
   margin-top: 30px;
+  background-color: rgb(252,214,211);
+  border-radius: 3px;
+  padding: 8px;
 }
 #sign-up-errors-div {
   color: rgb(212, 40, 40);
