@@ -137,15 +137,16 @@ const BusinessDetails = () => {
         let currentTime = new Date().getHours()
         let currentMinutes = new Date().getMinutes()
         if (open && close) {
-            if (open === "0000") {
-                open = "1200"
-                }
-            // if (close === "0000") {
-            //     close = "0000"
-            // }
             if (open === close) {
                 res = "Open"
-            } else {
+            }
+            if (open === "0000") {
+                open = "1200"
+            }
+            // if (close === "0000") {
+                //     close = "0000"
+                // }
+            else {
                 res = currentTime < +open.slice(0, 2) ||
                 (currentTime === +open.slice(0, 2) && currentMinutes < +open.slice(2)) ||
                 (currentTime < 12 && currentTime > +close.slice(0, 2)) ||
@@ -163,7 +164,8 @@ const BusinessDetails = () => {
             str = str.slice(2)
             res = "(" + str.slice(0, 3) + ") " + str.slice(3, 6) + '-' + str.slice(6)
         }
-        else if (str.startsWith('(')) {
+        // if (str.startsWith('('))
+        else {
             res = str
         }
         return res
