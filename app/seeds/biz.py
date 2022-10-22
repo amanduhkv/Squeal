@@ -5810,6 +5810,18 @@ reviews = [
         'created_at': '2022-09-17 17:32:23'
     },
     {
+        'biz_id': 11,
+        'review_body': 'I was pleasantly surprised by this place. As a tourist, you really only know about Kang Ho Dong Baekjeong and Quarters. We were made aware of this place by...',
+        "rating": 4,
+        'created_at': '2022-10-12 12:26:45'
+    },
+    {
+        'biz_id': 11,
+        'review_body': 'I was pleasantly surprised by this place. As a tourist, you really only know about Kang Ho Dong Baekjeong and Quarters. We were made aware of this place by...',
+        "rating": 4,
+        'created_at': '2022-10-12 12:26:45'
+    },
+    {
         'biz_id': 6,
         'review_body': "My FAVORITE soft serve ever!! If you're ever craving matcha, I would HIGHLY recommend Tea Master! Honda Plaza has parking, and there's so many good...",
         "rating": 5,
@@ -5840,7 +5852,7 @@ reviews = [
         'created_at': '2022-09-25 21:00:38'
     },
     {
-        'biz_id': 12,
+        'biz_id': 9,
         'review_body': 'Salt and Straw never dissapoints. Go and be excited  about the unique flavors, rich ice cream, and helpful staff. \n' +
         '\n' +
         'My favorite flavors are honey lavender...',
@@ -7909,7 +7921,7 @@ reviews = [
         'created_at': '2022-07-31 22:04:35'
     },
     {
-        'biz_id': 112,
+        'biz_id': 13,
         'review_body': 'True burger would get a five if they had real cheese!!!!American cheese has pork in it and I would prefer to have cheddar cheese or or jalapeño jack!  Some...',
         "rating": 4,
         'created_at': '2022-09-12 20:39:10'
@@ -9449,7 +9461,7 @@ reviews = [
         'created_at': '2022-10-07 21:03:13'
     },
     {
-        'biz_id': 187,
+        'biz_id': 17,
         'review_body': "Some of the best chicken and waffles I've had, perfectly crispy outside and tender chicken on the inside. The waffle had a well balanced sweetness to it and...",
         "rating": 5,
         'created_at': '2022-10-02 11:30:44'
@@ -9549,9 +9561,7 @@ transaction_dict = {
 # dup_rev = {9,  11,  13,  18,  26,  33,  37,  38,  45, 46,  60,  66,  70,  89,  95,  97,  98,  99, 101, 105, 110, 114,
 #            117, 118, 125, 130, 133, 142, 157, 158, 163, 165, 167, 168, 170, 174, 175, 187, 201, 204, 223, 229, 233, 237, 238}
 def seed_all_data_sans_users():
-    biz_instances=[]
     for i in range(0, len(bizzies)):
-        print("BIZ>>>", i, bizzies[i]['name'])
         name = bizzies[i]['name']
         city = bizzies[i]['location']['city']
         state = bizzies[i]['location']['state']
@@ -9596,33 +9606,19 @@ def seed_all_data_sans_users():
             instances.append(
                 Image(business_id=i+1, review_id=None, url=img))
 
-
-    biz_id = 1
-    biz_count = 1
     users = {1}
     for i in range(0, len(reviews)):
         user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
                         13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
-        # print("USERS", users)
-        # print("USERSID", user_id)
         while user_id in users:
             user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
                             13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
         
-        # print("USERSID AFTER WHILE", user_id)
-
         users.add(user_id)
-        # print("REVIEWS[i][bizid]>>>", reviews[i]['biz_id'])
         instances.append(Review(business_id=reviews[i]['biz_id'], user_id=user_id,
                         review_body=reviews[i]['review_body'], rating=reviews[i]['rating'], created_at=reviews[i]['created_at']))
         if (i+1) % 3 == 0:
-            biz_count += 1
             users = {1}
-        # if not biz_count in dup_rev and (i+1) % 3 == 0 and biz_id + 1 != 195:
-        #     biz_id += 1
-
-    # hopefully this doesnt break
-
 
 
         for instance in instances:
