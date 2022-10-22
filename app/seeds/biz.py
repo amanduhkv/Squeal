@@ -9548,91 +9548,86 @@ transaction_dict = {
 #            116, 117, 124, 129, 132, 141, 156, 157, 162, 164, 166, 167, 169, 173, 174, 186, 200, 203, 204, 222, 228, 232, 236, 237}
 # dup_rev = {9,  11,  13,  18,  26,  33,  37,  38,  45, 46,  60,  66,  70,  89,  95,  97,  98,  99, 101, 105, 110, 114,
 #            117, 118, 125, 130, 133, 142, 157, 158, 163, 165, 167, 168, 170, 174, 175, 187, 201, 204, 223, 229, 233, 237, 238}
-count = 1
-for i in range(0, len(bizzies)):
-    name = bizzies[i]['name']
-    city = bizzies[i]['location']['city']
-    state = bizzies[i]['location']['state']
-    country = bizzies[i]['location']['country']
-    address = ''
-    if len(bizzies[i]['address']) == 2:
-        address = bizzies[i]['address'][0]
-    else:
-        address = ' '.join(bizzies[i]['address'][0:2])
-    zipcode = bizzies[i]['location']['zip_code']
-    lat = bizzies[i]['lat']
-    lng = bizzies[i]['lng']
-    price_range = bizzies[i]['price']
-    phone_number = bizzies[i]['phone']
-    business_id = count
-    url = bizzies[i]['url']
-    start_time = bizzies[i]['hours']['start']
-    end_time = bizzies[i]['hours']['end']
-    transactions = [transaction_dict[t] for t in bizzies[i]['transactions']]
-    types = [type_dict[t] for t in bizzies[i]['categories']]
-
-    instances.append(Business(
-                                  name=name,
-                                  owner_id=1,
-                                  city=city,
-                                  state=state,
-                                  country=country,
-                                  address=address,
-                                  zipcode=zipcode,
-                                  lat=lat,
-                                  lng=lng,
-                                  price_range=price_range,
-                                  phone_number=phone_number,
-                                  preview_img=url,
-                                  start_time=start_time,
-                                  end_time=end_time,
-                                  transactions=transactions,
-                                  types=types))
-
-        # for cat in bizzies[i]['categories']:
-        #   if cat in types_alias:
-        #     type_id = types_alias.index(cat)+1
-        #     new_businessType = BusinessType(type_id=type_id, business_id=business_id)
-        #     instances.append(new_businessType)
-
-        # for tra in bizzies[i]['transactions']:
-        #     instances.append(BusinessTransaction(transaction_id=transaction_types.index(tra)+1, business_id=business_id))
-
-    for img in bizzies[i]['photos']:
-        instances.append(
-            Image(business_id=business_id, review_id=None, url=img))
-    count += 1
-
-
-biz_id = 1
-biz_count = 1
-users = {1}
-for i in range(0, len(reviews)):
-    user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
-                     13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
-    print("USERS", users)
-    print("USERSID", user_id)
-    while user_id in users:
-        user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
-                         13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
-    
-    print("USERSID AFTER WHILE", user_id)
-
-    users.add(user_id)
-    instances.append(Review(business_id=reviews[i]['biz_id'], user_id=user_id,
-                     review_body=reviews[i]['review_body'], rating=reviews[i]['rating'], created_at=reviews[i]['created_at']))
-    if (i+1) % 3 == 0:
-        biz_count += 1
-        users = {1}
-    # if not biz_count in dup_rev and (i+1) % 3 == 0 and biz_id + 1 != 195:
-    #     biz_id += 1
-
-# hopefully this doesnt break
-
-
 def seed_all_data_sans_users():
-    for instance in instances:
-        db.session.add(instance)
+    biz_instances=[]
+    for i in range(0, len(bizzies)):
+        print("BIZ>>>", i, bizzies[i]['name'])
+        name = bizzies[i]['name']
+        city = bizzies[i]['location']['city']
+        state = bizzies[i]['location']['state']
+        country = bizzies[i]['location']['country']
+        address = ''
+        if len(bizzies[i]['address']) == 2:
+            address = bizzies[i]['address'][0]
+        else:
+            address = ' '.join(bizzies[i]['address'][0:2])
+        zipcode = bizzies[i]['location']['zip_code']
+        lat = bizzies[i]['lat']
+        lng = bizzies[i]['lng']
+        price_range = bizzies[i]['price']
+        phone_number = bizzies[i]['phone']
+        url = bizzies[i]['url']
+        start_time = bizzies[i]['hours']['start']
+        end_time = bizzies[i]['hours']['end']
+        transactions = [transaction_dict[t] for t in bizzies[i]['transactions']]
+        types = [type_dict[t] for t in bizzies[i]['categories']]
+
+
+        db.session.add(Business(
+                                    name=name,
+                                    owner_id=1,
+                                    city=city,
+                                    state=state,
+                                    country=country,
+                                    address=address,
+                                    zipcode=zipcode,
+                                    lat=lat,
+                                    lng=lng,
+                                    price_range=price_range,
+                                    phone_number=phone_number,
+                                    preview_img=url,
+                                    start_time=start_time,
+                                    end_time=end_time,
+                                    transactions=transactions,
+                                    types=types))
+        
+        # print("Business", biz_instances)
+        for img in bizzies[i]['photos']:
+            instances.append(
+                Image(business_id=i+1, review_id=None, url=img))
+
+
+    biz_id = 1
+    biz_count = 1
+    users = {1}
+    for i in range(0, len(reviews)):
+        user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
+                        13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
+        # print("USERS", users)
+        # print("USERSID", user_id)
+        while user_id in users:
+            user_id = choice([2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
+                            13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27])
+        
+        # print("USERSID AFTER WHILE", user_id)
+
+        users.add(user_id)
+        # print("REVIEWS[i][bizid]>>>", reviews[i]['biz_id'])
+        instances.append(Review(business_id=reviews[i]['biz_id'], user_id=user_id,
+                        review_body=reviews[i]['review_body'], rating=reviews[i]['rating'], created_at=reviews[i]['created_at']))
+        if (i+1) % 3 == 0:
+            biz_count += 1
+            users = {1}
+        # if not biz_count in dup_rev and (i+1) % 3 == 0 and biz_id + 1 != 195:
+        #     biz_id += 1
+
+    # hopefully this doesnt break
+
+
+
+        for instance in instances:
+            db.session.add(instance)
+
     db.session.commit()
 
 
