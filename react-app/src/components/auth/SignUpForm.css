@@ -57,7 +57,8 @@ div input:first-child {
   margin-top: 18px;
 }
 
-#sign-up-errors-div-container  {
+#sign-up-errors-div-container,
+#modal-errors-box  {
   margin-top: 30px;
   background-color: rgb(252,214,211);
   border-radius: 3px;
