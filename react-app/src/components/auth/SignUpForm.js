@@ -34,7 +34,7 @@ const SignUpForm = () => {
         let zipreg = /^[0-9]{5}(?:-[0-9]{4})?$/;
         if (!zipreg.test(zipcode)) errs.push('Please input a valid zipcode.')
         if (errs.length > 0) {
-            setErrors([errs])
+            setErrors(errs)
             setHasSubmitSign(true)
         }
 
@@ -220,11 +220,11 @@ const SignUpForm = () => {
                             </form>
                             <form onSubmit={onSignUp}>
                             {hasSubmitSign && showSignModal && errors.length > 0 && (
-                                    <div id='sign-up-errors-div-container'>
+                                    <ul id='sign-up-errors-div-container'>
                                         {errors.map((error, ind) => (
-                                            <div id='modal-errors' key={ind}>{error}</div>
+                                            <li id='sign-up-errors' key={ind}>{error}</li>
                                         ))}
-                                    </div>
+                                    </ul>
                                 )}
                                 <div id='first-last-name'>
                                     <input

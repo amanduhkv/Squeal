@@ -39,7 +39,12 @@ div input:first-child {
 #modal-errors {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 14px;
-
+  color: #E00707;
+  font-weight: 500;
+  background-color: rgb(252,214,211);
+  border-radius: 3px;
+  padding: 8px;
+  list-style: none;
 }
 
 #password #login-input {
@@ -63,9 +68,13 @@ div input:first-child {
   border-radius: 3px;
   padding: 8px;
 }
-#sign-up-errors-div {
-  color: rgb(212, 40, 40);
-  font-family: Arial, Helvetica, sans-serif;
+#sign-up-errors {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 14px;
-  text-align: center;
+  color: #E00707;
+  font-weight: 500;
+  background-color: rgb(252,214,211);
+  border-radius: 3px;
+  padding: 0 8px;
+  list-style: none;
 }

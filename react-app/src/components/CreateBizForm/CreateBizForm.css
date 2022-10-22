@@ -166,16 +166,21 @@ div input:first-child {
 
 
 /* ERROR LIST */
-.list--errors {
+/* .list--errors {
     padding-left: 0px;
-}
+} */
 
 #list-errors-biz {
     margin-bottom: 20px;
+    background-color: rgb(252,214,211);
+    border-radius: 3px;
+    padding: 8px;
 }
 
 .li--error {
     list-style: none;
-    color: #E00707;
+    /* color: #E00707; */
     font-weight: 500;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-size: 14px;
 }

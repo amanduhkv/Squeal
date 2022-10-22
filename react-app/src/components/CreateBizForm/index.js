@@ -153,6 +153,13 @@ export default function CreateBizForm() {
             <h1 className='header header--create-biz'>Hello! Let's fill out your business details</h1>
 
             <form onSubmit={handleSubmit} className="form" id="form--create-biz">
+
+                {validationErrors.length > 0 && (
+                    <ul id="list-errors-biz" className="list--errors">
+                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
+                    </ul>
+                )}
+
                 <div className='container--form-fields'>
 
                     {/* ----- NAME SECTION ----- */}
@@ -415,11 +422,7 @@ export default function CreateBizForm() {
                     </div>
                 </div>
 
-                {validationErrors.length > 0 && (
-                    <ul id="list-errors-biz" className="list--errors">
-                        {validationErrors.map((error) => <li key={error} className="li li--error">{error}</li>)}
-                    </ul>
-                )}
+
 
                 <button
                     type="submit"
