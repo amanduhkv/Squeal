@@ -140,10 +140,12 @@ const BusinessDetails = () => {
     }
     function phoneNumber(str) {
         let res
-        if (str) {
-            console.log('num', str)
-            // str = str.slice(1)
-            res = "(" + str.slice(0, 4) + ") " + str.slice(3, 6) + '-' + str.slice(6)
+        if (str.startsWith('+')) {
+            str = str.slice(2)
+            res = "(" + str.slice(0, 3) + ") " + str.slice(3, 6) + '-' + str.slice(6)
+        }
+        else if (str.startsWith('(')) {
+            res = str
         }
         return res
     }

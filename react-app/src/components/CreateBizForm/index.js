@@ -71,7 +71,7 @@ export default function CreateBizForm() {
         }
 
         if (phone.length) {
-            const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')']
+            const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')', ' ', '-']
 
             phone.split('').forEach(char => {
                 if (!ALLOWED_PHONE_CHAR.includes(char)) {
