@@ -18,40 +18,43 @@ const SignUpForm = () => {
     const [zipcode, setZipCode] = useState('');
     const [showLogModal, setShowLogModal] = useState(false);
     const [showSignModal, setShowSignModal] = useState(false);
-    const [hasSubmit, setHasSubmit] = useState(false);
+    const [hasSubmitSign, setHasSubmitSign] = useState(false);
+    const [hasSubmitLog, setHasSubmitLog] = useState(false);
     const user = useSelector(state => state.session.user);
     const dispatch = useDispatch();
 
     const onSignUp = async (e) => {
         e.preventDefault();
         let errs = []
-        if (first_name.length < 2) errs.push('First name must be at least 2 characters')
-        if (last_name.length < 2) errs.push('Last name must be at least 2 characters')
-        if (username.length <5) errs.push('Username must be at least 5 characters')
-        if (!email.includes('@') || !email.includes('.')) errs.push('Must sign up with a valid email')
-        if (password.length < 5) errs.push('Password must be at least 6 characters')
+        if (first_name.length < 2) errs.push('First name must be at least 2 characters.')
+        if (last_name.length < 2) errs.push('Last name must be at least 2 characters.')
+        if (username.length <5) errs.push('Username must be at least 5 characters.')
+        if (!email.includes('@') || !email.includes('.')) errs.push('Must sign up with a valid email.')
+        if (password.length < 5) errs.push('Password must be at least 6 characters.')
         let zipreg = /^[0-9]{5}(?:-[0-9]{4})?$/;
-        if (!zipreg.test(zipcode)) errs.push('Please input a valid zipcode')
+        if (!zipreg.test(zipcode)) errs.push('Please input a valid zipcode.')
         if (errs.length > 0) {
-            setErrors(errs)
-            setHasSubmit(true)
+            setErrors([errs])
+            setHasSubmitSign(true)
         }
 
         else if (password) {
-            setHasSubmit(true);
+            setHasSubmitSign(true);
             const data = await dispatch(signUp(username, first_name, last_name, email, password, zipcode));
             if (data) {
-                setErrors(data)
+                // console.log('SIGNUP ERRORS', data)
+                setErrors([data.message ?? data.username])
             }
         }
     };
 
     const onLogin = async (e) => {
         e.preventDefault();
-        setHasSubmit(true);
+        setHasSubmitLog(true);
         const data = await dispatch(login(email, password));
         if (data) {
-            setErrors(data);
+            // console.log('LOGIN ERRORS', data)
+            setErrors(['The email address or password you entered is incorrect.']);
         }
     };
 
@@ -91,7 +94,7 @@ const SignUpForm = () => {
             {showLogModal && (
                 <Modal id='border-modal' onClose={() => {
                     // console.log('on close')
-                    setShowLogModal(false)
+                    setShowLogModal(false);
                 }}>
                     <div id="two-cols">
                         <div id='left-side'>
@@ -100,8 +103,8 @@ const SignUpForm = () => {
                                 <h5 id="signup-redirect">
                                     <div className='text'>New to Squeal? </div>
                                     <div className='button' onClick={() => {
-                                    setShowSignModal(true)
-                                    setShowLogModal(false)
+                                        setShowSignModal(true)
+                                        setShowLogModal(false)
                                 }}>
                                     Sign up
                                 </div>
@@ -110,13 +113,7 @@ const SignUpForm = () => {
 
                             </div>
                             <form id='login-form' onSubmit={onLogin}>
-                            {hasSubmit && errors.length > 0 && (
-                                    <div >
-                                        {errors.map((error, ind) => (
-                                            <div  key={ind}>{error}</div>
-                                        ))}
-                                    </div>
-                                )}
+
                                 <button
                                     id='demo-button'
                                     type='submit'
@@ -129,6 +126,14 @@ const SignUpForm = () => {
                                 </button>
 
                                 <div id='lines'><span className='or'>OR</span></div>
+
+                                {showLogModal && hasSubmitLog && errors.length > 0 && (
+                                    <div id='modal-errors-box'>
+                                        {errors.map((error, ind) => (
+                                            <div id='modal-errors' key={ind}>{error}</div>
+                                        ))}
+                                    </div>
+                                )}
                                 <div>
                                     <input
                                         id='login-input'
@@ -173,7 +178,12 @@ const SignUpForm = () => {
                 </Modal>
             )}
     {/* -----------------------------SIGN UP MODAL----------------------------- */}
-            <button className='signup-button session-buttons' onClick={() => { setShowSignModal(true) }}>
+            <button
+                className='signup-button session-buttons'
+                onClick={() => {
+                    setShowSignModal(true)
+                    setShowLogModal(false)
+            }}>
                 <span className='session-butt-word signup-word'>
                     Sign Up
                 </span>
@@ -209,10 +219,10 @@ const SignUpForm = () => {
                                 <div id='lines'><span className='or'>OR</span></div>
                             </form>
                             <form onSubmit={onSignUp}>
-                            {hasSubmit && errors.length > 0 && (
+                            {hasSubmitSign && showSignModal && errors.length > 0 && (
                                     <div id='sign-up-errors-div-container'>
                                         {errors.map((error, ind) => (
-                                            <div id='sign-up-errors-div' key={ind}>{error}</div>
+                                            <div id='modal-errors' key={ind}>{error}</div>
                                         ))}
                                     </div>
                                 )}
