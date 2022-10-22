@@ -51,9 +51,11 @@ export default function UserBiz({ user, userBizzes }) {
                 {userBizzes && Object.values(userBizzes).map(biz => (
                     <div className="single-user-biz-card" key={biz.id}>
                         <div className="user-biz-info">
-                            <NavLink exact to={`/biz/${biz.id}`}>
-                                <img className="user-biz-prev-img" src={biz.Business_Images[0].url} alt={biz.name} />
-                            </NavLink>
+                            {biz.Business_Images.length > 0 && (
+                                <NavLink exact to={`/biz/${biz.id}`}>
+                                    <img className="user-biz-prev-img" src={biz.Business_Images[0].url} alt={biz.name} />
+                                </NavLink>
+                            )}
                             <div className="user-biz-text">
                                 <NavLink className="user-biz-link" exact to={`/biz/${biz.id}`}>
                                     <div className="user-biz-name">{biz.name}</div>
