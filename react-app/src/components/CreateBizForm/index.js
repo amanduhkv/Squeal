@@ -58,6 +58,10 @@ export default function CreateBizForm() {
             errors.push("Zipcode must be exactly 5 digits");
         }
 
+        if (zipcode.length && isNaN(zipcode)) {
+            errors.push("Zipcode can only be numbers");
+        }
+
         if (state.length && state.length < 2) {
             errors.push("State must be at least 2 characters");
         }
@@ -74,7 +78,7 @@ export default function CreateBizForm() {
             const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')', ' ', '-']
 
             phone.split('').forEach(char => {
-                if (!ALLOWED_PHONE_CHAR.includes(char)) {
+                if (!ALLOWED_PHONE_CHAR.includes(char) && !errors.includes(`Phone can only include numbers or the symbols: "+", "(", or ")"`)) {
                     errors.push(`Phone can only include numbers or the symbols: "+", "(", or ")"`);
                 }
             });
