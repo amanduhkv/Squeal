@@ -65,22 +65,27 @@ function NavBar() {
     function changeLocLAandBAY() {
         setLocation('LA and the BAY, CA');
         setLoc('CA');
+        document.cookie = 'location=ca';
     }
     function changeLocLA() {
         setLocation('Los Angeles, CA');
         setLoc('Los Angeles');
+        document.cookie = 'location=la';
     }
     function changeLocOAK() {
         setLocation('Oakland, CA');
         setLoc('Oakland');
+        document.cookie = 'location=oak';
     }
     function changeLocSF() {
         setLocation('San Francisco, CA');
         setLoc('San Francisco');
+        document.cookie = 'location=sf';
     }
     function changeLocSJ() {
         setLocation('San Jose, CA');
         setLoc('San Jose');
+        document.cookie = 'location=sj';
     }
 
     if (sessionUser) {
