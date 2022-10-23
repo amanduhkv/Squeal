@@ -38,7 +38,16 @@ function NavBar() {
     const sessionUser = useSelector(state => state.session.user);
     const url = useLocation().pathname;
     const [query, setQuery] = useState('');
-    const [location, setLocation] = useState('LA and the BAY, CA');
+    const loca = document.cookie;
+    let locat;
+    switch (loca.split('=')[1]) {
+        case 'la': locat = 'Los Angeles, CA'; break;
+        case 'oak': locat = 'Oakland, CA'; break;
+        case 'sf': locat = 'San Francisco, CA'; break;
+        case 'sj': locat = 'San Jose, CA'; break;
+        default: locat = 'LA and the BAY, CA';
+    }
+    const [location, setLocation] = useState(locat);
     const [loc, setLoc] = useState('CA');
     let sessionLinks;
 
