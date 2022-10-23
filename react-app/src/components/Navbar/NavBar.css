@@ -534,7 +534,12 @@
     border-top: solid 1px #ebebeb;
     opacity: 0;
     filter: drop-shadow(0 4px 0.75rem rgb(164, 164, 164));
-    /* transition: opacity .4s; */
+}
+
+.tooltip-location:hover {
+    visibility: visible;
+    opacity: 1;
+    z-index: 40;
 }
 
 /* .search-location-input {
