@@ -87,6 +87,8 @@ export default function Search({ data }) {
                 dispatch(getAllBiz());
         }
 
+        setPageNum(0);
+
         return () => dispatch(clearData())
     }, [dispatch, location])
 
