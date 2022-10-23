@@ -45,7 +45,9 @@ const HomePage = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <img src={rev.Image.url} alt='review' className='review-image-prev' />
+                                <div className='image-container-review'>
+                                    <img src={rev.Image.url} alt='review' className='review-image-prev' />
+                                </div>
                                 <div className='review-biz-name'>
                                     <a className='review-biz-name-link' href={`/biz/${rev.Business.id}`}>{rev.Business.name}</a>
                                 </div>
@@ -178,7 +180,7 @@ const HomePage = () => {
                     </div>
                     <span className='categories-gap' />
                     <div className='categories-outer-container'>
-                        <a className='category-link' href='/biz?type=indpak'>
+                        <a className='category-link' href='/biz?type=indian'>
                             <div className='category-tile chinese-tile'>
                                 <img className='category-icon' src={indian} alt='chinese' />
                                 <p className='category-title'>
