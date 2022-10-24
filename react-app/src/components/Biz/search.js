@@ -29,14 +29,16 @@ export default function Search({ data }) {
     const [activeRes, setActiveRes] = useState(false);
     const [activeAll, setActiveAll] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
-
+    const loc = document.cookie;
+    const location = loc.split('=')[1];
+    console.log('this is the location', location);
     const [pageNum, setPageNum] = useState(0);
     const [query, setQuery] = useState('');
     const searchStuff = useLocation().search;
 
     // console.log('this is searchStuff', searchStuff);
     let cat;
-    let location;
+    // let location;
 
     // console.log('this is the data', data)
 
@@ -62,21 +64,37 @@ export default function Search({ data }) {
     /* -------USE EFFECT:get all bizzies------- */
 
     if (searchStuff) {
-        cat = searchStuff.split('?type=').join('').split('&')[0];
-        location = searchStuff.split('&loc=')[1];
+        cat = searchStuff.split('?type=').join('').split('&loc')[0].split('%20').join(' ');
+        // location = searchStuff.split('&loc=')[1];
         // console.log('heres my cat',cat)
     }
 
     useEffect(() => {
-        if (location) dispatch(getAllBiz(location))
-        else dispatch(getAllBiz())
+        switch(location) {
+            case 'la':
+                dispatch(getAllBiz('Los Angeles'));
+                break;
+            case 'sf':
+                dispatch(getAllBiz('San Francisco'));
+                break;
+            case 'oak':
+                dispatch(getAllBiz('Oakland'));
+                break;
+            case 'sj':
+                dispatch(getAllBiz('San Jose'));
+                break;
+            default:
+                dispatch(getAllBiz());
+        }
+
+        setPageNum(0);
 
         return () => dispatch(clearData())
     }, [dispatch, location])
 
 
     /* ------------SEARCH FXNS/LOGIC------------ */
-    const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name']);
+    const searchFunc = new FuzzySearch(bizArr, ['transactions.transaction', 'types.alias', 'name', 'types.type']);
 
     // const res = searchFunc.search(query)
 

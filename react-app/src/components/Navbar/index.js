@@ -38,7 +38,16 @@ function NavBar() {
     const sessionUser = useSelector(state => state.session.user);
     const url = useLocation().pathname;
     const [query, setQuery] = useState('');
-    const [location, setLocation] = useState('LA and the BAY, CA');
+    const loca = document.cookie;
+    let locat;
+    switch (loca.split('=')[1]) {
+        case 'la': locat = 'Los Angeles, CA'; break;
+        case 'oak': locat = 'Oakland, CA'; break;
+        case 'sf': locat = 'San Francisco, CA'; break;
+        case 'sj': locat = 'San Jose, CA'; break;
+        default: locat = 'LA and the BAY, CA';
+    }
+    const [location, setLocation] = useState(locat);
     const [loc, setLoc] = useState('CA');
     let sessionLinks;
 
@@ -65,22 +74,27 @@ function NavBar() {
     function changeLocLAandBAY() {
         setLocation('LA and the BAY, CA');
         setLoc('CA');
+        document.cookie = 'location=ca';
     }
     function changeLocLA() {
         setLocation('Los Angeles, CA');
         setLoc('Los Angeles');
+        document.cookie = 'location=la';
     }
     function changeLocOAK() {
         setLocation('Oakland, CA');
         setLoc('Oakland');
+        document.cookie = 'location=oak';
     }
     function changeLocSF() {
         setLocation('San Francisco, CA');
         setLoc('San Francisco');
+        document.cookie = 'location=sf';
     }
     function changeLocSJ() {
         setLocation('San Jose, CA');
         setLoc('San Jose');
+        document.cookie = 'location=sj';
     }
 
     if (sessionUser) {
@@ -192,7 +206,7 @@ function NavBar() {
                                 Quick Meals <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                             </button>
                             <div className='tooltiptext tooltip-ff'>
-                                <a className='category-link' href='/biz?type=hotdogs'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
+                                <a className='category-link' href='/biz?type=Fast Food'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
                                     <img className='tooltip-icons' src={fastfood} alt='icon' />Fast Food
                                 </button></a>
                                 <a className='category-link' href='/biz?type=pizza'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
@@ -207,7 +221,7 @@ function NavBar() {
                                 <a className='category-link' href='/biz?type=sandwiches'><button className='dropdown-display-text left-ffdropdown'>
                                     <img className='tooltip-icons' src={sandwich} alt='icon' />Sandwiches
                                 </button></a>
-                                <a className='category-link' href='/biz?type=chicken_wings'><button className='dropdown-display-text right-ffdropdown'>
+                                <a className='category-link' href='/biz?type=Chicken Wings'><button className='dropdown-display-text right-ffdropdown'>
                                     <img className='tooltip-icons' src={chicken} alt='icon' />Chicken Wings
                                 </button></a>
                                 <a className='category-link' href='/biz?type=pickup'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
@@ -226,22 +240,22 @@ function NavBar() {
                                 <a className='category-link' href='/biz?type=bakeries'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
                                     <img className='tooltip-icons' src={bakery} alt='icon' />Bakeries
                                 </button></a>
-                                <a className='category-link' href='/biz?type=bubbletea'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
+                                <a className='category-link' href='/biz?type=Bubble Tea'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
                                     <img className='tooltip-icons' src={boba} alt='icon' />Bubble Tea
                                 </button></a>
                                 <a className='category-link' href='/biz?type=desserts'><button className='dropdown-display-text left-ffdropdown'>
                                     <img className='tooltip-icons' src={dessert} alt='icon' />Desserts
                                 </button></a>
-                                <a className='category-link' href='/biz?type=coffee'><button className='dropdown-display-text right-ffdropdown'>
+                                <a className='category-link' href='/biz?type=Coffee & Tea'><button className='dropdown-display-text right-ffdropdown'>
                                     <img className='tooltip-icons' src={coffee} alt='icon' />Coffee & Tea
                                 </button></a>
-                                <a className='category-link' href='/biz?type=icecream'><button className='dropdown-display-text left-ffdropdown'>
+                                <a className='category-link' href='/biz?type=Ice Cream'><button className='dropdown-display-text left-ffdropdown'>
                                     <img className='tooltip-icons' src={icecream} alt='icon' />Ice Cream
                                 </button></a>
                                 <a className='category-link' href='/biz?type=donuts'><button className='dropdown-display-text right-ffdropdown'>
                                     <img className='tooltip-icons' src={donut} alt='icon' />Donuts
                                 </button></a>
-                                <a className='category-link' href='/biz?type=juicebars'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
+                                <a className='category-link' href='/biz?type=Juice Bars & Smoothies'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
                                     <img className='tooltip-icons' src={smoothie} alt='icon' />Smoothies
                                 </button></a>
                                 <a className='category-link' href='/biz?type=cafes'><button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
