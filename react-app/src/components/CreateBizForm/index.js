@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import * as bizActions from "../../store/businesses";
-import './CreateBizForm.css'
+import './CreateBizForm.css';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 export default function CreateBizForm() {
     const dispatch = useDispatch();
@@ -422,7 +423,7 @@ export default function CreateBizForm() {
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--create-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
+                        {bizImgUrl && <img className='img img--create-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} onError={e => e.target.src=brokenImgPig} />}
                     </div>
                 </div>
 

@@ -3,6 +3,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import * as bizActions from "../../store/businesses";
 import './CreateBizImgForm.css'
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 export default function CreateBizImgForm() {
     const dispatch = useDispatch();
@@ -83,7 +84,7 @@ export default function CreateBizImgForm() {
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--add-biz-img-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
+                        {bizImgUrl && <img className='img img--add-biz-img-url-preview' src={bizImgUrl} alt={bizImgUrl} onError={e => e.target.src=brokenImgPig} />}
                     </div>
                 </div>
 

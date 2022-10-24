@@ -5,6 +5,7 @@ import { login } from '../../store/session';
 import { Modal } from '../../context/Modal';
 import party from '../../icons/login.png'
 import './LoginForm.css'
+import brokenImgPig from '../../icons/broken-img-pig.png'
 
 const LoginForm = () => {
     const [errors, setErrors] = useState([]);
@@ -104,7 +105,7 @@ const LoginForm = () => {
                             </div>
                         </div>
                         <div>
-                            <img id='party' src={party} alt="login-party" />
+                            <img id='party' src={party} alt="login-party" onError={e => e.target.src=brokenImgPig} />
                         </div>
                     </div>
                 </Modal>

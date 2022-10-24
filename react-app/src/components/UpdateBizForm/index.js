@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import * as bizActions from "../../store/businesses";
-import './UpdateBizForm.css'
+import './UpdateBizForm.css';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 export default function UpdateBizForm() {
     const dispatch = useDispatch();
@@ -68,7 +69,7 @@ export default function UpdateBizForm() {
                 errors.push("Zipcode must be exactly 5 digits");
             }
 
-            if (zipcode.length && isNaN(zipcode)) {
+            if (zipcode?.length && isNaN(zipcode)) {
                 errors.push("Zipcode can only be numbers");
             }
 
@@ -502,7 +503,7 @@ export default function UpdateBizForm() {
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--update-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
+                        {bizImgUrl && <img className='img img--update-biz-url-preview' src={bizImgUrl} alt={bizImgUrl}  onError={e => e.target.src=brokenImgPig} />}
                     </div>
                 </div>
 

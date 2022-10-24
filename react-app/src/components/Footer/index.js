@@ -2,6 +2,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import './Footer.css'
 import logoWithText from '../../icons/squeal-in-logo.png'
 import logo from '../../icons/squeal-logo-v2.png'
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 export default function Footer() {
     const url = useLocation().pathname
@@ -97,7 +98,7 @@ export default function Footer() {
 
                 <div id='footer-copyright-wrapper'>
                     <span id='footer-copyright'>
-                        Copyright ©2022 Squeal Inc. Squeal, <img id='squeal-logo-with-text-copyright' src={logoWithText} alt='' />, <img id='squeal-logo-copyright' src={logo} alt='' /> and related marks are registered trademarks of Squeal.
+                        Copyright ©2022 Squeal Inc. Squeal, <img id='squeal-logo-with-text-copyright' src={logoWithText} alt='' onError={e => e.target.src=brokenImgPig} />, <img id='squeal-logo-copyright' src={logo} alt='' onError={e => e.target.src=brokenImgPig} /> and related marks are registered trademarks of Squeal.
                     </span>
                 </div>
             </div>
