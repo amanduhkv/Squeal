@@ -68,7 +68,7 @@ export default function UpdateBizForm() {
                 errors.push("Zipcode must be exactly 5 digits");
             }
 
-            if (zipcode.length && isNaN(zipcode)) {
+            if (zipcode?.length && isNaN(zipcode)) {
                 errors.push("Zipcode can only be numbers");
             }
 
