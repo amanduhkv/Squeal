@@ -9,6 +9,7 @@ import pig from '../../icons/user-page-icons/pig-head.png';
 import starGrey from '../../icons/user-page-icons/star-grey.png';
 import starOran from '../../icons/user-page-icons/star-oran.png';
 import savedBiz from '../../icons/user-page-icons/save.png';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 import './UserPage.css';
 import UserReviews from './UserReviews';
@@ -78,18 +79,18 @@ const UserPage = () => {
             <div className='user-prof'>
                 <div id='left-col'>
                     <button id='user-img'>
-                        <img id='pig-outline' src={user.profile_pic ? user.profile_pic : pigOutline} alt='pig-outline' width='100%' height='100%' objectFit='cover' />
+                        <img id='pig-outline' src={user.profile_pic ? user.profile_pic : pigOutline} alt='pig-outline' width='100%' height='100%' objectFit='cover' onError={e => e.target.src=brokenImgPig} />
                     </button>
                     <h3 id='bar-name'>{user.first_name}'s Profile</h3>
                     <div className='side-bar'>
                         {/* -----------------------OVERVIEW--------------------- */}
                         <NavLink to='/current' id='bar-row'>
-                            <img id='bar-img' src={pig} alt='pig' width='25px' />
+                            <img id='bar-img' src={pig} alt='pig' width='25px' onError={e => e.target.src=brokenImgPig} />
                             <div id='bar-txt'>Profile Overview</div>
                         </NavLink>
                         {/* -----------------------REVIEWS--------------------- */}
                         <NavLink to='/reviews/current' id='bar-row'>
-                            <img id='bar-img' src={starGrey} alt='star-grey' width='25px' />
+                            <img id='bar-img' src={starGrey} alt='star-grey' width='25px' onError={e => e.target.src=brokenImgPig} />
                             <div id='bar-txt'>
                                 {/* <span>{userReviews && Object.keys(userReviews).length}</span> */}
                                 Reviews
@@ -97,7 +98,7 @@ const UserPage = () => {
                         </NavLink>
                         {/* -----------------------BIZ--------------------- */}
                         <NavLink to='/biz/current' id='bar-row'>
-                            <img id='bar-img' src={savedBiz} alt='star-grey' width='25px' />
+                            <img id='bar-img' src={savedBiz} alt='star-grey' width='25px' onError={e => e.target.src=brokenImgPig} />
                             <div id='bar-txt'>My Businesses</div>
                         </NavLink>
                     </div>
@@ -108,14 +109,14 @@ const UserPage = () => {
                         <p id='user-greeting'>{pickRandomGreeting()}</p>
                         <div className='user-icons'>
                             <div id='user-rev'>
-                                <img src={starOran} alt='star' />
+                                <img src={starOran} alt='star' onError={e => e.target.src=brokenImgPig} />
                                 <p id='user-txt'>
                                     <span className="user-review-count">{userReviews && Object.keys(userReviews).length}</span>
                                     {userReviews && Object.keys(userReviews).length === 1 ? "Review" : "Reviews"}
                                 </p>
                             </div>
                             {/* <div id='user-pht'>
-                                <img src={cam} alt='cam' width='24px' />
+                                <img src={cam} alt='cam' width='24px' onError={e => e.target.src=brokenImgPig} />
                                 <p id='user-txt'>Photos</p>
                             </div> */}
                         </div>
@@ -128,7 +129,7 @@ const UserPage = () => {
                             <div>Access your businesses and reviews using the tabs on the left.</div>
                             {/* <div>
               <button to='/current' id='recent-act-user-container'>
-                <img id='recent-act-user-pic' src={user.profile_pic ? user.profile_pic : pigOutline} />
+                <img id='recent-act-user-pic' src={user.profile_pic ? user.profile_pic : pigOutline} onError={e => e.target.src=brokenImgPig} />
               </button>
             </div> */}
                         </div>
@@ -143,11 +144,11 @@ const UserPage = () => {
                 <div id='right-col'>
                     <div id='top-rc'>
                         {/* <h5 id='top-rc-text'>
-                            <img src={cam} alt='add-prof-img' width='15px' />
+                            <img src={cam} alt='add-prof-img' width='15px' onError={e => e.target.src=brokenImgPig} />
                             Add Profile Photo
                         </h5> */}
                         <h5 id='top-rc-text'>
-                            <img src={upProf} alt='up-prof' width='15px' />
+                            <img src={upProf} alt='up-prof' width='15px' onError={e => e.target.src=brokenImgPig} />
                             Update Your Profile
                         </h5>
                     </div>
@@ -156,7 +157,7 @@ const UserPage = () => {
                             <div id='title-bot'>About {user.first_name} {lastInitial}.</div>
                             <h5 id='bot-rc-title'>Stats</h5>
                             <div id='bot-rc-1'>
-                                <img src={savedBiz} alt='save' width='16px' height='16px' />
+                                <img src={savedBiz} alt='save' width='16px' height='16px' onError={e => e.target.src=brokenImgPig} />
                                 <p id='bot-rc-txt'>
                                     My Businesses ({userBizzes && Object.keys(userBizzes).length})
                                 </p>

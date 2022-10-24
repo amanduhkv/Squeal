@@ -16,6 +16,7 @@ import SingleMap from '../Map/singleMap'
 import pencil from '../../icons/user-page-icons/pencil.svg'
 import trash from '../../icons/user-page-icons/trash.svg'
 import picture from '../../icons/user-page-icons/picture.svg'
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 import './BusinessDetails.css'
 
@@ -99,14 +100,14 @@ const BusinessDetails = () => {
             let obj = bizImages[0]
             imageHeader = (
                 <span key={obj.id} className='single-business-single-image-wrapper' id='just-one-business-img' >
-                    <img className='single-business-one-image' alt={obj.id} src={obj.url} />
+                    <img className='single-business-one-image' alt={obj.id} src={obj.url} onError={e => e.target.src=brokenImgPig} />
                 </span>
             )
         }
         imageHeader = bizImages.map(obj => {
             return (
                 <span key={obj.id} className='single-business-one-image-wrapper' >
-                    <img className='single-business-one-image' alt={obj.id} src={obj.url} />
+                    <img className='single-business-one-image' alt={obj.id} src={obj.url} onError={e => e.target.src=brokenImgPig} />
                 </span>
             )
         })
@@ -218,7 +219,7 @@ const BusinessDetails = () => {
                 <div>
                     <div className='single-business-user'>
                         <div>
-                            <img height="64" width="64" src={obj.User.profile_pic} alt="profile_pic" />
+                            <img height="64" width="64" src={obj.User.profile_pic} alt="profile_pic" onError={e => e.target.src=brokenImgPig} />
                         </div>
                         <div className='single-business-user-details'>
                             <div className='single-business-user-name'>
@@ -342,20 +343,20 @@ const BusinessDetails = () => {
 
                         {obj.Review_Images && obj.Review_Images.map(obj => {
                             return (
-                                <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} alt={obj.url} /></div>
+                                <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} /></div>
                             )
                         }
                         )}
                     </div>
                     {obj.user_id === currUserId && <div className="single-businss-user-review-edit-delete-icons">
                         <NavLink className="user-review-add-img-button" to={`/review/${currUserReviewId}/images/new`}>
-                            <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" />
+                            <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" onError={e => e.target.src=brokenImgPig} />
                         </NavLink>
                         <NavLink className="user-review-edit-button" exact to={`/biz/${biz.id}/review/${currUserReviewId}`}>
-                            <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" />
+                            <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" onError={e => e.target.src=brokenImgPig} />
                         </NavLink>
                         <div className="user-review-delete-button" onClick={() => deleteReviewHandler(currUserReviewId)}>
-                            <img className="user-review-svg" src={trash} width='16px' alt="trash_svg" />
+                            <img className="user-review-svg" src={trash} width='16px' alt="trash_svg" onError={e => e.target.src=brokenImgPig} />
                         </div>
                     </div>}
                 </div>
@@ -376,7 +377,7 @@ const BusinessDetails = () => {
                         setShowPhotoModal(false)
                     }}>
                         <div className='photo-modal-close' onClick={() => setShowPhotoModal(false)}>
-                            Close <img src={x} alt="x_svg" />
+                            Close <img src={x} alt="x_svg" onError={e => e.target.src=brokenImgPig} />
                         </div>
                         <div className='single-business-modal-title'>Photos for {biz.name}</div>
                         {bizImages.length === 0 && (
@@ -389,13 +390,13 @@ const BusinessDetails = () => {
 
                             {bizImages.length > 0 && bizImages.map(obj => {
                                 return (
-                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} />
+                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
                                 )
                             }
                             )}
                             {allReviewImages.length > 0 && allReviewImages.map(obj => {
                                 return (
-                                    <img className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} />
+                                    <img className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
                                 )
                             })}
                         </div>
@@ -517,7 +518,7 @@ const BusinessDetails = () => {
                                 </div>
                             </div>
                             <div className='single-business-claimedtypes'>
-                                <img alt='check' width="16" height="16" src={check} />
+                                <img alt='check' width="16" height="16" src={check} onError={e => e.target.src=brokenImgPig} />
                                 <span>
                                     <span style={{ color: '#52B4FC', fontWeight: '500' }}>Claimed</span>  ·  {biz.price_range}  ·  {typeStr}
                                 </span>
@@ -541,7 +542,7 @@ const BusinessDetails = () => {
                             <div className='single-business-review-bar-button'>
                                 <NavLink id='sb-review-button' style={{ textDecoration: 'none', color: "white" }} to={reviewUsers.includes(currUserId) ? `/biz/${biz.id}/review/${currUserReviewId}/` : `/newreview/biz/${biz.id}`}>
                                     <span className='single-business-reviewButton'>
-                                        <img width='24' height='24' src={star} alt="star_svg" />
+                                        <img width='24' height='24' src={star} alt="star_svg" onError={e => e.target.src=brokenImgPig} />
                                         {reviewUsers.includes(currUserId) ? "Edit your review" : "Write a review"}
                                     </span>
                                 </NavLink>
@@ -549,14 +550,14 @@ const BusinessDetails = () => {
                             {currUserId && currUserId === currBizOwnId && (
                             <div className='sb-user-buttons'>
                                 <NavLink className="single-business-user-bar-button" to={`/biz/${biz.id}/update`}>
-                                    <img className="user-biz-svg" src={pencil} width='16px' alt="pencil_svg" />
+                                    <img className="user-biz-svg" src={pencil} width='16px' alt="pencil_svg" onError={e => e.target.src=brokenImgPig} />
                                     Update Business
                                 </NavLink>
                                 <span
                                     className="single-business-user-bar-button"
                                     onClick={() => deleteBizHandler(biz.id)}
                                 >
-                                    <img className="user-biz-svg" src={trash} width='16px' alt="trash_svg" />
+                                    <img className="user-biz-svg" src={trash} width='16px' alt="trash_svg" onError={e => e.target.src=brokenImgPig} />
                                     Delete Business
                                 </span>
                             </div>
@@ -587,14 +588,14 @@ const BusinessDetails = () => {
                         {biz.phone_number && (
                             <div className='single-business-contact'>
                                 <div>{phoneNumber(biz.phone_number)}</div>
-                                <img width='24' height='24' src={phone} alt="phone_svg" />
+                                <img width='24' height='24' src={phone} alt="phone_svg" onError={e => e.target.src=brokenImgPig} />
                             </div>
                         )}
                         {/* <span className='single-business-box-divider'></span> */}
                         {biz.address && (
                             <div className='single-business-contact'>
                                 <div>{biz.address} {biz.city}, {biz.state} </div>
-                                <img width='24' height='24' img src={map} alt="map_svg" />
+                                <img width='24' height='24' img src={map} alt="map_svg" onError={e => e.target.src=brokenImgPig} />
                             </div>
                         )}
                     </div>
@@ -605,7 +606,7 @@ const BusinessDetails = () => {
                         {/* {user && <div className='single-business-start-your-review'>
                             <div className='single-business-user'>
                                 <div>
-                                    <img height="72" width="72" src={user.profile_pic} alt="profile_pic" />
+                                    <img height="72" width="72" src={user.profile_pic} alt="profile_pic" onError={e => e.target.src=brokenImgPig} />
                                 </div>
                                 <div className='single-business-user-details start-review'>
                                     <div className='single-business-user-name'>

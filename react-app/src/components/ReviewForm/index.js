@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getOneBiz, clearData } from '../../store/businesses';
 import userpig from '../../icons/user-pig.png';
 import { createReview } from '../../store/reviews';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 const ReviewForm = () => {
     const history = useHistory();
@@ -94,7 +95,7 @@ const ReviewForm = () => {
                 {/* First review start */}
                 <div className='sidebar-review-card'>
                     <div className='review-card-user-info sidebar-review-user'>
-                    <img className='review-usericon' src={userpig} alt='user' />
+                    <img className='review-usericon' src={userpig} alt='user' onError={e => e.target.src=brokenImgPig} />
                     <div className='review-userinfo'>
                         <span className='review-username'>
                             Jae Young H.
@@ -223,7 +224,7 @@ const ReviewForm = () => {
                 {/* First review start */}
                 <div className='sidebar-review-card'>
                     <div className='review-card-user-info sidebar-review-user'>
-                    <img className='review-usericon' src={userpig} alt='user' />
+                    <img className='review-usericon' src={userpig} alt='user' onError={e => e.target.src=brokenImgPig} />
                     <div className='review-userinfo'>
                         <span className='review-username'>
                             Amanda V.
@@ -354,7 +355,7 @@ const ReviewForm = () => {
                 {/* First review start */}
                 <div className='sidebar-review-card'>
                     <div className='review-card-user-info sidebar-review-user'>
-                    <img className='review-usericon' src={userpig} alt='user' />
+                    <img className='review-usericon' src={userpig} alt='user' onError={e => e.target.src=brokenImgPig} />
                     <div className='review-userinfo'>
                         <span className='review-username'>
                             Michael J.

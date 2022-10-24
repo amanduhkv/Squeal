@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import search from '../../icons/search.svg';
 import './NavBar.css';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 const HomeBanner = () => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -63,7 +64,7 @@ const HomeBanner = () => {
     // ***************************************************************************
     if (!isLoaded) return (
         <div className='loading-container'>
-            <img className='squeal-loading' src='https://i.imgur.com/NoEXVTv.gif' alt='loading' />
+            <img className='squeal-loading' src='https://i.imgur.com/NoEXVTv.gif' alt='loading' onError={e => e.target.src=brokenImgPig} />
         </div>
     );
     return (
@@ -75,7 +76,7 @@ const HomeBanner = () => {
                     </h1>
                     <a className='homeBanner-link' href='/biz?type=japanese'>
                         <button className='homepage-button sushi-button'>
-                            <img src={search} alt='search' className='mag-glass' />
+                            <img src={search} alt='search' className='mag-glass' onError={e => e.target.src=brokenImgPig} />
                             <span className='homepage-button-span'>Japanese</span>
                         </button></a>
                 </div>
@@ -87,7 +88,7 @@ const HomeBanner = () => {
                     </h1>
                     <a className='homeBanner-link' href='/biz?type=korean'>
                         <button className='homepage-button sushi-button'>
-                            <img src={search} alt='search' className='mag-glass' />
+                            <img src={search} alt='search' className='mag-glass' onError={e => e.target.src=brokenImgPig} />
                             <span className='homepage-button-span'>Korean</span>
                         </button></a>
                 </div>
@@ -99,7 +100,7 @@ const HomeBanner = () => {
                     </h1>
                     <a className='homeBanner-link' href='/biz?type=vietnamese'>
                         <button className='homepage-button sushi-button'>
-                            <img src={search} alt='search' className='mag-glass' />
+                            <img src={search} alt='search' className='mag-glass' onError={e => e.target.src=brokenImgPig} />
                             <span className='homepage-button-span'>Vietnamese</span>
                         </button></a>
                 </div>

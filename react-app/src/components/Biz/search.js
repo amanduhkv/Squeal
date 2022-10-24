@@ -8,6 +8,7 @@ import { search, getAllBiz, clearData } from "../../store/businesses";
 import x from '../../icons/all-biz-page/x.svg';
 import check from '../../icons/all-biz-page/check.svg';
 import txtbub from '../../icons/all-biz-page/text-bubble.svg';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 import './Biz.css';
 
@@ -434,7 +435,7 @@ export default function Search({ data }) {
                             to={`/biz/${biz.id}`}
                         >
                             <div className="biz-img-box" >
-                                <img id='biz-img' src={biz.Business_Images[0].url} alt='biz-img' />
+                                <img id='biz-img' src={biz.Business_Images[0].url} alt='biz-img' onError={e => e.target.src=brokenImgPig} />
                             </div>
                             <div className="biz-info-box">
                                 <li key={biz.id} className="biz-title">
@@ -591,7 +592,7 @@ export default function Search({ data }) {
                                     </div>)
                                 }
                                 <div id='biz-rev'>
-                                    <img src={txtbub} alt='txtbubble' width='16px' height='14px' />
+                                    <img src={txtbub} alt='txtbubble' width='16px' height='14px' onError={e => e.target.src=brokenImgPig} />
                                     <div id='biz-rev-p'>
                                         "{biz.Review.preview_review}"
                                     </div>
@@ -600,17 +601,17 @@ export default function Search({ data }) {
                                     <span id='tra-text'>
                                         <img alt='tra-img' width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
                                             ele.transaction === 'pickup'
-                                        ).length ? check : x} /> Pickup
+                                        ).length ? check : x} onError={e => e.target.src=brokenImgPig} /> Pickup
                                     </span>
                                     <span id='tra-text'>
                                         <img alt='tra-img' width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
                                             ele.transaction === 'delivery'
-                                        ).length ? check : x} /> Delivery
+                                        ).length ? check : x} onError={e => e.target.src=brokenImgPig} /> Delivery
                                     </span>
                                     <span id='tra-text'>
                                         <img alt='tra-img' width='16px' height='10px' src={!!Object.values(biz.transactions).filter(ele =>
                                             ele.transaction === 'restaurant_reservation'
-                                        ).length ? check : x} /> Reservations
+                                        ).length ? check : x} onError={e => e.target.src=brokenImgPig} /> Reservations
                                     </span>
 
                                 </div>
