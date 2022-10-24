@@ -137,8 +137,9 @@
     position: relative;
     top: 580px;
     display: grid;
-    width: 90%;
-    min-width: 1124px;
+    /* width: 90%; */
+    width: 80%;
+    min-width: 1140px;
     max-width: 1672px;
     margin: auto;
     gap: 60px;
@@ -416,4 +417,70 @@
     display: flex;
     justify-content: start;
     margin-top: -20px;
+}
+
+.overall-rating-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-left-side-container {
+    width: 168px;
+}
+
+.single-biz-review-dist {
+    width: 70%;
+}
+
+.star-section {
+    display: flex;
+    align-items: center;
+}
+
+.star-title-section {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-align: right;
+    width: 50px;
+}
+
+.stars-distribution {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: rgb(240, 240, 240);
+    margin-left: 20px;
+}
+
+.five-stars-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(251,67,60,1);
+}
+
+.four-stars-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 100, 61, 1);
+}
+
+.three-stars-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 135, 66, 1);
+}
+
+.two-stars-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 173, 72, 1);
+}
+
+.one-star-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 204, 75, 1);
 }

@@ -43,6 +43,16 @@ const BusinessDetails = () => {
     let currUserId
     let currUserReviewId = 0
     let currBizOwnId;
+    let five = 0;
+    let four = 0;
+    let three = 0;
+    let two = 0;
+    let one = 0;
+    let fivestyle;
+    let fourstyle;
+    let threestyle;
+    let twostyle;
+    let onestyle;
     if (user) {
         currUserId = user.id
     }
@@ -55,6 +65,23 @@ const BusinessDetails = () => {
         if (reviewUsers.includes(currUserId)) {
             let currUserReview = Object.values(bizReviews).filter(obj => obj.user_id === currUserId)[0]
             currUserReviewId = currUserReview.id
+        }
+        Object.values(bizReviews).forEach(rev => rev.rating === 5 ? five++ : rev.rating === 4 ? four++ : rev.rating === 3 ? three++ : rev.rating === 2 ? two++ : one++);
+
+        fivestyle = {
+            width: `${five / numReviews * 100}%`
+        }
+        fourstyle = {
+            width: `${four / numReviews * 100}%`
+        }
+        threestyle = {
+            width: `${three / numReviews * 100}%`
+        }
+        twostyle = {
+            width: `${two / numReviews * 100}%`
+        }
+        onestyle = {
+            width: `${one / numReviews * 100}%`
         }
     }
     if (bizImages) {
@@ -514,7 +541,7 @@ const BusinessDetails = () => {
                                     </svg>
                                 </div>
                                 <div className='single-business-reviewsnumber'>
-                                    {numReviews} reviews
+                                    {numReviews} {numReviews === 1 ? 'review' : 'reviews'}
                                 </div>
                             </div>
                             <div className='single-business-claimedtypes'>
@@ -627,7 +654,8 @@ const BusinessDetails = () => {
                         </div>} */}
 
 
-                        <div>
+                        <div className='overall-rating-section'>
+                            <div className='rating-left-side-container'>
                             <div className='single-business-overall-rating'>
                                 Overall Rating
                             </div>
@@ -735,6 +763,49 @@ const BusinessDetails = () => {
                             </div>
                             <div className='single-business-overall-num-rating'>
                                 {numReviews} reviews
+                            </div>
+                            </div>
+                            <div className='single-biz-review-dist'>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    5 stars
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='five-stars-distribution' style={fivestyle}></div>
+                                    </div>
+                                </div>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    4 stars
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='four-stars-distribution' style={fourstyle}></div>
+                                    </div>
+                                </div>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    3 stars
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='three-stars-distribution' style={threestyle}></div>
+                                    </div>
+                                </div>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    2 stars
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='two-stars-distribution' style={twostyle}></div>
+                                    </div>
+                                </div>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    1 star
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='one-star-distribution' style={onestyle}></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
