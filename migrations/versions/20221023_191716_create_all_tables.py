@@ -16,7 +16,11 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
+<<<<<<<< HEAD:migrations/versions/20221022_002559_create_all_tables.py
+revision = 'c0b47e7ead0f'
+========
 revision = 'b66a1b33b684'
+>>>>>>>> b1db06a0c0b8c0132cf512bcfebc193ab5022b93:migrations/versions/20221023_191716_create_all_tables.py
 down_revision = None
 branch_labels = None
 depends_on = None

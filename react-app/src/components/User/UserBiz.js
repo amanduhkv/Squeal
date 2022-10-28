@@ -6,7 +6,7 @@ import pencil from '../../icons/user-page-icons/pencil.svg';
 import trash from '../../icons/user-page-icons/trash.svg';
 import x from '../../icons/x.svg';
 import * as bizActions from "../../store/businesses";
-
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 
 export default function UserBiz({ user, userBizzes }) {
@@ -24,6 +24,10 @@ export default function UserBiz({ user, userBizzes }) {
     }
 
     const deleteImgHandler = (bizId, imgId) => {
+        if (userBizzes[bizId].Business_Images.length === 1) {
+            return alert('A business must have at least 1 image')
+        }
+
         try {
             dispatch(bizActions.deleteImg(bizId, imgId));
         }
@@ -51,9 +55,11 @@ export default function UserBiz({ user, userBizzes }) {
                 {userBizzes && Object.values(userBizzes).map(biz => (
                     <div className="single-user-biz-card" key={biz.id}>
                         <div className="user-biz-info">
-                            <NavLink exact to={`/biz/${biz.id}`}>
-                                <img className="user-biz-prev-img" src={biz.Business_Images[0].url} alt={biz.name} />
-                            </NavLink>
+                            {biz.Business_Images.length > 0 && (
+                                <NavLink exact to={`/biz/${biz.id}`}>
+                                    <img className="user-biz-prev-img" src={biz.Business_Images[0].url} alt={biz.name} onError={e => e.target.src=brokenImgPig} />
+                                </NavLink>
+                            )}
                             <div className="user-biz-text">
                                 <NavLink className="user-biz-link" exact to={`/biz/${biz.id}`}>
                                     <div className="user-biz-name">{biz.name}</div>
@@ -178,8 +184,8 @@ export default function UserBiz({ user, userBizzes }) {
                             <div className="user-biz-imgs">
                                 {biz.Business_Images.length > 0 && biz.Business_Images.map(img => (
                                     <div className="user-biz-img-container" key={img.id} onClick={() => deleteImgHandler(biz.id, img.id)}>
-                                        <img className="user-biz-svg-x" src={x} width='100px' alt="x_svg" />
-                                        <img className="user-biz-img" key={img.id} src={img.url} alt={img.url} />
+                                        <img className="user-biz-svg-x" src={x} width='100px' alt="x_svg" onError={e => e.target.src=brokenImgPig} />
+                                        <img className="user-biz-img" key={img.id} src={img.url} alt={img.url} onError={e => e.target.src=brokenImgPig} />
                                     </div>
                                 ))}
                             </div>
@@ -188,13 +194,13 @@ export default function UserBiz({ user, userBizzes }) {
 
                         <div className="user-biz-edit-delete-icons">
                             <NavLink className="user-biz-add-img-button" to={`/biz/${biz.id}/images/new`}>
-                                <img className="user-biz-svg" src={picture} width='16px' alt="pic_svg" />
+                                <img className="user-biz-svg" src={picture} width='16px' alt="pic_svg" onError={e => e.target.src=brokenImgPig} />
                             </NavLink>
                             <NavLink className="user-biz-edit-button" to={`/biz/${biz.id}/update`}>
-                                <img className="user-biz-svg" src={pencil} width='16px' alt="pencil_svg" />
+                                <img className="user-biz-svg" src={pencil} width='16px' alt="pencil_svg" onError={e => e.target.src=brokenImgPig} />
                             </NavLink>
                             <div className="user-biz-delete-button" onClick={() => deleteBizHandler(biz.id)}>
-                                <img className="user-biz-svg" src={trash} width='16px' alt="trash_svg" />
+                                <img className="user-biz-svg" src={trash} width='16px' alt="trash_svg" onError={e => e.target.src=brokenImgPig} />
                             </div>
                         </div>
                     </div>

@@ -11,6 +11,8 @@ import korean from '../../icons/category-tiles/kor.svg';
 import mexican from '../../icons/category-tiles/mex.svg';
 import thai from '../../icons/category-tiles/thai.svg';
 import vietnamese from '../../icons/category-tiles/vietn.svg';
+import brokenImgPig from '../../icons/broken-img-pig.png';
+
 
 const HomePage = () => {
     const dispatch = useDispatch();
@@ -35,7 +37,7 @@ const HomePage = () => {
                         (
                             <div key={i} className='review-card'>
                                 <div className='review-card-user-info'>
-                                    <img className='review-usericon' src={userpig} alt='user' />
+                                    <img className='review-usericon' src={userpig} alt='user' onError={e => e.target.src=brokenImgPig} />
                                     <div className='review-userinfo'>
                                         <span className='review-username'>
                                             {rev.User.first_name} {rev.User.last_name[0]}.
@@ -45,7 +47,9 @@ const HomePage = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <img src={rev.Image.url} alt='review' className='review-image-prev' />
+                                <div className='image-container-review'>
+                                    <img src={rev.Image.url} alt='review' className='review-image-prev' onError={e => e.target.src=brokenImgPig} />
+                                </div>
                                 <div className='review-biz-name'>
                                     <a className='review-biz-name-link' href={`/biz/${rev.Business.id}`}>{rev.Business.name}</a>
                                 </div>
@@ -169,7 +173,7 @@ const HomePage = () => {
                     <div className='categories-outer-container'>
                         <a className='category-link' href='/biz?type=chinese'>
                             <div className='category-tile chinese-tile'>
-                                <img className='category-icon' src={chinese} alt='chinese' />
+                                <img className='category-icon' src={chinese} alt='chinese' onError={e => e.target.src=brokenImgPig} />
                                 <p className='category-title'>
                                     Chinese
                                 </p>
@@ -178,9 +182,9 @@ const HomePage = () => {
                     </div>
                     <span className='categories-gap' />
                     <div className='categories-outer-container'>
-                        <a className='category-link' href='/biz?type=indpak'>
+                        <a className='category-link' href='/biz?type=indian'>
                             <div className='category-tile chinese-tile'>
-                                <img className='category-icon' src={indian} alt='chinese' />
+                                <img className='category-icon' src={indian} alt='chinese' onError={e => e.target.src=brokenImgPig} />
                                 <p className='category-title'>
                                     Indian
                                 </p>
@@ -191,7 +195,7 @@ const HomePage = () => {
                     <div className='categories-outer-container'>
                         <a className='category-link' href='/biz?type=italian'>
                             <div className='category-tile chinese-tile'>
-                                <img className='category-icon' src={italian} alt='chinese' />
+                                <img className='category-icon' src={italian} alt='chinese' onError={e => e.target.src=brokenImgPig} />
                                 <p className='category-title'>
                                     Italian
                                 </p>
@@ -202,7 +206,7 @@ const HomePage = () => {
                     <div className='categories-outer-container'>
                         <a className='category-link' href='/biz?type=japanese'>
                             <div className='category-tile chinese-tile'>
-                                <img className='category-icon' src={japanese} alt='chinese' />
+                                <img className='category-icon' src={japanese} alt='chinese' onError={e => e.target.src=brokenImgPig} />
                                 <p className='category-title'>
                                     Japanese
                                 </p>
@@ -214,7 +218,7 @@ const HomePage = () => {
                     <div className='categories-outer-container'>
                         <a className='category-link' href='/biz?type=korean'>
                             <div className='category-tile chinese-tile'>
-                                <img className='category-icon' src={korean} alt='chinese' />
+                                <img className='category-icon' src={korean} alt='chinese' onError={e => e.target.src=brokenImgPig} />
                                 <p className='category-title'>
                                     Korean
                                 </p>
@@ -225,7 +229,7 @@ const HomePage = () => {
                     <div className='categories-outer-container'>
                         <a className='category-link' href='/biz?type=mexican'>
                             <div className='category-tile chinese-tile'>
-                                <img className='category-icon' src={mexican} alt='chinese' />
+                                <img className='category-icon' src={mexican} alt='chinese' onError={e => e.target.src=brokenImgPig} />
                                 <p className='category-title'>
                                     Mexican
                                 </p>
@@ -236,7 +240,7 @@ const HomePage = () => {
                     <div className='categories-outer-container'>
                         <a className='category-link' href='/biz?type=thai'>
                             <div className='category-tile chinese-tile'>
-                                <img className='category-icon' src={thai} alt='chinese' />
+                                <img className='category-icon' src={thai} alt='chinese' onError={e => e.target.src=brokenImgPig} />
                                 <p className='category-title'>
                                     Thai
                                 </p>
@@ -247,7 +251,7 @@ const HomePage = () => {
                     <div className='categories-outer-container'>
                         <a className='category-link' href='/biz?type=vietnamese'>
                             <div className='category-tile chinese-tile'>
-                                <img className='category-icon' src={vietnamese} alt='chinese' />
+                                <img className='category-icon' src={vietnamese} alt='chinese' onError={e => e.target.src=brokenImgPig} />
                                 <p className='category-title'>
                                     Vietnamese
                                 </p>

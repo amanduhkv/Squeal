@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import * as bizActions from '../../store/businesses'
@@ -16,11 +16,13 @@ import SingleMap from '../Map/singleMap'
 import pencil from '../../icons/user-page-icons/pencil.svg'
 import trash from '../../icons/user-page-icons/trash.svg'
 import picture from '../../icons/user-page-icons/picture.svg'
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 import './BusinessDetails.css'
 
 const BusinessDetails = () => {
     const dispatch = useDispatch()
+    const history = useHistory();
     const { bizId } = useParams()
 
     const [showPhotoModal, setShowPhotoModal] = useState(false);
@@ -28,7 +30,7 @@ const BusinessDetails = () => {
 
 
     const biz = useSelector(state => state.businesses.singleBusiness)
-    // const bizOwner = useSelector(state => state.businesses.singleBusiness.Owner)
+    const bizOwner = useSelector(state => state.businesses.singleBusiness.Owner)
     const bizImages = useSelector(state => state.businesses.singleBusiness.Business_Images)
     const bizReviews = useSelector(state => state.reviews.business)
     const types = useSelector(state => state.businesses.singleBusiness.types)
@@ -40,8 +42,22 @@ const BusinessDetails = () => {
     let reviewUsers = []
     let currUserId
     let currUserReviewId = 0
+    let currBizOwnId;
+    let five = 0;
+    let four = 0;
+    let three = 0;
+    let two = 0;
+    let one = 0;
+    let fivestyle;
+    let fourstyle;
+    let threestyle;
+    let twostyle;
+    let onestyle;
     if (user) {
         currUserId = user.id
+    }
+    if (bizOwner) {
+        currBizOwnId = bizOwner.id
     }
     if (bizReviews) {
         numReviews = (Object.values(bizReviews).length)
@@ -49,6 +65,23 @@ const BusinessDetails = () => {
         if (reviewUsers.includes(currUserId)) {
             let currUserReview = Object.values(bizReviews).filter(obj => obj.user_id === currUserId)[0]
             currUserReviewId = currUserReview.id
+        }
+        Object.values(bizReviews).forEach(rev => rev.rating === 5 ? five++ : rev.rating === 4 ? four++ : rev.rating === 3 ? three++ : rev.rating === 2 ? two++ : one++);
+
+        fivestyle = {
+            width: `${five / numReviews * 100}%`
+        }
+        fourstyle = {
+            width: `${four / numReviews * 100}%`
+        }
+        threestyle = {
+            width: `${three / numReviews * 100}%`
+        }
+        twostyle = {
+            width: `${two / numReviews * 100}%`
+        }
+        onestyle = {
+            width: `${one / numReviews * 100}%`
         }
     }
     if (bizImages) {
@@ -61,6 +94,18 @@ const BusinessDetails = () => {
                 let reviews = reviewsArr.filter(obj => obj.url)
                 allReviewImages = reviews.flat()
             }
+        }
+    }
+
+    const deleteBizHandler = (bizId) => {
+        try {
+            dispatch(bizActions.removeBiz(bizId));
+            history.push('/biz')
+        }
+
+        catch (res) {
+            const data = res.json();
+            if (data) console.log(data);
         }
     }
 
@@ -82,14 +127,14 @@ const BusinessDetails = () => {
             let obj = bizImages[0]
             imageHeader = (
                 <span key={obj.id} className='single-business-single-image-wrapper' id='just-one-business-img' >
-                    <img className='single-business-one-image' alt={obj.id} src={obj.url} />
+                    <img className='single-business-one-image' alt={obj.id} src={obj.url} onError={e => e.target.src=brokenImgPig} />
                 </span>
             )
         }
         imageHeader = bizImages.map(obj => {
             return (
                 <span key={obj.id} className='single-business-one-image-wrapper' >
-                    <img className='single-business-one-image' alt={obj.id} src={obj.url} />
+                    <img className='single-business-one-image' alt={obj.id} src={obj.url} onError={e => e.target.src=brokenImgPig} />
                 </span>
             )
         })
@@ -120,30 +165,36 @@ const BusinessDetails = () => {
         let currentTime = new Date().getHours()
         let currentMinutes = new Date().getMinutes()
         if (open && close) {
-            if (open === "0000") {
-                open = "1200"
-                }
-            // if (close === "0000") {
-            //     close = "0000"
-            // }
             if (open === close) {
                 res = "Open"
-            } else {
-                res = currentTime < open.slice(0, 2) ||
+            }
+            if (open === "0000") {
+                open = "1200"
+            }
+            // if (close === "0000") {
+                //     close = "0000"
+                // }
+            else {
+                res = currentTime < +open.slice(0, 2) ||
                 (currentTime === +open.slice(0, 2) && currentMinutes < +open.slice(2)) ||
-                (currentTime < 12 && currentTime > close.slice(0, 2)) ||
-                (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) ? "Closed" : "Open"
-                console.log(currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2))
+                (currentTime < 12 && currentTime > +close.slice(0, 2)) ||
+                (currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2)) || (currentTime > 12 && currentTime > +close.slice(0, 2)) ? "Closed" : "Open"
+                // console.log(currentTime === +close.slice(0, 2) && currentMinutes > +close.slice(2))
+                // console.log((currentTime > 12 && currentTime > +close.slice(0, 2)))
+                // console.log('RES', currentTime)
             }
         }
         return res
     }
     function phoneNumber(str) {
         let res
-        if (str) {
-            console.log('num', str)
-            // str = str.slice(1)
-            res = "(" + str.slice(0, 4) + ") " + str.slice(3, 6) + '-' + str.slice(6)
+        if (str.startsWith('+')) {
+            str = str.slice(2)
+            res = "(" + str.slice(0, 3) + ") " + str.slice(3, 6) + '-' + str.slice(6)
+        }
+        // if (str.startsWith('('))
+        else {
+            res = str
         }
         return res
     }
@@ -151,6 +202,7 @@ const BusinessDetails = () => {
     let hours
     if (biz.start_time && biz.end_time) {
         let open = openOrClosed(biz.start_time, biz.end_time)
+        // console.log("OPEN", open)
         let today = new Date().getDay()
         if (biz.start_time === biz.end_time) {
             hours = days.map(day => {
@@ -194,7 +246,7 @@ const BusinessDetails = () => {
                 <div>
                     <div className='single-business-user'>
                         <div>
-                            <img height="64" width="64" src={obj.User.profile_pic} alt="profile_pic" />
+                            <img height="64" width="64" src={obj.User.profile_pic} alt="profile_pic" onError={e => e.target.src=brokenImgPig} />
                         </div>
                         <div className='single-business-user-details'>
                             <div className='single-business-user-name'>
@@ -318,20 +370,20 @@ const BusinessDetails = () => {
 
                         {obj.Review_Images && obj.Review_Images.map(obj => {
                             return (
-                                <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} alt={obj.url} /></div>
+                                <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} /></div>
                             )
                         }
                         )}
                     </div>
                     {obj.user_id === currUserId && <div className="single-businss-user-review-edit-delete-icons">
                         <NavLink className="user-review-add-img-button" to={`/review/${currUserReviewId}/images/new`}>
-                            <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" />
+                            <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" onError={e => e.target.src=brokenImgPig} />
                         </NavLink>
                         <NavLink className="user-review-edit-button" exact to={`/biz/${biz.id}/review/${currUserReviewId}`}>
-                            <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" />
+                            <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" onError={e => e.target.src=brokenImgPig} />
                         </NavLink>
                         <div className="user-review-delete-button" onClick={() => deleteReviewHandler(currUserReviewId)}>
-                            <img className="user-review-svg" src={trash} width='16px' alt="trash_svg" />
+                            <img className="user-review-svg" src={trash} width='16px' alt="trash_svg" onError={e => e.target.src=brokenImgPig} />
                         </div>
                     </div>}
                 </div>
@@ -352,7 +404,7 @@ const BusinessDetails = () => {
                         setShowPhotoModal(false)
                     }}>
                         <div className='photo-modal-close' onClick={() => setShowPhotoModal(false)}>
-                            Close <img src={x} alt="x_svg" />
+                            Close <img src={x} alt="x_svg" onError={e => e.target.src=brokenImgPig} />
                         </div>
                         <div className='single-business-modal-title'>Photos for {biz.name}</div>
                         {bizImages.length === 0 && (
@@ -365,13 +417,13 @@ const BusinessDetails = () => {
 
                             {bizImages.length > 0 && bizImages.map(obj => {
                                 return (
-                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} />
+                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
                                 )
                             }
                             )}
                             {allReviewImages.length > 0 && allReviewImages.map(obj => {
                                 return (
-                                    <img className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} />
+                                    <img className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
                                 )
                             })}
                         </div>
@@ -489,11 +541,11 @@ const BusinessDetails = () => {
                                     </svg>
                                 </div>
                                 <div className='single-business-reviewsnumber'>
-                                    {numReviews} reviews
+                                    {numReviews} {numReviews === 1 ? 'review' : 'reviews'}
                                 </div>
                             </div>
                             <div className='single-business-claimedtypes'>
-                                <img alt='check' width="16" height="16" src={check} />
+                                <img alt='check' width="16" height="16" src={check} onError={e => e.target.src=brokenImgPig} />
                                 <span>
                                     <span style={{ color: '#52B4FC', fontWeight: '500' }}>Claimed</span>  ·  {biz.price_range}  ·  {typeStr}
                                 </span>
@@ -515,13 +567,28 @@ const BusinessDetails = () => {
                     <div className='single-business-reviews-button'>
                         <div className='single-business-review-bar'>
                             <div className='single-business-review-bar-button'>
-                                <NavLink style={{ textDecoration: 'none', color: "white" }} to={reviewUsers.includes(currUserId) ? `/biz/${biz.id}/review/${currUserReviewId}/` : `/newreview/biz/${biz.id}`}>
+                                <NavLink id='sb-review-button' style={{ textDecoration: 'none', color: "white" }} to={reviewUsers.includes(currUserId) ? `/biz/${biz.id}/review/${currUserReviewId}/` : `/newreview/biz/${biz.id}`}>
                                     <span className='single-business-reviewButton'>
-                                        <img width='24' height='24' src={star} alt="star_svg" />
+                                        <img width='24' height='24' src={star} alt="star_svg" onError={e => e.target.src=brokenImgPig} />
                                         {reviewUsers.includes(currUserId) ? "Edit your review" : "Write a review"}
                                     </span>
                                 </NavLink>
                             </div>
+                            {currUserId && currUserId === currBizOwnId && (
+                            <div className='sb-user-buttons'>
+                                <NavLink className="single-business-user-bar-button" to={`/biz/${biz.id}/update`}>
+                                    <img className="user-biz-svg" src={pencil} width='16px' alt="pencil_svg" onError={e => e.target.src=brokenImgPig} />
+                                    Update Business
+                                </NavLink>
+                                <span
+                                    className="single-business-user-bar-button"
+                                    onClick={() => deleteBizHandler(biz.id)}
+                                >
+                                    <img className="user-biz-svg" src={trash} width='16px' alt="trash_svg" onError={e => e.target.src=brokenImgPig} />
+                                    Delete Business
+                                </span>
+                            </div>
+                            )}
                         </div>
                         <div className='single-business-title'>Location & Hours</div>
                         <div className='single-business-location-hours'>
@@ -548,14 +615,14 @@ const BusinessDetails = () => {
                         {biz.phone_number && (
                             <div className='single-business-contact'>
                                 <div>{phoneNumber(biz.phone_number)}</div>
-                                <img width='24' height='24' src={phone} alt="phone_svg" />
+                                <img width='24' height='24' src={phone} alt="phone_svg" onError={e => e.target.src=brokenImgPig} />
                             </div>
                         )}
-                        <span className='single-business-box-divider'></span>
+                        {/* <span className='single-business-box-divider'></span> */}
                         {biz.address && (
                             <div className='single-business-contact'>
                                 <div>{biz.address} {biz.city}, {biz.state} </div>
-                                <img width='24' height='24' img src={map} alt="map_svg" />
+                                <img width='24' height='24' img src={map} alt="map_svg" onError={e => e.target.src=brokenImgPig} />
                             </div>
                         )}
                     </div>
@@ -566,7 +633,7 @@ const BusinessDetails = () => {
                         {/* {user && <div className='single-business-start-your-review'>
                             <div className='single-business-user'>
                                 <div>
-                                    <img height="72" width="72" src={user.profile_pic} alt="profile_pic" />
+                                    <img height="72" width="72" src={user.profile_pic} alt="profile_pic" onError={e => e.target.src=brokenImgPig} />
                                 </div>
                                 <div className='single-business-user-details start-review'>
                                     <div className='single-business-user-name'>
@@ -587,7 +654,8 @@ const BusinessDetails = () => {
                         </div>} */}
 
 
-                        <div>
+                        <div className='overall-rating-section'>
+                            <div className='rating-left-side-container'>
                             <div className='single-business-overall-rating'>
                                 Overall Rating
                             </div>
@@ -695,6 +763,49 @@ const BusinessDetails = () => {
                             </div>
                             <div className='single-business-overall-num-rating'>
                                 {numReviews} reviews
+                            </div>
+                            </div>
+                            <div className='single-biz-review-dist'>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    5 stars
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='five-stars-distribution' style={fivestyle}></div>
+                                    </div>
+                                </div>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    4 stars
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='four-stars-distribution' style={fourstyle}></div>
+                                    </div>
+                                </div>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    3 stars
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='three-stars-distribution' style={threestyle}></div>
+                                    </div>
+                                </div>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    2 stars
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='two-stars-distribution' style={twostyle}></div>
+                                    </div>
+                                </div>
+                                <div className='star-section'>
+                                    <div className='star-title-section'>
+                                    1 star
+                                    </div>
+                                    <div className='stars-distribution'>
+                                        <div className='one-star-distribution' style={onestyle}></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import * as bizActions from "../../store/businesses";
-import './UpdateBizForm.css'
+import './UpdateBizForm.css';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 export default function UpdateBizForm() {
     const dispatch = useDispatch();
@@ -68,6 +69,10 @@ export default function UpdateBizForm() {
                 errors.push("Zipcode must be exactly 5 digits");
             }
 
+            if (zipcode?.length && isNaN(zipcode)) {
+                errors.push("Zipcode can only be numbers");
+            }
+
             if (state?.length && state.length < 2) {
                 errors.push("State must be at least 2 characters");
             }
@@ -84,7 +89,7 @@ export default function UpdateBizForm() {
                 const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')', ' ', '-']
 
                 phone.split('').forEach(char => {
-                    if (!ALLOWED_PHONE_CHAR.includes(char)) {
+                    if (!ALLOWED_PHONE_CHAR.includes(char) && !errors.includes(`Phone can only include numbers or the symbols: "+", "(", or ")"`)) {
                         errors.push(`Phone can only include numbers or the symbols: "+", "-", "(", or ")"`);
                     }
                 });
@@ -498,7 +503,7 @@ export default function UpdateBizForm() {
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--update-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
+                        {bizImgUrl && <img className='img img--update-biz-url-preview' src={bizImgUrl} alt={bizImgUrl}  onError={e => e.target.src=brokenImgPig} />}
                     </div>
                 </div>
 

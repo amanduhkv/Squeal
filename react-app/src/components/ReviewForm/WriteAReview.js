@@ -4,6 +4,7 @@ import FuzzySearch from 'fuzzy-search';
 import { getAllBiz, clearData } from '../../store/businesses';
 import './ReviewForm.css';
 import searchicon from '../../icons/search.svg';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 const WriteAReview = () => {
     const dispatch = useDispatch();
@@ -35,7 +36,7 @@ const WriteAReview = () => {
                                 type='text' value={bizName} onChange={(e) => setBizName(e.target.value)} />
                         </label>
                         <button type='submit' className='search-button'>
-                            <img src={searchicon} alt='icon' className='search-icon' />
+                            <img src={searchicon} alt='icon' className='search-icon' onError={e => e.target.src=brokenImgPig} />
                         </button>
                     </form>
                 </div>

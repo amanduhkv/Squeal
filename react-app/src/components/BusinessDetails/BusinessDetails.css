@@ -137,8 +137,9 @@
     position: relative;
     top: 580px;
     display: grid;
-    width: 90%;
-    min-width: 1124px;
+    /* width: 90%; */
+    width: 80%;
+    min-width: 1140px;
     max-width: 1672px;
     margin: auto;
     gap: 60px;
@@ -167,12 +168,17 @@
     border-radius: 4px;
     position: sticky;
     top: 150px;
+    padding: 8px;
 }
 
 .single-business-contact {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+}
+
+.single-business-contact:first-child {
+    border-bottom: 1px solid rgb(235, 235, 235);
 }
 
 .single-business-box-divider {
@@ -192,6 +198,10 @@
     gap: 8px;
 }
 
+.single-business-review-bar {
+    display: flex;
+}
+
 .single-business-review-bar-button {
     background-color: rgba(224, 7, 7, 1);
     /* background-color: #dfa7a6; */
@@ -205,6 +215,7 @@
     border: none;
     border-radius: 4px;
     font-size: 16px;
+    margin-bottom: 30px;
 }
 
 .single-business-review-bar-button:hover {
@@ -212,6 +223,31 @@
     transition-property: background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
+}
+
+.single-business-user-bar-button {
+    margin-left: 8px;
+    padding: 6px 16px;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 4px;
+    color:rgba(45, 46, 47, 1);
+    vertical-align: middle;
+}
+
+.single-business-user-bar-button img {
+    margin-right: 4px;
+}
+
+.single-business-user-bar-button:hover {
+    text-decoration: none;
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+
+.sb-user-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .single-business-location-hours {
@@ -224,6 +260,7 @@
     font-size: 20px;
     font-weight: 700;
     padding: 30px 0px;
+    border-top: 1px solid rgb(235, 235, 235);
 }
 
 .single-business-location-details>p {
@@ -380,4 +417,70 @@
     display: flex;
     justify-content: start;
     margin-top: -20px;
+}
+
+.overall-rating-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-left-side-container {
+    width: 168px;
+}
+
+.single-biz-review-dist {
+    width: 70%;
+}
+
+.star-section {
+    display: flex;
+    align-items: center;
+}
+
+.star-title-section {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-align: right;
+    width: 50px;
+}
+
+.stars-distribution {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: rgb(240, 240, 240);
+    margin-left: 20px;
+}
+
+.five-stars-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(251,67,60,1);
+}
+
+.four-stars-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 100, 61, 1);
+}
+
+.three-stars-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 135, 66, 1);
+}
+
+.two-stars-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 173, 72, 1);
+}
+
+.one-star-distribution {
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 204, 75, 1);
 }

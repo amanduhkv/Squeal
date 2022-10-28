@@ -30,6 +30,7 @@ import viet from '../../icons/viet.svg';
 import med from '../../icons/med.svg';
 import taco from '../../icons/taco.svg';
 import italian from '../../icons/italian.svg';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 function NavBar() {
     const history = useHistory();
@@ -38,7 +39,16 @@ function NavBar() {
     const sessionUser = useSelector(state => state.session.user);
     const url = useLocation().pathname;
     const [query, setQuery] = useState('');
-    const [location, setLocation] = useState('LA and the BAY, CA');
+    const loca = document.cookie;
+    let locat;
+    switch (loca.split('=')[1]) {
+        case 'la': locat = 'Los Angeles, CA'; break;
+        case 'oak': locat = 'Oakland, CA'; break;
+        case 'sf': locat = 'San Francisco, CA'; break;
+        case 'sj': locat = 'San Jose, CA'; break;
+        default: locat = 'LA and the BAY, CA';
+    }
+    const [location, setLocation] = useState(locat);
     const [loc, setLoc] = useState('CA');
     let sessionLinks;
 
@@ -65,22 +75,27 @@ function NavBar() {
     function changeLocLAandBAY() {
         setLocation('LA and the BAY, CA');
         setLoc('CA');
+        document.cookie = 'location=ca';
     }
     function changeLocLA() {
         setLocation('Los Angeles, CA');
         setLoc('Los Angeles');
+        document.cookie = 'location=la';
     }
     function changeLocOAK() {
         setLocation('Oakland, CA');
         setLoc('Oakland');
+        document.cookie = 'location=oak';
     }
     function changeLocSF() {
         setLocation('San Francisco, CA');
         setLoc('San Francisco');
+        document.cookie = 'location=sf';
     }
     function changeLocSJ() {
         setLocation('San Jose, CA');
         setLoc('San Jose');
+        document.cookie = 'location=sj';
     }
 
     if (sessionUser) {
@@ -105,7 +120,7 @@ function NavBar() {
                 <div className={sessionUser ? 'logo-left-section-user' : 'logo-left-section-sl'}>
                     <NavLink className='logo' exact to="/">
                         <img src={url === '/' ? squealnLogowht : squealnLogo}
-                            alt='logo' className='squeal-logo' />
+                            alt='logo' className='squeal-logo' onError={e => e.target.src=brokenImgPig}/>
                     </NavLink>
                 </div>
                 <div className={sessionUser ? 'search-and-buttons-right-section-user' : 'search-and-buttons-right-section-sl'}>
@@ -161,7 +176,7 @@ function NavBar() {
                                 </div>
                             </label>
                             <button type='submit' className='search-button'>
-                                <img src={search} alt='icon' className='search-icon' />
+                                <img src={search} alt='icon' className='search-icon' onError={e => e.target.src=brokenImgPig} />
                             </button>
                         </form>
                     </div>}
@@ -192,29 +207,29 @@ function NavBar() {
                                 Quick Meals <svg width="24" height="24" className={url === '/' ? "chevron-svg" : "chevron-svg-blk"}><path d="M12 15.25a1 1 0 01-.7-.29l-4.58-4.5A1.011 1.011 0 018.12 9L12 12.85 15.88 9a1 1 0 111.4 1.42L12.7 15a1 1 0 01-.7.25z"></path></svg>
                             </button>
                             <div className='tooltiptext tooltip-ff'>
-                                <a className='category-link' href='/biz?type=hotdogs'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
-                                    <img className='tooltip-icons' src={fastfood} alt='icon' />Fast Food
+                                <a className='category-link' href='/biz?type=Fast Food'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
+                                    <img className='tooltip-icons' src={fastfood} alt='icon' onError={e => e.target.src=brokenImgPig} />Fast Food
                                 </button></a>
                                 <a className='category-link' href='/biz?type=pizza'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
-                                    <img className='tooltip-icons' src={pizza} alt='icon' />Pizza
+                                    <img className='tooltip-icons' src={pizza} alt='icon' onError={e => e.target.src=brokenImgPig} />Pizza
                                 </button></a>
                                 <a className='category-link' href='/biz?type=delivery'><button className='dropdown-display-text left-ffdropdown'>
-                                    <img className='tooltip-icons' src={delivery} alt='icon' />Delivery
+                                    <img className='tooltip-icons' src={delivery} alt='icon' onError={e => e.target.src=brokenImgPig} />Delivery
                                 </button></a>
                                 <a className='category-link' href='/biz?type=burgers'><button className='dropdown-display-text right-ffdropdown'>
-                                    <img className='tooltip-icons' src={burger} alt='icon' />Burgers
+                                    <img className='tooltip-icons' src={burger} alt='icon' onError={e => e.target.src=brokenImgPig} />Burgers
                                 </button></a>
                                 <a className='category-link' href='/biz?type=sandwiches'><button className='dropdown-display-text left-ffdropdown'>
-                                    <img className='tooltip-icons' src={sandwich} alt='icon' />Sandwiches
+                                    <img className='tooltip-icons' src={sandwich} alt='icon' onError={e => e.target.src=brokenImgPig} />Sandwiches
                                 </button></a>
-                                <a className='category-link' href='/biz?type=chicken_wings'><button className='dropdown-display-text right-ffdropdown'>
-                                    <img className='tooltip-icons' src={chicken} alt='icon' />Chicken Wings
+                                <a className='category-link' href='/biz?type=Chicken Wings'><button className='dropdown-display-text right-ffdropdown'>
+                                    <img className='tooltip-icons' src={chicken} alt='icon' onError={e => e.target.src=brokenImgPig} />Chicken Wings
                                 </button></a>
                                 <a className='category-link' href='/biz?type=pickup'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
-                                    <img className='tooltip-icons' src={takeout} alt='icon' />Takeout
+                                    <img className='tooltip-icons' src={takeout} alt='icon' onError={e => e.target.src=brokenImgPig} />Takeout
                                 </button></a>
                                 <a className='category-link' href='/biz?type=donuts'><button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
-                                    <img className='tooltip-icons' src={donut} alt='icon' />Donuts
+                                    <img className='tooltip-icons' src={donut} alt='icon' onError={e => e.target.src=brokenImgPig} />Donuts
                                 </button></a>
                             </div>
                         </div>
@@ -224,28 +239,28 @@ function NavBar() {
                             </button>
                             <div className='tooltiptext tooltip-ff'>
                                 <a className='category-link' href='/biz?type=bakeries'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
-                                    <img className='tooltip-icons' src={bakery} alt='icon' />Bakeries
+                                    <img className='tooltip-icons' src={bakery} alt='icon' onError={e => e.target.src=brokenImgPig} />Bakeries
                                 </button></a>
-                                <a className='category-link' href='/biz?type=bubbletea'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
-                                    <img className='tooltip-icons' src={boba} alt='icon' />Bubble Tea
+                                <a className='category-link' href='/biz?type=Bubble Tea'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
+                                    <img className='tooltip-icons' src={boba} alt='icon' onError={e => e.target.src=brokenImgPig} />Bubble Tea
                                 </button></a>
                                 <a className='category-link' href='/biz?type=desserts'><button className='dropdown-display-text left-ffdropdown'>
-                                    <img className='tooltip-icons' src={dessert} alt='icon' />Desserts
+                                    <img className='tooltip-icons' src={dessert} alt='icon' onError={e => e.target.src=brokenImgPig} />Desserts
                                 </button></a>
-                                <a className='category-link' href='/biz?type=coffee'><button className='dropdown-display-text right-ffdropdown'>
-                                    <img className='tooltip-icons' src={coffee} alt='icon' />Coffee & Tea
+                                <a className='category-link' href='/biz?type=Coffee & Tea'><button className='dropdown-display-text right-ffdropdown'>
+                                    <img className='tooltip-icons' src={coffee} alt='icon' onError={e => e.target.src=brokenImgPig} />Coffee & Tea
                                 </button></a>
-                                <a className='category-link' href='/biz?type=icecream'><button className='dropdown-display-text left-ffdropdown'>
-                                    <img className='tooltip-icons' src={icecream} alt='icon' />Ice Cream
+                                <a className='category-link' href='/biz?type=Ice Cream'><button className='dropdown-display-text left-ffdropdown'>
+                                    <img className='tooltip-icons' src={icecream} alt='icon' onError={e => e.target.src=brokenImgPig} />Ice Cream
                                 </button></a>
                                 <a className='category-link' href='/biz?type=donuts'><button className='dropdown-display-text right-ffdropdown'>
-                                    <img className='tooltip-icons' src={donut} alt='icon' />Donuts
+                                    <img className='tooltip-icons' src={donut} alt='icon' onError={e => e.target.src=brokenImgPig} />Donuts
                                 </button></a>
-                                <a className='category-link' href='/biz?type=juicebars'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
-                                    <img className='tooltip-icons' src={smoothie} alt='icon' />Smoothies
+                                <a className='category-link' href='/biz?type=Juice Bars & Smoothies'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
+                                    <img className='tooltip-icons' src={smoothie} alt='icon' onError={e => e.target.src=brokenImgPig} />Smoothies
                                 </button></a>
                                 <a className='category-link' href='/biz?type=cafes'><button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
-                                    <img className='tooltip-icons' src={cafe} alt='icon' />Cafes
+                                    <img className='tooltip-icons' src={cafe} alt='icon' onError={e => e.target.src=brokenImgPig} />Cafes
                                 </button></a>
                             </div>
                         </div>
@@ -255,28 +270,28 @@ function NavBar() {
                             </button>
                             <div className='tooltiptext tooltip-ff'>
                                 <a className='category-link' href='/biz?type=bbq'><button className='dropdown-display-text top-dropdown left-ffdropdown'>
-                                    <img className='tooltip-icons' src={bbq} alt='icon' />Barbeque
+                                    <img className='tooltip-icons' src={bbq} alt='icon' onError={e => e.target.src=brokenImgPig} />Barbeque
                                 </button></a>
                                 <a className='category-link' href='/biz?type=korean'><button className='dropdown-display-text top-dropdown right-ffdropdown'>
-                                    <img className='tooltip-icons' src={korean} alt='icon' />Korean
+                                    <img className='tooltip-icons' src={korean} alt='icon' onError={e => e.target.src=brokenImgPig} />Korean
                                 </button></a>
                                 <a className='category-link' href='/biz?type=chinese'><button className='dropdown-display-text left-ffdropdown'>
-                                    <img className='tooltip-icons' src={chinese} alt='icon' />Chinese
+                                    <img className='tooltip-icons' src={chinese} alt='icon' onError={e => e.target.src=brokenImgPig} />Chinese
                                 </button></a>
                                 <a className='category-link' href='/biz?type=mexican'><button className='dropdown-display-text right-ffdropdown'>
-                                    <img className='tooltip-icons' src={taco} alt='icon' />Mexican
+                                    <img className='tooltip-icons' src={taco} alt='icon' onError={e => e.target.src=brokenImgPig} />Mexican
                                 </button></a>
                                 <a className='category-link' href='/biz?type=italian'><button className='dropdown-display-text left-ffdropdown'>
-                                    <img className='tooltip-icons' src={italian} alt='icon' />Italian
+                                    <img className='tooltip-icons' src={italian} alt='icon' onError={e => e.target.src=brokenImgPig} />Italian
                                 </button></a>
                                 <a className='category-link' href='/biz?type=vietnamese'><button className='dropdown-display-text right-ffdropdown'>
-                                    <img className='tooltip-icons' src={viet} alt='icon' />Vietnamese
+                                    <img className='tooltip-icons' src={viet} alt='icon' onError={e => e.target.src=brokenImgPig} />Vietnamese
                                 </button></a>
                                 <a className='category-link' href='/biz?type=japanese'><button className='dropdown-display-text bottom-dropdown left-ffdropdown'>
-                                    <img className='tooltip-icons' src={japanese} alt='icon' />Japanese
+                                    <img className='tooltip-icons' src={japanese} alt='icon' onError={e => e.target.src=brokenImgPig} />Japanese
                                 </button></a>
                                 <a className='category-link' href='/biz?type=mediterranean'><button className='dropdown-display-text bottom-dropdown right-ffdropdown'>
-                                    <img className='tooltip-icons' src={med} alt='icon' />Mediterranean
+                                    <img className='tooltip-icons' src={med} alt='icon' onError={e => e.target.src=brokenImgPig} />Mediterranean
                                 </button></a>
                             </div>
                         </div>

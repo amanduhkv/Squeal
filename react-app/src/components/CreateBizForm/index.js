@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import * as bizActions from "../../store/businesses";
-import './CreateBizForm.css'
+import './CreateBizForm.css';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 export default function CreateBizForm() {
     const dispatch = useDispatch();
@@ -58,6 +59,10 @@ export default function CreateBizForm() {
             errors.push("Zipcode must be exactly 5 digits");
         }
 
+        if (zipcode.length && isNaN(zipcode)) {
+            errors.push("Zipcode can only be numbers");
+        }
+
         if (state.length && state.length < 2) {
             errors.push("State must be at least 2 characters");
         }
@@ -71,10 +76,10 @@ export default function CreateBizForm() {
         }
 
         if (phone.length) {
-            const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')']
+            const ALLOWED_PHONE_CHAR = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')', ' ', '-']
 
             phone.split('').forEach(char => {
-                if (!ALLOWED_PHONE_CHAR.includes(char)) {
+                if (!ALLOWED_PHONE_CHAR.includes(char) && !errors.includes(`Phone can only include numbers or the symbols: "+", "(", or ")"`)) {
                     errors.push(`Phone can only include numbers or the symbols: "+", "(", or ")"`);
                 }
             });
@@ -418,7 +423,7 @@ export default function CreateBizForm() {
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--create-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} />}
+                        {bizImgUrl && <img className='img img--create-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} onError={e => e.target.src=brokenImgPig} />}
                     </div>
                 </div>
 

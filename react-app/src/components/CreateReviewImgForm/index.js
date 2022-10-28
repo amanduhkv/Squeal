@@ -3,6 +3,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import * as reviewActions from "../../store/reviews";
 import './CreateReviewImgForm.css'
+import brokenImgPig from '../../icons/broken-img-pig.png';
 
 export default function CreateReviewImgForm() {
     const dispatch = useDispatch();
@@ -84,7 +85,7 @@ export default function CreateReviewImgForm() {
                             className='form-field'
                             id='form-field--img'
                         />
-                        {reviewImgUrl && <img className='img img--add-review-img-url-preview' src={reviewImgUrl} alt={reviewImgUrl} />}
+                        {reviewImgUrl && <img className='img img--add-review-img-url-preview' src={reviewImgUrl} alt={reviewImgUrl} onError={e => e.target.src=brokenImgPig} />}
                     </div>
                 </div>
 

@@ -5,6 +5,7 @@ import picture from '../../icons/user-page-icons/picture.svg';
 import pencil from '../../icons/user-page-icons/pencil.svg';
 import trash from '../../icons/user-page-icons/trash.svg';
 import x from '../../icons/x.svg';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 import * as reviewActions from "../../store/reviews";
 
 
@@ -63,7 +64,7 @@ export default function UserReviews({ user, userReviews }) {
                         {console.log("REVIEW?", review)}
                         <div className="user-review-biz-info">
                             <NavLink exact to={`/biz/${review.Business.id}`}>
-                                <img className="user-review-biz-img" src={review.Business.PreviewImage?.url} alt={review.Business.name} />
+                                <img className="user-review-biz-img" src={review.Business.PreviewImage?.url} alt={review.Business.name} onError={e => e.target.src=brokenImgPig} />
                             </NavLink>
                             <div className="user-review-biz-text">
                                 <NavLink className="user-review-biz-link" exact to={`/biz/${review.Business.id}`}>
@@ -190,8 +191,8 @@ export default function UserReviews({ user, userReviews }) {
                             <div className="user-review-imgs">
                                 {review.Review_Images?.length > 0 && review.Review_Images.map(img => (
                                     <div className="user-review-img-container" onClick={() => deleteImgHandler(review.id, img.id)}>
-                                        <img className="user-review-svg-x" src={x} width='100px' alt="x_svg" />
-                                        <img className="user-review-img" key={img.id} src={img.url} alt={img.url} />
+                                        <img className="user-review-svg-x" src={x} width='100px' alt="x_svg" onError={e => e.target.src=brokenImgPig} />
+                                        <img className="user-review-img" key={img.id} src={img.url} alt={img.url} onError={e => e.target.src=brokenImgPig} />
                                     </div>
                                 ))}
                             </div>
@@ -200,13 +201,13 @@ export default function UserReviews({ user, userReviews }) {
 
                         <div className="user-review-edit-delete-icons">
                             <NavLink className="user-review-add-img-button" to={`/review/${review.id}/images/new`}>
-                                <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" />
+                                <img className="user-review-svg" src={picture} width='16px' alt="pic_svg" onError={e => e.target.src=brokenImgPig} />
                             </NavLink>
                             <NavLink className="user-review-edit-button" exact to={`/biz/${review.business_id}/review/${review.id}`}>
-                                <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" />
+                                <img className="user-review-svg" src={pencil} width='16px' alt="pencil_svg" onError={e => e.target.src=brokenImgPig} />
                             </NavLink>
                             <div className="user-review-delete-button" onClick={() => deleteReviewHandler(review.id)}>
-                                <img className="user-review-svg" src={trash} width='16px' alt="trash_svg" />
+                                <img className="user-review-svg" src={trash} width='16px' alt="trash_svg" onError={e => e.target.src=brokenImgPig} />
                             </div>
                         </div>
                     </div>

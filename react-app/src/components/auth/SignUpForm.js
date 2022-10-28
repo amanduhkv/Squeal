@@ -4,6 +4,7 @@ import { Redirect, useLocation } from 'react-router-dom';
 import { signUp, login } from '../../store/session';
 import { Modal } from '../../context/Modal';
 import party from '../../icons/login.png';
+import brokenImgPig from '../../icons/broken-img-pig.png';
 import './SignUpForm.css';
 import './LoginForm.css';
 
@@ -172,7 +173,7 @@ const SignUpForm = () => {
                             </div>
                         </div>
                         <div>
-                            <img id='party' src={party} alt="login-party" />
+                            <img id='party' src={party} alt="login-party" onError={e => e.target.src=brokenImgPig} />
                         </div>
                     </div>
                 </Modal>
@@ -305,7 +306,7 @@ const SignUpForm = () => {
                             </div>
                         </div>
                         <div>
-                            <img id='party' src={party} alt="login-party" />
+                            <img id='party' src={party} alt="login-party" onError={e => e.target.src=brokenImgPig} />
                         </div>
                     </div>
                 </Modal>

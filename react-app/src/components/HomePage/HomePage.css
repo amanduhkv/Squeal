@@ -73,10 +73,13 @@
     margin: 16px -24px;
 }
 
+.image-container-review {
+    margin: 16px -24px;
+}
+
 .review-image-prev {
     height: 93px;
-    width: 122%;
-    margin: 16px -24px;
+    width: 100%;
     object-fit: cover;
     max-width: 358px;
     margin-bottom: 10px;
