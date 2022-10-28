@@ -7,6 +7,7 @@ from ..forms.add_business_form import AddBusinessForm
 from ..forms.add_business_img_form import AddBizImgForm
 from ..forms.edit_business_form import EditBusinessForm
 from sqlalchemy import func
+import os
 
 business_routes = Blueprint('biz', __name__)
 
@@ -21,6 +22,12 @@ def validation_errors_to_error_messages(validation_errors):
             errorMessages[field] = error
     return errorMessages
 
+
+#ENV_KEY
+@business_routes.route('/key', methods=['POST'])
+def load_map_key():
+    key = os.environ.get('API_KEY')
+    return {'googleMapsApiKey': key}
 
 # LOAD ALL BIZ
 @business_routes.route('/')

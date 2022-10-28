@@ -12,6 +12,7 @@ const UPDATE = 'businesses/UPDATE';
 const ADD_IMG = '/Businesses/ADD_IMG';
 const REMOVE_IMG = 'bizimages/REMOVE_IMG';
 const CLEAR_DATA = '/Businesses/CLEAR_DATA';
+const GET_KEY = 'maps/get_key'
 
 
 /* ---------------------------- ACTION CREATORS: ---------------------------- */
@@ -216,7 +217,24 @@ export const deleteImg = (bizId, imageId) => async dispatch => {
         return success;
     }
 };
+/* --------------------------- APIKEY: --------------------------- */
+const _getKey = key => ({
+    type: GET_KEY,
+    payload: key
+})
 
+export const getKey = () => async dispatch => {
+    const response = await fetch('/api/biz/key', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    })
+    if(response.ok) {
+        let data = await response.json()
+        dispatch(_getKey(data))
+    }
+}
 
 /* --------------------------- BUSINESSES REDUCER: --------------------------- */
 
@@ -292,6 +310,9 @@ const businessReducer = (state = initialState, action) => {
             return newState;
         case CLEAR_DATA:
             return initialState;
+        case GET_KEY:
+            newState = {...state, key: action.payload}
+            return newState
         default:
             return state;
     }
