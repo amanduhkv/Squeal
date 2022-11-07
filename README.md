@@ -27,7 +27,7 @@
 
 [squeal-logo]: ./assets/squeal-in-logo.png
 
-[Squeal](https://squeal-yelp.herokuapp.com/) is a web application inspired by Yelp.
+[Squeal](https://squeal-yelp.herokuapp.com/) is a web application inspired by Yelp and created by a team of 4 software engineers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
