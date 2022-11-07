@@ -3,7 +3,6 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
 import pigOutline from '../../icons/pig-outline.png'
-import cam from '../../icons/user-page-icons/cam.png';
 import upProf from '../../icons/user-page-icons/prof-up.png'
 import pig from '../../icons/user-page-icons/pig-head.png';
 import starGrey from '../../icons/user-page-icons/star-grey.png';
