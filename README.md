@@ -63,6 +63,8 @@
 
 <!-- SAMPLE FEATURES -->
 ## Sample Features
+### Search:
+![Search](https://i.imgur.com/e75RInS.gif)
 
 🚧🚧 This section is still under construction. 🚧🚧
 
