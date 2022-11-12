@@ -3,6 +3,7 @@ import './Footer.css'
 import logoWithText from '../../icons/squeal-in-logo.png'
 import logo from '../../icons/squeal-logo-v2.png'
 import brokenImgPig from '../../icons/broken-img-pig.png';
+import briefcase from '../../icons/portfolio.svg';
 
 export default function Footer() {
     const url = useLocation().pathname
@@ -37,7 +38,9 @@ export default function Footer() {
                                 <a className='github' href='https://github.com/amanduhkv' target='_blank' rel='noreferrer'>
                                     <i className="fa-brands fa-github fa-sm" />
                                 </a>
-                                <span className='footer-dev-name'>Amanda Vien</span>
+                                <a className='portfolio' href='https://amanduhkv.github.io/' target='_blank' rel='noreferrer'>
+                                    <span className='footer-dev-name'>Amanda Vien</span>
+                                </a>
                             </li>
                             <li className='footer-column-li'>
                                 <a className='linked-in' href='https://www.linkedin.com/in/brandon-tasaki/' target='_blank' rel='noreferrer'>
@@ -46,7 +49,9 @@ export default function Footer() {
                                 <a className='github' href='https://github.com/MacFlyOSX' target='_blank' rel='noreferrer'>
                                     <i className="fa-brands fa-github fa-sm" />
                                 </a>
-                                <span className='footer-dev-name'>Brandon Tasaki</span>
+                                <a className='portfolio' href='https://www.brandontasaki.com/' target='_blank' rel='noreferrer'>
+                                    <span className='footer-dev-name'>Brandon Tasaki</span>
+                                </a>
                             </li>
                             <li className='footer-column-li'>
                                 <a className='linked-in' href='https://www.linkedin.com/in/jaeyoung-hwang-71654490/' target='_blank' rel='noreferrer'>
@@ -55,7 +60,9 @@ export default function Footer() {
                                 <a className='github' href='https://github.com/jaeyoungh1' target='_blank' rel='noreferrer'>
                                     <i className="fa-brands fa-github fa-sm" />
                                 </a>
-                                <span className='footer-dev-name'>Jae Hwang</span>
+                                <a className='portfolio' href='https://jaeyoungh1.github.io/' target='_blank' rel='noreferrer'>
+                                    <span className='footer-dev-name'>Jae Hwang</span>
+                                </a>
                             </li>
                             <li className='footer-column-li'>
                                 <a className='linked-in' href='https://www.linkedin.com/in/michael-h-jung/' target='_blank' rel='noreferrer'>
@@ -64,7 +71,9 @@ export default function Footer() {
                                 <a className='github' href='https://github.com/michaelhjung' target='_blank' rel='noreferrer'>
                                     <i className="fa-brands fa-github fa-sm" />
                                 </a>
-                                <span className='footer-dev-name' >Michael Jung</span>
+                                <a className='portfolio' href='https://www.michaelhjung.com/' target='_blank' rel='noreferrer'>
+                                    <span className='footer-dev-name' >Michael Jung</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
