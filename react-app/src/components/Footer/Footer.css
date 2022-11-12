@@ -121,3 +121,11 @@
 .github {
     color: #171515;
 }
+
+.portfolio:hover {
+    text-decoration: none;
+}
+
+.footer-dev-name:hover {
+    text-decoration: underline;
+}
