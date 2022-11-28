@@ -12,7 +12,9 @@ export default function CreateBizImgForm() {
     const sessionUser = useSelector(state => state.session.user);
     const biz = useSelector(state => state.businesses.singleBusiness);
 
-    const [bizImgUrl, setBizImgUrl] = useState("");
+    // const [bizImgUrl, setBizImgUrl] = useState(null);
+    const [image, setImage] = useState(null);
+    const [imageLoading, setImageLoading] = useState(false);
 
     const [validationErrors, setValidationErrors] = useState([]);
 
@@ -33,10 +35,16 @@ export default function CreateBizImgForm() {
         const errors = [];
 
         setValidationErrors(errors);
-    }, [bizImgUrl]);
+    }, [image]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        const formData = new FormData();
+        formData.append("image", image);
+
+        setImageLoading(true);
+
 
         // HANDLING FOR USERS WHO HARDCODE ADD BIZ IMG PAGE:
         if (sessionUser && biz) {
@@ -47,14 +55,21 @@ export default function CreateBizImgForm() {
             }
         }
 
-        const newImg = { url: bizImgUrl }
         try {
-            const createdImg = await dispatch(bizActions.addBizImg(bizId, newImg));
-            if (createdImg) setValidationErrors([]);
-            history.push(`/biz/current`);
+            const responseAddImg = await fetch(`/api/biz/${bizId}/images`, {
+                method: 'POST',
+                body: formData
+            });
+
+            if (responseAddImg.json()) {
+                setImageLoading(false);
+                setValidationErrors([]);
+                history.push(`/biz/current`);
+            }
         }
         catch (res) {
-            console.log("==>ANY ERRORS FROM CREATE BIZ IMG:", res)
+            console.log("==>ANY ERRORS FROM CREATE BIZ IMG:", res);
+            setImageLoading(false);
             // const data = await res.json();
             // if (data && data.errors) return setValidationErrors(data.errors);
         }
@@ -76,15 +91,16 @@ export default function CreateBizImgForm() {
                     <div className='container--form-fields--section container--form-fields--img-section'>
                         <label className='label--add-biz-img' htmlFor="form-field--img">Business Preview Image:</label>
                         <input
-                            type="text"
-                            value={bizImgUrl}
-                            onChange={(e) => setBizImgUrl(e.target.value)}
+                            type="file"
+                            name="image"
+                            // value={image}
+                            onChange={(e) => setImage(e.target.files[0])}
                             required
-                            placeholder='Business Image url'
+                            // placeholder='Business Image url'
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--add-biz-img-url-preview' src={bizImgUrl} alt={bizImgUrl} onError={e => e.target.src=brokenImgPig} />}
+                        {/* {image && <img className='img img--add-biz-img-url-preview' src={image} alt={image} onError={e => e.target.src=brokenImgPig} />} */}
                     </div>
                 </div>
 
@@ -96,6 +112,7 @@ export default function CreateBizImgForm() {
                 >
                     Submit
                 </button>
+                {(imageLoading)&& <p>Loading...</p>}
             </form>
         </div>
     );
