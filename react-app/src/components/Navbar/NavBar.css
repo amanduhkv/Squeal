@@ -542,19 +542,6 @@
     z-index: 40;
 }
 
-/* .search-location-input {
-    position: relative;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-} */
-
-/* .search-location-input select {
-    display: none;
-} */
-
-/* .select-selected {
-    background-color: white;
-} */
-
 .search-location-input:focus+.tooltip-location {
     visibility: visible;
     opacity: 1;
