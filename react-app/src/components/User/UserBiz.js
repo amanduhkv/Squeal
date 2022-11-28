@@ -55,7 +55,7 @@ export default function UserBiz({ user, userBizzes }) {
                 {userBizzes && Object.values(userBizzes).map(biz => (
                     <div className="single-user-biz-card" key={biz.id}>
                         <div className="user-biz-info">
-                            {biz.Business_Images.length > 0 && (
+                            {biz.Business_Images && biz.Business_Images.length > 0 && (
                                 <NavLink exact to={`/biz/${biz.id}`}>
                                     <img className="user-biz-prev-img" src={biz.Business_Images[0].url} alt={biz.name} onError={e => e.target.src=brokenImgPig} />
                                 </NavLink>

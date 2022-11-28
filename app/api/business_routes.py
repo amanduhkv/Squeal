@@ -7,6 +7,8 @@ from ..forms.add_business_form import AddBusinessForm
 from ..forms.add_business_img_form import AddBizImgForm
 from ..forms.edit_business_form import EditBusinessForm
 from sqlalchemy import func
+from app.awss3 import (
+    upload_file_to_s3, allowed_file, get_unique_filename, delete_file_from_s3)
 
 business_routes = Blueprint('biz', __name__)
 
@@ -462,8 +464,30 @@ def add_biz_img(biz_id):
     """
     Add an image to a biz based on the biz's id
     """
-    form = AddBizImgForm()
-    form['csrf_token'].data = request.cookies['csrf_token']
+    if "image" not in request.files:
+        return {"errors": "image required"}, 400
+
+    image = request.files["image"]
+
+    if not allowed_file(image.filename):
+        return {"errors": "file type not permitted"}, 400
+
+    image.filename = get_unique_filename(image.filename)
+
+    upload = upload_file_to_s3(image)
+
+    if "url" not in upload:
+        # if the dictionary doesn't have a url key
+        # it means that there was an error when we tried to upload
+        # so we send back that error message
+        return upload, 400
+
+    url = upload["url"]
+    # flask_login allows us to get the current user from the request
+    # new_image = Image(user=current_user, url=url)
+    # db.session.add(new_image)
+    # db.session.commit()
+    # return {"url": url}
 
     biz = Business.query.get(biz_id)
     if not biz:
@@ -472,24 +496,23 @@ def add_biz_img(biz_id):
             "status_code": 404
         }), 404
 
-    if form.validate_on_submit():
-        user = current_user.to_dict()
+    user = current_user.to_dict()
 
-        if biz.to_dict()['owner_id'] == user['id']:
+    if biz.to_dict()['owner_id'] == user['id']:
 
-            biz_img = Image(
-                business_id = biz_id,
-                url = form.data['url'],
-                review_id = None
-            )
+        biz_img = Image(
+            business_id = biz_id,
+            url = url,
+            review_id = None
+        )
 
-            db.session.add(biz_img)
-            db.session.commit()
+        db.session.add(biz_img)
+        db.session.commit()
 
-            return biz_img.to_dict()
+        return biz_img.to_dict()
 
-        else:
-            return { "message": "Forbidden", "status_code": 403 }, 403
+    else:
+        return { "message": "Forbidden", "status_code": 403 }, 403
 
 
 # DELETE A BIZ IMG
@@ -503,6 +526,9 @@ def delete_business_img(img_id):
     user_id = user['id']
 
     biz_img_to_delete = Image.query.get(img_id)
+
+    url = biz_img_to_delete.to_dict()['url']
+
     if not biz_img_to_delete:
         return jsonify({
             "message": "Image couldn't be found",
@@ -512,6 +538,10 @@ def delete_business_img(img_id):
     # biz_of_img = Business.query.get(biz_img_to_delete.to_dict()['business_id']).to_dict()
     biz_img_biz_id = biz_img_to_delete.to_dict()['business_id']
     biz_of_img = Business.query.get(biz_img_biz_id).to_dict()
+
+    deleteMsg = delete_file_from_s3(url)
+    if not deleteMsg:
+        { "message": "Successfully deleted from AWS" }
 
     if user_id == biz_of_img['owner_id']:
         db.session.delete(biz_img_to_delete)

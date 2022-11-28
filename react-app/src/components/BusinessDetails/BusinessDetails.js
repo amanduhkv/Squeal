@@ -126,8 +126,8 @@ const BusinessDetails = () => {
         if (bizImages.length < 3) {
             let obj = bizImages[0]
             imageHeader = (
-                <span key={obj.id} className='single-business-single-image-wrapper' id='just-one-business-img' >
-                    <img className='single-business-one-image' alt={obj.id} src={obj.url} onError={e => e.target.src=brokenImgPig} />
+                <span key={obj?.id} className='single-business-single-image-wrapper' id='just-one-business-img' >
+                    <img className='single-business-one-image' alt="" src={obj?.url} onError={e => e.target.src=brokenImgPig} />
                 </span>
             )
         }

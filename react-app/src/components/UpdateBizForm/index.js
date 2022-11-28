@@ -27,7 +27,8 @@ export default function UpdateBizForm() {
     const [types, setTypes] = useState([]);
     const [transactions, setTransactions] = useState([]);
 
-    const [bizImgUrl, setBizImgUrl] = useState("");
+    const [image, setImage] = useState(null);
+    const [imageLoading, setImageLoading] = useState(false);
 
     const [validationErrors, setValidationErrors] = useState([]);
 
@@ -207,12 +208,30 @@ export default function UpdateBizForm() {
             const updatedBiz = await dispatch(bizActions.updateBiz(biz.id, newBiz));
 
             if (updatedBiz) {
-                if (bizImgUrl.length) {
-                    const newImg = { url: bizImgUrl }
+                if (image) {
+                //     const newImg = { url: image }
+                //     try {
+                //         const createdImg = await dispatch(bizActions.addBizImg(updatedBiz.id, newImg));
+                //         if (createdImg) setValidationErrors([]);
+                //     }
+                    const formData = new FormData();
+                    formData.append("image", image);
+
+                    setImageLoading(true);
+
                     try {
-                        const createdImg = await dispatch(bizActions.addBizImg(updatedBiz.id, newImg));
-                        if (createdImg) setValidationErrors([]);
+                        const responseAddImg = await fetch(`/api/biz/${updatedBiz.id}/images`, {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        if (responseAddImg.json()) {
+                            setImageLoading(false);
+                            setValidationErrors([]);
+                            history.push(`/biz/current`);
+                        }
                     }
+
                     catch (res) {
                         console.log("==>ANY ERRORS FROM ADD ANOTHER BIZ IMG:", res);
                         const data = await res.json().then(() => console.log("==>JSONIFIED ERRORS", data));
@@ -496,14 +515,14 @@ export default function UpdateBizForm() {
                     <div className='container--form-fields--section container--form-fields--img-section'>
                         <label className='label--update-biz' for="form-field--img">Add Another Business Image:</label>
                         <input
-                            type="text"
-                            value={bizImgUrl}
-                            onChange={(e) => setBizImgUrl(e.target.value)}
-                            placeholder='Business Image url'
+                            type="file"
+                            // value={image}
+                            onChange={(e) => setImage(e.target.files[0])}
+                            // placeholder='Business Image url'
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--update-biz-url-preview' src={bizImgUrl} alt={bizImgUrl}  onError={e => e.target.src=brokenImgPig} />}
+                        {/* {image && <img className='img img--update-biz-url-preview' src={image} alt={image}  onError={e => e.target.src=brokenImgPig} />} */}
                     </div>
                 </div>
 
@@ -516,6 +535,7 @@ export default function UpdateBizForm() {
                 >
                     Submit
                 </button>
+                {(imageLoading)&& <p>Loading...</p>}
             </form>
         </div>
     );

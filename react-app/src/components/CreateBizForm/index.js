@@ -24,7 +24,8 @@ export default function CreateBizForm() {
     const [types, setTypes] = useState([]);
     const [transactions, setTransactions] = useState([]);
 
-    const [bizImgUrl, setBizImgUrl] = useState("");
+    const [image, setImage] = useState(null);
+    const [imageLoading, setImageLoading] = useState(false);
 
     const [validationErrors, setValidationErrors] = useState([]);
 
@@ -128,18 +129,36 @@ export default function CreateBizForm() {
             const createdBiz = await dispatch(bizActions.createBusiness(newBiz));
 
             if (createdBiz) {
-                if (bizImgUrl.length) {
-                    const newImg = { url: bizImgUrl }
+                // if (image.length) {
+                    // const newImg = { url: image }
+                    // try {
+                    //     const createdImg = await dispatch(bizActions.addBizImg(createdBiz.id, newImg));
+                    //     if (createdImg) setValidationErrors([]);
+                    // }
+
+                    const formData = new FormData();
+                    formData.append("image", image);
+
+                    setImageLoading(true);
+
                     try {
-                        const createdImg = await dispatch(bizActions.addBizImg(createdBiz.id, newImg));
-                        if (createdImg) setValidationErrors([]);
+                        const responseAddImg = await fetch(`/api/biz/${createdBiz.id}/images`, {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        if (responseAddImg.json()) {
+                            setImageLoading(false);
+                            setValidationErrors([]);
+                            history.push(`/biz/current`);
+                        }
                     }
                     catch (res) {
                         console.log("==>ANY ERRORS FROM CREATE BIZ IMG:", res)
                         // const data = await res.json();
                         // if (data && data.errors) return setValidationErrors(data.errors);
                     }
-                }
+                // }
 
                 setValidationErrors([]);
                 history.replace(`/biz/${createdBiz.id}`);
@@ -415,15 +434,15 @@ export default function CreateBizForm() {
                     <div className='container--form-fields--section container--form-fields--img-section'>
                         <label className='label--create-biz' htmlFor="form-field--img">Business Preview Image:</label>
                         <input
-                            type="text"
-                            value={bizImgUrl}
-                            onChange={(e) => setBizImgUrl(e.target.value)}
+                            type="file"
+                            // value={image}
+                            onChange={(e) => setImage(e.target.files[0])}
                             required
-                            placeholder='Business Image url'
+                            // placeholder='Business Image url'
                             className='form-field'
                             id='form-field--img'
                         />
-                        {bizImgUrl && <img className='img img--create-biz-url-preview' src={bizImgUrl} alt={bizImgUrl} onError={e => e.target.src=brokenImgPig} />}
+                        {/* {image && <img className='img img--create-biz-url-preview' src={image} alt={image} onError={e => e.target.src=brokenImgPig} />} */}
                     </div>
                 </div>
 
@@ -437,6 +456,7 @@ export default function CreateBizForm() {
                 >
                     Submit
                 </button>
+                {(imageLoading)&& <p>Loading...</p>}
             </form>
         </div>
     );
