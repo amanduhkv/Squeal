@@ -6,7 +6,7 @@ from ..forms.delete_review_form import DeleteReviewForm
 from ..forms.add_review_img_form import AddReviewImgForm
 from ..forms.delete_review_img_form import DeleteReviewImgForm
 from app.awss3 import (
-    upload_file_to_s3, allowed_file, get_unique_filename)
+    upload_file_to_s3, allowed_file, get_unique_filename, delete_file_from_s3)
 
 
 reviews_routes = Blueprint("reviews", __name__)
@@ -149,11 +149,36 @@ def add_review_img(review_id):
     """
     Add an image to a review based on the review's id
     """
+    if "image" not in request.files:
+        return {"errors": "image required"}, 400
+
+    image = request.files["image"]
+
+    if not allowed_file(image.filename):
+        return {"errors": "file type not permitted"}, 400
+
+    image.filename = get_unique_filename(image.filename)
+
+    upload = upload_file_to_s3(image)
+
+    if "url" not in upload:
+        # if the dictionary doesn't have a url key
+        # it means that there was an error when we tried to upload
+        # so we send back that error message
+        return upload, 400
+
+    url = upload["url"]
+    # flask_login allows us to get the current user from the request
+    # new_image = Image(user=current_user, url=url)
+    # db.session.add(new_image)
+    # db.session.commit()
+    # return {"url": url}
+
     form = AddReviewImgForm()
     form['csrf_token'].data = request.cookies['csrf_token']
 
     review = Review.query.get(review_id)
-    print(">>>>>REVIEW", review)
+
     if not review:
         return jsonify({
             "message": "Review couldn't be found",
@@ -167,7 +192,7 @@ def add_review_img(review_id):
         "errors": {}
     }
 
-    if not form.data['url']:
+    if not url:
         login_val_error["errors"]["url"] = "Image url is required"
     if len(login_val_error["errors"]) > 0:
         return jsonify(login_val_error), 400
@@ -181,7 +206,7 @@ def add_review_img(review_id):
             review_img = Image(
                 review_id = review_id,
                 business_id = biz_id,
-                url = form.data['url']
+                url = url
             )
 
             db.session.add(review_img)
@@ -206,29 +231,55 @@ def delete_review_img(image_id):
     form['csrf_token'].data = request.cookies['csrf_token']
 
     review_img_to_delete = Image.query.get(image_id)
+
+    url = review_img_to_delete.to_dict()['url']
+
     if not review_img_to_delete:
         return jsonify({
             "message": "Review couldn't be found",
             "status_code": 404
         }), 404
 
-    if form.validate_on_submit():
-        user = current_user.to_dict()
+    user = current_user.to_dict()
 
-        # FIND OWNER OF REVIEW IMG:
-        review_id = review_img_to_delete.to_dict()['review_id']
-        review = Review.query.get(review_id)
-        review_owner_id = review.to_dict()['user_id']
+    # FIND OWNER OF REVIEW IMG:
+    review_id = review_img_to_delete.to_dict()['review_id']
+    review = Review.query.get(review_id)
+    review_owner_id = review.to_dict()['user_id']
 
 
-        if review_owner_id == user['id']:
-            db.session.delete(review_img_to_delete)
+    if review_owner_id == user['id']:
+        deleteMsg = delete_file_from_s3(url)
+        if not deleteMsg:
+            { "message": "Successfully deleted from AWS" }
 
-            db.session.commit()
+        db.session.delete(review_img_to_delete)
+        db.session.commit()
 
-            return { "message": "Successfully deleted", "status_code": 200 }
+        return { "message": "Successfully deleted", "status_code": 200 }
 
-        else:
-            return { "message": "Forbidden", "status_code": 403 }, 403
+    else:
+        return { "message": "Forbidden", "status_code": 403 }, 403
 
-    return { "message": "Review couldn't be found", "status_code": 404 }, 404
+
+
+    # if form.validate_on_submit():
+    #     user = current_user.to_dict()
+
+    #     # FIND OWNER OF REVIEW IMG:
+    #     review_id = review_img_to_delete.to_dict()['review_id']
+    #     review = Review.query.get(review_id)
+    #     review_owner_id = review.to_dict()['user_id']
+
+
+    #     if review_owner_id == user['id']:
+    #         db.session.delete(review_img_to_delete)
+
+    #         db.session.commit()
+
+    #         return { "message": "Successfully deleted", "status_code": 200 }
+
+    #     else:
+    #         return { "message": "Forbidden", "status_code": 403 }, 403
+
+    # return { "message": "Review couldn't be found", "status_code": 404 }, 404

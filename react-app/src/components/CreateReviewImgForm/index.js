@@ -12,7 +12,8 @@ export default function CreateReviewImgForm() {
     const sessionUser = useSelector(state => state.session.user);
     const userReviews = useSelector(state => state.reviews.user);
 
-    const [reviewImgUrl, setreviewImgUrl] = useState("");
+    const [image, setImage] = useState(null);
+    const [imageLoading, setImageLoading] = useState(false);
 
     const [validationErrors, setValidationErrors] = useState([]);
 
@@ -33,7 +34,7 @@ export default function CreateReviewImgForm() {
         const errors = [];
 
         setValidationErrors(errors);
-    }, [reviewImgUrl]);
+    }, [image]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -48,11 +49,26 @@ export default function CreateReviewImgForm() {
             }
         }
 
-        const newImg = { url: reviewImgUrl }
         try {
-            const createdImg = await dispatch(reviewActions.createReviewImg(reviewId, newImg));
-            if (createdImg) setValidationErrors([]);
-            history.push(`/reviews/current`);
+            // const createdImg = await dispatch(reviewActions.createReviewImg(reviewId, newImg));
+            // if (createdImg) setValidationErrors([]);
+            // history.push(`/reviews/current`);
+
+            const formData = new FormData();
+            formData.append("image", image);
+
+            setImageLoading(true);
+
+            const responseAddImg = await fetch(`/api/reviews/${reviewId}/images`, {
+                method: 'POST',
+                body: formData
+            });
+
+            if (responseAddImg.json()) {
+                setImageLoading(false);
+                setValidationErrors([]);
+                history.push(`/reviews/current`);
+            }
         }
         catch (res) {
             console.log("==>ANY ERRORS FROM CREATE REVIEW IMG:", res)
@@ -77,15 +93,15 @@ export default function CreateReviewImgForm() {
                     <div className='container--form-fields--section container--form-fields--img-section'>
                         <label className='label--add-review-img' htmlFor="form-field--img">Review Preview Image:</label>
                         <input
-                            type="text"
-                            value={reviewImgUrl}
-                            onChange={(e) => setreviewImgUrl(e.target.value)}
+                            type="file"
+                            // value={imnulle}
+                            onChange={(e) => setImage(e.target.files[0])}
                             required
-                            placeholder='Business Image url'
+                            // placeholder='Business Image url'
                             className='form-field'
                             id='form-field--img'
                         />
-                        {reviewImgUrl && <img className='img img--add-review-img-url-preview' src={reviewImgUrl} alt={reviewImgUrl} onError={e => e.target.src=brokenImgPig} />}
+                        {/* {image && <img className='img img--add-review-img-url-preview' src={image} alt={image} onError={e => e.target.src=brokenImgPig}null>} */}
                     </div>
                 </div>
 
@@ -97,6 +113,7 @@ export default function CreateReviewImgForm() {
                 >
                     Submit
                 </button>
+                {(imageLoading)&& <p>Loading...</p>}
             </form>
         </div>
     );
