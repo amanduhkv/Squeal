@@ -126,10 +126,22 @@ def delete_review(review_id):
             "status_code": 404
         }), 404
 
+
     if form.validate_on_submit():
         user = current_user.to_dict()
 
         if review_to_delete.to_dict()['user_id'] == user['id']:
+
+            # DELETE ALL THE REVIEW IMAGES FIRST
+            review_imgs_to_delete = Image.query.filter(Image.review_id == review_id).all()
+
+            for img in review_imgs_to_delete:
+                url = img.to_dict()['url']
+                deleteMsg = delete_file_from_s3(url)
+                if not deleteMsg:
+                    { "message": "Successfully deleted from AWS" }
+
+            # THEN DELETE THE ACTUAL REVIEW:
             db.session.delete(review_to_delete)
 
             db.session.commit()

@@ -182,7 +182,7 @@ export default function UserBiz({ user, userBizzes }) {
 
 
                             <div className="user-biz-imgs">
-                                {biz.Business_Images.length > 0 && biz.Business_Images.map(img => (
+                                {biz.Business_Images && biz.Business_Images.length > 0 && biz.Business_Images.map(img => (
                                     <div className="user-biz-img-container" key={img.id} onClick={() => deleteImgHandler(biz.id, img.id)}>
                                         <img className="user-biz-svg-x" src={x} width='100px' alt="x_svg" onError={e => e.target.src=brokenImgPig} />
                                         <img className="user-biz-img" key={img.id} src={img.url} alt={img.url} onError={e => e.target.src=brokenImgPig} />

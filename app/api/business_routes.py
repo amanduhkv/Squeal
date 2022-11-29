@@ -448,6 +448,16 @@ def delete_biz(biz_id):
         user = current_user.to_dict()
 
         if biz_to_delete.to_dict()['owner_id'] == user['id']:
+            # DELETE ALL THE BIZ IMAGES FIRST
+            biz_imgs_to_delete = Image.query.filter(Image.business_id == biz_id).all()
+
+            for img in biz_imgs_to_delete:
+                url = img.to_dict()['url']
+                deleteMsg = delete_file_from_s3(url)
+                if not deleteMsg:
+                    { "message": "Successfully deleted from AWS" }
+
+            # THEN DELETE THE ACTUAL BIZ
             db.session.delete(biz_to_delete)
 
             db.session.commit()
