@@ -552,12 +552,12 @@ export default function Search({ data }) {
                                         {biz.avg_rating}
                                     </div>
                                     <div id='biz-text-rev'>
-                                        ({biz.Review.review_length} reviews)
+                                        ({biz.Review?.review_length} reviews)
                                     </div>
                                 </div>
                                 <div id='biz-type-loc'>
                                     <div className='biz-type-butts-container'>
-                                        {Object.values(biz.types).map(type => (
+                                        {Object.values(biz?.types).map(type => (
                                             <NavLink to={`/biz?type=${type.alias}`}
                                                 className='biz-type-butts'
                                             >

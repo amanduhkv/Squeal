@@ -131,7 +131,7 @@ const BusinessDetails = () => {
                 </span>
             )
         }
-        imageHeader = bizImages.map(obj => {
+        imageHeader = bizImages.slice(0, 3).map(obj => {
             return (
                 <span key={obj.id} className='single-business-one-image-wrapper' >
                     <img className='single-business-one-image' alt={obj.id} src={obj.url} onError={e => e.target.src=brokenImgPig} />
@@ -368,9 +368,12 @@ const BusinessDetails = () => {
                     <div className='single-business-review-body'>
                         {obj.review_body}
 
+                        <br />
                         {obj.Review_Images && obj.Review_Images.map(obj => {
                             return (
-                                <div className='single-business-review-image'> <img height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} /></div>
+                                <>
+                                <img className='single-business-review-image' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
+                                </>
                             )
                         }
                         )}
@@ -407,7 +410,7 @@ const BusinessDetails = () => {
                             Close <img src={x} alt="x_svg" onError={e => e.target.src=brokenImgPig} />
                         </div>
                         <div className='single-business-modal-title'>Photos for {biz.name}</div>
-                        {bizImages.length === 0 && (
+                        {bizImages?.length === 0 && (
                             <div>This business does not have any photos</div>
                         )}
                         <div className='single-business-modal-images'>
@@ -417,13 +420,13 @@ const BusinessDetails = () => {
 
                             {bizImages.length > 0 && bizImages.map(obj => {
                                 return (
-                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
+                                    <img onClick={() => setShowSinglePhoto(true)} className='single-business-modal-review-image' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
                                 )
                             }
                             )}
                             {allReviewImages.length > 0 && allReviewImages.map(obj => {
                                 return (
-                                    <img className='single-business-review-image' height='300' width='300' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
+                                    <img className='single-business-modal-review-image' src={obj.url} alt={obj.url} onError={e => e.target.src=brokenImgPig} />
                                 )
                             })}
                         </div>
@@ -771,7 +774,7 @@ const BusinessDetails = () => {
                                     5 stars
                                     </div>
                                     <div className='stars-distribution'>
-                                        <div className='five-stars-distribution' style={fivestyle}></div>
+                                        <div className='five-stars-distribution' style={!!five ? fivestyle : {width: "0px"}}></div>
                                     </div>
                                 </div>
                                 <div className='star-section'>
@@ -779,7 +782,7 @@ const BusinessDetails = () => {
                                     4 stars
                                     </div>
                                     <div className='stars-distribution'>
-                                        <div className='four-stars-distribution' style={fourstyle}></div>
+                                        <div className='four-stars-distribution' style={!!four ? fourstyle : {width: "0px"}}></div>
                                     </div>
                                 </div>
                                 <div className='star-section'>
@@ -787,7 +790,7 @@ const BusinessDetails = () => {
                                     3 stars
                                     </div>
                                     <div className='stars-distribution'>
-                                        <div className='three-stars-distribution' style={threestyle}></div>
+                                        <div className='three-stars-distribution' style={!!three ? threestyle : {width: "0px"}}></div>
                                     </div>
                                 </div>
                                 <div className='star-section'>
@@ -795,7 +798,7 @@ const BusinessDetails = () => {
                                     2 stars
                                     </div>
                                     <div className='stars-distribution'>
-                                        <div className='two-stars-distribution' style={twostyle}></div>
+                                        <div className='two-stars-distribution' style={!!two ? twostyle : {width: "0px"}}></div>
                                     </div>
                                 </div>
                                 <div className='star-section'>
@@ -803,7 +806,7 @@ const BusinessDetails = () => {
                                     1 star
                                     </div>
                                     <div className='stars-distribution'>
-                                        <div className='one-star-distribution' style={onestyle}></div>
+                                        <div className='one-star-distribution' style={!!one ? onestyle : {width: "0px"}}></div>
                                     </div>
                                 </div>
                             </div>

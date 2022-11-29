@@ -4,5 +4,5 @@ from wtforms.validators import DataRequired
 
 
 class AddReviewImgForm(FlaskForm):
-    url = StringField('Review Image URL', validators=[DataRequired()])
+    url = StringField('Review Image URL')
     submit = SubmitField('Submit')

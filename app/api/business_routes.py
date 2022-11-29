@@ -539,11 +539,12 @@ def delete_business_img(img_id):
     biz_img_biz_id = biz_img_to_delete.to_dict()['business_id']
     biz_of_img = Business.query.get(biz_img_biz_id).to_dict()
 
-    deleteMsg = delete_file_from_s3(url)
-    if not deleteMsg:
-        { "message": "Successfully deleted from AWS" }
-
     if user_id == biz_of_img['owner_id']:
+        deleteMsg = delete_file_from_s3(url)
+        if not deleteMsg:
+            { "message": "Successfully deleted from AWS" }
+
+
         db.session.delete(biz_img_to_delete)
         db.session.commit()
         return { "message": "Successfully deleted", "status_code": 200 }
