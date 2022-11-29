@@ -61,7 +61,6 @@ export default function UserReviews({ user, userReviews }) {
             <div className="all-user-reviews">
                 {userReviews && Object.values(userReviews).map(review => (
                     <div className="single-user-review-card" key={review.id}>
-                        {console.log("REVIEW?", review)}
                         <div className="user-review-biz-info">
                             <NavLink exact to={`/biz/${review.Business.id}`}>
                                 <img className="user-review-biz-img" src={review.Business.PreviewImage?.url} alt={review.Business.name} onError={e => e.target.src=brokenImgPig} />
