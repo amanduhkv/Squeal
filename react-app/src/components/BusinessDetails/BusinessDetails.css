@@ -27,6 +27,7 @@
     min-height: 100%;
     height: fit-content;
     object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
 
 .single-business-images {
