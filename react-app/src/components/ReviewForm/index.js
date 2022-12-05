@@ -67,20 +67,20 @@ const ReviewForm = () => {
         }
     }
 
-    // ERROR HANDLING:
-    useEffect(() => {
-        const errors = [];
+    // // ERROR HANDLING:
+    // useEffect(() => {
+    //     const errors = [];
 
-        if (revRate < 1) {
-            errors.push("Please provide a rating");
-        }
+    //     if (revRate < 1) {
+    //         errors.push("Please provide a rating");
+    //     }
 
-        if (revBody.length < 1) {
-            errors.push("Please provide a review");
-        }
+    //     if (revBody.length < 1) {
+    //         errors.push("Please provide a review");
+    //     }
 
-        setValidationErrors(errors);
-    }, [revRate, revBody]);
+    //     setValidationErrors(errors);
+    // }, [revRate, revBody]);
 
 
   return (
