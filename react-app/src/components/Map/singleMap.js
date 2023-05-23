@@ -12,7 +12,7 @@ const SingleMap = ({ location }) => {
 
     return (
         <div>
-            <StaticGoogleMap size="350x215" className="img-fluid" apiKey="AIzaSyAfceIqscAvLd4fm7HSeL0QZzqwPrvGcbc">
+            <StaticGoogleMap size="350x215" className="img-fluid" apiKey="AIzaSyBDVrc6BbFgeEx6oqsBGrHWOnZszK2uQPI">
                 <Marker location={locationStr} color="red" />
             </StaticGoogleMap>
         </div>
